@@ -1,0 +1,66 @@
+Ontologiegestütze geisteswissenschaftliche
+Annotationen mit dem OWLnotator
+Giuseppe Abrami
+
+Alexander Mehler
+
+Susanne Zeunert
+
+Begriffe wie Annotationen, Relationen, Ontologien und Inferenz begegnen uns in allen Projekten, die sich mit
+der (geistes)wissenschaftlichen Erschließung von Korpora beschäftigen. Hierbei werden die Korpora mit den
+entsprechenden Annotationen des Anwendungsgebiets versehen, um auf dieser Grundlage Forschungsfragen
+zu beantworten. Annotationen sind ein wichtiges Mittel in der Analyse von Korpora; allerdings entwickeln die
+meisten Projekte ihre eigenen Strukturen und Formen der Annotations-Abbildung und -Verwaltung. Am Anfang der Digital Humanities wurden Annotations-Schemata teilweise fest codiert. Nunmehr werden vermehrt
+Beschreibungssprachen wie RDF Schema (RDFS) und die Web Ontologie Language (OWL)1 eingesetzt. Da
+uns Ontologien flexible Annotationsmöglichkeiten bieten, jedoch die permanente Wartung und Anpassung von
+Software durch Informatiker auf lange Sicht keine effiziente Lösung ist, wurde in unserem interdisziplinären
+Projekt, gefördert durch LOEWE2 , zur inhaltlichen Erschließung der Illustrationen zu Goethes Faust der OWLnotator, ein ontologiebasiertes Annotationswerkzeug zur Erstellung und Analyse von Intra- und Intermedialen
+Relationen entwickelt. Dank der flexiblen Annotationsmöglichkeiten des OWLnotators können Geisteswissenschaftler durch das Erstellen von eigenen Ontologien sehr schnell und einfach ontologiegestützt Annotationen
+im Einzel- oder Batch-Betrieb erstellen, ändern oder löschen.
+Ein digitalisiertes Korpus von 2 500 Faustillustrationen bildet die Grundlage für die semantische Erschließung durch eine kunsthistorische Ontologie. Auf dieser Basis demonstrieren wir im Full-Paper die inter- und
+intramedialen Relationen zwischen dem Faust-Text und den dazugehörigen Bildern im OWLnotator. Das Korpus der Illustrationen zu Goethes Faust ist hierbei für diese Untersuchung in besonderer Weise geeignet, da
+einige Illustrationen Bildinhalte haben, welche im Text nicht erwähnt oder beschrieben wurden. Für eine hinreichend aussagekräftige inhaltliche Erschließung der Bildbestände ist es notwenig, die Bilder detailliert zu
+beschreiben. Dafür werden die Bilder segmentiert (cf. Abrami, Freiberg und Warner 2012) und detailliert annotiert. Zur Korpusverwaltung wird die ImageDB, ein Tool des eHumanities Desktop (Gleim, Mehler und Ernst
+2012), verwendet, welche die Bildsegmentierung durchführt und als Annotation mittels des OWLnotators speichert. Der eHumanities Desktop ist eine plattformunabhängige, browserbasierte, flexible und skalierbare virtuelle Forschungsumgebung für Geisteswissenschaftler welche neben den genannten Tools weitere Werkzeuge
+zur Verwaltung, Analyse und Aufbereitung von Text- und Bild-Korpora wie auch von Lexika umfasst.
+An den Korpora und den Annotationen können mehrere Forscher, in einer Arbeitsgruppe oder darüber hinaus, gleichzeitig arbeiten und je nach Forschungsschwerpunkt und Fragestellungen die annotierten Elemente
+entsprechend der gewünschten ontologischen Betrachtungsweise auswerten. Hierzu müssen die Forscher nur
+eine eigene Ontologie erstellen und diese im OWLnotator anwenden. Der OWLnotator kann jede syntaktisch
+gültige Ontologie nutzen und dank der in der Web Ontology Languge spezifizierten Möglichkeiten der Klassenund Relationsvererbung sowie der darin enthaltenen Inferenz-Methoden zur inhaltlichen Analyse des Korpus
+eingesetzt werden. Dank dieses ausdrucksmächtigen Werkzeugs sind wir künftig in der Lage, semantische Wissensnetzwerke sehr schnell und einfach aufzubauen und diese mit der Forschungsgemeinschaft zu teilen.
+Unser Ziel ist es, durch den Einsatz von ontologischen Annotationen auf der Grundlage von OWL ein austauschbares Wissensnetzwerk zu generieren, welches unabhängig von der Software eingesetzt werden kann.
+Voraussetzung ist natürlich, dass die Software Ontologien lesen, interpretieren und verwalten kann, wie dies
+1 http://www.w3.org/TR/owl-features/
+2 Landes-Offensive zur Entwicklung Wissenschaftlich-ökonomischer Exzellenz, www.proloewe.de
+
+1
+
+Ontologiegestütze geisteswissenschaftliche Annotationen mit dem OWLnotator
+durch den OWLnotator dynamisch und effizient geschieht. Die kunsthistorischen Ontologien unseres Projektes beinhalten die Annotationen der abgebildeten Personen auf den Illustrationen zu Goethes Faust sowie die
+Annotation ihrer Proxemik und Gesten. Durch atomare3 Annotationen schaffen wir die Grundlage zur Interpretation der annotierten Bildinhalte. Folgeprojekte oder ähnliche Fragestellungen können an den im Projekt
+erstellten Ontologien anknüpfen und darauf aufbauen sowie die Ontologien selbstverständlich erweitern. Die
+Ergebnisse sowie die Verknüpfung zwischen den Bildinhalten mit dem dazugehörigen Text sowie die weiterund tiefergehende ontologische Annotation auf Text- und Bild-Ebene bieten für die Forschung, für die Lehre
+sowie für die Präsentation von Beständen und Korpora eine breite und stabile Grundlage und sind gleichzeitig
+jederzeit austauschbar und weiterverwendbar.
+Durch unsere Arbeiten möchten wir Geisteswissenschaftlern die Scheu vor dem Einsatz digitaler Werkzeuge
+auch im Bereich komplexester Ontologien nehmen. Es geht darum, sehr große Korpora überhaupt erst auf der
+Basis dynamisch, im Wissenschaftsprozess wachsender Ontologien erschließbar zu machen. Mit dem OWLnotator bieten wir universell einsatzfähiges Annotationswerkzeug an welches Open Source zur Verfügung steht
+und allen Nutzern die Möglichkeit gibt, Annotationen ontologiebezogen durchzuführen, ohne über das Wie der
+Umsetzung nachdenken zu müssen. Insbesondere sollen Geisteswissenschaftler die Gelegenheit erhalten, nun
+über das Was des Annotationsinhaltes nachzudenken – dazu befähigt sie der OWLnotator in den Anwendungsgebieten der Geisteswissenschaft.
+Literatur
+Abrami, Giuseppe, Michael Freiberg und Paul Warner (2012). Managing and Annotating Historical Multi”
+modal Corpora with the eHumanities Desktop - An outline of the current state of the LOEWE project
+Illustrations of Goethe’s Faust “. In: Proceedings of the Historical Corpora Conference, 6-9 December
+2012, Frankfurt.
+Gleim, Rüdiger, Alexander Mehler und Alexandra Ernst (2012). SOA implementation of the eHumanities
+”
+Desktop“. In: Proceedings of the Workshop on Service-oriented Architectures (SOAs) for the Humanities:
+Solutions and Impacts, Digital Humanities 2012, Hamburg, Germany.
+
+3 Nicht mehr weiter teilbare
+
+Ontologiegestütze geisteswissenschaftliche Annotationen mit dem OWLnotator
+
+2
+

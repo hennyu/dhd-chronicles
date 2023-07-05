@@ -1,0 +1,151 @@
+Geometrische Verfahren als Brücke zwischen Text und Objekt
+Hubert Mara und Bartosz Bogacz
+Universität Heidelberg
+IWR – Interdisziplinäres Zentrum für Wissenschaftliches Rechnen
+FCGL - Forensic Computational Geometry Laboratory
+Im Neuenheimer Feld 368, 69120 Heidelberg, Deutschland
+hubert.mara@iwr.uni-heidelberg.de
+Keilschrifttafeln gehören zu den ältesten Textzeugen, die im Umfang mit den Texten in lateinischer und altgriechischer Sprache vergleichbar sind. Da diese Tafeln aus dem gesamten Alten Orient über beinahe viertausend
+Jahre in Verwendung waren [Sod94], lassen sich damit viele interessante Fragestellungen zur Entwicklung von
+Religion, Politik, Wissenschaft, Handel bis hin zu Klimaveränderungen [Kan13] beantworten. Die aus Ton
+geformten Tafeln, bei denen Zeichen [Bor10] als keilförmige Abdrücke mit einem eckigen Stylus eingedrückt
+wurden, erfordern neue informationstechnische Methoden zu der Dokumentation und Analyse als die in
+Archiven üblichen Flachwaren. Zusätzlich gibt es kaum Verfahren aus dem Bereich der Optical Character
+Recognition (OCR), die für Sprachen in Keilschrift zur Verfügung stehen [Spe81]. Der Arbeitsablauf in der
+Assyriologie von der Keilschrifttafel als dreidimensionales Objekt bis hin zur Darstellung als Text in einer
+modernen Sprache – üblicherweise Deutsch – ist in Abbildung 1 dargestellt. Dabei ist der manuelle Zeitaufwand
+als Kurve dargestellt. In der Zusammenarbeit mit der Heidelberger Assur-Forschungsstelle unter der Leitung von
+Prof. Stefan Maul konnte festgestellt werden, dass ein erheblicher Teil der Arbeit im Bereich der Identifikation
+und Extraktion von Zeichen liegt, der stark mit der Dokumentation als Zeichnung verknüpft ist.
+Char
+ac
+t
+e
+r
+
+Wor
+k⇧o
+w
+Ac
+c
+ur
+ac
+yi
+nobj
+e
+c
+tr
+e
+pr
+e
+s
+e
+nt
+at
+i
+on
+
+Ac
+c
+ur
+ac
+yr
+e
+gar
+di
+ngc
+ont
+e
+nt
+s
+
+Abb. 1: Arbeitsschritte von der Keilschrifttafeln als Objekte bis zur Übersetzung als Text in einer modernen Sprache.
+
+Das Digitalisieren von Keilschrifttafeln inspiriert durch die Open Data Initiative, wurde bereits vor einigen
+Jahren von der Cuneiform Database Library Initiative (CDLI) des Max Planck Institut für
+Wissenschaftsgeschichte und der University of California at Los Angeles begonnen und entsprechende
+Datenbanken entwickelt [GWLU05]. Dabei werden üblicherweise Photos und Bilder von Flachbettscannern
+eingesetzt, die zwar günstig und rasch zu erstellen sind, jedoch bei beschädigten oder gekrümmten Tafeln viele
+Bereiche unscharf und/oder verschattet sind. Daher werden in Jena, Würzburg [CMFW14] und Heidelberg
+[MKJB10] moderne 3D-Messgeräte eingesetzt um möglichst exakte digitale Repliken anzufertigen, mit denen
+entsprechende Visualisierungen berechnet werden. Als Mittel- und Fernziel sind digitale Werkzeuge im Sinne
+der OCR in Entwicklung.
+Da die Datengrundlage keine regelmäßigen Gitter i.e. Rasterbilder wie die in Digital Humanities üblichen 2DDigitalisate sind, sind Methoden notwendig, die aus der Geometrie eines 3D-Modells die Schriftzeichen
+extrahiert. Dafür kommen Integral Invariante Filter zum Einsatz, die mit Hilfe eines Mehr-Skalen Ansatzes die
+einzelnen Elemente der Keilschriftzeichen in einer Vektordarstellung extrahieren [MK13]. Mit Hilfe von einer
+minimalen Anzahl von Orts- und Richtungsvektoren werden mit dem GigaMesh Software Framework
+parametrischen Kurven (i.e. Splines) bestimmt, die als zweidimensionale XML-Dateien im offenen Scalable
+
+Vector Graphics (SVG) Format exportiert werden. In Abbildung 3 wird eine schematisches SVG zur Darstellung
+eines Keils, mit einer minimalen Menge von vier Punkten repräsentiert wird.
+
+Abb. 2: Minimalbeispiel für einen Keil als XML/SVG-Datei.
+
+Das selbe Format wird von proprietären Zeichenprogrammen und dem Open Source Pendant Inkscape
+verwendet, die beide in der Assyriologie und in der Grabungsdokumentation in der Archäologie zum Einsatz
+kommen. Damit ist automatisch sichergestellt, dass aus 3D-Modellen berechnete Zeichnungen kompatibel sind
+zu digitalen Handzeichnungen. Darüber hinaus bietet SVG – wie alle anderen – XML-Dateien die Möglichkeit
+zur automatischen und manuellen Annotation, wie es in den digitalen Textwissenschaften üblich ist. Abbildung 3
+zeigt einen Vergleich zwischen einer digitalen Handzeichnung und einer berechneten Zeichnungen des
+zugehörigen 3D-Modells.
+
+Abb 3:Das Zeichen „ka“ digital mit der Hand gezeichnet und aus einem 3D-Modell berechnet.
+
+Die Vektordarstellung der Keilschriftzeichen sowie die komplexe zweidimensionale Anordnung von
+Keilabdrücken verhindert die Anwendung von gebräuchlichen OCR Methoden, die Zeichen in Rasterdarstellung
+[AGFV14] und aufeinander folgende Zeichen [RRF13] erwarten. Die Analyse von Keilschriftzeichen erfordert
+eine Transformation der SVG Daten in eine vereinfachte aber mathematisch handhabbare Repräsentation als
+mathematische Graphen mit Knoten und Kanten. Keilschriftzeichen identifizieren sich hauptsächlich durch die
+Lage und Position ihrer Keilabdrücke, eine Eigenschaft, die sich mit der Zerlegung des Graphen in
+Teilstrukturen, die den Keilabdrücken entsprechen, nutzen lässt. Der Teilabdruck als Teilstruktur in einem
+Graphen lässt sich einfach mit Richtungs- und Ortsvektoren beschreiben, die als Features genutzt werden, um
+Keilschriftzeichen auf Ähnlichkeit zu prüfen. Die vollständigen Graphen der Zeichen werden zudem genutzt, um
+Methoden aus dem Gebiet der Graphenähnlichkeit, wie den Graph-Kerneln und dem spektralen Embedding
+[BR10] anwenden. Die ist vor allem vorteilhaft bei komplexen bildhaften Zeichen, die sich nicht in
+Teilstrukturen von Features zerlegen lassen, aber trozdem auf Ähnlichkeit verglichen werden müssen.
+Abbildung 4 zeigt Keilschriftzeichen dargestellt als Graphen, die aus einer SVG Datei extrahiert wurden, und
+gegenseitig auf Ähnlichkeit verglichen werden. Die Aufgabe besteht darin Keilschriftzeichen, die einem Zeichen
+(L: 19) ähneln, aufzufinden. Das erste Zeichen von Links ist der gesuchte Prototyp, alle darauf folgende Zeichen
+
+sind die gefundenen Zeichen. Die Zeichen mit grünem Hintergrund wurden korrekt identifiziert, die
+Unähnlichkeit zum Prototyp wird mit „k:“ unterhalb des Zeichens betitelt. Alle fünf Zeichen, die in dem
+analysierten Dokument vorhanden waren und dem gesuchten Prototyp ähnelten, wurden erfolgreich gefunden.
+
+Abb. 4: Keilschriftzeichen in Graphenrepräsentation werden in einem SVG Dokument gesucht und auf Ähnlichkeit verglichen.
+
+Zusammenfassend werden in diesem Beitrag Methoden aus der Geometrie und der Mustererkennung vorgestellt,
+die frei von lexikographischen / linguistischen Annahmen sind. Damit werden neue Zugänge zur Integration in
+OCR System für Handschriften geschaffen, die weit über die Anwendung an Keilschrift i.e. Handschrift in 3D
+hinaus gehen. Eine direkte Anwendung an mittelalterlichen Epitaphen hat bereits Aufnahme in entsprechende
+online Datenbanken gefunden [Krö12].
+Literatur
+[AGFV14] Segmentation-free word spotting with exemplar SVMs, J. Almazán, A. Gordo, A. Fornés, E. Valveny, Journal of
+Pattern Recognition, pp. 3967-3978, Elsevier, 2014.
+[Bor10] R. Borger. Mesopotamisches Zeichenlexikon, volume 305 of Alter Orient und Altes Testament –
+Veröffentlichungen zur Kultur und Geschichte des Alten Orients und des Alten Testaments (AOAT). Ugarit-Verlag, 2.
+edition, 2010.
+[BR10] Recent advances in graph-based pattern recognition with applications in document analysis, H. Bunke, K. Riesen,
+Journal of Pattern Recognition, pp. 1057-1067, Elsevier, 2010.
+[CMFW14] M. Cammarosano, G. G.W. Müller, D. Fisseler and F. Weichert. Schriftmetrologie des Keils: Dreidimensionale
+Analyse von Keileindrücken und Handschriften, Die Welt des Orients, Ausgabe: 44.1, 2014.
+[GWLU05] B. Groneberg, F. Weiersh#user, T. Linnemann, and D. Ullrich. Jahrbuch der Max-Planck-Gesellschaft, chapter
+Digitale Keilschriftbibliothek Lexikalischer Listen aus Assur. Gesellschaft für wissenschaftliche Datenverarbeitung mbH ,
+Göttingen, Germany, 2005.
+[Kan13] D. Kaniewski, E. Van Campo, J. Guiot, S. Le Burel, T. Otto and C. Baeteman. Environmental Roots of the Late
+Bronze Age Crisis. PLoS ONE 8(8), 2013.
+[Krö12] S. Krömker, Kombinierte 3D-Datenaufbereitung von Schriftfeldern und Gelände des mittelalterlichen Jüdischen
+Friedhofs ‚Heiliger Sand’, in: Die SchUM‐Gemeinden Speyer–Worms–Mainz. Auf dem Weg zum Welterbe. Band zur
+Internationalen Tagung der Generaldirektion Kulturelles Erbe Rheinland‐Pfalz, angenommen, Mainz, Deutschland, 2012.
+[MK13] H. Mara and S. Krömker. Vectorization of 3D-Characters by Integral Invariant Filtering of High-Resolution
+Triangular Meshes. Proc. of 12. Int. Conference on Document Analysis and Recognition (ICDAR/IAPR), pp. 62–66,
+Washington, DC, USA, 2013.
+[MKJB10] H. Mara, S. Krömker, S. Jakob and B. Breuckmann. GigaMesh and Gilgamesh - 3D Multiscale Integral Invariant
+Cuneiform Character Extraction. Proc. VAST Int. Symposium on Virtual Reality, Archaeology and Cultural Heritage, pp.
+131-138, Palais du Louvre, Paris, France, 2010.
+[RRF13] Bag-of-Features HMMs for segmentation-free word spotting in handwritten documents, L. Rothacker, M. Rusinol,
+G.A. Fink, Proc. of 12th International Conference on Document Analysis and Recognition, pp. 1305-1309, Washington, DC,
+USA, 2013.
+[Sod94] W. von Soden. The ancient Orient: an introduction to the study of the ancient Near East. Wm. B. Eerdmans
+Publishing Co., 1994.
+[Spe81] G. Sperl. Erkennen von Keilschriftzeichen mit Hilfe Elektronischer Rechenanlagen. PhD thesis, Leopold-FranzensUniversität Innsbruck, Innsbruck, Austria, 1981.
+

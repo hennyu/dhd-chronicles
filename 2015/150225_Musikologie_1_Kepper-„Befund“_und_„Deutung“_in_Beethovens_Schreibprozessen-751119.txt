@@ -1,0 +1,129 @@
+„Befund“ und „Deutung“ in Beethovens Schreibprozessen
+
+(DHd Graz 2015)
+
+„Befund“ und „Deutung“ in Beethovens Schreibprozessen
+Aus philologischer Sicht stellen genetische Ausgaben eine besondere Herausforderung dar, da sie mit dem
+sogenannten avant-texte1 Unfertiges in den Blick nehmen. Dies führt gerade im Bereich der Edition von Musik zu
+einem „terminologischen“ Problem, das zugleich die Deutung betrifft: Eine skizzierte Melodielinie ohne
+verbindlich notierte Tondauern ist eben keine Aneinanderreihung z.B. von Viertelnoten, sondern schlicht
+graphisch unvollständig niedergeschrieben. Dabei ist ein solches Notat keineswegs lücken- oder gar fehlerhaft –
+alle aus Sicht des Komponisten zu diesem Zeitpunkt relevanten Parameter sind ja tatsächlich bereits festgelegt.
+Dennoch erweist es sich als schwierig, derartige Notate angemessen zu beschreiben. Eine echte Brücke von
+Befund zu Deutung schlagen diese Ausgaben jedoch oft nicht, da auch bei Vorliegen einer Transkription die
+Zuordnung des vom Editor Gelesenen bzw. Interpretierten zu den zugrunde gelegten Graphemen durch mehrfache
+Überschreibungen, Löschungen, Restitutionen und Querbezüge oft kaum möglich ist. Selbst wenn es (scheinbar)
+gelingt, diese Zuordnung zwischen Transkription und originaler Handschrift zu klären, fehlt es dem Leser der
+Ausgabe in der Regel an Leseerfahrung im Umgang mit Beethovens Schreibgewohnheiten, so dass manch
+eindeutiger Sachverhalt schwer nachvollziehbar, Unsicheres hingegen durch die vermeintliche Bestimmtheit der
+Transkription unhinterfragt bleibt. Gleichwohl können verbale Erläuterungen seitens des Editors dieses Problem
+nur bedingt lösen, da die Umständlichkeit der Adressierung einzelner Aktionen des Schreibers mit steigender
+graphischer Komplexität ebenfalls zunimmt.
+Im Jahr 2011 stellte die Text Encoding Initiative (TEI) ein Modell zur Codierung von textgenetischen Prozessen
+zur Diskussion, welches seit 2007 von einer gesonderten Arbeitsgruppe entwickelt worden war. Das
+Grundkonzept dieses Modells ist es, neben der Codierung des Textes (mit den bisherigen Mitteln der TEI) eine
+weitere, parallele Codierung anzubieten, die sich ausschließlich am zu erfassenden Dokument orientiert und statt
+semantischer Einheiten wie Absätzen oder Verszeilen ausschließlich mit graphischen Einheiten wie Seiten und
+Textzeilen operiert. Diese beiden Codierungen, die sich nebeneinander im gleichen Dokument ablegen lassen,
+können dann über Querverweise in Bezug gesetzt werden, um etwa die zu einer Textschicht gehörenden
+Grapheme zu identifizieren. Damit wird es theoretisch möglich, die Einheiten „Dokument“ und „Text“ in einer
+digitalen textgenetischen Edition sauber zu differenzieren.
+Allerdings gibt es bis heute teils sehr kritische Äußerungen und Diskussionen, in deren Kern immer wieder die
+Frage steht, ob statt einer parallelen Codierung nicht ein „eingebettetes“ Modell, bei dem also Text und Dokument
+zeitgleich adressiert werden, geeigneter sei, auch wenn dabei besondere Herangehensweisen zur Vermeidung von
+überlappenden Hierarchien nötig seien. Der wesentliche Grund für diese Diskussionen dürfte die mitunter
+schwierige Abgrenzung zwischen Dokument und Text sein, zumal einerseits das Modell der TEI in beiden
+Bereichen teils auf die gleichen Elemente zurückgreift, andererseits das Verhältnis zu den prozessbeschreibenden
+Elementen innerhalb der Textcodierung (<tei:del> für Streichungen etc.) nicht abschließend geklärt zu sein
+scheint. Entsprechend finden sich Positionen, die je nach Hintergrund des jeweiligen Wissenschaftlers eine beide
+Aspekte einschließende Codierung entweder aus der Perspektive des Textes (also basierend auf dem bisherigen
+TEI-Modell) oder des Dokuments (und damit des neuen textgenetischen Modells) fordern 2.
+Das Projekt „Beethovens Werkstatt“ hat sich zum Ziel gesetzt, die hochkomplexe Dynamik kompositorischer
+Prozesse im Œuvre Beethovens zu erforschen und in exemplarischen digitalen Editionen zu dokumentieren. Dazu
+sollen nach Möglichkeit die kompositorischen Schreibprozesse sowohl innerhalb einzelner Autographen als auch
+in der Abfolge aufeinander beziehbarer Werkstattmanuskripte rekonstruiert werden, um so Aufschluss über
+Beethovens kompositorisches Denken, Handeln und Entscheiden zu erlangen. Dabei steht das Projekt in der
+1
+2
+
+Zum Begriff vgl. Almuth Grésillon: Literarische Handschriften. Einführung in die „critique génétique“, Bern 1999, S. 139f.
+Ein gutes Beispiel einer solchen Diskussion mit allen geschilderten Positionen findet sich im Februar 2014 auf der Mailing-Liste
+der TEI unter dem Titel „Embedded transcription and text structure“ (archiviert unter http://listserv.brown.edu/archives/cgibin/wa?A2=tei-l;29c06075.1402).
+1
+
+„Befund“ und „Deutung“ in Beethovens Schreibprozessen
+
+(DHd Graz 2015)
+
+Tradition der gedruckten Editionen von Beethovens Skizzen, sieht sich aber gleichzeitig innerhalb der Digital
+Humanities als möglicher Nutzer einer abstrahierten Umsetzung des TEI-Modells für genetische Editionen. Beide
+Bezugspunkte erweisen sich allerdings als brüchig und nur bedingt anschlussfähig. Während die gedruckten
+Ausgaben aufgrund ihrer abweichenden medialen Rahmenbedingungen keine unmittelbar ins Digitale
+übertragbaren Konzepte bereitstellen, gelten ähnliche Einschränkungen für das auf literarische Texte ausgelegte
+Modell der TEI: Durch das im Falle von „Beethovens Werkstatt“ andere Schriftmedium – Notenschrift vs. Texte,
+die man in der Informatik als mehr oder weniger „ASCII-based“ bezeichnen würde 3 – verschieben sich einige der
+zu behandelnden Probleme vom Sonder- zum Regelfall. Dazu zählt in besonderer Weise die sinnentstellende
+Unvollständigkeit des graphischen Einzelzeichens – selbst in Skizzen werden in der Literaturwissenschaft i.d.R.
+vollständige Buchstaben (als kleinste sinnvolle Einheit) notiert. In der Musik gilt diese Voraussetzung (wie
+beschrieben) so nicht: Ein Melodieverlauf kann durch Notenköpfe skizziert werden, ohne dass diese bereits eine
+rhythmische Abfolge festlegen. Dabei wird die mangelnde Festlegung der rhythmischen Komponente am
+einzelnen Notenzeichen nicht zwingend ersichtlich. Eine Skizze ist also ggf. nicht als solche zu erkennen und
+verleitet damit zu Deutungen, die so vom Befund nicht gedeckt werden.
+Eine Codierung von Musik, etwa mit den Mitteln der Music Encoding Initiative (MEI), operiert ohnehin in
+anderer Weise als etwa eine Codierung mit TEI. Während in TEI ein Text, dessen grundlegender Zeichenvorrat
+mit ASCII-Zeichen erfasst, durch XML-Elemente angereichert und im vom englischen „Markup“ kommenden
+Sinne deutend ausgezeichnet wird, gibt es für die Musik keine „direkte“ Beziehung zwischen einer Note und ihrer
+digitalen Entsprechung, wie es im Textbereich eine Beziehung zwischen Buchstabe und ASCII-Codepoint gibt.
+Schon für diese kleinste Einheit muss also ein „beschreibendes Markup“ gewählt werden, bei dem sämtliche
+relevanten Parameter der Note explizit erfasst werden 4. Es dürfte offensichtlich sein, dass diese Art der Codierung
+der beschriebenen graphischen Offenheit gerade skizzenhafter Musiknotation sehr deutlich im Wege steht und alle
+bestehenden Möglichkeiten zum Umgang mit Mehrdeutigkeit zwingend zu sehr umfangreichen und komplexen
+Codierungen führen müssen. Eine parallele Codierung von Text und Dokument, wie sie das Modell der TEI
+vorsieht, erscheint daher aus musikwissenschaftlicher Perspektive als wenig praktikabel.
+Stattdessen wurde für das Projekt ein Codierungsmodell entworfen, das eine sehr viel klarere Unterscheidung
+zwischen Dokument und Text erlaubt und auf diese Weise eine Diskussion, wie sie auf Seiten der TEI zu
+beobachten ist, vermeiden hilft. Da „Beethovens Werkstatt“ in Teilen am Beethoven-Haus Bonn angesiedelt ist,
+stehen dem Projekt für einen Großteil der behandelten Werke hochauflösende Faksimiles zur Verfügung. In diesen
+werden nun sämtliche Eintragungen auf der Ebene der einzelnen Strichführungen nachgezeichnet und als SVGDateien5 vorgehalten. Die einzelnen Textschichten (soweit erkennbar) werden dann in einer sauberen
+Transkription, d.h. in heutiger Notenschrift ohne den Versuch einer diplomatischen Wiedergabe, codiert, wobei
+editorische Zusätze ebenso wie Mehrdeutigkeiten und offene Interpretationen selbstverständlich also solche
+gekennzeichnet werden. Jedes einzelne Zeichen wird dann mit den ihm zugehörigen Eintragungen Beethovens im
+Faksimile verknüpft, so dass der Benutzer der Ausgabe unmittelbar durch einen Klick auf eine transkribierte Note
+den dieser Deutung zugrunde liegenden Befund im Faksimile durch eine (ausblendbare) farbliche Hervorhebung
+nachvollziehen kann. Sämtliche Prozess-Informationen zu Streichungen, Ersetzungen, Restitutionen etc. werden
+dabei als Funktion des Textes bzw. der Textentwicklung erfasst, wobei die einzelnen Eingriffe wie Streichungen
+durchaus auch den graphischen Manifestationen im Faksimile zugeordnet werden.
+Dieses Modell zeichnet sich dadurch aus, dass es auf Seiten des Dokuments (also im Faksimile) weitgehend ohne
+3
+
+4
+5
+
+ASCII (American Standard Code for Information Interchange) ist eine Auflistung von 128 Zeichen, die hier als Grundlage der
+Belegung einer Computertastatur verstanden und gleichzeitig als stellvertretend für umfangreichere Zeichencodierungen wie
+etwa UTF-8 als technische Festlegung der Beziehung von (Einzel-)Zeichen und Bedeutung interpretiert wird.
+Die Codierung einer Viertelnote „C“ in der vierten Oktave wäre in MEI etwa: <note pname=“c“ oct=“4“ dur=“4“/>.
+Scalable Vector Graphics (SVG) ist ein Bildformat, welches beliebig skaliert werden kann und es erlaubt, die so markierten Teile
+jederzeit nachträglich beliebig einzufärben oder hervorzuheben.
+2
+
+„Befund“ und „Deutung“ in Beethovens Schreibprozessen
+
+(DHd Graz 2015)
+
+Interpretation auskommt6, während alle editorischen Deutungen auf Seiten des Textes gebündelt werden. Durch
+den Einsatz des gegenüber den Inhalten agnostischen Datenformats SVG bietet es dabei eine klarere Trennung
+von „Befund“ und „Deutung“ bzw. „Dokument“ und „Text“ als die parallele Codierung im Modell der TEI, die
+letztlich auf beiden Seiten auf die gleichen Grundbegriffe zurückgreift. Gleichzeitig werden auf diese Weise (und
+in Abgrenzung zu den herkömmlichen gedruckten Ausgaben) jedoch Dokument und Text(schichten) so eng
+verzahnt, dass der Benutzer der Ausgabe jederzeit nachvollziehen kann, worauf sich die Deutungen des Editors
+beziehen.
+Im Vortrag soll das Modell anhand ausgewählter Beispiele ausführlicher vorgestellt und diskutiert werden.
+
+6
+
+Die Identifizierung bzw. Differenzierung einzelner Schreibvorgänge kann bei mehrfacher Überschreibung bereits
+Interpretationen erforderlich machen. Dies ist aber eher als grundsätzliches editorisches Problem zu verstehen und ist kein
+Charakteristikum des Modells.
+3
+

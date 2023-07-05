@@ -1,0 +1,141 @@
+Digitale	  Analyse	  Graphischer	  Literatur	  
+Alexander	  Dunst1,	  Rita	  Hartel2,	  Sven	  Hohenstein3,	  Jochen	  Laubrock3	  
+1
+Institut	  für	  Anglistik	  und	  Amerikanistik,	  Universität	  Paderborn	  
+2
+Institut	  für	  Informatik,	  Universität	  Paderborn	  
+3
+	  Department	  Psychologie,	  Universität	  Potsdam	  
+	  
+	  
+Zusammenfassung	  
+	  
+Der	   hier	   vorgeschlagene	   Vortrag	   stellt	   erste	   Ergebnisse	   der	   vom	   deutschen	   Bundesministerium	   für	  
+Bildung	   und	   Forschung	   (BMBF)	   finanzierten	   Nachwuchsgruppe	   „Hybride	   Narrativität:	   Digitale	   und	  
+Kognitive	  Methoden	  zur	  Erforschung	  Graphischer	  Literatur“	  vor.	  Der	  erste	  Teil	  des	  Vortrages	  wird	  das	  
+Projekt	   der	   Nachwuchsgruppe	   und	   zentrale	   Forschungsfragen	   vorstellen.	   Im	   zweiten	   Teil	   wird	   eine	  
+kurze	  Einführung	  in	  die	  wichtigsten	  Merkmale	  der	  Beschreibungssprache	  „Graphic	  Narrative	  Markup	  
+Language“	   (GNML)	   gegeben	   sowie	   die	   wesentlichen	   Funktionen	   des	   Editors	   zur	   Erfassung	   und	  
+Analyse	   graphischer	   Erzählungen	   demonstriert.	   Außerdem	   präsentieren	   wir	   erste	   Ergebnisse,	   die	   mit	  
+Hilfe	  von	  Netzwerkgraphen	  und	  Beziehungsmatrizen	  zu	  Paul	  Austers	  City	  of	  Glass	  (1985)	  und	  dessen	  
+graphischer	   Adaptation	   durch	   David	   Mazzuchelli	   und	   Paul	   Karasik	   (1994)	   strukturelle	   Ähnlichkeiten	  
+und	   Differenzen	   zwischen	   den	   narrativen	   Systemen	   des	   literarischen	   und	   graphischen	   Romans	  
+darstellen.	   Der	   abschließende	   dritte	   Teil	   stellt,	   wiederum	   am	   Beispiel	   von	   City	   of	   Glass,	   eines	   der	  
+interdisziplinären	   Anwendungsgebiete	   der	   digitalen	   Annotation	   graphischer	   Literatur	   vor:	   anhand	  
+von	   Blickbewegungsmaßen	   können	   Rückschlüsse	   auf	   das	   Leseverständnis	   graphischer	   Literatur	  
+gewonnen	  werden.	  
+	  
+1. Forschungsfragen	  
+	  
+Die	  digitale	  Annotation	  und	  Analyse	  literarischer	  Text-­‐Korpora	  kann	  in	  den	  vergangenen	  Jahren	   auf	  
+enorme	  Fortschritte	  verweisen	  und	  hat	  neue	  Erkenntnisprozesse	  etabliert,	  die	   mittlerweile	  Eingang	  
+in	  die	  Forschungsbestrebungen	  einer	  breiteren	  Literaturwissenschaft	  und	  Literaturgeschichte	  finden	  
+(1).	   Im	   Gegensatz	   dazu	   steckt	   die	   Analyse	   visueller	   Kultur	   erst	   in	   den	   Anfängen	   und	   stellt	   in	   den	  
+Digitalen	   Geisteswissenschaften	   aus	   mehreren	   Gründen	   oft	   eine	   Randerscheinung	   dar:	   zu	   der	  
+institutionellen	  Verortung	  in	  traditionell	  text-­‐fokussierten	  Disziplinen	  und	  den	  Forschungsinteressen	  
+der	   Computerphilologie	   gesellen	   sich	   urheberrechtliche	   Fragen,	   sowie	   der	   vergleichsweise	   hohe	  
+technische	  Aufwand	  und	  niedrigere	  Entwicklungsstand	  von	  Methoden	  der	  Bildanalyse.	  	  
+Ziel	   dieses	   interdisziplinären	   Projektes	   ist	   die	   empirische	   Erforschung	   graphischer	   Literatur,	  
+insbesondere	   des	   Genres	   des	   graphischen	   Romans	   („graphic	   novel“).	   Durch	   die	   Entwicklung	   von	  
+empirischen	   Methoden	   für	   graphische	   	   Literatur	   sollen	   Ansätze	   aus	   dem	   „Distant	   Reading“	   für	  
+multimediale	   Kulturformen	   erschlossen	   werden.	   Die	   durch	   die	   Nachwuchsgruppe	   entwickelten	  
+Annotations-­‐Werkzeuge,	  insbesondere	  die	  XML-­‐Sprache	  GNML	  und	  der	  GNML-­‐Web-­‐Editor	  (siehe	  2.),	  
+sind	  in	  weiterer	  Folge	  nicht	  nur	  für	  die	  Beschäftigung	  mit	  graphischer	  Literatur	  sondern	  auch	  für	  die	  
+Analyse	   von	   Handschriften,	   Film	   und	   Fernsehen	   von	   Interesse.	   In	   erster	   Linie	   zielt	   die	  
+Nachwuchsgruppe	   jedoch	   darauf	   ab,	   grundlegende	   Fragen	   zur	   spezifischen	   Narrativität	   und	   dem	  
+formalen	   Aufbau	   des	   graphischen	   Romans	   zu	   beantworten,	   die	   im	   Rahmen	   qualitativer	   Methoden	  
+nicht	   empirisch	   überprüft	   werden	   können	   oder	   vollständig	   außerhalb	   des	   Forschungsradius	  
+hermeneutischer	   Fragestellungen	   in	   den	   Geisteswissenschaften	   liegen.	   Folgende	   zentrale	  
+Forschungsfragen	  sind	  hier	  beispielshaft	  zu	  erwähnen:	  Beschreibt	  der	  Terminus	  graphischer	  Roman,	  
+	  
+
+1	  
+
+ursprünglich	   ein	   Begriff	   aus	   der	   Verlagswerbung,	   tatsächlich	   strukturelle	   Ähnlichkeiten	   mit	   dem	  
+literarischen	   Roman?	   Welche	   Charakteristika	   unterscheiden	   den	   graphischen	   Roman	   vom	  
+Comicbuch?	   Lassen	   sich	   strukturelle	   Innovationen	   isolieren	   und	   historisch	   verfolgen,	   die	   das	   Genre	  
+erfolgreich	  haben	  werden	  lassen?	  Sind	  diese	  narratologischer	  oder	  thematischer	  Natur,	  oder	  handelt	  
+es	   sich	   um	   eine	   Kombination	   beider?	   Aus	   welchen	   Sub-­‐Genres	   besteht	   der	   graphische	   Roman,	   und	  
+wie	  interagieren	  diese	  im	  System	  des	  Genres?	  Welche	  gesellschaftlich	  relevanten	  Fragen	  werden	  im	  
+graphischen	  Roman	  kulturell	  verarbeitet	  und	  tragen	  so	  zu	  seiner	  Popularität	  bei?	  
+	  
+2. Editor	  als	  Erfassungs-­‐	  und	  Analysewerkzeug	  
+	  
+Die	  auf	  der	  „Comic	  Book	  Markup	  Language	  (CBML)“	  (2)	  und	  damit	  auf	  der	  „Text	  Encoding	  Initiative“	  
+(TEI)	   (3)	   basierende	   und	   im	   Rahmen	   dieses	   Projektes	   entwickelte	   XML-­‐Sprache	   GNML	   erlaubt	   dem	  
+Bearbeiter	  nicht	  nur	  das	  Erfassen	  textueller	  sondern	  insbesondere	  auch	  visueller	  Aspekte	  graphischer	  
+Erzählungen.	   Mit	   Hilfe	   von	   GNML	   	   können	   unter	   anderem	   Seiten,	   Panel-­‐Anordnungen,	   Texte,	  
+Sprechblasen,	  Charaktere	  und	  andere	  Objekte	  erfasst	  werden,	  sowie	  Interpretationen,	  z.B.	  zu	  Panel-­‐
+Übergänge	  und	  Texttypen,	  abgelegt	  werden.	  GNML	  bietet	  somit	  eine	  abstrakte	  Sicht	  auf	  visuelle	  und	  
+textuelle	   Aspekte,	   die	   so	   effizient	   analysiert	   werden	   können.	   Basierend	   auf	   GNML	   können	   z.B.	  
+Eyetracking-­‐Experimente	   ausgewertet	   werden,	   und	   Fragestellungen	   wie	   „Wie	   oft	   wechselt	   die	  
+Aufmerksamkeit	   des	   Lesers	   vom	   Text	   zum	   Bild“	   oder	   „Was	   ist	   der	   relative	   (visuelle)	   Anteil	   eines	  
+Charakters	  an	  der	  gesamten	  Erzählung“	  effizient	  beantwortet	  werden.	  
+Eine	   zentrale	   Rolle	   dieses	   Projektes	   nimmt	   der	   GNML-­‐Editor	   ein.	   Er	   erlaubt	   ein	   effizientes,	  
+benutzerfreundliches	   Erfassen	   der	   visuellen	   und	   textuellen	   Aspekte,	   ohne	   dass	   der	   Bearbeiter	   XML	  
+oder	   GNML	   beherrschen	   muss.	   Neben	   der	   Erfassung	   visueller	   Aspekte,	   bei	   der	   Objekte	   durch	   den	  
+Bearbeiter	  nachgezeichnet	  und	  annotiert	  werden	  können,	  bietet	  der	  Editor	  auch	  die	  automatisierte	  
+Erkennung	   verschiedener	   Aspekte.	   Derzeit	   bietet	   der	   Editor	   z.B.	   eine	   automatische	   Erkennung	   der	  
+Panels.	   Hierbei	   werden	   nicht	   nur	   regelmäßige	   Formen	   (Rechtecke),	   sondern	   nahezu	   beliebige	  
+Umrandungsformen	   automatisch	   erkannt.	   Eine	   weiterführende	   automatisierte	   Erfassung,	   etwa	   mit	  
+Hilfe	   von	   Texterkennungssystemen	   und	   Handschriftenerfassung	   oder	   das	   automatische	   Erkennen	  
+von	   Charakter-­‐Objekten,	   befinden	   sich	   derzeit	   in	   Entwicklung.	   Verfahren	   aus	   dem	   Bereich	   des	  
+maschinellen	  Lernens	  sollen	  dafür	  sorgen,	  dass	  die	  Erkennung	  neuer	  Charaktere	  mit	  zunehmendem	  
+Training	  zuverlässiger	  funktioniert.	  
+Ein	  zusätzliches	  Analysetool	  ermöglicht	  die	  Analyse	  bereits	  erfasster	  GNML	  Dokumente.	  So	  kann	  der	  
+Benutzer	   z.B.	   sich	   die	   Beziehungen	   der	   Charaktere	   untereinander	   in	   Form	   von	   Netzwerkgraphen	   und	  
+Beziehungsmatrizen	   anzeigen	   lassen.	   Auch	   erweiterte	   Statistiken	   über	   die	   Objekte	   und	   Charaktere	  
+der	  Erzählung	  können	  berechnet	  und	  dem	  Benutzer	  in	  Form	  von	  Diagrammen	  und	  Tabellen	  angezeigt	  
+werden,	  basierend	  z.B.	  auf	  den	  folgenden	  Fragestellungen:	  
+•
+•
+•
+
+Wie	  oft	  erscheint	  ein	  Charakter?	  
+Was	  ist	  der	  relative	  visuelle	  Anteil	  eines	  Charakters?	  
+Mit	  wem	  zusammen	  erscheint	  der	  Charakter	  auf	  derselben	  Seite	  oder	  in	  demselben	  Panel?	  
+	  
+
+3. Empirische	  Ergebnisse:	  Eyetracking-­‐Maße	  für	  die	  Aufmerksamkeitszuwendung	  des	  Lesers	  
+	  
+Die	   Methode	   der	   Blickbewegungsmessung	   (Eyetracking)	   liefert	   Einblicke	   in	   die	   größtenteils	  
+unbewusste	   und	   in	   gewissem	   Maße	   kulturspezifische	   Verteilung	   der	   Aufmerksamkeit	   bei	   der	  
+visuellen	   Rezeption	   von	   Informationen.	   Für	   die	   Rezeption	   von	   Texten	   hat	   die	   psycholinguistische	  
+Forschung	   hier	   bereits	   viele	   grundlegende	   Erkenntnisse	   gewonnen,	   und	   die	   Methode	   wird	   auch	  
+	  
+
+2	  
+
+erfolgreich	   bei	   der	   Erforschung	   der	   kognitiven	   Verarbeitung	   von	   Bildern	   oder	   visuellen	   Szenen	  
+angewandt.	   Sequenzielle	   Kunst,	   Comics	   und	   graphische	   Literatur	   sind	   jedoch	   bisher	   fast	   völlig	  
+vernachlässigt,	   obwohl	   sie	   idealtypisch	   textuelle	   und	   graphische	   Elemente	   kombinieren.	   Die	   Nutzung	  
+per	   GNML	   annotierten	   Materials	   eröffnet	   neue	   Möglichkeiten,	   die	   psychologische	   Wirkung	  
+graphischer	  Literatur	  zu	  untersuchen.	  	  
+Wie	   gelingt	   es	   einem	   Zeichner,	   die	   Aufmerksamkeit	   des	   Lesers	   von	   einem	   Panel	   zum	   nächsten	   zu	  
+lenken?	  Wie	  interagieren	  textuelle	  und	  graphische	  Elemente	  bei	  der	  Rezeption	  eines	  Comics?	  Scott	  
+McCloud	  (4)	  hat	  dazu	  erste	  theoretische	  Überlegungen	  angestellt	  und	  visualisiert;	  Neil	  Cohn	  (5)	  hat	  
+die	   theoretische	   Analyse	   weiterentwickelt	   zu	   einer	   formalen	   „visuellen	   Sprache“,	   die	   vergleichbar	  
+einer	   generativen	   Grammatik	   die	   narrativen	   Elemente	   einer	   graphischen	   Geschichte	   kategorisiert.	  
+Haben	   diese	   Ordnungsschemata	   eine	   psychologische	   Realität?	   Erste	   Eyetracking-­‐Studien	   aus	  
+unserem	   Labor	   zeigen,	   dass	   das	   von	   McCloud	   postulierte	   Ausmaß	   an	   „Closure“,	   das	   zwischen	  
+unterschiedlichen	   Arten	   von	   Panel-­‐Übergängen	   variiert,	   sich	   in	   unterschiedlich	   langen	  
+Betrachtungszeiten	  niederschlägt.	  	  
+Wir	   zeigen	   außerdem	   erste	   Ergebnisse	   aus	   einem	   empirischen	   Eyetracking-­‐Corpus	   graphischer	  
+Literatur.	   Im	   Kontext	   des	   Projektes	   wird	   ein	   R-­‐Paket	   zum	   Import	   von	   GNML-­‐Daten	   und	   zur	  
+statistischen	   Analyse	   und	   Visualisierung	   von	   Blickbewegungen	   und	   Corpusdaten	   entwickelt,	   das	   in	  
+diesen	  Analysen	  zur	  Anwendung	  kommt.	  
+Literaturverzeichnis	  
+	  
+1.	  Siehe	  etwa:	  Moretti,	  Franco.	  Distant	  Reading.	  London:	  Verso,	  2013.	  
+2.	   Walsh,	   John.	   Comic	   Book	   Markup	   Language:	   An	   Introduction	   and	   Rationale.	   Digital	   Humanities	  
+Quarterly.	  2012,	  Volume	  6,	  Number	  1.	  
+3.	   Text	   Encoding	   Initiative	   -­‐	   P5:	   Guidelines	   for	   Electronic	   Text	   Encoding	   and	   Interchange.	   [Online]	  
+2.7.0,	  09	  16,	  2014.	  http://www.tei-­‐c.org/release/doc/tei-­‐p5-­‐doc/en/html/.	  
+4.	   McCloud,	   Scott.	   Understanding	   Comics:	   The	   Invisible	   Art.	   Northampton,	   MA:	   Kitchen	   Sink	   Press,	  
+1993.	  
+5.	  Cohn,	  Neil.	  The	  Visual	  Language	  of	  Comics.	  London:	  Bloomsbury,	  2013.	  
+
+	  
+
+3	  
+

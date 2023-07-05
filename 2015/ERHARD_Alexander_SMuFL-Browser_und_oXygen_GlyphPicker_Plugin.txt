@@ -1,0 +1,75 @@
+Poster proposal DHd 2015
+
+SMuFL-Browser und oXygen
+GlyphPicker Plugin
+Werkzeuge zur Integration musikalischer Symbole in TEI
+
+Alexander Erhard∗
+
+Peter Stadler†
+
+Die digitale Edition von musikalischen Texten und Texten über Musik bedarf
+an vielen Stellen der Darstellung musikalischer Zeichen und Symbole. Im Bereich
+1D100–1D1FF des aktuellen Unicode-Standards sind zwar „Musical Symbols“1
+definiert, diese insgesamt 220 Zeichen decken aber nur einen Bruchteil des
+in der Praxis benötigten Repertoires ab. Eine breiter angelegte Systematik
+musikalischer Zeichen liegt in den Spezifikationen des Standard Music Font
+Layout (SMuFL)2 vor, welche musikalischen Symbolen – ähnlich der Medieval
+Unicode Font Initiative (MUFI)3 im Bereich mittelalterlicher Zeichen – die
+Codepoints der Unicode Private Use Area zuordnen. Obwohl gegenwärtig kein
+Versuch unternommen wird, diese Zeichen in den offiziellen Unicode-Standard
+einzubringen, so stellt SMuFL doch für den Bereich musikalischer Symbole
+aufgrund seiner breiten Abdeckung einen de-facto-Standard dar.
+Der Gebrauch von Unicode-Zeichen ist (neben dem Auszeichnen nach MEI
+oder MusicXML, dem Einbinden von Grafiken etc.) eine der von der TEI Music
+SIG in ihren Empfehlungen zu „TEI with Music Notation“4 diskutierten Möglichkeiten, musikalische Zeichen in TEI-Dokumenten zu repräsentieren. Einen
+∗
+
+Richard Strauss: Werke. Kritische Ausgabe, Universität München
+Carl-Maria-von-Weber-Gesamtausgabe, Universität Paderborn
+1
+Vgl. Perry Roland, Proposal for Encoding Western Music Symbols in ISO/IEC 10646,
+revised February 19, 1998, online verfügbar unter https://archive.today/PzkaT
+2
+http://www.smufl.org
+3
+http://folk.uib.no/hnooh/mufi/
+4
+http://www.tei-c.org/SIG/Music/twm/
+†
+
+1
+
+besonders geeigneten Ort hat die Verwendung von Musiksymbolen unseres Erachtens dort, wo einzelne musikalische Zeichen (oder kurze Sequenzen) losgelöst
+von einem größeren musikalischen Kontext in Worttext eingeflochten sind. Um
+das Finden und Einfügen dieser Symbole nach dem SMuFL-Standard in TEI
+Dokumenten zu vereinfachen, haben wir den Webservice „SMuFL-Browser“5
+sowie das oXygen-Plugin „GlyphPicker“6 entwickelt.
+Grundlage des Webservices sind Definitionen der mehr als 2000 Zeichen
+und Symbole im TEI-Format (mittels <charDecl> und <char>), die auf den
+SMuFL-Spezifikationen beruhen und als standardisierte Zielpunkte bei der
+Codierung von Musiksymbolen in TEI-Dokumenten (z. B. in der Form <tei:g
+ref=”http://mywebservice/smufl-browser/restQuarter”/>) dienen können. Die Web-Oberfläche des SMuFL-Browsers erlaubt das bequeme Durchsuchen der Definitionen und stellt für jedes Musiksymbol neben BeispielGraphiken auch Code-Fragmente zum Einfügen in TEI-Dokumente bereit. Die
+Funktionalität orientiert sich an der ENRICH gBank application,7 geht aber
+durch die Bereitstellung einer REST-Schnittstelle für maschinelle Abfragen
+darüber hinaus. Via Content Negotiation werden Anfragen neben HTML auch
+in den Formaten TEI-XML oder JSON beantwortet, wodurch der Webservice
+auch als flexible Datengrundlage externer Tools dienen kann.
+Die oXygen-Erweiterung „GlyphPicker“ versteht sich als Ergänzung zur regulären Zeichentabelle von oXygen und nutzt dafür den vorgenannten Webservice
+SMuFL-Browser. Sie unterstützt das Auffinden und Einfügen von Unicodefremden Zeichen, für die Definitionen in TEI mittels der Elemente <char>
+und <charDecl> vorliegen. Das Plugin bereitet entsprechende Definitionen
+zu Zeichentabellen in oXygen auf und stellt Mittel bereit, Verweise auf diese Definitionen (in Form von <g>-Elementen) in Dokumente einzufügen. Die
+Datenquellen der Zeichen-Definitionen sind im Plugin frei bestimmbar: Webservices wie der SMuFL-Browser werden ebenso unterstützt wie lokal abgelegte
+TEI-Dateien mit projektspezifischen Vorgaben. Das Plugin ist in der Texteditorund Autor-Ansicht von oXygen nutzbar und kann sowohl selbständig als auch
+in Kombination mit einem Autor-Framework eingesetzt werden.
+
+5
+
+https://github.com/Edirom/SMuFL-Browser
+https://github.com/aerhard/glyphpicker
+7
+http://www.manuscriptorium.com/apps/gbank/
+6
+
+2
+

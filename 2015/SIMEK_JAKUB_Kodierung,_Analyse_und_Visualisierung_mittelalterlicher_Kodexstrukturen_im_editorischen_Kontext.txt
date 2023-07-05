@@ -1,0 +1,86 @@
+Dr. Jakub Šimek
+
+Christoph Forster
+
+Universität Heidelberg
+Germanistisches Seminar
+Hauptstraße 207–209
+D-69117 Heidelberg
++49-(0)6221-543217
+
+datalino. Forster, Fabian, Krumnow PartG
+Martin-Luther-Straße 120
+D-10825 Berlin
++49-(0)30-78893232
+forster@datalino.de
+
+jakub.simek@gs.uni-heidelberg.de
+
+DHd-Tagung 2015
+Von Daten zu Erkenntnissen: Digitale Geisteswissenschaften als
+Mittler zwischen Information und Interpretation
+
+Kodierung, Analyse und Visualisierung
+mittelalterlicher Kodexstrukturen
+im editorischen Kontext
+Posterpräsentation – Abstract
+Für die Beschreibung der Lagen- und Blattstruktur mittelalterlicher Kodizes wird in
+gängigen Handschriftenbeschreibungen meist die Chroust’sche Lagenformel verwendet.
+Diese zeigt durch römische Buchstaben die Anzahl der Doppelblätter in einer Lage
+an, während hochgestellte Ziffern auf die Blattzählung verweisen. Bei Wiederholung
+gleichartiger Lagen in einem Kodex wird die Art dieser Lagen zusammen mit deren Anzahl
+nur einmal angegeben. Fehlende Blätter werden nur durch Minuszeichen, eingefügte durch
+Pluszeichen und deren Anzahl bei einer Lage angedeutet, ohne dass normalerweise eine
+genaue Zuordnung zum konkreten Doppelblatt möglich wäre. Die TEI sieht für den Inhalt
+des Elements <collation> keine genauere Spezifizierung vor.
+Eine Schwäche derartiger Beschreibungen ist, dass sie einerseits nicht ohne Weiteres
+maschinenlesbar und eindeutig genug sind, um mit digitalen Faksimiles verknüpft
+zu werden, und dass sie andererseits von den meisten Benutzern gedruckter und
+digitaler Ausgaben kaum wahrgenommen werden. Dabei ist die physische Lagen- und
+Blattstruktur gerade bei individuell hergestellten Buchartefakten wie mittelalterlichen
+Kodizes häufig wesentlich für das Verständnis der Textgestaltung und -überlieferung
+sowie der Seitenarrangements. So sind etwa Textlücken in einer Abschrift potenziell auf
+fehlende Blätter in der Lagenmitte der Vorlage zurückzuführen oder Texterweiterungen
+mit verfügbarem Freiraum am Ende einer Lage erklärbar.
+Die Perzeption der Zusammenhänge zwischen Lagen- und Blattstrukturen einerseits
+und dem Text andererseits ist für den Benutzer herkömmlicher Ausgaben kaum möglich,
+selbst wenn einer Edition eine Beschreibung des texttragenden Artefakts beigefügt ist. Bei
+der Textlektüre sind Informationen dieser Art in herkömmlichen Ausgaben nicht direkt
+verfügbar. Selbst dort, wo bisher versucht wurde, Lagenstrukturen als Begleitfunktion
+eines digitalen Faksimiles zu visualisieren (›Canterbury Tales Project‹, ›Parzival-Projekt‹),
+
+wurden lediglich statische Lagenskizzen mit Einzelseiten verknüpft, sodass weder ein
+analytischer Zugriff noch eine dynamische Navigation und Visualisierung möglich waren.
+Unser Ansatz, der im Zusammenhang mit der zur Zeit entstehenden Plattform ›Welscher
+Gast digital‹ (einem Kooperationsprojekt des Sonderforschungsbereichs 933 ›Materiale
+Textkulturen‹ und der Universitätsbibliothek Heidelberg) entwickelt wird, setzt bei der
+TEI-konformen Kodierung der physischen Lagen- und Blattstrukturen mittelalterlicher
+Handschriften des ›Welschen Gastes‹ an, die direkt im Code der Texttranskription
+notiert werden. Dadurch werden Abfragen möglich über die Zusammenhänge zwischen
+hierarchischen Strukturen des Werkes (Bücher, Kapitel, Verspaare, Verse) und materiellen
+Strukturen des texttragenden Artefakts. Bei der Kodierung arbeiten wir mit mehreren
+Typen der <surfaceGrp>-Elemente (binding, gathering, bifolium, leaf), die durch ihre
+Schachtelung die physische Zusammensetzung der Kodizes abbilden. Eventuelle Defekte
+(fehlende Blätter) und Ergänzungen (eingeklebte oder eingenähte Zusatzblätter) werden an
+entsprechenden Elementen durch Attribute und fehlende bzw. zusätzliche Knoten direkt
+realisiert, womit die Lagenzusammensetzung präzise beschrieben ist.
+Auf der Basis dieser Kodierung (und einer aus Performanzgründen daraus generierten
+relationalen Struktur) entwickeln wir eine visuelle SVG-Schnittstelle, die dem Benutzer
+des digitalen Faksimiles eine Navigation durch die physischen Kodexstrukturen und einen
+davon ausgehenden Zugang zu Text und Bild ermöglicht. Der Benutzer kann dadurch eine
+konkrete Lage ansteuern und darin schematisch blättern.
+An den Eckpunkten der physischen Struktur (Seitenumbrüche, Blattwechsel, Lagengrenzen)
+wird zudem das Zusammenfallen oder die Überlappung mit feinkörnigen hierarchischen
+Strukturen des Werkes (Vers- und Doppelversgrenzen) durch farbig differenzierte Symbole
+angezeigt. Schließlich visualisieren parallel mit der Lagenanzeige verlaufende Farbleisten
+Übereinstimmungen und Unterschiede der materiellen Einheiten des Buches und der
+ideellen Makrostrukturen des Werkes.
+Anstelle einer separaten Beschreibung befolgt unser Ansatz die Maxime einer in die
+digitale Edition integrierten Veranschaulichung. Damit stehen nicht nur die abgelegten
+Daten der wissenschaftlichen Analyse zur Verfügung, sondern die Visualisierungen
+an sich erschließen neue Perspektiven auf das physische ›Gewordensein‹ und die
+zugrundeliegende Planung der Kodizes. Auf diese Weise vermitteln die Darstellungen
+nicht nur die Datenbasis, sondern sind – ganz im Sinne der digitalen Geisteswissenschaften
+– ihrerseits eigenständige Impulsgeber für neue Interpretationen, die wiederum zum
+Ausgangspunkt neuer Fragestellungen werden können.
+

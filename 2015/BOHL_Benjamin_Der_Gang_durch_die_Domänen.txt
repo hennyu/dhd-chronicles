@@ -1,0 +1,88 @@
+Der Gang durch die Domänen
+zur Erfassung, Aufbereitung und Präsentation von Audiodaten im BMBF-Projekt
+Freischütz Digital“
+”
+Benjamin W. Bohl · Thomas Prätzlich · Meinard Müller · Joachim Veit
+
+Abb. 1 Exemplarische Darstellung von Archivinhalten –
+Noten- und Librettotexte (jeweils in Faksimile und Transkription) sowie Audioaufnahmen.
+
+Das BMBF-Projekt Freischütz Digital 1 (FreiDi),
+widmet sich der paradigmatischen Konzeption und Umsetzung eines genuin digitalen Editionskonzepts am Beispiel von Carl Maria von Webers Oper Der Freischütz.
+Die International Audio Laboratories Erlangen sind eine gemeinsamen Einrichtung der Friedrich-Alexander-Universität
+Erlangen-Nürnberg und des Fraunhofer-Instituts für Integrierte Schaltungen IIS.
+Benjamin W. Bohl und Joachim Veit
+Musikwissensenschaftliches Seminar Detmold/Paderborn
+Gartenstr. 20
+32756 Detmold
+Tel.: +49 5231 975-876
+E-Mail: thomas.praetzlich@audiolabs-erlangen.de
+Thomas Prätzlich und Meinard Müller
+International Audio Laboratories Erlangen
+Am Wolfsmantel 33
+91058 Erlangen – Tennenlohe
+Tel.: +49 9131 85–20 520
+E-Mail: thomas.praetzlich@audiolabs-erlangen.de
+1
+
+http://www.freischuetz-digital.de
+
+Leitgedanke ist Wierings Multidimensional Model [6],
+das im Sinne eines kritischen Archivs eine dichte Verknüpfung und Annotierung von Quellen unterschiedlicher medialer Ausprägung vorsieht (siehe Abb. 1).
+Ein für FreiDi wichtiger Aspekt ist in diesem Zusammenhang der erstmalige Einbezug von Audio-Daten in
+den Kontext einer Digitalen Edition (Detmold). Hierfür
+werden Algorithmen zur automatisierten Audiosegmentierung eingesetzt und entwickelt (Erlangen) [4, 5].
+In dieser Kombination von Musikinformatik und
+Musikwissenschaft entstehen (für ausgewählte Aufnahmen des Freischütz ) strukturell und inhaltlich reiche
+Metadaten, die die graphische, logische und akustische
+Domänen in Bezug setzen [1]. So werden zum Beispiel
+Pixelpositionen (graphische Domäne) mit Noteninformationen (logische Domäne) und Zeitpositionen (akustische Domäne) verknüpft. Die Codierungsrichtlinien
+der Music Encoding Initiative 2 (MEI) liefern hierfür
+einen umfassenden Rahmen.
+Während für die Musikwissenschaft die Kombination von graphischer und akustischer Domäne eine perspektivische Weitung im Kontext einer Digitalen Edition ermöglicht [2], und damit etwa neue Möglichkeiten
+für die Rezeptions- und Interpretationsforschung bietet, kann auch die Musikinformatik von der engen Verknüpfung der logischen mit der akustisch-performativen
+Domäne profitieren. So können zum Beispiel die mit
+den Zeitpositionen verknüpften Notentextdaten zur
+Verbesserung der Ergenisse von Quellentrennungsalgorithmen genutzt werden [3]. Hierbei ist das Ziel einzelne Instrumentenstimmen aus einer Audioaufnahme, die
+verschiedene gleichzeitig erklingende Stimmen enthält,
+abzutrennen.
+Dieses Poster soll zunächst die Anforderungen der
+beiden Disziplinen an die Datenmodellierung und die
+jeweilige Umsetzung in MEI vorstellen. Schließlich sollen unter dem Gesichtspunkt der Präsentation und
+2
+
+http://www.music-encoding.org
+
+2
+
+Benjamin W. Bohl et al.
+
+Literatur
+1. Babbitt, M.: The use of computers in musicological research. Perspectives of New Music 3(2), 74–83 (1965)
+2. Bohl, B., Kepper, J., Röwenstrunk, D.: Perspektiven digitaler Musikeditionen aus der Sicht des Edirom-Projekts.
+In: Die Tonkunst 5, 270–276 (2011)
+3. Müller, M., Driedger, J., Ewert, S.: Notentext-informierte
+Quellentrennung für Musiksignale. In: Proceedings of 43th
+GI Jahrestagung, 2928–2942. Koblenz, Germany (2013)
+4. Prätzlich, T., Müller, M.: Freischütz digital: A case study for reference-based audio segmentation of operas. In:
+Proceedings of the International Society for Music Information Retrieval Conference (ISMIR), 589–594. Curitiba,
+Brazil (2013)
+5. Prätzlich, T., Müller, M.: Frame-level audio segmentation
+for abridged musical works. In: Proceedings of the 15th
+International Conference on Music Information Retrieval
+(ISMIR). Taipei, Taiwan (2014)
+6. Wiering, F.: Digital critical editions of music: A multidimensional model. In: Modern Methods for Musicology,
+23–45 (2009)
+Abb. 2 FreiDi-scoreFollowsAudio Screenshot des Demonstrators zur synchronisierten Anzeige gerenderter Noten zur
+Audiowiedergabe. Der blaue Kasten hebt den aktuell erklingenden Takt automatisch hervor.
+
+Abb. 3 Screenshot des Demonstrators zum Abspielen von
+Multitrack Aufnahmen. Die Mikrofon-Symbole sind entsprechend der Aufnahmesituation angeordnet – ein Klick darauf
+spielt das jeweilige Signal ab.
+
+Nachnutzung der Daten die im Projekt entwickelten Demonstratoren und Web-Applikationen vorgestellt
+werden, etwa zum automatischen Blättern eines Notentexts zu einer laufenden Aufnahme (siehe Abb. 2),
+oder zum veranschaulichenden Abspielen von Multitrack Aufnahmen (siehe Abb. 3). Dabei gilt es auch der
+Frage nachzugehen, ob MEI für Echtzeit-Anwendungen
+sinnvoll einsetzbar ist.
+

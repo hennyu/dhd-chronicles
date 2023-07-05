@@ -1,0 +1,126 @@
+Vorschlag für einen Posterbeitrag (mit Live-Demo) auf der DHd 2015, Graz	  
+
+Virtuelle Rekonstruktion des Regensburger Ballhauses
+1. Projektkontext und wesentliche Ziele
+Im Rahmen einer Vortragsreihe zum 350-jährigen Reichstagsjubiläum in der Stadt Regensburg wurde in Ergänzung zum Thema „Das Jahrhundert des Dramas und der Komödien: Blüte
+des Regensburger Theaterlebens“1 eine virtuelle 3D-Rekonstruktion des heute nicht mehr vorhandenen Regensburger Ballhauses am Ägidienplatz erstellt. Die 3D-Rekonstruktion stellt
+einerseits das Innenleben des Ballhauses dar und liefert andererseits textuelle Informationen zu
+interessanten Objekten. Die Rekonstruktion kann mit Hilfe der Virtual Reality-Brille Oculus
+Rift interaktiv exploriert werden. Das Projekt ist damit im Kontext der Museumspädagogik
+anzusiedeln (vgl. Flügel 2009; Wagner 2007; Waidacher & Raffler 2005).
+Umfangreiche Informationen zur Geschichte des Regensburger Ballhauses am Ägidienplatz
+finden sich in Meixner (2008): Die Baugeschichte des Ballhauses beginnt bereits im Jahre
+1603, als zunächst hölzerner Bau, der vornehmlich für Sportereignisse genutzt wurde. Dieses
+Gebäude wurde schließlich im Jahre 1736 durch einen Neubau ersetzt, der dann auch stärker
+für Theateraufführungen genutzt wurde. In seiner Hochzeit war das Ballhaus am Ägidienplatz
+das kulturelle Zentrum des Immerwährenden Reichstags in Regensburg. Durch die Eröffnung
+des Theaters am Bismarckplatz im Jahre 1804 verlor das Ballhaus langsam an Bedeutung. In
+der Folge verfällt das Gebäude zunehmend und wird schließlich im Jahre 1922 abgerissen.
+Hauptziele des Projekts
+•
+•
+•
+
+Rekonstruktion des Innenraums des Ballhauses (1736-1922) mit der Präsentation einer
+barocken Kulissenbühne
+Interaktion durch Virtual Reality-Umsetzung statt statische Präsentation eines 3DModells
+Umsetzung einer zusätzlichen pädagogische Komponente durch das Augmentieren
+weiterführender Information über das Ballhaus im virtuellen 3D-Raum
+
+2. Unvollständigkeit der Quellenlage als wesentliche Herausforderung
+Die exakte Gestaltung des Innenraums ist sehr schwer zu rekonstruieren, da nur wenige Quellen aus dieser Zeit überliefert wurden. Soweit Quellen vorliegen, sind diese zumeist Skizzen
+von Zeitzeugen und Dokumente aus dem Hofarchiv Thurn und Taxis (vgl. Abb. 1).
+
+	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+1
+
+Referentin: Hannah Ripperger; weitere Informationen zum Vortrag im Programmheft zur Vortragsreihe (S. 17),
+online verfügbar unter: https://www.regensburg.de/sixcms/media.php/121/der-reichstag-in-45-minuten.pdf, zuletzt
+abgerufen am 27.10.2014.
+
+	  
+
+1	  
+
+Vorschlag für einen Posterbeitrag (mit Live-Demo) auf der DHd 2015, Graz	  
+
+Abbildung 1: Skizzen von Friedrich Gilly, 1798 (Bildquelle: Meixner, 2008, S. 126).
+
+Weitere Herausforderungen ergeben sich durch historische Maßeinheiten (z.B. „Regensburger
+Schuh“ statt Meter), oder durch Skizzen ohne Maßstab und Maßangaben. Zudem gibt es oftmals keine Abgrenzung zwischen verschiedenen Bauphasen des Hauses. Um diese unvollständigen oder fehlenden Informationen zu ergänzen, wurden schließlich Vergleiche zu anderen
+Theaterräumen in Deutschland angestellt (etwa Gotha und Passau), und allgemeine Stilmerkmale aus der Kunstgeschichte umgesetzt (vgl. Meixner, S.128 f). Diese heterogene Quellenlage ist in Abbildung 2 zusammengefasst dargestellt:
+
+Abbildung 2: Überblick zur heterogenen Quellenlage, die als Grundlage für die Rekonstruktion verwendet wurde.
+
+	  
+
+2	  
+
+Vorschlag für einen Posterbeitrag (mit Live-Demo) auf der DHd 2015, Graz	  
+
+3. Technische Umsetzung
+Die Rekonstruktion wurde mit Hilfe des 3D-Modellierungstools Blender2 umgesetzt. Zu Beginn wurde die Geometrie des Theatersaals sowie dessen Möblierung modelliert. Zusätzlich
+wurde mit Hilfe der Bildbearbeitungssoftware Photoshop und einigen Referenzbildern die
+farbliche Gestaltung des Raums nachgebildet (vgl. Abb. 3).
+
+Abbildung 3: Ausschnitt aus der virtuellen Rekonstruktion des Regensburger Ballhauses am Ägidienplatz.
+
+Nach der Rekonstruktion des Raums folgte der Export in die Game-Engine Unity3D3. Dort
+wurde die Geometrie mit Farbinformationen und mit Oberflächenstrukturen ausgestattet. Danach wurden alle weiteren Interaktionsmöglichkeiten implementiert. Dabei wurde auf das
+Oculus Rift SDK4 zurückgegriffen: Zwei Kameras rendern die Szene und verkrümmen das
+gerenderte Bild, um es gemäß der Linsenkrümmung im Head Mounted Display (HMD) korrekt anzeigen zu können (vgl. Abb. 4).
+
+	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+2
+
+http://www.blender.org/, zuletzt abgerufen am 27.10.2014
+http://unity3d.com/, zuletzt abgerufen am 27.10.2014
+4
+http://www.oculus.com/, zuletzt abgerufen am 27.10.2014
+3
+
+	  
+
+3	  
+
+Vorschlag für einen Posterbeitrag (mit Live-Demo) auf der DHd 2015, Graz	  
+
+Abbildung 4: 3D-Szene aus Perspektive der Virtual-Reality-Brille Oculus Rift.
+
+Mithilfe eines einfachen Game-Controllers kann sich der Nutzer im Raum bewegen. Ferner
+kann über die Bewegung mit dem Kopf die Rotation der Kamera bestimmt werden. Über den
+Mittelpunkt des Bildschirms und entsprechendes Raycasting5 in den Raum wird überprüft,
+welches Objekt der Nutzer gerade anschaut. Je nachdem können verschiedene Informationen
+über die Elemente im Raum, etwa die Kulissenbühne (vgl. Abb. 5), mit einem Tastendruck
+über den Game-Controller abgerufen werden.
+
+Abbildung 5: Informationsanzeige zur Funktionsweise der Kulissenbühne.
+
+	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+5
+
+Raycasting ist ein Begriff aus der Computergrafik. Vereinfacht gesagt „tastet“ dabei ein virtueller Strahl den
+dreidimensionalen Raum nach Objekten ab, die dann bei Bedarf aktiviert werden können.
+
+	  
+
+4	  
+
+Vorschlag für einen Posterbeitrag (mit Live-Demo) auf der DHd 2015, Graz	  
+
+4. Demonstration
+Ein Demo-Video der virtuellen Rekonstruktion ist verfügbar unter:
+• http://dhregensburg.wordpress.com/2014/07/25/virtuelle-rekonstruktion-regensburgerballhaus/
+Im Falle der Annahme des Abstracts ist geplant, die Rekonstruktion im Rahmen der PosterPräsentation live mithilfe einer Virtual-Reality-Brille (Oculus Rift) zu demonstrieren.
+
+5. Literaturverzeichnis
+Flügel, K. (2009). Einführung in die Museologie. 2., überarb. Aufl. Darmstadt: WBG.
+Meixner, C. (2008). Musiktheater in Regensburg im Zeitalter des Immerwährenden Reichstages. Sinzig:
+Studio Verlag.
+Wagner, E. (2007). Museum, Schule, Bildung. Aktuelle Diskurse, innovative Modelle, erprobte Methoden. München: kopaed.
+Waidacher, F. & Raffler, M. (2005). Museologie - knapp gefasst. 1. Aufl. Stuttgart: UTB.
+
+	  
+
+5	  
+
