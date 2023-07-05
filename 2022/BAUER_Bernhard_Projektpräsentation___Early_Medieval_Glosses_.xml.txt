@@ -1,0 +1,223 @@
+
+        
+
+            
+Bis heute ist das Annotieren von Texten eine gängige Praxis, deren Formen – Unterstreichen, Hervorheben, Glossieren, Kommentieren etc. – sich im Prinzip seit dem Frühmittelalter kaum verändert haben (vgl. Moulin 2009). Grundsätzlich gibt es zwei Arten von graphischen Elementen in einem Manuskript: den 
+                
+principal text
+ und den 
+                
+paratext
+, der ein Manuskript als glossiert klassifiziert (vgl. Blom 2017, 10). Der Paratext lässt sich vom Primärtext in der 
+                
+mise-en-page –
+ also der Gestaltung der Seite oder dem Layout –, durch seine Position, eine andere Schrift oder eine spezielle Markierung unterscheiden. Bei Glossen wird traditionell zwischen 
+                
+interlinearen 
+und 
+                
+marginalen 
+Glossen unterschieden. 
+            
+
+            
+Eine wissenschaftliche Beschäftigung mit (frühmittelalterlichen) Glossierungstraditionen bietet zahlreiche Anknüpfungspunkte für multi- und interdisziplinäre Forschungsvorhaben, etwa in Bezug auf die verschiedenen Wege intellektuellen Austauschs, Sprachkontakt, die Geschichte des Zweitspracherwerbs, der Schreib- und Lesekompetenz, der Buchproduktion sowie anderer kultureller und sozio-historischer Aspekte. 
+
+            
+Das vorliegende Projekt Gloss-ViBe (MSCA-IF-EF-ST #101019035) beschäftigt sich im weitesten Sinn mit dem Sprach- und Kulturkontakt zwischen Irland und Kontinentaleuropa im Frühmittelalter. Es startete im September 2021 in Kollaboration mit dem 
+                
+Zentrum für Informationsmodellierung – Austrian Centre for Digital Humanities
+ und dem 
+                
+Institut für Antike 
+an der Universität Graz. Die zentrale Forschungsfrage bezieht sich auf die Genese der vernakulären frühmittelalterlichen keltischsprachigen Glossen: Sind die Glossen Originale oder Übersetzungen ursprünglich lateinischer Glossen? Um Antwort(en) auf diese Frage zu finden, wird eine Fallstudie an den keltischen und lateinischen Glossen der Handschrift 
+                
+Wien
+, 
+                
+Österreichische Nationalbibliothek
+, Codex 15298 (olim Suppl. 2698)
+, sowie den Parallelglossen in drei weiteren Manuskripten: Angers, Bibliothèque municipale 477 (Ende 9. Jh.), Karlsruhe, Badische Landesbibliothek, Augiensis pergamentum 167 (olim Codex Augiensis CLXVII) (späte erste Hälfte 9. Jh.) und St. Gallen, Stiftsbibliothek, MS 251 (erste Hälfte 9. Jh.), durchgeführt. Dieses fragmentarische Manuskript (4 Folios) stammt aus dem späten 8./frühen 9. Jahrhundert und beinhaltet zirka 200 Glossen zu Bedas 
+                
+De Temporum Ratione
+ – wobei ungefähr ein Drittel in altirischer Sprache und der Rest in Latein verfasst ist. Forschungsgeschichtlich waren vor allem die irischen Glossen von Interesse (vgl. Stokes &amp; Strachan, 1901–1903; Dillon, 1956; Bauer 2017). Die lateinischen Glossen sowie der Primärtext wurden bis dato noch nicht vollständig ediert, weshalb in Gloss-ViBe eine umfassende digitale Edition der Handschrift erstellt wird. Um die Genese der Glossen sowie die Texttradition näher beleuchten zu können, sind drei Forschungsziele formuliert:
+            
+
+            
+
+                
+Transkription und Kollektion
+
+                
+Digitale Edition
+
+                
+Theoretisches Framework
+
+            
+
+            
+Die Daten sowie das erarbeitete theoretische Framework werden unter Einhaltung der FAIR-Prinzipien für weitere Nutzung allgemein verfügbar sein. Die Transkription des Wiener Beda sowie der Parallelglossen und die Metadaten werden in TEI/XML (Digitale Transkription und Edition) modelliert. Eine Langzeitarchivierung ist durch das 
+                
+Geisteswissenschaftliche Asset Management System
+ (GAMS, Zentrum für Informationsmodellierung Graz) gesichert. 
+            
+
+            
+Die Transkription wird mit Transkribus
+                
+
+                
+ durchgeführt, was auch bedeutet, dass der gesamte Output des Projekts in ein zukünftiges HTR-Trainingsmodell einfließen kann. Neben einer normalisierten Transkription ist auch geplant, das Originaldokument im Sinne Pierazzos (2011) so nahe als möglich wiederzugeben. Das bedeutet, dass Abkürzungen (ꝓ/ꝑ für Lateinisch 
+                
+per
+/
+                
+pro
+) oder Ligaturen (æ) nicht aufgelöst, sondern mit den jeweiligen Unicodezeichen transkribiert werden. Als Grundlage dafür dienen die Standards der 
+                
+Medieval Unicode Font Initiative
+.
+                
+
+                
+ Das zweite Workpackage dient der Datenmodellierung und Erstellung der digitalen Edition – aufbauend auf den Frameworks von Rehbein (2014) und Monella (2019). Strukturelle Informationen wie z.B. Überschriften oder der Unterschied zwischen Primär- und Paratext werden kodiert. Weiters sind intra- und intertextuelle Links vonnöten, d.h. dass jedem glossierten Lemma sowie der Glosse selbst wird ein Unique Identifier zugewiesen wird. Intratextuell ist das wichtig, um etwa Marginalglossen ihrem konkreten Lemma im Primärtext zuordnen zu können. Intertextuell sind diese Links vor allem für die Parallelglossen wichtig. 
+            
+
+            
+Um Antworten auf die Hauptforschungsfrage zu erlangen, wird das erstellte Korpus im dritten Workpackage analysiert. Hierzu wird ein Workflow erstellt, der Ansätze des 
+                
+close
+ und 
+                
+distant reading
+ verbinden soll (vgl. etwa Bauer 2019 &amp; 2020). Die Parallelglossen werden mittels Netzwerkanalyse (Cytoscape, Gephi), Korpusanalyse Tools (AntConc, Voyant Tools), Kollations-Tools (CollateX, Juxta) aber auch „traditionellen“ Methoden der historisch-vergleichenden Sprachwissenschaft und Philologie untersucht. Durch minutiöse Analysen lässt sich die Richtung der Übersetzung bei mehrsprachigen Parallelglossen ermitteln. Mittels der Kollations-Tools können gemeinsame Fehler bzw. Abweichungen von der kanonisierten Version des Haupttextes ermittelt werden, welche auf eine engere Verbindung der Handschriften hinweisen. Dies kann mit Netzwerkanalysen visualisiert werden. Dadurch lässt sich ein Bild der Gelehrtennetzwerke im Frühmittelalter zeichnen.
+            
+
+            
+Gloss-ViBe soll ein Modell für die Transkription/Edition und Analyse von (früh-)mittelalterlichen, glossierten Handschriften schaffen, das auch auf andere Epochen und Textsorten angewendet werden kann. Es soll Impulse für eine breitgefächerte fachliche Beschäftigung mit diesen reichhaltigen Fundgruben intersprachlichen und -kulturellen Wissenstransfers schaffen.
+
+        
+
+        
+ Online unter http://data.onb.ac.at/dtl/8650790.
+ https://readcoop.eu/transkribus/?sc=Transkribus.
+ https://folk.uib.no/hnooh/mufi/.
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Bauer, Bernhard
+ (2017): “New and corrected MS readings of the Old Irish glosses in the Vienna Bede", in: 
+                        
+Ériu
+ 67: 29–48. 
+                    
+
+                    
+
+                        
+Bauer, Bernhard
+ (2019): "Venezia, Biblioteca Marciana, Zanetti lat. 349 an isolated manuscript? A (network) analysis of parallel glosses on Orosius’ 
+                        
+Historiae adversus paganos
+", in: 
+                        
+Études Celtiques
+ 45: 91–106. 
+                    
+
+                    
+
+                        
+Bauer, Bernhard
+ (2020): "Distant Reading of Glossed Corpora: Stylometry and Network Analysis", Vortrag gehalten beim 
+                        
+Workshop: Glossing in Celtic Contexts
+, Virginia Tech, Blacksburg, VA, USA, September 18–19, 2020. 
+                    
+
+                    
+
+                        
+Blom, Alderik H.
+ (2017): 
+                        
+Glossing the Psalms
+. Berlin/New York: Walter de Gruyter. 
+                    
+
+                    
+
+                        
+Dillon, Myles
+ (1956): “The Vienna glosses on Bede", in: 
+                        
+Celtica
+ 3: 340–5. 
+                    
+
+                    
+
+                        
+Monella, Paolo
+ (2019): „A digital critical edition model for Priscian: glosses, graeca, quotations“, in: 
+                        
+Analecta Romana Instituti Danici
+ 44, 135–149.
+                    
+
+                    
+
+                        
+Moulin, Claudine
+ (2009): "Paratextualle Netzwerke: Kulturwissenschaftliche Erschließung und soziale Dimensionen der althochdeutschen Glossenüberlieferung", in Krieger, Gerhard (ed.), 
+                        
+Verwandtschaft, Freundschaft, Bruderschaft. Soziale Lebens- und Kommunikationsformen im Mittelalter. Akten des 12. Symposiums des Mediävistenverbandes vom 19. bis 22. März 2007 in Trier
+. Berlin: Akademie Verlag. 56–77.
+                    
+
+                    
+
+                        
+Pierazzo, Elena
+ (2011): "A Rationale of Digital Documentary Editions", in: 
+                        
+Literary and Linguistic Computing 
+26(4): 463–477.
+                    
+
+                    
+
+                        
+Rehbein, Malte
+ (2014): "From the Scholarly Edition to Visualization: Re-Using Encoded Data for Historical Research", in: 
+                        
+International Journal of Humanities and Arts Computing 
+8.1: 81–105. 
+                    
+
+                    
+
+                        
+Stokes, Whitley / Strachan, John
+ (1901–1903): 
+                        
+Thesaurus Palaeohibernicus
+, vol. I and II. Cambridge: University Press. 
+                    
+
+                
+
+            
+
+        
+
+    

@@ -1,0 +1,586 @@
+
+        
+
+            
+
+                
+Einleitung
+
+                
+Mit meinem Vortrag möchte ich zu einer Kritik der digitalen Methoden beitragen. Gegenwärtige Forschung im Bereich der Digital Humanities konzentriert sich vorwiegend auf den Einsatz quantitativer digitaler Methoden. Ich betrachte diesen Schwerpunkt auf ‘Big Data’, ‘Distant Reading’ und die Beschränkung auf statistische Verfahren zur Erklärung geisteswissenschaftlicher Phänomene kritisch. In einer methodologischen Kritik der digitalen Geisteswissenschaften werde ich dazu aus wissenschaftstheoretischer Perspektive anhand Beispielen historischer Forschung die Grenzen der quantitativen Ansätze aufzeigen, um dann Möglichkeiten vorzustellen, wie qualitative Methoden im Sinne eines 
+                   
+Augmenting Human(ist) Intellect
+-Ansatzes (Engelbart 1962) digital unterstützt und erweitert werden sollten.
+                
+
+            
+
+            
+
+                
+Vorgehensweise
+
+                
+Als erstes werde ich die Methoden der Digital Humanities mit Hilfe der NeMO (NeDiMAH Methods Ontology) wissenschaftstheoretisch verorten (Abb. 1).
+
+                
+
+                	
+
+                    
+Abb. 1
+: NeMO (NeDiMAH Methods Ontology) zur Modellierung von Forschungsprozessen, digitalen Methoden, Werkzeugen, Ressourcen (Dokumente, Forschungsdaten, etc.) usw. (aus Benardou et al. 2010)
+
+		          
+
+		          
+NeMO dient als Rahmen zum Aufbau einer Taxonomie digitaler Methoden und Werkzeuge. Ein erster Schritt dazu ist die Unterscheidung zwischen quantitativen und qualitativen Methoden. Da diese Unterscheidung auf methodischer Ebene und nicht etwa auf epistemologischer oder theoretischer Ebene erfolgt, erscheint die gängige scharfe Trennung in quantitative und qualitative Forschung nicht gerechtfertigt. Auf Ebene der Epistemologie muß man bei einer bestimmten erkenntnistheoretischen Position bleiben und kann dabei qualitative und quantitative Methoden kombinieren, ohne daß das methodologisch problematisch wäre (Crotty 1998). Bei digitaler Forschung kommt es auf den Ansatz der formalen Modellierung von Forschungsgegenständen an. Formale Modellierung bildet den Kern der Digital Humanities und ist Voraussetzung um überhaupt digital transformierte Foschungsmethoden einsetzen zu können – egal ob quantitativ oder qualitativ. Man könnte daher anstatt von 
+                    
+digitalen
+ Methoden besser von 
+                    
+formalen
+ bzw. 
+                    
+formalisierbaren
+ Methoden sprechen. Im Vortrag werde ich mich auf ‘Digital Mapmaking’ als Methode konzentrierten, die den Einsatz von Diagrammen zur qualitativen Forschung umfaßt. Um den Mehrwert von diagrammatischer Darstellung zu zeigen, werde ich auf Beispiele aus der Sozialgeschichte zurückgreifen. Skocpols “States and Revolutions: A Comparative Analysis of France, Russia, and China” (Skocpol 1979) eignet sich sehr gut, um zu zeigen, daß Text nicht ausreicht, um die komplexen kausalen Narrative, die zu sozialen Revolutionen führen, gut nachvollziehbar zu repräsentieren. In der methodologischen Forschung dazu wird sogar argumentiert (Mahoney 1999; George / Bennett 2005), daß die Darstellung der kausalen Prozesse in diagrammatischer Form notwendig ist, um die kausalen Zusammenhänge in der Präsentation der Forschungsergebnisse explizit zu machen und darüber hinaus den Forschungsprozess selbst durch den Zwang zur Formalisierung zu unterstützen. Am Beispiel Skocpols vergleichender Studie werde ich demonstrieren, wie die Methoden QCA (Qualitative Comparative Analysis) und Process Tracing in den Digital Humanities durch den Einsatz von geeigneten diagrammatischen ‚Denkwerkzeugen‘ wie Hypertext-Karten, Fuzzy Cognitive Maps und Dynamischer Netzwerkanalyse unterstützt und erweitert werden können.
+                
+
+            
+
+            
+
+                
+Beispiele
+
+                
+Um überhaupt sinnvoll von ‚digitalen‘ Methoden reden zu können, muß der Aspekt der formalen Modellierung als zentral erachtet werden. Formalisierung ist die Voraussetzung für die „Mechanisierung angeblich geistiger Tätigkeiten“ (Brauer et al. 1989). Piotrowski (2016) definiert Digital Humanities wie folgt: “The digital humanities study the means and methods of constructing formal models in the humanities.” Ein Modell ist dabei als Repräsentation eines geisteswissenschaftlichen Untersuchungsgegenstands zu verstehen und ‚formal‘ bedeutet 
+                    
+logisch kohärent
+, 
+                    
+nicht mehrdeutig
+ und 
+                    
+explizit
+ (Piotrowski 2016).
+                
+
+                
+Mir geht es im folgenden um digitale Methoden des ‘Mapmaking’:
+
+                
+[Mapmaking] is a combinatorial method, for it involves mapping information gathered from other sources: generally secondary data or surveys, though texts are another possibility. It must thus reflect the strengths and weaknesses of its sources of data. As with hermeneutics, mapmaking involves a set of techniques beyond those involved in the methods it draws upon. Its obvious strength lies in terms of spatiality. There are, quite simply, some spatial movements that cannot be properly visualized nor comprehended without recourse to maps […] (Szostak 2004)
+
+                
+Dazu kann mit NeMO Quellen- und Archivmaterial, das zur Erstellung von Karten herangezogen wird, formal erfaßt werden, was im Kontext von Digital Libraries und Forschungsdatenmanagement relevant ist.
+
+                
+Einführen werde ich 
+                    
+Digital Mapmaking
+ mit einem für die Geschichtswissenschaft naheliegenden Diagrammtyp (Champagne 2016): Zeitleisten. Synchronoptische Visualisierungen (Abb. 2) dienen der Kontextualisierung großer Datenmengen aus verschiedenen Quellen und ermöglichen die Generierung von Hypothesen durch Abduktion (Frank 2017a). Eine Erklärung – z. B. in Form der Beschreibung eines sozialen Mechanismus, der ein historisches Ereignis hervorbringt – kann jedoch nur durch weiterführende Forschung gefunden werden.
+                
+
+		          
+
+                	
+
+		              
+Abb. 2
+: Parallele Zeitleisten in der Zeitkarte aus der Digitalen Edition (Behrendt et al. 2010) von Peters’ Synchronoptischer Weltgeschichte (Peters / Peters 1952) als ‚Hypothesen-Generator‘
+
+		          
+
+                
+Im weiteren Verlauf werde ich zeigen, wie Visualisierungsansätze nicht nur 
+                    
+explorative 
+Analyse unterstützen können, sondern wie sie darüber hinaus auch die Möglichkeiten zur 
+                    
+Erklärung
+ historischer Ereignisse erweitern können. Sehr gut veranschaulicht werden kann ein solcher Ansatz mit den diagrammatischen Darstellungen der kausalen Narrative in Skocpols Theorie sozialer Revolutionen (Skocpol 1979).
+                
+
+                
+Goertz und Mahoney (2005) argumentieren, daß “a failure to appropriately conceptualize levels and relationships between levels” zu vielen Fehlinterpretationen von Skocpols Theorie geführt haben. George und Bennett (2005) empfehlen tatsächlich “diagrams to present clearly the argument of causal narratives, to make the causal claim more explicit”. Um die laut Goertz und Mahoney (2005) oft in den Interpretationen vorkommende Verwechslung von Kausalität und Konstitution zu vermeiden, eignet sich zur Darstellung von 
+                    
+Two-Level Theories
+ der Einsatz von Diagrammen (Abb. 3):
+                
+
+                
+For example, the examination of an ontological relationship between levels allows the analyst to explore the specific defining properties of the basic-level concepts that actually affect the outcome of interest. In this case of an ontological relationship, the specific properties identified in the secondary level are “mechanisms” that explain why the basic-level variables have the effects they do. (Goertz / Mahoney 2005)
+
+		          
+
+                	
+
+                	
+Abb. 3
+: Diagramm für Two-Level Theories zu Ursachen und Konstitution sozialer Revolutionen (aus Goertz / Mahoney 2005)
+
+		          
+
+                
+Im Rückentext des Geschichtstheorie-Lehrbuchs von Kolmer (2008) steht dazu treffend: „Wer sich nicht von der Beredsamkeit der Historiker blenden lassen will, muss das Gerüst entdecken können, das ihre Erzählungen trägt.“ Meine Idee ist nun, die kausalen Narrative nicht nur als Diagramme zu visualisieren, sondern die historischen Narrative der komplexen kausalen Zusammenhänge als Hypertext zu modellieren. Der Mehrwert dieses 
+                    
+Hypertext Mapping
+-Ansatzes wird durch einen weiteren Verweis auf Szostak (2004) deutlich: “Mapmaking can give unique insight into spatial and temporal aspects of causal systems (among other things).”
+                
+
+                
+Offensichtlich bietet die diagrammatische Visualisierung (Abb. 4) von Mahoney (1999) deutliche Vorteile bei der Darstellung der komplexen kausalen Zusammenhänge und erleichtert dadurch das genaue Nachvollziehen und Verstehen der historischen Vorgänge, die zum Zusammenbruch des französischen Staates führten, erheblich.
+
+		          
+
+                	
+
+                	
+Abb. 4
+: Diagramm des kausalen Narrativs über den Prozess des Zusammenbruchs eines Staates (aus Mahoney 1999)
+
+		          
+
+                
+Allerdings berücksichtigt das Diagramm nach Mahoney (1999) keine komplexen Rückkopplungsschleifen zwischen Ereignissen und außerdem fehlt die Darstellung der Gewichtung einzelner Ereignisse und die Möglichkeit, die Details der kausalen Prozesse zu erfassen. Diese vernachlässigten Aspekte könnten durch Causal Loop Diagrams (siehe Beispiel in Abb. 5) oder Fuzzy Cognitive Maps (Carvalho 2013) oder auch Dynamische Netzwerkanalyse (Lemercier 2015b) modelliert werden.
+
+		          
+
+                	
+
+			            
+Abb. 5
+: Causal Loop Diagram des Konflikts zwischen der polnischen Regierung und Solidarność (aus Coleman et al. 2006)
+
+		          
+
+                
+Die ersten fünf von Mahoney (1999) aus Skocpol (1979) extrahierten kausalen Faktoren, sollen zur Veranschaulichung einer zusätzlichen Möglichkeit zur expliziten Strukturierung mit Hypertext Maps ausreichen:
+
+                
+
+                    
+Property relations prevent introduction of new agricultural techniques (S. 55)
+
+                    
+Tax system discourages agricultural innovation (S. 55)
+
+                    
+Sustained growth discourages agricultural innovation (S. 55)
+
+                    
+Backwardness of French agriculture (esp. vis-à-vis England) (S. 56)
+
+                    
+Weak domestic market for industrial goods (S. 55–56)
+
+                
+
+                
+Die Kausalkette von 4 nach 5 wird von Skocpol (1979) z. B. mit einer Reihe von historischen Studien belegt. Diese Verweise können in einem Hypertext-Narrativ mit typisierten Links (Peroni / Shotton 2012) explizit gemacht werden.
+
+                
+Wie ein kritischer Rückblick in die Geschichte der Hypertext-Forschung zeigt, sind wesentliche Anforderungen an Hypertext-Systeme bisher immer noch nicht zufriedenstellend erfüllt. Ich werde zeigen, wie einige der sieben offenen Punkte/Issues von Halasz (2001) mit aktueller Semantic Web- und Informationsvisualisierungstechnologie angegangen werden können. Suche unter Berücksichtigung der Hypertextstruktur (Issue 1) kann auf Basis von Ontologie-basiertem Hypertext im RDF-Datenmodell realisiert werden. Berechnungen aufgrund der Hypertextstruktur (Issue 4) könnten durch den Einsatz von Dynamischer Netzwerkanalyse und Fuzzy Cognitive Maps (Carvalho 2012) umgesetzt werden.
+
+            
+
+            
+
+                
+Ergebnisse
+
+                
+Die ‚digitale Vernunft‘ erfordert es schließlich, daß geisteswissenschaftliches 
+                    
+Erklären
+ bzw. 
+                    
+Verstehen
+ (von Wright 1971) in einem angemessen methodologischen (Schützeichel 2015) und ontologischen Rahmen (Little 2010) abläuft. Mechanistische Erklärung bietet ein explanatorischen Rahmenwerk, um z. B. die verschiedenen ‚Ismen‘ der Politikwissenschaft zu vereinen (Bennett 2013).
+                
+
+                
+Die Relevanz von Digital Mapmaking als Hilfsmittel zur Erklärung historischer Ereignisse zeigt sich insbesondere beim Einsatz von Hypertext Maps zur Strukturierung von historischen Narrativen. Historische Narrative können dabei durchaus als mechanistische Erklärungen historischer Ereignisse aufgefaßt werden (Glennan 2010). Analog zum Periodensystem chemischer Elemente kann ein diagrammatischer Hypertext auf Lücken im theoretisch fundierten Gerüst eines kausalen Narrativs hinweisen, um diese durch Methoden wie Process Tracing (Bennett 2010) zu füllen. Zusätzlich zu mechanistischer Erklärung unterstützt Hypertext multiperspektivische Erklärung historischer Ereignisse (Shaw 2013; Jensen 2013; Krameritsch 2009).
+
+                
+Die Ergebnisse bringt schließlich ein erneuter Blick in die Hypertext-Geschichte auf den Punkt: “Linearity was never an option for historical writing; hypertextuality can make complex structure concrete, clear and responsive to both the author and the reader.” (Eastgate Systems 2005)
+
+            
+
+            
+
+                
+Zusammenfassung und Ausblick
+
+                
+Etablierte qualitative Methoden wie QCA, Process Tracing und Netzwerkanalyse werden in den Digital Humanities vernachlässigt oder, wie Netzwerkanalyse (Haug 2008), nicht kritisch genug eingesetzt – im Sinne von zu wenig formaler Modellierung (Lemercier 2015a). Der Einsatz dieser Methoden im Bereich der Digital Humanities setzt die formale Modellierung der geisteswissenschaftlichen Untersuchungsgegenstände voraus.
+
+                
+Die Rolle von formaler Ontologie für die Digital Humanities beim Aufbau von Regionalontologien für die Geisteswissenschaften (Gnoli 2008) und der Repräsentation von Wissen aus verschiedenen diziplinären Perspektiven und Kontexten wird an dieser Stelle deutlich (Frank 2017b). Bisher gibt es nur wenig Ansätze, die die Komplexität der geisteswissenschaftlichen Realität dabei angemessen berücksichtigen (Grossner 2010; Fokkens et al. 2016; Garbacz 2015).
+
+                
+Im Vortrag werden abschließend erste eigene formal-ontologische Modellierungsbeispiele und diagrammatische Visualisierungen kausaler Narrative historischer Ereignisse gemäß dem vorgestellten Ansatz präsentiert und offene Probleme und Fragen zur Diskussion gestellt.
+
+            
+
+        
+
+        
+
+         
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Behrendt, Hans R. / Burch, Thomas / Weinmann, Martin
+ (2010): 
+Der Digitale Peters: Arno Peters’ Synchronoptische Weltgeschichte
+. Frankfurt am Main: Zweitausendeins.
+                    
+
+                    
+
+                        
+Benardou, Agiatis / Constantopoulos, Panos / Dallas, Costis / Gavrilis, Dimitris
+ (2010): A Conceptual Model for Scholarly Research Activity, in: 
+iConferencePapers 2010
+.
+                    
+
+                    
+
+                        
+Bennett, Andrew
+ (2010): Process Tracing and Causal Inference, in: Brady, Henry E. (Hrsg.) / Collier, David (Hrsg.): 
+Rethinking Social Inquiry: Diverse Tools, Shared Standards
+, Rowman &amp; Littlefield Publishers.
+                    
+
+                    
+
+                        
+Bennett, Andrew
+ (2013): The mother of all isms: Causal mechanisms and structured pluralism in International Relations theory, in: 
+European Journal of International Relations
+ 19, 3: 459–481.
+                    
+
+                    
+
+                        
+Brauer, Wilfried / Haacke, Wolfhart / Münch, Siegfried
+ (1989): 
+Studien- und Forschungsführer Informatik
+. Springer.
+                    
+
+                    
+
+                        
+Carvalho, João P.
+ (2012): 
+Rule Based Fuzzy Cognitive Maps in Humanities, Social Sciences and Economics
+. 289–300, in: Seising, Rudolf (Hrsg.) / González, Veronica S. (Hrsg.): 
+Soft Computing in Humanities and Social Sciences
+, Springer.
+                    
+
+                    
+
+                        
+Carvalho, João P.
+ (2013): On the Semantics and the Use of Fuzzy Cognitive Maps and Dynamic Cognitive Maps in Social Sciences, in: 
+Fuzzy Sets and Systems
+ 214: 6–19.
+                    
+
+                    
+
+                        
+Champagne, Marc
+ (2016): Diagrams of the Past: How Timelines Can Aid the Growth of Historical Knowledge, in: 
+Cognitive Semiotics
+ 9, 1: 11–44.
+                    
+
+                    
+
+                        
+Coleman, Peter T. / Vallacher, Robin R. / Nowak, Andrzej / Bui-Wrzosińska, Lan
+ (2006): Protracted Conflicts as Dynamical Systems, in: Kupfer Schneider, Andrea (Hrsg.) / Honeyman, Christopher (Hrsg.): 
+The Negotiator’s Fieldbook: The Desk Reference for the Experienced Negotiator
+. American Bar Association, (Section of Dispute Resolution) 61–74.
+                    
+
+                    
+
+                        
+Crotty, Michael
+ (1998): 
+The Foundations of Social Research: Meaning and Perspective in the Research Process
+. SAGE Publications.
+                    
+
+                    
+
+                        
+Eastgate Systems
+ (2005): Hypertext and the Linearity of History. – URL http://www.eastgate.com/HypertextNow/archives/History.html
+                    
+
+                    
+
+                        
+Engelbart, Douglas C.
+ (1962): Augmenting Human Intellect: A Conceptual Framework. – Forschungsbericht.
+                    
+
+                    
+
+                        
+Fokkens, Antske S. / ter Braake, Serge / Maks, Isa / Ceolin, Davide
+ (2016): 
+On the Semantics of Concept Drift: Towards Formal Definitions of Semantic Change
+, in: Darányi, S. (Hrsg.) / Hollink, L. (Hrsg.) / Meroño Peñuela, A. (Hrsg.) / Kontopoulos, E. (Hrsg.): Proceedings of Drift-a-LOD.
+                    
+
+                    
+
+                        
+Frank, Ingo
+ (2017a): Digital Humanities und Semiotik oder wie man die Unterstützung und Erweiterung geisteswissenschaftlichen Denkens durch Computerprogramme semiotisch erklären kann, in: Deutsche Gesellschaft für Semiotik (DGS) e. V. (Hrsg.): 
+15. Internationaler Kongress der Deutschen Gesellschaft für Semiotik (DGS)
+ 70. – Panel 4: Chancen und Grenzen Digitaler Geisteswissenschaften, Sektion Digital Humanities.
+                    
+
+                    
+
+                        
+Frank, Ingo
+ (2017b): Interdisciplinary Knowledge Organization as Intersection between Information Science and Digital Humanities, in: Burghardt, Manuel (Hrsg.) / Kattenbeck, Markus (Hrsg.): 
+ISI 2017 Satellite Workshop on the Relationship of Information Science and the Digital Humanities
+ 25–33.
+                    
+
+                    
+
+                        
+Garbacz, Pawel
+ (2015): Challenges for Ontological Engineering in the Humanities – A Case Study of Philosophy, in: Garoufallou, Emmanouel (Hrsg.) / Hartley, Richard J. (Hrsg.) / Gaitanou, Panorea (Hrsg.): 
+Metadata and Semantics Research
+. Cham: Springer International Publishing 27–38.
+                    
+
+                    
+
+                        
+George, Alexander L. / Bennett, Andrew
+ (2005): Case Studies and Theory Development in the Social Sciences. MIT Press, (BCSIA Studies in International Security).
+                    
+
+                    
+
+                        
+Glennan, Stuart
+ (2010): Ephemeral Mechanisms and Historical Explanation, in: 
+Erkenntnis
+ 72, 2: 251–266.
+                    
+
+                    
+
+                        
+Gnoli, Claudio
+ (2008): Categories and Facets in Integrative Levels, in: 
+Axiomathes
+ 18, 2: 177–192.
+                    
+
+                    
+
+                        
+Goertz, Gary / Mahoney, James
+ (2005): Two-Level Theories and Fuzzy-Set Analysis, in: 
+Sociological Methods &amp; Research
+ 33, 4: 497–538.
+                    
+
+                    
+
+                        
+Grossner, Karl
+ (2010): 
+Representing Historical Knowledge in Geographic Information Systems
+, University of California, Santa Barbara, Dissertation.
+                    
+
+                    
+
+                        
+Halasz, Frank G.
+ (2001): Reflections on NoteCards: Seven Issues for the Next Generation of Hypermedia Systems, in: 
+ACM Journal of Computer Documentation
+ 25, 3: 71–87.
+                    
+
+                    
+
+                        
+Haug, Sonja
+ (2008): Migration Networks and Migration Decision-Making, in: 
+Journal of Ethnic and Migration Studies
+ 34, 4: 585–605.
+                    
+
+                    
+
+                        
+Jensen, Anthony K.
+ (2013): 
+Nietzsche’s Philosophy of History
+. Cambridge University Press.
+                    
+
+                    
+
+                        
+Kolmer, Lothar
+ (2008): UTB Profile. Bd. 3002: 
+Geschichtstheorien
+. Fink.
+                    
+
+                    
+
+                        
+Krameritsch, Jakob
+ (2009): Die fünf Typen des historischen Erzählens – im Zeitalter digitaler Medien, in: 
+Zeithistorische Forschungen
+ 3: 413–432. – URL http://www.zeithistorische-forschungen.de/3-2009/id=4566
+                    
+
+                    
+
+                        
+Lemercier, Claire
+ (2015a): Formal network methods in history: why and how? In: 
+Social Networks, Political Institutions, and Rural Societies
+. Brepols 281–310. – URL https://halshs.archives-ouvertes.fr/halshs-00521527
+                    
+
+                    
+
+                        
+Lemercier, Claire
+ (2015b): Taking time seriously: How do we deal with change in historical networks?, in: Düring, Marten (Hrsg.) / Gamper, Markus (Hrsg.) / Reschke, Linda (Hrsg.): 
+Knoten und Kanten III
+. Transcript Verlag 183–211. – URL https://hal.archives-ouvertes.fr/hal-01445932
+                    
+
+                    
+
+                        
+Little, Daniel
+ (2010): 
+Historical Concepts and Social Ontology
+. 41–72, in: 
+New Contributions to the Philosophy of History
+. Dordrecht: Springer Netherlands.
+                    
+
+                    
+
+                        
+Mahoney, James
+ (1999): Nominal, Ordinal, and Narrative Appraisal in Macrocausal Analysis, in: 
+American Journal of Sociology
+ 104, 4: 1154–1196.
+                    
+
+                    
+
+                        
+Peroni, Silvio / Shotton, David
+ (2012): FaBiO and CiTO: ontologies for describing bibliographic resources and citations, in: 
+Journal of Web Semantics: Science, Services and Agents on the World Wide Web
+ 17: 33–43. – URL http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf
+                    
+
+                    
+
+                        
+Peters, Arno / Peters, Anneliese
+ (1952): 
+Synchronoptische Weltgeschichte
+. Frankfurt am Main: Universum-Verlag.
+                    
+
+                    
+
+                        
+Piotrowski, Michael
+ (2016): 
+Digital Humanities, Computational Linguistics, and Natural Language Processing
+. Lectures on Language Technology and History. – URL http://stp.lingfil.uu.se/~nivre/docs/michael_piotrowski_2016.pdf
+                    
+
+                    
+
+                        
+Schützeichel, Rainer
+ (2015): 
+Pfade, Mechanismen, Ereignisse. Zur gegenwärtigen Forschungslage in der Soziologie sozialer Prozesse
+. 87–147, in: Schützeichel, Rainer (Hrsg.) / Jordan, Stefan (Hrsg.): Prozesse: Formen, Dynamiken, Erklärungen. Wiesbaden: Springer VS.
+                    
+
+                    
+
+                        
+Shaw, Ryan
+ (2013): A Semantic Tool for Historical Events, in: 
+Proceedings of the 1st Workshop on Events: Definition, Detection, Coreference, and Representation
+, Association for Computational Linguistics 38–46.
+                    
+
+                    
+
+                        
+Skocpol, Theda
+ (1979): 
+States and Social Revolutions: A Comparative Analysis of France, Russia, and China
+. Cambridge University Press.
+                    
+
+                    
+
+                        
+Szostak, Rick
+ (2004): 
+Information Science and Knowledge Management
+. Bd. 7: 
+Classifying Science: Phenomena, Data, Theory, Method, Practice
+. Springer Netherlands.
+                    
+
+                    
+
+                        
+von Wright, Georg H.
+ (1971): 
+Explanation and Understanding
+. Cornell University Press.
+                    
+
+                
+
+            
+
+      
+
+    

@@ -1,0 +1,334 @@
+
+        
+
+            
+
+                
+Einleitung 
+
+                
+
+                    
+Die Digitalisierung der Sammlungen zahlreicher Museen, Archive und anderer Kulturinstitutionen ermöglicht den raschen Zugang zu historisch bedeutsamen Kulturgütern: Millionen von Bildern, Skulpturen, Musik- und Schriftstücken sind heutzutage mit nur wenigen Klicks als digitale Objekte erreichbar. Allerdings gelangen klassische Such-Interfaces rasch an ihre Grenzen, wenn das Ziel die freie Exploration und die Gewinnung eines effektiven Überblicks über eine kulturelle Sammlung sind. Bei hunderten von Objekten kann eine Sammlung in den üblichen Listen- und Rasteranordnungen kaum vollständig erfasst werden. Darüber hinaus stellt die produktive und aufschlussreiche Anordnung der Exponate auf dem Bildschirm eine konzeptuelle Herausforderung dar, da viele Arrangements möglich sind und die kulturellen Sammlungen eine Vielzahl von Metadaten-Dimensionen aufweisen. Wie kann man die Darstellung von solchen multidimensionalen Datenbanken und den darin befindlichen Objekten und damit die Gewinnung eines Überblicks über kulturelle Sammlungen verbessern?
+
+                
+
+            
+
+            
+
+                
+Informationsvisualisierungen von kulturellen Sammlungen
+
+                
+
+                    
+In den letzten Jahren wurden vermehrt Informationsvisualisierungen entwickelt (vgl. Windhager, Federico et al., 2018 für einen Überblick), um jenseits von Listen und Rastern auch einen konzeptuellen Überblick über den Aufbau und die Struktur kultureller Sammlungen zu ermöglichen. Doch um einen “generösen” Zugang (Whitelaw, 2015) zu einer reichhaltigen Sammlung zu ermöglichen reicht eine Visualisierung alleine nicht aus (Doerk et al., 2017). In einer Analyse bestehender Informationsvisualisierungen von kulturellen Sammlungen (Windhager, Federico et al., 2018) zeigte sich, dass die Interfaces im Durchschnitt 2-3 - manche sogar bis zu 6 - verschiedene Visualisierungen einsetzen, um der informationellen Reichhaltigkeit (und damit auch der multidimensionalen kuratorischen und pädagogischen Komplexität) einer kulturellen Sammlung gerecht zu werden. 
+
+                
+
+                
+
+                    
+Doch solch eine Vielzahl von visuellen und konzeptionellen Perspektiven erzeugt neue Herausforderungen für die Besucher digitaler Sammlungen: Wenn Informationen über mehrere Darstellungen verteilt sind, wird es schwierig einen Gesamtverständnis der kulturellen Sammlung aufzubauen. Einzelne Visualisierungen geben jeweils nur einen spezifischen Blickwinkel auf die Sammlung (z.B. geographische Verteilung, historische Entwicklung, usw.). Es besteht die Gefahr, dass die einzelnen Blickwinkel nicht miteinander verknüpft werden und damit nur ein fragmentiertes Verständnis der Sammlung aufgebaut wird. Aber wie können die Besucher dabei unterstützt werden die Informationen in den verschiedenen Visualisierungen und Ansichten am besten zu verarbeiten und miteinander zu integrieren und so ein multidimensionales Verständnis - ein besser integriertes mentales Modell - der Sammlung aufzubauen? Dieser Frage widmete sich in den letzten 3 Jahren das Forschungsprojekt “PolyCube - Towards integrated mental models of cultural heritage data” (
+
+                    
+
+                        
+http://donau-uni.ac.at/de/polycube
+
+                    
+
+                    
+/). 
+
+                
+
+            
+
+            
+
+                
+Multiperspektivität und Informationsintegration in PolyCube
+
+                
+
+                    
+In PolyCube wurden multiperspektivische Informationsvisualisierungen von kulturellen Sammlungen entwickelt, die die Integration von Informationen auf verschiedenen Ebenen unterstützen: (1) Integration von abstrakten Überblicksdarstellungen auf Sammlungsebene (“distant reading” oder “distant viewing”) mit Detaildarstellungen von Objekten (“close reading” oder “close viewing”), (2) Integration von mehreren Datendimensionen innerhalb einer Visualisierung, und (3) Integration von mehreren Visualisierungen mit verschiedenen Perspektiven auf die kulturelle Sammlung.
+
+                
+
+                
+
+                    
+Überblick, Details, und Navigation als Integration
+
+                    
+
+                        
+Dörk et al. (2011) betonen, dass auch in digitalen Informationsräumen die Benutzer “durch die Ausstellung flanieren” wollen auf der Suche nach interessanten Objekten, um sich anschließend in diesen zu vertiefen. Interfaces zu kulturellen Sammlungen ermöglichen zudem die fließende Navigation zwischen “Aggregationsebenen” einer Sammlung: Vom Überblick zum Einzelobjekt und vice versa (vertikale Immersion oder Abstraktion) - sowie die traditionelle Bewegung von Objekt zu Objekt (“horizontales Browsing”). Um dieses kinetische Spektrum abzudecken, können in den PolyCube-Visualisierungen einzelne Datenpunkte ausgewählt werden, um Detailansichten neben der Überblicksdarstellung einzublenden. So bleibt die Orientierung auf Sammlungsebene erhalten, während die Einzelobjekte in Detailansicht studiert und durchwandert werden können.
+
+                    
+
+                
+
+                
+
+                    
+Multidimensionale Informationsvisualisierungen zur Integration von Zeit
+
+                    
+
+                        
+PolyCube geht über eindimensionale (z.B. Zeitstrahlen) oder zweidimensionale Visualisierungen (z.B. Karten oder Netzwerkdarstellungen) hinaus und integriert die für kulturelle Sammlungen äußerst wichtige Zeitdimension auf multiple Weise in zweidimensionale Ansichten (vgl. Abbildung 1). In einer experimentellen Studie haben wir untersucht, welche von vier verschiedenen geo-temporal integrierten Visualisierungen Benutzer am besten dabei unterstützen multidimensionale Erkenntnisse über die kulturelle Sammlung zu gewinnen (Mayr et al., 2018): Die Ergebnisse belegen, dass die Techniken der Farbkodierung und des Raum-Zeit-Kubus das integrierte Verständnis von raum-zeitlichen Mustern in der Sammlung (z.B. Reisebewegungen des Künstlers) am besten unterstützen. Die anderen beiden Visualisierungen erschweren die Integration, da bei “coordinated multiple views” Informationen über größere visuelle Distanzen verknüpft und bei Animationen die vorangegangenen Datenpunkte im Arbeitsgedächtnis gespeichert werden müssen.
+
+                    
+
+                    
+
+                        
+
+						
+
+                        
+Abbildung 1. Multiple Möglichkeiten der raum-zeitlichen Visualisierung einer kulturellen Sammlung im PolyCube System. Zeitinformation wird a) als Farbkodierung, b) als “coordinated multiple view”, c) als Zeitachse in einem Raum-Zeit-Kubus und d) als Bewegung in einer Animation enkodiert.
+						
+
+                    
+
+                
+
+                
+
+                    
+Verknüpfung mehrerer Visualisierungen
+
+                    
+
+                        
+Doch oftmals sind es mehr als drei Dimensionen, die eine kulturelle Sammlung charakterisieren und daher von Interesse für die Benutzer einer Visualisierung sind. Im PolyCube-System kann Zeit in Zusammenschau mit geographischem, kategorialem und relationalem Raum dargestellt werden (vgl. Abbildung 2). Damit diese jedoch nicht nur isoliert voneinander betrachtet werden, bedarf es verschiedener Techniken, die deren Verknüpfung unterstützen: (a) Übergangsanimationen, (b) kohärenter Visualisierungstechniken, und (c) Koordination der Visualisierungen
+
+                    
+
+                    
+
+                        
+Zunächst empfiehlt es sich, mehrere Visualisierungen mittels 
+
+                        
+Übergangsanimationen 
+
+                        
+(“seamless transitions”) zu verknüpfen, die die Transformation der Datenpunkte von einer zur anderen Visualisierung veranschaulicht. Egal, ob die Visualisierungen seriell oder parallel präsentiert werden, wird dadurch die Zusammenführung der Informationen aus beiden Visualisierungen erleichtert. Kognitiv bedeutet dies, das zunächst nur ein mentales Modell von der ersten Visualisierung aufgebaut wird und die weiteren Informationen aus den folgenden Visualisierungen damit inkrementell verknüpft werden können (vgl. Schreder et al., 2016).
+
+                    
+
+                    
+
+                        
+
+						
+
+							
+Abbildung 2. Das PolyCube System kombiniert multiple strukturelle (orange) and zeitliche Visualisierungstechniken (braun) für die reichhaltige, kontextuelle Visualisierung von Sammlungen des kulturellen Erbes.
+						
+
+                    
+
+                    
+
+                        
+Die Zuordnung und Interpretation der Informationen aus mehreren Visualisierungen wird darüber hinaus vereinfacht, wenn in allen die gleichen oder 
+
+                        
+konsistente Gestaltungsprinzipien
+
+                        
+angewandt werden (z.B. konsistente Ausrichtung der Zeitachse, konsistentes Farbschema, konsistente Nutzung des Raum-Zeit-Kubus) (Qu &amp; Hullman, 2018). Aus kognitiver Perspektive führen ähnliche visuelle Hinweisreize dazu, dass das System als ein Ganzes gesehen wird und daher auch die Information verknüpft und gemeinsam verarbeitet wird.
+
+                    
+
+                    
+
+                        
+Parallel präsentierte Visualisierungen derselben Sammlung sollten nicht lose nebeneinander stehen, sondern als “
+
+                        
+coordinated multiple views
+
+                        
+” auch visuell miteinander koordiniert werden: Methoden wie linked highlighting, linking und brushing oder leader lines erzeugen visuelle Verbindungen zwischen den verschiedenen Repräsentationen derselben Datenpunkte in den verschiedenen Visualisierungen. Das ermöglicht es, die Positionierung eines Objektes im geographischem, relationalem und kategorialem Raum gemeinsam zu verstehen und kognitiv miteinander zu verknüpfen.
+
+                    
+
+                
+
+            
+
+            
+
+                
+Diskussion und Ausblick
+
+                
+
+                    
+Generosität und perspektivischer Pluralismus, wie sie in PolyCube beispielhaft für kulturelle Sammlungen entwickelt wurden, können als Designstrategien von besonderer Relevanz auch für andere geistes- und kulturwissenschaftliche Gegenstände und Themen gelten, die immer schon durch Reichhaltigkeit (an informationellen aber auch interpretativen Dimensionen) ausgezeichnet sind. Mit dem PolyCube-Projekt wollen wir für die Designer von komplexen Visualisierungsumgebungen auch Möglichkeiten aufzeigen, wie kognitive und interpretative Folgekosten von dissonanten, inkohärenten oder fragmentierten Ansichten reduziert werden können (Windhager, Salisu et al., 2018). Wir plädieren neben der Bereitstellung von Technologien der “visuellen Analyse” in diesem Kontext für die Entwicklung eines neuen Instrumentariums der “visuellen Synthese” (Schreder et al., 2016), dass auch im Rahmen von komplexem Interface-Design den vermittelten Blick auf 
+
+                    
+Bäume und Wald 
+
+                    
+möglich macht.
+
+                
+
+                
+
+                    
+Neben der Präsentation und Diskussion der entsprechenden Integrationstechniken wird ein Ausblick der zukünftigen Öffnung des Visualisierungssystems für ForscherInnen zu kulturellen Sammlungen gewidmet: Mit einem einfachen Spreadsheet-Editor können eigene Daten importiert werden, um die multi-perspektivische Exploration von beliebigen neuen Sammlungen von zeit-orientierten Kulturdaten zu gewährleisten.
+
+                
+
+            
+
+            
+
+                
+Danksagung 
+
+                
+
+                    
+Die beschriebene Arbeit wurde durch den Wissenschaftsfonds FWF P.No. P28363 gefördert.
+
+                
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Dörk, M. / Carpendale, S. / Williamson, C. (2011):
+ 
+                        
+The information flaneur: A fresh look at information seeking
+, 
+                        in: Proceedings of the SIGCHI conference on human factors in computing systems (pp. 1215-1224). ACM.DOI:  https://doi.org/10.1145/1978942.1979124
+                    
+
+                    
+
+                        
+Dörk, M. / Pietsch, C. / Credico, G. (2017):
+ 
+                        
+One view is not enough
+. 
+                        Information Design Journal, 23 (1), 39-47.
+                    
+
+                    
+
+                        
+Mayr, E. / Schreder, G. / Salisu, S. / Windhager, F. (2018): 
+
+                        
+Integrated Visualization of Space and Time: A Distributed Cognition Perspective
+. 
+                        Manuscript in preparation.
+                    
+
+                    
+
+                        
+Qu, Z / Hullman, J. (2018):
+ 
+                        
+Keeping Multiple Views Consistent: Constraints, Validations, and Exceptions in Visualization Authoring
+, 
+                        IEEE Transactions on Visualization and Computer Graphics, 24 (1), p. 468-477. DOI:
+                        
+
+                            
+https://doi.org/10.1109/TVCG.2017.2744198
+
+                        
+
+                    
+
+                    
+
+                        
+Schreder, G. / Windhager, F. / Smuc, M. / Mayr, E. (2016):
+ 
+                        
+A Mental Models Perspective on Designing Information Visualizations for Political Communication.
+ 
+                        JeDEM-eJournal of eDemocracy &amp; Open Government, 8(3), 80-99.
+                    
+
+                    
+
+                        
+Whitelaw, M. (2015):
+ 
+                        
+Generous Interfaces for Digital Cultural Collections
+. 
+                        DHQ: Digital Humanities Quarterly, 9 (1).
+                    
+
+                    
+
+                        
+Windhager, F. / Federico, P. / Schreder, G. / Glinka, K. / Dörk, M. / Miksch, S. / Mayr, E. (2018):
+ 
+                        
+Visualization of Cultural Heritage Collection Data: State of the Art and Future Challenges
+. 
+                        IEEE Transactions on Visualization and Computer Graphics. DOI:
+                        
+
+                            
+10.1109/TVCG.2018.2830759
+
+                        
+
+                    
+
+                    
+
+                        
+Windhager, F. / Salisu, S. / Schreder, G. / Mayr, E. (2018):
+ 
+                        
+Orchestrating Overviews: A Synoptic Approach to the Visualization of Cultural Collections.
+ Open Library of Humanities, 4 (2). DOI: 
+                        
+
+                            
+http://doi.org/10.16995/olh.276
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    

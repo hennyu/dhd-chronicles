@@ -1,0 +1,355 @@
+
+        
+
+            
+
+                
+Kontextualisierung: Wissenschaftliche Notizbücher
+
+                
+In der jüngeren Geschichte sind und waren Notizbücher ständige Begleiter von Schriftstellern, Künstlern, Geschäftsleuten und Wissenschaftlern (Yeo, 2014). Ein besonderes Faszinosum stellen dabei wissenschaftliche Notizbücher dar, da sie posthum Einblicke in die Gedankenwelt ihrer Autor_Innen erlauben und dadurch die Genese wissenschaftlicher Theorien und Methoden nachvollziehbar machen. Zu den bekannteren Beispielen wissenschaftlicher Notizbücher und deren nachträglicher Exegese zählen etwa die Aufzeichnungen von Isaac Newton (vgl. McGuire &amp; Tamny, 1983), Paul Dirac (vgl. Galison, 2000), Alexander von Humboldt (vgl. Lenz, 2015) und Theodor Fontane
+1
+. 
+                
+
+                
+Wenngleich sich die Art und Weise des Notierens im Laufe der Zeit stark verändert hat, zeigt sich als Konstante doch stets das inhärente Bedürfnis nach einer Materialisierung von Denkprozessen durch Aufschreiben und Visualisieren. Dabei nimmt das Anfertigen von Notizen im wissenschaftlichen Arbeiten eine besondere Stellung ein und ist Teil eines mehr oder weniger chaotischen Entwurfsprozesses (Krauthausen, 2010), weichen doch die letztendlichen Ergebnisse oftmals stark von den ursprünglich gesetzten Zielen ab. Ernst Mach umschreibt das Schaffen von Wissen gar als geleiteten Findeprozess, der letztlich auf einen günstigen „psychischen Zufall“ abzielt (Krauthausen, 2010). Ein solcher Findeprozess umfasst das Skizzieren, Notieren und Sammeln von Ideen und bestehendem Wissen. Das Notieren mit Papier und Stift unterstützt einen geleiteten Findeprozess in idealer Weise indem es eine breite Palette von Interaktionsmöglichkeiten, auch 
+                    
+affordances
+ (Gibson, 1977) genannt, eröffnet. Dazu gehören u.a. das Knüllen, Reißen, Falten, oder auch das Markieren, Streichen, Färben und Zeichnen. Als Antipode zum Notieren auf Papier stehen im digitalen Zeitalter eine Vielzahl digitaler Annotations- und Notiztools zur Verfügung, welche die genannten 
+                    
+affordances
+ von Papier und Stift aber allenfalls simulieren. Während der Gebrauch der analogen Werkzeuge nur von der Kreativität der Nutzer begrenzt wird, müssen entsprechende Funktionen in digitalen Programmen explizit erdacht, implementiert und getestet werden. Schnittstellen zu anderen Anwendungen müssen entworfen und standardisiert werden, während analoge Objekte beliebig kombinierbar sind. Der entscheidende Vorteil handschriftlichen Notierens auf Papier liegt somit in der großen individuellen Gestaltungsfreiheit und Flexibilität und der damit einhergehenden Verstärkung der eigenen kognitiven Fähigkeiten (Norman 1993; Piolat et al. 2005). Gleichzeitig bieten allerdings auch digitale Notizwerkzeuge spezifische Vorteile gegenüber der analogen Variante: So sind sie meist cloud-basiert, auf mehreren Endgeräten verfügbar und mit Backup-Funktionen versehen. Verknüpfungen mit Literaturdatenbanken, einfaches Sortieren der Einträge sowie Textverarbeitungsfunktionen wie z.B. eine Volltextsuche und nicht zuletzt Copy &amp; Paste unterstützen den meist digital geprägten Arbeitsprozess.
+                
+
+                
+Das hier vorgestellte Projekt positioniert sich im Spannungsfeld von traditioneller Kulturtechnik und innovativen Informationssystemen und zielt darauf ab, die Qualitäten von Papier- und Stift-Interaktion zu erhalten, indem hilfreiche digitale Funktionen mittels Augmented Reality (AR) in analoge Notizbücher integriert werden. Ziel ist es also, das beste aus der analogen sowie auch der digitalen Welt in einer augmentierten Notizanwendung zu vereinen. 
+
+            
+
+            
+
+                
+
+                    
+Technisches Umsetzungskonzept
+
+                
+
+                
+AR-Anwendungen erlauben es, durch eine Kombination aus Tracking- und Display-Technologien, Nutzern virtuelle Informationen anzuzeigen, die in der realen Welt verankert zu sein scheinen. In Verbindung mit Steuergeräten oder Gestenerkennung können so potenziell beliebige Gegenstände ohne integrierte technische Vorrichtungen zu Interfaces von Informationssystemen werden (siehe z.B. Martedi et al., 2012; Biefang et al., 2017). Hier setzt auch unser AR-Notizbuch-Projekt an: Anwender sollen mit ihren persönlichen Notizbüchern und Stiften arbeiten können und möglichst natürlich und intuitiv per AR zusätzliche digitale Funktionen angeboten bekommen. Im Unterschied zu kommerziell bereits verfügbaren Entwicklungen, die mit speziellen Stiften oder digitalem Papier auf eine technische Modifikation der Schreibwerkzeuge setzen, steht hier die Untersuchung eines nicht-invasiven Ansatzes im Vordergrund.
+
+                
+Geplante Funktionen (vgl. Abbildung 1) sind dabei etwa: 
+
+                
+• Volltextsuche in den handschriftlichen Notizen
+
+                
+• Verschlagwortung einzelner Einträge
+
+                
+• Verknüpfung von Literaturquellen und deren Anzeige
+
+                
+• Sicherung der handschriftlichen Notizen in vektorisierter Form 
+
+                
+Das Hauptaugenmerk der technischen Umsetzung liegt auf dem Stift als primärem Interaktionswerkzeug. Somit dienen Stiftgesten im Sinne der 
+                    
+Natural Interaction
+ (Nielsen, 1993) als Interaktionsmethode mit dem AR-System. Gleichzeitig soll über Handschriftenerkennung das Geschriebene digitalisiert und so bspw. der oben genannten Volltextsuche zugänglich gemacht werden. 
+                
+
+                
+
+					
+
+						
+
+					
+
+					
+
+						
+
+						
+
+						Abbildung 1. – Mockups von geplanten Funktionen des AR-Notizbuchs. 
+							
+Links
+: Markierung eines Suchbegriffs durch eine Stiftgeste und Anzeige der Einträge, die diesen Begriff enthalten. 
+							
+Rechts
+: Einkreisen eines Begriffs per Stiftgeste, zu dem Tags angezeigt werden sollen. Über die Tags kann auf andere Einträge mit entsprechenden Schlagwörtern zugegriffen werden.
+						
+
+					
+
+                
+
+                
+Um Stiftbewegungen zu erkennen, wird ein Deep Learning-Ansatz verfolgt. Unter Einsatz eines 
+                    
+Mask-RCNN
+-Netzes (He et al., 2017) wird dabei ein Kamerabild segmentiert und dazu genutzt, 
+                    
+Convolutional Pose Machines
+ (Wei et al., 2016) zu trainieren, welche 
+                    
+Keypoints
+ des Stifts in der Hand der Nutzer liefern. Das Ziel dieser Erkennung ist ein vektorisiertes Schriftbild mit Bewegungsinformationen, das an bestehende Systeme zur Online-Handschrifterkennung (Keysers et al., 2017) übergeben werden kann. Als Trainingsdaten für die neuronalen Netze dienen das 
+                    
+Google Open Image Dataset v4
+ (Krasin et al., 2017) sowie eigene Aufnahmen. Zudem soll die Eignung von Tiefenkameras untersucht werden, um mehr Informationen über die vorliegende Notizszene in den Machine Learning-Ansatz einfließen zu lassen. Außerdem ist eine Erweiterung des Trainingskorpus geplant, um die Genauigkeit und Robustheit der Detektion der Stiftpose zu erhöhen. Gleichzeitig wird eine Client-Server-Architektur entworfen, um die für eine Echtzeit-Erkennung notwendige Rechenleistung außerhalb des AR-Headsets zur Verfügung zu stellen.
+                
+
+            
+
+            
+
+                
+
+                    
+Status Quo und Ausblick
+
+                
+
+                
+Das hier vorgestellte Konzept zur computergestützten Augmentierung handschriftlicher Notizbücher mithilfe von Deep Learning, Natural Interaction und Augmented Reality ist Teil des laufenden Dissertationsprojekts von Florin Schwappach. Im Zuge dessen wurde bislang eine interdisziplinäre (Wissenschaftsgeschichte, Medienwissenschaft, Psychologie, UX Design), theoretische Fundierung des Ansatzes erarbeitet. Parallel dazu wurden erste Prototypen zum Tracking von Stiftbewegungen und zur automatischen Handschriftenerkennung entwickelt, die bereits grundlegend funktionabel sind und im Laufe des Projekts stetig verbessert werden sollen. Die nächsten Schritte beinhalten die Umsetzung der AR-Komponente für die Notizbücher, also bspw. das Durchsuchen der digitalisierten Handschriften und die Visualisierung der Ergebnisse. Das AR-Notizbuch wird im Sinne des 
+                    
+user centered design
+-Prozesses (siehe ISO 9241-210, 2010) während des Projekts iterativ anhand von Nutzerstudien auf Usability und Funktionalität hin evaluiert und optimiert.
+                
+
+                
+Über die Entwicklung eines funktionsfähigen Prototypen und entsprechende Nutzertests werden im Rahmen des vorgestellten Projekts einerseits Erkenntnisse über natürliche Interaktionsmodalitäten im AR-Kontext gewonnen. Andererseits werden konkrete technische Ansätze dazu entwickelt, wie sich innovative AR-Systeme mit State-of-the-Art Machine Learning-Methoden verbinden lassen, um ihren Funktionsumfang zu erweitern. Das Projekt leistet weiterhin einen wichtigen Forschungsbeitrag für die Digital Humanities indem es Möglichkeiten der multimodalen Integration von analogen und digitalen Methoden im Kontext des wissenschaftlichen Arbeitens untersucht.
+
+            
+
+        
+
+        
+
+			
+
+				
+ Vgl. die digitale genetisch-kritische und kommentierte Edition von Fontanes Notizbüchern (herausgegeben von G. Radecke), online verfügbar unter https://fontane-nb.dariah.eu/index.html, abgerufen am 02.01.2019
+
+			
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Biefang, K. / Kunkel, J. / Loepp, B. / Ziegler, J., (2017):
+ 
+                        
+Eine Sandbox zur physisch-virtuellen Exploration von Ausgrabungsstätten
+, 
+                        in: 
+                        
+Burghardt, M. / Wimmer, R. / Wolff, C. / Womser-Hacker, C. (Hrsg.):
+ 
+                        
+Mensch und Computer 2017 - Workshopband
+. 
+                        Regensburg: Gesellschaft für Informatik e.V..
+                    
+
+                    
+
+                        
+Galison, P. (2000):
+ 
+                        
+The suppressed drawing: Paul dirac’s hidden geometry
+. 
+                        Representations, (72), 145–166. Abgerufen von 
+                        
+http://www.jstor.org/stable/2902912
+
+                    
+
+                    
+
+                        
+Gibson, J. (1977):
+ 
+                        
+The theory of affordances
+, 
+                        in:
+                        
+R. Shaw / J. Bransford (Hrsg.):
+ 
+                        
+Perceiving, Acting, and Knowing: Toward and Ecological Psychology
+ 
+                        (S. 62–82). Hillsdale, NJ: Erlbaum.
+                    
+
+                    
+
+                        
+He, K. / Gkioxari, G. / Dollár, P. / Girshick, R. (2017, Oktober):
+ 
+                        
+Mask R-CNN
+, 
+                        in: Computer Vision (ICCV), 2017, IEEE International Conference on (S. 2980-2988). IEEE.
+                    
+
+                    
+
+                        
+ISO 9241-210. (2010):
+ 
+                        
+Ergonomics of human-system interaction – Part 210: Human-centred design process for interactive systems.
+ 
+                    
+
+                    
+
+                        
+Keysers, D. / Deselaers, T. / Rowley, H. A. / Wang, L. L. / Carbune, V. (2017):
+ 
+                        
+Multi-Language Online Handwriting Recognition
+.
+                        IEEE Trans. Pattern Anal. Mach. Intell, 
+                        39(6), 1180-1194.
+                    
+
+                    
+
+                        
+Krasin I. / Duerig T. / Alldrin N. / Ferrari V. / Abu-El-Haija S. / Kuznetsova A. / Rom H. / Uijlings J. / Popov S. / Kamali S. / Malloci M. / Pont-Tuset J. / Veit A. / Belongie S. / Gomes V. / Gupta A. / Sun C. / Chechik G. / Cai D. / Feng Z. / Narayanan D. / Murphy K. (2017):
+ 
+                        
+OpenImages: A public dataset for large-scale multi-label and multi-class image classification
+. Verfügbar unter 
+                        
+https://storage.googleapis.com/openimages/web/index.html
+.
+                    
+
+                    
+
+                        
+Krauthausen, K. (2010):
+ 
+                        
+Vom Nutzen des Notierens: Verfahren des Entwurfs
+, 
+                        in: 
+                        
+K. Krauthausen / O. Nasim (Hrsg.): 
+
+                        
+Notieren, Skizzieren: Schreiben und Zeichnen als Verfahren des Entwurfs
+ (S. 7–26). Zürich.
+                    
+
+                    
+
+                        
+Lenz, M. (2015):
+ 
+                        
+Bewegte Systematik. Alexander von Humboldts „Amerikanische Reisetagebücher
+ 
+                        als Problemfelder der Literaturgeschichte und historischen Epistemologie. HiN - Alexander von Humboldt im Netz. Internationale Zeitschrift für Humboldt-Studien, 16(31), 78-104.
+                    
+
+                    
+
+                        
+Martedi, S. / Uchiyama, H. / Enriquez, G. / Saito, H. / Miyashita, T. / Hara, T. (2012):
+ 
+                        
+Foldable augmented maps.
+ 
+                        IEICE TRANSACTIONS on Information and Systems, 95(1), 256-266.
+                    
+
+                    
+
+                        
+McGuire, J. / Tamny, M. (1983):
+
+                        
+Certain philosophical questions: Newton’s trinity notebook.
+ 
+                        Newton’s Trinity Notebook. Cambridge University Press.
+                    
+
+                    
+
+                        
+Nielsen, J. (1993):
+ 
+                        
+Noncommand user interfaces. 
+
+                        Commun. ACM, 36(4), 83–99. 
+                    
+
+                    
+
+                        
+Norman, D. A. (1993):
+ 
+                        
+Things that make us smart: Defending human attributes in the age of the machine
+. 
+                        Boston, MA, USA: Addison-Wesley Longman Publishing Co., Inc.
+                    
+
+                    
+
+                        
+Piolat, A. / Olive, T. / Kellogg, R. T. (2005):
+ 
+                        
+Cognitive effort during note taking. 
+
+                        Applied Cognitive Psychology, 19(3), 291–312.
+                    
+
+                    
+
+                        
+Wei, S. E. / Ramakrishna, V. / Kanade, T. / Sheikh, Y. (2016):
+ 
+                        
+Convolutional pose machines
+, 
+                        in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (S. 4724-4732).
+                    
+
+                    
+
+                        
+Yeo, R. (2014):
+ 
+                        
+Introduction
+, 
+                        in: Notebooks, english virtuosi, and early modern science (S. 1–35). Chicago/London: University of Chicago Press.
+                    
+
+                
+
+            
+
+        
+
+    

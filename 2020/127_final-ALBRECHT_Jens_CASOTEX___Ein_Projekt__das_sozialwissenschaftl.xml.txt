@@ -1,0 +1,205 @@
+
+
+
+
+
+
+
+
+Einleitung
+                
+
+
+Viele Menschen leiden unter psychologischen und sozialen Problemen. Als niederschwellige Alternative zu klassischen Beratungsangeboten haben sich seit den 2000er Jahren Online-Beratungsangebote etabliert. Ratsuchende können hier ohne die Hemmschwelle eines persönlichen Kontakts ihre Probleme schildern und Lösungsvorschläge erhalten.
+
+
+Im Rahmen des CASOTEX-Projektes werden Konversationen aus öffentlichen Online-Beratungsforen mithilfe statistischer Methoden und maschineller Lernverfahren analysiert. Dabei soll die Frage geklärt werden, ob eine Unterstützung der Berater durch die Identifikation erfolgreicher Beratungsmuster im Kontext einer individuellen Beratungssituation möglich ist. Erfolgreiche Beratungsmuster könnten dann sowohl im Rahmen der Ausbildung von Onlineberatern genutzt werden, als auch die Grundlage für Echtzeit-Assistenzsysteme in der Onlineberatung bilden. Im Detail wird untersucht, wie computerlinguistische Methoden und maschinelle Lernverfahren qualitative Analysen unterstützen bzw. ergänzen können, wo die Grenzen der Verfahren liegen und wie bei deren Einsatz vorzugehen ist.
+
+
+
+
+
+
+Datengrundlage
+
+
+Datengrundlage für CASOTEX sind anonymisierte Daten aus dem öffentlichen Beratungsforum der bke
+ (Bundeskonferenz für Erziehungsberatung). Hier gibt es seit über 10 Jahren Beratungsverläufe zu Fragen rund um Familie und Erziehung mit über 70.000 Beiträgen, in denen sowohl professionelle BeraterInnen als auch Laien in einer Beraterfunktion auftreten. Bisher wurden diese großen Datensätze fast ausschließlich mit den Methoden der qualitativen Sozialforschung untersucht. Dadurch gelang es zwar, subjektive Sinnzusammenhänge zu extrahieren, allerdings waren in den entsprechenden Studien nur relativ kleine Stichproben möglich. 
+                
+
+
+Darüber hinaus ist die qualitative Inhaltsanalyse, bei der menschliche Subjekte die Subjektivität anderer Menschen zu erschließen versuchen, nach wie vor dem Vorwurf ausgesetzt, keine objektiven Ergebnisse zu erzeugen (vgl. Döring/Bortz 2016). Vor diesem Hintergrund erscheint es hilfreich, umfangreiche Textquellen nicht nur von Menschen, sondern auch mit Methoden der künstlichen Intelligenz analysieren zu lassen. So könnte einerseits die Subjektivität der Texte berücksichtigt werden und andererseits die entstehenden Erkenntnisse aus Analysen sehr großer Stichproben gespeist werden. 
+
+
+
+
+
+
+Computergestützte Inhaltsanalyse
+
+
+Die computergestützte Inhaltsanalyse bei CASOTEX umfasst verschiedene statistische und maschinelle Lern-Verfahren (s. Abb. 1).
+
+
+
+
+
+
+Abbildung 1: Schritte der computergestützten Analyse 
+
+
+
+
+
+
+Statistische Verfahren liefern erste Erkenntnisse zu Worthäufigkeiten, zum Sprachgebrauch und zur Aktivität in den Foren. Unüberwachte maschinelle Lernverfahren wie das Topic Modeling (Blei 2012) werden eingesetzt, um latente Themenkreise zu identifizieren. Eine zeitliche Betrachtung von Topic Models kann wesentliche Aufschlüsse über Veränderungen in der Art und Weise der Kommunikation liefern. Darüber, ob und inwiefern sich diese Verfahren auch für sozialwissenschaftliche Texte eignen, gibt es bisher nur wenig Erkenntnisse und die auch nur im englischen Sprachraum. Ergänzend können mithilfe neuronaler Netze kontextabhängige semantische Repräsentationen von Worten und Äußerungen erstellt werden, sogenannte Word Embeddings (Mikolov u.a. 2013). Dabei wird ein Sprachmodell trainiert, das es ermöglicht, Äußerungen semantisch zu differenzieren und Assoziationen zu bilden. Auch hierbei kann es aufschlussreich sein, zeitliche Verschiebungen zu identifizieren.
+
+
+Für tiefere Analysen der Konversationen zwischen Beratenden und Hilfesuchenden ist jedoch eine präzise automatische Identifikation bestimmter sprachlicher Aspekte erforderlich. Diese Aspekte umfassen unter anderem die thematisierten Probleme, die Art der Äußerungen (Frage, Antwort, Feedback, Bestätigung, Zurückweisung, Ratschlag usw.), Emotionen (Trauer, Schmerz, Freude, Wut), psychosoziale Verhaltensweisen und Merkmale (Empathie, Depression) sowie Phasen im Beratungsprozess (Wälte/Borg-Laufs 2018, Althoff u.a. 2016). Überwachte Lernverfahren, die einen manuell annotierten Trainingskorpus benötigen, können genutzt werden, um diese Aspekte zu identifizieren. Als Grundlage für überwachte maschinelle Lernverfahren wurde daher ein Trainingskorpus generiert, der von menschlichen Textinterpreten mit einem Kategoriensystem nach Mayring strukturiert wurde (Mayring 2015). Der Korpus umfasst einige tausend annotierte Äußerungen zu 10 Kategoriebereichen. Die manuelle Annotation der Texte erfolgt über ein kooperatives webgestütztes Verfahren mithilfe des Werkzeugs Webanno
+. Eine große Herausforderung stellt die Identifikation erfolgreicher Beratungsverläufe dar. Während in anderen Studien bewusst während der Beratung eine Erfolgseinschätzung bei den Ratsuchenden abgefragt wurde (Althoff u.a. 2016), liegen in den Forenverläufen entsprechende Informationen nicht systematisch vor. Neben der Berücksichtigung von entsprechenden Äußerungen im Kategoriensystem wurde im Rahmen der manuellen Annotation eine Experteneinschätzung des Erfolgs für die einzelnen Beratungsverläufe erstellt.
+                
+
+
+
+
+
+
+Erste Ergebnisse
+
+
+Erste Ergebnisse mit den Trainingsdaten zum Kategoriensystem sind vielversprechend. So konnten bspw. die Kategorien "Problemdarstellung", "Empathie für Klient*in" und "Handlungsempfehlung" ohne spezifische Optimierungen mit einer Genauigkeit (F1-Score) von ca. 70% vorhergesagt werden. Als Lernverfahren wurde dabei eine Support Vector Machine basierend auf einem TF-IDF-Modell verwendet. Bei vielen Kategorien sind allerdings sehr wenig Trainingsdatensätze vorhanden, so dass sie nur unscharf bestimmt werden können. Durch den Einsatz aktueller Lernverfahren, insbesondere neuronale Netze mit vortrainierten Embeddings (Devlin u.a. 2018), werden deutliche Verbesserungen erwartet. In Abhängigkeit von den Ergebnissen müssen ggf. die Trainingsdaten erweitert und das Kategoriensystem geschärft werden. 
+
+
+Sehr gut ist eine automatische Klassifikation der Nutzer in Ratsuchende, professionelle BeraterInnen und Laien-BeraterInnen, d.h. angemeldete BenutzerInnen, die deutlich mehr Antworten geben als Fragen stellen, möglich. Darüber hinaus zeigte eine Untersuchung anhand von Lesbarkeitsindizes wie z.B. dem Flesch-Reading-Ease und der Wiener Sachtextformel (vgl. Groeben 1982), dass die Laien-BeraterInnen durchweg syntaktisch einfachere Äußerungen formulierten. Dieses Ergebnis ist eine wichtige Grundlage für die Ausbildung von Onlineberatern und entsprechende Assistenzsysteme. So ist eine praktische Umsetzung denkbar, die Beratern direkt bei der Erstellung eines Posts Rückmeldung zum syntaktischen Niveau ihrer Antwort gibt und ggf. Anpassungen vorschlägt. 
+
+
+
+
+
+
+Weiteres Vorgehen
+
+
+Nachdem die manuelle Annotation der Trainingsdaten abgeschlossen ist, konzentriert sich die Arbeit jetzt auf die Untersuchung der überwachten Lernverfahren. Gesucht wird ein Modell, das es ermöglicht, bestimmte Äußerungen oder Teile von Äußerungen automatisch zu kategorisieren. Hierbei wird es für die praktische Anwendung in der Onlineberatung von großer Bedeutung sein, mit welcher Qualität das Erfolgskriterium modelliert werden kann. Da im annotierten Datensatz relativ selten eindeutige Erfolgsaussagen annotiert werden konnten, muss in der Auswertung mit dem Expertenurteil gearbeitet werden, das keinen konkreten Textbezug aufweist.
+
+
+Unabhängig davon sollen auf Basis des Trainingskorpus bestimmte Aspekte der Beratungskonversationen, z.B. Empathie-Äußerungen oder methodische Elemente wie ein von den Beratern initiierter Perspektivenwechsel rekonstruiert werden. Je nach Güte der Erkennungsleistung können diese Ergebnisse zumindest ein fundiertes deskriptives Bild über die Verbreitung der jeweiligen Aspekte im Gesamtdatensatz liefern. Darüber hinaus werden Zusammenhänge zwischen den identifizierbaren Aspekten im Datensatz untersucht. Selbst wenn eine Verbindung mit dem Erfolgskriterium nicht möglich sein sollte, kann so erstmals mit der Tiefe qualitativer Verfahren ein großer Datensatz der Onlineberatung quantitativ analysiert werden und mit bisher vorhandenen Wirkannahmen verglichen werden. So sollten zumindest in Teilbereichen Hypothesen generiert werden können, die in zukünftigen Studien genauer untersucht werden können. 
+
+
+
+
+
+
+
+  
+
+    
+
+      
+https://eltern.bke-beratung.de
+
+    
+
+    
+
+      
+https://webanno.sfs.uni-tuebingen.de/
+
+    
+
+  
+
+  
+
+
+
+
+Bibliographie
+
+
+
+
+Althoff, Tim / Clark, Kevin / Leskovec, Jure
+ (2016) "Large-scale Analysis of Counseling Conversations: An Application of Natural Language Processing to Mental Health". In: 
+                        
+Transactions of the Association for Computational Linguistics
+, Vol. 4, S. 463–476.
+                    
+
+
+
+
+Blei, David M.
+ (2012) "Probabilistic topic models". In: 
+                        
+Communications of the ACM
+. ACM, 55(4), S. 77ff.
+                    
+
+
+
+
+Devlin, Jacob / Chang, Ming-Wei / Lee, Kenton / Toutanova, Kristina
+ (2018) 
+                        
+BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.
+ Computing Research Repository (CoRR), arXiv:1810.04805
+                    
+
+
+
+
+Döring, Nicola / Bortz, Jürgen
+ (2016) 
+                        
+Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften
+. Berlin, Heidelberg: Springer.
+                    
+
+
+
+
+Groeben, Norbert
+ (1982) 
+                        
+Leserpsychologie: Textverständnis - Textverständlichkeit.
+ Münster: Aschendorff.
+                    
+
+
+
+
+Mayring, Philipp
+ (2015) 
+                        
+Qualitative Inhaltsanalyse
+. Weinheim: Beltz
+                    
+
+
+
+
+Mikolov, Tomas / Sutskever, Ilya / Chen, Kai / Corrado, Greg / Dean, Jeffrey
+ (2013) "Distributed Representations of Words and Phrases and Their Compositionality". In: 
+                        
+Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2
+. USA: Curran Associates Inc. (NIPS’13), S. 3111–3119. 
+                    
+
+
+
+
+Wälte, Dieter / Borg-Laufs, Michael
+ (Hrsg.) 
+                        
+Psychosoziale Beratung – Grundlagen, Diagnostik, Intervention. Stuttgart: Kohlhammer
+.
+                    
+
+
+
+
+
+
+
+

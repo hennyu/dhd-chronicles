@@ -1,0 +1,106 @@
+
+    
+
+      
+Graphische Romane und Comics vereinen als hybride Gattung Aspekte von Literatur und bildender Kunst und werden deshalb auch als sequenzielle Kunst bezeichnet. Man kann erwarten, dass sich die psychologische Wirkung graphischer Romane von der rein wortbasierter Romane unterscheidet. Einerseits sagt ein Bild mehr als tausend Worte, was die deutlich geringeren Zahl von Wörtern bei graphischen Adaptionen klassischer Romane erklärt, andererseits hat der Leser weniger Freiheitsgrade bei der visuellen Ausgestaltung der Szene und wird durch die erforderliche Integration von Bild und Text möglicherweise vor besondere Aufgaben gestellt. Wie interagieren Bild und Text beim Lesen graphischer Literatur und ermöglichen das Verstehen des Gesamtwerkes? Welche besonderen Herausforderungen stellt das multimediale Format an den Leser? Wie unterscheidet sich die Narrativität graphischer von der herkömmlicher Romane?
+
+      
+Im Kontext der interdisziplinär ausgerichteten Nachwuchsgruppe "Hybride Narrativität:
+        Digitale und Kognitive Methoden zum Leseverständnis Graphischer Literatur" wurde die
+        
+Comic Book Markup Language
+ (CBML) erweitert zur 
+Graphic Novel Markup Language
+ (GNML) und ein zugehöriges
+        Annotationstool entwickelt, das auch die semiautomatische Erkennung von Elementen
+        ermöglicht. Durch die graphische Benutzeroberfläche wird es ermöglicht, auf einfache
+        Weise die Strukturen einer Comic-Seite zu annotieren. Die Annotation einer Vielzahl
+        von Werken erlaubt beispielsweise vergleichende Untersuchungen über die in
+        kulturellen Traditionen oder bei bestimmten Autoren vorherrschende Stilistik. Um
+        auch die kognitive Verarbeitung auf Seite der Rezipienten abzubilden, sammeln wir
+        empirische Daten über die Wirkung graphischer Literatur. Neben der Erhebung
+        psychologischer Größen wie Reaktionszeiten und subjektiven Maßen werden dazu
+        insbesondere auch Blickbewegungen einer größeren Zahl von Leserinnen und Lesern
+        einiger kanonischer Graphic Novels aus unterschiedlichen Kulturkreisen registriert.
+        Die Bewegungen des Auges haben sich in einer Vielzahl an Studien als valides,
+        nichtreaktives Maß für die Verarbeitung und das Verstehen von Text und Bild
+        erwiesen, in dem sich zudem auch unbewusste Verarbeitungsprozesse niederschlagen.
+        Für die Zuordnung der Blickbewegungsdaten auf das Material, Weiterverarbeitung und
+        statistische Analyse der XML-Daten wird ein R-Paket entwickelt. Damit wird es auch
+        möglich sein, erhobene Daten zu visualisieren.
+
+        
+Im vorliegenden Beitrag illustrieren wir den potenziellen Nutzen einer solchen
+          Kombination anhand einer Analyse der Eye-tracking-Daten von (a) einer Sammlung
+          kürzerer Passagen aus mehreren kanonischen graphischen Romanen – einem
+          repräsentativen Korpus – und (b) Passagen der Graphic-Novel-Adaptation von Paul
+          Austers Roman "City of Glass" (Auster 1985; Karasik / Mazzucchelli / Auster 1994).
+          Für (a) berichten wir eine Analyse des relativen Anteils von Fixationen auf Text vs.
+          Bild. Effekte der Wortlänge sowie statistischen Worthäufigkeit in der geschriebenen
+          Sprache auf die Fixationsdauern zeigen, dass der Text auch tatsächlich gelesen und
+          rezipiert wird. Analysen der Fixationsmuster zeigen zudem, dass der Text meist vor
+          dem Bild angeschaut wird und das Bild oft entweder gar nicht oder rein im peripheren
+          Sehfeld analysiert wird. Interessante Objekte wie Personen oder Gesichter werden mit
+          höherer Aufmerksamkeit bedacht als Objekte des Hintergrundes. Ob das Bild überhaupt
+          betrachtet wird, ist unter anderem vom Informationsgehalt des Bildes abhängig, der
+          sich wiederum je nach Art des Überganges zwischen zwei Panels unterscheidet (McCloud
+          1993). Wenn sich die bestehende Handlung auf dem nächsten Panel fortsetzt, wird
+          dieses mit höherer Wahrscheinlichkeit übersprungen als ein Panel, das sich
+          deutlicher von seinem Vorgänger unterscheidet und damit einen entscheidenderen
+          Anteil an der Handlung hat, beispielsweise bei einem Szenenwechsel. Bei (b)
+          fokussieren wir insbesondere auf die Frage der Text-Bild-Beziehung. Unterscheidet
+          sich beispielsweise das Blickverhalten, wenn Bild und Text auf gemeinsame vs.
+          unterschiedliche Handlungsstränge fokussieren? Zudem berichten wir über deutliche
+          Zusammenhänge von Leser-Expertise mit graphischer Literatur und explizit gemessener
+          Verständnistiefe bei diesem speziellen Werk sowie implizit gemessenen Blickdauern.
+          Anders als beim Lesen von reinem Text drückt sich Expertise beim Lesen graphischer
+          Literatur nicht in geringeren, sondern in höheren Betrachtungszeiten aus, die sich
+          speziell auf den Bildanteil konzentrieren.
+
+          
+Perspektivisch soll das Material anhand von aus dem computationalem Sehen abgeleiteten Deskriptoren beschrieben und klassifiziert werden. Beispielsweise sollen dazu Farb-Histogramme, lokales Fourier-Spektrum, der SURF-Algorithmus etc. genutzt und Klassifikationsverfahren aus dem Bereich des maschinellen Lernens angewandt werden. Diese werden sicherlich die stilistische Beschreibung anreichern und können als potenzielles Nebenprodukt auch die Suche in Bilddatenbanken ohne explizites verbales Tagging vorbereiten. Im Rahmen unseres Projektes erhoffen wir uns von einer derartigen Anreicherung der Daten jedoch eine Antwort auf die Frage, wie sich die Wechselwirkung solcher Bottom-up-Merkmale mit Top-down-Einflüssen von einfacher Worthäufigkeit bis hin zu narratologischen Elementen auf das Blickbewegungsverhalten und die Rezeption der Literatur auswirkt. Letztlich ist es eine empirische Frage, wie viel des Verhaltens und Verstehens sich durch simple Deskriptoren erklären lässt und welche Anteile sich durch Hinzunahme weiterer, beispielsweise konfigurationaler oder strategisch-aufgabenorientierter Merkmale aufklären lassen.
+
+          
+Zusammenfassend berichten wir über eine von kognitiven und psychologischen Fragen geleitete Analyse graphischer Literatur und darauf erhobenen Blickbewegungsdaten. Zum einen werden dabei allgemeine Prinzipien anhand einer Sammlung verschiedener kanonischer Werke des Genres illustriert. Zum anderen beschreiben wir eine tiefere Analyse eines spezifischen Exemplars dieser Gattung.
+
+        
+
+        
+
+          
+
+            
+
+              
+Bibliography
+
+              
+Auster, Paul
+ (1985): 
+City of
+              glass.
+ Volume 1 of The New York trilogy. New York: Penguin
+              Books.
+
+              
+Karasik, Paul / Mazzucchelli, David / Auster, Paul
+
+              (1994): 
+Paul Auster’s City of glass
+. New York: Avon
+              Books. 
+
+              
+McCloud, Scott
+ (1993): 
+Understanding comics: the invisible art
+. Northampton, MA: Tundra.
+            
+
+          
+
+        
+
+      
+
+    

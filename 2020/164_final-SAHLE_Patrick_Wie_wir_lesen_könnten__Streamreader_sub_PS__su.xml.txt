@@ -1,0 +1,159 @@
+
+
+
+
+
+
+Ausgangspunkte
+
+
+Man sagt, Sprache sei ein lineares Ereignis in der Zeit. Schrift sei die Fixierung gesprochener Sprache. Text sei essentiell ein Strom sprachlicher Einheiten. Davon halte ich: nichts. Insbesondere ist die Idee, Text sei (letztlich nur) eine Abfolge von Zeichen, Wörtern oder Sätzen, ganz unsinnig. Auch wenn die analytisch ausgerichtete Praxis der Computerlinguistik und großer Teile der Computerphilologie sich aus der höchst produktiven Reduktion des (recodierten) Textes auf einen “stream of tokens” speist, bleibt die Vorstellung eines linearen Textes aus einer allgemeinen, medienhistorisch bewussten Sicht auf Text, Textgenres, Textualität und Textmedialität heraus ganz arm, um nicht zu sagen: schlicht falsch. Denn offensichtlich beruht der große Erfolg der etabliertesten Textmedien (z.B.: das Buch) darauf, dass die Linearität der (gesprochenen) Sprache durch eine Zweidimensionalität der Schriftsprache auf der Schreibfläche 
+                    
+ersetzt
+ ist. Text (wie wir ihn kennen) ist nicht so sehr Fixation von gesprochener Sprache, sondern bildet ein eigenes, autonomes Ausdruckssystem, das auf komplexe Medialisierung und auf eine primär humanoide Rezeption, die wir Lesen nennen, ausgerichtet ist. Unser Lesen aber ist Sehen. Ist das visuelle Erfassen von flächigen Bildern, nämlich Wörtern, auf strukturierten Flächen: dem Layout der Seite. Diese Konfiguration des Lesens als Erkennung komplexer Muster und Strukturen ist aber historisch bedingt, ist das Ergebnis einer bestimmten Lesesozialisation und die Konsequenz aus der Anwendung bestimmter Schrift- und Lese
+medien
+, die von der beschriebenen Fläche ausgehen. Sie ist das Ergebnis der Nutzung bestimmter Technologien. Was jedoch würde passieren, wenn wir die (naive) Ursprungsidee des Textes als Zeichenstrom wieder aufnähmen und sie mit aktuellen technischen Möglichkeiten verbänden?
+                
+
+
+
+
+
+
+Der StreamReader 
+
+
+Es ist ganz einfach: Digitale Technologien medialisieren Daten ad hoc und erlauben eine dynamische, interaktiv zu kontrollierende Darstellung von Inhalten. Natürlich könnten Texte auch als “laufende” Schrift dargestellt werden, die sich als einzelne Zeile auf einer Anzeigefläche von rechts nach links bewegt. Als Strom von Zeichen, die wie gehabt als Wörter und Sätze gelesen werden können. Als Leser möchte man dann einige erste Steuerungsfunktionen haben: Start / Pause, Schneller, Langsamer, Zurück zum Absatzanfang. 
+
+
+
+
+
+
+Abbildung 1: Der Streamreader, Papiermodell für eine klassische Bildschirmanwendung. Das Fließen der Textzeile muss man sich hinzudenken, weil auch dieser Text (das vorliegende Abstract) im Rahmen des Drucks gefangen ist.
+
+
+
+
+Darstellung und Steuerung hängen im Detail von der gewählten technischen Lösung und medialen Umgebung ab. Einige denkbare Szenarien seien hier angedeutet: (1.) In einem Webbrowser steuert man Bedienungselemente mit der Maus oder Tastatur um den Textlauf zu regeln. (2.) Bei einem Smartphone kippt man das Gerät nach rechts oder links, um die Geschwindigkeit des Stroms zu kontrollieren. Man kippt nach vorne, um zu stoppen. (3.) Bei einer VR-Brille dreht man den Kopf nach rechts um die fließende Textzeile, die gewissermaßen einen halbkreisförmigen Horizont bildet, zu beschleunigen - und nach links, um ihr hinterherzusehen und sie zu verlangsamen. Mit einem längeren Augenzwinkern würde man pausieren. (4.) Ein kleiner Projektor wirft laufende Schrift an die Zimmerdecke, wenn man im Bett liegt. Ein Steuerungsgerät hält man in der Hand. Oder die Zimmerdecke schaut zurück: Beschleunigung, wenn Kopf oder Augen sich nach rechts wenden. Verlangsamung beim Blick nach Links. Die Anwendung wird geschlossen, wenn die Augen lange geschlossen bleiben.
+
+
+Das sind naheliegende Anwendungsszenarien mit grundlegenden Funktionen. Schnell fragt man nach weiteren Möglichkeiten, die sich aus den jeweiligen technischen Bedingungen ergeben oder eine Übersetzung aus den gewohnten Funktionalitäten etablierter Textmedien sind. Inhaltsverzeichnisse und Text-Makro-Strukturen wie Abschnitte, Absätze oder Seiteneinheiten sind in kompakte Visualisierungen umzusetzen, die für Überblick, Orientierung und gezieltes Einspringen in den Text sorgen. Eine Lesezeichenfunktion erlaubt das Weiterlesen nach längerer Pause an entsprechender Stelle. Illustrationen, Fußnoten und andere “Textfeatures”, die sich die Zweidimensionalität der Schriftseite zunutze machen, erfordern angepasste Verhaltensweisen in der Stromdarstellung. Hinzu kommen weitere Text-Ausdrucksmittel. Mikrotypografische Phänomene wie Fettdruck, Kursivierung, Höher- bzw. Tieferstellung, Farbe, Font, Schriftgröße können erhalten bleiben, müssen aber auf ihre Funktionalität und veränderte Effekte hin überprüft werden. Andere Gestaltungselemente, wie Zeilenumbrüche oder vertikale Abstände verlangen nach ganz neuen Ausdrucksformen. Das Spacing innerhalb und zwischen Wörtern und Sätzen müsste neu bedacht werden. Dies aber sind nur einige erste Hinweise. Der schriftsprachliche, typografische Ausdrucksraum enthält noch weitere Phänomene, die zu remodellieren wären.
+
+
+
+
+
+
+Prototypenentwicklung
+
+
+Dies ist kein Bericht zu einem laufenden oder geplanten Projekt. Es ist der Versuch, einen vielleicht neuen, recht allgemeinen Ansatz auf der fachlich einschlägigen Konferenz vorzustellen und zu diskutieren. In den vergangenen Jahren habe ich mit verschiedenen Kolleginnen und Mitarbeitern begonnen, die technischen Möglichkeiten eines StreamReaders im Rahmen spielerischer Ansätze, ohne jede projektförmige Organisation oder Finanzierung zu bedenken. Dabei ergab sich zunächst der überraschende Befund, dass die gängigen, besonders niederschwelligen Standardtechnologien, wie Web Browser, HTML (mit dem uralten marquee-Element oder den neueren HTML5-Canvas-Möglichkeiten), CSS, Javascript, SVG, VR-Programmbibliotheken die intendierte Anwendung gar nicht gut unterstützen. Bereits hier lässt sich mit einigem technologiekritischen Gewinn herausarbeiten, wie weit unsere medialen Grundvorstellungen von Text als einem an Statik, an hierarchischer Grundstruktur und an der begrenzten Fläche als Präsentationsraum orientierten Informationsobjekt, sich in die Grundkonzepte der Technologien eingeschrieben haben und ein fundamental abweichendes Denken und entsprechende Softwarelösungen behindern. Zu den zuletzt im Rahmen einer Qualifikationsarbeit (Drach 2019) weiter verfolgten Ansätzen gehörte schließlich ein Rückgriff auf primitivste HTML-Browser-Features, die immerhin das Testen einiger Grundfunktionen des StreamReaders ermöglichen und mit ersten Anwendungsreflexionen Anstöße für die weitere Konzeptentwicklung geben können. Sviatoslav Drach (2020) wird diesen Prototyp auf einem Poster zur Konferenz vorstellen. Gemeinsam machen wir uns hier dialogisch ein niederschwelliges “critical prototyping” zunutze, bei dem die Entwicklung von Software zugleich Anstöße für die weitere konzeptionelle Entwicklung und die theoretische Auseinandersetzung mit dem Gegenstand ist.
+
+
+
+
+
+
+Worum es hier (nicht) geht 
+
+
+Disclaimer wegen der absehbaren Reflexe: Es geht hier 
+                    
+nicht
+ darum, eine neue, bessere Lesetechnologie zu entwickeln, die das gedruckte Buch oder den digital flächig dargestellten Text ablösen könnte. Es ist klar und offensichtlich, dass diese Form der Textdarstellung und Textrezeption erhebliche Schwierigkeiten und Nachteile mit sich bringen, die vielleicht nicht nur unserem gelernten Leseverhalten geschuldet sind, sondern auch auf anthropologische Konstanten (z.B. unserer visuellen Wahrnehmung) zurückgehen. Die vielen Vorteile flächiger Textdarstellung brauchen innerhalb dieses Ansatzes auch nicht erneut diskutiert zu werden. Sie werden durch die Demonstration abweichender Formen ohnehin augenfällig und sind damit ein Abfallprodukt dieser Form praktischer Auseinandersetzung. Es sollen ausdrücklich nicht Textdarstellung oder Lesen 
+                    
+verbessert
+ oder optimiert werden, sondern mögliche Darstellungsoptionen und bisherige Lesepraktiken 
+                    
+kontrastiert
+ werden - um neue Einblicke in den Phänomenbereich Textualität und alternative Leseformen zu gewinnen. Es geht auch nicht um die Effizienz des Lesens (z.B. durch Schnellleseverfahren) oder gar der Informationsaufnahme aus Texten. Im Gegenteil: Der Diskurs um das Lesen digitaler Texte (das es im Übrigen nicht gibt; es gibt nur das Lesen verschiedener digital angetriebener Textmedien) dreht sich häufig um den Verlust an Konzentration und tiefergehender Beschäftigung mit Texten. Dagegen ist es einer der vielen Aspekte des StreamReaders, dem (erzwungenen?) langsamen und damit kontemplativen Lesen vielleicht eine neue Möglichkeit zu geben. Insofern schließt sich der StreamReader auch nicht historisch, technisch oder konzeptionell an bestehende Formen von Textströmen an, wie man sie von anderen Übermittlungssystemen (Morse, Fernschreiber), Präsentationsformen (Werbebannern) oder Bildmedien (Newstickern) kennt und die auf ganz andere Textsorten und Nutzungssituationen abziel(t)en. Bisher ist auf Studien zur Nutzung typischer Anwendungen des StreamReaders im Sinne einer Leseforschung ganz verzichtet worden, denn Effizienz oder Ergonomie stehen, wie gesagt, zunächst nicht im Mittelpunkt des Interesses. Stattdessen geht es eher um eine medien- und technikkritische Untersuchung zu Textualität als Medialität: Was sind in den verschiedenen Medien und Texttechnologien die Ausdrucksmöglichkeiten oder Ausdrucksräume von Schrift und wie verhalten sie sich in Übersetzungssituationen zwischen traditionellen und neuen Medien? Hinzu kommt die Frage nach den Genres: wie verhalten sich verschiedene Textsorten in den Textmedien? Welche Medien unterstützen oder behindern welche Textsorten? Welche lassen sich besser oder schlechter von einem anderen Medium adaptieren? Jenseits dieser auf Experiment und Prototyping aufbauenden deskriptiv-analytischen Betrachtungsweise geht der Blick nach vorne: Wenn Text auf eine laufende Zeile reduziert wird, dann schafft das vorgestellte neue Textmedium ganz neue Ausdrucks
+räume
+ im engeren Sinne. Reduktion 
+                    
+und
+ Expansion! Es entstehen plötzlich Spielräume, in denen experimentell neue Formen der Textpräsentation entstehen können. Unter Erweiterung der einfachen Einzeiligkeit können verstärkt Kontexte und hypertextuelle Verbindungen sichtbar gemacht, Texte stellennah illustriert oder annotiert und mehrfache oder synoptische, aufeinander bezogene Schriftströme realisiert werden. 
+                
+
+
+
+
+
+
+Abbildung 2: Mehrfacher Schriftstrom, hier: mehrfache Übersetzungen.
+
+
+
+
+
+
+
+
+Abbildung 3: Mehrfacher Schriftstrom, hier: variante Überlieferung mit Normalisierungsstufen.
+
+
+
+
+Erste Experimente zur Darstellung von varianten Fassungen, Normalisierungsschritten in der Transkription oder Visualisierung der semantischen oder Rhythmusstruktur in den Nebensatzkonstruktionen (z.B. in literarischen Werken wie bei Thomas Bernhard) deuten bereits an, dass sich hier jenseits der übersetzenden Reproduktion auch erhebliche produktive und innovative Kräfte entfalten könnten. Denn, Aphorismussektion: Alle neuen Medien müssen nicht nur ihre Formen erst noch finden, sondern auch ihre spezifischen Funktionen.
+
+
+
+
+
+
+Digital Humanities?
+
+
+Dies ist ein sehr offener, explorativer Ansatz. Er speist sich aus keiner Fachdisziplin. Er nimmt seinen Ausgang nicht von bestimmten sprach- oder literaturwissenschaftlichen, anthropologischen, medienwissenschaftlichen oder historischen Fragestellungen. Es ist nur Digital Humanities: Ausgehend von dem allgemeinen Interesse an “Text” und der Reflexion unserer historischen und gegenwärtigen medialen, technologischen und Informationsumwelt soll über experimentelle Anwendungen nachgedacht werden, die uns helfen, durch den Kontrast mit bestehenden Lösungen ein besseres Verständnis dieser Umwelt zu entwickeln und zugleich neue Möglichkeiten auszuloten. Wir kennen die historischen Textmedien, wir haben elektronische Texte entwickelt, die Diskussion um Hypertext und Multimedia ist geführt. Gegenwärtig sehen wir die gegensätzlichen paradigmatischen Strömungen von informationsorientiertem Text Mining und KI auf Basis linearisierter Texte und einer an Komplexität und skripto- bzw. typografischen Details interessierten “material philology” und medienbewussten Textologie. Im vorliegenden Fall dient ein (simulierter, kontrafaktischer) Medienübergang einmal mehr der Reflexion und Modellbildung zu Textualität, textlichen Informationsstrukturen und Ausdrucksformen als Kerngegenstände der Geisteswissenschaften. Überprüft werden dabei auch die Übertragbarkeit und Übersetzbarkeit textueller Information und ihrer Codierungen und damit Effekte, Möglichkeiten und Grenzen der eben genannten Paradigmen von Text-Informativität und Text-Medialität. Die Angebote neuer Technologien sind von den Digital Humanities immer wieder auf ihre Einsatzoptionen hin zu prüfen. Ob sich daraus neue Lösungen und nachhaltig neue Anwendungen ergeben ist zunächst nebensächlich. Grundsätzlich aber gilt, dass Innovation häufig nicht aus dem Versuch entsteht, ein bestehendes Problem zu lösen, sondern aus dem spielerischen Ausloten der Affordanz neu gegebener technischer Rahmenbedingungen. Let’s play!
+
+
+
+
+
+
+
+
+
+
+
+
+Bibliographie
+
+
+Die Überlegungen zum StreamReader befinden sich hinsichtlich der Literaturbasis zugleich in einem Ozean und einer Wüste. Die Forschungen zu Schrift, Text, Textualität, Textmedien, Texttechnologien und Lesen sind uferlos, leisten aber nur sehr mittelbar Beiträge zum hier vorgestellten Ansatz. Gering an Zahl sind Texte zu “laufender Schrift” oder gar ihrer Reflexion. Mit dem Konzept und Anwendungsbereich des StreamReaders haben diese außerdem nichts zu tun, da sie z.B. niemals auf klassische literarische Genres, “Langtexte” oder Multitexte zielen. Eine sehr allgemeine Literaturbasis ergäbe sich allenfalls in der Diskussion um „kritisches Prototyping“ in den Digital Humanities einerseits und literaturwissenschaftlichen Debatten z.B. um den Sprachfluss bei Autoren wie Thomas Bernhard. Beides wird hier aber bislang eher spielerisch aufgenommen und nicht gezielt als Ausgangspunkte genommen. Der StreamReader hat insofern zwar mit sehr vielem zu tun, baut aber auf nichts auf - außer dem allgemeinen historischen Hintergrund, dem aktuellen technischen System und der Neugier auf abweichende Ansätze. Er ist keine Fortführung anderer Arbeiten. Tatsächlich entspringt er letztlich einem Gespräch mit Tobias Kraft, das im April 2016 an der Berlin-Brandenburgischen Akademie der Wissenschaften in Berlin stattgefunden hat und sich um Textualität, Medialität und Technizität drehte. Der unmittelbare, bibliografisch manifestierbare Bezug, die (allerdings seitwärts, nicht rückwärts) genutzte Literatur reduziert sich damit auf:
+
+
+
+  
+Drach, Sviatoslav
+
+  
+ (2019): Neue Leseformen in digitalen Umgebungen - StreamReader
+SD
+
+  
+ 0.1 als Webanwendung für Text als Zeichenstrom, Masterarbeit Universität zu Köln.
+
+
+
+
+
+  
+Drach, Sviatoslav
+ (2020): 
+  
+StreamReader
+SD
+
+  
+ 0.2 - Eine prototypische Webanwendung für das Lesen von Texten als Zeichenstrom
+. Book of Abstracts zur DHd2020, Paderborn. 
+
+
+
+
+
+
+
+
+

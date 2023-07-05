@@ -1,0 +1,208 @@
+
+        
+
+            
+
+                
+
+                    
+Motivation
+                
+
+                
+Die Posterpräsentation stellt das Projekt „Kaleidoskopische Muster des Protests“ vor, das visuelle und textuelle (Selbst-)Repräsentationen osteuropäischer Protestkulturen sowohl aus qualitativer als auch aus quantitativer Perspektive untersucht. Dieses Projekt wird von der Österreichischen Akademie der Wissenschaften gefördert und startet im Jänner 2023.
+
+                
+Politische Protestbewegungen haben in Osteuropa, insbesondere in Russland, der Ukraine und Belarus in den letzten zehn Jahren großen Aufschwung erlebt. In diesen drei Ländern besetzten Protestierende öffentliche Plätze und verwendeten visuelle Symbole und Slogans, um andere Menschen dazu bewegen, sich den Protesten anzuschließen. Gleichzeitig wurden Bilder der Protestierenden auch von den autoritären Regierungen dieser Länder genutzt, um die Protestbewegungen zu delegitimieren.
+
+                
+Eine wichtige Rolle bei der Organisation der Proteste sowie deren Wahrnehmung spielen soziale Netzwerke (Smyth &amp; Oates 2015; Onuch 2015) und die Medien, vor allem das staatlich kontrollierte Fernsehen, das nach wie vor als das wichtigste Informationsmedium in diesen drei Ländern gilt (vgl. Szostek 2018). Aus diesem Grund sind medial vermittelte (Selbst-)Repräsentationen, u.a. YouTube-Videos, Blogbeiträge, Kommunikation über soziale Netzwerke, Fernsehnachrichten sowie Dokumentarfilme, ein integraler Bestandteil der Proteste selbst: Symbole und Slogans werden dazu genutzt, um die Ideen und Forderungen der Protestierenden zu verbreiten, weshalb Proteste 
+                    
+per se
+ als „kommunikativer Akt“ charakterisiert werden können (Kuße 2021). So signalisierten beispielsweise bei den Protesten in Russland (2011/12) weiße Bänder eine regierungskritische Haltung, während eine regierungsfreundliche Einstellung durch schwarz-orangene Georgsbänder ausgedrückt wurde. Auf dem Euromajdan in der Ukraine (2013/14) waren neben der Europaflagge auch rechtsnationale Symbole präsent. In Belarus (2021) diente die weiß-rot-weiße Flagge als Hauptsymbol für die Proteste gegen die Regierung (vgl. Gaufman 2021).
+                
+
+                
+Slogans verstehen wir im Sinne von Friedman (2019) als die „Spitze diskursiver Eisberge“ sowie als „wichtige symbolische Schlüssel“ zu sozialen Bewegungen, wobei wir uns bewusst sind, dass deren ursprüngliche Bedeutung mit der Zeit transformiert und neuinterpretiert werden kann. Im Unterschied zu Symbolen definieren wir Slogans als rein textuelle Erscheinungen.
+
+                
+Symbole lesen wir hingegen in Anlehnung an Cassirer (1996) als „soziale Phänomene“, die an die Stelle der rein sprachlichen Kommunikation treten. Sie sind mit einer bestimmten Bedeutung oder Bedeutungen aufgeladen, die sowohl individuell als auch im Kontext (im sozialen Raum) interpretiert werden können.
+
+                
+Im Laufe unserer quantitativen und qualitativen Analyse werden wir laufend überprüfen, ob diese Definitionen noch Gültigkeit haben oder überarbeitet bzw. angepasst/nachgeschärft werden müssen. Die Veränderung der Symbolik möchten wir jedenfalls miteinbeziehen und aus unserer Sicht ist das aufgrund der unterschiedlichen Perioden und Länder, die wir im Projekt abdecken, möglich. 
+
+            
+
+            
+
+                
+Methoden
+
+                
+Um die (Selbst-)Repräsentationen von Protest in den oben genannten osteuropäischen Ländern zu erfassen, betrachten wir diese aus drei verschiedenen Perspektiven: (1) die Selbstrepräsentation der Protestkulturen auf YouTube sowie in den sozialen Netzwerken, (2) deren offizielle Darstellung in regierungstreuen sowie in unabhängigen TV-Nachrichtensendungen und (3) ihre cineastische Darstellung in drei Dokumentarfilmen. Aufgrund dieser verschiedenen Blickwinkel sprechen wir in unserem Projekttitel auch metaphorisch von „kaleidoskopischen Mustern des Protests“, die unsere Forschung sichtbar machen soll. Zu diesem Zweck kombinieren wir eine automatische Symbolerkennung mittels künstlicher neuronaler Netze (R-CNN) mit der Multimodalen Diskursanalyse (MDA) aus der Linguistik (Kress 2011). Mit diesem Ansatz folgen wir N. K. Hayles’ (2010) Kombination von „close reading“, „machine reading“, und „hyper reading“; übertragen auf die visuellen Medien wird dabei aus dem „machine reading“ Arnold/Tiltons (2019) „distant viewing“.
+
+                
+                    
+
+                        
+
+                    
+Abb. 1: Beispielframe aus einem YouTube-Video (links), Annotationen von einem vortrainierten Netz für panoptische Segmentierung (Mitte), Annotationen von unserem selbst trainierten Netz (rechts)
+
+                    
+
+                
+Der Rückgriff auf „distant viewing“ ist nicht zuletzt aufgrund der großen Datenmenge notwendig: Seit Februar 2022 haben wir über 74.000 YouTube-Videos zu Belarus, Russland und der Ukraine inklusive Metadaten gesichert – mit einer Gesamtlaufzeit von knapp eineinhalb Jahren. Dieses Videokorpus wird von einem selbst trainierten neuronalen Netz nach nationalistischen Symbolen aus Osteuropa durchsucht. Konkret verwenden wir das Detectron2 Framework, weil es erlaubt, schnell eigene Netze zu trainieren, deshalb wird es verwendet; ergänzend werden wir auch vortrainierte Netze verwenden, etwa eine zero-shot-detection mit CLIP, um Szenenbeschreibungen zu bekommen. 
+
+                
+Das eigene Training ist insofern notwendig, als frei verfügbare vortrainierte Netze das notwendige domänenspezifische Wissen nicht mitbringen. Das Beispiel in Abb. 1 zeigt, wie das vortrainierte Netz zwar die grundlegende Konfiguration des Videoframes beschreiben kann; die für uns wichtigen Flaggen werden jedoch nicht oder falsch erkannt. Die kontextspezifische Information liefert somit unser eigenes Netzwerk, dessen Betaversion wir im Sinne der Open Humanities bereits veröffentlicht haben (Howanitz/Radisch 2022). Dieses Netz erreicht zur Zeit eine AP50 von 75.794 bei einem Trainingskorpus von 4.045 Bildern mit 8.156 Annotationen und einem Testkorpus mit 1.032 Bildern und 2.109 Annotationen. Wir haben 44 Symbolklassen definiert, und es sind knapp 100 Bilder pro Klasse im Korpus. Beim Training haben wir 20.000 Iterationen mit Batches von je 512 Bildern verwendet.
+
+                
+Die Resultate der Symbolerkennung werden zunächst evaluiert, visualisiert und anschließend für die MDA in MAXQDA aufbereitet. Die automatisch erstellten Annotationen dienen dabei nicht unmittelbar einem "close viewing". Vielmehr soll der quantitative Teil des Projekts helfen, gezielt Videos für die qualitative Analyse auszuwählen. Darüber hinaus interessiert uns eine statistische Auswertung des Symbolrepertoires im Korpus (z.B. Symbolverteilung über einen gewissen Zeitraum). Schließlich analysieren wir mithilfe der MDA ausgewählte Videos, um den Kontext, die Akteur:innen und ihre Rolle sowie die Interaktion verbaler und visueller Informationen zu untersuchen. Dabei konzentrieren wir uns auf die Fragen, welche allgemeinen Muster visueller und textueller (Selbst-)Repräsentationen von Protest erkennbar sind, welche Gemeinsamkeiten und Unterschiede es zwischen den einzelnen Ländern sowie den unterschiedlichen Medien gibt sowie auf die Frage, wie Protestsymbole und -slogans in den jeweiligen Medien (re-)kontextualisiert werden.
+
+            
+
+            
+
+                
+Ziele
+
+                
+Ziel unseres Projekts ist einerseits, ein Best-Practice-Beispiel für die Analyse eines großen visuellen Korpus zu liefern. Darüber hinaus erforschen wir visuelle und textuelle (Selbst-)Repräsentationen von Protestkulturen in Osteuropa und untersuchen, wie Bilder und Texte in verschiedenen Medien und Kontexten (wieder)verwendet werden. Schließlich stellt unser Projekt auch eine Momentaufnahme verschiedener osteuropäischer Protestkulturen dar und beantwortet die Frage, was von den Protesten nach Ablauf einer gewissen Zeit übrig bleibt: Insbesondere in autoritären Staaten wie Belarus und Russland ist nicht davon auszugehen, dass staatliche Medien die Erinnerung an regierungskritische Proteste bewahren.
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Arnold, Taylor und Lauren Tilton.
+ 2019. “Distant Viewing: Analyzing Large Visual Corpora.” 
+                        
+DSH
+, fqz013, https://doi.org/10.1093/digitalsh/fqz013 (letzter Zugriff 26. 7. 2022).
+                    
+
+                    
+
+                        
+Cassirer, Ernst.
+ 1996. 
+                        
+Versuch über den Menschen. Einführung in eine Philosophie der Kultur
+. Hamburg: Meiner.
+                    
+
+                    
+
+                        
+Friedman, Jonathan.
+ 2019. “Preface.” In Makovicky, Nicolette; Trémon, Anne-Christine &amp; Zandonai, Sheyla S. (eds.): 
+                        
+Slogans: Subjection, Subversion, and the Politics of Neoliberalism
+. London/New York: Routledge, xiii-xvii.
+                    
+
+                    
+
+                        
+Gaufman, Elizaveta.
+ 2021. “The Gendered Iconography of Belarus Protest.” 
+                        
+New Perspectives
+ 29.1, 80–89.
+                    
+
+                    
+
+                        
+Hayles, Nancy K.
+ 2010. “How We Read: Close, Hyper, Machine.” 
+                        
+ADE Bulletin
+ 150, 62–79.
+                    
+
+                    
+
+                        
+Howanitz, Gernot und Erik Radisch.
+ 2022. “Nationalist(ic) Symbols from Eastern Europe.” 
+                        
+Github.com
+, 21. 2. 2022 (v1.0.0). https://zenodo.org/record/6206733#.YuEpDLuxWEI (letzter Zugriff 26. 7. 2022).
+                    
+
+                    
+
+                        
+Kress, Gunther.
+ 2011: “Multimodal Discourse Analysis.” In 
+                        
+The Routledge Handbook of Discourse Analysis
+, hg. von James P. Gee und Michael Handford, 35–50. London u.a.: Routledge.
+                    
+
+                    
+
+                        
+Kuße, Holger (Hg.).
+ 2021. 
+                        
+Kommunikacija v ėpochu protestov. 
+Berlin: Peter Lang.
+                    
+
+                    
+
+                        
+Onuch, Olga.
+ 2015. “EuroMaidan Protests in Ukraine: Social Media versus Social Networks.” 
+                        
+Problems of Post-
+
+                        
+C
+
+                        
+ommunism
+ 62.4, 217–235
+                    
+
+                    
+
+                        
+Smyth, Regina und Sarah Oates.
+ 2015. “Mind the Gaps: Media Use and Mass Action in Russia.” 
+                        
+Europe-Asia Studies
+ 67.2, 285–305.
+                    
+
+                    
+
+                        
+Szostek, Joanna.
+ 2018. “The Mass Media and Russia’s ‘Sphere of Interests’: Mechanisms of Regional Hegemony in Belarus and Ukraine.” 
+                        
+Geopolitics
+ 23.2, 307–329.
+                    
+
+                
+
+            
+
+        
+
+    

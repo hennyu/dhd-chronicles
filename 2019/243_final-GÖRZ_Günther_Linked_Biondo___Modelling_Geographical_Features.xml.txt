@@ -1,0 +1,92 @@
+
+        
+
+            
+Bibliotheca Hertziana's project "Historical spaces in texts and maps" (
+                
+http://biblhertz.it/en/research/research-projects-of-the-institute/historical-spaces-in-texts-and-maps-biondo-project/
+; 19.12.2018) aims at a cognitive-semantic analysis of Flavio Biondo's "Italia Illustrata" (1474) linking with contemporary maps (Goerz et al., 2018). At focus are relations between historical maps and texts aiming to explore the historical understanding of space and the knowledge associated with it. Our research combines cognitive-semantic parameters such as toponyms, landmarks, spatial frames of reference, geometric relations, gestalt principles and different perspectives with computational and cognitive linguistic analysis (Thiering, 2015). With contributing to Spatial Humanities (Bodenhamer et al., 2010) we are convinced that generally, all maps are cognitive maps, depicting culture-specific spatial knowledge and practices (Blakemore/Harley, 1980). Biondo’s mention of using non-identifiable maps gives a reason for comparing toponyms in his text and in 15th-century maps.
+            
+
+            
+Recogito is being used as the main tool for static annotations of places and persons/peoples in both, text and maps. These annotations are complemented by cognitive-linguistic spatial role markups by means of the brat tool. Moreover, special emphasis is put on the narrative aspect of Biondo's text which indicates an event-based representation of movement. To achieve a deeper and more generic semantic level of linguistic and map-related annotations, we pursue the transition to an ontology-based representation. For this purpose, we are actually defining a domain ontology based with the event-based CIDOC Conceptual Reference Model (CRM, ISO standard 21127) and its spatio-temporal extension CRMgeo (
+                
+http://cidoc-crm.org
+; 19.12.2018) in the framework of our CRM implementation in OWL-DL, as well as appropriate mapping rules to be applied to the annotations exported in CSV and RDF formats. Using the CIDOC CRM opens up a wide spectrum of interoperability and linking to many web resources, such as the gazetteers being used with Recogito. Ontological enrichment with CRM as the top conceptual model would provide a generic "assignment event" which has open positions to be filled or linked with the semantic roles, resp., for agent, (material and immaterial) constituents, time-span, and place. This allows a semantic interpretation of annotations such that, e.g., for each tagged PlaceName we can generate an instantiated CRM description in RDF/OWL triple format, ready for publication as Linked Open Data. In the same fashion, mappings are applied to the results of spatial role labeling: These triples encode cognitive parameters, primarily "figure - trajectory/path[= spatial_relation] – ground" constructions. As a next step, the ontologically enriched representations of places and spatial relations will be combined into more complex MOVE events. 
+            
+
+            
+In addition to the described analytic perspective, we also pursue a synthetic view in the sense that we will use the data found by the analytic steps to reconstruct plausible cognitive sketch maps in future work.
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliography
+
+                    
+
+                        
+Blakemore, Michael / Harley, Brian J. (1980):
+ 
+                        
+Concepts in the History of Cartography - A Review and Perspective
+, 
+                        in: Cartographica. International Publications on Cartography, 17/4, Monograph 26. University of Toronto
+                    
+
+                    
+Press: Toronto.
+
+                    
+
+                        
+Bodenhamer, David J. / Corrigan, John / Harris, Trevor M. (eds.) (2010):
+ 
+                        
+The Spatial Humanities. GIS and the Future of Humanities Scholarship
+. 
+                        Bloomington &amp; Indianapolis: Indiana University Press.
+                    
+
+                    
+
+                        
+Görz, Günther / Geus, Klaus / Michalsky, Tanja / Thiering, Martin (2018):
+ 
+                        
+Spatial Cognition in Historical Geographical Texts and Maps: Towards a cognitive-semantic analysis of Flavio Biondo's ``Italia Illustrata''
+, 
+                        in: 
+                        
+Boutoura, Ch., Tsorlini, A. (Ed.): 
+
+                        
+Digital Approaches to Cartographic Heritage.
+ 
+                        13th Conference of the International Cartographic Association Commission on Cartographic Heritage into the Digital, Madrid, 29-44.
+                    
+
+                    
+
+                        
+Thiering, Martin (2015):
+ 
+                        
+Spatial Semiotics and Spatial Mental Models: Figure-Ground Asymmetries in Language
+. 
+                        Berlin: De Gruyter Mouton. 
+                    
+
+                
+
+            
+
+        
+
+    

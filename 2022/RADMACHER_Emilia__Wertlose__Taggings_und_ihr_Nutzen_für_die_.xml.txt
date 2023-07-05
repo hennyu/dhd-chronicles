@@ -1,0 +1,500 @@
+
+        
+
+            
+Mit der Wiederentdeckung der Kunstbetrachtung als produktivem Prozess im 20. Jahrhundert wandelt sich auch die Beziehung zwischen Betrachter:in und Werk (Görner 2007). In Anknüpfung an die Rezeptionsforschung des vergangenen Jahrhunderts ist eine erneute Transformation der Rolle der Rezipient:innen zu aktiven „co-creator[s]“ (van de Vall 2013: 111) zu beobachten. Die produktive Kunstbetrachtung in digitalen Spielen generiert beispielsweise große Mengen an Daten, die kunsthistorische Untersuchungen möglich machen. Dies stellt sich auch bei den 
+                
+Games with a Purpose
+ der an der Ludwig-Maximilians-Universität München entwickelten Internetplattform ARTigo
+ unter Beweis, in denen „co-creator[s]“ den Grundstein der datenbasierten kunsthistorischen Untersuchung bilden. Die dort agierenden Spieler:innen vergeben in fünf Minuten möglichst viele beschreibende Schlagworte für fünf Kunstwerke. Ziel ist es, digitale Reproduktionen von Kunstwerken zu verschlagworten und zu kategorisieren (Becker et al. 2018b). In der kunstwissenschaftlichen Auseinandersetzung mit dem dadurch generierten Datenpool stellt sich die Frage, welche Auswirkungen Irrtümer der Rezipient:innen auf die Forschungsergebnisse haben. Untersucht wurde daher, ob fehlerhafte Zuordnungen von Künstler:innennamen zu kunsthistorisch verwertbaren Ergebnissen führen. Im Folgenden werden diese Ergebnisse an einem konkreten Beispiel veranschaulicht.
+            
+
+            
+
+                
+Stand der Forschung
+
+                
+Grundsätzlich ist der Bereich der gezielten Auswertung fehlerhafter Tags noch kaum erforscht. Dennoch gibt es Publikationen, die das Thema wesentlich tangieren und eine gezielte Einordnung dieser Arbeit ermöglichen. So erörtert Hänger (2008) ein Verfahren zur schnelleren Erschließung neuer Publikationen im Rahmen der bibliothekarischen Arbeit. Dabei macht er darauf aufmerksam, dass die freie Verschlagwortung von Nutzer:innen mit systemimmanenten Problemen konfrontiert ist: „Die Erschließung von Dokumenten mit freien, nicht normierten Schlagwörtern führt zu [...] Unschärfen bei der Recherche bei möglichen Homonymen oder Synonymen“ (Hänger 2008: 66). Dieses Problem der Unschärfe prägt auch unsere Datenbereinigung im Rahmen der Untersuchung des ARTigo-Datensatzes. Hänger (2008: 64–67) macht zwar ebenfalls auf von ihm als „bad tags“ bezeichneten Fehlzuweisungen aufmerksam, doch werden die spezifischen Qualitäten dieser Tags und mögliche Gründe für ihre Zuweisung nicht ausgewertet. Guy und Tonkin (2006) werfen zudem die Frage auf, ob die bei der Bereinigung entstehende Kategorisierung in gute und schlechte Taggings nicht vorschnell ist. Sie vermuten, dass als „schlecht“ bzw. „wertlos“ deklarierte Taggings dennoch Informationsgehalt haben und deren Tilgung eine Form der Verzerrung generieren könnte. 
+
+                
+Anders gehen Charton et al. (2013) vor, indem sie am Beispiel von Kochrezepten 
+                    
+opinion mining
+ betreiben. Dabei stellen sie Strategien vor, die Variabilität frei vergebener Taggings maschinell zu umgehen – und damit das Kategorisierungsproblem, das bei manuell vergebenen Taggings zu oben beschriebenen Unschärfen führen kann. Auch Petz (2019), Reinel (2018) und Osherenko (2010) sind der hiesigen Forschungsarbeit dahingehend ähnlich, als die getaggten Objekte (Text, Bild etc.) eine natürliche Interpretations- und Wahrnehmungsvariabilität aufweisen, die in der Folge zu einer Menge subjektiv gefärbter Taggings führen. Neben dieser subjektiven Färbung des Datensatzes, die wertvolle Aufschlüsse über kollektive Einschätzungen und damit die Kategorisierung und Klassifizierung von Objekten geben kann, gibt es eine zweite Art der Färbung: unbeabsichtigte Irrtümer der taggenden Personen. Gegenüber dem 
+                    
+opinion mining
+ kann im Falle des ARTigo-Datensatzes damit eher von einer Form des bildbasierten 
+                    
+relation minings
+ auf Grundlage visueller Ähnlichkeit gesprochen werden. Genau diesem Desiderat wollen wir uns im Folgenden widmen.
+                
+
+            
+
+            
+
+                
+Daten
+
+                
+Seit 2007 wurden in ARTigo 9,7 Millionen Taggings vergeben, die auf 295.343 Tags zurückzuführen sind (Becker et al. 2018a). Mehrheitlich stellen diese Taggings inhaltsbasierte Tags (
+                    
+surface tags)
+ dar, d. h. sie nennen im jeweiligen Werk abgebildete Objekte oder Gegenstände. Einige Markierungen beschreiben jedoch auch von dem Werk übermittelte Emotionen, nennen die Namen der Künstler:innen oder sogar den Titel des Objekts (Bry et al. 2013: 2). Die Spieler:innen sind in ihrer Wahl der Markierungen völlig frei und werden weder vom Spiel noch von der Webseite geleitet oder beeinflusst (Schneider und Kohle 2017: 83). Unter diesen Bedingungen ist eine Klassifizierung und Kategorisierung der Tags a posteriori nicht zweifelsfrei durchführbar ist: Homonyme, Dichotomien, Schreibfehler und Inhalt-Kontext-Interferenzen verursachen mehrdeutige Tags. Da die Intention der Spielenden im Moment des Taggings nicht evaluiert werden kann, ist nicht jeder Tag korrekt zu kategorisieren.
+                
+
+            
+
+            
+
+                
+Methoden
+
+                
+Ziel der Datenverarbeitung war es, Tags von Künstler:innennamen aus dem ARTigo-Korpus zu isolieren und diese nach Künstler:innen zu aggregieren. Unter Berücksichtigung der tatsächlichen Autor:innenschaft sollen Verbindungen zwischen „fälschlich“ getaggten Künstler:innen sicht- und quantifizierbar gemacht werden.
+
+                
+
+                    
+Datenbereinigung
+
+                    
+Da Künstler:innennamen selten vollständig und korrekt angegeben werden, müssen geringe Variationen der Rechtschreibung erkannt und denselben Künstler:innen zugeordnet werden. Für sämtliche im Datensatz vertretenen Künstler:innen wurden daher für Nachnamen und volle Namen alle möglichen case-insensitiven Tags generiert, sodass der Datensatz tatsächlicher nach diesen möglichen Tags durchsucht werden konnte. Weil jeder vergebene Tag einem bestimmten Bild zugeordnet ist, lässt sich hieraus bestimmen, ob attribuierte und tatsächliche Künstler:innen übereinstimmen. Die dabei entstehende Zuordnung bestimmter Künstler:innen zu bestimmten Bildern kann auch falsch sein, beispielsweise wenn ein tatsächlich von Claude Monet stammendes Bild mit „Gauguin“ getagged wird. Diese Relation zwischen zugewiesenen Künster:innen und tatsächlichen Urheber:innen fungiert also als Klassifikator und muss grundsätzlich in zwei Richtungen berücksichtigt werden, die im Folgenden als „Künstler:in zu Bild“ sowie „Bild zu Künstler:in“ bezeichnet werden:
+
+                    
+
+                        
+„Künstler:in zu Bild“: Bilder, die einem:r Künstler:in per Tag zugewiesen werden, wodurch für eine:n Künstler:in alle Bilder summiert werden können, auf denen sein/ihr Name angegeben wurde. Gemein haben diese Bilder die Zuweisung einer (evtl. vermeintlichen) Autor:innenschaft: Dies betrifft beispielsweise alle Bilder, die mit „Monet“ getagged wurden, unabhängig davon, ob sie tatsächlich von Claude Monet stammen.
+
+                        
+„Bild zu Künstler:in“: alle auf einem Bild fälschlich annotierten Künstler:innen, sodass zu allen Bildern eines:r Künstler:in aggregiert werden kann, welche anderen Künstler:innen häufig falsch annotiert wurden. Gemein haben diese Bilder den/die tatsächlich schaffende:n Künstler:in: So finden sich auf Bildern von Claude Monet beispielsweise die Tags „Manet“ oder „Gauguin“.
+
+                    
+
+                    
+Während „Künstler:in zu Bild“-Verknüpfungen trivial über 
+                        
+matching
+ der generierten Namenstags extrahiert werden können, zeigt sich die Qualität der extrahierten „Bild zu Künstler:in“-Relationen als unbrauchbar, da polysemantische Nachnamen wie „Schwarz“, „Berg“ oder „Strauch“ die Ergebnisse verfälschen.
+ In diesen Fällen ist nicht mehr nachzuvollziehen, ob die Spieler:innen „Schwarz“ als inhaltsbasierten oder attribuierenden Tag intendiert haben. Der geringe Bekanntheitsgrad von Künstler:innen wie Gustav Schwarz und David Berg legt jedoch nahe, dass der Großteil dieser Nennungen wahrscheinlich auf inhaltsbasierte Tags zurückzuführen ist. Gestützt wird diese Annahme durch das in der Forschung bekannte Phänomen, dass ESP-Spiele wie ARTigo dazu neigen, besonders generische Tags zu produzieren (Robertson, Vojnovic und Weber 2009: 2–3). Auch die Spieler:innen von ARTigo verschlagworteten inhaltsbasierte deutlich häufiger als attribuierende Tags: Selbst die Tagvolumina häufig erkannter Künstler:innen bestehen nur zu jeweils etwa 5 Prozent aus deren Namen.
+                    
+
+                    
+Durch Berücksichtigung der Wortfrequenz, Zuhilfenahme einer multilingualen Rechtschreiberkennung und Auswahl geschickter Nebenbedingungen ist es jedoch möglich, mehrdeutige Tags sinnvoll zuzuordnen. Grundsätzlich haben inhaltsbasierte Tags wie „schwarz“, „weiß“ oder „Berg“ eine deutliche höhere Worthäufigkeit als tatsächlich relevante Namen wie „Klee“, „Macke“ oder „Turner“. Um auch fälschlich erkannte englische Wörter tilgen zu können, wird zusätzlich die englische Worthäufigkeit berücksichtigt; wobei im Englischen vorkommende deutsche Wörter sowie in den allgemeinen Sprachgebrauch eingegangene Namen weitere Störfaktoren darstellen. Zur besseren Menschenlesbarkeit stellt das Python-Packet 
+                        
+wordfreq
+ (Speer et al. 2018) hierzu die Zipf-Häufigkeit für englische und deutsche Wörter zur Verfügung, die sich auf einer logarithmischen Skala von 0 bis 8 bewegt. Unter Berücksichtigung der oben erläuterten 
+                        
+trade-off
+-Bedingungen wurden eine Worthäufigkeit &lt; 2,0 für englische Wörter, &lt; 3,5 für deutsche Wörter oder die Nichterkennung des Namens durch deutsche bzw. englische Rechtschreibkorrektur als zufriedenstellende Kriterien festgelegt. Eine geringe Anzahl dadurch fälschlich getilgter Künstler:innen wurde manuell wieder hinzugefügt (Tab. 1).
+                    
+
+                    
+
+                    
+Tab. 1: Zipf-Häufigkeiten relevanter Wörter. Farbig markiert ein beispielhaftes Schwellenwertdilemma aus entweder fälschlich getilgtem Künstler:innennamen (rot) oder fälschlich beibehaltenem Wort (grün).
+
+                        
+
+                            
+Wort
+
+                            
+
+                                
+Zipf  DE
+
+                            
+
+                            
+
+                                
+Zipf  EN
+
+                            
+
+                            
+Wort
+
+                            
+
+                                
+Zipf  DE
+
+                           
+
+                            
+
+                                
+Zipf  EN
+
+                            
+
+                        
+
+                        
+
+                            
+schwarz
+
+                            
+5,02
+
+                            
+2,93
+
+                            
+Klee
+
+                            
+3,45
+
+                            
+2,56
+
+                        
+
+                        
+
+                            
+Manet
+
+                            
+–
+
+                            
+2,55
+
+                            
+Turner
+
+                            
+3,81
+
+                            
+4,09
+
+                        
+
+                        
+
+                            
+Hügel
+
+                            
+4,12
+
+                            
+–
+
+                            
+Marc
+
+                            
+4,34
+
+                            
+4,06
+
+                        
+
+                    
+
+                    
+Da ein zu niedriger Schwellenwert der Worthäufigkeit relevante Namen fälschlicherweise tilgt, während ein zu hoher Schwellenwert irrelevante Namen fälschlicherweise 
+                        
+nicht
+ tilgt, ist eine optimale Trennung nicht mehr möglich. Der Vergleich in Abb. 1 zeigt gleichwohl, dass Artefakte störender polysemantischer Namen erheblich reduziert werden können.
+                    
+
+                    
+
+                        
+
+                    
+
+                    
+
+                        
+
+                        
+Abb. 1: „Bild zu Künstler:in“-Relationen für Paul Cézanne, vor (oben) und nach (unten) Bereinigung der Daten. Deutlich erkennbar die zunächst geringe Anzahl tatsächlicher Künstlerzuordnungen.
+
+                    
+
+                
+
+                
+
+                    
+Ähnlichkeitsberechnung
+
+                    
+Die so bereinigten Daten lassen für alle in der Datenbank vorhandenen Künstler:innen „Künstler:in zu Bild“- und „Bild zu Künstler:in“-Relationen berechnen. Werden diese Verteilungen gegeneinander angetragen, ergibt sich eine Konfusionsmatrix, deren Diagonale alle „korrekt“ erkannten Verbindungen darstellt; die Anzahl der Bilder also, denen ihre tatsächlichen Urheber:innen zugeschrieben wurden. Ablesbar wird dadurch im Umkehrschluss auch das Verhältnis „korrekter“ zu „falscher“ Tags, wodurch besonders oft falsch zugeschriebene oder unerkannt gebliebene Künstler:innen, und in einem zweiten Schritt auch Bilder, ermittelt werden können.
+
+                    
+Für ausgewählte Künstler:innen, vorrangig Impressionist:innen, wurde unter Verwendung der Kosinusdistanz die Ähnlichkeit der „Künstler:in zu Bild“-Verknüpfungen berechnet. Die so bestimmte Ähnlichkeit der Vektoren entspricht der Ähnlichkeit der „verwechselten“ Künstler:innen, d. h. eine größtmögliche Ähnlichkeit besteht, wenn zwei Künstler:innen denselben Künstler:innen fälschlicherweise zugewiesen worden sind. Auch hier wurden die Berechnungen durch polysemantische Namen und andere Artefakte verfälscht. Weitere Vorbedingungen konnten jedoch ein nahezu optimal gefiltertes Ergebnis liefern: der Ausschluss nicht mindestens einmal korrekt erkannter Künstler:innen sowie der Ausschluss von Künstler:innen mit weniger als 20 Bildern im Datensatz (Abb. 2).
+
+                    
+
+                        
+
+                        
+Abb. 2: Kosinusähnlichkeit der „Künstler:in zu Bild“-Relationen für Claude Monet. Polysemantische Künstler:innennamen konnten vollständig getilgt werden.
+
+                    
+
+                
+
+            
+
+            
+
+                
+Ergebnisse
+
+                
+Wie auf Abb. 3 erkennbar, können bei der Untersuchung der häufigsten Fehlzuordnungen gewisse Dominanzen herausgearbeitet werden. Einerseits werden plausible Verwechslungen von Zeitgenoss:innen gleicher Epochen deutlich, wie an der Häufigkeit der Verwechslung von Turner und Constable als auch Monet und Renoir ersichtlich wird. Beide Künstlerpaare sind durch ihre nationale Zugehörigkeit, Arbeitsweise und Lebenszeit eng miteinander verknüpft. Gleiches findet sich bei Claude Monet, dessen Werke häufig mit „Manet“ und „Renoir“ getaggt werden. Andererseits veranschaulicht die Einfärbung der Namen nach Epochen eine Verflechtung romantischer und impressionistischer Strömungen: Eine Wechselbeziehung zwischen den Epochen scheint sich im Datensatz abzuzeichnen, die eine präzisere Überprüfung verlangt.
+
+                
+
+                    
+
+                    
+Abb. 3: Häufigkeit inkorrekter Namenstags auf Werken von Claude Monet (links) und William Turner (rechts). Einfärbungen repräsentieren Epochen, denen die jeweiligen Künstler primär zugeordnet werden. Grau eingefärbte Künstler:innennamen sind Homonyme, die nicht aus dem Datensatz herausgefiltert werden konnten. Namen, die mit „*“ gekennzeichnet sind, zeigen ambivalente Namen an, die sowohl Homonyme als auch gezielte Namensangaben sein könnten. Eine definitive Zuordnung kann nicht vorgenommen werden, da die Intention der Spieler:innen nicht bekannt ist.
+
+                
+
+                
+Verwechslungen von Zeitgenoss:innen, die zum Teil gemeinsam arbeiteten und die gleichen Motive malten (z. B. Monet und Renoir) werden unterbrochen von Verknüpfungen, die nicht zwangsweise hätten erwartet werden können. Evident ist, wie häufig Monet und Turner verwechselt werden: Monet wird auf Bildern von Turner noch vor Constable annotiert. Dass sich Monet intensiv mit den Werken Turners befasst hat, ist bekannt (Herrmann 2007: 244, 286; Pickeral 2007: 244, 286). Während Turner der Romantik zugeordnet wird, gilt Monet als Pionier und Wegbereiter des Impressionismus (Keller 1985: 66–81,125; Koch 1977: 5; Wagner 2011: 117–123). Slap (1983: 183) weist allerdings darauf hin, dass Turners Spätwerk bereits erste impressionistische Züge aufweist und damit die Entwicklung des Impressionismus unwissentlich vorbereitete. Das Auslesen der Werke mit merklicher Verwechslungshäufigkeit zwischen Turner und Monet zeigt keine Dominanz einzelner Werke – die Verteilung der falschen Tags ist relativ heterogen zwischen den Werken aufgeteilt. Bei der Analyse der Entstehungsjahre der Einzelwerke offenbart sich, dass alle Arbeiten Monets, die Turner zugeordnet wurden, nach 1872 entstanden sind. Dieser Zeitpunkt koinzidiert nahezu mit der ersten Reise Monets nach London. Monet befand sich 1870 und 1871 während des Deutsch-Französischen Kriegs im Londoner Exil, wo er erstmalig mit Turners Werken in Berührung kam (Collins 2004: 709). Die Angaben der ARTigo-Crowd scheinen hier zu belegen, dass Monet nach dem Zusammentreffen mit den Bildern Turners stilistische Merkmale in seiner Arbeitsweise adaptierte (Abb. 4).
+
+                
+
+                    
+
+                    
+Abb. 4: Zeitstrahl mit Lebzeiten von Turner und Monet mit Verortung der korrelativen Werke Monets. Einzelbilder aus Becker et al. (2018a).
+
+                
+
+            
+
+            
+
+                
+Zusammenfassung
+
+                
+Die Auswertung eines konkreten, kunstwissenschaftlichen Beispiels zeigt, dass falsch zugeordnete Künstler:innennamen Aufschluss über epochen- und generationsübergreifende Bezugnahmen geben können. So wiesen spezifische Einzelbildanalysen nach, dass Falschzuweisungen in Werken von Claude Monet und William Turner auf biografisch evidente Entwicklungen im Œuvre der Künstler zurückzuführen sind. Datierungen der Werke, die dominante Häufigkeiten von Verwechslungen aufweisen, geben dabei Hinweise auf konkrete Veränderungen in der Künstlerbiografie. Eine Analyse der Einzelbilder mit hoher Verwechslungshäufigkeit widerlegt dabei die Hypothese willkürlicher Verwechslung von Künstler:innen und Kunstwerken durch die ARTigo-Spieler:innen und exemplifiziert die chronologisch-biografische Evidenz der Verwechslung aufgrund stilistischer Ähnlichkeiten.
+
+                
+Was bedeutet dies nun für die traditionelle kunstwissenschaftliche Analyse? Unsere Untersuchungen zeigen, dass die quantitative Datenanalyse als mögliche Erweiterung der kunsthistorischen Forschungsmöglichkeiten zu begreifen ist. Sie ermöglicht eine distanzierte Form der Forschung, die übergreifende Entwicklungen als Muster erkennbar werden lässt. So erweitern die Ergebnisse aus der Makroperspektive die Detailanalyse traditioneller Forschung. Dass der kunsthistorische Blick wie hier gezeigt durch die „Weisheit der Vielen“ (Surowiecki 2007) multiperspektivisch potenziert wird, weckt die Hoffnung darauf, neue Zusammenhänge offenzulegen, die der Kunstwissenschaft dienlich sein können.
+
+            
+
+        
+
+        
+ Auf ARTigo gibt es acht Games with a Purpose, bei denen Nutzer:innen eine automatisch ausgewählte digitale Reproduktion eines Kunstwerks auf spielerische und kompetitive Art kommentieren. Wie in Luis von Ahns ESP-Spiel (von Ahn und Dabbish 2004) treten jeweils zwei Spieler gegeneinander an und versuchen Begriffe zu finden, die das abgebildete Kunstwerk und dessen Gegenstände, Figuren oder Farben beschreiben, um Punkte zu sammeln.
+ Das Phänomen der polysemantischen Künster:innennamen verfälscht natürlich auch die matchings der „Künstler:in zu Bild“-Verknüpfungen in gleicher Weise. Da Künstler:innen mit polysemantischen Namen jedoch meistens relativ unbekannt sind, waren diese für die kunsthistorische Analyse nicht relevant.
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+Becker, Matthias / Bogner, Martin / Bross, Fabian / Bry, François / Campanella, Caterina / Commare, Laura / Cramerotti, Silvia / Jakob, Katharina / Josko, Martin / Kneißl, Fabian / Kohle, Hubertus / Krefeld, Thomas / Levushkina, Elena / Lücke, Stephan / Puglisi, Alessandra / Regner, Anke / Riepl, Christian / Schefels, Clemens / Schemainda, Corina / Schmidt, Eva / Schneider, Stefanie / Schön, Gerhard / Schulz, Klaus / Siglmüller, Franz / Steinmayr, Bartholomäus / Störkle, Florian / Teske, Iris / Wieser, Christoph
+ (2018a):
+                        
+ARTigo – Social Image Tagging [Dataset and Images]
+ 10.5282/ubm/data.136.
+                    
+
+                    
+Becker, Matthias / Bogner, Martin / Bross, Fabian / Bry, François / Campanella, Caterina / Commare, Laura / Cramerotti, Silvia / Jakob, Katharina / Josko, Martin / Kneißl, Fabian / Kohle, Hubertus / Krefeld, Thomas / Levushkina, Elena / Lücke, Stephan / Puglisi, Alessandra / Regner, Anke / Riepl, Christian / Schefels, Clemens / Schemainda, Corina / Schmidt, Eva / Schneider, Stefanie / Schön, Gerhard / Schulz, Klaus / Siglmüller, Franz / Steinmayr, Bartholomäus / Störkle, Florian / Teske, Iris / Wieser, Christoph
+ (2018b):
+                        
+ARTigo – Social Image Tagging
+ http://www.artigo.org [letzter Zugriff 2. Juli 2021].
+                    
+
+                    
+Bry, François / Berard, Alexandre / Lagrange, Richard / Wieser, Christoph
+ (2013): „ARTigo: Building an Artwork Search Engine with Games and Higher-Order Latent Semantic Analysis“, in:
+                        
+Proceedings of the AAAI Conference on Human Computation and Crowdsourcing
+ 1: 15–20 https://ojs.aaai.org/index.php/HCOMP/article/view/13060 [letzter Zugriff 2. Juli 2021].
+                    
+
+                    
+Charton, Eric / Meurs, Marie-Jean / Jean-Louis, Ludovic / Gagnon, Michel
+ (2013): „Using Collaborative Tagging for Text Classification. From Text Classification to Opinion Mining“, in:
+                        
+Informatics
+ 1: 32–51 10.3390/informatics1010032. 
+                    
+
+                    
+Collins, John
+ (2004): „Turner, Whistler, Monet. Toronto, Paris and London“, in:
+                        
+The Burlington Magazine
+ 146:  709–710.
+                    
+
+                    
+Görner, Veit
+ (2007):
+                        
+Der Betrachter als Akteur. Partizipationsmodelle in der frühen Kunst des 20. Jahrhunderts
+. Diss., Hochschule für Bildende Künste Braunschweig.
+                    
+
+                    
+Guy, Marieke / Tonkin, Emma
+ (2006): „Folksonomies: Tidying up Tags?“, in: 
+                        
+D-Lib Magazine
+ 12 http://www.dlib.org/dlib/january06/guy/01guy.html [letzter Zugriff 2. Juli 2021].
+                    
+
+                    
+Hänger, Christoph
+ (2008): „Good tags or bad tags? Tagging im Kontext der bibliothekarischen Wissenserschließung“, in: Gaiser, Birgit / Hampel, Thorsten / Panke, Stefanie (eds.):
+                        
+Good Tags - Bad Tags. Social Tagging in der Wissensorganisation
+. Münster / New York / München / Berlin: Waxmann 63–71.
+                    
+
+                    
+Herrmann, Luke
+ (2007): „Turner Whistler Monet. A Superb Three-Course Feast“, in:
+                        
+The British Art Journal
+ 6: 83–84.
+                    
+
+                    
+Keller, Horst
+ (1985): 
+                        
+Claude Monet
+. München: Bruckmann.
+                    
+
+                    
+Koch, Horst
+ (1977): 
+                        
+William Turner
+. Ramerding: Berghaus.
+                    
+
+                    
+Osherenko, Alexander
+ (2010): 
+                        
+Opinion Mining and Lexical Affect Sensing
+. Diss., Universität Augsburg https://opus.bibliothek.uni-augsburg.de/opus4/frontdoor/deliver/index/docId/1469/file/Osherenko_Dissertation.pdf [letzter Zugriff 24. November 2021].
+                    
+
+                
+Petz, Gerald
+ (2019): 
+                        
+Opinion Mining im Web 2.0. Ansätze, Methoden, Vorgehensmodell
+. Diss., Johannes Kepler Universität Linz 10.1007/978-3-658-23801-8.
+                    
+
+                
+P
+ickeral, Tamsin
+ (2007): 
+                        
+Turner, Whistler, Monet
+. München: Langen Müller.
+                    
+
+                
+Reinel, Dirk
+ (2018): 
+                        
+Korpusbasierte Verfahren zur Generierung lexikalischer Ressourcen für das Opinion Mining. Statistische Ansätze und deren Einsatzmöglichkeiten
+. Bamberg: University of Bamberg Press 10.20378/irbo-52349.
+                    
+
+                
+Robertson, Stephen / Vojnovic, Milan / Weber, Ingmar
+ (2009): „Rethinking the ESP Game“, in: 
+                        
+Proceedings of the 27th International Conference on Human Factors in Computing Systems 
+3937–3942 10.1145/1520340.1520597.
+                    
+
+                
+Schneider, Stefanie / Kohle, Hubertus
+ (2017): „The Computer as Filter Machine. A Clustering Approach to Categorize Artworks Based on a Social Tagging Network“, in: 
+                        
+Artl@s Bulletin
+ 6:  81–89 10.5282/ubm/epub.41319.
+                    
+
+                
+Slap, Joseph Wm.
+ (1983): „William Turner's Late Style: Speculation on Its Development“, in: 
+                        
+American Imago
+ 40: 175–187.
+                    
+
+                    
+Speer, Robyn / Chin, Joshua / Lin, Andrew / Jewett, Sara / Nathan, Lance
+ (2018): 
+                        
+LuminosoInsight/wordfreq
+ 10.5281/zenodo.1443582.
+                    
+
+                
+Surowiecki, James
+ (2007): 
+                        
+Die Weisheit der Vielen. Warum Gruppen klüger sind als Einzelne. 
+München: Goldmann Verlag.
+                    
+
+                
+van de Vall, Renée
+ (2013): „Transformations in Perception and Participation: Digital Games“, in: Thissen, Judith / Zwijnenberg, Robert / Zijlmans, Kitty (eds.): 
+                        
+Contemporary Culture. New Directions in Arts and Humanities Research
+. Amsterdam: Amsterdam University Press 110–125.
+                    
+
+                
+von Ahn, Luis / Dabbish, Laura
+ (2004): „Labeling Images With a Computer Game“, in: 
+                        
+Proceedings of the SIGCHI Conference on Human Factors in Computing Systems
+ 319–326 10.1145/985692.985733.
+                    
+
+                
+Wagner, Monika
+ (2011): 
+                        
+William Turner
+. München: C.H.Beck.
+                    
+
+                
+
+            
+
+        
+
+    

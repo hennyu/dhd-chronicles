@@ -1,0 +1,169 @@
+
+    
+
+      
+Portale zu mittelalterlichen Handschriften sind bereits oft auf nationaler Ebene zu
+        finden. So bieten beispielsweise "
+Manuscripta Mediaevalia
+"
+        für Deutschland, "
+
+        http://manuscripta.at/
+      
+" bezogen auf Österreich und "
+e-codices
+ - Virtual Manuscript Library of
+      Switzerland" in der Schweiz einen Einstieg in die
+      jeweiligen Bestände. 
+
+      
+Das französische DH-Projekt 
+Biblissima
+ (Bibliotheca Bibliothecarum Novissima)
+        zielt unter anderem darauf, Ende 2016 der breiten Öffentlichkeit einen
+        übergreifenden Einstieg in über 40 Datenbanken zu Handschriften des Mittelalters und
+        der Renaissance, Inkunabeln und historischen Sammlungen zu bieten. 
+Biblissima
+ wurde von neun Partnerinstitutionen ins Leben gerufen, darunter
+        der 
+Campus Condorcet
+ im Norden von Paris, das 
+IRHT
+ (Institut de recherche et d’histoire des textes), die
+        
+BnF
+ (Bibliothèque nationale de France), die 
+EPHE
+ (Ecole pratique des hautes études) und das 
+CESR
+ (Centre d'Etudes Supérieures de la Renaissance).
+        Projektstart war der Beginn des Jahres 2013. 
+
+        
+Finanziert wird unser Projekt von der Forschungsförderung 
+ANR
+
+        (Agence Nationale de la Recherche) und es befasst mit der Geschichte historischer
+        Sammlungen sowie der Geschichte der Überlieferung von Texten. In gewisser Weise
+        sieht es sich sogar in der Tradition von 
+Antoon
+        Sanders
+ und 
+Bernard de Montfaucon
+, die mit der 
+Bibliotheca
+        Belgica Manuscripta
+ (1641-44) beziehungsweise der 
+Bibliotheca bibliothecarum manuscriptorum nova
+ (1739) bedeutende
+        bibliotheksübergreifende Inventare veröffentlichten. 
+
+        
+Unsere technische Lösung hin zu einer Realisierung einer “Online-Bibliothek des 21.
+          Jahrhunderts zu den heutigen und historischen Sammlungen Frankreichs” ist die
+          Entwicklung  einer Semantic Web Application. So haben wir bereits im Sommer 2015
+          einen Prototypen (
+http://demos.biblissima-condorcet.fr/prototype
+) veröffentlicht, der einen
+          vereinigten Zugang zu zwei bedeutenden ikonographischen Datenbanken ermöglicht: 
+Initiale
+ und 
+Mandragore
+. Ein Export der Metadaten zu all jenen
+          Illuminationen, die Geografika als Schlagwort tragen, war unser Ausgangspunkt.
+          Personen (Autoren, Übersetzer und / oder Illuminatoren), Körperschaften
+          (zeitgenössische Bibliotheken), Werktitel und Ortsnamen haben wir mit Normdateien
+          der 
+BnF
+ verknüpft sowie, wenn möglich, mit externen
+          Vokabularen verlinkt (
+GeoNames
+, 
+VIAF
+).
+          Der Prototyp bot zum Zeitpunkt der Veröffentlichung Zugang zu ca. 20.000
+          Illuminationen in 2000 Handschriften, die heute in 70 verschiedenen Bibliotheken
+          aufbewahrt werden. Über 5000 Geografika wurden mit Hilfe von Normdaten der 
+BnF
+ und/oder 
+GeoNames
+ eindeutig
+          identifiziert. 115 Werktitel und ein Großteil der 359 Personennamen konnten mit
+          Normdaten der 
+BnF
+ verbunden werden. 
+
+          
+Dank dieser Verknüpfungen werden nun dynamische Webseiten generiert, die jeweils eine Person, eine Handschrift, einen Handschriftenteil etc. beschreiben und Links zu den entsprechenden Einträgen in den ursprünglichen Datenbanken bereitstellen. Auch können wir nun – für unseren Datenbestand - beispielsweise über zwei verschiedene Karten bezogen auf die Geografika  darstellen, in welchen Handschriften und durch welche Illuminationen diese dargestellt sind oder aber welche (Anzahl von) Illuminationen am jeweiligen Ort aufbewahrt werden.
+
+          
+Derzeit arbeiten wir an einer breitflächigen Erweiterung dieses Prototypen, der auf
+            dem Semantic Web Application Framework 
+CubicWeb
+ basiert. Neben Handschriften binden wir
+            Inkunabeln ein und legen einen Fokus auf die Provenienz, indem wir Daten aus den
+            vier Datenbanken 
+Esprit des Livres
+ (Ecole nationale des
+            Chartes, Datenbank zu Verkaufskatalogen), 
+Bibale
+ (IRHT, Datenbank zu historischen
+            Büchersammlungen), 
+Europeana Regia
+ (BnF in Kooperation mit u. a. der Bayerischen
+            Staatsbibliothek und der Herzog August Bibliothek, Datenbank zu drei bedeutenden
+            historischen Sammlungen des Mittelalters und der Renaissance) und 
+CRII
+ (CNRS, Catalogues Régionaux des Incunables Informatisés)
+            beziehungsweise 
+CRIICO
+ (CNRS, Catalogues Régionaux des
+            Incunables Informatisés Centre-Ouest) integrieren. 
+
+            
+Hinter dieser Applikation liegt ein Datenmodell, dass auf 
+CIDOC-CRM
+ und 
+FRBRoo
+ basiert. Erste
+              Bereitstellungen unserer Daten in RDF liegen bereits als Test vor. Wir hoffen, in
+              Zukunft nicht nur Werks-, Manifestations- und Exemplarsebene (unter Verwendung der
+              Klassen 
+F4 Manifestation Singleton
+ für Handschriften sowie
+              
+F3 Manifestation Product Type 
+und 
+F5
+              Item
+ für Inkunabeln) zu behandeln, sondern die Texte der Handschriften und
+              frühen Drucke auch einer Textvariante (Klasse 
+F2 Expression
+)
+              zuordnen zu können, wie beispielsweise von 
+Perseus
+ durch die Bereitstellung von URIs pro Text und Sprache begonnen. 
+
+              
+Ein eingebundener Viewer zeigt zudem das Digitalisat des Exemplars beziehungsweise
+                des entsprechenden Folios. Als Viewer wird derzeit 
+Mirador 
+ favorisiert. Die
+                Informationen zur Darstellung beruhen auf dem 
+IIIF
+ (International Image Interoperability Framework). Diese werden in
+                JSON-LD Manifesten, erzeugt aus den Metadaten- und Imagesfiles der
+                Partnerinstitution, an den Viewer übergeben. Der Viewer selbst arbeitet im Client
+                und beherrscht unter anderem Zoomfunktionen der eingebundenen Bilder, Anzeige von
+                Metadaten oder auch Überlagerung verschiedener Ebenen, wie zum Beispiel Bild und
+                transkribierter Text. 
+
+                
+
+                  
+Im Rahmen unseres Posters möchten wir die Vorgehensweise und technische Umsetzung ausgehend vom neuesten Stand des Portals Biblissima veranschaulichen.
+                
+
+              
+
+            

@@ -1,0 +1,149 @@
+
+        
+
+            
+Dieses Poster beschreibt den Stand der Hybridedition „Edition der Ministerratsprotokolle Österreichs und der Österreich-Ungarischen Monarchie 1848-1918“, die ein traditionsreiches Editionsprojekt ins Web gebracht hat.
+
+            
+1) Die Ausgangslage
+
+            
+Die Habsburgermonarchie hatte von 1848 bis 1918 vier verschiedene Regierungsinstitutionen, drei davon existierten parallel ab dem Jahr 1867. Davor gab es eine Regierung, den österreichischen Ministerrat (ÖMR), danach gab es einen ungarischen Ministerrat (UMR) und einen Ministerrat für die restlichen Länder (CMR), sowie einen gemeinsamen Ministerrat (GMR). Große Teile der Textgrundlage des CMR sind Brandakten und nur teilweise überliefert (Justizpalastbrand 1927).
+
+            
+Das erklärt einen Teil der Komplexität des Unterfangens, die Ministerratsprotokolle der Habsburgermonarchie nach 1848 edieren zu wollen.
+
+            
+Hinzu kommt, dass die Dokumente dieser Regierungen seit den späten 1960er Jahren von verschiedenen Institutionen historisch-kritisch ediert wurden und werden: von der ungarischen Akademie der Wissenschaften und von einem österreichischen Institut, das in unterschiedlichen Rechtsformen existierte und inzwischen im Bereich Digitale Historiographie und Editionen des Institute for Habsburg and Balkan Studies der Österreichischen Akademie der Wissenschaften integriert ist.
+
+            
+Daraus ergaben sich drei unterschiedliche Textbasen, die sich in drei verschiedenen Zuständen befanden, als die TEI-Digitalisierung begonnen wurde:
+
+            
+a) Die Printeditionen der ÖMR 1848–1867 und der GMR 1867–1918 lagen in Form von PDF-Digitalisaten vor, die Worddateien dazu waren nur noch teilweise vorhanden, der Rest wurde extern transkribiert, sodass die Textbasis schließlich minder zuverlässiges XML war.
+
+            
+b) die CMR 1867–1918 sind derzeit im Entstehen begriffen. Deshalb kann dieser Teil laufend als born-digital TEI-Edition erscheinen (Band I bis III befinden sich in unterschiedlichen Übergangsstadien).
+
+            
+d) nachträglich kam durch Kooperation mit der Ungarischen Akademie der Wissenschaften noch deren Publikation navigierbarer Images der Originalprotokolle auf Ungarisch hinzu, die kurzerhand mit in das Projekt einbezogen wurden. 
+
+            
+2) Die Digitaledition: Stand der Dinge
+
+            
+Die digitale Edition ist in einer web-app auf 
+mrp.oeaw.ac.at
+ verfügbar. Sie umfasst derzeit 36 Bände, sie enthalten 2816 Protokolle mit 11825 Tagesordnungspunkten aus 61 Regierungsjahren.
+            
+
+            
+2.1) Alles an einem Ort
+
+            
+Als Prinzip sind alle Protokolle über dieselben Logiken gleichberechtigt zugänglich. Jedes Protokoll ist über sein Datum im Kalender ansteuerbar. Mit Ausnahme der Images der UMR ist die Grundeinheit der Tagesordnungspunkt. Auf den Tagesordnungspunkten beruhen alle Abfragen und Darstellungen (Protokollansicht, Bandansicht, Suchergebnisse etc.).
+
+            
+Um Lesegewohnheiten entgegenzukommen, sind alle Protokolle auch als Bände wie in der Printedition darstellbar. Soweit vorhanden ist jedes XML-Protokoll seitenweise mit einem PDF der Print-Edition verlinkt. Da einige Bände der UMR-Edition erschienen sind, wird auf diese zumindest verwiesen.
+
+            
+Die Edition zeichnet sich durch einen ausführlichen Kommentar und instruktive historische historische Einleitungen aus. Diese werden durch eigene Verlinkungen in allen Protokollansichten präsent und zugänglich gemacht.
+
+            
+2.2) Angereicherte Daten
+
+            
+Alle Texte werden je nach Zustand mit strukturierten Daten angereichert. Das aus den Print-Bänden generierte TEI-XML verfügt über Fußnoten und editorische Anmerkungen zu Textbereichen, Querverweise zu anderen Tagesordnungspunkten mit Mouse-over-Vorschau, strukturierte bibliografische und archivalische Einheiten (tei:bibl), jene Zeitungszitate, zu denen es Digitalisate auf anno.onb.ac.at gibt, sind dorthin verlinkt, alle Kalenderdaten sind mit ISO-Daten vorbereitet. 
+
+            
+Das born digital TEI-XML wird darüber hinaus mit Links zu existierenden und vom Projekt oder dessen Partnern betreuten eigenen Online-Datenbanken verlinkt. Named entities werden mit 
+mpr.acdh.oeaw.ac.at
+ verbunden, wobei Personennamen mit GND-IDs und geographische Bezeichnungen mit Georeferenzen über geonames.org referenziert sind, Institutioneneinträge verweisen großteils auf Digitalisate von Einträgen im Staatshandbuch der Österreichisch-Ungarischen Monarchie 1917 auf 
+alex.onb.ac.at
+, wo auch deren Mitarbeiter und verbundene Institutionen verzeichnet sind. Bibliographische Einheiten, inklusive Gesetzblätter, sind in einer offenen Zotero-group library erfasst.
+            
+
+            
+Diese Anreicherungen sollen erweitert (Beispiel Parlamentsprotokolle auf ALEX) und sukzessive auch auf die retrodigitalsierten TEI-XML ausgeweitet werden.
+
+            
+Sämtliche Daten werden begleitend auf Zenodo zugänglich gemacht.
+
+            
+2.3) Workflow: pragmatische Lösungen
+
+            
+Die Digitalisierung hat den ohnehin schon komplexen Workflows der Edition eine neue Dimension der Komplexität verliehen und zwingt zur Reflexion derselben. Besonders das Erstellen, Betreuen und Einbinden der peripheren Datenbanken erfordert zusätzliche Arbeitskraft und Planung. 
+
+            
+Die Originaldokumente werden fotografiert und (automatisch oder händisch) transkribiert und in MS Word kollationiert sowie wissenschaftlich kommentiert. Parallel dazu wird der Text mit Links und Formatvorlagen angereichert. Das angereicherte Worddokument wird dann über eine XSL-T-Pipeline in TEI-XML umgewandelt und über die parallel betriebene Datenbank der Auxiliardaten mit tei:listEvent/Org/Person/Place/Bibl-Elementen angereichert.
+
+            
+Die Motivation des Workflow ist, a) den Geboten einer historisch-kritischen Edition gerecht zu werden (Übertragung der Originaldokumente und kritischer Kommentar), b) den Arbeitsgewohnheiten der Editoren entgegenzukommen (Bearbeiten und Kollationieren in MS-Word), c) den Standards offener Online-Editionen zu entsprechen (XML-TEI, Auxiliardaten), d) große Textmengen gleichzeitig und auch retrospektiv für Print und online formatieren zu können (XSLT).
+
+            
+2.4) Hybridedition: ein exploratives Feld
+
+            
+Da aus dem TEI-XML nicht nur die Webversion generiert wird, sondern auch eine Druckvorlage, die der Editionstradition möglichst folgen soll, muss aus den angereicherten Elementen auch der Apparat (Liste der Teilnehmenden, Abkürzungen, Bibliografie, Register etc.) erstellt werden. Hier überschneiden sich teilweise Logiken, was zu Problemen führen kann. Die Arbeit an der Lösung solcher Probleme zwingt zur Ausformulierung bisher implizit gebliebener Editionslogiken. Da es nicht viele Hybrideditionen dieser Art und in diesem Umfang gibt, bietet dieses Ausformulieren Gelegenheit, Einblick sowohl in mediumsbedingt unterschiedliche Möglichkeiten der zwei Publikationsarten zu nehmen und Editionsprinzipien zu überdenken. Bspw. scheint ein Problem aber auch ein Vorteil des traditionellen Edierens zu sein, inkonsequent sein zu können.
+
+            
+Die Herkunft der Textgrundlagen war bisher relativ einheitlich und daher ergaben sich kaum Fragen dazu. Mit Edition der Brandakten ergeben sich neue Fragen der Textgrundlage, welche das digitale Editionsmodell immer wieder zur Anpassung zwingen.
+
+            
+3) Zusammenfassung/Ausblick
+
+            
+Eine umfangreiche Ressource zur politischen, aber auch sozialen, wirtschaftlichen und rechtlichen Geschichte nicht nur der Habsburger Monarchie, die in über 40 Bänden in Print verfügbar sein wird, ist weltweit zugänglich und auf ganz neue Art verwendbar für mehr Fachrichtungen und Usergruppen als bisher.
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Kurz, Stephan / Fischer-Nebmaier, Wladimir / Kampkaspar, Dario / u. a.
+ (2019): “Die Edition der Ministerratsprotokolle 1848–1918 digital: Workflows, Möglichkeiten, Grenzen” in: Zeppezauer-Wachauer, Katharina / Hinkelmanns, Peter / Ernst, Marlene (eds.), 
+                        
+5. digital humanities austria konferenz DHA 2018 conference proceedings
+, Salzburg 86–93.
+                    
+
+                    
+
+                        
+O. A.
+ (2019): “Durch Krisen zum Sozialstaat” in: 
+                        
+scilog
+, [online] 
+                        
+https://scilog.fwf.ac.at/kultur-gesellschaft/8985/durch-krisen-zum-sozialstaat
+ [10.11.2020].
+                    
+
+                    
+
+                        
+Rumpler, Helmut
+ (1970): 
+                        
+Einleitungsband. Ministerrat und Ministerratsprotokolle 1848–1867. Behördengeschichtliche und aktenkundliche Analyse
+, Wien: Verlag der Österreichischen Akademie der Wissenschaften (Die Protokolle des österreichischen Ministerrates 1848–1867).
+                    
+
+                
+
+            
+
+        
+
+    

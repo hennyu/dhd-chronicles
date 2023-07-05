@@ -1,0 +1,267 @@
+
+
+
+
+
+Vladimir Propps Theorie 
+
+Morphology of the Folktale 
+
+(Propp 1968) definiert  31 invariante Funktionen, Unterfunktionen und sieben Klassen von Charakteren, um die narrative Struktur der russischen Zaubermärchen 
+zu beschreiben. Seit seiner ersten Veröffentlichung im Jahr 1928 wurde der Ansatz von Propp auf verschiedene Volkserzählungen mit unterschiedlichen
+ kulturellen Hintergründen angewendet (z.B. Azuonye 1990,  Okodo 2012 oder Harun und Jamaludin 2016). 
+
+
+
+
+  Wir haben eine Ontologie erstellt, die die Theorie von Propp modelliert, indem sie narrative Funktionen als Klassen und Relationen implementiert. Ein besonderer Schwerpunkt liegt auf den von Propp definierten Einschränkungen, welche Dramatis Personae eine bestimmte Funktion erfüllen kann. 
+  So kann die Funktion 
+  
+XI Departure
+
+  nur durch die Figur der Heldin oder des Helden ausgeführt werden, bricht ein Charakter, der nach Propp zu einer andere Klasse von Dramatis Personae gehört von einem Ort auf, z.B. der Igbo Medizinmann 
+  
+Dibia 
+ 
+  (Helfer) oder die schöne, aber böse 
+  
+Yakshi
+
+  (Gegenspielerin) im indischen Märchen, so greift diese Funktion nicht. 
+
+
+
+Diese Restriktion definiert Propp sehr streng, sie wurde jedoch unserer Kenntnis nach in keinem Projekt zuvor in einer Ontologie als 
+
+range
+ und 
+
+domain
+ einer zu der Funktion gehörigen Object Property definiert (z.B. Peinado 2004). Die Ontologie wurde auf Grundlage von Noy und McGuiness‘ (2001) Prinzipien erstellt, inklusive einer deskriptionslogischen Grundlage und einer Reihe von Kompetenzfragen, die ein ontologie-gesteuertes System beantworten können sollte. Außerdem wurden zwei ergänzende Ontologien (Koleva 2011 und Declerck 2017) importiert, damit weitere interessante Fragestellungen, wie zum Beispiel die Verbindung von Motifverwendung und Propp’schen Funktionen, oder das Vorkommen von Familienrelationen in Propp’s Dramatis Personae, untersucht werden können.
+
+
+
+Abbildung 1 zeigt beispielweise eine Visualisierung der Frage „Wer ist der Held oder die Heldin in den untersuchten Märchen?“ 
+
+
+
+  
+
+    
+
+    
+Abbildung 1: Verteilung der Held*Innen-Figuren in indischen und afrikanischen Märchen auf andere Subklassen der Ontologie
+
+  
+
+
+
+
+
+  Wir haben in diesem Projekt untersucht, wie eine Ontologie die traditionelle geisteswissenschaftliche Forschung dabei unterstützen kann, zu untersuchen, wie gut Propps Theorie für Volksmärchen außerhalb der russisch-europäischen Volkskultur geeignet ist. Wie viel Spielraum bleibt für die Auslegung der Propp’schen Funktionen um sie auf narrative Strukturen von Märchen aus anderen Kulturen anzuwenden?
+
+
+
+
+  Zu diesem Zweck wurde ein ontologie-gesteuertes Querysystem mit
+  einem Apache Jena Fuseki
+ Backend
+  implementiert.
+ 
+  Um das Browsing in der Ontologie zu ermöglichen, stellen wir gleichzeitig eine institutionelle Webprotégé-Instanz (Tudorache et. al 2008) zur Verfügung. 
+
+
+
+Analoge Analysen, die auf Propp’s Theorie basieren, können mit wenig Einarbeitung in die Ontologie eingepflegt und so in den Kontext anderer Analysen gestellt werden.
+
+
+
+  Um festzustellen, wie gut sowohl das an Propp angelegte
+  Annotationsschema als auch das Abfragesystem funktionieren, haben
+  wir zwanzig hauptsächlich sub-saharische und fünfzehn südindische
+  (Kerala) Märchen und Volkserzählungen annotiert.
+
+
+
+
+  Wir evaluieren das System, indem wir zwei Fallstudien über die
+  Repräsentation von Charakteren und die Verwendung propp‘scher
+  Funktionen in afrikanischen und indischen Geschichten
+  untersuchen. Unsere Ergebnisse stehen im Einklang mit der
+  traditionellen analogen geisteswissenschaftlichen Forschung,
+  z.B. Reuster-Jahn’s (2002) Arbeiten zum fehlenden guten Ausgang in
+  afrikanischen Märchen. Insbesondere die Funktionen des 
+  
+Dénouement
+, die Propp für die Ausgänge des Russischen Zaubermärchens definiert, kommen in Märchen der untersuchten Kulturkreise kaum vor. Viel eher bestätigen die Daten, dass die Ausgänge in afrikanischen Märchen anderer Natur sind. In unseren Daten zeigt sich, dass sowohl die sub-saharischen als auch die Märchen aus dem indischen Kulturkreis eher auf die Wiederherstellung des Status-Quo ausgerichtet sind, die Bekämpfung der Not oder Mangelsituation stehen im Fordergrund, ebenso die Rückkehr der Held*Innen und Opfer nach Hause oder an einen sicheren Ort. Die Propp‘schen Anfangsfunktionen, insbesondere die 
+  
+Absentation
+, die 
+  
+Interdiktion
+ oder 
+  
+das Verbot
+ und der 
+  
+Bruch des Verbots
+, sind jedoch sehr prominent in allen Märchen vertreten. 
+
+
+
+Propp’s Theorie hat nicht den Anspruch, für Märchen aller Kulturkreise gleich gut adaptierbar zu sein, was sich beispielsweise an den beschriebenen Mängeln seiner Auswahl von Endfunktionen ablesen lässt. 
+
+
+Eine weitere Schwierigkeit besteht in der individuellen Auslegung propp‘scher Funktionen durch die jeweiligen Annotator*Innen. So verwendet Azuonye (1990) die Funktion 
+
+Transformation 
+um eine moralische Transformation des Opfers und der Gesellschaft im Märchen 
+
+Obaraedo 
+zu codieren. Okodo (2012) folgt dieser sehr freien Auslegung bei seiner Analyse desselben Märchens nicht. Unser System kann hier durch die Verwendung von Querverweisen zwischen den einzelnen Analysen und dem Einsatz von rdfs:comments auf individuelle Auslegungen eingehen. 
+
+
+
+
+  Dieses Projekt zeigt, wie sorgfältig modellierte Ontologien traditionelle literaturwissenschaftliche bzw. folkloristische Theorien darstellen und zugänglich machen können. Außerdem wollen wir zeigen wie sie als Wissensbasis für die vergleichende Folkloreforschung genutzt werden können.
+
+
+
+Das Poster stellt die Designprinzipien der Ontologie und des darauf basierenden Ontologie-Query-Systems dar und visualisiert die Ergebnisse der Auswertungen.
+
+
+
+
+
+  
+
+    
+
+      
+
+    
+
+    
+
+      
+
+    
+
+  
+
+  
+
+
+
+
+Bibliographie
+
+
+
+  
+Azuonye, Chukwuma
+ (1990): „Morphology of the Igbo folktale: Ethnographic, historiographic and aesthetic implications“, in: 
+  
+Folklore
+, 101(1): 36-46.
+
+
+
+
+  
+Declerck, Thierry / Kostová, Antónia / Lisa Schäfer 
+(2017): „Towards a linked data access to folktales classified by Thompson’s motifs and Aarne-Thompson-Uther’s types“, in: 
+  
+Proceedings of Digital Humanities 2017
+. ADHO, 8 2017.
+
+
+
+
+  
+Harun, Harryizman / Jamaludin, Zulikha 
+(2016): „Structural Classification as Preservation Means of Malaysian Folktales“, in: 
+  
+Proceedings of the International Soft Science Conference (ISSC’16)
+.
+
+
+
+
+  
+Koleva, Nikolina
+ (2011): 
+  
+Ontology-based iterative detection of characters and their recognition in folktales
+, Bachelorarbeit, Universität des Saarlands.
+
+
+
+
+  
+Noy, Natalya / McGuinness, Deborah L.
+ (2001): „Ontology development 101: A guide to creating your first ontology.“ 
+  
+KSL-01-05
+, Knowledge Systems Laboratory, Stanford University.
+
+
+
+
+  
+Okodo, Ikechukwu
+ (2012): „Obaraedo: Conformity to Proppian morphology.“ 
+  
+AFRREV IJAH: An International Journal of Arts and Humanities
+, 1(2): 100-111.
+
+
+
+
+  
+Peinado, Federico / Gervás, Pablo / Díaz-Agudo, Belén 
+(2004): „A description logic ontology for fairy tale generation“, in: 
+  
+Proceedings of the Workshop on Language Resources for Linguistic Creativity
+, LREC, 4: 56-61.
+
+
+
+
+  
+Propp, Vladimir
+ (1968): 
+  
+Morphology of the Folktale
+, volume 10. Austin: University of Texas Press.
+
+
+
+
+  
+Reuster-Jahn, Uta
+ (2002): „Gute und schlechte Ausgänge in europäischen Märchen und in den Volkserzählungen der Mwera in Tansania“, in: 
+  
+Märchenspiegel
+, 13(2): 17-18.
+
+
+
+
+  
+Tudorache, Tania / Vendetti, Jennifer / Noy, Natalya 
+(2008): „Web-protege: A lightweight OWL ontology editor for the web“, in: 
+  
+Proceedings of the Fifth OWLED Workshop on OWL:
+  Experiences and Directions, collocated with the 7th International
+  Semantic Web Conference (ISWC-2008)
+.
+
+
+
+
+
+
+
+
+

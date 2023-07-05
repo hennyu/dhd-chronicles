@@ -1,0 +1,256 @@
+
+    
+
+      
+Die Handschriftenforschung hat sich in der Vergangenheit auf die Erschließung durch Katalogisierung auf der einen Seite und Textedition auf der anderen gestützt. Sowohl Katalogisierung als auch Textedition stützen sich nunmehr immer stärker auf digitale Daten. Insbesondere sind immer mehr Handschriften als Imagedigitalisate verfügbar. Zentrale Nachweisportale wie Manuscripta Mediaevalia, e-codices oder Biblissima bieten Einstiegspunkte für alle Arten von handschriftenbezogenen Informationen. Mit der Entität „Handschrift“ im Mittelpunkt können Digitalisate, Katalogisate, Nachweise zu Wasserzeichen, Einbandstempeln oder Provenienzen verbunden werden. Solche Verknüpfung erfordern die Anreicherung mit Normdaten, um so zur Grundlage für Linked Open Data und das Semantic Web zu werden.
+
+      
+Während die Notwendigkeit bzw. Nützlichkeit, Normdaten für Personen,
+        Institutionen, Orte und auch teilweise Bildinhalte anzubieten und zu nutzen
+        schon relativ weit verbreitet ist und diese auch von der Forschung
+        eingesetzt werden, denken die Handschriftencommunities weiter: Auch die
+        Objekte selbst, Handschriften und Texte sollen in normierter Form zugänglich
+        gemacht werden. Entsprechende Normdatensysteme zur eineindeutigen
+        Identifizierung von Objekten des kulturellen Erbes befinden sich in der
+        Entwicklung (Kailus 2013).
+
+        
+Die Entwicklung zur Erschließung historischer Materialien macht hier allerdings nicht halt: Die Überlegung, dass historische Dokumente Schichten von vielerlei Informationen aufweisen und auch in Zukunft immer neue Schichten anhäufen werden, ist der Ausgangspunkt für die Entwicklung eines neuen Datenformats, Shared Canvas:
+
+        
+- Die Materialoberfläche kann durch Schichten von Bildern repräsentiert werden, doch auch sie selbst kann aus Schichten bestehen, die durch Abbildungsverfahren wie der Multispektralfotographie sichtbar gemacht werden können.
+
+        
+- Auch der Beschreibprozess kann als Schichtung historischer Prozesse
+          verstanden werden. Das Befüllen der Seite geschieht in einer chronologischen
+          Reihenfolge, die in einer Edition sichtbar gemacht werden kann. Dieser
+          Ansatz hat in der theoretischen Strömung der genetischen Edition seinen
+          Niederschlag gefunden. (Brüning et al. 2013; Burnard et.al. 2011)
+
+          
+- Einzelne Oberflächen können in beliebige Kontexte gesetzt oder auch in beliebige Reihenfolgen gebracht werden: Virtuelle Sammlungen entstehen durch forschungsgeleitete Zusammenstellung; auseinander gerissene Handschriften, sogenannte 'Codices discissi', können virtuell zusammengesetzt, falsch gebundene Handschriften virtuell in die richtige Reihenfolge gebracht werden.
+
+          
+- Schließlich wird die Annotation der (Bild)Oberfläche selbst, durch Forscher und Handschriftenkundler, weiter Schichten des Wissens über die Objekte versammeln und zugänglich machen, die ebenfalls visualisiert sein wollen.
+
+          
+Um all das zu erlauben, ist in internationaler Zusammenarbeit die Idee des
+            Shard Canvas (Sanderson &amp; Albritton 2013) entstanden welches eine
+            theoretische Antwort auf die vielfältigen Bedürfnisse der
+            Handschriftenforschung geben soll. Basierend auf Semantic Web-Technologien
+            wie RDF und JSON sollen die geschichteten Informationen abgerufen, in
+            Beziehung gesetzt und visualisiert werden können. Mit IIIF (International
+            Image Interoperability Framework, sprich: Triple-I, F) liegt ein
+            implementierendes Format vor.
+
+            
+Im Poster werden die Entwicklungen im Feld der Handschriftenforschung, ihrer theoretischen Grundlagen und die daraus resultierenden Möglichkeiten im Semantic Web aufgezeigt.
+
+          
+
+          
+
+            
+
+              
+
+                
+Bibliographie
+
+                
+
+                  
+Biblissima
+ (2013): 
+Bibliotheca
+                  bibliothecarum novissima
+ Patrimoine écrit du Moyen Âge et de la
+                  Renaissance, Bibliothèque numérique, VIIIe au XVIIIe siècle. 
+http://www.biblissima-condorcet.fr
+ [letzter Zugriff 31. Dezember
+                  2015]. 
+
+                  
+
+                    
+Brüning, Gerrit / Henzel, Katrin / Pravida, Dietmar
+
+                    (2013): „Multiple Encoding in Genetic Editions: The Case of 'Faust'", in:
+                    
+Journal of the Text Encoding Initiative
+ 4 
+http://jtei.revues.org/697
+
+                    [letzter Zugriff 31. Dezember 2015]. 
+
+                    
+
+                      
+Burnard, Lou / Jannidis, Fotis / Pierazzo, Elena / Rehbein,
+                        Malte
+ (2011): 
+An Encoding Model for Genetic
+                        Editions
+
+                        
+http://www.tei-c.org/Activities/Council/Working/tcw19.html
+
+                          [letzter Zugriff 31. Dezember 2015] 
+
+                          
+
+                            
+Burrows, Toby
+ (2011): „Applying Semantic Web
+                            Technologies to Medieval Manuscript Research“, in: Fischer, Franz / Fritze,
+                            Christiane / Vogeler, Georg (eds.): 
+Kodikologie und
+                            Paläographie im digitalen Zeitalter 2
+. Norderstedt: BoD 117-131
+                            
+http://kups.ub.uni-koeln.de/4346/
+ [letzter Zugriff 31. Dezember
+                              2015]. 
+
+                              
+
+                                
+EBDB
+ (2001-*): 
+Einbanddatenbank
+
+                                Württembergische Landesbibliothek Stuttgart, Herzog August Bibliothek
+                                Wolfenbüttel, Bayerische Staatsbibliothek München, Staatsbibliothek zu
+                                Berlin - Preußischer Kulturbesitz, Universitäts- und Landesbibliothek
+                                Darmstadt, Universitätsbibliothek Rostock 
+http://www.hist-einband.de
+
+                                [letzter Zugriff 31. Dezember 2015]. 
+
+                                
+
+                                  
+e-codices
+ (2003-*): 
+e-codices:
+                                  Virtuelle Handschriftenbibliothek der Schweiz
+. Universität
+                                  Freiburg, Schweiz 
+http://e-codices.unifr.ch
+ [letzter Zugriff 31. Dezember 2015]. 
+
+                                  
+
+                                    
+IIIF
+ (2011-*): 
+International Image
+                                    Interoperability Framework
+
+                                    
+http://iiif.io
+ [letzter Zugriff 31.
+                                    Dezember 2015]. 
+
+                                    
+
+                                      
+Kailus, Angela
+ (2013): 
+RDA in der
+                                      Dokumentation von Kunst und Architektur
+. Workshop am 10. September
+                                      2013. Deutsche Nationalbibliothek in Frankfurt am Main 
+http://www.dnb.de/SharedDocs/Downloads/DE/DNB/standardisierung/rdaKultur2013Kailus.pdf
+
+                                      [letzter Zugriff 31. Dezember 2015]. 
+
+                                      
+
+                                        
+Manuscripta Mediaevalia
+ (2000-*): Staatsbibliothek zu
+                                        Berlin- Preußischer Kulturbesitz, Deutsches Dokumentationszentrum für
+                                        Kunstgeschichte - Bildarchiv Foto Marburg, Bayerische Staatsbibliothek
+                                        München 
+http://www.manuscripta-mediaevalia.de
+ [letzter Zugriff 31.
+                                        Dezember 2015]. 
+
+                                        
+
+                                          
+Sanderson, Robert / Albritton, Benjamin
+ (2013): 
+Shared Canvas Data Model
+
+                                          
+http://iiif.io/model/shared-canvas/1.0/
+ [letzter Zugriff 31.
+                                            Dezember 2015]. 
+
+                                            
+
+                                              
+Sanderson, Robert / Albritton, Benjamin / Schwemmer, Rafael
+                                                / Van de Sompel, Herbert
+ (2011): "SharedCanvas: A Collaborative
+                                                Model for Medieval Manuscript Layout Dissemination", in: 
+
+                                                arXiv:1104.2925 
+
+                                                
+http://arxiv.org/abs/1104.2925
+ [letzter Zugriff 31. Dezember
+                                                  2015]. 
+
+                                                  
+
+                                                    
+Stinson, Timothy
+ (2009): „Codicological Descriptions in
+                                                    the Digital Age“, in: Rehbein, Malte / Sahle, Patrick / Schaßan, Torsten
+                                                    (eds.): 
+Kodikologie und Paläographie im digitalen
+                                                    Zeitalter
+. Norderstedt: BoD 35-51 
+http://kups.ub.uni-koeln.de/2959/
+ [letzter Zugriff 31. Dezember
+                                                    2015]. 
+
+                                                    
+
+                                                      
+Terras, Melissa
+ (2011): „Artefacts and Errors:
+                                                      Acknowledging Issues of Representation in the Digital: Imaging of Ancient
+                                                      Texts“, in: Fischer, Franz / Fritze, Christiane / Vogeler, Georg (eds.): 
+Kodikologie und Paläographie im digitalen Zeitalter
+                                                      2
+. Norderstedt: BoD 43-61 
+http://kups.ub.uni-koeln.de/4342/
+ [letzter Zugriff 31. Dezember
+                                                      2015]. 
+
+                                                      
+
+                                                        
+WZIS
+(2010-*): 
+Wasserzeichen-Informationssystem
+. Bayerische Staatsbibliothek
+                                                        München, Deutsche Nationalbibliothek Leipzig, Landesarchiv
+                                                        Baden-Württemberg, Österreichische Akademie der Wissenschaften,
+                                                        Staatsbibliothek zu Berlin, Württembergische Landesbibliothek Stuttgart,
+                                                        Universitätsbibliothek Leipzig 
+http://www.wasserzeichen-online.de
+ [letzter Zugriff 31. Dezember
+                                                        2015]. 
+
+                                                      
+
+                                                    
+
+                                                  
+
+                                                

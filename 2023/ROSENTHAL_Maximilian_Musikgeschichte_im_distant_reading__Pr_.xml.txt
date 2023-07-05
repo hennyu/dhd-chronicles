@@ -1,0 +1,524 @@
+
+        
+
+            
+Das DFG-geförderte Projekt 
+                
+Geschmacksbildung und Verlagspolitik
+, eine Kooperation der Hochschule für Musik und Theater (HMT) Leipzig und der Sächsischen Landesbibliothek (SLUB) Dresden, erfasst die Geschäftsdaten von Leipziger Musikverlagen des 19. Jahrhunderts (Hofmeister, C. F. Peters, Rieter-Biedermann) in der eigens dafür gebauten Musikverlagsdatenbank (
+                
+mvdb
+, https://musikverlage.slub-dresden.de). Zielsetzung des Projekts ist es, den Einfluss von Musikverlagen auf Musikgeschichte im weiteren bzw. auf Geschmacksbildungs- und Kanonisierungsprozesse im engeren Sinne zu verstehen. In vorliegendem Papier sollen zunächst Methoden und Zielsetzung des Projekts kurz erläutert werden. Abschnitte 2 und 3 werden dann die 
+                
+mvdb
+ genau vorstellen, die das digitale Herzstück des Vorhabens bildet. Es werden sowohl ihre wesentlichen Funktionen erläutert, als auch die dafür nötigen Lösungen einiger typischer Probleme von Geisteswissenschaften im digitalen Medium vorgestellt. Als Ausblick werden abschließend einige erste Ergebnisse aus der Auswertung der Forschungsdaten präsentiert.
+            
+
+            
+
+                
+Einleitung: Projektvorhaben, Methode, Projektziele
+
+                
+Der Transfer der Musikwissenschaft ins Digitale ist unbestreitbar auf dem Vormarsch.
+ Damit öffnen sich zwar neue wissenschaftliche Handlungsspielräume, diese müssen aber nun auch mit geeigneten Fragestellungen ausgefüllt werden. In der ‚verspäteten Disziplin‘ (Gerhard 2000), der „eine größere Widerständigkeit eigen“ ist (Unseld 2019, 172) gegenüber interdisziplinären Transfers, setzt sich in jüngerer Zeit vermehrt ein Bewusstsein dafür durch, dass Musikgeschichte losgelöst von den sozial-, wirtschafts- und kulturgeschichtlichen Kontexten ihrer Entstehung kaum noch hinreichend ist. Für das 19. Jahrhundert hat sich dies z.B. in Publikationen zu Verlags-, Salon-, und Repertoiregeschichte niedergeschlagen (Ballstaedt/Widmaer 1989, Beer 2000, Keym/Schmitz (Hg.) 2016, Gerber 2016, Beer 2020). Größere Repertoiregeschichtliche Forschungsvorhaben gibt es erst wenige (etwa Widmaier 1998, Hartmann-Enke 2022, auch https://performance.musiconn.de/). Das liegt unter anderem daran, dass hier einerseits geeignete Quellen vorliegen müssen, andererseits Datenmengen bearbeitet werden, die sich nur durch digitale Methoden hinreichend bewältigen lassen. Neben digitalen Musik- und Korpusanalysen (Neuwirth/Rohrmeier 2016) und digitalen Editionen besteht darin eines der großen Potentiale der Digital Musicology. Schon Helmut Loos hat darauf hingewiesen, dass es „im vordringlichen Interesse der Musikforschung [liegt], das bereitstehende innovative technische Potential der Gegenwart gewinnbringend zu nutzen und in die Erforschung eines bislang beinahe undurchdringlichen Gebiets [= Repertoireforschung, die Autoren] einzubringen“ (Loos 2010, 158). Oder in Worten von Laurent Pugin: „There are at least two key areas in which digital technology is transforming research: access and scale.“ (Pugin 2015, 1)
+                
+
+                
+Hier knüpft das Projekt 
+                    
+Geschmacksbildung und Verlagspolitik
+ an, indem es aus Geschäftsunterlagen die Verlagsprogramme dreier Musikverlage inklusive ihrer Wirtschaftsdaten erfasst. Aus ca. 20.000 Verlagsnummern lassen sich dann im Zeitraum von 1807 bis ca. 1945 Bewegungen des Musikalienmarkts als ‚distant reading‘ (Moretti 2016) der Geschmacksentwicklung rekonstruieren und sowohl zu den Agenden von Musikverlegern und Musikjournalisten als auch dem musikalischen ‚Kanon‘ in Beziehung setzen. ‚Distant reading‘ ist hier adaptiert zu verstehen und meint nicht die ursprüngliche korpusanalytische Konzeption nach Moretti, denn das Projekt arbeitet nicht mit Werk-Texten. Stattdessen wird das Repertoire anhand bibliographischer und verlegerischer Metadaten analysiert. Die Prämissen sind jedoch dieselben, weshalb die Begriffswahl adäquat erscheint: Im Kontrast zu bisherigen Perspektiven auf die Musikgeschichtsschreibung, die sich entlang einer vergleichsweise überschaubaren Zahl von (kanonischen) ‚close reading‘ Beispielen bewegt, wird hier ein weiter Blickwinkel eingenommen, der aufgrund des Verfahrens mehr Kompositionen erfasst, als eine Einzelperson je lesen könnte. Methodisch stellt sich das als ‚mixed methods‘-Zirkel dar: Deskriptive Statistiken erzeugen eine neue Lesart von musikgeschichtlichem Verlauf, erzeugen aber auch Erklärungsbedarfe, für die traditionelle Textquellen herangezogen werden. Andererseits lassen sich Annahmen über Musikgeschichte als Hypothesen statistisch am Material prüfen. Multivariate Statistiken sind ebenfalls möglich. Beispiele in Form erster Ergebnisse dafür werden am Schluss dieses Papiers vorgestellt.
+                
+
+            
+
+            
+
+                
+Die Musikverlagsdatenbank 
+                    
+mvdb
+
+                
+
+                
+
+                    
+
+                    
+Abbildung 1: Startseite mvdb
+
+                
+
+                
+Die 
+                    
+mvdb
+ ist „Herzstück“ des Projekts, weil sie einerseits der Datenerfassung und –organisation dient, andererseits aber auch die Plattform ist, auf der die Verlagsdaten der Forschungscommunity zur Verfügung gestellt werden. 
+                
+
+                
+Technisch gesehen ist die 
+                    
+mvdb
+ eine Erweiterung des PHP-basierten Content Management Frameworks TYPO3 (Version 9.5). Es bietet eine umfangreiche Programmierschnittstelle für Extensions, die solche Funktionen realisieren. Die Entwicklung von TYPO3-Extensions wird darüber hinaus durch Tools der TYPO3-Community wie den Extensionbuilder (Version 9.10) unterstützt. So konnten wir in verhältnismäßig kurzer Zeit einen Prototyp für unsere Forschungsumgebung realisieren. Sie besteht aus vier Komponenten (Abb. 2): (1) zur Normdatenverwaltung, (2) zur Terminologieverwaltung, (3) zur Errechnung von Infografiken und (4) einer Core-Komponente. Die Komponenten für Normdaten und Terminologie versorgen die Core-Komponente mit wesentlichen Metadaten. Letztere selbst dient der Erfassung und Präsentation der durch das Projekt erfassten Wirtschaftsdaten. Sie enthält ein Backendmodul mit grundlegenden Funktionalitäten zur Dateneingabe und Qualitätssicherung und mehrere Plugins, die verschiedene Teile des Frontends der 
+                    
+mvdb
+ steuern. Dazu zählen u. a. ein Plugin, das die API bereitstellt, und ein Recherche-Plugin. Während die Core-Komponente projektspezifisch gestaltet ist, lassen sich die übrigen auch für ähnliche Projekte fortnutzen. Deshalb wird die komplette Code-Basis des Projekts frei zur Verfügung gestellt.
+                
+
+                
+
+                    
+
+                    
+Abbildung 2: Die vier aktuellen Komponenten der mvdb (i. Uhrzeigersinn von links oben: API, Core, Terminologieverwaltung, Infografiken)
+
+                
+
+                
+                
+Im Projekt werden in der 
+                    
+mvdb
+ aus den Geschäftsbüchern der Verlage Hofmeister (1807 bis ca. 1939), Rieter-Biedermann (1856 bis 1917) und Peters (1867 bis ca. 1940) vier Hauptinformationen händisch erfasst: 1) Verlagsnummer und 2) Titel der Ausgabe sowie 3) das Auflagedatum und 4) die Höhe der Auflage. Stand August 2022 sind etwa 30% der rund 20.000 Verlagsnummern erreicht. Händische Erfassung ist nötig, da OCR an den komplizierten handschriftlichen Quellen scheitert (vgl. unten Abb. 4). Außerdem bedürfen manche Unregelmäßigkeiten noch einer Interpretationsleistung durch die Bearbeitenden. Um die Daten für statistische und datenbasierte Verfahren anzureichern, wird jeder Verlagsartikel durch bibliographische Daten der Gemeinsamen Normdatei (GND, s. Behrens 2011) der Deutschen Nationalbibliothek ergänzt. Das bietet gegenüber eigener Auszeichnungen drei Vorteile: 1) Effizienz: Obwohl viele Datensätze von Bibliothekar*innen der SLUB für das Projekt neu angelegt werden müssen, sind etliche tausend Werkdatensätze bereits vorhanden. 2) Qualität: Für die GND gelten fundierte und erprobte Erfassungsstandards, zudem sind sie untereinander bereits reichhaltig vernetzt. 3) Gute wissenschaftliche Praxis: Aufgrund ihrer Standards gewährleisten die GND-Daten Interoperabilität und Nachnutzbarkeit. Dass dabei die Übertragung nicht immer reibungslos möglich ist, wird weiter unten nochmals thematisiert.
+                
+
+                
+Für die musikwissenschaftliche Forschung leistet die 
+                    
+mvdb
+ insbesondere drei Dinge:
+                
+
+                
+
+                    
+Aufbereitung und Archivierung
+
+                    
+Bei der Erstellung der verlinkten GND-Werk- und Personennormdatensätze werden die Informationen bibliothekarisch qualifiziert anhand von biographischen und bibliographischen Quellen, sodass die aus den sporadischen Geschäftsbucheinträgen hervorgehenden Verlagsartikel eindeutig identifiziert und kontextualisiert sind. Sofern es die Projektressourcen noch zulassen, ist auch geplant, die entsprechenden Quellendigitalisate und relevante Kontextquellen abzulegen. Nur am Rande sei erwähnt, dass die durch die 
+                        
+mvdb
+ erfassten Daten von der SLUB unbefristet vorgehalten und archiviert werden.
+                    
+
+                
+
+                
+
+                    
+Präsentation
+
+                    
+Über unser Frontend werden die Daten für die Community nutz- und nachschlagbar, sodass die Geschäftsdaten der Musikverlage einfach sichtbar und navigierbar sind. Die Recherche ist über das Recherche-Plugin auf der Datenbank katalogisch oder über eine Suchfunktion möglich. Im einfachsten denkbaren Fall kann die 
+                        
+mvdb
+ über einfache philologische Fragen zur Identität einer Ausgabe wie z.B. Ersterscheinungsdatum oder Zahl der Titelauflagen beantworten. Zu den bibliographischen Mehrinformationen zu Werk und Personen lässt sich von jedem Verlagsartikeldatensatz einfach navigieren. Auch einige weitergehende ‚on-board‘-Visualisierungen zur Datenauswertung sind eingebaut, so werden beispielsweise in der Verlagsartikel- und der Personenansicht summarische Grafiken angeboten, die einen schnellen Überblick über die Konjunktur der Ausgabe bzw. aller Werke eine*r Komponist*in zulassen (Abb. 3).
+                    
+
+                    
+
+                        
+
+                        
+Abbildung 3: Personengrafik Brahms mit einzelnen Werken und aufaddierter Gesamtkurve (Fünf-Jahres-Mittel, Screenshot mvdb)
+
+                    
+
+                    
+                
+
+                
+
+                    
+Nachnutzung
+
+                    
+Die Daten lassen sich über das API-Plugin mit Lizenz CC-BY ungefiltert für eigene Forschung exportieren. Sie können im JSON-Format mithilfe der Elasticsearch-Query-DSL abgefragt werden, wozu Clientmodule in allen gängigen Programmier- und Statistiksprachen existieren, von R und Python für eigene statistische Auswertungen bis zu PHP und Javascript zum dynamischen Einbinden in projektfremde Kontexte. Außerdem wird es der Community möglich sein, Daten aus ähnlichen Quellen zu ergänzen, sodass die Bildung einer weiteren Digitalen Inselressource verhindert wird. So kann die 
+                        
+mvdb
+ perspektivisch ein digitaler Hub für musikwissenschaftliche Wirtschaftsdaten und bibliographische Informationen zu Verlagsausgaben des 19. Jahrhunderts werden.
+                    
+
+                
+
+            
+
+            
+
+                
+Problemlösungen
+
+                
+Bei einer vergleichsweise jungen Disziplin wie den digitalen Geisteswissenschaften gehören auch Lösungsansätze für methodische Probleme, wie sie nachfolgend vorgestellt werden, zu den wichtigen Ergebnissen.
+
+                
+
+                    
+Was ist eine Ausgabe?
+
+                    
+Dass geisteswissenschaftliche Gegenstände gelegentlich Unschärfen aufweisen, die sich in den rigiden Strukturen des Digitalen nicht recht abbilden lassen, ist keine Neuheit (z.B. Kuczera u.a. 2019) und gilt auch für das musikalische Werk (Pugin 2015, 2). Bei der Einrichtung der 
+                        
+mvdb
+ standen wir insbesondere vor dem Problem, dass ‚die Ausgabe‘ in der Verlagspraxis des 19. Jahrhunderts keine homogene Einheit darstellt.
+ Aus dem losen Zusammenhang der Druckplatten ließen sich beliebig ganze Bände oder separat publizierte Einzelnummern drucken, die oft simultan erschienen. Häufig lässt sich beobachten, dass erfolgreiche Einzelnummern eines Bandes nach einigen Jahren als Ableger separat gedruckt wurden, weil diese von geringerem Umfang und damit günstiger und besser verkäuflich waren. Außerdem wurden etliche Werke in Einzelstimmen gedruckt, von denen die Stimmen einzeln und unterschiedlich oft verkauft wurden. Damit zerfällt ‚das Werk‘ in ein Konglomerat von losen Publikationsmodulen, die aber trotzdem kognitiv eine eindeutige Sinn- und Werkeinheit darstellen.
+                    
+
+                    
+
+                        
+
+                        
+Abbildung 4: Nr. 1370 des Verlags Hofmeister, H. Marschner, Ouvertüre zum „Vampyr“ in Ausgaben für Orchester sowie Quartett einzeln, mit jeweils einzelnen Nachauflagen verschiedener Stimmen, D-LEsta 21072 F. Hofmeister, Nr. 43.
+
+                    
+
+                    
+                    
+Dem haben wir bei der Einrichtung des Datenmodells Rechnung getragen, indem jede Ausgabe als flexibler Zusammenhang von übergeordnetem Verlagsartikel (= „Makro“) und untergeordneten Teilartikeln (= „Mikros“) verstanden wird, die nur zusammen eine Ausgabe abbilden können. Was diese Aufteilung für die Auflagestatistiken bedeutet, loten wir durch verschiedene Bereinigungsverfahren noch aus, aber klar ist, dass sich Auflagezahlen einzelner Orchesterstimmen oder Nummern nur unter Vorbehalt zu einem ‚Gesamterfolg‘ einer Ausgabe aufaddieren lassen. Auch solcherlei Modellierungen erachten wir bereits als wichtige Ergebnisse, denn daraus lassen sich gleich mehrere Konsequenzen für die Digital Humanities und die Musikwissenschaft ziehen. Inhaltlich nämlich, dass die musikwissenschaftliche Auffassung des Werkbegriffs anhand dieser Erkenntnisse zu revidieren wäre. Damit wird die modulare Modellierung womöglich auch für andere Forschungsprojekte und insbesondere digitale Editionsvorhaben relevant. Formal bedeutet eine solche, von bisherigen Konzepten abweichende Modellierung wahrscheinlich auch, dass statistische und datenbezogene Kompetenz vermehrt Teil des fachlichen Methodenkanons werden müssen, um die richtige Interpretation der so abgelegten Daten zu gewährleisten.
+
+                    
+
+                        
+
+                        
+Abbildung 5: Auszug Datenmodell mvdb, Abbildung Makro-Mikro-Struktur
+
+                    
+
+                
+
+                
+
+                    
+„Norm“-Daten?
+
+                    
+Das Potential von Normdaten als musikwissenschaftlichen Forschungsdaten wurde bereits elaboriert (Wiermann 2018, Bicher/Wiermann 2018), und auch deren Probleme benannt: Dateninkonsistenzen, Dubletten, Fehlende Datensätze, variable Tiefenerschließung und heterogene Differenzierungsgrade der Informationen (Wiermann 2018, 347–8). Selbst wenn sich die Fehlermagnitude durch die projektinterne Normdatenerfassung verringern lässt, sind GND-Daten auch in Bezug auf das Begriffssystem selbst problematisch. Eigentlich sollen dessen vertikale Ober- und Unterbegriffsrelationen in die 
+                        
+mvdb
+ übernommen werden. Unter anderem stellte sich aber heraus, dass aufgrund der nicht eindeutig festgelegten Relationstypen grundsätzlich mehrere Oberbegriffe angegeben werden können – was eine begriffstheoretisch wünschenswerte Informationsablage in einer Baumstruktur verhindert. Daneben finden sich je nach Begriffsbereich sehr unterschiedliche Granularitäten, die bei unreflektierter Übernahme und ohne spezielle Maßnahmen quantitative Untersuchungen verzerren können. Ähnliche Probleme entstehen im Bereich der Instrumente, wo Besetzungen und Einzelinstrumente gleichberechtigt in Werkdatensätzen abgelegt werden dürfen. Schließlich werden Alternativbesetzungen in der Form ‚Klavier alternativ für Orchester‘ angegeben. Die tatsächliche Alternativbesetzung kann so nur intellektuell im Kontext der Hauptbesetzung erschlossen werden. Um diese Probleme zu bearbeiten, hat die mvdb ein eigenes Sachbegriffsmodul, das baumartig strukturierte Systeme von GND-IDs erfasst und Normdaten zur Benennung der Einzelknoten aus der Normdatei abfragt (s. Abb. 2). Diese Begriffssysteme können einheitlich granular strukturiert werden. Besetzungsknoten können einheitlich ausgezeichnet werden. Alternativbesetzungen werden automatisch erschlossen und sauber mit vollständiger Instrumentierung abgelegt. Auch dass es keine Versionierung der GND-Daten gibt, ist nicht unproblematisch bei der Vernetzung der Daten. Hier hoffen wir ebenfalls, dass unsere Lösungen einen gewissen Modellcharakter erhalten können: das Sachbegriffsmodul zur Anpassung von GND-Normdaten werden wir der Community als open source Repositorium zur Verfügung stellen.
+                    
+
+                
+
+            
+
+            
+
+                
+Ausblick auf Ergebnisse 
+
+                
+Da die Datenerfassung noch in vollem Gang ist, müssen erste Ergebnisse als Einblick genügen. Diese Ergebnisse sind zwar endgültig, aber in Bezug auf die Tiefe der Datenanalyse und Interpretation noch nicht repräsentativ für die Ambitionen des Projekts. Bereits abgeschlossen ist die Erfassung des vergleichsweise kleinen Programms von Rieter-Biedermann (ca. 2900 Nummern) von 1856 bis 1917. Eindeutig ist an der beinahe linear wachsenden jährlichen Gesamtproduktion (Abb. 6) erkennbar, dass der Verlag weder vom Auftreten der günstigen ‚Klassikerausgaben‘ nach 1867 (
+                    
+Collection Litolff
+, 
+                    
+Edition Peters
+) beeinträchtigt wurde, noch von Konkurrenztechnologien mechanischer Musikinstrumente, die um 1900 aufkamen (vgl. Heise 2022). Deutlich dagegen wird sichtbar, wie Kriege und Krisen den Absatz von Kulturgütern hemmten (s. etwa die Kriege 1870/71, 1914-1918).
+                
+
+                
+
+                    
+
+                    
+Abbildung 6: Gesamtproduktion Rieter-Biedermann jährlich
+
+                
+
+                
+                
+Vergleicht man dies mit der Zahl der produzierten (Neu-)Ausgaben pro Jahr (Abb. 7) wird wiederum deutlich, dass Rieter-Biedermann etwa ab den 1890ern immer weniger einzelne Verlagsartikel pro Jahr, diese dafür aber in höheren Auflagen auf den Markt bringt. Ähnlich verhält es sich mit den Komponisten, die der Verlag jährlich neu ins Programm aufnimmt (Abb. 8). Anfangs nimmt der Verlag bis zu 37 neue Komponisten in einem Jahr auf, die Zahl reduziert sich aber bald drastisch. Neuaufnahmen erfolgen dann in immer kleiner werdenden Wellen, der Gesamttrend ist abnehmend. Es eröffnet sich also eine Schere zwischen Produktpalette und Produktionsmenge, die man – noch ohne die Identität des Verlegten genauer zu hinterfragen – als Selektionsprozesse erfolgreicher Werke deuten kann. Womöglich wird dadurch hier bereits die ‚invisible hand‘ (Winko 2002) der Kanonisierung ein stückweit sichtbar.
+
+                
+
+                    
+
+                    
+Abbildung 7: Ausgaben Rieter-Biedermann jährlich
+
+                
+
+                
+                
+
+                    
+
+                    
+Abbildung 8: Neu ins Verlagsprogramm von Rieter-Biedermann aufgenommene Komponisten pro Jahr 
+
+                
+
+                
+                
+Diese Tendenz steht wahrscheinlich auch in Zusammenhang mit dem Höhenflug von Johannes Brahms. Brahms ist im Gesamtvergleich der mit Abstand meistgedruckte Komponist im Verlagsprogramm von Rieter-Biedermann (Abb. 9), und das obwohl sein Hauptverleger eigentlich Simrock war. Brahms’ 
+                    
+Deutsches Requiem
+ op. 45 ist wiederum mit einem guten Viertel aller Brahms-Drucke der ‚erfolgreichste‘ Verlagsartikel aus Rieter-Biedermanns Programm gewesen (Abb. 10), was das Werk wahrscheinlich nicht zu geringem Anteil den kriegerischen und nationalistischen Tendenzen des Kaiserreichs zu verdanken hat (s. Zunahme ab den 1890ern in Abb. 3). Das wiederum ist freilich bemerkenswert, da es die Erwartung unterläuft, die die Rangplätze 2 bis 10 bestätigen: dass die erfolgreichsten Verlagsartikel allgemein eigentlich Klavierstücke und Lieder für den häuslichen Gebrauch waren. Die Beispiele veranschaulichen, auf welche Weise die 
+                    
+mvdb
+ und das Projekt ermöglichen, das Repertoire des 19. Jahrhunderts ‚aus der Distanz‘ zu entschlüsseln und im Lichte des Verlagshandelns neu zu beleuchten. Weitere solche Ergebnisse wären zu zeigen, würden aber den Rahmen sprengen. Der Fortschritt des Projekts kann stattdessen auf dem Portal der 
+                    
+mvdb
+ transparent nachverfolgt werden. 
+                
+
+                
+
+                    
+
+                    
+Abbildung 9: Jährliche Produktion der sechs meistgedruckten Komponisten im Verlag Rieter-Biedermann im Vergleich
+
+                
+
+                
+                
+
+                    
+
+                    
+Abbildung 10: Rangliste der 10 meistgedruckten Artikel im Verlag Rieter-Biedermann
+
+                
+
+                
+            
+
+        
+
+        
+
+
+
+
+
+                         Die Fortschritte der letzten Jahre lassen sich gut nachzeichnen anhand von Cook 2004, Crawford/Gibson 2009, Schmale 2016 und dem Themenheft 
+                            
+Digitalität
+ der 
+                            
+Musikforschung
+ 71/4 (2018).
+                        
+                    
+
+
+
+                             Die beste, aber noch immer unzureichende Terminologie hat Rasch 2005 vorgelegt.
+                        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+Ballstaedt, Andreas und Widmaier, Tobias.
+ 1989. 
+                        
+Salonmusik. Zur Geschichte und Funktion einer bürgerlichen Musikpraxis
+. Stuttgart: Steiner.
+                    
+
+                    
+Beer, Axel.
+ 2000. 
+                        
+Musik zwischen Komponist, Verlag und Publikum. Die Rahmenbedingungen des Musikschaffens in Deutschland im ersten Drittel des 19. Jahrhunderts
+, Tutzing: Hans Schneider.
+                    
+
+                    
+Beer, Axel.
+ 2020. 
+                        
+Das Leipziger Bureau de Musique (Hoffmeister &amp; Kühnel, A. Kühnel). Geschichte und Verlagsproduktion (1800–1814)
+, München/Salzburg: Katzbichler.
+                    
+
+                    
+Behrens, Renate. 
+2011. „Die Gemeinsame Normdatei – ein Kooperationsprojekt.“ 
+                        
+Dialog mit Bibliotheken 
+1: 37–40. https://d-nb.info/101606361X/34
+                    
+
+                    
+Bicher, Katrin und Wiermann, Barbara.
+ 2018. „Normdaten zu ‚Werken der Musik‘ und ihre Potenzial für die digitale Musikwissenschaft.“ 
+                        
+Bibliothek – Forschung und Praxis 
+42/2: 222–235. 10.1515/bfp-2018-0043
+                    
+
+                    
+Cook, Nicholas.
+ 2004. „Comparative and Computational Musicology.“ In 
+                        
+Empirical Musicology: Aims, Methods, Prospects
+, hg. von Eric Clarke und Nicholas Cook, 103–126. Oxford: Oxford University Press. 
+                    
+
+                    
+Crawford, Tim und Gibson, Lorna (Hg.).
+ 2009. 
+                        
+Modern Methods for Musicology. Prospects, Proposals, and Realities
+. Farnham: Ashgate.
+                    
+
+                    
+Gerber, Mirjam. 
+2016. 
+                        
+Zwischen Salon und Geselligkeit. Henriette Vogt, Livia Frege und Leipzigs bürgerliches Musikleben
+, Hildesheim: Olms.
+                    
+
+                    
+Gerhard, Anselm (Hg.).
+ 2000. 
+                        
+Musikwissenschaft – eine verspätete Disziplin? Die akademische Musikforschung zwischen Fortschrittsgaluben du Modernitätsverweigerung
+. Stuttgart/Weimar: Metzler.
+                    
+
+                    
+
+                        
+Hartmann-Enke, Linus.
+ 2022. 
+                            
+Gewandhaus repertoire levels for composers and works 1800–1895
+ [Data set]. Zenodo. 
+                        
+                        
+https://doi.org/10.5281/zenodo.5862025
+
+                    
+
+                    
+
+                        
+Heise, Birgit (Hg.). 
+2022. 
+                        
+
+                            
+Paul Ehrlich und die Anfänge der Leipziger Musikautomaten-Industrie
+
+                        
+
+                        
+, Altenburg: Kamprad. 
+
+                    
+
+                    
+Keym, Stefan und Schmitz, Peter (Hg.). 
+2016. Das Leipziger Musikverlagswesen. Innerstädtische Netzwerke und internationale Ausstrahlung. Hildesheim: Olms.
+
+                    
+Kuczera, Andreas u. a. (Hg.). 
+2019. 
+                        
+Die Modellierung des Zweifels – Schlüsselideen und –konzepte zur graphbasierten Modellierung von Unsicherheiten.
+ Sonderband 4
+                        
+ Zeitschrift für digitale Geisteswissenschaften
+. 
+                        
+10.17175/sb004
+
+                    
+
+                    
+Loos, Helmut.
+ 2010. „Vom Idealen zum Realen. Ein Paradigmenwechsel.“ Lietuvos muzikologija 11: 152–160.
+
+                    
+Moretti Franco. 
+2016. 
+                        
+Distant Reading. Aus dem Englischen übersetzt von Christine Pries
+, Konstanz: Konstanz University Press.
+                    
+
+                    
+Neuwirth, Markus und Rohrmeier, Martin.
+ 2016. „Wie wissenschaftlich muss Musiktheorie sein? Chancen und Herausforderungen musikalischer Korpusforschung.“ 
+                        
+Zeitschrift der Gesellschaft für Musiktheorie
+ 13/2: 171–193. 
+                        
+10.31751/915
+
+                    
+
+                    
+Pugin, Laurent.
+ 2015. „The Challenge of Data in Digital Musicology.“ Frontiers in Digital Humanities 2: 1–3. 10.3389/fdigh.2015.00004
+
+                    
+Rasch, Rudolf. 
+2005. „Basic Concepts.“ In The Circulation of Music, Bd. 1: Music Publishing in Europe 1600–1900. Concepts and Issues, Bibliography, hg. von dems., 15–46. Berlin: BWV.
+
+                    
+Stadler, Peter.
+ 2019. „Musikwissenschaft und Digital Humanities.“ In Historische Musikwissenschaft- Gegenstand – Geschichte – Methodik, hg. von Frank Hentschel, 330–339.
+
+                    
+Unseld, Melanie. 
+2019. „Historische Musikwissenschaft als Kulturwissenschaft.“ In Historische Musikwissenschaft- Gegenstand – Geschichte – Methodik, hg. von Frank Hentschel, 170–182. Laaber: Laaber.
+
+                    
+Schmale, Wolfgang.
+ 2016. „Digital Musicology im Kontext der Digital Humanities.“ In 
+                        
+Wissenskulturen der Musikwissenschaft. Generationen – Netzwerke – Denkstrukturen
+, hg. von Sebastian Bolz u. a., 299–310. Bielefeld: transcript. 
+                    
+
+                    
+Widmaier, Tobias.
+ 1998. 
+                        
+Der deutsche Musikalienleihhandel. Funktion, Bedeutung und Topographie einer Form gewerblicher Musikaliendistribution vom späten 18. bis zum frühen 20. Jahrhundert
+, Saarbrücken: Pfau.
+                    
+
+                    
+Wiermann, Barbara.
+ 2018. „Bibliothekarische Normdaten und digitale Musikwissenschaft.“ 
+                        
+Die Musikforschung
+ 71/4: 338–357.
+                    
+
+                    
+Winko, Simone.
+ 2002. „Literatur-Kanon als 
+                        
+invisible hand
+-Phänomen.“ 
+                        
+TEXT+KRITIK. Zeitschrift für Literatur, Sonderband Literarische Kanonbildung
+ 2002: 9-24.
+                    
+
+                
+
+            
+
+        
+
+    

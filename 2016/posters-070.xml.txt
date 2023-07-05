@@ -1,0 +1,142 @@
+
+    
+
+      
+Verschiedene Auflagen literarischer Werke zu unterschiedlichen Zeiten werden häufig durch Leser als originäres und statisches Erzeugnis von Autoren wahrgenommen. In der Realität führen unterschiedliche Einflussfaktoren, wie etwa das Einwirken eines repressiven staatlichen Zensurapparates auf die Veröffentlichung von Werken, das Nachbearbeiten durch Autoren selbst zu späteren Zeitpunkten oder in besonderem Maße auch die Wandlung durch Übersetzungen aus anderen Sprachen zu einer Varianz in den Fassungen, die von geringen Unterschieden in der Zeichensetzung oder unterschiedlichen Schreibweisen bis zu gänzlich anderen Inhalten reicht. Beispielhaft hierfür sind etwa die Unterschiede zwischen der 1931 veröffentlichten Fassung des Romans "Fabian" von Erich Kästner und der erst kürzlich wiederentdeckten und veröffentlichten Originalfassung des Romans "Der Gang vor die Hunde". Für die Deutsche Verlags-Anstalt war Kästners Originalmanuskript an vielen Stellen zu provokativ und sie stimmte einer Veröffentlichung nur zu unter der Bedingung, dass Kästner diese Stellen entschärfte. Gut lässt sich die Varianz auch anhand der zahllosen Übersetzungen von Shakespeare-Werken in andere Sprachen feststellen, die über die Jahrhunderte entstanden sind. 
+
+      
+In der Literaturwissenschaft erlauben sogenannte Kollationstools einen Vergleich verschiedener Fassungen eines Textes. Dieses Vorgehen bezeichnet man als textkritische Methode. Sie hat zum Ziel, oben genannte Einflussfaktoren auf die Gestalt eines Textes zu identifizieren, indem man verschiedene Textfassungen Satz für Satz miteinander vergleicht. Typische Tools dieser Art sind etwa "CollateX" oder "JuXta". 
+
+      
+Hinsichtlich des Interfaces bleiben diese Tools recht nah an der Textebene. Ohne Frage ist diese Nähe zur Textebene für eine Detailanalyse unerlässlich, erschwert es aber durch das Fehlen einer Überblicksdarstellung Zusammenhänge zwischen weiter auseinanderliegenden Textfragmenten zu erkennen, Muster zu identifizieren, die sich auf der Detailebene nicht erschließen und als unterstützende Navigationsebene, das schnelle Bewegen zwischen voneinander entfernten Positionen im Text. Auch ermöglicht der Überblick eine schnelle Einschätzung, welche Stellen des Textes für die Analyse besonders interessant sein könnten. 
+
+      
+
+        
+
+      
+Abb. 1
+: Überblicksdarstellung von beiden Fassungen mit
+      Detaildarstellung rechts daneben
+
+      
+
+      
+Hierfür bietet sich eine visuelle Kodierung des Textes an, eine navigierbare interaktive Datenvisualisierung, da sie durch die Komplexitätsreduktion und die Konzentration auf bestimmte Attribute der Wörter eine komprimiertere Darstellung erlaubt. 
+
+      
+Der Vortrag zeigt anhand des oben genannten Kästner-Beispiels neuartige
+        Visualisierungsmöglichkeiten für Textkollationen auf und baut hierbei auf
+        bestehenden Visualisierungsansätzen auf. Hier ist vor allem Ben Frys Projekt zu
+        Darwins Werk "On the Origin of Species: The Preservation of Favoured Traces" zu
+        nennen. Die explorative Datenvisualisierung erlaubt es dem Betrachter, einen
+        Gesamtüberblick über die Entstehung des Werkes zu erhalten. Durch eine Farbkodierung
+        für die unterschiedlichen Ausgaben ist es auf einen Blick ersichtlich, welche
+        Abschnitte in welcher Auflage hinzugefügt wurden und welche Änderungen in den
+        verschiedenen Ausgaben vorgenommen worden sind. Zu jedem als farbigen Strich
+        dargestellten Absatz lässt sich in dieser Ansicht die entsprechende Textstelle
+        anzeigen, wenn man sich mit der Maus darüberbewegt. 
+
+        
+In der auf dem Poster vorgestellten Visualisierung der beiden Kästner-Fassungen dient die Farbkodierung dazu, den Grad der Abweichung zwischen Originalfassung und angepasster Fassung anzuzeigen. Satz für Satz können so die beiden Ausgaben miteinander verglichen werden. 
+
+        
+Als verwandtes Projekt, das Kollationen ebenfalls auf visuellem Wege zugänglich macht, ist hier außerdem die experimentelle Visualisierung "TransVis" zu nennen, entstanden innerhalb des Projektes "Version Variation Visualization", die es erlaubt, die insgesamt 37 deutschen Übersetzungen von Shakespeares Othello in einem visuellen Interface nebeneinanderzustellen und zu vergleichen. Ähnlich wie in diesem Projekt, gestattet es auch die Kästner-Visualisierung, Satz für Satz zu vergleichen, wobei visuell hervorgehoben wird, welche Teile des Satzes geändert wurden bzw. ob der Satz gänzlich ersetzt wurde. 
+
+        
+Eine weitere Ansicht ist geplant, die für einen durch den Nutzer zu definierenden Teilbereich des Buches eine typographische Übersicht bietet über die in diesem Bereich vorgenommenen Änderungen. Auf diese Weise kann schnell eingeschätzt werden, ob die Änderungen in einem Abschnitt einen thematischen Fokus haben (In Kästners Werk sind es häufig Formulierungen mit erotischem Bezug).
+
+        
+Außerdem soll im Verlauf des Projektes eine weitere Variante entstehen, die sich nicht nur an Literaturwissenschaftler in Form einer analytischen Datenvisualisierung richtet, sondern auch an gewöhnliche Leser, bei denen zunächst der ununterbrochene Konsum des Textes im Vordergrund steht, für die aber zusätzliche Informationen, wie die Veränderung eines Textabschnittes über mehrere Fassungen hinweg auch von Interesse sein können. 
+
+        
+Die Textdaten für die Visualisierung basieren auf den beiden E-Book-Fassungen der
+          Texte "Der Gang vor die Hunde" (2013) und Fabian (2010). Unterschiede zwischen den
+          beiden Fassungen wurden mithilfe des Levenshtein-Algorithmus in Java vorberechnet
+          und dann als Datensatz in einer Webvisualisierung verwendet, die mit HTML, CSS,
+          Javascript und der Visualisierungsbibliothek D3 erstellt wurde.
+
+        
+
+        
+
+          
+
+            
+
+              
+Bibliographie
+
+              
+
+                
+Cheesman, Tom / Flanagan, Kevin / Thiel, Stephan
+
+                (2013): "Translation Array Prototype 1: Project Overview" 
+www.delightedbeauty.org/vvv
+ [letzter Zugriff 15. Oktober 2015]. 
+
+                
+
+                  
+CollateX 
+: 
+http://collatex.net
+ [letzter Zugriff 12. Februar 2016].
+
+                  
+
+                    
+D3.js
+: 
+http://d3js.org
+ [letzter Zugriff 12.
+                    Februar 2016].
+
+                    
+
+                      
+Fry, Ben
+ (2009): 
+On the Origin of
+                      Species
+. The Preservation of Favoured Traces 
+http://benfry.com/traces/
+
+                      [letzter Zugriff 12. Februar 2016]. 
+
+                      
+
+                        
+Juxta Collation Software for Scholars
+: 
+http://www.juxtasoftware.org/
+ [letzter Zugriff 12. Februar
+                        2016].
+
+                        
+
+                          
+Kästner, Erich
+ (1931): 
+Fabian
+.
+                          Die Geschichte eines Moralisten". Zürich: Atrium Verlag. 
+
+                          
+
+                            
+Kästner, Erich
+ (1931): 
+Der Gang vor
+                            die Hunde
+. Zürich: Atrium Verlag. 
+
+
+                          
+
+                        
+
+                      
+
+                    

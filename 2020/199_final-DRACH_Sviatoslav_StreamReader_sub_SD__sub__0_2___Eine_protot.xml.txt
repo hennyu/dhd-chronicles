@@ -1,0 +1,208 @@
+
+
+
+
+
+
+
+
+Einleitung
+                
+
+
+Lesen auf Papier und am Bildschirm sind nicht gleich. Studien besagen, dass digitales Lesen zu flüchtigem, weniger konzentrierten Lesen führe (Stavanger Declaration 2019). Was kann getan werden, um dieses Problem zu lösen? Ist das Lesen von Text als Zeichenstrom eine mögliche Lösung?
+
+
+Es gibt bislang keine Anwendung, in der man (längere) Texte als einen einzeiligen Strom von Zeichen rezipieren würde. Es existieren einige (auf den ersten Blick sehr ähnliche) Tools für Speed Reading, aber hier geht es nicht um Schnelllesen. Das hier vorgestellte Projekt ist explorativ. Es basiert auf konzeptionellen Überlegungen, die Patrick Sahle (2020) in einem Vortrag auf dieser Tagung vorstellt.
+
+
+
+
+
+
+Text als Zeichenstrom lesen
+
+
+Unser trainiertes Leseverhalten folgt u.a. den Augenbewegungsprinzipien der Sakkaden (Springen zwischen Textelementen) und der Fixationen (Informationsaufnahme bei fixierten Punkten) (Landau 2016: 15). Dies scheint auf den ersten Blick dem Lesen von Text als Zeichenstrom zu widersprechen, weil die ständige Bewegung des Textes die Sakkaden und Fixationen erschwert. Auch die typographischen Prinzipien, die gute Lesbarkeit ausmachen, basieren ganz auf dem zweidimensionalen Schriftraum und lassen sich nicht einfach auf einen laufenden Strom übertragen (Hegewald et al. 2011: 27).
+
+
+Trotz aller Aspekte, die gegen das Lesen von Text als Zeichenstrom sprechen, kann ein Experiment interessant sein. Zum einen gibt die Bewegung dem Text seinen Fluss zurück, den er in der gesprochenen Sprache noch hatte und der eine sorgfältige Rezeption verlangt, um dem Ablauf der Informationsübermittlung zu folgen. Zum anderen entstehen durch die Befreiung des Darstellungsraumes der "Seite" neue Möglichkeiten für die Medialisierung von Texten. Denn die Textpräsentation kann jenseits der einfachen laufender Zeile nun den Raum nutzen, um beispielsweise Bilder, Fußnoten oder mehrere Zeilen darzustellen.
+
+
+
+
+
+
+Eine prototypische Anwendung
+
+
+Die Web-App StreamReader
+SD
+ bietet eine digitale Umgebung für das Lesen von Text als Zeichenstrom. Dabei handelt es sich um eine "Proof of Concept"-Lösung, die eine grundsätzliche Realisierbarkeit auslotet. Aus technischer Sicht beschränkt sie sich zunächst auf gängige Webtechnologien wie HTML, CSS und JavaScript.
+                
+
+
+
+
+
+
+ Abbildung 1. StreamReader
+SD
+ (Screenshot; vergrößert und
+beschriftet. Quelle: 
+http://dev.cceh.uni-koeln.de/sr-sd
+ )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Zu den allgemeinen Funktionen der Anwendung gehört die Möglichkeit, einen Text entweder aus einem Repositorium auszuwählen (2) oder eigene Texte hinzuzufügen (3). Allgemeine Einstellungsoptionen betreffen  Layoutmerkmale wie Breite und Hintergrundfarbe des Anzeigebereichs, Schriftfamilie, Schriftfarbe oder Schriftgröße (4). Beim Lesen kann ein Lesezeichen gesetzt werden (5). Eine Suchfunktion ermöglicht das Finden von Wörtern (6). Statistische Berechnungen (8) veranschaulichen die Anzahl von Zeichen und Wörtern im Text sowie die eingeschätzte Lesezeit bei maximaler und minimaler Lesegeschwindigkeit. Die Steuerung der Anwendung erfolgt mit Hilfe von Bedientasten (9a) sowie einem Geschwindigkeitsschieber (9b). Die Anwendung kann ebenso mit Hilfe der Tastatur gesteuert werden. Eine kurze Anleitung dazu befindet sich unter dem Hilfe-Button (7). Mit dem Home-Button (1) kann die Anwendung neu gestartet werden.
+
+
+Wenn ein Text über eine Seitenzählung verfügt, dann wird eine seitenorientierte Navigation (10a) generiert und die Nummer der aktuellen Seite angezeigt (10b). Andernfalls basiert die allgemeine Navigationsleiste auf einem hinsichtlich der Zeichenmenge prozentualen Verständnis der aktuellen Position. Ist ein Text durch Kapitel oder andere Einheiten strukturiert, dann werden zwei Typen von Inhaltsverzeichnissen generiert: Eine konventionelle Liste mit Links zu den jeweiligen Kapiteln und Unterkapiteln (11), sowie eine visuelle Navigationsleiste, die proportional die Größe der Kapiteln und Unterkapiteln abbildet und ebenfalls zum gezielten Ansteuern von Textstellen genutzt werden kann (12).
+
+
+Zu den eher textspezifischen Funktionen der Anwendung gehören weiterhin der Umgang mit Fußnoten und Illustrationen. Beide laufen zunächst mit dem Zeichenstrom ein, können dann aber pausiert (Illustrationen) oder als unabhängig laufende Schrift gelesen werden, während der Haupttext angehalten wird (Fußnoten).
+
+
+Es besteht die Möglichkeit, Schrift in laufenden Zeilen versetzt beziehungsweise mehrere Zeilen parallel darzustellen. Dies ist zum Beispiel sinnvoll, wenn ein Text komplexe Nebensatzstrukturen enthält, die durch versetzte Darstellung besser wahrgenommen werden können oder wenn unterschiedliche Übersetzungen desselben Werkes parallel gelesen werden sollen.
+
+
+
+
+
+
+Ausblick
+
+
+Effekte des StreamReader
+SD
+ auf das Leseverhalten, die Textrezeption und die Informationsaufnahme sind bisher nicht untersucht worden. Dies würde eigene Studien erfordern, steht aber aktuell nicht im Fokus der Arbeiten. Bei der prototypischen Anwendung geht es derzeit um ein Ausloten der Möglichkeiten, die Entwicklung von ersten Funktionen und das Testen von Darstellungsoptionen. 
+                
+
+
+Die im StreamReader
+SD
+ aktuell hinterlegten Texten demonstrieren Leseszenarien für unterschiedliche textuelle Situationen. Jenseits der einfachen laufenden Zeile werden Lösungen für den Umgang mit Illustrationen oder Fußnoten angeboten, Effekte eines Zeilenversatzes als neues Lese-Strukturelement beobachtbar gemacht und “mehrspurige” Texte realisiert. Dadurch kann ausgelotet werden, welche neuen Möglichkeiten für die Darstellung von bestimmten Textsorten entstehen, die vielleicht für die Präsentation und Rezeption nützlich sein könnten.
+                
+
+
+Für die Zukunft wäre es denkbar, weitere Beispieltexte, die andere Probleme aufwerfen, aufzunehmen und dazu weitere Funktionalitäten zu implementieren. Die visuelle Gestaltung der Anwendung wäre noch zu professionalisieren. Nutzungsstudien mit Lesern könnten interessante Einblicke in Stärken und Schwächen des Ansatzes erlauben.
+
+
+
+
+
+
+
+
+
+
+
+
+Bibliographie
+
+
+
+
+Filek, Jan /  Uebele, Andreas 
+(2013):  
+                        
+Read/ability. Typografie und Lesbarkeit
+, Sulgen: Niggli.
+                    
+
+
+
+
+Hegewald, Falk / Tritschler, Johannes / Hien, Katharina / Rümpler, Steffen  
+(2011): 
+                        
+Typografische Animation für Studium und Praxis
+, Berlin, Heidelberg: Springer.
+                    
+
+
+
+
+Korthaus, Claudia 
+(2016): 
+                        
+Grundkurs Typografie und Layout. Für Ausbildung und Praxis
+, 5. Auflage, Bonn: Rheinwerk Verlag.
+                    
+
+
+
+
+Landau, Angelina 
+(2016): 
+                        
+Wie das Gehirn liest. Die neuronalen Prozesse beim Lesen
+, Marburger Schriften zur Lehrerbildung, Bd. 12, Marburg: Tectum Verlag.
+                    
+
+
+
+
+Myrberg, Caroline / Wiberg, Ninna 
+(2015): 
+                        
+Screen vs. paper: what is
+			the difference for reading and learning?
+
+			Insights: the UKSG Journal 28, 49–54
+			&lt;
+https://doi.org/10.1629/uksg.236
+>.
+                    
+
+
+
+
+Sahle, Patrick
+ (2020): 
+                        
+Wie wir lesen könnten. StreamReader
+PS
+
+
+ 0.1
+. Book of Abstracts zur DHd2020, Paderborn.
+                    
+
+
+[Members and relevant stakeholders of the EU funded COST research Action E-READ]: 
+                        
+COST E-READ 
+
+
+Stavanger Declaration
+
+
+ Concerning the Future of Reading
+ (2019). &lt;
+                        
+http://ereadcost.eu/wp-content/uploads/2019/01/StavangerDeclaration.pdf
+ >. 
+                    
+
+
+
+
+
+
+
+

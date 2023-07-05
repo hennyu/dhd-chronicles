@@ -1,0 +1,540 @@
+
+        
+
+            
+
+                
+Kontext
+
+                
+Editionen leisten einen wichtigen Beitrag zur geistes- und kulturwissenschaftlichen „Erinnerungsarbeit“ (vgl. Albrecht et al. 2006) und sind als erschließende Wiedergabe historischer Dokumente unter einem digitalen Paradigma zunehmend auch für die „Kulturen des digitalen Gedächtnisses“ von entscheidender Bedeutung. Doch obwohl digitale Ansätze in den historisch arbeitenden Fächern mittlerweile durchaus verbreitet sind, sprechen neuere Bestandsaufnahmen von längst noch nicht ausgeschöpften Potenzialen: Zum einen seien digitale Editionen oft weiterhin am klassischen Medium Buch orientiert und bestrebt, traditionelle Ansätze zu übertragen ohne neue Fragerichtungen zu entwickeln, sodass nicht selten eher von „digitalisierten Editionen“ gesprochen und die unzureichende Kommunikationsstruktur zwischen Informations- und Kulturwissenschaften kritisiert wird (vgl. Sahle 2017a). Zum anderen fehlen bisher etablierte Standards für die fachspezifische Identifikation und Klassifikation von Datenbeständen, auf deren Basis ein projektübergreifender Datenpool entstehen könnte. Eine solche gemeinsame Semantik, so wird vermutet, lasse sich nur durch tatsächliche Nutzung, Überprüfung und Verfeinerung der Daten in konkreten Projekten etablieren, die einen klaren 
+                    
+open data
+-Ansatz verfolgen und damit einen automatisierten Datenaustausch allererst ermöglichen (vgl. Zahnd 2020).
+                
+
+                
+Die 
+                    
+Bibliothek der Neologie
+ (BdN) ist ein von der 
+                    
+Deutschen Forschungsgemeinschaft
+ (DFG) gefördertes Langzeitprojekt, welches das Ziel verfolgt, ausgewählte Texte der Neologie als zentraler Richtung der deutschen Theologie des 18. Jahrhunderts in kritischer Hybridedition für die interdisziplinäre Forschung bereitzustellen. Es handelt sich um eine Kooperation des Seminars für Kirchengeschichte II (Leitung: Prof. Dr. Albrecht Beutel) an der Evangelisch-Theologischen Fakultät der 
+                    
+Westfälischen Wilhelms-Universität Münster
+ sowie der Abteilung Forschung und Entwicklung der 
+                    
+Niedersächsischen Staats- und Universitätsbibliothek Göttingen 
+(Leitung: Dr. Jan Brase).
+ Der Beitrag befasst sich mit der Erschließung theologischer Editionsdaten im Rahmen des Projekts und zeigt exemplarisch auf, wie mithilfe von X-Technologien neue Blickwinkel auf kulturwissenschaftliche und speziell theologiehistorische Fragen eröffnet werden können. 
+                
+
+            
+
+            
+
+                
+Analyse
+
+                
+Das 18. Jahrhundert markiert in der Geschichte der Bibelwissenschaften eine folgenreiche Umbruchphase: Indem sich die neologische Schriftauslegung von kirchlich-dogmatischen Voraussetzungen emanzipierte und den Durchbruch zur historisch-kritischen Exegese vollzog, schuf sie die Grundlagen für eine aufgeklärte, neuzeitfähige Religionswissenschaft. In den zahlreichen Bibelreferenzen der im Rahmen der
+                    
+ Bibliothek der Neologie 
+edierten Quellenschriften manifestiert sich diese Entwicklung in anschaulicher Weise. Die Referenzen werden bei der Erstellung der digitalen Edition mithilfe des Datenmodells der 
+                    
+Text Encoding Initiative
+ (TEI) vollständig erschlossen und in ein maschinenlesbares Format (mittels Elementen tei:bibl und tei:citedRange und entsprechenden Attributwerten, z.B. 
+                    
+from="Joh:1:1"
+ und 
+                    
+to="Joh:1:18"
+) überführt.
+ Die Printedition transformiert diese Kodierung nicht zuletzt in ein ausführliches Register der einzelnen, in den Quellenschriften angeführten Bibelverse. Damit ist allerdings das Potenzial der Auszeichnung von teilweise mehreren tausend Bibelstellen bei weitem noch nicht ausgeschöpft. Der hier verfolgte Ansatz schafft erweiterte Analysemöglichkeiten, indem die Bibelstellenauszeichnung systematisch mithilfe verschiedener XQuery-Module ausgewertet wird. Für die Verwendung von XQuery (etwa anstelle der Konversionssprache XSLT) spricht dabei neben der Zugänglichkeit (vgl. Anderson / Wicentowski 2020) auch die interne Projektinfrastruktur, auf die bei der Entwicklung zurückgegriffen wurde.
+                
+
+                
+Im Projekt werden die TEI-kodierten Editionsdaten zunächst über eine Typeswitch-Transformation in ein einheitliches Zwischenformat konvertiert, um als solches in verschiedenen Anwendungen (s. unten 2.1 bis 2.3) weiterverarbeitet werden zu können. Über ein GitHub Repository arbeiten Fach- und InformationswissenschaftlerInnen kollaborativ an diesen Anwendungen.
+ Die digitale Edition der 
+                    
+Anleitung zum Studium der populären Dogmatik
+ (1779, 
+                    
+4
+1789) aus der Feder des Jenaer Theologen Johann Jakob Griesbach (1745–1812) verzeichnet etwa 2.500 Bibelreferenzen (vgl. Griesbach 2019) und dient im Folgenden als Beispiel.
+                
+
+                
+
+                    
+Verweishäufigkeiten und Verwendungskontexte von biblischen Sinneinheiten
+
+                    
+Bei der texthermeneutischen Analyse von Quellenschriften mit einer großen Zahl von Bibelstellenverweisen sind Theologiehistorikerinnen und -historiker mit schwierigen Selektions- und Priorisierungsfragen konfrontiert: Beispielsweise ist nicht unmittelbar ersichtlich, welche Bibelstellen für die Argumentation des Autors wichtig und daher vertiefend zu betrachten sind. Das Bibelstellenregister der Printausgabe bietet hier einen wichtigen Überblick, geht aber über die Kapitel- und Versstrukturen einschlägiger Bibelausgaben nicht hinaus und lässt die dynamischen Gliederungs- und Sortierungsmöglichkeiten der XML/TEI-Daten weitgehend unberücksichtigt.
+
+                    
+Im Rahmen einer weiterführenden Analyse von Bibelreferenzen werden daher in einer externen Bibel-XML-Repräsentation bestimmte exegetisch konsensfähige Sinneinheiten (z.B. „Johannesprolog“ = Joh 1,1–18) festgelegt.
+ Über verschiedene XQuery-Funktionen werden diese Sinneinheiten in einem zweiten Schritt auf Entsprechungshäufigkeiten im Editionsdokument überprüft (Treffer wären im genannten Beispiel etwa 
+                        
+@n="Joh:1:1"
+, 
+                        
+@from="Joh:1:1" @to="Joh:1:3"
+ oder 
+                        
+@n="Joh:1:17"
+). Wendet man diese Abfrage auf sämtliche, im Rahmen der alt- und neutestamentlichen Exegese eingeteilten Sinneinheiten an, so entsteht eine Häufigkeitenstatistik, die es erlaubt, bestimmte biblische Schlüsseltexte (man könnte auch sagen: quantitative „Lieblingstexte“ der Autoren) zu identifizieren, deren Funktion für die Quellenschrift nun textanalytisch näher untersucht werden kann. 
+                    
+
+                    
+
+                        
+
+                        
+Abb. 1: Häufigkeiten zentraler Sinneinheiten bei verschiedenen Autoren (Ausschnitt)
+
+                    
+
+                    
+Damit bewegt sich die Anwendung im Bereich derjenigen quantitativen Analysemethoden, die in qualitative Anschlussuntersuchungen übergehen (vgl. Jannidis 2010) und daher auch die kritisch-hermeneutische Interpretation keineswegs ausblenden, sondern allererst anregen (vgl. Wettlaufer 2016). So ist in methodischer Hinsicht der Kurzschluss zu vermeiden, den statistisch ermittelten Schlüsseltexten unmittelbar auch eine qualitative Schlüsselrolle zuzuschreiben – vielmehr ermöglichen sie aufgrund ihrer sichergestellten Häufigkeit und Anwendungsbreite im Rahmen des analysierten Textes neue, sinnvolle Erschließungszugänge, die sich bei der Beschränkung auf Einzelverse nicht zwangsläufig ergeben würden: Im Falle der theologiegeschichtlichen Untersuchung und Einordnung etwa der o.g. 
+                        
+Anleitung
+ von Johann Jakob Griesbach lässt sich beispielsweise das argumentative Begründungsgewicht des Johannesevangeliums und insbesondere des tiefgründigen, für die Logoschristologie zentralen Prologs belastbar einholen. Auf der Grundlage dieser Erkenntnisse könnten zudem die auslegungsgeschichtlichen und textkritischen Voraussetzungen des theologischen Systems näher untersucht werden: Sie sind für die Gesamtheit mehrerer tausend Belegstellen (sog. 
+                        
+dicta probantia
+) kaum angemessen und umfassend zu berücksichtigen – sehr wohl aber auf der Basis einer methodisch kontrollierten Identifikation argumentationsrelevanter Bibeltexte, auf die der hier dargestellte Ansatz zielt.
+                    
+
+                    
+Neben den Häufigkeiten besteht eine sinnvolle Modifikation in der Abfrage, in wievielen verschiedenen Kapiteln (
+                        
+tei:div
+ mit 
+                        
+@type = "section"
+ oder 
+                        
+"chapter"
+) oder Paragraphen (
+                        
+tei:p
+) bestimmte Sinneinheiten vorkommen und in welchen. Auf diese Weise lassen sich weiterführende Forschungsfragen formulieren: Wo werden die Schlüsseltexte in ihrem Wortlaut, ihrer Intention, ihrer Sprache oder ihrer Entstehungssituation aufgegriffen und welche theologische Funktion haben sie an den jeweiligen Stellen? Darüber hinaus lässt sich für das Gesamtkorpus der im Rahmen der 
+                        
+Bibliothek der Neologie 
+edierten Quellenschriften eine Häufigkeitsmatrix (vgl. Schöch 2017) der am meisten referenzierten biblischen Sinneinheiten erstellen, mit der sich textübergreifende Erkenntnisse gewinnen lassen. Auf diese Weise rückt der Ansatz in die Nähe bestehender Umgangsformen mit größeren digitalen Beständen, die bereits unter Schlagworten wie „distant reading“ (vgl. Moretti 2007) oder „cultural analytics“ (vgl. Piper 2016) diskutiert werden.
+                    
+
+                
+
+                
+
+                    
+Bibelstellendichte und relative Häufigkeiten
+
+                    
+Für einige theologiegeschichtliche Fragestellungen sind auch relative Verweishäufigkeiten im Sinne einer Bibelstellendichte und ihre Entwicklung im Argumentationsverlauf der Quellenschrift von Interesse: In welchem Kapitel oder Abschnitt bedient sich der Autor einer vergleichsweise hohen Anzahl von Belegstellen – in welchem bleiben sie möglicherweise nahezu aus? Während sich eine solche Bibelstellendichte anhand der Printedition nur sehr mühsam und ungenau ermitteln lässt, ermöglicht die XML-Auszeichnung eine präzise Abfrage der Bibelstellenanzahl in Abhängigkeit von den entsprechenden Druckseiten-, Abschnitts- oder Wortanzahlen. Innerhalb der kirchenhistorischen Forschung gibt es bereits analoge Ansätze in dieser Richtung (vgl. etwa Beutel 2007), die im Rahmen von digitalen Editionen weiterzuentwickeln sind. Stellt man – beispielsweise über die Open-Source-Datenvisualisierung 
+                        
+Chart.js
+ – die Referenzhäufigkeiten im Verlauf der Textstruktur dar, so ergibt sich das kirchen- und theologiegeschichtlich aufschlussreiche Bild eines „Bibelstellenspannungsbogens“.
+                    
+
+                    
+
+                        
+
+                        
+Abb. 2: Häufigkeiten von Bibelreferenzen im Verlauf der Hauptkapitel bei Griesbach
+
+                    
+
+                    
+Obwohl die Frequenz der 
+                        
+dicta probantia
+ in der 
+                        
+Anleitung
+ für ihre Entstehungszeit angesichts der mittlerweile etablierten Bibelkritik noch relativ hoch ist, lassen sich hier signifikante Tiefpunkte ausfindig machen, d.h. bestimmte Paragraphen, in denen Griesbach zu erfahrungsbezogener, philosophischer oder religionspädagogischer Argumentation übergeht: Insbesondere seine Abschnitte zur Glückseligkeit, zur Trinität und zur moralischen Natur und Freiheit des Menschen kommen über weite Strecken ohne biblische Begründung aus. Sofern die Ergebnisse nicht für sich stehengelassen, sondern kritisch-hermeneutisch interpretiert werden, lässt sich beispielsweise die nicht ganz leichte Einordnung der Theologie Griesbachs zwischen supranaturalistischer Bibeldogmatik und anthropologisch fundierter Populartheologie erheblich präzisieren. 
+                    
+
+                    
+Ein charakteristischer Vorzug der digitalen Abfrage besteht darin, dass die Analyse nicht bei Einzelautoren stehen bleiben muss, sondern gezielte Vergleichsmöglichkeiten bietet: So lässt sich die Hypothese formulieren und überprüfen, dass etwa das mit der 
+                        
+Anleitung
+ verglichene 
+                        
+System der reinen Philosophie 
+(1778, 
+                        
+4
+1794; erscheint als BdN VIII) des progressiveren Neologen Gotthilf Samuel Steinbart (1738–1809) einen ganz anderen Bibelstellenspannungsbogen aufweist. Aber auch das im Editionsprozess befindliche 
+                        
+Wörterbuch des Neuen Testaments
+ (1772, 
+                        
+6
+1805; erscheint als BdN IX) von Wilhelm Abraham Teller (1734–1804) lässt sich aufgrund seines deutlich größeren Umfangs und der biblisch-theologischen Ausrichtung mit Gewinn auf die Bibelstellendichte einzelner Lemmata befragen, die sich im Laufe der mehr als dreißigjährigen Textentwicklung erheblich verändert haben dürfte.
+
+                    
+
+                
+
+                
+
+                    
+Bibelstellen und Textvarianz
+
+                    
+Ein Alleinstellungsmerkmal der 
+                        
+Bibliothek der Neologie
+ als digitaler Edition ist schließlich der umfangreiche Variantenapparat. So wird im Projekt danach gefragt, wie die Bibelstellenauszeichnung mit dem ebenfalls in TEI kodierten 
+                        
+Critical Apparatus
+ korrespondiert, der in diesem Fall aufgrund der internen Varianz der ausgewählten Quellenschriften eine hohe Komplexität aufweist.
+ Dabei sind orthographische Textvarianten und Korrekturen von echten Ersetzungen, Hinzufügungen oder Löschungen zu unterscheiden, um festzustellen, wie sich die Bibelargumentation im Laufe der edierten Auflagen entwickelt und ob dabei gegebenenfalls textkritische oder exegetische Weichenstellungen im Hintergrund stehen. Das entsprechende XQuery-Modul und die Darstellung seines Outputs in einer dynamischen Gesamtübersicht beschleunigt deutlich den Erkenntnisprozess im Vergleich zur Komplettsichtung des teilweise sehr umfangreichen kritischen Apparats und erlaubt Rückschlüsse auf bestimmte Modifikationsentscheidungen, die der Autor im Verlauf der Textgenese vorgenommen hat. 
+                    
+
+                    
+
+                        
+
+                        
+Abb. 3: Modifikationen von Bibelreferenzen bei Griesbach (ausschnitthafte Nachbildung des mittels XQuery erstellten „textkritischen Bibelstellenregisters“)
+
+                    
+
+                    
+So wird beispielsweise in der vierten Auflage von Griesbachs 
+                        
+Anleitung
+ in § 135 der mit Joh 1,14 belegte Zusatz, dass Jesus es zu Lebzeiten an Merkmalen seiner göttlichen Majestät nicht habe fehlen lassen, entfernt und damit das theologische Verständnis von dessen Menschlichkeit als ethischer Lehrer der Glückseligkeit an dieser Stelle geringfügig modifiziert (vgl. Griesbach 2019, 139). In diesen und zahlreichen weiteren mikroskopischen Details äußern sich theologiegeschichtliche Zentralfragestellungen, die in den Möglichkeitsraum der Digital Humanities sinnvoll einzuholen sind (vgl. Anderson 2019).
+                    
+
+                
+
+            
+
+            
+
+                
+Ausblick
+
+                
+Über die herkömmliche Registeranalyse im Rahmen kritischer Editionen hinausgehend lassen sich mindestens drei Vorteile einer digitalen Analyse von TEI-kodierten Bibelreferenzen plausibilisieren: So ermöglicht die eindeutige, maschinenlesbare Bibelstellenauszeichnung eine umfassende Erschließung auf Datenebene und damit die Identifikation spezifisch kirchenhistorischer Daten, die zu den explizit markierten Desideraten der Digital Humanities gehört und die sich nur in konkreten Projekten mit einem klaren 
+                    
+open data
+-Ansatz realisieren lässt (vgl. Zahnd 2020). Zweitens bietet eine entsprechende Portaldarstellung im Rahmen der digitalen Edition erkennbar übersichtlichere Präsentations- und präzisere Auswertungsmöglichkeiten, die im Vergleich zu herkömmlichen Publikationsformaten mit differenzierten Analyseergebnissen einhergehen. Der stärkste Vorzug eines digitalen Abfrageansatzes besteht jedoch drittens darin, dass er nicht auf die Einzeledition beschränkt ist, sondern darüber hinaus auf weitere historische Quellen mit entsprechender Bibelstellenerschließung angewendet werden kann (Nachnutzbarkeit). Geht man davon aus, dass die Anzahl digital erschlossener Quellentexte auch im Bereich der Kirchen- und Theologiegeschichte weiter steigt, dürfte sich langfristig auch eine erhöhte Nachfrage hinsichtlich entsprechender Analyseverfahren ergeben, mit denen ein weiterführender Beitrag zum vertieften Verständnis der neuzeitlichen Schriftauslegung und ihrer kulturgeschichtlichen Bedeutung geleistet werden kann. 
+                
+
+                
+Unabhängig von seinem fachwissenschaftlichen Output soll der vorgestellte Ansatz aber vor allem dem interdisziplinären Diskurs zur engeren Vernetzung und Verzahnung von „D“ und „H“ dienen und neue Forschungsfragen ermöglichen, die gerade durch die veränderten Informationsbedingungen und Publikationsmöglichkeiten provoziert werden. Denn obwohl die Digital Humanities mittlerweile ein hohes Maß an Professionalisierung erreicht haben, dokumentieren jüngere Bestandsaufnahmen noch immer eine unzureichende Kommunikationsstruktur zwischen Informationstechnologie und Geisteswissenschaften (vgl. Sahle 2017b). Die damit verbundenen, fachkulturellen und wissenschaftspolitischen Problemstellungen sind dabei ebenso in den Blick zu nehmen wie die spezifischen Potenziale langzeitgeförderter (Hybrid-)Editionen: Solange das „Digitale“ auf ein anempfohlenes Hilfsmittel oder die „Edition“ auf ein notwendiges Trägermedium reduziert wird, dürften sich weiterführende Fragestellungen in Grenzen halten. Wo aber Digital Humanities auf der Schnittstelle zwischen Geistes- und Informationswissenschaft gestärkt werden und etwas Eigenes hervorbringen sollen, da sind auf der Ebene der forschenden sowie der fördernden Einrichtungen integrative Denkweisen zu unterstützen. 
+
+                
+Das in den letzten Jahren zu einem kulturwissenschaftlichen Leitbegriff avancierte Gedächtnisparadigma (vgl. Radonic / Uhl 2016) dürfte sich nur dann als tragfähig erweisen, wenn es dieses Integrationsmoment abzubilden und somit gewissermaßen die „Hemisphären“ des digitalen Gedächtnisses zu synchronisieren imstande ist. Kulturen zeichnen sich schließlich – neben ihren Techniken der Überlieferung, der Speicherung und des Erinnerns (vgl. das CfP der Konferenz) – auch durch ihre handlungsleitenden Sinnstrukturen aus (vgl. Assmann 2005). In diesem Zusammenhang kann die Theologie, wie gezeigt wurde, einen Beitrag leisten: Es wäre zu prüfen, ob nicht mit der Analyse TEI-kodierter Bibelreferenzen im Rahmen digitaler Editionen ein bisher vernachlässigtes, theologiehistoriographisches Bewährungsfeld der Digital Humanities vorliegt, das künftig mehr Aufmerksamkeit bekommen sollte.
+
+            
+
+        
+
+        
+ Die digitale Publikation erfolgt auf einem Onlineportal (
+                            
+
+                                
+https://bdn-edition.de
+
+                            
+) sowie im Langzeitarchiv 
+                            
+TextGrid Repository
+ (
+                            
+
+                                
+https://textgridrep.org
+
+                            
+ [letzter Zugriff 25. November 2021]) unter der freien Lizenz CC BY-SA 3.0, während die aus dem gleichen Datenbestand generierte Printausgabe (vgl. Nösselt 2019; Griesbach 2019; Bahrdt/Semler 2020) vom Tübinger Wissenschaftsverlag 
+                            
+Mohr Siebeck
+ begleitet wird.
+                        
+ Vgl. TEI P5: Guidelines for Electronic Text Encoding and Interchange by the TEI Consortium. Originally edited by C. M. Sperberg-McQueen and L. Burnard [...] Version 4.3.0. Last updated on 31st August 2021 (
+                            
+
+                                
+https://guidelines.tei-c.de
+
+                            
+ [letzter Zugriff 25. November 2021], „3.12.2.5 Scopes and Ranges in Bibliographic Citations“) sowie die im Projektportal (s. Anm. 1) dokumentierte Schemaanpassung.
+                        
+ Vgl. 
+                            
+
+                                
+https://github.com/Bibliothek-der-Neologie/bdnBible
+
+                            
+ sowie zur o.g. Print-Serialisierung: 
+                            
+
+                                
+https://gitlab.gwdg.de/bibliothek-der-neologie/print
+
+                            
+ [letzter Zugriff 25. November 2021].
+                        
+ Die externe XML-Repräsentation der Bibel dient als Referenz für die Analyse der in den Editionsdaten vorkommenden Bibelverweise. Sie ist angelehnt an die 
+                                
+Zefania XML Bible Markup Language
+ (
+                                
+
+                                    
+https://sourceforge.net/projects/zefania-sharp
+
+                                
+ [letzter Zugriff 25. November 2021]), wird allerdings projektspezifisch angepasst. – Bei den Sinneinheiten handelt es sich weniger um nutzerabhängige Interpretationserzeugnisse als vielmehr um naheliegende Sinnabschnitte, die aus den Handlungsverläufen und Gliederungen der biblischen Texte recht eindeutig hervorgehen und auf diese Weise traditionell geworden sind. Dass das Modul selbstverständlich auch andere Sinneinheiten ermöglicht, die dann zu anderen Zwischenergebnissen führen, wird im Vortrag diskutiert. – Während die externe Bibel-XML vor allem in dem unter 2.1 erläuterten Modul („Sinneinheiten") Verwendung findet, dient das zu Beginn des Abschnitts genannte Zwischenformat der Vereinheitlichung und Vereinfachung des unübersichtlichen Editionsdatenbestands für die weitere Auswertung und liegt als Vorstufe allen drei Modulen (2.1 bis 2.3) zugrunde.
+                            
+ Die in den Abschnitten 2.1 und 2.2 vorgestellten Module zielen insofern auf den Übergang von quantitativen Statistiken in kritisch-hermeneutische Textuntersuchungen, als damit in unübersichtlichen Editionsdaten zentrale biblische Sinneinheiten oder Abschnitte mit auffälliger Bibelstellendichte identifiziert werden können, die eine weitere inhaltliche Kontextualisierung und Analyse anregen. Dabei steht weniger ein Kategoriensystem-orientiertes Vorgehen im Mittelpunkt, wie es Verfahren der qualitativen Inhaltsanalyse oder Mixed Methods (vgl. Kuckartz 2014) nahelegen, als vielmehr eine datenbasierte Schaffung von Textzugängen, die durch traditionelle Verfahren so nicht erreicht würden. Für mögliche Weiterentwicklungen mit Blick auf qualitative Forschungsmethoden ist der Ansatz aber durchaus offen.
+ Vgl. das Kapitel „12 Critical Apparatus“ der TEI Guidelines (s. Anm. 2). Gemäß der projektspezifischen Schemaanpassung erfolgt die Unterscheidung der kritischen Apparate im 
+                                
+tei:rdg
+ über 
+                                
+@wit
+ mit Werten "
+                                
+#a
+", "
+                                
+#b
+", "
+                                
+#c
+" usw. (Textzeugen) sowie 
+                                
+@type
+ mit Werten "
+                                
+v
+" (variant), "
+                                
+pp
+" (paraphrase), "
+                                
+pt
+" (parenthesis) und "
+                                
+om
+" (omission). Mit dieser Klassifikation lassen sich die textkritischen Phänomene der neologischen Schlüsseltexte im Rahmen der Hybridausgabe präzise beschreiben, aber auch die entsprechenden Interdependenzen zwischen den zahlreichen Bibelverweisen und der Textgenese automatisiert abfragen.
+                            
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Albrecht, Christian / Chapman, Mark D. / Kaufmann, Thomas / Markschies, Christoph / Molendijk, Arie L. / Von Soosten, Joachim
+ (2006): "Erinnerungsarbeit durch Klassikeredition. Die Bedeutung akademischer Selbsthistorisierung für die Zukunft des Protestantismus" in: Graf, Friedrich Wilhelm (ed.): 
+                        
+Geschichte durch Geschichte überwinden. Ernst Troeltsch in Berlin 
+(Troeltsch-Studien. Neue Folge 1). Gütersloh: Gütersloher Verlagshaus 253–284.
+                    
+
+                    
+
+                        
+Anderson, Clifford
+ (2019): "Digital Humanities and the Future of Theology" in: 
+                        
+Cursor. Zeitschrift für explorative Theologie
+ 1. 
+                        
+https://doi.org/10.17885/heiup.czeth.2019.1.24000
+ [letzter Zugriff 25. November 2021].
+                    
+
+                    
+
+                        
+Anderson, Clifford / Wicentowski, Joseph
+ (2020): 
+                        
+XQuery for Humanists
+ (Coding for Humanists). College Station: Texas A&amp;M University Press.
+                    
+
+                    
+
+                        
+Assmann, Jan
+ (2005): "Der Begriff des kulturellen Gedächtnisses" in: Dreier, Thomas (ed.): 
+                        
+Kulturelles Gedächtnis im 21. Jahrhundert
+. Tagungsband des internationalen Symposiums vom 23. April 2005 (Schriften des Zentrums für Angewandte Rechtswissenschaft 1). Karlsruhe: Universitätsbibliothek 21–29.
+                    
+
+                    
+
+                        
+Bahrdt, Carl Friedrich / Semler, Johann Salomo
+ (2020): 
+                        
+Glaubensbekenntnisse (1779–1792)
+, eds. Pietsch, Andreas / Weidemann, Christian (BdN I). Tübingen: Mohr Siebeck.
+                    
+
+                    
+
+                        
+Beutel, Albrecht
+ (2007): "Biblischer Text und theologische Theoriebildung in Luthers Schrift ‚Von weltlicher Oberkeit, wie weit man ihr Gehorsam schuldig sei‘ (1523)" in: Beutel, Albrecht: 
+                        
+Reflektierte Religion
+. Beiträge zur Geschichte des Protestantismus. Tübingen: Mohr Siebeck 21–46.
+                    
+
+                    
+
+                        
+Griesbach, Johann Jakob
+ (2019): 
+                        
+Anleitung zum Studium der populären Dogmatik
+ (1779, 4. Aufl. 1789), ed. Stallmann, Marco (BdN III). Tübingen: Mohr Siebeck.
+                    
+
+                    
+
+                        
+Jannidis, Fotis
+ (2010): "Methoden der computergestützten Textanalyse" in: Ansgar Nünning / Vera Nünning (eds.): 
+                        
+Methoden der literatur- und kulturwissenschaftlichen Textanalyse
+. Ansätze - Grundlagen - Modellanalysen. Stuttgart/Weimar: Metzler 109–132.
+                    
+
+                    
+
+                        
+Kuckartz, Udo
+ (2014): 
+                        
+Mixed Methods: Methodologie, Forschungsdesigns und Analyseverfahren
+. Wiesbaden: Springer VS.
+                    
+
+                    
+
+                        
+Moretti, Franco 
+(2007): 
+                        
+Graphs, Maps, Trees. Abstract Models for Literary History
+. 
+                        
+https://hdl.handle.net/2027/heb.08911
+ [letzter Zugriff 25. November 2021].
+                    
+
+                    
+
+                        
+Nösselt, Johann August 
+(2019): 
+                        
+Anweisung zur Bildung angehender Theologen
+ (1786/89, 3. Aufl. 1819/19), eds. Beutel, Albrecht / Lemitz, Bastian / Söntgerath, Olga (BdN VI). Tübingen: Mohr Siebeck.
+                    
+
+                    
+
+                        
+Piper, Andrew
+ (2016): 
+                        
+There will be numbers
+. Cultural Analytics 1. 
+                        
+https://doi.org/10.22148/16.006
+ [letzter Zugriff 25. November 2021].
+                    
+
+                    
+
+                        
+Radonic, Ljiljana / Uhl, Heidemarie
+ (2016): 
+                        
+Gedächtnis im 21. Jahrhundert
+. Zur Neuverhandlung eines kulturwissenschaftlichen Leitbegriffs. Bielefeld: transcript-Verlag.
+                    
+
+                    
+
+                        
+Sahle, Patrick
+ (2017a): "Digital Humanities und die Fächer. Eine schwierige Beziehung?" in: 
+                        
+Forum Exegese und Hochschuldidaktik
+. Verstehen von Anfang an 2: 7–27.
+                    
+
+                    
+
+                        
+Sahle, Patrick
+ (2017b): "Digitale Editionen" in: Fotis Jannidis / Hubertus Kohle / Malte Rehbein (eds.): 
+                        
+Digital Humanities
+. Eine Einführung. Stuttgart: J.B. Metzler 234–249.
+                    
+
+                    
+
+                        
+Schöch, Christof
+ (2017): "Quantitative Analyse", in: Jannidis / Kohle / Rehbein: 
+                        
+Digital Humanities
+ 279–298.
+                    
+
+                    
+
+                        
+Wettlaufer, Jörg
+ (2016): "Neue Erkenntnisse durch digitalisierte Geschichtswissenschaft(en)? Zur hermeneutischen Reichweite aktueller digitaler Methoden in informationszentrierten Fächern" in: 
+                        
+Zeitschrift für digitale Geisteswissenschaften
+
+                        
+https://doi.org/10.17175/2016_011
+ [letzter Zugriff 25. November 2021].
+                    
+
+                    
+
+                        
+Zahnd, Ueli
+ (2020): "Netzwerke, historisch und digital. Digital Humanities und die Mittlere und Neue Kirchengeschichte" in: 
+                        
+Verkündigung und Forschung
+ 65: 114–123.
+                    
+
+                
+
+            
+
+        
+
+    

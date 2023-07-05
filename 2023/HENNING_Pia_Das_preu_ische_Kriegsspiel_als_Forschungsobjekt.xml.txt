@@ -1,0 +1,255 @@
+
+        
+
+            
+
+                
+Historischer Hintergrund
+
+            
+
+                
+Die Geschichte Preußens und seiner Armee wurde bereits intensiver erforscht. Das Kriegsspiel, das mit dieser verbunden ist, bisher jedoch kaum. Um ein Gesamtbild für diese Zeit und ihre Zusammenhänge erhalten zu können, ist eine kritische Auseinandersetzung mit dem Kriegsspiel ebenfalls nötig. Das 1824 vom preußischen Artillerieoffizier Georg Heinrich von Reisswitz ursprünglich der Armee vorgestellte
+                    
+ Preußische Kriegsspiel
+ war das erste offiziell eingeführte professionelle Kriegsspiel. Es handelt sich um eine kartenbasierte Simulation bei der Truppenfiguren maßstabsgetreu dargestellt sind. Der Würfel dient zur Ermittlung von Gefechtsausgängen und anderen nicht durch die Anleitungen festgelegten Entscheidungen. Die damaligen Offiziere versuchten militärische Auseinandersetzungen realitätsnah zu simulieren (Wintjes 2017, Henning 2021b). Bis zu Beginn des 20. Jahrhunderts wurde das Kriegsspiel von unterschiedlichen Autoren weiterentwickelt, so dass heute 20 Regelwerke vorliegen (Henning 2021a; 2021b).
+                
+
+                
+ 
+
+            
+
+
+            
+
+                
+Forschungsstand
+
+            
+
+                
+Aus einem vorangegangenen Projekt liegen Faksimiles von 18 Originalen vor. Diese wurden mit 
+                    
+OCR4all 
+(Reul et al. 2019) erfasst. Da die Faksimiles in unterschiedlichen Frakturschrifttypen vorliegen, musste das OCR-Modell jeweils neu trainiert und für eine erste statistische Analyse einzeln vorverarbeitet werden. Aufgrund des Umfangs und der unterschiedlichen Bildqualität kann die Digitalisierung und Standardisierung des Korpus als zentrale Aufgabe betrachtet werden, bevor die eigentlichen Analysen stattfinden können. Die manuelle Nachkorrektur der Texte und die einheitliche Auszeichnung nach TEI ist ein laufendes Projekt. Weiterhin ist bekannt, dass diverse Übersetzungen der Regelwerke veröffentlicht wurden, allerdings sind diese noch gänzlich unerforscht und bisher nicht im Korpus integriert (Henning 2021a; 2021b, Wintjes 2022).
+                
+
+                
+ 
+
+            
+
+            
+
+                
+Teil der bisherigen Analyse war die Extraktion von distinktiven Merkmalen auf Textebene. Diese wurden im Rahmen meiner Masterthesis bereits erstellt und veröffentlicht (Henning, 2021a; Henning, 2021b). So konnte mit Hilfe einer Zeta-Analyse gezeigt werden, dass eine Zuordnung der einzelnen Texte zur Textsorte 
+                    
+Preußisches Kriegsspiel
+ basierend auf distinktiven Wörtern möglich sein kann. Eine auf BERTs (Devlin et al. 2019) Word Embedding (WE) folgende Support Vector Machine (SVM) zeigt, dass eine automatische Textklassifzierung in ‘Regelwerke’ und ‘militärtheoretische Literatur’ – als Vergleichskorpus – ebenfalls aussichtsreich ist. Auch die Untersuchung der 
+                    
+most
+
+                    
+ frequent 
+
+                    
+words
+ (MFW), 
+                    
+named
+
+                    
+entity
+
+                    
+recognition
+ (NER) und 
+                    
+part
+
+                    
+of
+
+                    
+speech
+ (POS) helfen Merkmale des Korpus, wie zum Beispiel die Verwendung der Truppengattungen und des Würfels, sowie den allgemeinen sprachlichen Aufbau (z.B. Wort-/Satzlänge, Verteilung von Substantiven/Adjektiven/Verben) der Textkategorie
+                    
+ Preußisches Kriegsspiel 
+nachzuweisen. Die nach zeitlichen Aspekten gebildeten Teilkorpora sowie das gebildete Vergleichskorpus können ebenfalls anhand der Merkmale unterschieden werden (Versuchsaufbauten: Henning 2021a; 2021b). Dadurch konnte die Hypothese gestärkt werden, dass sich die untersuchten Regelwerke und gebildeten Teilkorpora nicht nur gemeinsam gegen ein Vergleichskorpus abgrenzen lassen, sondern auch untereinander, wodurch eine historische Entwicklung deutlich wird. Durch distinktive Merkmale wie die Verwendung des Würfels als Zufallskomponente und die Veränderung der Gewichtung der Truppengattungen, sind drei Phasen innerhalb der Kriegsspielgeschichte definierbar (Henning 2021a; 2021b). 
+                
+
+                
+ 
+
+            
+
+            
+
+                
+Sieben Regelwerke, entstanden zwischen 1862 und 1874, der Autoren Wilhelm von Tschischwitz (1862, 1866, 1870, 1874) und Thilo von Trotha (1867, 1970, 1874) wurden bereits einzeln
+
+                
+ 
+
+                
+
+                
+intensiver untersucht und jeweils zu einer Ausgabe zusammengeführt. Tschischwitz’ Werke
+
+                
+ 
+
+                
+
+                
+bereits veröffentlicht (Wintjes, 2019), Trothas’ liegen in einer bisher unveröffentlichten Abschlussarbeit vor (Henning, 2018). Dadurch ist eine tiefere Analyse des
+
+                
+ 
+
+                
+
+                
+gesamten Korpus angestoßen, sowie die Forschung in der praktischen Durchführung einer 
+
+                
+ 
+
+                
+
+                
+Simulation, mit Studenten oder an einer Führungsakademie, ermöglicht worden.
+
+                
+ 
+
+            
+ 
+
+
+            
+
+                
+Geplantes Promotionsprojekt
+
+            
+
+                
+Kernziel des Projekts ist die öffentliche Bereitstellung eines Regelwerkskorpus, inklusive dazugehöriger tabellarischer Beiwerke sowie Übersetzungen. Mit Hilfe von Methoden des 
+                    
+natural
+
+                    
+language
+
+                    
+processing
+ (NLP) sollen inhaltliche und sprachliche Unterschiede und Entwicklungen im Laufe der Entstehungsgeschichte der Kriegsspiele aufgezeigt werden. Ziel ist eine diachrone und vergleichende Analyse der Gattung der Regelwerke sowie das Erstellen einer Ontologie für Regelwerke und nicht-literarischer Texte über das Kriegsspiel hinaus. Durch die Erstellung einer digitalen Sammlung und Ontologie, die auf vollständig annotierten und aufbereiteten Texten basiert, kann in einem Webtool eine direkte visuelle Vergleichbarkeit zwischen individuell gewählten Regelwerken geschaffen werden.  Texte, Faksimiles, Analyseergebnisse und weitere für das preußische Kriegsspiel relevante Materialen sollen zentral gesammelt und für die Forschung sowie die interessierte Öffentlichkeit bereitgestellt werden. Beispielsweise verändert sich die Nutzung eines Würfels als zufallsgebende Instanz zur dritten Phase der Kriegsspiele. Auch die Veränderung bei der Verwendung der Truppengattungen, kann so verdeutlicht werden. Dies kann durch Textverweise und Hervorhebungen sowohl im Original, in einer aufbereiteten Version als auch als Graphik kenntlich gemacht werden. Visualisierungen über sprachliche und formale Veränderungen bieten zudem neue Zugänge zu dem Forschungsgegenstand.
+                
+
+            
+
+            
+
+                
+
+                
+Abbildung 1: Veränderung der Truppengattungen in den Regelwerken
+
+            
+
+            
+
+        
+
+        
+
+            
+
+                
+
+
+Bibliographie
+
+                    
+
+                        
+Devlin, Jacob,
+ Ming-Wei Chang, Kenton Lee, Kristina Toutanova. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding”. 
+                        
+Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
+ (1): 4171–4186. Minneapolis, Minnesota.
+                    
+
+                    
+
+                        
+Henning, Pia.
+ 2018. “Das Kriegsspiel des Thilo Wolf von Trotha“. Bachelorthesis, Julius-Maximilians-Universität Würzburg. 
+                    
+
+                    
+
+                        
+Henning, Pia.
+ 2021a. „‘Game on!’: A Research Project on the Prussian Kriegsspiel“. 
+                        
+British Journal for Military History
+ 7 (2): 174–83. 
+                        
+doi:10.25602/GOLD.bjmh.v7i2.1561.
+
+                    
+
+                    
+
+                        
+Henning, Pia.
+ 2021b. „Die Entwicklung des preußischen Kriegsspiels”. Masterthesis, Julius-Maximilians-Universität Würzburg.
+                    
+
+                    
+
+                        
+Reul, Christian,
+ Dennis Christ, Alexander Hartelt, Nico Balbach, Maximilian Wehner, Uwe Springmann, Christoph Wick, Christine Grundig, Andreas Büttner and Frank Puppe. 2019. „OCR4all—An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings” 
+                        
+Applied Sciences
+ 9(22): 4853. 
+                        
+https://doi.org/10.3390/app9224853
+
+                    
+
+                    
+
+                        
+Wintjes, Jorit.
+ 2017. „When a Spiel is not a Game”. Vulcan, 5(1): 5-28. 
+                    
+
+                    
+
+                        
+Wintjes, Jorit.
+ 2019. „Das Kriegsspiel des Wilhelm von ”. Hamburg.
+                    
+
+                    
+
+                        
+Wintjes, Jorit.
+ 2022. “A School for War – A Brief History of the Prussian Kriegsspiel”, C. Turnitsa/C. Blais/A. Tolk (eds.), 
+                        
+Simulation and Wargaming
+. Hoboken. 25-46
+                    
+
+                
+
+            
+
+        
+
+    

@@ -1,0 +1,248 @@
+
+    
+
+      
+
+        
+Sektionsbeschreibung
+
+        
+Die “Digitalisierung” von Objekten hat viele Gesichter. Sie kann in einer formalisierten Beschreibung bestehen, in Abbildungen, in einer Kombination aus beidem oder in der geometrischen Nachbildung, sei diese maschinell generiert (gescannt) oder gezeichnet und konstruiert. Um mit den entstehenden digitalen Daten nachhaltig arbeiten zu können, bedarf es der Strukturierung und der Vereinheitlichung. Anders etwa als die Gegenstände des Bibliothekswesens, die Bücher, haben Artefakte der Archäologie, Kunstgeschichte und anderer Disziplinen keine standardisierten formalen Eigenschaften, die direkt erfasst werden könnten. Die Merkmale der Beschreibung müssen von außen definiert werden. Langjährige Diskussionen um zugleich spezifische und universell anwendbare Metadatenschemata wie etwa CDWA oder MIDAS zeugen von den besonderen Mühen, diese Beschreibung zu formalisieren. Ein anderer Weg, sich dem Objekt zu nähern besteht darin, es abzubilden, zu vermessen und nachzuformen. Es tritt uns dann in verschiedenen bildlichen oder graphischen Formaten bis hin zur 3D-Visualisierung entgegen. Sieht man einmal davon ab, dass die ab- und nachbildenden Formate im Fall komplexerer Artefakte oft so heterogen ausfallen, dass sie nur schwer prozessierbar sind, dokumentieren sie vor allem nicht ohne Weiteres die Bedeutung und den Sinngehalt der Gegenstände, so dass zusätzliche beschreibende Informationen notwendig bleiben.
+
+        
+Hinzu kommt der Umstand, dass viele der vermeintlichen Eigenschaften der Objekte eigentlich als historische Ereignisse anzusehen sind, die den Kontext der Objekte bilden. Dies trifft etwa für die Fragen zu, wer einen Gegenstand in Auftrag gegeben, geschaffen, benutzt oder erworben hat.
+
+        
+Um diese komplexen Zusammenhänge angemessen darzustellen, zu vermitteln, nachnutzbar zu speichern, ist es praktisch unerlässlich, ein stringentes Datenmodell einzusetzen. Als Modell, das auch Ereignisse in den Blick nimmt, war das CIDOC Conceptual Reference Model (CRM) ein weitgehender Neuansatz auf der Bühne der Metadatenschemata und seit es 2006 zum ISO-Standard gekürt wurde, ist es in aller Munde. Es gilt als Referenzmodell für die Dokumentation und den Austausch von Daten im Bereich „cultural heritage“. Doch wie sieht die Anwendung aus? Ist es praktikabel? Was repräsentiert eigentlich die Ontologie – eine Abstraktion der historischen Wirklichkeit? Eine gedankliche Struktur, die das kulturhistorische Wissen innerlich zusammenhält? Oder lediglich ein Datenformat zum Austausch zwischen verschiedenen Projekten und Beständen? Wozu sollen wir überhaupt “modellieren” - reicht nicht einfaches “information retrival” oder “resource discovery“?
+
+        
+Die Sektion will anhand von drei verschiedenen Seiten aus Licht auf diese Fragen werfen.
+
+        
+Zunächst werden die ursprünglichen Planungen, der aktuelle Status quo und die zukünftigen Perspektiven der Praxis im Kulturerbe und Museumsbereich, für dessen Bedürfnisse das Conceptual Reference Model zuerst entwickelt wurde, durch einen ausgewiesenen Kenner des Gebietes, Georg Hohmann (Deutsches Museum, München), dargestellt.
+
+        
+Aus der spezifischen Perspektive der Forschung beleuchtet Martin Raspe (Bibliotheca Hertziana, Max-Planck-Institut für Kunstgeschichte) die Rolle von Datenmodell und Ontologie nicht nur für die Beschreibung der Artefakte, sondern auch für Referenzierbarkeit im ständig fortschreitenden Wissenschaftsdiskurs.
+
+        
+Einen dritten Perspektivpunkt bieten digitale Architekturmodelle. Piotr Kuroczynski (Herder-Institut Marburg und Mitbegründer der DHd-Arbeitsgruppe Digitale Rekonstruktion) wird die aktuellen Bestrebungen darstellen, die geometrischen Daten durch zusätzliche, semantisch organisierte Angaben zu kontextualisieren. Damit nähern sich die Konzepte des Strukturmodells (Datenmodell, Ontologie) und des repräsentierenden Modells (vereinfachtes Abbild, 3D-Modell) einander an und eröffnen weitere Fragen zur Datenmodellierung im Allgemeinen.
+
+      
+
+      
+
+        
+Ontologien und das kulturelle Erbe 
+
+        
+Georg Hohmann, Deutsches Museum München
+
+        
+In den letzten Jahren haben sich Museen und museumsnahe Projekte zunehmend dem
+          Thema Linked Open Data (LOD) zugewandt. Die prominentesten Vertreter sind in
+          dieser Richtung sind derzeit das Rijksmuseum Amsterdam und das British Museum
+          London, die beide nahezu ihren gesamten Datenbestand als LOD unter einer freien
+          Lizenz zur Verfügung stellen. Beide Museen sind daher auch als einzige Vertreter
+          in der aktuellen Linked Data Cloud vertreten (s. unter 
+http://lod-cloud.net/
+). Zur
+          Modellierung der Datenbestände werden dabei unterschiedliche Ansätze
+          verfolgt.
+
+          
+Das Rijksmuseum veröffentlicht Daten zu fast 550.000 Sammlungsobjekten und
+            bedient sich des 
+Europeana Data Model
+ (EDM), welches von der Europeana entwickelt
+            wurde und dort als universelles Modell für die Datenaggregation eingesetzt wird
+            (Dijkshoorn et al. 2014). Das EDM ist ein sehr leichtgewichtiges Modell, das
+            darauf optimiert ist, sehr heterogene Datenbestände möglichst einfach zu
+            integrieren.
+
+            
+Während hier die Abstraktion und die Einfachheit im Vordergrund stehen, ist in einem anderen Ansatz die Semantik der Daten von größerer Bedeutung. In Anlehnung an der ursprünglichen Idee von Tim Berners-Lee wird hier Linked Data als niederschwelliger Einstieg in das Semantic Web interpretiert. Grundlegend ist hier die Verwendung einer Ontologie zur Datenmodellierung, die im Gegensatz zu einfachen Modellen wie dem EDM die Entitäten der jeweiligen Domäne, also ihrer Diskursumgebung, sowie die Beziehungen zwischen diesen Entitäten eindeutig und explizit definiert.
+
+            
+Eine erste umfassende und nicht als Versuchsfeld konzipierte Anwendung einer solchen Ontologie im Bereich des Kulturerbes fand im archäologisch fokussierten 
+CLAROS-Verbund
+ statt. Die gesamten Daten stehen heute im Format des 
+CIDOC Conceptual Reference Model
+ (CRM) zur Verfügung. Das CRM ist eine formale Ontologie für das kulturelle Erbe, die von einer Arbeitsgruppe des Komitees für Dokumentation im Internationalen Museumsrat ICOM entwickelt wird. In Hinsicht auf ihren Umfang und ihrem Detailgrad ist diese Ontologie singulär im Bereich der historischen Wissenschaften. Die Nutzung des CRM wird seitdem vor allem von der Andrew W. Mellon Foundation durch Förderung des Projekts 
+ResearchSpace
+ vorangetrieben, dass sich zum Ziel gesetzt hat, das CRM als lingua franca für das kulturelle Erbe zu etablieren. Als bislang bedeutendstes Ergebnis dieser Bestrebung ist zu bewerten, dass das British Museum seine Bestände über eine CRM-kompatible Schnittstelle zur Verfügung stellt. Der frei verfügbare Datenbestand des British Museum enthält Daten von über 2 Millionen Objekten und ist damit einer der größten CRM-basierten Datenbestände weltweit.
+
+            
+Im Gegensatz zu Modellen, die wie das EDM durch ihre Einfachheit und ihren Abstraktionsgrad einfache Datenintegration gewährleisten sollen, verspricht das CRM eine semantische Vernetzung gleichzeitiger Integration der Daten. Doch während ersteres bereits erfolgreich eingesetzt wird, fristet letzteres bislang ein Nischendasein. 
+
+            
+Es muss also die Frage nach den Gründen gestellt werden. Exemplarisch wird hier die LOD-Datenrepräsentation des British Museum auf Basis des CRM unter Verwendung der 
+Web Ontology Language
+ (OWL) herangezogen. Hier wurden viele Design-Entscheidungen getroffen, die Fehlstellungen der zugrundenliegende Ontologie offenbaren: Wie sind die im CRM definierten Eigenschaften von Eigenschaften, die in OWL untersagt sind, umzusetzen? Welche Auswirkung hat die Open World Assumption von OWL? Wann sollten sog. Shortcuts anstatt der voll ausgeführten Pfade verwendet werden? Sind CRM-Shortcuts als 
+Property Chains
+ in OWL umzusetzen? Wann sollten die bestehende Klassen erweitert werden, wann soll auf das Typen-System des CRM zurückgegriffen werden? Wie ist damit umzugehen, dass im CRM mehrere Möglichkeiten zu Repräsentation eines Sachverhalts geboten werden? Wie sind Identifikatoren externer Vokabulare und Datenbestände einzubinden?
+
+            
+Anhand dieser Fragen wird deutlich, dass das CRM viele interpretative Freiräume
+              und noch einige Lücken offen lässt, die je nach Implementation anderes
+              geschlossen werden, was trotz der Verwendung eines vermeintlich einheitlichen
+              Modells die Datenintegration erschwert. Eine Lösungsmöglichkeit stellt die
+              Einrichtung von sog. Profiles vor, wie sie auch bei der Umsetzung des
+              bibliothekarischen Standards 
+METS
+
+              (Metadata Encoding &amp; Transmission Standard) zu Einsatz kommen. Ein Profil für die Anwendung des CRM für
+              Kerndaten von Museumsdokumentationssystemen könnte dazu eingesetzt werden,
+              Modellierungsalternativen verbindlich zu regeln, die Nutzung spezifischer
+              Vokabulare zu empfehlen oder Mapping-Aufgaben zu erleichtern.
+
+            
+
+            
+
+              
+Wer hats gesagt? Metadata und überprüfbares Wissen im kunsthistorischen Datenmodell 
+
+              
+Martin Raspe, Bibliotheca Hertziana - Max-Planck-Institut für Kunstgeschichte, Rom
+
+              
+Seit sich der Mensch intellektuell mit Kunst- und Bauwerken aus der Vergangenheit beschäftigt, möchte er mehr darüber wissen: Er verlangt nach zusätzlichen “Daten”, nach Angaben über den Verfertiger, über die historische Epoche, über Material, Maße und Herstellungsverfahren sowie über die Bedeutung - wer hat’s gemacht, was stellt es dar? Seit er sich wissenschaftlich damit befasst, möchte er noch mehr wissen: Wie kommt unser Wissen zustande, wie gesichert ist es, auf welcher Grundlage beruht es - wer hat’s gesagt? Um diese beiden Aspekte soll es in dem Beitrag gehen. Die Datenmodelle, die derzeit in der Kunstgeschichte en vogue sind, berücksichtigen fast ausschließlich das erste Wissensbedürfnis. Das zweite jedoch, welches eigentlich erst mit vollem Recht Wissenschaft genannt werden kann, wird in der digitalen Welt weiterhin auf traditionelle, vergleichsweise umständliche Weise erfüllt.
+
+              
+Während das “Allgemeinwissen” auf immer durchdachtere Weise abgebildet wird, beispielsweise mit Hilfe hochdifferenzierter, fachspezifischer Ontologien, wird das reflektierte, in Aussagen, Begründungen und Belegen bestehende Spezialwissen der Disziplinen auch heute noch in Fußnoten und Literaturverzeichnissen verwaltet. Nur ganz selten kann man ein Quellenzitat per Mausklick direkt zu seiner Herkunft verfolgen, und wenn, dann landet man meist bei einem Eintrag im Bibliothekskatalog, nicht an der zitierten Stelle. Die meisten online erhältlichen Textausgaben lassen sich nicht punktgenau von außen referenzieren, und wenn doch, dann jedenfalls nicht mit Hilfe eines standardisierten, persistenten Verfahrens. Die Adresse der Belegstelle, auf die man heute verweist, kann schon morgen geändert sein - schon führt der Link ins Nichts, wie das Gnomon der Sonnenuhr an einem bedeckten Tag.
+
+              
+Noch viel seltener besteht die Möglichkeit, vom Beleg aus die Links, die auf ihn verweisen, automatisch rückwärts zu verfolgen, also vom Zitierten zum Zitierenden zu gelangen. Das wäre ein großer Fortschritt, denn ein Hauptteil der wissenschaftlichen Arbeit besteht ja darin, zu einem Primärwerk die “fortuna critica” zusammenzutragen. Ohne Bezug auf den aktuellen Stand der Forschung bliebe die eigene Untersuchung ohne Fundament. Würden solche Verweise in standardisierter Form gemacht und von Suchmaschinen indexiert, könnte die Datenverarbeitung den Wissenschaftler erheblich entlasten. Dass das prinzipiell möglich ist, zeigen die “citation indexes” der Naturwissenschaften, die verzeichnen, welche Artikel wo und wie oft zitiert werden. Anstelle eines fragwürdigen Bewertungsinstruments könnte die Informationstechnologie dem Forscher ein neues, äußerst nutzbringendes Instrument an die Hand geben.
+
+              
+Dass dem so ist, liegt gewiss daran, dass in der Digitalen Kunstgeschichte anfangs nicht neue Anforderungen an ein wissenschaftliches Verweissystem im Vordergrund standen, sondern vor allem die Möglichkeiten der Digitalisierung des Primärmaterials gesehen und genutzt wurden. Kunst- und Quellenwerke standen dadurch in besserer Abbildungsqualität als je zuvor zur Verfügung, und zwar direkt auf dem eigenen Arbeitsplatz. Aufgrund der kontinuierlich wachsenden Zahl von Digitalisaten, die auf Servern in aller Welt verstreut lagen, wurde die Aufgabe wichtig, diese zu finden. Mit dem Aufkommen mächtiger Suchmaschinen wie Google, die die Indexierung dieser Primärdaten übernahmen, gewannen die sogenannten Metadaten an Bedeutung. Ziel der Anstrengungen ist seitdem, diese Metadaten möglichst zu vereinheitlichen, um weltweit mit den gleichen Suchbegriffen arbeiten zu können. Die üblichen Bezeichnungen der Artefakte, die Namen der Künstler und Auftraggeber und viele weitere Angaben werden zur Identifizierung und Katalogisierung herangezogen. Große Meta-Datenbanken wie die “Europeana” entstehen, in denen die Bestände einzelner lokaler Datenquellen gemeinsam, zentral und nach einheitlichen Prinzipien erschlossen werden. Digitale Editionen von Büchern und Texten finden Eingang in traditionelle Bibliothekskataloge und können nun auch auf konventionellem Wege gefunden werden.
+
+              
+Zentraler Gegenstand dieser Phase der elektronischen Geisteswissenschaften ist
+                die digitale Ressource, und “resource discovery” ist das Schlagwort, das für die
+                Kernaufgabe der Wissenschaft verwendet wird. Alle anderen Tätigkeiten sind dem
+                Fischen im weltweiten Datenozean nachgeordnet. Die Devise lautet, zunächst
+                möglichst viel in dieses Meer hineinzuwerfen und die Mühe, die Gegenstände bei
+                Bedarf wieder herauszuangeln, der Zukunft bzw. einer anonymen community zu
+                überlassen. “Suchen” heißt folgerichtig das erste (und längste) Kapitel in
+                Hubertus Kohles (2013) Handbuch “Digitale Bildwissenschaft”. Auf diese
+                Anforderung antworten auch die Datenmodelle, die im Bereich der
+                Bildwissenschaften entwickelt werden.
+
+                
+Die vorrangige Aufgabe ist zunächst die eindeutige Identifikation der Ressource. Sie muss präzise im Netz angesprochen werden, denn anders ist sie nicht zu finden. Paradoxerweise existiert für viele digitale Bucheditionen heutzutage nur noch eine einzelne Adresse im Netz. Weiß man diese nicht, kann man das Buch nicht auffinden. In analogen Zeiten musste man lediglich Titel, Autor und Jahr kennen, dann konnte man das Buch in zahlreichen Bibliotheken anhand seiner lokalen Signatur auffinden. Daher brauchte auf eine präzise Formalisierung nicht so streng geachtet zu werden. Heutzutage reicht ein Fehler bei der Eingabe der Metadaten, und die Ressource wird nicht gefunden. Normdaten, die möglichst international abzugleichen sind, und persistent identifiers sind das Mittel, mit dem man dem Problem beikommen möchte.
+
+                
+Andererseits hat die präzise Ansprache mit einem eindeutigen Identifikator auch den Vorteil, dass sie Verwechslungen ausschließt, die in der analogen Welt nicht selten waren, insbesondere bei weniger deutlich profilierten Museumsbeständen, aber selbst bei Kupferstichen und Zeichnungen vorkamen.
+
+                
+Die zweite Aufgabe des Metadaten-Modells, das zur Erschließung einer Ressource dient, ist die Klassifikation. Erst wenn man unterscheidet, ob “Paris Gütersloh” zur Kategorie “Ortsbezeichnung” gehört oder vielmehr eine “Person” repräsentiert, kann man fehlerhafte Suchergebnisse vermeiden. 
+
+                
+Der dritte Aspekt eines kulturwissenschaftlichen Datenmodells sind die Beziehungen zwischen der Ressource und den Metadaten. Auch hier geht es in erster Linie darum, Verwechslungen zu vermeiden und die Treffermenge bei der Suche einzugrenzen oder überschaubar zu halten, nicht primär um die adäquate Repräsentation des Wissens über den Gegenstand. Es ist wichtig zu unterscheiden, ob das Kunstwerk, nach dem wir mit Hilfe eines Personennamens suchen, von dieser Person geschaffen wurde, ob es von ihr gekauft oder von ihr beschrieben wurde. Demzufolge muss ein Datenmodell in der Kunstgeschichte für diese verschiedenen Fälle Platz bieten, am besten in möglichst umfassender Form, so dass alle in Frage kommenden Relationen berücksichtigt werden.
+
+                
+Der Gesamtbestand von möglichen Klassifikationen und Relationen kann formal beschrieben und in maschinenlesbarer Form gespeichert werden. Ein solcherart verzweigtes Datenmodell bezeichnet man heutzutage im informatischen Kontext als ”Ontologie”. Das bekannteste Beispiel in der Kunst- und Kulturwissenschaft ist das CIDOC Conceptual Reference Model (CRM), das durch seinen Status als ISO-Norm den Anspruch erhebt, ein gangbares Muster für den bereich cultural heritage abzugeben. 
+
+                
+Das Ziel dieses Beitrags ist es nicht, Kritik an diesem sehr verdienstvollen Unterfangen zu üben, sondern seine Stellung im Bereich einer digitalen Geisteswissenschaft zu verorten. Die digital humanities sind längst nicht am Ende ihrer Möglichkeiten angekommen. Wie zu Beginn angedeutet, kann bei einer Metadaten-Erschließung noch nicht von einer Repräsentation begründeten und reflektierten Wissens die Rede sein, auch wenn im Laufe der Zeit immer deutlicher wird, dass die Interessen der Forschung sich nicht darauf beschränken, der digitalen Ressourcen besser habhaft zu werden. Das, was heute als Metadata bezeichnet wird, dient ja nicht nur der Erschließung digitaler Ressourcen, sondern repräsentiert eigene Forschungsgegenstände. Wenn ein Kunsthistoriker über einen prominenten Mäzen oder einen Kritiker forscht, dann steht dieser nicht als Digitalisat zur Verfügung. Das gleiche gilt für Gattungen, Kunstlandschaften, ikonographische Themen oder künstlerische Techniken. Datenmodelle, die derartige konzeptuelle Fragestellungen repräsentieren und das verfügbare Wissen in digitaler Form zu formen und zu speichern vermögen, gibt es noch nicht. Auch ICONCLASS ist letztlich lediglich der Versuch einer Normierung von Konzepten (im Sinne von Metadata). Die Codes unterstützen die Forschung über ikonographische Themen nur indirekt, indem man mit ihrer Hilfe entsprechend verschlagwortete digitale Ressourcen finden kann.
+
+                
+Noch ist das Datenmodell nichts als eine Daten-Model, ähnlich einer Guss- oder Backform, die bestimmt, in welchem Format und in welchem Zusammenhang die einzelnen Inhalte anzuordnen sind, damit sie nicht nur von menschlichen, sondern auch von Elektronengehirnen verarbeitet werden können. Ein wirkliches Modell des Wissens stellen sie noch nicht dar. Wissen ist immer gekoppelt an Autorität und Glaubwürdigkeit, und diese Aspekte werden bisher wenig berücksichtigt. Bei kaum einer inhaltlichen Angabe im digitalen Datenmodell ist klar ersichtlich, wer eine Erkenntnis formuliert hat, auf welcher Grundlage sie beruht, wann sie zuerst gemacht wurde und wer sie unterstützt. All das sind wesentlich Bestandteile des Wissens im Sinne einer wissenschaftlichen Nachprüfbarkeit. Diese muss derzeit immer noch auf konventionellem, sprich analogem Wege bestätigt werden.
+
+                
+Der Beitrag ist ein Plädoyer dafür, in Zukunft nicht nur der resource discovery Aufmerksamkeit zu schenken, sondern auch dem Auffinden von wissenschaftlicher Aussagen, Verweise und Evidenz. Manche dieser Aspekte werden derzeit unter dem Schlagwort “Annotationen” zusammengefasst, aber auch darin offenbart sich die Ressourcen-Zentriertheit der heutigen Debatte: Wissenschaftliche Aussagen und Hinweise, Kerngebiete des Wissens, werden reduziert auf Post-Its, die den Gegenständen angeheftet werden. Wissen, das dauerhaft zugänglich und nutzbar sein soll, würde man diesem Medium wohl nicht anvertrauen.
+
+              
+
+              
+
+                
+Die semantische Leiter hoch hinauf – Potenziale und Herausforderungen einer Applikationsontologie für digitale 3D Rekonstruktionen 
+
+                
+Piotr Kuroczyński, Herder-Institut für historische Ostmitteleuropaforschung, Institut der Leibniz-Gemeinschaft, Marburg
+
+                
+Seit den 1990er Jahren beobachten wir den Einsatz von Computern bei der Rekonstruktion und Vermittlung von verlorenen und/oder nie existierenden Kunst- und Bauwerken. Bislang dienen die Ergebnisse der „Virtuellen Rekonstruktion“ meist dem Wissenstransfer in Form eines Bildes oder einer Filmanimation. Die digitalen 3D-Modelle werden selbst an sich weniger als ein Forschungsgegenstand bzw. als ein Informationsmodell betrachtet. 
+
+                
+Die rapide Entwicklung der Informationstechnologien führt in letzter Zeit zu weit sichtbaren Veränderungen analog basierter Forschungsmethoden in den Geistes- und Sozialwissenschaften. Zugleich etabliert die neu bildende Querschnittsdisziplin „Digital Humanities“ innovative Methoden und Standards innerhalb der Geisteswissenschaften.
+
+                
+Das wirkmächtigste Konzept des derzeitigen Transformationsprozesses ist sicherlich das Semantic Web, vor allem in der Form von Linked Open Data (LOD). Hierbei bilden kontrollierte Vokabulare, Thesauri und Ontologien, indem sie die Typen, Eigenschaften und Beziehungen zwischen Entitäten in einem Diskursraum definieren, das formelle Rahmenwerk zur Wissensorganisation und Wissensrepräsentation. Auf dem Gebiet des kulturellen Kulturerbes (Cultural Heritage) stellt CIDOC-CRM den nunmehr seit längerer Zeit kontinuierlich vorangetriebenen Versuch dar, den „semantischen Leim“ zwischen den Informationseinheiten fachübergreifend zu schaffen.
+
+                
+Im Fall der „Virtuellen Archäologie” und „Digitalen Kunstgeschichte“ fokussiert sich die semantische Erschließung derzeit noch vor allem auf digitale Bildarchive und Objektkataloge. Stellvertretend sind hier vor allem die digitale Bibliothek EUROPEANA mit ihrem Datenmodell und die damit verbundene Entwicklung von Metadaten Schemata zu nennen.
+
+                
+Da die zunehmende Digitalisierung von Kulturgut auch zu - in Zukunft vermutlich
+                  exponentiell schnell - wachsenden Beständen von 3D-Daten führt, gibt es bereits
+                  mehrere EU-Projekte, die an gemeinsamen Beschreibungsformaten (Metadaten
+                  Schemata), z. B. 3D-COFORM, CARARE und 3D-ICONS, arbeiten. Aktuell kommt den
+                  Bedürfnissen der Forschung, die an einer möglichst umfassenden Dokumentation und
+                  semantischen Erschließung der 3D-Datensätze interessiert ist, das Metadaten
+                  Schema CARARE 2.0 entgegen. Dieses Schema entspricht vor allem den Anforderungen
+                  hinsichtlich der Beschreibung und semantischen Anreicherung von
+                  3D-Digitalisaten, die beispielsweise mit moderner Fotogrammetrie,
+                  Streifenlichtscanning, Laserscanning oder der „Structure from Motion“
+                  Technologie von existierenden räumlichen Objekte erstellt werden. Die CARARE
+                  2.0-Basiskategorien – wie Heritage Asset, Activities, Digital Resources und
+                  Collections – berücksichtigen jedoch nicht die besonderen Anforderungen einer
+                  digitalen hypothetischen 3D-Rekonstruktion von nicht (mehr) existierenden Kunst-
+                  und/oder Bauwerken. Somit eignet sich dieses Schema vorzugsweise für die
+                  Beschreibung von 3D-Digitalisaten von existierenden Objekten, weniger aber für
+                  die Beschreibung von hypothetischen, hoch interpretativen, 3D-Rekonstruktionen
+                  auf der Basis primärerer und sekundärer Quellen. Dies ist aber gerade das
+                  Arbeitsfeld der (kunst-)historischen Wissenschaften, die nicht nur Vorhandenes
+                  in einem anderen Medium abbilden, sondern wissensbasierte Annahmen über
+                  vergangene oder vielleicht auch nur geplante Sachverhalte in ihrer ganzen
+                  Komplexität erforschen und dokumentieren möchten.
+
+                  
+Aus der Sicht der digitalen 3D-Rekonstruktion wird ein Metadaten Schema mit dem Namen „Cultural Heritage Markup Language“ (CHML) entwickelt, das den gesamten Arbeitsablauf einer hypothetischen 3D-Rekonstruktion von der Datenerhebung, über die Datenverarbeitung bis zum händischen 3D-Modellieren am Rechner ausdrückt. 
+
+                  
+Der Vortrag erläutert zunächst die Idee vom Semantic Web sowie die existierenden Standards und Technologien. Anschließend werden die Vorteile und Herausforderungen der Entwicklung einer auf CIDOC-CRM referenzierten Applikationsontologie für die digitale 3D-Rekonstruktion von verlorenen Kunst- und Bauwerken, kritisch beleuchtet.
+
+                  
+Ein konkreter Vergleich zwischen CARARE 2.0 und CHML soll die Unterschiede der Metadatenstandards und die Stärken von CHML für die Dokumentation von hypothetischen 3D-Rekonstruktionen aufzeigen. An konkreten Beispiel wird die Implementierung von CHML in eine Applikationsontologie (OWL DL, Erlangen-CRM) gezeigt. Dabei werden insbesondere die Herausforderungen der fachspezifischen Abbildung von Sachverhalten, wie beispielsweise von „nicht existierender Objekten“, in CIDOC-CRM behandelt. 
+
+                  
+Abschließend möchte die Präsentation eine mittelfristige Perspektive aufzeigen, welchen Einfluß die Semantic Web Technologien auf die digitale 3D-Rekonstruktion im Wissenschaftsbereich haben können, indem sie fundierte, informationsgesättigte semantische 3D-Modelle anstelle der zurzeit vorwiegend auf reine Visualisierung bezogenen 3D-Modelle etablieren. Im Ausblick werden die Debatten um „Serious 3D”, die semantische Anreicherung, eine äquivalente Dokumentation und die Probleme der Publikation von 3D-Daten vor dem Hintergrund des aufkommenden Web 3.0 (Semantic Web) aufgerufen
+
+                
+
+                
+
+                  
+Bibliographie
+
+                  
+
+                    
+Dijkshoorn, Chris / Ter Weele, Wesley / Jongma, Lizzy /
+                      Aroyo, Lora
+ (2014): "The Rijksmuseum Collection as Linked Data",
+                      in: 
+Semantic Web Journal 
+http://www.semantic-web-journal.net/content/rijksmuseum-collection-linked-data
+.
+                      [letzter Zugriff 05. Februar 2016].
+
+                      
+
+                        
+Kohle, Hubertus
+ (2013): 
+Digitale
+                        Bildwissenschaft
+. Glückstadt: Verlag Werner Hülsbusch.
+
+                      
+
+                    
+
+                  
+
+                

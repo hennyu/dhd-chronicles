@@ -1,0 +1,278 @@
+
+    
+
+      
+Wir präsentieren eine Ontologisierung des Thompson‘s Motif Index Katalogs. Motive
+        können als sich regelmäßig wiederholende Elemente einer Literaturgattung betrachtet
+        werden, auch in verschiedenen Erzählungen. Es können darunter prototypische
+        Charaktere, Objekte, Handlungen oder auch Ereignisse verstanden werden. Die Arbeit
+        von Stith Thompson (Thompson 1955-58) ist ein Versuch, solche Motive in Märchen und
+        ähnlichen Texttypen zu indizieren. Und dieser Index wird heute sehr oft für die
+        Analyse von Märchen verwendet.
+
+        
+Basierend auf Arbeiten von Declerck et al. (2012) und Eisenreich et al. (2014), die
+          die Bedeutung von Ontologien für die automatisierte Analyse von Märchen betonen,
+          haben wir die Liste von Motiven, die Thompson bereitgestellt hat, in eine OWL 
+1
+ Ontologie überführt, die in Januar 2016 
+online verfügbar
+ gemacht
+          worden ist, nachdem das zugrundenliegende Softwareprojekt an der Universität des
+          Saarlandes abgeschlossen war. 
+
+          
+Wir verwenden für unsere Arbeit eine 
+digitale Version des Indexes
+
+            
+2
+. Vereinfachte Beispiele von Motiven sind unten angegeben:
+          
+
+          
+
+            
+A. Mythological motifs
+              
+
+                
+A0-A99. Creator
+                  
+
+                    
+A21 Creator from above
+                      
+
+                        
+A21.1. Male and female creators
+
+                      
+
+                    
+
+                  
+
+                
+
+                
+A100-A499 Gods
+
+                
+A500-A599 Demigods and Culture Heroes
+
+                
+A500-A599 Cosmogony and cosmology
+
+                
+A900-A999 Topological
+
+                
+A1000-A1099 World calamitities
+
+                
+A1100-A1199 Establishment of natural order
+
+                
+A1100-A1699 Creation and ordering of human life
+                  
+
+                    
+A1411 Theft of light
+
+                    
+A1415 Theft of fire
+
+                  
+
+                
+
+                
+A1700-A1799 Creation of animal life
+
+                
+A2200-A2599 Animal characteristics
+
+                
+A2600-A2699 Origins of trees and plants
+
+              
+
+            
+
+            
+B. Animals
+              
+
+                
+B0-B99 Mythical animals
+
+                
+B100-B199 Magic animals 
+
+              
+
+            
+
+          
+
+          
+….
+
+          
+Diese hierarchische Listenstruktur wurde in eine formale Sub-Kategorisierung unter
+            Verwendung der OWL Repräsentationssprache überführt. Wir nennen die Hauptkasse
+            dieser Hierarchie „TMI“.
+3
+ Und alle Motive, die wir als „Blätter“ in dieser Hierarchie auftreten lassen,
+            wurden einfach als Instanzen von einer flachen Struktur von Motivklassen eingeführt.
+            Hier ist „Motif“ die Hauptkasse für alle Instanzen, wie es in Abbildung 1 und in den
+            Kodebeispielen unten zu sehen ist. 
+
+            
+Es sind somit 34.913 Motive kodiert worden, nach einer automatischen Konvertierung aus der oben genannten Internetquelle.
+
+            
+
+              
+
+              
+Abb. 1
+: Toplevel Stufe unserer Ontologie, dargestellt im
+              TopBraid Editor.
+
+            
+
+            
+Die Kodebeispiele unten zeigen erst eine Instanz eines Motivs, und dann wie die beinhaltenden Klasse in der Klassenhierarchie eingebettet ist.
+
+            
+
+              
+
+            
+
+            
+Und die Klasse, von der A104.1 eine Instanz ist, wird als Subklasse von A kodiert:
+
+            
+
+              
+
+            
+
+            
+Aktuelle Arbeit besteht darin, links zu einem anderen Referenzwerk in der
+              Folkloristik zu etablieren: Die Aarne-Thompson-Uther (ATU, s. Uther 2004) Taxonomie
+              von Märchentypen. Eine erste Ontologie Version von ATU ist von uns bereitgestellt
+              worden, aber muss noch überprüft werden. Links von ATU zu TMI werden dann mit Hilfe
+              von symmetrischen „Object Properties“ beschrieben. Wir arbeiten auch daran, die
+              „labels“ der TMI Klassen und Instanzen in anderen Sprachen (Deutsch und Französisch)
+              zu erweitern.
+
+            
+
+            
+
+              
+
+
+                
+OWL steht für „
+Ontology Web
+                Language
+“. Siehe auch http://www.w3.org/TR/owl-features/
+
+                
+Siehe
+                
+http://www.ruthenia.ru/folklore/thompson/index.htm
+
+              
+
+               
+ Siehe Abbildung 1 weiter unten, für einen Screenshot
+                des von uns verwendeten Ontologie Editors “
+TopBraid
+” (cf. TopQuadrant).
+
+              
+
+
+              
+
+                
+
+                  
+Bibliographie
+
+                  
+Eisenreich, Christian / Ott, Jana / Süßdorf, Tonio /
+                    Willms / Declerck, Thierry
+ (2014): “From Tale to Speech:
+                    Ontology-based Emotion and Dialogue Annotation of Fairy Tales with a TTS
+                    Output”, in: 
+Proceedings of ISWC 2014, Riva del Garda,
+                    Italy, Springer.
+
+                  
+
+                  
+
+                    
+Declerck, Thierry / Lendvai, Piroska / Darányi, Sándor
+
+                    (2012): “Multilingual and Semantic Extension of Folk Tale Catalogues”, in:
+                    Jan Christoph Meister (ed.): 
+Digital Humanities 2012
+.
+                    Conference Abstracts, Hamburg, Germany. Hamburg: Hamburg University Press. 
+
+                    
+TopQuadrant
+: 
+TopBraid Live
+
+                    
+http://www.topquadrant.com/products/topbraid-live/
+ [letzter
+                      Zugriff 11. Februar 2016].
+
+                      
+
+                        
+Stith Thompson
+ (1955-1958): 
+Motif-index of folk-literature
+. A classification of narrative
+                        elements in folktales, ballads, myths, fables, medieval romances, exempla,
+                        fabliaux, jest-books, and local legends. Revised and enlarged edition.
+                        Bloomington: Indiana University Press. 
+
+                        
+Uther, Hans-Jörg
+ (2004): 
+The Types
+                        of International Folktales
+. A Classification and Bibliography.
+                        Based on the system of Antti Aarne and Stith Thompson (= FF Communications
+                        284–286). Helsinki: Suomalainen Tiedeakatemia. 
+
+                        
+W3C = World Wide Web Consortium
+ (2004): 
+OWL Web Ontology Language
+
+                        
+http://www.w3.org/TR/owl-features/
+ [letzter Zugriff 16. Februar
+                          2016].
+
+                        
+
+                      
+
+                    
+
+
+                  

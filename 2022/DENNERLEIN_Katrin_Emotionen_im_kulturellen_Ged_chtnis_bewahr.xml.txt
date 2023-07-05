@@ -1,0 +1,981 @@
+
+        
+
+            
+
+                
+Einleitung
+
+                
+Zwischen dem Ende des Dreißigjährigen Krieges und dem Anfang der Restaurationsepoche entwickelt sich das Drama rasant und wird im deutschsprachigen Gebiet zur publikumswirksamsten Gattung dieses Zeitraums (Baumann 1985; Jahn 1996; Krämer 1998; Urchueguía 2015; Meid 2009: 327-501). Es wird zu einer ‚Schule der Affekte’ (
+                    
+palaestra affectum, 
+Rotermund 1972: 25), in der man lernen soll, gewünschte Emotionen zu empfinden und mit unerwünschten wie Angst, Neid oder Leid angemessen umzugehen (Schings 1971; Schings 1980; Wiegmann 1987; Meier 1993; Schulz 1988; Zeller 2005; Lukas 2005; Schonlau 2017). Heutige Konzepte von Emotionen bilden sich dabei erst nach und nach heraus, so dass sich einzelne Figurenaussagen und die Motivation der Handlung für Rezipient*innen der Gegenwart nicht immer unmittelbar erschließen. Die derzeitigen Bemühungen um eine digitale Konservierung von Dramentextbeständen und ihre Analyse müssen folglich um eine Erschließung der Emotionsstrukturen ergänzt werden, wenn dieser Teil des kulturellen Erbes so im kulturellen Gedächtnis konserviert werden soll, dass er auch verständlich bleibt (vgl. zum Begriff des kulturellen Erbes Tauschek 2013). Gemeint ist dabei nicht ein Alltagsverständnis von Gedächtnis im Sinne dessen, „was das Bewußtsein bewußt erinnert" (Luhmann 1999: 44). Es geht vielmehr um das Gedächtnis sozialer Systeme, das durch Kommunikation in der aktuellen Gegenwart benutzt und reproduziert wird. Plädiert wird vorwiegend dafür, die Emotionen in Dramen des Untersuchungszeitraumes im Speichergedächtnis zu bewahren (vgl. Assmann 2003: 133 ff.). Für das Funktionsgedächtnis, das nur das aktuell Anschlussfähige und Zukunftsorienterte verfügbar hält, sind jedoch zumindest diejenigen Emotionsverteilungen und -verläufe von Interesse, die auch heute noch die Dramaturgie von Dialogformaten bestimmen. 
+                
+
+                
+Literaturwissenschaftler haben bisher schwerpunktmäßig wenige Texte einzelner Gattungen hinsichtlich der Frage untersucht, welche emotionale und rationale Wirkung durch sie erreicht werden soll (Pikulik 1965; Sauder 1974-1980; Schings 1971; Nolting 1986).
+ Nur wenige Wissenschaftler*innen erforschen Emotionen der Figuren selbst (Anz 2011; Schulz 1988; Mönch 1993, 344–350; Schonlau 2017). Das führt dazu, dass sehr wenig darüber bekannt ist, welche Figurenemotionen in Dramen dargestellt werden und wann sie im Handlungsverlauf zum Einsatz kommen.
+                
+
+                
+Obwohl die Untersuchung von Gefühlen und Emotionen in den letzten Jahren in der computergestützten Literaturwissenschaft für zahlreiche Textgenres an Bedeutung gewonnen hat (siehe Mohammad 2011; Nalisnick/Baird 2013; Reagan et al. 2016; Zehe et al. 2016; Schmidt/Burghardt 2018; Mc Hardy/Adel/Klinger 2019, Kim/Klinger 2019; Jacobs 2019; Pianzola/Rebora/Lauer 2020), wurden speziell emotionale Aspekte in Dramentexten bisher nur vereinzelt untersucht. Der Fokus lag dabei auf der Analyse von Valenz oder Polarität, d.h. der positiven respektive negativen Konnotation von Sätzen und Textteilen, und zumeist auch auf einzelnen Autoren bzw. Werken (Mohammad 2011; Nalisnick/Baird 2013; Schmidt/Burghardt 2018; Schmidt/Burghardt/Dennerlein 2018a; 2018b; Schmidt/Burghardt/Wolff 2019; Schmidt/Burghardt/Dennerlein/Wolff 2019a; 2019b). Die Untersuchung von Emotionsverteilungen und -verläufen in einzelnen Texten, in verschiedenen Genres und Epochen ist das Ziel des Projekts „Emotions in Drama“, das seit April 2020 Emotionen in Dramen dieses Zeitraums in einem kombinierten Verfahren aus händischer Annotation und ihrer Vorhersage mittels Deep Learning-basierter Sprachmodelle erforscht.
+ Im Folgenden sollen konzeptionelle Überlegungen und erste Ergebnisse dieses Projekts vorgestellt werden.
+                
+
+            
+
+            
+
+                
+Emotionsset
+
+                
+Im Anschluss an Schwarz-Friesel verstehen wir Emotionen als 
+
+                
+
+                    
+[...] mehrdimensionale, intern repräsentierte und subjektiv erfahrbare Syndromkategorien, die sich vom Individuum ichbezogen und introspektiv-geistig sowie körperlich registrieren lassen, deren Erfahrungswerte an eine positive oder negative Bewertung gekoppelt sind und die für andere in wahrnehmbaren Ausdrucksvarianten realisiert werden (können). 
+(Schwarz-Friesel 2007: 55).
+                
+
+                
+Der Ausdruck von Emotionen kann sich physiologisch, sprachlich oder im Verhalten zeigen. Wir annotieren die von der Figur gemeinte eigene oder zugeschriebene Emotion und nicht diejenigen Emotionen, die Produzenten haben oder die bei Rezipienten ausgelöst werden sollen.
+ Diese gemeinten Emotionen können von den explizit in der Sprache repräsentierten abweichen, so dass bei der Annotation oftmals mehrstufige Schlussprozesse und kontextabhängige Interpretationen nötig sind.
+                
+
+                
+Im Untersuchungszeitraum gibt es mehrere historische Kategoriensysteme, die oftmals eine Mischung aus Tugenden und Affekten aufweisen (Zeller 2005; Grimm 2010). Um die Veränderung in der Gewichtung von Emotionen im Untersuchungszeitraum fassen zu können, ist es nötig, solchermaßen von diesen Konzepten zu abstrahieren, dass sie sowohl für den gesamten Zeitraum anwendbar sind als auch Umgewichtungen und Entwicklungen abbilden können.
+ Deshalb haben wir uns dafür entschieden, die Oberkategorien 
+                    
+Angst
+, 
+                    
+Leid
+, 
+                    
+Freude
+ und 
+                    
+Zuneigung
+ zu verwenden und diese auszudifferenzieren. Die Notwendigkeit der Ausdifferenzierung sei an einigen Beispielen kurz erläutert: Die Kategorie des Leids, die zweifellos zentral für das gesamte europäische Drama ist, ist um die neu aufkommende Kategorie des Mitleids zu ergänzen, die mit Lessing ab der Mitte des 18. Jahrhunderts zur Zentralkategorie wird (Schings 1980). Ähnlich verhält es sich mit Liebe, die um zwei Kategorien zu ergänzen ist. Einerseits die der Lust, die bspw. im Barockdrama oder später im Drama des Sturm und Drang eine zentrale Rolle bei der Abwertung von Figuren spielt. Andererseits ist hier eine Oberkategorie nötig, die mit ‚Zuneigung‘ betitelt ist, um auch Freundschaft einbeziehen zu können. Diese Emotion ist zentral für die Anthropologie der Aufklärung und zusammen mit Mitleid und der Abwesenheit von Lust vermutlich charakteristisch für den Epochenumbruch vom barocken zum aufklärerischen Drama (Sauder 1974-1980; Lukas 2005). Hinzugekommen sind zudem eine Kategorie der Ablehnung, die Ärger und Wut/Abscheu beinhaltet, weil sie zentral für ein grundlegendes Verständnis der Handlung ist. Die Kategorie der ‚emotionalen Bewegtheit’ schließlich erscheint zusätzlich nötig, um starke gefühlsmäßige Bewegtheit, die aber inhaltlich nicht genauer spezifiziert wird, auszeichnen zu können. Ab und an wissen die Figuren selbst nicht, was sie fühlen (sollen) und/oder schwanken zwischen mehreren Gefühlen. 
+                
+
+                
+Diese Kategorien entsprechen, mit leicht abweichenden Benennungen, auch anderen Emotionstaxonomien, die in der Linguistik und in der Literaturwissenschaft verwendet werden (Schwarz-Friesel 2007; Flüh 2020). Die meisten Emotionsrepräsentationen im Natural Language Processing (NLP) folgen Kategoriensystemen der Psychologie, zumeist den Basisemotionen von Plutchik (Plutchik 1980; Wood et al. 2018a; 2018b). Basal sind hier bspw. Angst, Wut, Freude und Trauer, die wir auch verwenden, aber auch einige andere, die wir nicht als Hauptemotionsbezeichnungen übernommen haben, wie ‚Vertrauen‘, ‚Vorfreude‘, Überraschung‘ und ‚Ekel‘. Diese Emotionen können in unserem Schema ebenfalls annotiert werden, sind jedoch in andere Konzepte integriert. Die ‚Vorfreude‘ ist der ‚Freude‘ eingemeindet, ‚Überraschung‘ der ‚emotionalen Bewegtheit‘, ‚Ekel‘ ist in der Form von Abscheu im Sinne starker Ablehnung berücksichtigt. 
+
+                
+Das Annotationsset setzt sich nach jetzigem Stand wie folgt zusammen (+/-: Polarität):
+
+                
+
+                
+
+                    
+Emotionen der Zuneigung
+                        
+
+                            
+Lust (+)
+
+                            
+Liebe (+)
+
+                            
+Freundschaft (+)
+
+                            
+Verehrung, Bewunderung (+)
+
+                        
+
+                    
+
+                    
+Emotionen der Freude
+                        
+
+                            
+Freude (+)
+
+                            
+Schadenfreude (+)
+
+                        
+
+                    
+
+                    
+Emotionen der Angst
+                        
+
+                            
+Angst (-)
+
+                            
+Verzweiflung (-)
+
+                        
+
+                    
+
+                    
+Emotionen der Ablehnung
+                        
+
+                            
+Ärger (-)
+
+                            
+Abscheu, Wut, Hass (-)
+
+                        
+
+                    
+
+                    
+Emotionen des Leids 
+                        
+
+                            
+Leid (-)
+
+                            
+Mitleid (-)
+
+                        
+
+                    
+
+                    
+Emotionale Bewegtheit (keine Polarität)
+
+                
+
+            
+
+            
+
+                
+Annotiertes Korpus
+
+                
+Bisher wurden in den folgenden 11 Dramen aus dem GerDracor-Korpus (Fischer et al. 2019) und aus einem Korpus von im deutschsprachigen Gebiet sehr erfolgreichen Werken des 
+                    
+Leopoldstädter Theaters
+ in Wien (Kasperl-Stücke) Emotionen ausgezeichnet.
+ Diese Dramen sind repräsentativ für das noch weitgehend kanonische Gesamtkorpus, enthalten jedoch mit dem 
+                    
+Mandolettikrämer
+ und dem 
+                    
+Postzug
+ auch bereits zwei Werke außerhalb des Kanons:
+                
+
+                
+
+                    
+Luise Adelgunde Victorie Gottsched: Das Testament (1745), Komödie
+
+                    
+Johann Elias Schlegel: Canut (1746), Tragödie 
+
+                    
+Christian Fürchtegott Gellert: Die zärtlichen Schwestern (1747), Komödie
+
+                    
+Johann Gottlieb Benjamin Pfeil: Lucie Woodvil (1757), Tragödie 
+
+                    
+Joachim Wilhelm von Brawe: Der Freigeist (1758), Tragödie 
+
+                    
+Gotthold Ephraim Lessing: Minna von Barnhelm, oder das Soldatenglück (1767), Komödie
+
+                    
+Cornelius von Ayrenhoff: Der Postzug (1769), Komödie
+
+                    
+Ferdinand Eberl: Kasperl' der Mandolettikrämer (1789), Komödie [Libretto]
+
+                    
+Friedrich Schiller: Kabale und Liebe (1784), Tragödie
+
+                    
+August von Kotzebue: Menschenhass und Reue (1790), Komödie
+
+                    
+Johann Wolfgang Goethe: Faust. Eine Tragödie (1807), Tragödie
+
+                
+
+                
+Insgesamt haben wir bislang 12.364 Annotationen mit einer durchschnittlichen Länge von ca. 25 Tokens gesammelt. Jeweils zwei Annotator*innen haben diese Dramen mit Emotionsinformationen angereichert. Die Übereinstimmung der Annotator*innen (
+                    
+Inter-Annotator Agreements
+) entsprechen Kappa-Werten auf der Ebene der Einzelemotionen zwischen 0,3 und 0,4 je nach Drama, was einer schwachen bis moderaten Übereinstimmung entspricht (Landis/Koch 1977). Für die Polaritätsklasse erhöhen sich die Werte auf 0,4-0,6. Diese vergleichsweise geringen Übereinstimmungswerte sind üblich für die Annotation historischer und literarischer Texte (Alm/Sproat 2005; Sprugnoli et al. 2016; Schmidt/Burghardt/Dennerlein 2018b; Schmidt/Burghardt/Dennerlein/Wolff 2019b; Schmidt et al. 2019). Es ist geplant, die Werte durch kontinuierliche Verbesserung der Annotationsanleitung und Schulung der Annotator*innen noch weiter zu verbessern. Ausgezeichnet werden Textabschnitte von variabler Größe, die von einem Wort bis zu mehreren Sätzen reichen, weil sich der Ausdruck von Emotionen auf unterschiedlich lange Textabschnitte beziehen kann. Neben Emotionen werden auch Quell- und Zielinformationen annotiert. Weiterführende Informationen zur Annotation finden sich bei Schmidt/Dennerlein/Wolff (2021b; 2021c).
+                
+
+            
+
+            
+
+                
+Ergebnisse
+
+                
+
+                    
+
+                    
+Abb. 1: Absolute und prozentuale Verteilung der annotierten Emotionen.
+
+                
+
+                
+Die am häufigsten annotierte Einzelemotion ist Leid (vgl. Abb. 1). Dies erscheint zunächst verwunderlich, weil das Verhältnis von Tragödien zu Komödien im annotierten Korpus mit fünf zu sechs eine positivere Emotion als Hauptemotion erwarten lässt. Zu bedenken ist jedoch, dass Komödien vor dem obligatorischen guten Ende (Kraft 2011) oftmals beträchtliche Hindernisse enthalten, so dass negative Emotionen eben doch eine zentrale Rolle spielen.
+
+                
+Für Verlaufsanalysen der Emotionsannotationen wird jedes Drama nach der Zeichenzahl in fünf gleiche Teile (Quintile) geteilt und die Zahl an Emotionsannotationen pro Kategorie und pro Quintil berechnet. Das Verfahren der Aufteilung in Quintile wird in Anlehnung an eine fünfaktige Struktur gewählt, die zahlreiche Dramen, aber eben nicht alle aufweisen. Es ermöglicht normalisierte Vergleiche von Trends in Dramen, die unterschiedliche viele Szenen und Akte haben. Zum Vergleich der Genres (Tragödien vs. Komödien) wird pro Quintil der Durchschnitt aus den jeweiligen Annotationen aller Dramen eines Genres gebildet. 
+
+                
+Wirft man nun einen Blick auf die Verteilung der Emotion ‚Leid‘ im Handlungsverlauf der Dramen, so sieht man, dass diese Emotion in Tragödien durchschnittlich genau doppelt so häufig annotiert wurde wie in Komödien, wie an der y-Achse der Abb. 2 abzulesen ist (durchschnittlich 27-32 Textstellen mit Leid in der Komödie, 45-60 in der Tragödie): 
+
+                
+
+                    
+
+                    
+Abb. 2: Verlauf der Annotationen der Emotion ‚Leid‘ in Tragödien und Komödien.
+
+                
+
+                
+Zudem kann man in Abb. 2 sehen, dass Leid zu Beginn und am Ende von Tragödien gehäuft auftritt. In der Mitte der Dramen besteht jedoch offensichtlich Hoffnung auf eine Verbesserung der Situation und die Figuren empfinden weniger Leid. In Komödien erkennen wir hingegen nach einer kurzen Abnahme von Leid einen leidvollen Höhepunkt, der jedoch zugleich der Wendepunkt zum Besseren, weniger leidvollen Geschehen ist. 
+
+                
+Die Tatsache, dass Leid auch in Komödien die wichtigste Emotion ist, hat sicher auch damit zu tun, dass es sich bei den von uns annotierten Komödien vorwiegend um rührende und satirische Komödien handelt, in denen Zustände und Verhaltensweisen kritisiert und auch einige Tränen über leidvolle Ereignisse vergossen werden. Erst zum Schluss hin fügt sich alles zu einem unverfhofft freudigen Ausgang. Diese Thesen über den Handlungsverlauf in der Komödie lassen sich auch durch die Verlaufskurve der Emotion ‚Freude‘ belegen. In Komödien ist in der Mitte der Handlung, wenn sich die Verwirrungen und Probleme häufen, Freude am wenigsten annotiert, zum Schluss hin steigen die Werte wieder fast auf das Niveau des Anfangs (vgl. Abb. 3). In Tragödien finden sich hingegen kurz vor der Mitte der Handlung die meisten freudigen Aussagen von Figuren (vgl. Abb. 3). Dieser Befund des plötzlichen Abfalls von Freude korreliert mit dem dramaturgischen Konzept der Peripetie, dem Glückswechsel. Nach der idealtypischen aristotelischen Definition führt der Handlungsumschwung unvermeidlich zum schlechten Ausgang. Die Ergebnisse unserer Annotationsanalyse zeigen eine dazu passende stetige Abnahme von Freude in der Tragödie:
+
+                
+
+                    
+
+                    
+Abb. 3: Verlauf der der Annotationen der Emotion ‚Freude‘ in Komödien und Tragödien.
+
+                
+
+            
+
+            
+
+                
+Diskussion und Ausblick
+
+                
+Die bisherigen Ergebnisse sind vielversprechend, was die Erkennung emotionaler Schlüsselstellen betrifft. Poetologisch lassen sie sich gut mit dem erklären, was wir über die kanonischen Dramen wissen, allerdings wurden bisher nur elf ausgewählte Dramen mit Emotionen ausgezeichnet. Ziel ist es einerseits, alle 300 bisher digitalisierten Dramen zu analysieren und neue Erkenntnisse über die Verteilung von Emotionen zu gewinnen. Andererseits soll auch geprüft werden, wie sich die Emotionsverteilung verändert, wenn im größeren Umfang nicht-kanonische Dramen einbezogen werden. Zu diesem Zweck erweitern wir das Korpus um ausgewählte Dramen der Wanderbühne, um Dramen des Schultheaterautors Christian Weise und um Libretti der Hamburger Oper.
+
+                
+
+                
+Methodisch gehen wir so vor, dass mithilfe der annotierten Textstellen transformerbasierte Sprachmodelle mit Architekturen wie BERT oder ELECTRA auf die Erkennung von Emotionsklassen trainiert werden (Schmidt/Dennerlein/Wolff 2021b; 2021c). Hier gibt es durch die Entwicklungen der letzten Jahre vielversprechende kontextsensitive Verfahren. Während bisherige Verfahren aus dem traditionellen maschinellen Lernen oder für statische Sprachmodelle Wörter meist ohne Beachtung des Kontextes (also der Wortumgebung) repräsentieren, haben Wörter und Ausdrücke in dynamischen Sprachmodellen je nach Kontext eine andere Repräsentation. Auch können die Modelle besser als bisherige Verfahren mit Wörtern und Phrasen umgehen, die nicht im Vokabular enthalten sind. Diese Modelle sind jedoch zumeist mit zeitgenössischem Sprachmaterial trainiert (z. B. mit Web-Texte wie der Wikipedia oder News-Texten, vgl. Chan/Schweter/Möller 2020). Deshalb planen wir, die bestehenden Sprachmodelle auf historische und fiktionale Sprache, später dann auf dramenspezifische Sprache zu trainieren. Erste vielversprechende Projekte konnten auf diese Weise im Kontext deutschsprachiger und historischer Texte erfolgreiche Prädiktionsleistungen erreichen (Labusch et al. 2019; Schweter/Baiter 2019; Brunner et al. 2020a; Schweter/März 2020). Bisher haben wir die Leistung verschiedener transformerbasierter Modelle evaluiert, die auf zeitgenössischer Sprache vortrainiert sind (unter anderem von Chan/Schweter/Möller 2020) und solche, die mit historischen und/oder literarischen Texten nachtrainiert wurden (unter anderem Schweter 2020, Brunner et al. 2020), sowie das Fine-Tuning von BERT-Modellen mithilfe unserer eigenen Korpora und Theaterstücke untersucht. Ein erstes Zwischenergebnis ist, dass die Vorhersagen mit 
+                    
+gbert-large
+ und 
+                    
+gelectra-large 
+von
+                    
+ deepset
+ (Chan/Schweter/Möller 2020) mit 83% Prädiktionsgenauigkeit die besten sind. Diese Zahl bezieht sich auf die Einstufung einer Textstelle als positiv oder negativ. Soll vorausgesagt werden, ob eine Textstelle zu einer unserer Emotionsoberklasse gehört, beträgt die Genauigkeit 57%, für die Vorhersage einer der 13 Einzelemotionen beträgt sie 47%.
+ Weitere Details und Informationen zu ersten Ergebnissen der Emotionsklassifikation auf dem annotierten Korpus findet man bei Schmidt/Dennerlein/Wolff (2021a; 2021c). Hier ist noch ein erheblicher Aufwand nötig, um Sprachmodelle mit Texten unseres Untersuchungszeitraumes und mit Dramen nachzutrainieren.
+                
+
+            
+
+        
+
+        
+ Während ‚Gattung‘ im Anschluss an Fricke als literaturwissenschaftlicher Ordnungsbegriff verwendet wird, soll im Folgenden der Begriff ‚Genre‘ für alle gruppenförmigen Erscheinungen von Dramen gebraucht werden, die durch historisch identifizierbare „ge- und bewußte[] Normen [bestimmt sind, die] die Produktion und Rezeption von Texten bestimmen“. (Fricke 1981: 132).
+ Das Projekt wird von der Deutschen Forschungsgemeinschaft (DFG) für drei Jahre im Rahmen des Schwerpunktprogramms 
+                            
+Computational Literary Studies
+ (SPP 2207/1) gefördert 
+                            
+https://dfg-spp-cls.github.io/projects_en/2020/01/24/TP-Emotions_in_Drama/
+ (Projektnummer 424207618 , Sachbeihilfen DE 2188/3-1 und WO 835/4-1).
+                        
+ In der literaturwissenschaftlichen Emotionsforschung lassen produktions-, rezeptions-, text- und kontextbezogene Ansätze unterscheiden (Winko 2003). 
+ Das Annotationsschema wurde zu Projektbeginn iterativ bei der Annotation erprobt und mehrfach angepasst, wie es für die Geisteswissenschaften üblich und empfohlen ist (Reiter 2020).
+ Die Bewertung erfolgt ausgehend von der empfindenden Figur. Schadenfreude ist hier folglich deshalb als positive Emotion ausgewiesen, weil sie für die Figur, die sie empfindet, eine freudig-positive Empfindung ist.
+
+                            
+http://lithes.uni-graz.at/maezene/maezene_startseite.html
+. 
+                        
+ Die Ergänzungskorpora müssen teilweise aufwändig volltextdigitalisiert und alle noch mit TEI ausgezeichnet werden. Vgl. z.B. 
+                            
+https://www.germanistik.uni-wuerzburg.de/lehrstuehle/computerphilologie/mitarbeiter/dennerlein/digitalisierung-von-libretti-der-hamburger-gaensemarktoper-von-1678-1730/
+. 
+                        
+ Die Zuordnung einzelner Emotionen zu Oberklassen funktioniert hier noch leicht abweichend. 
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Alm, Cecilia Ovesdotter / Sproat, Richard
+ (2005): “Emotional sequencing and development in fairy tales.”, in: 
+                        
+International Conference on Affective Computing and Intelligent Interaction
+. Springer.
+                    
+
+                    
+
+                        
+Anz, Thomas
+ (2011): “Todesszenarien: literarische Techniken zur Evokation von Angst, Trauer und anderen Gefühlen.“, in: Lisanne Sauerwald (Hrsg.): 
+                        
+Emotionale Grenzgänge. Konzeptualisierungen von Liebe, Trauer und Angst in Sprache und Literatur
+. Königshausen &amp; Neumann: 54–59.
+                    
+
+                    
+
+                        
+Arntzen, Helmut
+ (1968): 
+                        
+Die ernste Komödie. Das deutsche Lustspiel von Lessing bis Kleist
+. Nymphenburger Verl. 1968.
+                    
+
+                    
+
+                        
+Assmann, Aleida
+: 
+                        
+Erinnerungsräume. Formen und Wandlungen des kulturellen Gedächtnisses
+. 2. Auflage. Beck.
+                    
+
+                    
+
+                        
+Bauman, Thomas
+: 
+                        
+North German opera in the age of Goethe
+. Cambridge University Press, 1985.
+                    
+
+                    
+
+                        
+Brunner, Annelen / Duyen Tanja Tu, Ngoc / Weimer, Lukas / Jannidis, Fotis
+ (2020): “To BERT or not to BERT-Comparing Contextual Embeddings in a Deep Learning Architecture for the Automatic Recognition of four Types of Speech, Thought and Writing Representation.", in: 
+                        
+SwissText/KONVENS 
+2020.
+                    
+
+                    
+
+                        
+Chan, Branden / Schweter, Stefan / Möller, Timo
+ (2020): “German's Next Language Model.", in: 
+                        
+arXiv preprint arXiv:2010.10906
+
+                    
+
+                    
+
+                        
+Fischer, Frank / Börner, Ingo / Göbel, Mathias / Hechtl, Angelika / Kittel, Christopher / Milling, Carsten / Trilcke, Peer
+ (2019): “Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama." Zenodo. 
+                        
+https://doi.org/10.5281/zenodo.4284002
+
+                    
+
+                    
+
+                        
+Flüh, Marie
+ (2020): “Emotionsanalyse“. In 
+                        
+forTEXT. Literatur digital erforschen
+. https://fortext.net/ressourcen/tagsets/emotionsanalyse 
+                    
+
+                    
+
+                        
+Fricke, Harald
+ (1981): 
+                        
+Norm und Abweichung. Eine Philosophie der Literatur
+. C.H. Beck.
+                    
+
+                    
+
+                        
+Grimm, Gunther E.
+ (2010): “Affekt.", in: Karlheinz Barck, Martin Fontius, Dieter Schlenstedt, Burkhart Steinwachs und Friedrich Wolfzettel (Hrsg.), 
+Ästhetische Grundbegriffe
+. Metzler, Bd. 1., 16-49.
+                    
+
+                    
+
+                        
+Jacobs, Arthur M.
+ (2019): “Sentiment analysis for words and fiction characters from the perspective of computational (Neuro-) poetics.", in: 
+                        
+Frontiers in Robotics and AI
+ 6 (2019): 53.
+                    
+
+                    
+
+                        
+
+                        
+Jahn, Bernhard
+ (1996): 
+                        
+“Das Libretto als literarische Leitgattung am Ende des 17. Jahrhunderts? Zu Zi(e)glers Roman Die Asiatische Banise und seinen Opernfassungen“, in: Eleonore Sent (Hrsg.): 
+                        
+Die Oper am Weißenfelser Hof
+. Hain: 143–170.
+                    
+
+                    
+
+                        
+Kim, Evgeny / Klinger, Roman
+ (2019): “A survey on sentiment and emotion analysis for computational literary studies.", in: 
+                        
+Zeitschrift für digitale Geisteswissenschaften.
+
+                    
+
+                    
+
+                        
+Kraft, Stefan
+ (2011): 
+                        
+Zum Ende der Komödie. Eine Theoriegeschichte des Happyends
+. Wallstein.
+                    
+
+                    
+
+                        
+Krämer, Jörg:
+
+                        
+Deutschsprachiges Musiktheater im späten 18. Jahrhundert: Typologie, Dramaturgie und Anthropologie einer populären Gattung
+. Niemeyer.
+                    
+
+                    
+
+                        
+Labusch, Kai / Neudecker, Clemens / Zellhofer, David
+ (2019): “BERT for Named Entity Recognition in Contemporary and Historical German.", in: 
+                        
+Proceedings of the 15th Conference on Natural Language Processing
+, Erlangen, Germany.
+                    
+
+                    
+
+                        
+Landis, J. Richard / Koch, Gary G.
+ (1977): “The measurement of observer agreement for categorical data.", in: 
+                        
+biometrics
+ (1977): 159-174.
+                    
+
+                    
+
+                        
+Luhmann, Niklas
+ (1999): “Kultur als historischer Begriff”. In: Niklas Luhmann: 
+                        
+Gesellschaftsstruktur und Semantik. Studien zur Wissenssoziologie der modernen Gesellschaft
+. Bd. 4. Suhrkamp, 31-54.
+                    
+
+                    
+
+                        
+Lukas, Wolfgang
+ (2005): 
+                        
+Theodizee und Anthropologie. Studien zum Moraldiskurs im deutschsprachigen Drama der Aufklärung (ca. 1730–1770)
+. Vandenhoek &amp; Rupprecht.
+                    
+
+                    
+
+                        
+Mc Hardy, Robert / Adel, Heike / Klinger, Roman
+ (2019): “Adversarial Training for Satire Detection: Controlling for Confounding Variables.”, in: 
+                        
+Proceedings of the Annual Conference of the North American Chapter of the Association for Computational Linguistics
+, Association for Computational Linguistics.
+                    
+
+                    
+
+                        
+Meid, Volker
+ (2009): 
+                        
+Die deutsche Literatur im Zeitalter des Barock. Vom Späthumanismus zur Frühaufklarung 1570–1740
+. C.H. Beck, 327-501.
+                    
+
+                    
+
+                        
+Meier, Albert
+: 
+                        
+Dramaturgie der Bewunderung: Untersuchungen zur politisch-klassizistischen Tragödie des 18. Jahrhunderts
+. Klostermann, Vittorio.
+                    
+
+                    
+
+                        
+Mohammad, Saif
+ (2011): “From once upon a time to happily ever after: Tracking emotions in novels and fairy tales.", in: 
+                        
+arXiv preprint arXiv:1309.5909
+
+                    
+
+                    
+
+                        
+Mönch, Cornelia
+ (1993): 
+                        
+Abschrecken Oder Mitleiden: Das Deutsche Bürgerliche Trauerspiel Im 18. Jahrhundert: Versuch Einer Typologie
+. Niemeyer.
+                    
+
+                    
+
+                        
+Nalisnick, Eric T. / Baird, Henry S.
+ (2013): “Character-to-character sentiment analysis in Shakespeare’s plays." 
+                        
+Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)
+.
+                    
+
+                    
+
+                        
+Neuhuber, Christian
+ (2003): 
+                        
+Das Lustspiel macht Ernst. Das Ernste in der deutschen Komödie auf dem Weg in die Moderne: von Gottsched bis Lenz
+. Berlin.
+                    
+
+                    
+
+                        
+Nolting, Winfried
+ (1986): 
+                        
+Die Dialektik der Empfindung: Lessings Trauerspiele 
+„
+                        
+Miss Sara Sampson” und 
+„
+                        
+Emilia Galotti”: Mit Einer Einleitung, Gemischte Gefühle: Zur Problematik eines explikativen Verstehens der Empfindung
+. F. Steiner Verlag.
+                    
+
+                    
+
+                        
+Pianzola, Federico / Rebora, Simone / Lauer, Gerhard
+ (2020): “Wattpad as a Resource for Literary Studies. Quantitative and Qualitative Examples of the Importance of Digital Social Reading and Readers’ Comments in the Margins.", in: 
+                        
+PLOS ONE
+, vol. 15, no. 1, Public Library of Science, p. e0226708. 
+                        
+PLoS Journals
+.
+                    
+
+                    
+
+                        
+Pikulik, Lothar
+ (1966): 
+                        
+Bürgerliches Trauerspiel und Empfindsamkeit
+. Böhlau.
+                    
+
+                    
+
+                        
+Plutchik, Robert
+ (1980): 
+                        
+Emotion. A psychoevolutionary synthesis
+. Harper&amp; Row.
+                    
+
+                    
+
+                        
+Reagan, Andrew J. / Mitchell, Lewis / Kiley, Dilan / Danforth, Christopher M. / Dodds, Peter Sheridan
+ (2016): “The emotional arcs of stories are dominated by six basic shapes." 
+                        
+EPJ Data Science
+ 5.1: 1-12.
+                    
+
+                    
+
+                        
+Reiter, Nils
+ (2020): “Anleitung Zur Erstellung von Annotationsrichtlinien". 
+                        
+ResearchGate
+, &lt;doi:
+                        
+10.1515/9783110693973-009
+>
+                    
+
+                    
+
+                        
+Rotermund, Erwin
+ (1972): 
+                        
+Affekt und Artistik: Studien zur Leidenschaftsdarstellung und zum Argumentationsverfahren bei Hofmann von Hofmannswaldau
+. W. Fink.
+                    
+
+                    
+
+                        
+Sauder, Gerhard
+ (1974-1980): 
+                        
+Empfindsamkeit
+. Metzler. 3 Bde.
+                    
+
+                    
+
+                        
+Schings, Hans-Jürgen
+ (1971): “Consolatio Tragoediae. Zur Theorie des barocken Trauerspiels“. in: 
+                        
+Deutsche Dramentheorien. Beiträge zu einer historischen Poetik des Dramas in Deutschland
+, herausgegeben und eingeleitet von Reinhold Grimm. Athenäum, Bd. 2, 1-44.
+                    
+
+                    
+
+                        
+Schings, Hans-Jürgen
+ (1980): 
+                        
+Der mitleidigste Mensch ist der beste Mensch: Poetik Des Mitleids von Lessing Bis Büchner
+. C.H. Beck.
+                    
+
+                    
+
+                        
+Schmidt, Thomas 
+(2019): "Distant Reading Sentiments and Emotions in Historic German Plays", in: 
+                        
+Abstract Booklet, DH_Budapest_2019
+. Budapest, Hungary, 57-60.
+                    
+
+                    
+
+                        
+Schmidt, Thomas / Burghardt, Manuel 
+(2018): "An Evaluation of Lexicon-based Sentiment Analysis Techniques for the Plays of Gotthold Ephraim Lessing", in: 
+                        
+Proceedings of the Second Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature.
+ Santa Fe, New Mexico: Association for Computational Linguistics, 139-149.
+                    
+
+                    
+
+                        
+Schmidt, Thomas / Burghardt, Manuel / Dennerlein, Katrin 
+(2018a): "‘Kann man denn auch nicht lachend sehr ernsthaft sein?‘ – Zum Einsatz von Sentiment Analyse-Verfahren für die quantitative Untersuchung von Lessings Dramen", in: 
+                        
+Book of Abstracts, DHd 2018.
+
+                    
+
+                    
+
+                        
+Schmidt, Thomas / Burghardt, Manuel / Dennerlein, Katrin 
+(2018b): "Sentiment Annotation of Historic German Plays: An Empirical Study on Annotation Behavior.", in: Sandra Kübler, Heike Zinsmeister (eds.), 
+                        
+Proceedings of the Workshop on Annotation in Digital Humanities (annDH 2018).
+ Sofia, Bulgaria, 47-52.
+                    
+
+                    
+
+                        
+Schmidt, Thomas / Burghardt, Manuel / Dennerlein, Katrin / Wolff, Christian 
+(2019a): "Katharsis - A Tool for Computational Drametrics", in: 
+                        
+Book of Abstracts, Digital Humanities Conference 2019 (DH 2019)
+. Utrecht, Netherlands.
+                    
+
+                    
+
+                        
+Schmidt, Thomas / Burghardt, Manuel / Dennerlein, Katrin / Wolff, Christian 
+(2019b): "Sentiment Annotation in Lessing’s Plays: Towards a Language Resource for Sentiment Analysis on German Literary Texts", in: 
+                        
+2nd Conference on Language, Data and Knowledge (LDK 2019)
+. Leipzig, Germany.
+                    
+
+                    
+
+                        
+Schmidt, Thomas / Dennerlein, Katrin / Wolff, Christian 
+(2021a): "Emotion Classification in German Plays with Transformer-based Language Models Pretrained on Historical and Contemporary Language", in
+                        
+: Proceedings of the 5th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature
+, 67-79.
+                    
+
+                    
+
+                        
+Schmidt, Thomas / Dennerlein, Katrin / Wolff, Christian 
+(2021b): "Towards a Corpus of Historical German Plays with Emotion Annotations", in: 
+                        
+3rd Conference on Language, Data and Knowledge (LDK 2021)
+. Schloss Dagstuhl-Leibniz-Zentrum für Informatik.
+                    
+
+                    
+
+                        
+Schmidt, Thomas / Dennerlein, Katrin / Wolff, Christian 
+(2021c): "Using Deep Neural Networks for Emotion Analysis of 18th and 19th century German Plays", in: 
+                        
+Fabrikation von Erkenntnis: Experimente in den Digital Humanities
+. Melusina Press. DOI:10.26298/melusina.8f8w-y749-udlf
+                    
+
+                    
+
+                        
+Schmidt, Thomas / Winterl, Brigitte / Maul, Milena / Schark, Alina / Vlad, Andrea / Wolff, Christian 
+(2019): "Inter-Rater Agreement and Usability: A Comparative Evaluation of Annotation Tools for Sentiment Annotation", in: Draude, C., Lange, M. &amp; Sick, B. (Hrsg.), 
+                        
+INFORMATIK 2019: 50 Jahre Gesellschaft für Informatik – Informatik für Gesellschaft (Workshop-Beiträge)
+. Bonn: Gesellschaft für Informatik e.V., 121-133. DOI: 10.18420/inf2019_ws12
+                    
+
+                    
+
+                        
+Schonlau, Anja
+ (2017): 
+                        
+Emotionen im Dramentext: eine methodische Grundlegung mit exemplarischer Analyse zu Neid und Intrige 1750-1800
+. De Gruyter.
+                    
+
+                    
+
+                        
+Schulz, Georg-Michael
+ (1988): 
+                        
+Tugend, Gewalt und Tod: das Trauerspiel der Aufklärung und die Dramaturgie des Pathetischen und des Erhabenen
+. Niemeyer.
+                    
+
+                    
+
+                        
+Schwarz-Friesel, Monika
+ (2007): 
+Sprache und Emotion
+. Francke
+                    
+
+                    
+
+                        
+Schweter, Stefan
+ (2020): 
+Europeana BERT and ELECTRA models
+. https://doi.org/10.5281/zenodo.4275044.
+                    
+
+                    
+
+                        
+Schweter, Stefan / Baiter, Johannes
+ (2019): “Towards robust named entity recognition for historic german.", in: 
+                        
+arXiv preprint arXiv:1906.07592
+ (2019).
+                    
+
+                    
+
+                        
+Schweter, Stefan / März, Luisa 
+(2020): “Triple E-Effective Ensembling of Embeddings and Language Models for NER of Historical German.", in: 
+                        
+CLEF (Working Notes)
+.
+                    
+
+                    
+
+                        
+Sprugnoli, Rachele / Tonelli, Sara / Marchetti, Alessandro / Moretti, Giovanni
+ (2016): “Towards sentiment analysis for historical texts.", in: 
+                        
+Digital Scholarship in the Humanities
+ 31.4: 762-772.
+                    
+
+                    
+
+                        
+Tauschek, Markus
+: 
+                        
+Kulturerbe. Eine Einführung
+. Reimer 2013.
+                    
+
+                    
+
+                        
+Urchueguía, Cristina: 
+
+                        
+Allerliebste Ungeheuer: Deutsches komisches Singspiel 1760–1790
+. Stroemfeld 2015.
+                    
+
+                    
+
+                        
+Weiss-Schletterer
+ (2005): 
+                        
+Das Laster des Lachens. Ein Beitrag zur Genese der Ernsthaftigkeit im deutschen Bürgertum des 18. Jahrhunderts
+. Böhlau.
+                    
+
+                    
+
+                        
+Wiegmann, Hermann
+ (1987): 
+                        
+Die ästhetische Leidenschaft: Texte zur Affektenlehre im 17. und 18. Jahrhundert
+, herausgegeben von Hermann Wiegmann. Olms.
+                    
+
+                    
+
+                        
+Winko, Simone
+ (2003): 
+                        
+Kodierte Gefühle. Zu einer Poetik der Emotionen in lyrischen und poetologischen Texten um 1900
+. Erich Schmidt Verlag.
+                    
+
+                    
+
+                        
+Wood, Ian / McCrae, John / Andryushechkin, Vladimir / Buitelaar, Paul
+ (2018a): “A comparison of emotion annotation schemes and a new annotated data set.", in: 
+                        
+Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)
+.
+                    
+
+                    
+
+                        
+Wood, Ian / McCrae, John / Andryushechkin, Vladimir / Buitelaar, Paul
+ (2018b): “A comparison of emotion annotation approaches for text.", in 
+                        
+Information
+ 9.5: 117.
+                    
+
+                    
+
+                        
+Zehe, Albin / Becker, Martin / Hettinger, Lena / Hotho, Andreas / Reger, Isabella / Jannidis, Fotis
+ (2016): “Prediction of happy endings in German novels based on sentiment information.", in: 
+                        
+3rd Workshop on Interactions between Data Mining and Natural Language Processing, Riva del Garda, Italy
+.
+                    
+
+                    
+
+                        
+Zeller, Rosemarie
+ (2005): “Tragödientheorie, Tragödienpraxis und Leidenschaften“. In 
+                        
+Passion, Affekt und Leidenschaft in der Frühen Neuzeit
+, herausgegeben von Johann Anselm Steiger, Harrassowitz, Bd. II: 691–704.
+                    
+
+                
+
+            
+
+        
+
+    

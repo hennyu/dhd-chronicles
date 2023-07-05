@@ -1,0 +1,279 @@
+
+        
+
+            
+
+                
+Zielsetzung
+
+                
+Eine der großen Herausforderungen sowohl im Studium als auch in der Erfassung und Beschreibung geisteswissenschaftlicher Praktiken liegt in deren mangelnder Beobachtbarkeit (vgl. Spoerhase 2015: 59–61). Dieser Umstand wirkt sich nicht nur auf die wissenschaftstheoretische Erfassung der Forschungspraxis aus. Er schlägt sich ebenfalls signifikant in der unzureichenden Systematisierung zentraler Phänomene literarischer Kommunikation nieder. Ein prominentes Beispiel hierfür bildet die Kategorie literarischer Intertextualität: Bisherigen Ansätzen zur strukturierten Erfassung fehlt es durchweg an einer systematischen Koppelung von induktiv beobachteten Textmerkmalen (etwa in Heilmann 1998; Bauer Lucca 2001; Buß 2006) und übergeordneten Taxonomien. Letztere werden bislang lediglich punktuell durch konkrete Beispiele belegt (etwa Schulte-Middelich 1985, Genette 1993, Holthuis 1993). Zudem fehlt eine Beschreibungssprache, die den sich dabei vollziehenden Abstraktionsprozess nachvollziehbar macht. 
+
+                
+Im Projekt 
+                    
+FormIt
+ kommen verschiedene Repräsentations-Modi zum Einsatz, um den beiden wechselwirkenden Herausforderungen der mangelnden Sichtbarkeit und Konkretisierung zu begegnen. Die Praxis der Herstellung und Interpretation intertextueller Beziehungen zwischen literarischen Texten wird mithilfe digitaler Methoden und Werkzeuge präzisiert und für Dritte beobachtbar gemacht. Dies geschieht anhand der konsequenten Verknüpfung der Ebenen, auf denen sich intertextuelle „Schreibweisen“ (Verweyen/Wittig 2010: 38) im Text manifestieren, mit den Schlussfolgerungen darüber, „was das Charakteristikum ‚Intertextualität‘ konkret für einen Text bedeutet“ (Kocher 2007: 180). Ziel ist es, anhand einer multidirektionalen Verbindung zwischen Texten und Deutungen den Prozess der Abstraktion von intertextuellen Funktionsweisen zu konkretisieren und zu explizieren.
+                
+
+                
+Auf dem Poster wird der hierfür bislang implementierte Workflow präsentiert und dabei anhand von Beispielen gezeigt, wie sich mittels dieser Vorgehensweise sowohl intertextuelle Beziehungen zwischen literarischen Texten als auch zwischen unterschiedlichen medialen Erscheinungsformen strukturiert beschreiben und darstellen lassen.
+
+            
+
+            
+
+                
+Vorgehensweise
+
+                
+Zunächst wurde im Rahmen des Projekts eine 
+                    
+digitale Methode
+ zur Erfassung literaturwissenschaftlicher Bedeutungsbildung erarbeitet (vgl. Nantke/Schlupkothen 2018), die stetig weiterentwickelt wird. Dabei werden mithilfe eines situationstheoretischen Formalismus (vgl. Barwise/Perry 1983; Devlin 1990) analytisch-interpretative Lektürepraktiken mathematisch beschrieben, was eine Übersetzung in ein maschinenlesbares Format ermöglicht. Dieser Ansatz wurde im Sinne einer 
+                    
+digitalen Praxis
+ dahingehend weiterentwickelt, dass die formale Beschreibung in eine Linkbase (Maler u.a. 2010: 2.3) integriert wurde. Diese Arbeitsumgebung dient der multimodalen Erfassung sowie der intuitiven Repräsentation der analytisch-interpretativen Textarbeit. Perspektivisch soll dieser Prozessablauf durch ein Abfrage-Modell ergänzt werden, welches materialbasierte Aussagen bezüglich übergeordneter Kategorien und Funktionsweisen von Intertextualität auf der Basis von SPARQL (Seaborne/Harris 2013) ermöglicht (vgl. Abbildung 1).
+                
+
+                
+
+                    
+
+                    
+ Abbildung 1. Schematische Darstellung des vollständigen Workflows
+
+                
+
+                
+Das Projekt basiert in Erfassung, Abfrage und Darstellung der Daten konsequent auf W3C-Standards (XML-Editoren, SPARQL-Interpreter, Webbrowser). Dies gewährleistet die Einbindung in ein existierendes Software-‚Ökosystem‘ und somit die Nachhaltigkeit und Interoperabilität der erzeugten Datensätze.
+
+            
+
+            
+
+                
+Multimodale Arbeitsumgebung
+
+                
+Zur Analyse der intertextuellen Phänomene wurde eine Linkbase erzeugt, in der auf der Grundlage von XLink (Maler u.a. 2010) die bei der Feststellung und Deutung intertextueller Schreibweisen erfolgenden Arbeits- und Abstraktionsschritte erfasst sowie modular und multimodal repräsentiert werden können. Auf diese Weise werden die interpretatorischen Prozesse bei der Herstellung intertextueller Beziehungen in systematischer Form nachvollziehbar gemacht.
+
+                
+Die Linkbase ermöglicht die dynamische Verknüpfung der Textstellen mit der natürlichsprachlichen Erläuterung und der formalen Beschreibung der intertextuellen Beziehung (s. Abbildung 2).
+
+                
+
+                    
+
+                    
+ Abbildung 2. XLink-Beschreibung einer intertextuellen Relation in der Linkbase (a) und ihre schematische Darstellung (b)
+
+                
+
+                
+In der Webbrowser-Darstellung der Linkbase werden die gesteigerten Möglichkeiten genutzt, die eine digitale Repräsentation hinsichtlich der Integration verschiedener Lektüre-Modi bietet. Die variabel kombinierbaren Segmente auf der Benutzeroberfläche ermöglichen die Repräsentation der Ausgangstexte in ihrer jeweils spezifischen Modalität. Hierbei können entweder die Texte sowie die formale Beschreibung einzeln gelesen oder gezielt spezifische Links traversiert werden (s. Abbildung 3). 
+
+                
+
+                    
+
+                    
+Abbildung 3. Multimodale Darstellung der intertextuellen Relation
+
+                
+
+                
+Die Gestaltung der Benutzeroberfläche trägt der Annahme Rechnung, dass eine solche multimodale Kombination aus Lesen, visueller Erfassung und hypertextueller Nachverfolgung der textuellen Relationen sowie aus natürlichsprachlicher und formaler Beschreibung einen maßgeblichen heuristischen Mehrwert sowohl gegenüber einer rein beschreibenden Darstellung in schriftlicher Form als auch gegenüber einer rein auf Maschinenlesbarkeit gerichteten formalen Repräsentation bietet.
+
+            
+
+            
+
+                
+Fazit und Ausblick
+
+                
+Der dargestellte Workflow dient nicht nur der systematischen Modellierung intertextueller Beziehungen, sondern dokumentiert gleichzeitig den Prozess der dabei vollzogenen literaturwissenschaftlichen Praktiken. 
+
+                
+Multimodalität spielt hierbei in doppelter Hinsicht eine zentrale Rolle: 
+
+                
+Erstens werden die digitale Repräsentation der Ausgangstexte, die natürlichsprachliche und die formale Beschreibung der intertextuellen Relationen sowie diagrammatische Visualisierungen (vgl. Huber/Krämer 2018: 30) der hergestellten Zusammenhänge zwischen den einzelnen Segmenten auf der Benutzeroberfläche kombiniert.
+
+                
+Zweitens unterstützt der Workflow die Erfassung von Relationen zwischen reinen Schriftdokumenten ebenso wie die Modellierung von Beziehungen zwischen modal differenten Dokumenttypen wie etwa zwischen Texten, Comics und Filmen. 
+
+                
+Das Projekt zielt gleichermaßen auf einen Einsatz im hochschuldidaktischen Bereich wie auf die Nutzung im Rahmen der computergestützten Forschung auf dem Feld der literarischen Intertextualität. Um dieses zweifache Ziel zu erreichen, werden aktuell Lösungen für die funktionale Visualisierung der in der Linkbase gespeicherten Ergebnisse in einem adäquaten Präsentationsformat sowie für die Überführung der formalen Beschreibungen in OWL erarbeitet (vgl. Abbildung 1; erste Ansätze hierzu in Kokar/Matheus/Baclawski 2009).
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Barwise, Jon / Perry, John (1983)
+: 
+Situations and Attitudes
+. Cambridge: Bradford Book, MIT Press.
+                    
+
+                    
+
+                        
+Bauer Lucca, Eva (2001)
+: 
+Versteckte Spuren: eine intertextuelle Annäherung an Thomas Manns Roman “Doktor Faustus”
+. Wiesbaden: Deutscher Universitätsverlag.
+                    
+
+                    
+
+                        
+Buß, Angelika (2006)
+: 
+Intertextualität als Herausforderung für den Literaturunterricht. Am Beispiel von Patrick Süßkinds Das Parfum
+. Frankfurt a. M. u.a.: Peter Lang.
+                    
+
+                    
+
+                        
+Devlin, Keith J. (1990)
+: 
+Logic and Information
+. Cambridge: Cambridge University Press.
+                    
+
+                    
+
+                        
+Genette, Gérard (1993)
+: 
+Palimpseste. Die Literatur auf zweiter Stufe
+. Frankfurt a. M.: Suhrkamp.
+                    
+
+                    
+
+                        
+Heilmann, Iris (1998)
+: 
+Günter Grass und John Irving. Eine transatlantische Intertextualitätsstudie.
+ Frankfurt a. M. u.a.: Peter Lang.
+                    
+
+                    
+
+                        
+Huber, Martin / Krämer, Sybille (2018)
+: 
+“Dimensionen digitaler Geisteswissenschaften”
+, in: 
+Huber, Martin / Krämer Sybille (eds.)
+: 
+Wie Digitalität die Geisteswissenschaften verändert: Neue Forschungsgegenstände und Methoden
+. (= Sonderband der Zeitschrift für digitale Geisteswissenschaften; 3) DOI: 10.17175/sb003_013.
+                    
+
+                    
+
+                        
+Kocher, Ursula (2007)
+: 
+“Im Gewirr der Fäden: Intertextualitätstheorie und Edition”
+, in: 
+Falk, Rainer / Mattenklott, Gert (eds.)
+: 
+Ästhetische Erfahrung und Edition
+. Tübingen: Max Niemeyer, 175–185.
+                    
+
+                    
+
+                        
+Kokar, Mieczyslaw M. / Matheus, Christopher J. / Baclawski, Kenneth (2009)
+: 
+“Ontology-based situation awareness”
+, in: Information Fusion 10, 1. St. Louis, MO, USA: Elsevier, 83–98.
+                    
+
+                    
+
+                        
+Maler, Eve / Walsh, Norman / Orchard, David / DeRose, Steven (2010)
+: 
+„XML Linking Language (XLink) Version 1.1“
+. W3C Recommendation. https://www.w3.org/TR/2010/REC-xlink11-20100506/.
+                    
+
+                    
+
+                        
+Nantke, Julia / Schlupkothen, Frederik (2018)
+: 
+“Zwischen Polysemie und Formalisierung: Mehrstufige Modellierung komplexer intertextueller Relationen als Annäherung an ein ‚literarisches‘ Semantic Web”
+, in: Konferenzabstracts DHd 2018 Kritik der digitalen Vernunft
+http://dhd2018.uni-koeln.de/wp-content/uploads/boa-DHd2018-web-ISBN.pdf
+, 345–349.
+                    
+
+                    
+
+                        
+Schulte-Middelich, Bernd
+ (1985): “Funktionen intertextueller Textkonstitution”, in: Ulrich Broich, Manfred Pfister (eds.): 
+                        
+Intertextualität. Formen, Funktionen, anglistische Fallstudien
+. Tübingen: Niemeyer, 197–242.
+                    
+
+                    
+
+                        
+Seaborne, Andy / Harris, Steven (2013)
+: 
+“SPARQL 1.1 Query Language. W3C Recommendation”
+. https://www.w3.org/TR/2013/REC-sparql11-query-20130321/.
+                    
+
+                    
+
+                        
+Spoerhase, Carlos (2015)
+: 
+“Das ‚Laboratorium‘ der Philologie? Das philologische Seminar als Raum der Vermittlung von Praxiswissen (circa 1850–1900)”
+, in: 
+Andrea Albrecht, Lutz Danneberg, Olav Krämer und Carlos Spoerhase (eds.)
+: 
+Theorien, Methoden und Praktiken des Interpretierens
+. Berlin/München/Boston: De Gruyter, 53–80.
+                    
+
+                    
+
+                        
+Verweyen, Theodor / Wittig, Gunther (2010)
+: 
+Einfache Formen der Intertextualität: Theoretische Überlegungen und historische Untersuchungen
+. Paderborn: mentis.
+                    
+
+                
+
+            
+
+        
+
+    

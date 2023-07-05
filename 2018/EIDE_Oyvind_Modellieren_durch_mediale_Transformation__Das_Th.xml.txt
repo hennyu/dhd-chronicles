@@ -1,0 +1,470 @@
+
+        
+
+            
+
+                
+Einleitung
+
+                
+Die Konstruktion und Vorstellung einer artifiziell-medial vermittelten virtuellen Realität als Erweiterung, gar Gegenstück zur individuell psychisch- und physisch konstruierten Wahrnehmungswelt findet ihre umfangreiche narrative Beschreibung zunächst in Science-Fiction Erzählungen des ausgehenden zwanzigsten Jahrhunderts mit Konzepten wie Stanislaw Lems “Periphere Phantomatik” (Lem: 1981), William Gibsons “Cyberspace” (Gibson: 1995) oder virtueller “Metaversen” (Stephenson: 1992).
+
+                
+Wenige Jahrzehnte nach der vielversprechenden Darstellung virtueller Realitäten in der Mitte der 1990er Jahre lässt sich eine Begeisterung für sowohl kommerzielle VR-Lösungen wie Nintendos 
+                    
+Virtual Boy
+ (McFerran 2017) als auch geisteswissenschaftliche VR-Entwürfe konstatieren, um kulturelles Erbe innovativ erfahrbar zu machen. Gegenwärtige elaborierte Interaktionstechnologien wie 
+                    
+Oculus Rift
+ (Oculus VR 2018), 
+                    
+HTC Vive
+ (HTC Corporation 2018) oder 
+                    
+Google Cardboard
+ (Google 2018) machen virtuelle Welten erfahr- und interagierbar. Performante Spiel-Engines sowie Entwicklungsschnittstellen wie 
+                    
+Unity
+ (Unity Technologies 2018), 
+                    
+WebVR 
+(WebVR 2018), A-Frame (A-Frame 2018) und 
+                    
+ReactVR
+ (React VR 2018) stellen das leicht zugängliche Handwerkszeug bereit, um virtuelle Welten zum Leben zu erwecken und mit Inhalten zu füllen.
+                
+
+                
+Fand die Weiterentwicklung von VR-Hardware und VR-Software in den vergangenen Jahren in gar schwindelerregender Geschwindigkeit statt, so steckt die theoretische Durchdringung virtueller Welten in ihren Kinderschuhen: Auf welche Art und Weise transformieren Anwendungen der virtuellen Realität Narrationen, Geschichte und Geschichten, um sie Anwenderinnen und Anwendern (virtuell) erfahrbar zu machen? Vermögen es virtuelle Welten, Inhalte und Fragestellungen digitaler Geisteswissenschaften adäquat bereitzustellen und zu formulieren? Welche Interaktions- und Wahrnehmungsmechanismen bieten virtuelle Welten?
+
+                
+Das Institut für Digital Humanities der Universität zu Köln führt seit mehreren Semestern Lehrveranstaltungen durch, in denen die Theorie um Medialität im Kontext virtueller Welten reflektiert und von Studierenden des vom Institut angebotenen Verbundsstudienganges Medieninformatik / Medienkulturwissenschaften praktisch erprobt wird. Ein zentrales Ziel ist es, dabei den Einfluss von Virtual Reality (VR) auf die Modellierung von Inhalten und Narrationen zu ergründen. Anhand der durchgeführten Lehrveranstaltungen offenbarten sich grundlegende Forschungsfragen für die digitalen Geisteswissenschaften in der Beschäftigung mit Modellierung und der Transformation geisteswissenschaftlicher Inhalte. 
+
+                
+Die nachfolgenden Ausführungen geben zunächst einen kurzen Überblick über die durchgeführten Lehrveranstaltungen und die eingesetzten Technologien. Anschließend wird mit dem Brechtschen Theater der Gegenstand der Lehrveranstaltungen eigens vorgestellt und über besondere Herausforderungen bei der Transformation durch Implementation eines 
+                    
+virtuellen
+ epischen Theaters informiert. Schließlich wird der Prozess der medialen Transformation und der Modellierung reflektiert.
+                
+
+            
+
+            
+
+                
+Virtual Reality und Digital Humanities - Ein Lehrangebot an der Universität zu Köln
+
+                
+Das Institut für Digital Humanities bot in der jüngsten Vergangenheit und aktuell eine Folge von unterschiedlichen Lehrveranstaltungen
+                    
+ an, die von den Studierenden äußerst positiv wahrgenommen, zahlreich belegt und durch praktische Umsetzungen von VR Anwendungen erfolgreich abgeschlossen wurden. Durch den Fokus auf zeitgemäße neue Frameworks wie dem im Folgenden vorgestellten WebVR-Framework 
+                    
+A-Frame
+ und der Nutzung von 
+                    
+Cardboards
+ wurde die Einstiegshürde für die Implementation eigener VR-Umgebungen reduziert.
+                
+
+                
+Boten frühe Entwicklungen und Standards wie die 1994 vorgestellte 
+                    
+Virtual Reality Modeling Language (VRML)
+ (Techopedia Inc. 2018) oder ihr 2004 zum ISO-Standard erhobener Nachfolger 
+                    
+X3D
+ (Brutzman 2018) basale Möglichkeiten in der Umsetzung browserbasierter virtueller Welten, so intendiert das seit 2016 entwickelte und kostenfrei bereitgestellte WebVR-Framework 
+                    
+A-Frame
+, den praktischen Zugang zu browserbasierter VR zu erleichtern, indem es die Nutzung neuartiger Browsertechnologien wie 
+                    
+WebVR
+ und 
+                    
+WebGL
+ (WebGL Public Wiki contributors 2018) vereinfacht. So sind einzig HTML- und JavaScript-Kenntnisse vonnöten, um erste basale VR-Umgebung zu realisieren.
+                
+
+            
+
+            
+
+                
+Inhalte für virtuelle Realitäten
+
+                
+Die Vorstellung, durch das Erleben der Virtuellen Realität vollständig in eine andere Welt einzutauchen und diese als real zu empfinden, wird mit dem Begriff der Immersion beschrieben. Das Konzept der Immersion, wie es im Anwendungsfeld virtueller Welten definiert ist, unterscheidet sich dabei vom Film, der in der Lage ist, eine Szene durch die Aufnahme bewegter Bilder zu spiegeln und die Wirklichkeit für den Zuschauer abzubilden.
+                    
+ Der erfahrbare Raum der virtuellen Realität muss nicht notwendig der Erfahrungs- und Wahrnehmungswelt des Anwenders entsprechen. Er ergibt sich auch nicht unmittelbar aus einem möglichst genauen virtuellen Abbild der realen Welt, wenn er für den Nutzer ein immersives Erlebnis erzeugen soll. Eine starke immersive Erfahrung für den Nutzer muss nicht bedeuten, dass dieser den Eindruck gewinnt, sich an einem anderen Ort oder zu einem anderen Zeitpunkt in der bekannten Realität aufzuhalten. Es soll vielmehr der Eindruck entstehen in einer alternativen Realität präsent zu sein, die eben nicht der tatsächlichen Umgebung, der Welt der physischen Gegeben- und Anwesenheit entspricht und diese damit erfahrbar zu machen. Die Immersion ergibt sich einerseits durch Interaktionsmöglichkeiten der NutzerInnen mit der virtuellen Welt, andererseits aus einer vollständigen Beschlagnahmung all ihrer visuellen und gegebenenfalls auch akustischen Eindrücke.
+                
+
+                
+Derzeitige VR Hard- und Software zeigt die Grenzen der Immersion durch VR schnell auf. Während beeindruckende Fortschritte gemacht wurden, bleibt das “Gehirn im Tank” vorerst ein nicht erlebbares Gedankenexperiment. Erlebbar sind hingegen Simulationen, Rekonstruktionen, Demonstrationen in Form von Spielen und dreidimensionale Modelle, die für unterschiedliche Zwecke erstellt wurden. Derzeit werden viele unterschiedliche Anwendungskontexte erprobt und erschlossen. Eine zentrale Frage ist dabei: Welche Inhalte könnten sich noch für eine Virtuelle Darstellung eignen und was passiert, wenn Narration oder Geschichten übertragen werden sollen (vgl. Ryan 2015)?
+
+                
+Bemüht man an dieser Stelle erneut den Vergleich zum Film und betrachtet Produktionen des noch jungen Mediums zu Beginn des 20. Jahrhunderts, so finden sich Theaterverfilmungen, die belegen, dass massiv gekürzte Stücke als Stofflieferant herhalten mussten. Kino und Theater, beides Orte der darstellenden Kunst, treten im Zeitalter der technischen Reproduzierbarkeit in Konkurrenz zueinander. Sie grenzen sich dabei im Laufe der Zeit einerseits voneinander ab, können sich aber andererseits auch ergänzen, wie Theaterproduktionen zeigen, in denen Film eingesetzt wird. Der Hintergrund dafür war weniger die inhaltliche Übertragung (Theaterstücke als Stoff für das Kino) als die Tatsache, dass der Film damals, im Gegensatz zum Theater, Handlungen und Menschen in ihrer unmittelbaren, “wirklichen” Umgebung zeigen kann (Lang 2006).
+
+                
+Bertolt Brecht entwickelte in diesem Kontext des Theaters des 20. Jahrhunderts eine vollständige Theaterästhetik. In seinem Theater, das als episches Theater bekannt wurde, soll das Spiel im Theater immer als inszeniertes Spiel für den Zuschauer erkennbar sein. Die Wirklichkeit soll nicht als Illusion abgebildet werden, denn für Brecht sagt die einfache Wiedergabe der Realität weniger denn je über die Realität aus. Gerade das macht die Theaterstücke Brechts in Anbetracht der Immersion als Grundlage für Inhalte der virtuellen Realität interessant, da die Immersion nicht durch eine realistische Abbildung der realen Welt und Umgebung geschaffen werden soll. Die Fragestellung, was geschieht, wenn VR zeigt, dass etwas gezeigt wird, verspricht neue Erkenntnisse über diese Form der Darstellung selbst. 
+
+                
+Die ästhetische Wirkung des Brechtschen Theaters ist augenscheinlich nicht immersiv. Allerdings kann ein Realitätsgefühl nur dann gebrochen werden, wenn es sich zuvor etabliert hat. Daraus ergibt sich die Frage, ob das Herstellen von Immersion möglicherweise auch in solchen Kunstrichtungen möglich erscheint. Die Überlegung dabei ist, dass Handlung und distanzierte Darbietung eine neue kritische Haltung des Zuschauers entstehen lassen können (Lang: 2006).
+
+                
+Anlässlich dieser Überlegungen und der geschilderten neuen Möglichkeiten durch die Entwicklungen der Technologie für VR wurden die Lehrveranstaltungen konzipiert. Dabei sollten von Teilnehmerinnen und Teilnehmern der Veranstaltungen VR-Anwendungen entwickelt werden, die Theaterstücke von Brecht in eine neue audiovisuelle virtuelle Welt übertragen. Die Beispiele, Erfahrungen und die Reflexion hinsichtlich der umgesetzten Projekte waren unterschiedlich und überraschend und sollen in diesem Vortrag genauer geschildert werden. 
+
+            
+
+            
+
+                
+Fazit
+
+                
+Als Grundlage für die Modellierung der Projekte und für die Erkenntnisse, die sich aus den Lehrveranstaltungen ergaben, wurde zunächst die zentrale Frage gestellt, welche Interaktionsmöglichkeiten und Darstellungsmöglichkeiten sich mit und in virtuellen Realitäten bieten. Das Ziel war die Überprüfung der These, dass räumliche Illusionsbildung soweit gesteigert werden kann, dass Nutzerinnen und Nutzer mit dem virtuellen Raum interagieren. Anschließend wurden Kategorien Langs umfassender Studie zu Verfilmungen Brechtscher Theaterstücke betrachtet, um diese in einem weiteren Schritt nicht einzig auf Theater und Film zu beziehen, sondern um virtuelle Realität(en) zu erweitern. Die vorliegende Ausarbeitung intendiert demnach, die Gegenüberstellung der Prozesse des Vorführens vs. des Abbildens zu analysieren, indem adäquate Differenzierungen vorgenommen und untersucht werden:
+
+                
+
+                    
+Ausgangssituation: live vs. vorproduziert
+
+                    
+Textgrundlage: aussprechen vs. zeigen
+
+                    
+Szenerie: funktional vs. illusionistisch
+
+                    
+Licht: Sichtbarkeit vs. Stimmung 
+
+                    
+Bild: eigener Blick vs. festgelegte Einstellungsfolge
+
+                    
+Ton: unmittelbar vs. synthetisch
+
+                    
+Montage: sichtbarer Einschnitt vs. unsichtbarer Schnitt
+
+                
+
+                
+                            
+
+                                
+
+                            
+
+                            
+
+                                
+
+                            
+
+                            
+
+                                
+
+                            
+
+                            
+
+                                
+
+                            
+
+                            
+
+                                
+
+                            
+
+                            
+
+                                
+
+                            
+
+                
+Die Ergebnisse der Veranstaltung werden in diesem Vortrag aus zwei unterschiedlichen Perspektiven analysiert. Einerseits wird die Theorie der Modellierung angewendet, wie sie maßgeblich in den Digitalen Geisteswissenschaften entwickelt wurde, basierend auf einer semiotisch-analytischen Grundlage (Kralemann und Lattmann 2014; Ciula und Eide 2017). Andererseits wird das Konzept der „media transformations” (Elleström 2014) herangezogen, um zu analysieren, wie auf unterschiedliche Weise eine virtuelle Realität, basierend auf einem Theaterstück auf der Achse zwischen „media representation” und „transmediation” (Elleström 2014), verstanden werden kann. Im Kontext des Vortrags wird verdeutlicht, wie diese beiden zusammenwirken können, um zu zeigen, welche Prozesse wir in den Lehrveranstaltungen beobachten konnten. 
+
+                
+
+                    
+
+                
+
+            
+
+        
+
+        
+
+         
+
+            
+ Visualisierung mit JavaScript”, “Media Transformation I – Theater als Virtual Reality (VR) Erfahrung“ und “Media Transformation II - Social VR and Interactive Storytelling in Virtual Reality”, durchgeführt im Wintersemester 2016 / 2017 und im anschließenden Sommersemester 2017
+
+            
+ Es existiert eine komplexe Beziehung zwischen Immersion und ästhetischen Konzepten unterschiedlicher künstlerischer Arbeiten, auf die in diesem Kontext nicht ausführlicher eingegangen werden kann. 
+
+         
+
+         
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+A-Frame
+ (2018). “A-Frame - Make WebVR.” Mozilla Corporation. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+https://aframe.io/
+
+                        
+.
+                    
+
+                    
+
+                        
+Brecht, Bertolt
+ (1989): “Der gute Mensch von Sezuan”, in: 
+                        
+Werke.
+ Große kommentierte Berliner und Frankfurter Ausgabe, herausgegeben von Werner Hecht, Jan Knopf, Werner Mittenzwei und Klaus-Detlef Müller, Band 6: Stücke 6, bearbeitet von Klaus-Detlef Müller. Frankfurt am Main: Suhrkamp Verlag: 175-279, 280 f.
+                    
+
+                    
+
+                        
+Brutzman, Don
+ (2018). “Applications, Players and Plugins for X3D / VRML Viewing”. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+http://www.web3d.org/x3d/content/examples/X3dResources.html
+
+                        
+.
+                    
+
+                    
+
+                        
+Ciula, Arianna / Eide, Øyvind
+ (2017): “Modelling in Digital Humanities: Signs in Context”, in: 
+                        
+Digital Scholarship in the Humanities
+ 32: i33–i46. 10.1093/llc/fqw045
+                    
+
+                    
+
+                        
+Elleström, Lars
+ (2014): 
+                        
+Media Transformation. The Transfer of Media Characteristics among Media. 
+Houndmills, Basingstoke, Hampshire: Palgrave Macmillan.
+                    
+
+                    
+
+                        
+Gibson, William
+ (1995): “Burning chrome”, in
+                        
+ “Burning chrome and other stories
+”. London: Voyager. First published: 
+                        
+Omni
+, 1982.
+                    
+
+                    
+
+                        
+Google
+ (2018). “Google Cardboard.” Google VR. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+https://vr.google.com/cardboard/
+
+                        
+.
+                    
+
+                    
+
+                        
+HTC Corporation
+ (2018). “Vive”. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+https://www.vive.com/de/
+
+                        
+.
+                    
+
+                    
+
+                        
+Kralemann, Björn / Lattmann, Claas
+ (2013): “Models as icons: modeling models in the semiotic framework of Peirce’s theory of signs.” 
+                        
+Synthese,
+ 190: 3397–3420.
+                    
+
+                    
+
+                        
+Lang, Joachim
+ (2006): “Episches Theater als Film”. Würzburg: Verlag Königshausen &amp; Neumann GmbH, 2006.
+                    
+
+                    
+
+                        
+Lem, Stanislaw
+ (1981): “
+                        
+Summa technologieae
+”. Berlin: Suhrkamp Verlag.
+                    
+
+                    
+
+                        
+McFerran, Damien
+. 2017. “The Nintendo Virtual Boy Could Be Getting New Software.” nintendolife.com. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+http://www.nintendolife.com/news/2017/10/the_nintendo_virtual_boy_could_be_getting_new_software
+.
+                        
+
+                    
+
+                    
+
+                        
+Oculus VR, LLC
+ (2018). “oculus rift”. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+https://www.oculus.com/rift/
+
+                        
+.
+                    
+
+                    
+
+                        
+React VR
+ (2018). “React VR: Build VR websites and interactive 360 experiences with React.” Facebook. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+https://aframe.io/
+
+                        
+.
+                    
+
+                    
+
+                        
+Ryan, Marie-Laure
+ (2015): 
+                        
+Narrative as Virtual Reality 2
+. Baltimore: John Hopkins University Press.
+                    
+
+                    
+
+                        
+Stephenson, Neal
+ (1992): 
+                        
+Snow Crash.
+ New York: Bantam Books.
+                    
+
+                    
+
+                        
+Techopedia Inc
+ (2018). “Virtual Reality Modeling Language (VRML)”. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+https://www.techopedia.com/definition/4808/virtual-reality-modeling-language-vrml
+
+                        
+.
+                    
+
+                    
+
+                        
+Unity Technologies
+ (2018). “Unity - Game Engine.” Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+https://unity3d.com/de/
+
+                        
+.
+                    
+
+                    
+
+                        
+WebGL Public Wiki contributors
+ (2018). "Getting Started," WebGL Public Wiki. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+http://www.khronos.org/webgl/wiki_1_15/index.php?title=Getting_Started&amp;oldid=371
+
+                        
+.
+                    
+
+                    
+
+                        
+WebVR
+ (2018). “Bringing Virtual Reality to the Web”. Letzter Zugriff Januar 12, 2018. 
+                        
+
+                            
+https://webvr.info/
+
+                        
+.
+                    
+
+                
+
+            
+
+      
+
+    

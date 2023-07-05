@@ -1,0 +1,125 @@
+
+
+
+
+
+
+Die Entschlüsselung mittelalterlicher Datumsangaben setzt eine intensive Kenntnis des christlichen Oster- und Heiligenkalenders voraus. Historiker stützen sich bei der Berechnung von Zeitangaben in Handschriften und Urkunden, die in der Regel auf der Nennung von Kirchenfesten und deren Feier in bestimmten Regionen und Diözesen aufbauen, auf einschlägige Hilfsmittel, insbesondere den “Grotefend”. Zwischen 1891 und 1898 veröffentlicht der Historiker und Archivar Hermann Grotefend (1845-1931) sein Werk 
+
+
+
+
+Zeitrechnung des deutschen Mittelalters und der Neuzeit
+
+
+
+
+ in zwei Bänden, um damit sein veraltetes 
+
+
+
+
+Handbuch der historischen Chronologie
+
+
+
+
+ zu ersetzen. Es ist gleichzeitig die Quelle für das wiederholt aufgelegte auf die tägliche Praxis ausgerichtete 
+
+
+
+
+Taschenbuch der Zeitrechnung des deutschen Mittelalters und der Neuzeit
+
+
+
+
+. Grotefends Monumentalwerk ist 2004 vom Archivar Horst Ruth retrodigitalisiert, für die Darstellung in HTML aufbereitet und – vor allem im Bereich des Heiligenverzeichnisses, das die Namen der Feste/Heiligen mit kalendarischen Daten und Ortsangaben verknüpft, – um eigene Forschungsergebnisse erweitert worden. Diese elektronische Ressource ist seit ihrer Entstehung ein beliebtes und einschlägig bekanntes Hilfsmittel. Darauf baut auch die semantische Modellierung des Grotefendschen Heiligenverzeichnisses auf: Die digitale Ressource des Grotefend wird durch semiautomatische Annotation (mithilfe von regulären Ausdrücken und XSLT) am Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities (ZIM-ACDH) als Semantic Web Resource (RDF) veröffentlicht.
+
+
+
+
+Diese semantische Modellierung soll ermöglichen, Festkalenderangaben aus unterschiedlichen Kontexten eindeutig zu referenzieren. Damit kann eine verteilte Ressource aus den originalen Daten des Grotefend und RDF-Repräsentation von historisch belegten Kalendarien entstehen, die für kalenderbasierte Anwendungen nutzbar ist. Als Beispielanwendungen dienen eine digitale Kalenderedition (Teil der digitalen Edition des Tegernseer Wirtschaftsbuchs am Institut für Germanistik der Karl-Franzens-Universität Graz) und insbesondere das Projekt “Cantus Network - libri ordinarii of the Salzburg metropolitan province” der Österreichischen Akademie der Wissenschaften und des ZIM-ACDH. In letzterem werden mittelalterliche Libri ordinarii, deren liturgische Kalender bestimmten Regionen zugewiesen werden können, in XML modelliert und online publiziert. Durch den Abgleich mit dem Standardwerk zur historischen Datumsbestimmung können die Daten zu den einzelnen Heiligen, ihren Festtagen im Jahreskreis und ihrem jeweiligen regionalen Geltungsbereich durch die jeweiligen Handschriften der Libri ordinarii historisch verankert werden.
+
+
+Ziel der Grotefend-Bearbeitung ist also, den digitalen Datenbestand nicht mehr nur als Text sondern auch als Forschungsdatenbank online zur Verfügung zustellen. Der Zugriff darauf soll über manuelle Suchabfragen von Heiligendaten ebenso wie über ein frei verfügbares Webservice als API möglich sein. Nach der semi-automatischen Modellierung des Grotefend ist eine Implementierung der Ressource für den automatischen Vergleich von regional unterschiedlichen Kalendern vorgesehen. Bei einer derartigen Anwendung wird es möglich sein, die Beziehungen zwischen eindeutig referenzierbaren Heiligennamen, deren Festen (bzw. den dazugehörigen Kalenderdaten) und den davon betroffenen Regionen (Wirkungsbereiche, Diözesen, Orden) zu erkennen und grafisch darzustellen.
+
+
+Das für die Konferenz geplante Poster legt den Fokus auf die Modellierung des Standardwerks in RDF und die daraus resultierenden Möglichkeiten für eine komplexe Suchoberfläche. Als Leitfragen stehen im Mittelpunkt: Wie weit können wenig strukturierte Textdaten möglichst automatisiert modelliert werden? Wie und mit welchem Aufwand sind komplexe, technisch unstrukturierte Daten in eine graphenbasierte Struktur zu überführen? Was sind die Voraussetzungen für die automatisierte Anreicherung von mittelalterlichen Kalendern?
+
+
+Dabei werden aktuelle Methoden der digitalen Geisteswissenschaften angewandt: die Modellierung aller Daten in XML, die automatisierte Konvertierung der Kalenderdaten und des Grotefend in ein passendes RDF-Modell, die Zusammenführung dieser Datenquellen in einem Triplestore, die kontinuierliche Erweiterung der Datenbasis, die Abfrage der Daten mittels SPARQL. 
+
+
+Die damit geschaffene Ressource zur Bestimmung historischer Datumsangaben wird nach ihrer Fertigstellung der Öffentlichkeit frei zur Verfügung gestellt und soll durch die Modellierung in RDF Anreize bieten, weitere Kalendariendaten weltweit als Linked Open Data zur Verfügung zu stellen und somit zu einem großen gemeinsamen Datenbestand beitragen. Einen Anfang macht das Projekt, in dem es die Daten aus cantusdatabase.org, der Standardressouce zur Liturgieforschung, in RDF verwandelt und mit den Daten aus dem “großen Grotefend” verknüpft.
+
+
+
+
+
+
+
+
+
+
+Bibliographie
+
+
+
+
+Grotefend, Hermann
+ (1970):
+                        
+Zeitrechnung des deutschen Mittelalters und der Neuzeit
+.
+                        2 Bände.
+                        Neudruck: Aalen [Hannover 1891–1898].
+                    
+
+
+
+
+Grotefend, Hermann
+ (1891–1898):
+                        
+Zeitrechnung des deutschen Mittelalters und der Neuzeit
+.
+                        2 Bände.
+                        1891-1898. [Digitalisiert von Horst Ruth 2004].
+                        
+http://bilder.manuscripta-mediaevalia.de/gaeste//Grotefend/kopf.htm
+ [letzter Zugriff 16. August 2016].
+                    
+
+
+
+
+W3C
+ (2004): 
+                        
+Resource Description Framework (RDF)
+. 
+                        
+https://www.w3.org/RDF/
+.
+                    
+
+
+
+
+Ulrich, Theodor
+ (1966):
+                        „Grotefend, Hermann“, 
+                        in:
+                        
+Neue Deutsche Biographie
+ 7.
+                        Berlin 165 f.
+
+
+
+
+
+
+
+

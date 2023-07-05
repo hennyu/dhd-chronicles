@@ -1,0 +1,1520 @@
+
+        
+
+            
+
+                
+Das Spiel
+
+                
+ ist mehr als ein selbstgenügsamer Zeitvertreib für Kinder und Kind Gebliebene (Huizinga 1956). Längst, und substanziell beeinflusst durch die Genese neuerer, digitaler Spielformen, etabliert es sich als Tool, um Wissen nahezu 
+
+                
+en passant
+
+                
+ zu gewinnen: So begreifen 
+
+                
+Games with a Purpose
+
+                
+ (
+
+                
+GWAPs
+
+                
+; von Ahn und Dabbish 2004) ihre Spieler:innen als unersetzliches, online Wissen generierendes Kollektivum (
+
+                
+Crowd
+
+                
+), das sich mäßig begeisternden Aufgaben ohne materielle Entlohnung widmet. Die offensichtliche Trivialität jener 
+
+                
+Microtasks 
+
+                
+wird mit spielähnlichen Mechanismen kaschiert (Deterding et al. 2011, Morschheuser et al. 2017) und durch pädagogische Elemente angereichert (Suttie et al. 2012). Im Folgenden fokussieren wir mit dem originär durch von Ahn und Dabbish (2004) konzipierten 
+
+                
+Extra Sensory Perception (ESP) Game
+
+                
+ eine wiederholt rezipierte GWAP-Unterklasse, die 
+
+                
+Image-Labeling
+
+                
+-Prozesse anstößt. Einer der bekanntesten, für die 
+
+                
+Digital Humanities
+
+                
+ relevanten Ableger ist die seit 2010 an der Ludwig-Maximilians-Universität München entwickelte Plattform ARTigo.
+
+                
+ In ihr wird das ESP-Game zuvorderst auf kunsthistorische Bilddatenbestände appliziert.
+
+            
+
+            
+
+                
+Spielprinzip
+
+                
+
+                    
+Das Spiel fußt auf dem sog. 
+
+                    
+Output-Agreement-
+
+                    
+Prinzip: Zwei anonym bleibenden Spieler:innen wird über eine 
+
+                    
+Graphical User Interface
+
+                    
+ (
+
+                    
+GUI
+
+                    
+) zeitgleich dasselbe Bild präsentiert. Ziel ist es, dieses Bild innerhalb einer festgelegten Zeitspanne mit Schlagwörtern (
+
+                    
+Tags
+
+                    
+) derart zu annotieren, dass möglichst viele Punkte durch übereinstimmende Angaben (
+
+                    
+Matches
+
+                    
+) erzielt werden. Die Schlagwörter sind frei wählbar und nicht kontrolliert wie in einem Thesaurus, können je nach Spielmodus aber durch 
+
+                    
+Tabuwörter
+
+                    
+ eingeschränkt werden. Tabuwörter stellen bspw. häufig vergebene Schlagwörter dar, denen kein zusätzlicher Informationsgewinn attestiert wird; bei Franz Marcs 
+
+                    
+Die großen blauen Pferde
+
+                    
+ (1911) etwa die Begriffe „Landschaft“ und „Pferde“. Die Spieler:innen müssen nicht simultan operieren. Stattdessen können alte Spielrunden synthetisiert und die für ein Bild dort vergebenen Schlagwörter recycelt werden.
+
+                
+
+                
+
+                    
+Bekanntlich erzeugen Output-Agreement-Spiele aufgrund jener Matching-Prozedur vor allem oberflächlich beschreibende 
+
+                    
+Surface Tags
+
+                    
+ (Bry und Wieser 2012, Bry et al. 2018); in ähnlicher Qualität mittlerweile ebenso von immer leistungsfähigeren 
+
+                    
+Neuronalen Netzwerken 
+
+                    
+produziert (Heinisch 2021, Milani und Fraternali 2021, Zhao et al. 2021). Bspw. durch Tabuwörter implementierte
+
+                    
+Scripting
+
+                    
+-Mechanismen, die zur Eingabe semantisch ,tiefergehender‘ Schlagwörter auffordern, begünstigen die sukzessive Diversifikation eines Tag-Bestands zwar (von Ahn und Dabbish 2004, Wieser et al. 2013). Allerdings beobachten wir zwei Defizite:
+
+                
+
+
+
+                    
+
+                        
+Scripting wird oft nicht in Form modularer 
+
+                        
+Add-ons
+
+                        
+ implementiert. An ihre Stelle treten vermeintlich autonome Spiele, die in sog. „Ökosystemen“ komplementär wirken sollen (Wieser et al. 2013, Bry et al. 2018). Disparate, inflexible Codebasen – wie in ARTigo – sind die Folge.
+
+                    
+
+                    
+
+                        
+92,26 % der Nutzer:innen von ARTigo initialisieren ein Spiel mit Tabuwörtern, ohne im Anschluss Tags zu vergeben.
+
+                        
+ Selbst aktiv Partizipierende verschlagworten jedoch durchschnittlich 4,29 Taggings weniger als in nicht-restringierten Spielrunden. Weder motiviert die GUI hinreichend noch adressiert sie potenziell am Spiel Interessierte und leitet sie klar, etwa mithilfe eines textuellen Dialogsystems, an (Scherz 2017, 214–229).
+
+                    
+
+                
+
+                
+
+                    
+Im vorliegenden Beitrag schlagen wir einen Neuentwurf der ARTigo-Plattform vor, und zwar als plugin-basiertes Social-Tagging-Framework, konstituiert aus strikt funktionalen Programmbausteinen. In ihm wird Scripting mithilfe eines 
+
+                    
+proaktiven Dialogagenten
+
+                    
+ (Baudoin et al. 2005) über die GUI initiiert. Bei Vergabe eines Surface Tags (z. B. „Pferd“) empfiehlt der Agent initiativ bedeutsame Unterbegriffe („Zugpferd“, „Pony“) oder motiviert abhängig vom Spielmodus dazu, weniger deskriptiv zu annotieren (z. B. durch Fragen, etwa: „Welche Gefühle löst das Bild bei Dir aus?“). Je nach zugrunde liegendem Annotationsinteresse wird Domänenwissen gezielt provoziert, sodass bildwissenschaftlich hoch spezifische Aufgaben an die Crowd ausgelagert werden können. Dies befördert nicht nur die Akquise kunst- und kulturhistorischer Daten, sondern verortet auch das Spiel als propädeutisches Lehrmittel im Kontext der Bildwissenschaften, wie in zwei prototypischen Anwendungsszenarien deutlich werden soll.
+
+                
+
+            
+
+            
+
+                
+Infrastruktur
+
+                
+
+                    
+Konzipiert ist das Framework als dreistufige Architektur mit einer Daten-, Anwendungs- und Präsentationsschicht, die jeweils in Docker-Containern gekapselt sind, um eine Vielzahl von Installationsszenarien zu erlauben (Merkel 2014). Mit Grafana
+
+                    
+ überwachen wir die Auslastung und Interaktionsfrequenz der einzelnen Instanzen. Eine übergeordnete Konfigurationsdatei speist die Anwendungs- und die Präsentationsschicht. Der Quellcode ist frei auf GitHub unter einer 
+
+                    
+GNU General Public License
+
+                    
+ veröffentlicht.
+
+                    
+ Alle Komponenten sind 
+
+                    
+Open Source
+
+                    
+.
+
+                
+
+                
+
+                    
+Datenschicht
+
+                    
+
+                        
+Primär besteht die Datenschicht aus einem PostgreSQL-Datenbankmanagementsystem.
+
+                        
+ Damit auch ressourcenintensive Suchanfragen effizient bearbeitet werden, ist OpenSearch implementiert, Amazons seit 2021 entwickelter Elasticsearch-
+
+                        
+Fork
+
+                        
+.
+
+                    
+
+                
+
+                
+
+                    
+Anwendungsschicht
+
+                    
+
+                        
+Auf die Datenschicht greift die Anwendungsschicht nur zu, wenn spielrelevante Informationen erfasst oder sie der Präsentationsschicht über eine REST-API zur Verfügung gestellt werden. Die offen zugängliche Schnittstelle ist mit Swagger UI
+
+                        
+ und ReDoc
+
+                        
+ an zwei interaktive Dokumentationsumgebungen nach OpenAPI-3.0-Spezifikation
+
+                        
+ gekoppelt, sodass externe Plattformen gleichermaßen in der Lage sind, valide Abfragen zu formulieren.
+
+                    
+
+                    
+
+                        
+Kern der in Python mit Django
+
+                        
+ realisierten Anwendungsschicht ist der sieben Modulgruppen umfassende Spielkonfigurationsmechanismus. Jede Modulgruppe hat genau eine Funktion mit strikt festgelegtem 
+
+                        
+Output
+
+                        
+:
+
+                    
+
+
+
+                        
+
+                            
+Ressourcenmodule 
+
+                            
+selektieren die zu annotierenden Bilder. Als Kriterien dienen etwa die Anzahl der bereits zugewiesenen Tags oder wann ein Bild zuletzt bespielt wurde. Der mit Memcached
+
+                            
+ integrierte Cache-Server sorgt für eine ressourcenschonende Auswahl.
+
+                        
+
+                        
+
+                            
+(optional) 
+
+                            
+Durch 
+
+                            
+Opponentmodule 
+
+                            
+werden Akteure generiert, die ihre Tags automatisch gemäß der bis dato für ein Bild hinterlegten Schlagwörter wählen. Ihre Potenz ist konfigurierbar.
+
+                        
+
+                        
+
+                            
+(optional) Tabumodule 
+
+                            
+limitieren vorsätzlich den möglichen Tagraum. Sie verhindern Annotationen ohne zusätzlichen Informationsgewinn – wie am häufigsten für ein Bild vergebene Tags. Manuell definierte Restriktionen sind möglich („Impressionismus“ darf z. B. nicht für eine Reihe bekannt impressionistischer Bilder verwendet werden).
+
+                        
+
+                        
+
+                            
+(optional) 
+
+                            
+Programmatisch ähneln 
+
+                            
+Input-
+
+                            
+ den zuvor eingeführten Tabumodulen. Jedoch restringieren sie nicht, sondern leiten je nach Spieltypus an, bspw. indem sie auf zu validierende Tags hinweisen.
+
+                        
+
+                        
+
+                            
+(optional) 
+
+                            
+Mit 
+
+                            
+Vorschlagsmodulen 
+
+                            
+werden über Scripting feingranularere Termini als die bislang eingegebenen motiviert. Dazu binden wir nachweislich variationsreiche Glossare der englisch- und deutschsprachigen Wiktionary ein (Meyer und Gurevych 2010).
+
+                            
+ Ebenso zurückgegeben werden signifikant in ähnlichen Kontexten verortete Tags, sog. 
+
+                            
+Kookkurrenzen
+
+                            
+.
+
+                        
+
+                        
+
+                            
+Die jeweils hinterlegten Tags evaluieren 
+
+                            
+Filtermodule 
+
+                            
+auf ihre prinzipielle Validität. Nicht zugelassen können etwa orthografisch inkorrekte, als Tabuwörter definierte oder in derselben Spielrunde bereits annotierte Tags sein.
+
+                        
+
+                        
+
+                            
+(optional) Bewertungsmodule 
+
+                            
+messen die Güte der validen Schlagwörter. Mit Punkten belohnt werden u. a. gematchte Tags oder solche, die auf Basis der Wiktionary explizit domänenrelevante Information tragen – bei kunsthistorischen Bildern zur Komposition, Ikonografie und Epoche. Auch durch veränderte Bewertungsmodi wird Scripting herbeigeführt (Jain und Parkes 2013).
+
+                        
+
+                    
+
+                    
+Um individuellere Nutzungsszenarien zu berücksichtigen, kann das Framework erweitert werden, indem der jeweiligen Modulgruppe ein geeignetes Untermodul hinzugefügt und die übergeordnete Konfigurationsdatei aktualisiert wird.
+
+                
+
+                
+
+                    
+Präsentationsschicht
+
+                    
+
+                        
+Die Präsentationsschicht ist in HTML und JavaScript mit dem JavaScript-Framework Vue.js
+
+                        
+ programmiert. Alle dynamischen Webseiteninhalte werden mithilfe der JavaScript-Bibliothek axios
+
+                        
+ über die REST-API geladen. Die Anwendung ist responsiv und auch für mobile Endgeräte optimiert.
+
+                    
+
+                    
+
+                        
+
+                        
+
+                        
+Abb. 1: Dem Spiel vorgeschaltet ist eine mit Typed.js animierte Homepage, die zugleich als Tutorial fungiert.
+
+                    
+
+                    
+
+                    
+                    
+
+                        
+
+                        
+
+                        
+Abb. 2: Ein vertikaler 
+
+                        
+Stepper
+
+                        
+ assistiert den aus Fragen bestehenden Konfigurationsprozess.
+
+                    
+
+                    
+
+                    
+
+                        
+Dem Spiel vorgeschaltet ist eine mit Typed.js
+
+                        
+ animierte Homepage, die zugleich als Tutorial fungiert (Abb. 1, 
+
+                        
+rechts
+
+                        
+). Zeitlich begrenzte 
+
+                        
+Quests
+
+                        
+, die bspw. zum Tagging eines Künstlers reizen, sind in einem 
+
+                        
+Navigation Drawer
+
+                        
+links gestellt (Abb. 1, 
+
+                        
+links
+
+                        
+); sie werden zumeist randomisiert aus validen Modulkombinationen generiert. Ein vertikaler 
+
+                        
+Stepper
+
+                        
+assistiert den folgenden, aus Fragen bestehenden Konfigurationsprozess (z. B. „Wie lange dauert eine Spielrunde?“ oder „Wie viele Runden möchtest Du spielen?“; Abb. 2). Er speist sich aus derselben Konfigurationsdatei wie die Anwendungsschicht. Alle Felder sind optional und mit Standardwerten vorbelegt, um in wenigen Klicks neue Spiele zu erstellen.
+
+                    
+
+                    
+
+                        
+
+                        
+
+                        
+Abb. 3: Dominiert wird die Spiel-GUI von zwei Komponenten: dem zu annotierenden Bild, 
+
+                        
+links
+
+                        
+, und der von 
+
+                        
+Instant-Messaging
+
+                        
+-Diensten inspirierten Eingabemaske, 
+
+                        
+rechts
+
+                        
+.
+
+                    
+
+                    
+ 
+                    
+
+                        
+
+                        
+
+                        
+Abb. 4: Jede Spielsitzung endet mit einer nochmaligen Gegenüberstellung der Ergebnisse in aggregierter Form.
+
+                    
+
+                    
+
+                    
+
+                        
+Dominiert wird die in Abb. 3 präsentierte Spiel-GUI von zwei Komponenten: dem zu annotierenden Bild, 
+
+                        
+links
+
+                        
+, und der von 
+
+                        
+Instant-Messaging
+
+                        
+-Diensten – etwa Metas Facebook Messenger
+
+                        
+ – inspirierten Eingabemaske, 
+
+                        
+rechts
+
+                        
+. Einen Chat(-bot) simulierend erscheinen dort sukzessive die Tags des zugeschalteten Akteurs; nicht-gematchte Eingaben sind zunächst unscharf. Damit jener trotz der synthetischen Anlage menschenähnlich – als tatsächlich Spielender – empfunden wird (Jenkins et al. 2007), verzögern wir seine Antworten minimal; derweil zeigt ein 
+
+                        
+Typing Awareness Indicator
+
+                        
+ den Eingabeprozess an (Auerbach 2014). Die GUI festigt so den 
+
+                        
+per se
+
+                        
+ dialogisch motivierten Aspekt der Verschlagwortung (Bredekamp 2010). Scripting ist u. a. durch Steuerelemente wie Kombinations- und Optionsfelder eingebettet, sodass die Anzahl der auf dem Bildschirm präsenten Elemente reduziert wird. Ein Steuerelement ist demnach ausschließlich für die Zeit der Interaktion sichtbar. Zur Fokussierung auf den Annotationsprozess sind Kopf- und Fußzeile halbtransparent gesetzt. Der über beiden Komponenten – Bild und Eingabemaske – liegende, sie einschließende Fortschrittsbalken zeigt die Restlaufzeit der momentan aktiven Spielrunde an. Nach Ablauf dieser erscheint zunächst ein dreisekündiger Countdown, währenddessen die Spielsitzung pausiert werden kann, bevor das System zum nächsten Bild weiterschaltet. Jede Spielsitzung endet mit einer nochmaligen Gegenüberstellung der Ergebnisse in aggregierter Form (Abb. 4).
+
+                    
+
+                    
+
+                        
+Um die Benutzerfreundlichkeit der GUI zu quantifizieren, beabsichtigen wir, Online-Fragebögen zu verschicken, die etablierte Metriken wie
+
+                        
+Perceived Ease of Use
+
+                        
+, 
+
+                        
+Perceived Usefulness
+
+                        
+ und 
+
+                        
+System Usability Scale
+
+                        
+erfassen.
+
+                    
+
+                
+
+            
+
+            
+
+                
+Use Cases
+
+                
+
+                    
+Nicht nur die kollaborative, durch die Crowd initiierte Akquise kunst- und kulturhistorischer Daten kann mit dem hier eingeführten Framework sinnvoll befördert werden,
+
+                    
+ sondern auch das Spiel als pädagogisches Instrument, etwa im musealen Raum. Nachweislich sind in vielen Fällen Inhalte spielerisch effektiver zu vermitteln als mit grundständigen Lernmethoden (Scherz 2017, 230). Dieses Potenzial schöpft das 
+
+                    
+digitale 
+
+                    
+Spiel aus, auch weil es ein Medium verwendet, das integraler Bestandteil der Welt jüngerer Generationen ist; also derjenigen, auf die sich Bildungsbemühungen in erster Linie zu konzentrieren haben. Während das Spiel als propädeutisches Lehrmittel vermehrt in naturwissenschaftlich orientierten Domänen integriert wird,
+
+                    
+ beabsichtigt das Framework, es auch im bildwissenschaftlichen Kontext zu verorten – etwa zum Studium der Grundlagen kunsthistorischer Argumentation.
+
+                
+
+                
+Aufgrund seiner hochgradigen Modularisierung, und der damit einhergehenden Flexibilisierung der Parameter, sehen wir zwei prototypische Anwendungsszenarien, die im Folgenden exemplarisch beschrieben werden:
+
+
+
+                    
+
+                        
+Im Fokus des 
+
+                        
+Attributionsspiels 
+
+                        
+steht wortwörtlich die Attribution eines Bildes zu einer näher definierten Oberkategorie: einem geografischen Kontext, einer Epoche, dem oder der Kunstschaffenden selbst. Nicht zwingend entscheidend ist aber das exakte Matching. Stattdessen wird bereits eine regionale oder stilistische Annäherung an das interessierende Subjekt belohnt; etwa, wenn ein Kupferstich von Hans Baldung Grien fälschlicherweise Albrecht Dürer zugesprochen wurde. Der Schwierigkeitsgrad ließe sich erhöhen, indem das Bild als Explorationsfläche
+
+                        
+ mit einer ,Schablone‘ abgedeckt wird, die nur einen Teil des Bildes freigibt.
+
+                        
+ Durch sensorische Interaktion auf mobilen Geräten, etwa Berührungen oder Pusten, könnte der Ausschnitt bei gleichzeitigem Punktverlust modifiziert werden.
+
+                    
+
+                    
+
+                        
+Ziel des 
+
+                        
+Ikonografiespiels
+
+                        
+ ist die visuell motivierte Aneignung von historischen Sach- und Personenidentitäten. Jeweils vorgegeben ist eine Ikonografie, bspw. der heilige Hieronymus. Über die Eingabemaske werden die Ikonografie beschreibende Attribute verschlagwortet (z. B. „Löwe“, „Buch“, „Stundenglas“), während der textuelle Dialogagent sukzessive auf sie zutreffende Ikonografien empfiehlt. Durch die fortwährende Interaktion (Boiano et al. 2018) spüren die Partizipierenden der tatsächlich korrekten Ikonografie nach. Auf diese Weise vermittelt das Spiel zwar Fachwissen, schärft jedoch gleichermaßen implizit das kunsthistorische Sehen. Wie Scherz (2017, 226–227) nehmen wir an, dass u. a. die Dauer einer Spielrunde in ihrer Spezifik unterschiedliche Attributketten und daher Tagging-Muster begünstigt, die es weiter zu untersuchen gelte.
+
+                    
+
+                
+
+                
+
+                    
+Immer treten die Spieler:innen in einen zweifachen pädagogischen Dialog: zum einen mit den jeweils angezeigten Bildern, zum anderen mit dem regelbasierten (Dialog-)System. Beide Spiele können dabei in kurzer Zeit verstanden und ihre Akzeptanz so wesentlich gesteigert werden (Kühn et al. 2009).
+
+                
+
+            
+
+            
+
+                
+Zusammenfassung und Ausblick
+
+                
+
+                    
+Mit diesem Beitrag schlagen wir einen ganzheitlichen Neuentwurf der seit 2010 existierenden Social-Tagging-Plattform ARTigo vor, die kunsthistorische Image-Labeling-Prozesse anstößt. In dem nun aus funktionalen Programmbausteinen konstituierten Framework wird Scripting – ein Mechanismus, der zur Eingabe tiefensemantischer Schlagwörter auffordert – mithilfe eines proaktiven, textuellen Dialogagenten motiviert. Wie in zwei prototypischen Anwendungsszenarien dargelegt, einem Attributions- und einem Ikonografiespiel, eignet sich das Framework für die Akquise kunst- und kulturhistorisch relevanter Daten ebenso wie als pädagogisches Instrument im Kontext der Bildwissenschaften.
+
+                
+
+                
+
+                    
+Wir planen, die produzierten Taggings künftig automatisch in Wikidata
+
+                    
+ zu spiegeln. Um die Integration neuer Bilddatenbestände zu vereinfachen, soll des Weiteren eine Oberfläche zum 
+
+                    
+Upload 
+
+                    
+eigener Sammlungen bereitgestellt werden. Zur präziseren Datenerhebung entwickeln wir derzeit ein adaptierbares Werkzeug, mit dem komplexe Studiendesigns ermöglicht werden: So erlaubt es die freie Parametrisierung der Spielmodule, eine große Anzahl von Studienelementen zu quantifizieren und ausgewählten Testgruppen zuzuspielen. Neben grundsätzlich breiteren Forschungsmöglichkeiten kann durch jenen Prozess auch das jeweilige Spieldesign weiter optimiert werden. In diesem Kontext evaluieren wir auch jede Modulgruppe und loten ihre Eignung für unterschiedliche Forschungsszenarien aus.
+
+                
+
+            
+
+        
+
+        
+
+
+
+
+
+                     Im Deutschen wird nicht zwischen 
+                        
+Play 
+und 
+                        
+Game 
+unterschieden. Der vorliegende Beitrag stützt sich explizit auf das 
+                        
+Game 
+als wettstreitorientiertes, kompetitives und regelbasiertes Spiel (Walther 2003).
+                    
+                
+
+
+
+                    
+                        
+
+                            
+https://www.artigo.org/
+
+                        
+, wie alle folgenden letzter Zugriff 2. Dezember 2022.
+                    
+                
+
+
+
+                             Alle folgenden Statistiken basieren auf einem 
+                                
+Dump
+ der PostgreSQL-Datenbank vom 28. Juli 2022. Mit 56,65 % liegt der Wert für Spiele ohne Tabuwörter signifikant niedriger.
+                            
+                        
+
+
+
+                        
+                            
+
+                                
+https://github.com/grafana/grafana
+
+                            
+.
+                        
+                    
+
+
+
+                        
+                            
+
+                                
+https://github.com/arthist-lmu/artigo
+
+                            
+.
+                        
+                    
+
+
+
+                            
+                                
+
+                                    
+https://github.com/postgres/postgres
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://github.com/opensearch-project/OpenSearch
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://github.com/swagger-api/swagger-ui
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://github.com/Redocly/redoc
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://github.com/OAI/OpenAPI-Specification
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://github.com/django/django
+
+                                
+.
+                            
+                        
+
+
+
+                                
+                                    
+
+                                        
+https://github.com/memcached/memcached
+
+                                    
+.
+                                
+                            
+
+
+
+                                
+                                    
+
+                                        
+https://de.wiktionary.org/wiki/
+
+                                    
+.
+                                
+                            
+
+
+
+                            
+                                
+
+                                    
+https://github.com/vuejs/vue
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://github.com/axios/axios
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://github.com/mattboldt/typed.js/
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://material.io/components/navigation-drawer
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://material.io/archive/guidelines/components/steppers.html
+
+                                
+.
+                            
+                        
+
+
+
+                            
+                                
+
+                                    
+https://about.facebook.com/de/technologies/messenger/
+
+                                
+.
+                            
+                        
+
+
+
+                         Die grundlegende Eignung von ARTigo zur Datenakquise ist hinreichend belegt: Seit 2010 wurden 10.679.711 Taggings in der deutsch-, englisch- und französischsprachigen Version annotiert.
+                    
+
+
+
+                         Ausnahmen bilden im deutschsprachigen Raum z. B. das Multimedia-Spiel „Ricardas Geheimnis“ des Wallraf-Richartz-Museums Köln (Vielhaber 2021). Im angelsächsischen Raum ist das sieben Online-Spiele umfassende Projekt „Discover Ancient Egypt“ der National Museums Scotland zu nennen (
+                            
+
+                                
+https://www.nms.ac.uk/explore-our-collections/games/discover-ancient-egypt/
+
+                            
+).
+                        
+                    
+
+
+
+                             So bereits kooperativ mit ARTigo in dem Top Citizen Science-Projekt „Stadt-Land-Bild. Eine soziale Bildanalyse zeitgenössischer Sehnsuchtserscheinungen“ zwischen 2018 und 2019 geschehen (
+                                
+
+                                    
+https://www.akbild.ac.at/de/forschung/projekte/forschungsprojekte/2019/stadt-land-bild.-eine-soziale-bildanalyse-zeitgeno308ssischer-sehnsuchtserscheinungen
+
+                                
+
+                                
+).
+
+                            
+                        
+
+
+
+                             Siehe lose von Ahn et al. (2006).
+                        
+
+
+
+                        
+                            
+
+                                
+https://www.wikidata.org/wiki/
+
+                            
+.
+                        
+                    
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+von Ahn, Luis und Laura Dabbish
+
+                        
+. 2004. „Labeling Images with a Computer Game.“ In 
+
+                        
+Proceedings of the SIGCHI Conference on Human Factors in Computing Systems
+
+                        
+, 319–326 
+
+                        
+
+                            
+10.1145/985692.985733
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+von Ahn, Luis, Ruoran Liu und Manuel Blum
+
+                        
+. 2006. „Peekaboom. A Game for Locating Objects in Images.“ In 
+
+                        
+Proceedings of the SIGCHI Conference on Human Factors in Computing Systems
+
+                        
+, 55–64 
+
+                        
+
+                            
+10.1145/1124772.1124782
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Auerbach, David
+
+                        
+. 2014. „I Built That ,So-and-So Is Typing‘ Feature in Chat. And I’m Not Sorry.“ In 
+
+                        
+Slate
+
+                        
+, 14.02.2014.
+
+                    
+
+                    
+
+                        
+Baudoin, Frédéric, Philippe Bretier und Vincent Corruble
+
+                        
+. 2005. „A Dialogue Agent with Adaptive and Proactive Capabilities.“ In 
+
+                        
+Proceedings of the IEEE/WIC/ACM International Conference on Intelligent Agent Technology
+
+                        
+, 293–296 
+
+                        
+
+                            
+10.1109/IAT.2005.8
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Boiano, Stefania, Ann Borda, Guiliano Gaia, Stefania Rossi und Pietro Cuomo
+
+                        
+. 2018. „Chatbots and New Audience Opportunities for Museums and Heritage Organisations.“ In 
+
+                        
+Electronic Visualisation and the Arts
+
+                        
+, 164–171.
+
+                    
+
+                    
+
+                        
+Bredekamp, Horst
+
+                        
+. 2010. 
+
+                        
+Theorie des Bildakts. Frankfurter Adorno-Vorlesungen 2007.
+
+                        
+ Frankfurt am Main: Suhrkamp.
+
+                    
+
+                    
+
+                        
+Bry, François, Clemens Schefels und Corina Schemainda
+
+                        
+. 2018. „Eine qualitative Analyse der ARTigo-Annotationen.“ In Piotr Kuroczyński, Peter Bell und Lisa Dieckmann (Hrsg.). 
+
+                        
+Computing Art Reader. Einführung in die digitale Kunstgeschichte
+
+                        
+. Heidelberg: arthistoricum.net, 96–114
+
+                        
+
+                            
+10.11588/arthistoricum.413.c5771
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Bry, François und Christoph Wieser
+
+                        
+. 2012. „Squaring and Scripting the ESP Game. Trimming a GWAP to Deep Semantics.“ In 
+
+                        
+Serious Games Development and Applications. SGDA 2012. Lecture Notes in Computer Science
+
+                        
+ 7528: 183–192 
+
+                        
+
+                            
+10.1007/978-3-642-33687-4_16
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Deterding, Sebastian, Dan Dixon, Rilla Khaled und Lennart Nacke
+
+                        
+. 2011. „From Game Design Elements to Gamefulness. Defining ,Gamification‘.“ In 
+
+                        
+Proceedings of the 15th International Academic MindTrek Conference. Envisioning Future Media Environments
+
+                        
+, 9–15 
+
+                        
+
+                            
+10.1145/2181037.2181040
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Heinisch, Barbara, Kristin Oswald, Maike Weißpflug, Sally Shuttleworth und Geoffrey Belknap
+
+                        
+. 2021. „Citizen Humanities.“ In Katrin Vohland, Anne Land-Zandstra, Luigi Ceccaroni, Rob Lemmens, Josep Perelló, Marisa Ponti, Roeland Samson und Katherin Wagenknecht (Hrsg.). 
+
+                        
+The Science of Citizen Science
+
+                        
+. Berlin: Springer, 97–118.
+
+                    
+
+                    
+
+                        
+Huizinga, Johan
+
+                        
+. 1956. 
+
+                        
+Homo Ludens. Vom Ursprung der Kultur im Spiel.
+
+                        
+Reinbek: Rowohlt.
+
+                    
+
+                    
+
+                        
+Jain, Shaili und David C. Parkes
+
+                        
+. 2013. „A Game-Theoretic Analysis of the ESP Game.“ In 
+
+                        
+ACM Transactions on Economics and Computation
+
+                        
+ 1.1 
+
+                        
+
+                            
+10.1145/2399187.2399190
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Jenkins, Marie-Claire, Richard Churchill, Stephen Cox und Dan Smith
+
+                        
+. 2007. „Analysis of User Interaction with Service Oriented Chatbot System.“ In 
+
+                        
+International Conference on Human-Computer Interaction. HCI 2007. Lecture Notes in Computer Science
+
+                        
+ 4552: 76–83 
+
+                        
+
+                            
+10.1007/978-3-540-73110-8_9
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Kühn, Eileen, Jens Reinhardt und Jürgen Sieck
+
+                        
+. 2009. „Spielen im Museum.“ In Jürgen Sieck und Michael A. Herzog (Hrsg.). 
+
+                        
+Kultur und Informatik. Serious Games. 
+
+                        
+Boizenburg: Verlag Werner Hülsbusch, 201–222.
+
+                    
+
+                    
+
+                        
+Merkel, Dirk
+
+                        
+. 2014. „Docker. Lightweight Linux Containers for Consistent Development and Deployment.“ In 
+
+                        
+Linux Journal
+
+                        
+ 239: 2.
+
+                    
+
+                    
+
+                        
+Meyer, Christian M. und Iryna Gurevych
+
+                        
+. 2010. „Worth its Weight in Gold or Yet Another Resource. A Comparative Study of Wiktionary, OpenThesaurus and GermaNet.“ In Alexander Gelbukh (Hrsg.). 
+
+                        
+Computational Linguistics and Intelligent Text Processing. 11th International Conference. Lecture Notes in Computer Science
+
+                        
+ 6008: 38–49.
+
+                    
+
+                    
+
+                        
+Milani, Federico und Piero Fraternali
+
+                        
+. 2021. „A Dataset and a Convolutional Model for Iconography Classification in Paintings.“ In 
+
+                        
+Journal on Computing and Cultural Heritage
+
+                        
+ 14.4 
+
+                        
+
+                            
+10.1145/3458885
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Morschheuser, Benedikt, Juho Hamari, Jonna Koivisto und Alexander Maedche
+
+                        
+. 2017. „Gamified Crowdsourcing. Conceptualization, Literature Review, and Future Agenda.“ In 
+
+                        
+International Journal of Human-Computer Studies
+
+                        
+ 106: 26–43 
+
+                        
+
+                            
+10.1016/j.ijhcs.2017.04.005
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Scherz, Sabine
+
+                        
+. 2017. 
+
+                        
+Kunstgeschichte berechnet. Interdisziplinäre Bilddatenanalyse crowdgesourcter Annotationen.
+
+                        
+Dissertation, Ludwig-Maximilians-Universität München.
+
+                    
+
+                    
+
+                        
+Suttie, Neil, Sandy Louchart, Theodore Lim, Andrew Macvean, Wim Westera, Damian Brown und Damien Djaouti
+
+                        
+. 2012. „Introducing the ,Serious Games Mechanics‘. A Theoretical Framework to Analyse Relationships Between ,Game‘ and ,Pedagogical Aspects‘ of Serious Games.“ In 
+
+                        
+Procedia Computer Science
+
+                        
+ 15: 314–315 
+
+                        
+
+                            
+10.1016/j.procs.2012.10.091
+
+                        
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Vielhaber, Christiane
+
+                        
+. 2021. „Computerspiel für junge Besucher des Wallraf. Jagd nach Reliquien im Kölner Museum
+
+                        
+.
+
+                        
+“ In 
+
+                        
+Kölner Stadt-Anzeiger,
+
+                        
+ 02.07.2021.
+
+                    
+
+                    
+
+                        
+Walther, Bo Kampmann
+
+                        
+. 2003. „Playing and Gaming. Reflections and Classifications.“ In 
+
+                        
+International Journal of Computer Game Research
+
+                        
+ 3.1.
+
+                    
+
+                    
+
+                        
+Wieser, Christoph, François Bry, Alexandre Bérard und Richard Lagrange
+
+                        
+. 2013. „ARTigo. Building an Artwork Search Engine With Games and Higher-Order Latent Semantic Analysis.“ In 
+
+                        
+Proceedings of the AAAI Conference on Human Computation and Crowdsourcing
+
+                        
+, 15–20.
+
+                    
+
+                    
+
+                        
+Zhao, Wentao, Dalin Zhou, Xinguo Qiu und Wei Jiang
+
+                        
+. 2021. „Compare the Performance of the Models in Art Classification.“ In 
+
+                        
+PLOS ONE
+
+                        
+ 16.3 
+
+                        
+
+                            
+10.1371/journal.pone.0248414
+
+                        
+
+                        
+.
+
+                    
+
+                
+
+            
+
+        
+
+    

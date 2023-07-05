@@ -1,0 +1,202 @@
+
+        
+
+            
+
+                
+Hintergrund: DH ConValidator
+
+                
+Kollaborative Autorschaft, digitales Publizieren und Langzeitarchivierung sind Themen, die in den Digital Humanities viel diskutiert werden (Ernst 2015; DHd-AG Digitales Publizieren 2016; Neuroth et al. 2010). XML-TEI hat sich als für diese Zwecke angemessenes Dateiformat etabliert und wird unter Anderem für den Einreichungsprozess der Abstracts für die Jahrestagungen des DHd-Verbands und die internationale Digital Humanities-Konferenz, aber u.a. auch beim 
+                    
+Journal of the Text Encoding Initiative
+ verwendet (vgl. Branden und Holmes 2014; Blanke et al. 2014). XML-TEI ist zwar ein offenes, sehr expressives und damit für "semantisches Publizieren" (Shotton 2009, Schöch 2020) und Langzeitarchivierung geeignetes Format, das zudem in den Digital Humanities weit verbreitet ist. Es ist jedoch auch vergleichsweise unhandlich und für viele daher nicht das Format der Wahl beim Verfassen ihrer Texte. Der aktuelle Lösungsansatz – die Nutzung eines DH ConValidator genannten Online-Tools zur Umwandlung von Office-Dokumenten in XML-TEI – ist fehleranfällig und unbequem sowohl für die Einreichenden als auch für diejenigen, die das Book of Abtracts erstellen.
+
+                
+
+            
+
+            
+
+                
+Alternativer Ansatz: Fidus Writer mit Erweiterungen
+
+                
+Vor diesem Hintergrund wurde im Rahmen einer Masterarbeit der Prototyp einer möglichen Alternative zum Einsatz des DH ConValidators entwickelt (Gebhard 2021). Diese Alternative besteht in der Verwendung eines webbasierten WYSIWYG Editors für das nahtlose Verfassen und die Einreichung des Abstracts. Im Rahmen der Masterarbeit wurde ein solcher Prototyp auf Grundlage von "Fidus Writer" entwickelt, einem Open Source Editor mit starkem Fokus auf wissenschaftliches Schreiben.
+ Dieser ist in Python/Django implementiert und kann als Web-basierter Editor zur Verfügung gestellt werden. Er erlaubt nicht nur das kollaborative Verfassen von Texten inklusive Abbildungen und Formelsatz, sondern auch die Eingabe relevanter Metadaten und die Verwaltung der Literaturangaben. User:innen können unterschiedliche Rollen mit angepassten Berechtigungen zugeteilt werden, um den Review-Prozess zu unterstützen. Die gewünschte Dokumentstruktur kann über Templates auf die Bedürfnisse von Konferenzen zugeschnitten werden. Wie eine ausführliche Anforderungsanalyse (u.a. mit leitfadengestützten Interviews mit verschiedenen Stakeholdern) gezeigt hat, fehlt für die Eignung zur Benutzung im Rahmen von DH-Konferenzen allerdings u.a. die Anbindung an TEI-basierte Workflows. Daher wurde ein Exporter neu entwickelt, mit dem Fidus Writer Dokumente im TEI Format gespeichert werden können, entweder für Archivzwecke oder für die weitere Verwendung in üblichen Publikationspipelines.
+                
+
+            
+
+            
+
+                
+Der Schreib- und Einreichungsprozess mit Fidus Writer
+
+                
+Statt des bisherigen Einreichungsverfahrens mit den Word-Processor-Templates und dem DH ConValidator könnte bei Verwendung des erweiterten Fidus Writer der Schreib- und Einreichungsprozess folgendermaßen ablaufen: Die Konferenz-Organisator:innen setzen eine FidusWriter-Instanz auf und hinterlegen ein geeignetes Dokument-Template. Die Autor:innen legen dort einen Account und ein neues Dokument an. Sie schreiben online gemeinsam ihren Text und binden die Literatur über Zotero und/oder die Literaturverwaltung von Fidus Writer ein. Wenn der Text fertig ist, exportieren die Autor:innen ihren Beitrag (als ZIP-Datei mit XML-TEI, der BibTex-Datei und den Abbildungen). Diese Datei reichen Sie in ConfTool ein. Die Konferenz-Organisator:innen erhalten XML-TEI, das nach einem recht strikten Schema valide ist (siehe unten) und können daraus HTML und PDF generieren. Die XML-TEI-Datei kann archiviert werden.
+
+            
+
+            
+
+                
+Ein Beitrag zur Standardisierung: Fidus Writer und jTEI-Schema
+
+                
+Ein angenehmer Nebeneffekt dieser Arbeit war die Notwendigkeit, ein striktes, weitgehend auf jTEI beruhendes Schema für das Exportformat zu definieren. Dieses erlaubt nicht nur die Überprüfung des Exporters selbst. Es könnte auch in Schritt in die Richtung sein, dass der gesamte Einreichungsprozess unabhängiger von einzelnen Tools und im Idealfall völlig plattformagnostisch wird. Überdies stellt dieses Schema ein verlässliches Development Target für weitere Programme dar, die für die Publikation oder sonstige Nachnutzung entwickelt werden und unterstützt damit deren Wiederverwendbarkeit (vgl. Schreibman 2009).
+
+            
+
+            
+
+                
+Fazit und Ausblick
+
+                
+Mit dem Pilotprojekt zum Fidus Writer soll nicht nur eine Alternative zum Einreichungsprozess mit dem DH ConValidator entwickelt werden. Der Ansatz hat auch zum Ziel, einen nutzungsfreundlichen und zeitgemäßen Schreib- und Einreichungsprozess mit einem hohen Anspruch an die Datenqualität und die Nutzung offener Formate und Standards für die Digital Humanities-Community zu verbinden. Nächste Schritte in diesem Prozess sollen nun der testweise Einsatz bei einer kleineren Konferenz sein, bevor der Einsatz auch bei der Jahrestagung des DHd-Verbands angedacht wird.
+
+            
+
+            
+
+                
+Posterpräsentation
+
+                
+Für das Poster ist geplant, die für eine Einreichung bei der DHd-Konferenz wesentlichen Schritte und ihre Unterstützung durch den im Rahmen der Masterarbeit erweiterten Fidus Writer zu illustrieren. Sofern vor Ort möglich, könnte der Fidus Writer auch an einem Laptop im Einsatz demonstriert und durch die Konferenzteilnehmer:innen getestet werden.
+
+            
+
+        
+
+        
+ Der DH ConValidator wurde ursprünglich im Kontext der DH2012 in Hamburg von Marco Petris entwickelt und wird seitdem bei der internationalen DH-Konferenz und der DHd-Jahrestagung eingesetzt. Er interagiert mit ConfTool und verwendet OxGarage für die Formattransformation. Siehe: https://github.com/ADHO/dhconvalidator.
+ Fidus Writer wird maßgeblich von Johannes Wilm entwickelt. Siehe: https://www.fiduswriter.org/.
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Blanke, Tobias / Pierazzo, Elena / Stokes, Peter A.
+ (2014): „Digital Publishing Seen from the Digital Humanities“. 
+                        
+Logos
+ 25 (2): 16–27. 
+                        
+.
+                    
+
+                    
+
+                        
+Branden, Ron van den / Holmes, Martin
+ (2014): “Journal of the Text-Encoding Initiative Article Schema. Schema and Guidelines for Encoding an Article for the Journal.” 
+                        
+Journal of the Text-Encoding Initiative
+. 
+                        
+.
+                    
+
+                    
+
+                        
+DHd-Arbeitsgruppe Digitales Publizieren
+ (2016): "Working Paper Digitales Publizieren". 
+                        
+DHd Working Papers
+, 1. Wolfenbüttel: HAB / DHd-Verband. 
+                        
+.
+                    
+
+                    
+
+                        
+Ernst, Thomas
+ (2015): "Vom Urheber zur Crowd, vom Werk zur Version, vom Schutz zur Öffnung? Kollaboratives Schreiben und Bewerten in den Digital Humanities". In: 
+                        
+Grenzen und Möglichkeiten der Digital Humanities
+. Hg. von Constanze Baum / Thomas Stäcker. 2015 (= Sonderband der Zeitschrift für digitale Geisteswissenschaften, 1). DOI: 10.17175/sb001_021.
+                    
+
+                    
+
+                        
+Gebhard, Henning 
+(2021): 
+                        
+Building a TEI-driven online tool for authoring, submitting and publishing of conference abstracts based on Fidus Writer
+. Trier: Universität Trier.
+                    
+
+                    
+
+                        
+Kaden, Ben / Kleineberg, Michael
+ (2017): “Zur Situation des digitalen geisteswissenschaftlichen Publizierens – Erfahrungen aus dem DFG-Projekt „Future Publications in den Humanities“.” 
+                        
+Bibliothek Forschung und Praxis
+ 41, no. 1. 
+                        
+.
+                    
+
+                    
+
+                        
+Neuroth, Heike / Oßwald, A. / Scheffel, R. / Strathmann, S. / Huth, Karsten
+ Hrsg. (2010): 
+                        
+nestor-Handbuch: Eine kleine Enzyklopädie der digitalen Langzeitarchivierung
+. Göttingen: nestor.
+                    
+
+                    
+
+                        
+Schöch, Christof
+ (2021): “Open Access für die Maschinen.” In 
+                        
+Die Zukunft des kunsthistorischen Publizierens
+, ed. Maria Effinger, Hubertus Kohle. Heidelberg: ART-Books. DOI: 
+                        
+.
+                    
+
+                    
+
+                        
+Shotton, David
+ (2009): „Semantic Publishing: The Coming Revolution in Scientific Journal Publishing“. 
+                        
+Learned Publishing
+ 22 (2): 85–94. 
+                        
+.
+                    
+
+                    
+
+                        
+Schreibman, Susan
+ (2009): “The Text Encoding Initiative: An Interchange Format Once Again.” In 
+                        
+Jahrbuch Für Computerphilologie 10
+, 12–24. Mentis Verlag, 2009.
+                    
+
+                
+
+            
+
+        
+
+    

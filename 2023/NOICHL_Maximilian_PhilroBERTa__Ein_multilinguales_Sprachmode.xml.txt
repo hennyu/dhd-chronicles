@@ -1,0 +1,607 @@
+
+        
+
+            
+
+                
+
+                    
+Einleitung
+                
+
+                
+Die wohl bedeutendste Struktur der zeitgenössischen akademischen Philosophie ist die Trennung zwischen kontinentaler und analytischer Philosophie.
+
+                
+Obwohl wenig Einigkeit über die eigentliche Natur der Trennung besteht – ist es eine methodologische (vgl. Petrovich und Buonomo 2018), thematische, linguistische (vgl. Hobbs 2014), oder doch nur eine soziale? – spielt sie eine wichtige Rolle im philosophischen Berufsleben, und wird nicht nur informell verhandelt, sondern schlägt sich in den Aufnahmekriterien von Fachzeitschriften, in den Entscheidungen von Berufungskommissionen und im Aufbau zahlreicher professioneller Vereinigungen nieder.
+
+                
+Klarheit über die Topologie dieser Trennung zu erreichen, ist dementsprechend von großem Interesse. Dennoch besteht in der Literatur eine ausgesprochene Uneinigkeit über eine Reihe von basalen Fragen: Wann hat die Spaltung ihren Anfang genommen (man vgl. die Darstellungen von e.g. Glock 2008; Critchley 1997; 2001)? Handelt es sich überhaupt um eine Trennung, oder eher um zwei Extreme am Rande eines Kontinuums? Hat sie überhaupt noch Bestand, oder hat sich die Kluft im einundzwanzigsten Jahrhundert weitestgehend geschlossen (Bieri 2007; Beckermann 2003; Hoche 2009)?
+
+                
+
+                    
+
+                        
+
+                        
+Zusammensetzung des gereinigten Datensatz über hundertzehn Jahre. Wir beobachten eine sich massiv verstärkende Dominanz des englischen Materials über das Jahrhundert hinweg, die Teils den Datenquellen geschuldet, zu einem großen Teil aber auch aus den Bedingungen des modernen wissenschaftlichen Publizierens erwachsen ist.
+
+                    
+
+                
+
+                
+Diese Uneinigkeit ist nicht überraschend. Da die Konkretisierung der Trennung in eine Zeit exponentieller Zunahme des wissenschaftlichen Outputs seit den 1950er Jahren fiel (vgl. Bornmann und Mutz 2015, siehe auch Abb. 1), und zugleich von geografischen und sprachlichen Grenzen moderiert wurde, aber nicht mit diesen identifiziert werden kann, ist ihre Geschichtsschreibung mit außergewöhnlichen Herausforderungen konfrontiert, da sie sich nicht mit Hunderten, sondern eigentlich mit Hunderttausenden von heterogenen Quellen befassen muss, wenn sie Fragen nach der tatsächlichen disziplinären Meta-Struktur beantworten will, anstatt sich mit philosophischen Einzelschicksalen zu befassen.
+
+                
+In der vorliegenden Arbeit schlagen wir eine Methode zur Beantwortung solcher grenzüberschreitenden, globalen Fragestellungen vor. Mithilfe eines multilingualen Sprachmodells (PhilroBERTa), welches wir auf philosophischen Texten fein-tunen generieren wir Textvektoren von 288.546 philosophischen Texten aus den vergangenen hundert Jahren. In dem derart aufgespannten Vektorraum identifizieren wir die Achse welche der kontinental-/-analytischen Unterscheidung entspricht. Indem wir die Positionierung der einzelnen Artikel auf dieser Achse erheben, können wir eine erste quantitative Einschätzungen der Topologie der analytisch/kontinentalen-Trennung vorschlagen.
+
+            
+
+            
+
+                
+Datensatz
+
+                
+Eine scharfe Umgrenzung des Gebietes der Philosophie, insbesondere eine, welche einem ganzen Jahrhundert und mehreren nationalen Philosophiekulturen, verpflichtet ist, ist ausgesprochen schwierig. Dementsprechend ist für die vorgelegte Arbeit der zugrundeliegende Datensatz so expansiv wie möglich gewählt worden. Der Datensatz enthält alle Texte welche in der JStor Datenbank unter der Rubrik ‘Philosophy’ archiviert worden sind (437.703 Rohtexte), sowie alle Abstracts aus dem 
+                    
+Web of Science (WOS)
+, welche in den Rubriken ‘Philosophy’ und ‘History and Philosophy of Science’ angesiedelt sind, oder aus in der 
+                    
+PhilPapers-
+Journal-Liste verzeichneten Publikationen stammen (188.794 Einträge).
+                
+
+                
+
+                    
+Da die Qualität der Rohdaten mäßig ist und die Fehlerquellen äußerst heterogen sind, verwenden wir einen Bulk-Labelling-Ansatz, bei dem alle Texte nach einem BOW-Modell encodiert werden und mit UMAP (McInnes, Healy, und Melville 2018)
+
+                    
+ 
+
+                    
+kartographiert werden. Cluster verwendbarer Rohdaten werden in einem interaktiven Layout manuell selektiert. Dabei wurden Titeleien, publizierte Bibliographien, besonders ungenügendes OCR und nur partiell oder gar nicht erhaltene Artikel entfernt. JSTOR und WOS-Quellen wurden vereint und überschneidende Artikel angeglichen, was zu einem finalen Datensatz von 288.546 Artikeln führte.
+
+                
+
+            
+
+            
+
+                
+Methode
+
+                
+
+                    
+Die Modellierung multilingualer Textcorpora stellt seit längerem ein Problem für zahlreiche Bereiche der Digital Humanities dar 
+
+                    
+(Dombrowski 2020). Klassische Methoden, wie BOW-, Topic-, oder Wortvektormodelle stoßen hier an ihre Grenzen, da die von ihnen gelernten Repräsentationen hauptsächlich Unterschiede zwischen Sprachen als salienteste Muster erkennen, und das eigentliche übersprachliche Erkenntnisinteresse verdecken. Der aus diesen Problemen resultierende Fokus auf rein englischsprachiges Quellenmaterial ist unbefriedigend (Pitman und Taylor 2017; Galina Russell 2014). Multilinguale Sprachmodelle, wie z. B. xml-Roberta (Conneau u. a. 2020)
+
+                    
+ 
+
+                    
+sind zwar in der Lage, dieses Problem zu lösen, indem sie deckungsgleiche Vektorräume für verschiedene Sprachen bereitstellen. Ihre Anwendbarkeit auf spezifische Forschungskorpora ist allerdings begrenzt, da die notwendige Wissensrepräsentation über den spezifischen Textgehalt nicht gegeben ist. 
+
+                    
+Das fine-tuning solcher Modelle auf den Forschungsdaten stellt hier allerdings eine Herausforderung dar, weil die dafür zur Verfügung stehenden Architekturen dazu tendieren, in multilingualen Trainingskorpora hauptsächlich Sprachunterschiede zu lernen und damit die Einbettungen ‚auseinanderzubrechen‘.
+
+                
+
+                
+
+                    
+Ein kürzlich vorgeschlagener Lösungsansatz, nämlich die automatische Übersetzung des gesamten Textcorpus (vgl. Malaterre und Lareau 2022; siehe auch Böhm, Alexander u. a. 2022)
+
+                    
+ 
+
+                    
+ist vielversprechend für die Erforschung der thematischen Zusammensetzung von Korpora, aber 
+
+                    
+ungeeignet
+
+                    
+ für Anwendungen in denen die unterschiedlichen 
+
+                    
+Konnotationen
+
+                    
+ von Wörtern in unterschiedlichen Sprachen und Kontexten eine Rolle spielen. Weiterhin ist die automatisierte Überführung von anderen Sprachen in eine einzige Basissprache – Englisch – mit Blick auf den Wunsch nach einer Wertschätzung verschiedener Sprachkulturen nicht ideal.
+
+                
+
+                
+
+                    
+
+                        
+
+                        
+Karte des verwendeten Datensatzes. Jeder der kleinen Datenpunkte entspricht einem von 288.546 Artikeln, angeordnet anhand der Cosinusähnlichkeit ihrer Textvektoren. Einzelne Cluster sind mit (aus Platzgründen) jeweils zwei zufällig ausgewählten Sprachen anhand von mit tfidf-ausgewählten Keywords gelabelt.
+
+                    
+
+                
+
+                
+
+                    
+In dieser Einreichung folgen wir dementsprechend einem alternativem Ansatz: Wir beginnen damit, zwei zur Erhebung von Textähnlichkeiten geeignete Sprachmodelle – ein 
+
+                    
+englischsprachiges
+
+                    
+ (
+
+                    
+paraphrase-distilroberta-base-v2
+
+                    
+) und ein multilingual vortrainiertes Modell (
+
+                    
+xlm-roberta-base, beide bereitgestellt von 
+
+                    
+Reimers und Gurevych 2019)
+
+                    
+ 
+
+                    
+auf trainings-samplen aus unserem Beispielkorpus feinzutunen. Für das englischsprachige Modell greifen wir dabei auf GPL 
+
+                    
+(Wang u. a. 2022)
+
+                    
+ 
+
+                    
+zurück, das multilinguale Modell tunen wir mit TSDAE 
+
+                    
+(Wang, Reimers, und Gurevych 2021)
+
+                    
+, da der für GPL benötigte query-generator nur auf Englisch verfügbar ist. Danach verwenden wir den Ansatz von 
+
+                    
+Reimers und Gurevych (2020
+
+                    
+) bei dem das englischsprachige Modell als ‘Lehrer’ verwendet wird, um mithilfe eines Korpus von Übersetzungen, die unterschiedlichen Sprachen in dem multilingualen Modell zur Deckung zu bringen. Wie Abb. 2 zeigt, gelingt das tatsächlich: Eine durch 
+
+                    
+UMAP
+
+                    
+ 
+
+                    
+(McInnes, Healy, und Melville 2018)
+
+                    
+ 
+
+                    
+auf der Grundlage von Cosinus-Ähnlichkeiten zwischen Texteinbettungen erstellte Karte unseres Korpus weist keine separierten Cluster von Einzelsprachen auf. Gleichzeitig ist das TSDAE-pretraining über die Angleichung der Sprachen hinweg erhalten geblieben: In einem Philosophie-spezifischen triplet-evaluation task, bei dem das Modell mit drei Passagen aus der 
+
+                    
+Stanford Encyclopedia of Philosophy 
+
+                    
+konfontiert war, in welchem zwei aus dem selben Artikel, die dritte jedoch aus einem der (mit einem einfachen BOW-Modell ermittelten) zwanzig thematisch ähnlichsten Artikel stammte, verbesserte sich die Fähigkeit, die zusammengehörenden Artikel zu ermitteln, um sieben Prozentpunkte.
+
+                
+
+                
+Um von unserem Sprachmodell zu Antworten auf unsere Fragen nach der Struktur der analytisch-kontinentalen Kluft zu kommen, encodieren wir zuerst alle Texte in unserem Sample mit dem multilingualen Sprachmodell. 
+
+                
+Die analytisch-Kontinentale Trennung wird in philosophiehistorischen Werken häufig über die Angabe von paradigmatischen ReferenzautorInnen eingeführt (e.g. "Frege", "Russel", "Moore", Quine, Strawson, … und "Hegel", "Husserl", "Heidegger","Adorno",...). Wir sammeln solche Listen in der Literatur und wählen die am häufigsten genannten Autoren aus. Dann wählen wir zufällig 2000 Beispielartikel aus, welche Autoren aus der einen, aber nicht der anderen Gruppe zitieren, also tendenziell eher aus der analytischen, oder kontinentalen Ecke kommen. Das ist unsere 'seed'-Stichprobe. 
+                    
+Einem von Waller und Anderson (2021)
+
+                    
+ 
+
+                    
+inspirierten Verfahren für die Modellierung von Polarisierung in Online-communities folgend, bilden wir den durchschnittlichen Differenzvektor zwischen den Einbettungen dieser 'seed'-
+
+                    
+A
+
+                    
+rtikel. Anschließend suchen wir nach 500 Paaren von ähnlichen Artikeln, deren Vektordifferenz diesem Differenzvektor am ähnlichsten ist, d.h. Artikelpaaren, die ein ähnliches Thema behandeln, aber deren Grundeinstellung einmal analytisch, einmal kontinental ist. 
+
+                    
+Ein solches Paar bilden beispielsweise 
+
+                    
+der analytischere Text:
+
+                    
+ '¿Hay una Filosofia de la Ciencia en el ultimo Wittgenstein?' (Moulines 1989), und die kontinentaler gelagerte Besprechung: 'Von Umgangskörpern, Vertikalspannungen, Responsivität und Musikphilosophie: Ludwig Wittgenstein im Spiegel neuerer Literatur' (Kroß 2012). Auf diese Weise ‚bereinigen‘ wir die ursprünglichen Differenzvektoren von nur thematischen Ungleichgewichten. 
+
+                
+
+                
+Durch die Berechnung der Cosinus-Ähnlichkeit aller Artikelvektoren in dem Datensatz zu den kontinentalen und analytischen Artikeln in den ermittelten Artikelpaaren können wir so einen themenunabhängigen einzigen "Analytizität/Kontinentalität"-Score für jeden Artikel entlang der kontinentalen/analytischen Achse ableiten. Die Dichte-Verteilung aller Artikel auf diesem Score ist in Abb. 3.b dargestellt. 
+
+                
+Für die Validierung dieser von dem Modell berechneten Scores, haben wir eine Web-Applikation entwickelt, in der NutzerInnen, in unserem Fall PhilosophInnen, den Titel eines Artikel aus unserem Datensatz angezeigt bekommen und entscheiden müssen, ob der Artikel aus der kontinentalen oder analytischen Philosophie stammt. Die Applikation ist sowohl auf Desktop-PCs als auch auf mobilen Endgeräten verfügbar. Die erstellte Applikation wird in den kommenden Monaten gezielt einem multilingualen Fachpublikum zugänglich gemacht werden, sodass die aus dem Sprachmodell generierten Scores empirisch validiert werden können.
+
+                
+Um zu messen, wie sich die kontinentale/analytische Spaltung im Laufe der Zeit vergrößert/verkleinert hat, fitten wir eine Serie von verbundenen gaußschen Mischverteilungsmodellen auf den Datensatz. Unter der Annahme, dass der Datensatz tatsächlich durch die Wirkung zweier Prozesse, welche analytische und kontinentale Philosophie generieren, entstanden ist, geben uns diese Modelle die jeweilige zentrale Tendenz und Spannbreite dieser Prozesse an.
+
+                
+
+                    
+
+                        
+
+                        
+Verteilung von Artikeln entlang des analytisch-Kontinentalen-Gradienten. (a) zeigt die Entwicklung des Gradienten im Verlauf der Zeit. Zentrale Tendenzen und Dezile sind einer Serie von verbundenen zwei-Komponenten Gaußschen Mischmodellen entnommen. Im ersten Drittel wäre allerdings ein ein-Komponenten-Modell vorzuziehen. Vier einzelne Philosophen-Karrieren sind anhand der fortschreitenden zentralen Tendenz der Werte ihrer Artikel auf dem Gradienten eingetragen. Man beachte insbesondere die Karriere Rortys von einem ursprünglich analytischen Philosophen, zu einem der wirkungsvollsten Proponenten kontinentaler Autoren im angloamerikanischen Raum. (b) Zufällig ausgewählte Beispiel-Titel entlang des analytisch-kontinentalen Gradienten, nebst Dichte-Verteilung über das gesamte Sample.
+
+                    
+
+                
+
+            
+
+            
+
+                
+Vorläufige Ergebnisse
+
+                
+Die Ergebnisse dieser Modelle sind in Abb. 3.a wiedergegeben. Wir beobachten, dass sich die beiden Verteilungen bis in die späten 1940er Jahre nahezu parallel entwickeln – und in der Tat suggerieren die statistischen Kennzahlen der Modellwahl, dass eine einzige Gauß-Verteilung die Daten in diesem Bereich besser beschreiben würde. Von 1950 bis 1960 beobachten wir hingegen ein scharfes Ausschwenken der analytischen Verteilung, gemeinsam mit einer Verkleinerung der Breite der Verteilung – also eine Konzentration und Konsolidierung analytischer Tendenzen in unserem Korpus, verbunden mit einer asymmetrische Polarisierung, die bis heute weitestgehend konstant zu bestehen scheint.
+
+            
+
+            
+
+                
+Diskussion
+
+                
+Diese Ergebnisse stehen im scharfen Kontrast zu früheren monolingualen Zitations-Studien, die eine Isoliertheit kontinentaler Philosophie identifiziert hatten (Noichl 2021). Die Erweiterung des Datensatzes um mehrere Sprachen und die damit einhergehende methodologische Komplexität stellt also in jedem Fall eine notwendige Grundlage für weitere Untersuchungen dar. Dabei hat der verwendete Datensatz noch nicht alle Möglichkeiten zu multilingualer Erweiterung ausgeschöpft: Die reichhaltige spanischsprachige OpenAccess-Kultur hat in unserer Untersuchung zum Beispiel noch nicht ausreichend Eingang gefunden. Wenn für die gestellte Fragestellung auch nicht zwingend notwendig, wäre eine Erweiterung über den europäischen Sprachraum hinweg wünschenswert.
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+Beckermann, Ansgar. 
+2003. „Muss die Philosophie noch analytischer werden?  (Ist die Analytische Philosophie am Ende?)“. Universität Würzburg.
+
+                    
+
+                        
+Bieri, Peter.
+ 2007. „Was bleibt von der analytischen Philosophie?“ 
+                        
+Deutsche Zeitschrift für Philosophie
+
+                        
+ 
+
+                        
+55 (3). https://doi.org/10.1524/dzph.2007.55.3.333.
+
+                    
+
+                    
+
+                        
+Böhm, Alexander, Reiners-Selbach, Stefan, Baedke, Jan, Fábregas Tejeda, Alejandro, und Nicholson, Daniel J.
+ 2022. „What was Theoretical Biology? A Topic-Modelling Analysis of a Multilingual Corpus of Monographs and Journals, 1914-1945“. 
+                        
+DHd2022: Kulturen des digitalen Gedächtnisses
+
+                        
+, März. https://doi.org/10.5281/ZENODO.6328143.
+
+                    
+
+                    
+
+                        
+Bornmann, Lutz, und Rüdiger Mutz.
+ 2015. „Growth Rates of Modern Science: A Bibliometric Analysis Based on the Number of Publications and Cited References“. 
+                        
+Journal of the Association for Information Science and Technology
+
+                        
+ 
+
+                        
+66 (11): 2215–22. https://doi.org/10.1002/asi.23329.
+
+                    
+
+                    
+Conneau, Alexis, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary, Guillaume Wenzek, Francisco Guzmán, Edouard Grave, Myle Ott, Luke Zettlemoyer, und Veselin Stoyanov.
+ 2020. „Unsupervised Cross-lingual Representation Learning at Scale“. arXiv. http://arxiv.org/abs/1911.02116.
+
+                    
+
+                        
+Critchley, Simon.
+ 1997. „What Is Continental Philosophy?“ 
+                        
+International Journal of Philosophical Studies
+
+                        
+ 
+
+                        
+5 (3): 347–63. https://doi.org/10.1080/09672559708570862.
+
+                    
+
+                    
+
+                        
+———
+
+                        
+. 2001. 
+
+                        
+Continental philosophy: A very short introduction
+
+                        
+. Oxford: Oxford University Press.
+
+                    
+
+                    
+Dombrowski, uinn.
+ 2020. „What’s a ‚Word‘: Multilingual DH and the English Default“. McGill, Oktober 15. https://quinndombrowski.com/blog/2020/10/15/whats-word-multilingual-dh-and-english-default/undefined.
+
+                    
+
+                        
+Galina Russell, Isabel. 
+2014. „Geographical and linguistic diversity in the Digital Humanities“. 
+                        
+Literary and Linguistic Computing
+
+                        
+ 
+
+                        
+29 (3): 307–16. https://doi.org/10.1093/llc/fqu005.
+
+                    
+
+                    
+
+                        
+Glock, Hans-Johann.
+ 2008. 
+                        
+What is analytic philosophy?
+
+                        
+ 
+
+                        
+Cambridge: Cambridge University Press.
+
+                    
+
+                    
+
+                        
+Hobbs, Valerie.
+ 2014. „Accounting for the Great Divide: Features of Clarity in Analytic Philosophy Journal Articles“.
+                        
+Journal of English for Academic Purposes
+
+                        
+ 
+
+                        
+15 (September): 27–36. https://doi.org/10.1016/j.jeap.2014.05.001.
+
+                    
+
+                    
+
+                        
+Hoche, Hans-Ulrich. 
+2009. „Bieri über die Zukunft der analytischen Philosophie — Eine unerlässliche Entgegnung“.
+                        
+Jahrbuch für Recht und Ethik / Annual Review of Law and Ethics
+
+                        
+ 
+
+                        
+17: 415–44.
+
+                    
+
+                    
+
+                        
+Kroβ, Matthias.
+ 2012. „Von Umgangskörpern, Vertikalspannungen, Responsivität und Musikphilosophie: Ludwig Wittgenstein im Spiegel neuerer Literatur“. 
+                        
+Philosophische Rundschau
+
+                        
+ 
+
+                        
+59 (3): 197–216.
+
+                    
+
+                    
+
+                        
+Malaterre, Christophe, und Francis Lareau.
+ 2022. „The Early Days of Contemporary Philosophy of Science: Novel Insights from Machine Translation and Topic-Modeling of Non-Parallel Multilingual Corpora“. 
+                        
+Synthese
+
+                        
+ 
+
+                        
+200 (3): 242. https://doi.org/10.1007/s11229-022-03722-x.
+
+                    
+
+                    
+
+                        
+McInnes, Leland, John Healy, und James Melville.
+ 2018. „UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction“. 
+                        
+arXiv:1802.03426 [cs, stat]
+
+                        
+, Februar. http://arxiv.org/abs/1802.03426.
+
+                    
+
+                    
+
+                        
+Moulines, Ulises.
+ 1989. „¿Hay una filosofia de la ciencia en el ultimo wittgenstein?“ 
+                        
+Theoria: An International Journal for Theory, History and Foundations of Science
+
+                        
+ 
+
+                        
+4 (11): 327–42.
+
+                    
+
+                    
+
+                        
+Noichl, Maximilian.
+ 2021. „Modeling the Structure of Recent Philosophy“. 
+                        
+Synthese
+
+                        
+ 
+
+                        
+198 (6): 5089–5100. https://doi.org/10.1007/s11229-019-02390-8.
+
+                    
+
+                    
+
+                        
+Petrovich, Eugenio, und Valerio Buonomo. 
+2018. „Reconstructing Late Analytic Philosophy. A Quantitative Approach“. 
+                        
+Philosophical Inquiries
+
+                        
+ 
+
+                        
+6 (1): 151–82. https://doi.org/10.4454/philinq.v6i1.184.
+
+                    
+
+                    
+
+                        
+Pitman, Thea, und Claire Taylor.
+ 2017. „Where’s the ML in DH? And Where’s the DH in ML? The Relationship between Modern Languages and Digital Humanities, and an Argument for a Critical DHML.“ 
+                        
+DHQ: Digital Humanities Quarterly
+
+                        
+ 
+
+                        
+11 (1).
+
+                    
+
+                    
+Reimers, Nils, und Iryna Gurevych.
+ 2019. „Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks“. arXiv. http://arxiv.org/abs/1908.10084.
+
+                    
+
+                        
+———
+
+                        
+. 2020. „Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation“. arXiv. http://arxiv.org/abs/2004.09813.
+
+                    
+
+                    
+
+                        
+Waller, Isaac, und Ashton Anderson. 
+2021. „Quantifying Social Organization and Political Polarization in Online Platforms“. 
+                        
+Nature
+
+                        
+ 
+
+                        
+600 (7888): 264–68. https://doi.org/10.1038/s41586-021-04167-x.
+
+                    
+
+                    
+
+                        
+Wang, Kexin, Nils Reimers, und Iryna Gurevych.
+ 2021. „TSDAE: Using Transformer-based Sequential Denoising Auto-Encoderfor Unsupervised Sentence Embedding Learning“. In 
+                        
+Findings of the Association for Computational Linguistics: EMNLP 2021
+
+                        
+, 671–88. Punta Cana, Dominican Republic: Association for Computational Linguistics. https://doi.org/10.18653/v1/2021.findings-emnlp.59.
+
+                    
+
+                    
+Wang, Kexin, Nandan Thakur, Nils Reimers, und Iryna Gurevych. 2022. „GPL: Generative Pseudo Labeling for Unsupervised Domain Adaptation of Dense Retrieval“. arXiv. http://arxiv.org/abs/2112.07577.
+
+                
+
+            
+
+        
+
+    

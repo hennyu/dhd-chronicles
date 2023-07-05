@@ -1,0 +1,412 @@
+
+        
+
+            
+
+                
+Einleitung
+
+                
+Woran erkennt man die Handschrift eines Malers? Was macht den Stil eines Künstlers aus? Diese Fragen beschäftigen die Klassisch Archäologie bezüglich antiker griechischer Vasenbilder seit über einem Jahrhundert. Im Projekt EGRAPHSEN
+ wird die Methode der Malerzuweisung als Klassifikationsproblem mit Supervised Machine Learning Verfahren untersucht. Das Ziel ist es, einerseits neue Erkenntnisse über Maler und Ihre Stile zu gewinnen, andererseits über die Methode zu reflektieren und das Vorgehen eines neuronalen Netzes dem traditionellen menschlichen Zugang gegenüberzustellen.
+                
+
+                
+In der Klassischen Archäologie hat sich mit dem Vasenforscher John D. Beazley (* 13. September 1885; † 6. Mai 1970) eine Expertise und Kennerschaft ausgebildet, die ihm eine kaum anfechtbare Autorität verliehen hat. Er hat hunderttausenden Vasenbildern Maler zugewiesen, indem er sie insbesondere in ihren zeichnerischen Details verglichen hat (zu Beazley und seiner Methode s. Neer 1997, 7-16; Driscoll 2019, 106-110). Wenn auch die Methodenkritik und -reflexion in den letzten Jahren zugenommen hat (Graepler 2016, 18-21), so werden auch noch in aktuellen Publikationen Maler identifiziert und ihre Œuvre erweitert (z.B. Padgett 2017, 392-399). In den letzten Jahren fand mit dem Aufkommen des maschinellen Lernens in den Geisteswissenschaften jedoch auch ein Perspektivwechsel statt, und sowohl die Archäologie und Kunstgeschichte als auch die Informatik sind sehr am Erkenntnisgewinn und an der Methodenreflexion durch die Verwendung künstlicher neuronaler Netze in diesem Gebiet interessiert (Ma et al 2017, 1174-1176; Elgammal und Kang und DenLeeuw 2018, 42-49; Bell und Offert 2021, 4-9; Langmead 2021, 2-19). Das führt auch zu Veränderungen im Anspruch an die der Publikation von Forschungsergebnissen und -daten.
+
+                
+Beim Training eines Convolutional Neural Network (CNN) entstehen große Datenmengen: Annotationen, vorverarbeitete Bilder, Merkmalsvektoren, Meta- und Paradaten. In unserem Projekt streben wir an, diese Daten auf eine Art und Weise zu veröffentlichen, die einen forschungsorientierten und methodenkritischen Zugang erlauben. Das Konzept dieser Veröffentlichung in Form einer Datenbank soll im Zentrum dieses Beitrags stehen. Um das Problem zu verdeutlichen, soll zu Beginn der methodische Zugang kurz umrissen werden. Dann soll zunächst die Publikation der Bild- und Metadaten vor dem Hintergrund bestehender Tools der digitalen Kunstgeschichte erläutert werden. Schließlich wird auf die trainierten Modelle eingegangen und besprochen werden, inwiefern diese Verwendung in der Datenbank finden können.
+
+            
+
+            
+
+                
+Versuchsaufbau und Vorgehen
+
+                
+Zunächst soll die Datengrundlage benannt werden: Welche Informationen werden dem CNN zugeführt, um es zu trainieren? Bei der traditionellen Methode der Malerzuweisung stehen sehr spezifische Details im Vordergrund. Wir möchten mit computergestützen Methoden untersuchen, welche Bildelemente und -eigenschaften tatsächlich die Handschrift eines Malers erkennen lassen. Allerdings sind nur wenige Vasenbilder tatsächlich mit einer Malersignatur versehen, und auf diese Weise ergibt sich keine kritische Menge für das Training eines CNN. Deswegen haben wir uns in EGRAPHSEN entschieden, zusätzlich zu signierten Vasen auch die Malerzuweisungen von John D. Beazley als Ground Truth für die Klassifikation zu verwenden.
+
+                
+Da es um die Details im Bild gehen soll, nutzen wir außerdem nicht die gesamte Darstellung für das Training. Stattdessen trainieren wir mit unterschiedlichen Kombinationen von vordefinierten Bildausschnitten. Für diesen Zweck wurde eine kleinteilige Ontologie entwickelt, die die Körperteile der Figuren und die Bildbestandteile in ihren räumlichen Ausmaßen, Bezeichnungen und Bezügen zueinander klar festgelegt. So sind die Bildbestandteile nicht nur benannt, sondern meistens auch mit weiteren Informationen zu ihrer Darstellung angereichert. Sie sind außerdem in einem hierarchischen System strukturiert, sodass eine Figur auf unterschiedlichen Detailebenen betrachtet werden kann: Es könnte eine gesamte Figur für das Training verwendet werden, auf der nächsten hierarchischen Detailstufe lediglich der Arm, oder auf der nächsten hierarchischen Detailstufe auch nur die einzelnen Bestandteile des Armes (für eine ausführliche Beschreibung der Ontologie s. Kipke und Brinkmeyer, 2022, 3-5). Auf diese Weise kann man die Bilder ihrer Komplexität angemessen analysieren und mit unterschiedlichen Merkmalen auf verschiedenen Detailstufen experimentieren, ohne den Bildkontext vollständig zu verlieren.
+
+                
+Nach diesem System wurden 4.188 einzelne Figuren und damit insgesamt über 200.000 kleinteiligen Einzelannotationen von 38 Malern vorgenommen.
+ Damit liegt eine hohe Dichte an Informationen pro Vasenbild vor. Diese Einzelannotationen werden extrahiert, vorverarbeitet und dem CNN zugeführt. Der Nutzen der ausgeschnittenen Annotationen soll an dieser Stelle jedoch nicht enden. Im Gegenteil sollen diese der Klassischen Archäologie als weitere Hilfestellung bei der Malerzuweisungdienen und der unkontrollierbaren Abstraktion des CNN sowie der autoritätsgesteuerten Zuweisung einzelner Forscher:innen gegenüberstehen.Somit soll der Malerzuweisung eine visuelle Evidenz verschafft werden, die in einer Abwägung unterschiedlicher Methoden zu neuen Erkenntnissen führen soll.
+                
+
+                
+Denn während das Modell erfreuliche Ergebnisse bei Malern mit zahlreichen bekannten Werken und häufig verwendeten Labeln wie Augen und Händen liefert, werden auch die Grenzen und Gefahren schnell deutlich: Erstens bleibt der Mensch dem neuronalen Netz dort überlegen, wo nur wenige Werke bekannt oder wo diese sehr heterogen sind. Schließlich reichten John D. Beazley zuweilen nur zwei Vasenbilder, um einen Maler zu identifizieren (z.B. Beazley 1963, 21). Das ist eine Datenlage, auf der Supervised Machine Learning Verfahren aktuell noch keine befriedigenden Lösungen liefern können. Zweitens besteht noch Unklarheit darüber, ob nicht stärkere Eigenschaften des Bildes, wie etwa Zeit-, Gattungs-, oder Gefäßstil trotz Bildausschnitten zu einem unerwünschten Bias im Training führen und so den Erkenntnissen über den persönlichen Stil der Maler im Weg stehen könnten. Dies soll in unseren Daten mithilfe strukturierter Analysemöglichkeiten problematisiert werden können.
+
+            
+
+            
+
+                
+Konzeption: Der digitale Bildvergleich als Grundlage visueller Evidenz
+
+                
+Wie kann eine Publikation der Annotationen nun bestmöglich diesen Zweck erfüllen? Der detaillierte Bildvergleich steht nicht nur im Zentrum der Meisterforschung und Malerzuweisung, sondern bildet den Kern aller Bildwissenschaften. So steht die digitale Kunstgeschichte bereits in einer Tradition von Bilddatenbanken, die ein assoziatives Vorgehen und Sortieren ermöglichen und sich dabei auf Aby Warburg und den Entstehungsprozess seines Bilderatlas (Hristova 2016, 117-120; Du Preez 2020) berufen. Ein Beispiel hierfür ist die Anwendung Meta-Image, die im Rahmen eines gleichnamigen, DFG geförderten Projekts in Köln und Lüneburg entwickelt wurde. Die Anwendung erlaubt das stetige Neuanordnen von Bildern in Netzwerke, was eine Nachvollziehbarkeit des Erkenntnisgewinns ermöglicht, und damit eine visuelle Evidenz für die Beantwortung ikonographischer oder gestaltungstechnischer Fragestellungen schafft (Dieckmann und Warnke 2018, 79-90). Die Anwendung simuliert den Leuchttisch von Kunsthistoriker:innen, jedoch ohne von seinen physischen Grenzen eingeschränkt zu sein. Dieser Ansatz scheint auch für den Detailvergleich einzelner Bildausschnitte sehr lohnend.
+
+                
+Mehr Funktionalitäten im Analyseprozess und Unabhängigkeit zu Bilddatenbanken bietet das webbasierte Tool 
+                    
+ARIES. 
+Es wurde Team von Forschern aus Amerika (New York) und Brasilien (Rio de Janeiro) entwickelt (Projektwebsite: 
+                    
+). Dort können eigene Meta- und Bilddaten importiert und mithilfe unterschiedlicher Tools analysiert werden. So kann man beispielsweise unterschiedliche Formen des Überlagerns der Bilder (Crissaff 2017 1-8; Deutch 2021, 7-12) simulieren. Jedoch ist die Möglichkeit zur Verwendung der Metadaten in einem Umfang und einer Komplexität, wie sie in diesem Projekt vorliegen, nicht möglich. Um den bestmöglichen Nutzen in einer kontrollierten Umgebung zu gewährleisten, wird stattdessen die Entwicklung einer eigenen Benutzeroberfläche und Exportmöglichkeiten für die Weiterverwendung in anderen Anwendungen angestrebt.
+                
+
+                
+Eine solche Datenbank soll dabei nicht nur die annotierten Bildausschnitte zur Verfügung stellen, sondern auch Metadaten zu den Vasenbildern im Umfang des Beazley Archives (Smith 2005, 23-24; Kurtz 2009, 39-46) enthalten, die im Projekt um weitere Informationen wie beispielsweise eine kleinteilige Datierung der untersuchten Vasenbilder und Maße der Vasen ergänzt wurden. Zusätzlich zu den Metadaten soll das hierarchische Annotationssystem mit all seinen weiteren Informationsebenen als Grundlage für die Suchmaske dienen.Dabei soll die Suche nach drei Kategorien aufgefächert sein:
+
+                
+1. Annotationslabel: Es ist möglich, ein oder mehrere Labels (z. B. Hände, s. Fig. 1) auszuwählen, die für den Vergleich verwendet werden sollen. Dabei können auch bestimmte Zustände des Labels gewählt werden, die ebenfalls in der Annotation berücksichtigt wurden (z. B. nur Hände, die etwas halten oder Münder, die Flöte spielen, etc.).
+
+                
+2. Malerauswahl: Man kann einen oder mehrere Maler auswählen, die mit den gewählten Labels untersucht werden sollen. Dabei werden die Zuweisungen in vier Stufen von Zuordnungssicherheit geteilt: 1. Signierte Werke, 2. von Beazley zugeordnet, 3. von Œuvre-Forschern zugeordnet (z.B. J. H. Oakley beim Achilleus Maler (Oakley 1997)) und 4. von weiteren Vasenforscher:innen zugeordnet. Dies soll Transparenz und Nachvollziehbarkeit über die Sicherheit der Zuordnung gewährleisten.
+
+                
+3. Externe Kriterien: Die Zuweisung selbst ist bereits ein subjektives Kriterium. Deswegen soll es auch möglich sein, die Labels nach übergeordneten Kriterien in unterschiedlichen Kombinationen zu suchen und sie so im Kontext ihrer Datierung, Gefäßform, Figurengröße und ihres Motivspektrums zu betrachten, um damit das Verhältnis von Zeit- und Gattungsstil zum persönlichen Stil des Malers beurteilen zu können.
+
+                
+
+                    
+
+                        
+
+                        
+Abb. 1: Ein Vergleich der Hände lässt die 'Handschrift' des Berliner Malers erkennen.
+
+                    
+
+                
+
+                
+Schließlich können sowohl die Zuweisung als auch die externen Kriterien vernachlässigt und die Bilder unabhängig davon angezeigt werden. Diese facettierte Suche soll dazu beitragen, sich von der Malerzuweisung durch bestimmte Forscher:innen zu lösen und einen Erkenntnisgewinn aus den Bildern heraus zu ermöglichen. Das Ergebnis dieser Suche soll dann ebenfalls eine Leinwand sein, auf der die Bilder nach den bereits genannten Kriterien sortiert werden können. Weiterhin hat jede Einzelannotation einen Datenbankeintrag, in dem die Metadaten eingesehen werden können. Ein Export des Suchergebnisses soll es schließlich ermöglichen, die Bilder auch in anderen Anwendungen zu importieren um weitere Untersuchungen durchzuführen.
+
+            
+
+            
+
+                
+Konzeption: Einsatz künstlicher neuronaler Netze für die Bildsuche
+
+                
+Diese Suchmaske basiert auf den Metadaten zur Vase und der Ontologie, die im Projekt entwickelt wurde. Die Merkmalsvektoren, Zuweisungen und Funktionalität des CNN sind darin noch nicht inbegriffen. Im Folgenden soll erörtert werden, inwiefern diese Daten nutzbar gemacht werden sollen.
+
+                
+Die keyword basierte Suche in EGRAPHSEN steht einem Trend entgegen, der eine gewisse Loslösung von Schlagworten in Bilddatenbanken anstrebt. Im Bereich des Content Based Image Retrieval suchen Forscher:innen nach bildimmanenten Eigenschaften, mit denen Deskriptoren für jedes einzelne Bild definiert werden können. Zwischen diesen Deskriptoren können Ähnlichkeitsbeziehungen berechnet und so Suchergebnisse generiert werden, die sowohl den Suchprozess erleichtern, als auch das Bild mit seinen Eigenschaften in den Mittelpunkt stellen (Tyagi 2017, 1-22). Dabei können neben einfach auslesbaren low-level-features wie Farben und Formen auch künstliche neuronale Netze verwendet werden, um Features zu extrahieren und für die Deskription der Bilder zu verwenden (Aasia und Sharma 2017, 1049; Hameed 2021, 21-32) Insbesondere Methoden der Computer Vision können bei komplexen und heterogenen Bildern, wie sie von den digitalen Geisteswissenschaften erforscht werden, den Umgang mit großen Bildkorpora erleichtern (Bell und Ommer 2016, 71-72; Bell und Ommer 2018, 67-72; Resig 2014).
+
+                
+Da es in EGRAPHSEN explizit um Stilanalyse geht, ist die Verwendung von low-level-features zu banal. Die Experimente im Projekt haben unterschiedliche trainierte Modelle ergeben, die genutzt werden können, um Features zu extrahieren und zu visualisieren. Diese Features könnten zwar auch für ein Content Based Image Retrieval verwendet werden, jedoch ist für EGRAPHSEN eine derartige Funktionalität aus verschiedenen Gründen nicht vorgesehen. Im Projekt ist das Ausmaß der experimentellen Abstraktion durch das CNN sehr deutlich geworden: Noch mehr als bei Zuweisungen durch Archäolog:innen ist die Nachvollziehbarkeit der Ergebnisse stark mit einer Interpretation dieser verbunden. Das führt zu spannenden Erkenntnissen über die Methode der Malerzuweisung und über die Funktion neuronaler Netze als solche, würde eine Datenbank in ihrer Funktionalität jedoch zu stark mit einer Subjektivität färben, die nicht mehr nachvollziehbar sein kann. Statt also die Ergebnisse der Experimente in der Datenbank funktional zu nutzen, soll sie ihnen gegenüberstehen und zur weiteren Forschung, Verifizierung und Vertiefung der methodischen Reflexionen dienen – insbesondere dort, wo die Verfahren des maschinellen Lernens derzeit an ihre Grenzen kommen. Auf der einen Seite steht also die Analyse der Maler und ihrer Beziehungen zueinander mithilfe eines CNNs, und auf der anderen Seite eine Anwendung zur Nachvollziehbarkeit dieser Ergebnisse und Vertiefung der Forschung durch menschliche Expert:innen.
+
+                
+Für den Kern der Datenbank – ihre Strukturierung und Funktionalität – ist also kein Einsatz von neuronalen Netzen vorgesehen. An zwei weiteren Stellen sollen aber die Ergebnisse der Experimente und Nebenprodukte des Vorgehens genutzt werden.
+
+                
+So werden die vom CNN extrahierten Features, die Merkmalsvektoren und die Zuweisungen als reine Werte in der Datenbank enthalten sein, um die Nachvollziehbarkeit der Experimente nutzerfreundlich zu halten und in einer Domäne zu dokumentieren.
+
+                
+Zudem sollen für das Wachstum und die Pflege der Datenbank Teile unseres semi-automatischen Annotations-Workflows nutzbar gemacht werden. Um auf eine kritische Datenmenge für das Training der Modelle zu kommen, wurde ein Annotationstool entwickelt, das auf einer Open Source Software Version des Tools LabelMe (Wada 2022) basiert und in EGRAPHSEN um eine Object Detection Komponente erweitert wurde. Der Workflow sieht vor, dass die Object Detection Vorschläge zur Annotation macht, die dann individuell angepasst werden können (Kipke und Brinkmeyer, 2022, 5-6). Da im Hintergrund von EGRAPHSEN unsere Projektdatenbank steht, liegen bereits Metadaten zu den Vasenbildern vor. Eine Datenpipeline mit Nutzung dieses Tools und der Pre-Processing Algorithmen soll es ermöglichen, weitere annotierte Ausschnitte aus Vasenbildern der Datenbank hinzuzufügen (vgl. Fig. 2).
+                    
+
+                        
+
+                        
+Pipeline zur weiteren Anreicherung und Nutzung der Datenbank. 
+                            
+Abb. 2: Blau betrifft die Datenbank, ihren Aufbau und Nutzung, orange den Anreicherungsprozess.
+
+                        
+
+                    
+
+                
+
+            
+
+            
+
+                
+
+                    Fazit
+                
+
+                
+In EGRAPHSEN wurde die Malerzuweisung als traditionelle Methode untersucht und diese der Funktionsweise von CNNs gegenübergestellt. Obwohl beide Methoden spezifische Bilddetails in den Mittelpunkt stellen, lassen sich auf beiden Seiten Vorteile benennen: Das menschliche Auge hat die Fähigkeit, auch bei geringen Bildmengen komplexe Transferleistungen zu erbringen und die Bilder in ihrer Heterogenität sowie im Aufbau zu verstehen, während das CNN einen Blick auf die Bilder ermöglicht, der nicht durch spezifisch menschliche Expertenkenntnis, motivische Zusammenhänge und unterbewusste Annahmen gefärbt sein muss. Jedoch besteht auch stets die Gefahr, dass menschliche Expert:innen bereits in der Bildauswahl und im Training die Ergebnisse beeinflussen und das CNN durch fehlendes Bildverständnis andere Fehlannahmen, z. B. über die Bildqualität, aufweisen kann.
+
+                
+Deswegen wurde in EGRAPHSEN großer Wert darauf gelegt, dass die Kategorisierung der Bildausschnitte auf einer Ontologie basiert, die bewusst auf interpretative Aspekte verzichtet und die Bilder primär in ihrer Form beschreibt. Dadurch, dass die Bilder aus ihrem Kontext extrahiert und nach frei wählbaren, formalen Kriterien sortiert werden können, bekommt die Malerzuweisung ihrerseits eine Evidenz, wie sie häufig sonst nicht vorhanden ist. Denn sei es Mensch oder Maschine – viele, stärkere Bildmerkmale beeinflussen die Zuweisung häufig erheblich.
+
+                
+Es soll eine Anwendung geschaffen werden, in der der Einfluss solche Merkmale, wie etwa des Motivs oder der Vasenform, möglichst reduziert werden. Mithilfe unterschiedlicher dynamischer Kriterien können sich Expert:innen zwischen den reinen Bilddaten auf der einen Seite und experimenteller Abstraktion durch das CNN auf der anderen Seite positionieren. So entsteht eine Forschungsumgebung, in der das menschliche Auge und die hochkomplexen Transferleistungen ausgebildeter Bildwisseschaftler:innen im Wechselspiel mit der KI ihr Potential weiter entfalten können.
+
+            
+
+        
+
+        
+
+
+
+
+Gefördert durch das Niedersächsische Kultusministerium und SPRUNG (ehemals „Niedersächsisches Vorab“). In Kooperation mit dem Machine Learning Lab der Universität Hildesheim. Unter der Mitarbeit von Prof. Dr. Martin Langner, Prof. Dr. Lars Schmidt-Thieme und Lukas Brinkmeyer M. Sc.
+
+
+Besonderer Dank gilt an dieser Stelle den studentischen Hilfskräften, die die Annotationen durchgeführt haben: Firmin Forster (B. A.), Manuel Janda (B. A.), Maja Leone (B. A.) und Max Maletzki (B. A.).
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+Ali, Aasia und Sanjay Sharma.
+ 2017. “Content based image retrieval using feature extraction with machine learning”. In 
+                        
+2017 International Conference on Intelligent Computing and Control Systems (ICICCS)
+, 1048–1053. 
+                        
+.
+                    
+
+                    
+Beazley, John D.
+ 1963. 
+                        
+Attic Red-figure Vase-painters
+. 2. Aufl. Oxford: Clarendon Press.
+                    
+
+                    
+Bell, Peter und Björn Ommer.
+ 2016. “Visuelle Erschliessung (Computer Vision als Arbeits- und Vermittlungstool)”. 
+                        
+Elektronische Medien &amp; Kunst, Kultur und Historie
+ 23: 67–73.
+                    
+
+                    
+Bell, Peter und Björn Ommer.
+ 2018. “Computer Vision und Kunstgeschichte. Dialog zweier Bildwissenschaften”. In 
+                        
+Computing Art Reader: Einführung in die digitale Kunstgeschichte
+, hg. Von Piotr Kuroczyński, Peter Bell und Lisa Dieckmann, 61–75. 
+                        
+.
+                    
+
+                    
+Bell, Peter und Fabian Offert.
+ 2021. "Reflections on connoisseurship and computer vision." 
+                        
+Journal of Art Historiography
+ 24. 
+                        
+.
+                    
+
+                    
+Crissaff, Lhaylla, Louisa Wood Ruby, Samantha Deutch, R. Luke DuBois, Jean-Daniel Fekete, Juliana Freire und Claudio Silva.
+ 2017. “ARIES: enabling visual exploration and organization of art image collections”. 
+                        
+IEEE computer graphics and applications
+ 38, Nr. 1: 91–108. 
+                        
+https://doi.org/
+
+                        
+10.1109/MCG.2017.377152546
+.
+                    
+
+                    
+Deutch, Samantha.
+ 2021. “ARt Image Exploration Space (ARIES): A response to the image needs of art library patrons”. 
+                        
+Art Libraries Journal
+ 46, Nr. 1: 7–12. 
+                        
+.
+                    
+
+                    
+Dieckmann, Lisa, und Martin Warnke.
+ 2018. “Meta-Image und die Prinzipien des Digitalen im Mnemosyne-Atlas Aby Warburgs”. In 
+                        
+Computing Art Reader: Einführung in die digitale Kunstgeschichte
+, hg. von Piotr Kuroczyński, Peter Bell und Lisa Dieckmann, 79–96. 
+                        
+.
+                    
+
+                    
+Driscoll, Eric.
+ 2019. “Beazley’s Connoisseurship: Aesthetics”. Natural History, and Artistic Development. In 
+                        
+Dossier. Corps antiques: morceaux choisis
+, hg. von Florence Gherchanoc und Stéphanie Wyler, 101-120.
+                    
+
+                    
+Du Preez, Amanda.
+ 2020. “Approaching Aby Warburg and Digital Art History: Thinking Through Images”. In 
+                        
+The Routledge Companion to Digital Humanities and Art History
+, hg. von Kathryn Brown, 374–385. London: Routledge.
+                    
+
+                    
+Elgammal, Ahmed, Yan Kang und Milko Den Leeuw.
+ 2018. “Picasso, Matisse, or a Fake? Automated Analysis of Drawings at the Stroke Level for Attribution and Authentication”. 
+                        
+Proceedings of the AAAI Conference on Artificial Intelligence
+ 32, 42–50. 
+                        
+.
+                    
+
+                    
+Graepler, Daniel.
+ 2016. “Künstlerhand und Kennerauge. Die Zuschreibung als archäologisches Methodenproblem”. In 
+                        
+Töpfer, Maler, Werkstatt. Zuschreibungen in der griechischen Vasenmalerei und die Organisation antiker Keramikproduktion
+, hg. von Norbert Eschbach und Stefan Schmidt, 14–24. München: C. H. Beck.
+                    
+
+                    
+Hameed, Ibtihaal M, Sadiq H. Abdulhussain und Basheera M. Mahmmod.
+ 2021. “Content-based image retrieval: A review of recent trends”. 
+                        
+Cogent Engineering
+ 8, Nr. 1. 
+                        
+.
+                    
+
+                    
+Hristova, Stefka.
+ 2016. “Images as Data: Cultural Analytics and Aby Warburg’s Mnemosyne”. 
+                        
+International Journal for Digital Art History
+, Nr. 2, 116–133. 
+                        
+.
+                    
+
+                    
+Kipke, Marta und Lukas Brinkmeyer.
+ 2022. „Deep Level Annotation for Painter Attribution on Greek Vases utilizing Object Detection“, In 
+                        
+
+                        
+SUMAC‘22: Proceedings of the 4th workshop on 
+
+                        
+Structuring and Understanding of Multimedia heritAge Contents. 
+
+                        
+.
+                    
+
+                    
+Kurtz, D.
+ 2009. “www. beazley. ox. ac. uk. From apparatus of scholarship to web resource. The Beazley Archive 1970-2008”. 
+                        
+Archeologia e Calcolatori
+, Nr. 20: 37–46.
+                    
+
+                    
+Langmead, Alison, Christopher J. Nygren, Paul Rodriguez und Alan Craig.
+ 2021. “Leonardo, Morelli, and the Computational Mirror.” 
+                        
+DHQ: Digital Humanities Quarterly
+ 15, Nr. 1. 
+                        
+.
+                    
+
+                    
+Ma, Daiqian, Feng Gao, Yan Bai, Yihang Lou, Shiqi Wang, Tiejun Huang und Ling-Yu Duan.
+ 2017. “From part to whole: who is behind the painting?” In 
+                        
+Proceedings of the 25th ACM international conference on Multimedia
+, 1174–1182. 
+                        
+.
+                    
+
+                    
+Neer, Richard.
+ 1997. “Beazley and the Language of Connoisseurship”. 
+                        
+Hephaistos
+ 15: 7–30.
+                    
+
+                    
+Oakley, John Howard.
+ 1997. 
+                        
+The Achilles Painter. 
+Mainz: Phillip von Zabern.
+                    
+
+                    
+Padgett, J. Michael, hg.
+ 2017. 
+                        
+The Berlin Painter and his World. Athenian Vase-Painting in the Early Fifth Century BC.
+ New Haven: Yale University Press.
+                    
+
+                    
+Resig, John.
+ 2014. “Using computer vision to increase the research potential of photo archives”. 
+                        
+Journal of Digital Humanities
+ 3, Nr. 2. 
+                        
+.
+                    
+
+                    
+Smith, Tyler Jo.
+ 2005. “The Beazley archive: inside and out”. 
+                        
+Art Documentation: Journal of the Art Libraries Society of North America
+ 24, Nr. 1: 22–25.
+                    
+
+                    
+Tyagi, Vipin.
+ 2017. 
+                        
+Content-based image retrieval
+. Singapur: Springer Nature. 
+                        
+. 
+                    
+
+                    
+Wada, Kentaro. Labelme: Image Polygonal Annotation with Python,
+ 2022.
+                        
+
+                        
+. 
+                        
+ (zugegriffen 02. August 2022).
+                    
+
+                
+
+            
+
+        
+
+    

@@ -1,0 +1,376 @@
+
+        
+
+            
+
+                
+
+                    
+1. Forschungshintergrund
+                
+
+                
+Marcel Reich-Ranicki kam 1955 und 1956. Der sowjetische Autor Michail Scholochow besuchte die DDR 1964, zwei Jahre bevor er den Nobelpreis erhielt; ähnlich der guatemaltekische Schriftsteller und spätere Nobelpreisträger Miguel Asturias, der 1965 nach Ostberlin reiste. Friederike Mayröcker folgte einer Einladung im Mai 1987. Andere kamen wiederholt, wie der ungarische Dichter Gábor Hajnal, der sich zwischen 1957 und 1986 dreizehn Mal in Ostberlin aufhielt. Eingeladen hatte jeweils der Deutsche Schriftstellerverband (DSV), über den der Großteil der internationalen literarischen Kontakte in der DDR organisiert wurde. Tausende Daten zur Einladungspolitik des Verbandes sind in einer Kartei in der Akademie der Künste in Berlin hinterlegt, deren Bestand im Rahmen der Archivarbeiten für das Forschungsprojekt »Writing Berlin« digitalisiert wurde.
+                    
+
+                    
+
+                
+
+                
+»Writing Berlin« ist Teil des Exzellenzclusters »Temporal Communities. Doing Literature in a Global Perspective« (EXC 2020) und befasst sich mit den facettenreichen Aktivitäten zur Förderung des internationalen literarischen Austauschs in der geteilten Stadt nach dem Bau der Berliner Mauer. Ein besonderes Augenmerk liegt dabei auf den Auswahlprozessen und den kulturpolitischen Implikationen dieser Aktivitäten, ihrem Niederschlag in literarischen Texten sowie auf der Frage, inwiefern die sich verändernde politische Gemengelage Biografien und die soziale Stellung der betreffenden Autor*innen beeinflusste. Die Internationalisierung der Berliner Literaturszene ist bislang nur in einigen wenigen Fallstudien untersucht worden, vor allem im Hinblick auf die Netzwerktätigkeit einzelner Schriftsteller*innen (vgl. Böttiger 2005, Berbig 2005). Der institutionalisierte Austausch, der einen Großteil der internationalen Kontakte im Osten der Stadt ausmachte, war bislang noch nicht Gegenstand weitergehender Studien – zwar liegen allgemeine Untersuchungen zum Schriftstellerverband der DDR vor, diese erwähnen die politisch so relevante Auslandsarbeit der Organisation jedoch bestenfalls beiläufig (vgl. zum DSV allgemein Pamperrien 2004, Walther 2006, Michael et al. 1997) und betrachten lediglich einen sehr eingeschränkten Zeitraum (vgl. insbesondere zu den 1950er-Jahren Degen 2011, Gansel 1997). Die Einreisekartei des DSV, der wichtigsten nichtstaatlichen Literaturinstitution im Ostteil der Stadt, erlaubt es nun, die internationalen Kontakte und ihre Konjunkturen insbesondere in der spannungsgeladenen Zeit während des Bestehens der Berliner Mauer zu erforschen: den Verlauf dieser Aktivitäten insgesamt, die länderbezogene Einladungspolitik, die Umstände individueller Aufenthalte und ihre politische Rolle für das Herkunftsland. Sie ermöglicht auch, Literaturkontakte weniger um besonders hervorstechende Einzelpersonen zentriert zu denken und dabei gerade auch Autor*innen zu berücksichtigen, die durch Kanonisierungsprozesse der Vor- und Nachwendezeit ggf. in Vergessenheit geraten sind.
+
+            
+
+            
+
+                
+
+                    
+2. Digitalisierung und Anreicherung mit OpenRefine
+                
+
+                
+Zunächst wurden die Einreisekarteien im Archiv des DSV transkribiert. Als Grundlage dafür wurden die nach Ländern und Autor*innennamen geordneten Karteien verwendet. Für jede*n einreisende*n Autor*in existiert so mindestens ein separates Blatt, auf dem die verschiedenen Aufenthalte vermerkt sind. Die Mitarbeiter*innen der Auslandsabteilung des DSV ergänzten ggf. noch biografische Informationen oder auch ein Presse- oder Passfoto. Über die Jahrzehnte änderte sich vielfach die Art der Aufzeichnung, ein Großteil der etwa 3.000 Karteien orientiert sich jedoch an dem in Tabelle 1 wiedergegebenen Schema, das am Beispiel des kubanischen Dichters Nicolás Guillén in Abbildung 1 illustriert werden soll.
+
+                
+
+                    
+
+                        
+Name, ggf. Vorname
+
+                        
+Land
+
+                    
+
+                    
+
+                        
+[ggf. kurze biografische Information]
+
+                    
+
+                    
+
+                        
+Datum
+
+                        
+Aufenthaltsgrund
+
+                    
+
+                    
+
+                        
+Datum
+
+                        
+Aufenthaltsgrund
+
+                    
+
+                    
+
+                        
+…
+
+                        
+…
+
+                    
+
+                
+
+                
+
+                    
+
+                        
+
+                        
+Abbildung 1: Beispiel für die Datengrundlage anhand der Karte zum kubanischen Autor Nicolás Guillén. Archiv des Schriftstellerverbands der DDR, Literaturarchiv der Akademie der Künste Berlin, Signatur SV 2848. (© Archiv der Akademie der Künste, Veröffentlichung mit freundlicher Genehmigung.)
+
+                    
+Qualität und Umfang der angegebenen Informationen variieren stark: Besonders in den 1970er-Jahren etwa wurden teils nur die Nachnamen der Autor*innen notiert, ggf. mit Zusätzen wie »Herr«/»Frau«, der Abkürzung »Gen.« (= Genosse) oder mit akademischen Titeln. Auch die Zeiträume der Aufenthalte sind nicht einheitlich angegeben, gelegentlich finden sich nur Jahres- oder Monatsangaben. Zudem handelt es sich überwiegend um per Hand getätigte Vermerke; nicht immer ist dabei die Schrift der Mitarbeiter*innen leicht zu entziffern. Auch erfolgten viele Angaben offenbar nicht auf Grundlage von Ausweisdokumenten, sondern durch Hörensagen. Gerade bei Autor*innen aus dem Globalen Süden etwa kann die Transkription der Namen inkorrekt sein oder sie wurde unsystematisch an deutsche Schreibgewohnheiten angepasst. Der nordkoreanische Autor Chŏng Tŏk-ch’ŏl wird beispielsweise mit »Dok Tschol Dschong« transkribiert, der afghanische Dichter Vāṣif Bākhtarī taucht in den Karteien als »Wassef Bachterie« auf, der indische Schriftsteller Harivansh Rai Bachchan unter der Schreibweise »Harbans Rai Bachhan«. Auch Namen von Autor*innen aus sozialistischen Bruderstaaten, etwa der ČSSR, Bulgarien oder Rumänien sind häufig fehlerhaft notiert.
+                
+
+                
+Um die Informationen aus der nach Autor*innennamen sortierten Einreisekartei zu komplettieren, wurden auch die chronologischen Karteien herangezogen sowie etwa punktuell weitere Akten aus dem Archiv des DSV, etwa die zu etlichen Aufenthalten vorhandenen Freundschaftsverträge, Korrespondenzen und Zeitpläne. Als Ergebnis dieser Transkriptionsarbeit entstand eine Excel-Tabelle mit insgesamt 3.709 Einträgen. Die Tabelle enthält Informationen zum Zeitraum des jeweiligen Aufenthalts, den Autor*innen (Name und Staatsangehörigkeit), zu beteiligten Institutionen sowie Angaben zum Anlass bzw. Einladungsgrund.
+
+                
+Mit OpenRefine (Version 3.5.0) wurden die in der Excel-Tabelle enthaltenen Daten vereinheitlicht. So konnten Einträge, die zwar denselben Anlass betrafen, aber unterschiedlich verschriftlicht waren, zusammengeführt werden. 
+
+                
+In einem weiteren Schritt wurden die teils in problematischer Weise notierten Autor*innennamen über OpenRefine aufbereitet und mit Normdatensätzen verknüpft. Dadurch wurde zum einen die Verifizierung bzw. Identifizierung der in der Kartei verzeichneten Einträge vereinfacht; zum anderen konnten aus den verknüpften Datenbanken weitere Informationen zu den Autor*innen importiert werden.
+
+                
+Ein erstes umfangreiches Reconciling erfolgte mit dem Virtual International Authority File (VIAF). Als Grundlage hierfür diente der von Jeff Chiu über Codefork bereitgestellte Reconciliation Service (Version 3.0.5, 
+                    
+), der einen erfolgreichen Abgleich von zunächst etwa 25 % der Einträge ermöglichte. Nach manuellen Suchstrategien in der Datenbank, etwa dem Ausprobieren verschiedener Schreibweisen und dem Abgleich mit im VIAF hinterlegten biobibliografischen Daten, konnte die Trefferquote auf fast 90 % erhöht werden.
+                
+
+                
+Ein weiteres Reconciling wurde – über das in OpenRefine integrierte Tool – mit Wikidata vorgenommen. Auch hier konnte durch einige Nachjustierungen eine hohe Trefferquote von 75 % erzielt werden. Der erfolgreiche Abgleich ermöglichte nun den Import weiterer Informationen aus Wikidata, etwa Angaben zu Sprachen, Parteizugehörigkeit oder Geschlecht der Autor*innen. Zudem konnten weitere Identifier über Wikidata importiert und somit Schnittstellen zur Gemeinsamen Normdatei der Deutschen Nationalbibliothek (GND) und zum WorldCat geschaffen werden, wodurch nun auch bibliografische Informationen zu den eingeladenen Autor*innen recherchierbar sind.
+
+                
+Jeder einzelne der hier dargestellten Schritte stellt eine Interpretationsleistung der Daten dar, die ihrerseits wieder nur heuristisch erfolgen, unvollständig und fehlerbehaftet sein kann. Bei dem über OpenRefine bereinigten und abgeglichenen Datensatz handelt es sich somit nur um eine mögliche Lesart der ursprünglichen Einreisekarteien, die der fortwährenden Überprüfung und Modifizierung bedarf.
+
+            
+
+            
+
+                
+
+                    
+3. Schnittstelle, Web-App und Modellierung unvollständiger Datumsangaben
+                
+
+                
+
+                    
+
+                        
+
+                        
+Abbildung 2: Prototypische Ansicht der Web-App für den Eintrag zu Nicolás Guillén.
+
+                    
+
+                    
+Um den digitalisierten und erschlossenen Datensatz besser erforschbar zu machen, wurde für die Daten eine Schnittstelle geschaffen, über die sie maßgeschneidert ausgeliefert werden können. Diese Schnittstelle dient auch als Grundlage für die Web-App, die einen explorativen Zugang zum Datenmaterial ermöglichen soll (Abbildung 2). Die App wurde in TypeScript mit dem SvelteKit-Framework geschrieben (vgl. 
+
+                    
+
+                    
+), welches das Front-End-Framework Svelte (vgl. 
+
+                    
+
+                    
+) in ein umfangreiches Web-Framework mit serverseitigem Rendering (SSR) integriert. Svelte agiert, anders als das vergleichbare React, nicht während der Laufzeit, sondern als Compiler. Zum Build-Zeitpunkt werden alle HTML-Vorlagen zu nativen JavaScript-Funktionen kompiliert. Ein Vorteil ist der Verzicht auf ein virtuelles DOM (Document Object Model) und die Berechnung der damit einhergehenden Deltas (vgl. Harris 2018). SvelteKit, das sich derzeit noch in der Beta befindet, gilt als Svelte-Pendant zu Reacts Next.js. Damit läuft Svelte auch auf dem Server und ist in der Lage, Seiten dort entweder zum Build- oder Anfragezeitpunkt vorzurendern und anspruchsvolle Datenoperationen auszuführen, während clientseitig die volle Flexibilität eines reaktiven Frameworks erhalten bleibt (vgl. 
+
+                    
+
+                    
+). Im 
+
+                    
+vorliegenden Projekt sind das etwa Daten aus Wikidata, die zur Anreicherung des bestehenden Datensatzes gebündelt serverseitig abgerufen und transformiert werden.
+
+                
+
+                
+Wegen der teils unvollständigen Datumsangaben haben wir auf das Extended Date/Time Format (EDTF) gesetzt. Dieses 2019 von der International Organization for Standardization als Erweiterung zu ISO-8601 gedachte Datumsformat erlaubt es unter anderem, verschiedene Arten von Ungewissheit formalisiert auszudrücken. Für die Zwecke dieses Projekts besonders fruchtbar ist die Einbeziehung von »unspecified digits« (Library of Congress 2019), die unbekannte Teile eines Datumsformats explizieren: Ein nicht spezifizierter Tag im Februar 1972 kann etwa als »1972-02-XX« dargestellt werden, der gleiche Fall bezogen auf einen Tag im Jahr 1986 als »1986-XX-XX«. Darüber hinaus muss die Ungewissheit nicht zwingend von den niedrigstwertigen Stellen herrühren – auch »XXXX-09-24« oder sogar »19XX-05-XX« sind gültige EDTF-Werte. Zwar existiert eine JavaScript-Bibliothek zum Parsen von EDTF-Datumsangaben (vgl. Keil 2022), nicht jedoch zur menschenlesbaren Darstellung. Die Logik zur sprachenübergreifenden Darstellung unvollständiger Angaben wurde deshalb eigens in TypeScript implementiert.
+
+            
+
+            
+
+                
+
+                    
+4. Statistische Narrative und Ausblick
+                
+
+                
+Mit den vorliegenden Daten kann ein spezifischer Aspekt des literarischen Lebens in der DDR nun zum ersten Mal auch statistisch ausgewertet werden. Durch chronologische Verlaufsdiagramme zeichnen sich Einladungstendenzen ab, die sich unter anderem politisch deuten lassen.
+
+                
+
+                    
+
+                        
+
+                        
+Abbildung 3: Einladungsfrequenz von Autor*innen nach Staatsform.
+
+                    
+
+                
+
+                
+
+                    
+So zeigt etwa Abbildung 3, dass fast durchgängig signifikant mehr Autor*innen aus sozialistischen Bruderstaaten eingeladen wurden (vgl. dazu Müller-Tamm 2021). Eine Ausnahme bildet das Jahr 1965 mit dem Internationalen Schriftstellertreffen im Mai, das in Berlin und Weimar stattfand (dokumentiert in: Deutscher Schriftstellerverband 1965).
+
+                
+
+                
+Ein Blick auf süd- und westeuropäische Länder zeigt nur sporadische Besuche, mit der Ausnahme Frankreichs, dessen breit aufgestellte Linke teils verstärkt mit dem Schriftstellerverband der DDR kooperierte (vgl. Fabre-Renault 2015). Auch mit Autor*innen aus dem englischsprachigen Ausland, vor allem den USA und Australien, gab es noch in den 1960er-Jahren einen vergleichsweise regen Austausch, der in den 1970er-Jahren allerdings vollends zum Erliegen kam.
+
+                
+Dokumentieren lässt sich auch ein hohes Interesse des DSV an Autor*innen aus den sich als neutral verstehenden Staaten Finnland und Schweden, die in den 1960er-Jahren von der SED zu Schwerpunktländern auslandspropagandistischer Aktivitäten erkoren wurden:
+                    
+
+                    
+ Im Laufe der Jahre ergingen vom Schriftstellerverband etwa 100 Einladungen in das recht dünn besiedelte Nordeuropa, unter anderem an die Nobelpreisträger Halldór Laxness (Island), Eyvind Johnson (Schweden) sowie die finnische Star-Autorin und PEN-Präsidentin Eeva Joenpelto.
+                
+
+                
+Autor*innen aus Ostblockstaaten waren jedoch weitaus regelmäßiger bei literarischen Terminen in Ostberlin zu Gast. Hier zeigen die Daten, dass sowjetische Besucher*innen stets in der Überzahl waren, ein Beleg für die Quotenregelung, die der Einladungspolitik zugrunde lag.
+
+                
+Die von uns angebotene Schnittstelle ermöglicht viele weitere statistische Anfragen. Ihre Funktion ist aber nicht auf die projektbezogene Auswertung beschränkt. Vielmehr kann der von uns erstellte, semantisch angereicherte Datensatz auch langfristig eine Funktion im wachsenden Ökosystem der digitalen Literaturwissenschaft übernehmen und bietet sich für den Austausch mit komplementären Projekten wie der »Forschungsplattform Literarisches Feld DDR« an (vgl. 
+                    
+). Reisedaten von Autor*innen können biografische Datenbanken ergänzen. Gleichzeitig konnten wir den Datensatz durch das Ausstatten mit Normdaten breiter kontextualisieren und mit Zusatzinformationen speisen. Insofern bietet der Datensatz jenseits der statistischen Auswertung auch die Möglichkeit einer enzyklopädischen Nutzung für Fallstudien: Interessierte Wissenschaftler*innen unterschiedlichster Disziplinen und Philologien
+                    
+
+                    
+ können ihn als Einstiegspunkt für Erkundungen von bi- und multilateralen Literaturkontakten nutzen, indem sie sich innerhalb der Web-Anwendung durch Länderlisten und Personeneinträge bewegen. Auf diese Weise können sie etwa nachvollziehen, welche Autor*innen aus dem Ausland zu welchen Anlässen und Zeitpunkten über den Schriftstellerverband in die DDR entsandt wurden, in welchen Delegationen sie durch die DDR reisten, wem sie bei Kongressen, Rundtischgesprächen oder Studienaufenthalten gegenübersaßen. Über die Verknüpfung mit Wikidata und VIAF ist es dabei auch möglich, Bezüge zu biografischen Eckdaten (Parteizugehörigkeit, Ehrungen und Literaturpreise), Veröffentlichungen und Übersetzungen im In- und Ausland herzustellen. In Planung ist zudem ein analoges Vorhaben zu den internationalen, institutionalisierten Literaturkontakten im Westen der Stadt (DAAD, Literarisches Colloquium Berlin etc.), für das bereits etliche Daten vorliegen. Wenngleich sich der Literaturaustausch in Ost und West schon allein durch unterschiedliche politische Strukturen nur bedingt vergleichen lässt, wäre es damit auch möglich, Korrespondenzen, (personelle) Überschneidungen und Konkurrenzsituationen zur Zeit der Berliner Mauer aus unterschiedlichen Perspektiven zu beleuchten.
+                
+
+            
+
+            
+
+                
+
+                    
+Fördernachweis
+                
+
+                
+Gefördert durch die Deutsche Forschungsgemeinschaft (DFG) im Rahmen der Exzellenzstrategie des Bundes und der Länder innerhalb des Exzellenzclusters Temporal Communities: Doing Literature in a Global Perspective – EXC 2020 – Projekt-ID 390608380.
+
+            
+
+        
+
+        
+
+
+
+
+Archiv des Schriftstellerverbandes der DDR, Literaturarchiv der Akademie der Künste Berlin, Signaturen SV 2831, 2837, 2838, 2839, 2848. Das Projekt steht im intensiven Austausch mit Gabriele Radecke und den Mitarbeiter*innen am Literaturarchiv der Akademie der Künste. Wir möchten uns an dieser Stelle sehr herzlich für die enge Zusammenarbeit bedanken.
+
+
+Das Selbstverständnis des DSV in Bezug auf die allgemeinen Bestrebungen zur Auslandspropaganda in der DDR erläutert der Sekretär und stellvertretende Vorsitzende des Verbandes, vgl. Koch 1964.
+
+
+»Writing Berlin« versteht sich als kollaboratives Forschungsprojekt, an dem etliche Wissenschaftler*innen u.a. aus der Germanistik, Anglistik, Romanistik oder Slawistik beteiligt sind. In dieser Weise veranstaltet das Projekt immer wieder Tagungen und veröffentlicht Sammelbände, in denen neben der globalen Perspektive auch Fallstudien und der Austausch unterschiedlicher Perspektiven im Vordergrund stehen, vgl. dazu Müller-Tamm 2021; Klengel et al. 2023.
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+Berbig, Roland (Hg.).
+ 2005. 
+                        
+Stille Post. Inoffizielle Schriftstellerkontakte zwischen West und Ost. Von Christa Wolf über Günter Grass bis Wolf Biermann.
+ Berlin: Ch. Links.
+                    
+
+                    
+Böttiger, Helmut.
+ 2005. 
+                        
+Elefantenrunden. Walter Höllerer und die Erfindung des Literaturbetriebs.
+ Berlin: Literaturhaus.
+                    
+
+                    
+Degen, Andreas (Hg.).
+ 2011. 
+                        
+Szenen Berliner Literatur. 1955–1965.
+ Berlin: Matthes &amp; Seitz.
+                    
+
+                    
+Deutscher Schriftstellerverband (Hg.).
+ 1965. 
+                        
+Internationales Schriftstellertreffen Berlin und Weimar, 14.–22. Mai 1965. Protokoll.
+ Berlin: Aufbau.
+                    
+
+                    
+Fabre-Renault, Catherine.
+ 2015. »Frankreich, ein Sonderfall? Zu Frankreichs Beziehungen zur DDR und ihrem Einfluss auf die Rezeption der DDR-Literatur.« In: Matthias Aumüller, Erika Becker (Hg.): 
+                        
+Zwischen literarischer Ästhetik und sozialistischer Ideologie. Zur internationalen Rezeption und Evaluation der DDR-Literatur.
+ Berlin. S. 18–24.
+                    
+
+                    
+Gansel, Carsten.
+ 1997. »Deutschland einig Vaterland? Der Deutsche Schriftstellerverband und seine Westarbeit in den fünfziger Jahren.« In: Mark Lehmstedt, Siegfried Lokatis (Hg).: Das Loch in der Mauer. Der innerdeutsche Literaturaustausch. Wiesbaden: Harrassowitz. S. 261–278.
+
+                    
+Harris, Rich.
+ 2018. »Virtual DOM Is Pure Overhead.« In: 
+                        
+Svelte Blog
+, 27. Dezember 2018. (
+                        
+)
+                    
+
+                    
+Keil, Sylvester.
+ 2022. »EDTF Parser for JavaScript«. In: GitHub. Letzter Zugriff am 15. Dezember 2022. (
+                        
+)
+                    
+
+                    
+Klengel, Susanne et al. (Hg.).
+ 2023. Berlin International. Literaturszenen in der geteilten Stadt (1970–1989). Berlin/Boston: De Gruyter. [Im Druck.]
+
+                    
+Koch, Hans.
+ 1964. »Zu einigen Fragen unserer Auslandsarbeit«. In: Neue Deutsche Literatur, 5/1964. S. 153–163.
+
+                    
+Library of Congress.
+ 2019. »Extended Date/Time Format (EDTF) Specification.« February 4, 2019. Letzter Zugriff am 15. Dezember 2022. (
+                        
+)
+                    
+
+                    
+Michael, Klaus, Margret Pötsch und Peter Walther.
+ 1997. »Geschichte, Struktur und Arbeitsweise des Schriftstellerverbands der DDR. Erste Ergebnisse eines Forschungsprojektes.« In: 
+                        
+Zeitschrift des Forschungsverbundes SED-Staat
+, 3/1997. S. 58–69.
+                    
+
+                    
+Müller-Tamm, Jutta.
+ 2021. »Das geteilte Berlin als Katalysator der Internationalisierung des Literaturbetriebs.« In: Dies. (Hg.): 
+                        
+Berliner Weltliteraturen. Internationale literarische Beziehungen in Ost und West nach dem Mauerbau.
+ Berlin/Boston: De Gruyter. S. 1–39.
+                    
+
+                    
+Pamperrien, Sabine.
+ 2004. 
+                        
+Versuch am untauglichen Objekt. Der Schriftstellerverband der DDR im Dienst der sozialistischen Ideologie.
+ Frankfurt/M.: Lang.
+                    
+
+                    
+Walther, Joachim.
+ 2006. 
+                        
+Sicherungsbereich Literatur. Schriftsteller und Staatssicherheit in der Deutschen Demokratischen Republik.
+ 2. Aufl. Berlin: Ch. Links.
+                    
+
+                
+
+            
+
+        
+
+    

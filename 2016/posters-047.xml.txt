@@ -1,0 +1,378 @@
+
+    
+
+      
+Methoden der Informationsvisualisierung (InfoVis) zielen auf die Unterstützung von
+        Kognition im Angesicht von abstrakten Daten- und Themenbeständen. Visuelle
+        Repräsentationen helfen bei der primären Synthese von multiplen Datendimensionen,
+        sowie bei der vertiefenden Analyse und der Vermittlung relevanter Zusammenhänge.
+        Entsprechend trägt auch in den Geisteswissenschaften seit geraumer Zeit ein
+        wachsendes Spektrum von bildgebenden Verfahren zur Exploration und Kommunikation
+        textlicher und thematischer Korpora bei (vgl. Sula 2013; Jänicke et al. 2015). Neben
+        Methoden der statistischen Datenvisualisierung offerieren Techniken der Kartographie
+        und Chronographie, der Dendrogrammatik, des Topic Modelling oder der
+        Netzwerkvisualisierung Einsichten in die Struktur und Dynamik komplexer
+        multidimensionaler (Meta)Datenbestände. Nachdem die zunehmende Nutzung dieser
+        einzelnen Verfahren bereits vorausgesetzt werden kann, richtet der Beitrag seinen
+        Fokus auf ihre synergetische Kombination und Vernetzung im Rahmen von Interfaces mit
+        „ 
+multiplen views
+“ (Roberts 2007). 
+
+        
+Interfaces mit multiplen Ansichten kombinieren unterschiedliche Visualisierungsverfahren in einem parallelen Arrangement um deren komplementäre Perspektiven zu verknüpfen. Da multidimensionale Datensätze selten durch Einzelvisualisierungen erschöpfend exploriert werden können, sind multiple Ansichten als „mixed methods“-Ansätze der Visualisierung zu verstehen, die einander ergänzende Blickwinkel und Projektionen zu einem analytischen System mit erhöhter Leistungskraft kombinieren. Multiple Ansichten multiplizieren aber auch die kognitiven Anforderungen an NutzerInnen, die nicht nur die jeweiligen Eigenlogiken (i.e. Syntax &amp; Semantik) der Einzelsichten zu entschlüsseln haben, sondern die auch ihre Einsichten aus einer bildersprachlichen Vielfalt in ein
+          
+bigger picture
+ zusammenführen müssen. Dies kann zu mehr oder weniger gelungenen mentalen Montagen führen.
+        
+
+        
+Im Rahmen der kognitionswissenschaftlichen Reflexion eines solchen makrokognitiven
+          
+Sensemaking-
+Szenarios greift Tversky (1993) auf die 
+Theorie mentaler Modelle
+ (Johnson-Laird 1980) zurück – und
+          postuliert die Existenz eines Qualitätsgefälles von mentalen Repräsentationen.
+          Während sie den Begriff des „ 
+mentalen Modells
+“ für
+          Repräsentationen reserviert die ein hohes Maß an Kohärenz, Konnektivität und
+          proportionaler Konsistenz ihrer Teile aufweisen, werden weniger kohärente
+          Repräsentationen „ 
+kognitive Collagen“
+ genannt, die als
+          schnelle und partielle Skizzen von komplexen Gegenständen meist fragmentarisch
+          bleiben und die verschiedene Referenzpunkte nur unvollständig und in verzerrter Form
+          verknüpfen. In dieser Gegenüberstellung besitzen kognitive Collagen zwar den
+          pragmatischen Vorteil der Schnelligkeit (
+good-enough
+          representations
+), aber nur mentale Modelle erlauben dank ihrer
+          Eigenschaften der Kohärenz und Proportionalität anspruchsvollere kognitive
+          Anschlussoperationen, wie perzeptive und konzeptuelle Schlussfolgerungen, globale
+          Bewertung lokaler Einsichten, sowie die Erschließung bislang unbekannter
+          Perspektiven auf den Gegenstand. 
+Kohärenz
+ ist vor diesem
+          Hintergrund als Desiderat von mentalen Repräsentationen zu betrachten, das gemäß den
+          Ansätzen der distribuierten Kognition (Scaife / Rogers 1996; Liu et al. 2007;
+          Patterson et al. 2014) aber nur dann erzielt werden kann, wenn auch schon bei 
+externen
+ Repräsentationen (InfoVis Interfaces) ein
+          ausreichendes Maß an Kohärenz gegeben ist. 
+
+          
+Die Bedeutung dieser Diskussion für die zukünftige Entwicklung von Visualisierung und
+            Modellierung in den Digital Humanities ergibt sich unmittelbar aus der
+            multidimensionalen Natur der meisten ihrer Datenbestände. InfoVis-Interfaces mit
+            „multiplen views“ sind in solchem Kontext als Standardtechnik unverzichtbar, doch
+            nur wenig Aufmerksamkeit wurde bislang der Frage gewidmet, wie aus einer
+            beziehungslosen Pluralität von Ansichten ein konzeptuell wohlvernetztes und
+            kohärentes Ensemble geformt werden kann, das dabei hilft, diverse eigenlogische
+            Ansichten kognitiv bestmöglich zu kohärenten mentalen Modellen zu verknüpfen. Da die
+            Möglichkeiten solcher Verknüpfungen meist schon im Rahmen einzelner
+            Forschungsprojekte unterentwickelt bleiben, wird die Verknüpfung von
+            Visualisierungen verschiedener Forschungsgruppen oder Communities oft gar nicht erst
+            versucht. 
+
+            
+Um die kollektive Aufmerksamkeit verstärkt auf dieses Defizit zu lenken und ForscherInnen der Digital Humanities auch auf der Ebene makrokognitiver Operationen methodisch zu unterstützen, präsentiert und vernetzt der Beitrag eine Reihe von
+              
+Kohärenztechniken
+ zu einem methodischen Rahmenwerk, das dazu imstande ist, multiple Ansichten und ihre diversen Bildsprachen unter Erhalt ihrer jeweiligen Eigenlogiken effektiver zu vermitteln.
+            
+
+            
+A) Methoden die die 
+initiale Konstruktion
+ von mentalen
+            Modellen unterstützen: 
+Advance Organizer
+ veranschaulichen die
+            Grundstrukturen eines Datensatzes, die eine erste konzeptuelle Orientierung erlauben
+            und durch detaillierte Lernprozesse angereichert werden (Ausubel 1960). Als 
+Navigatoren
+ dienen diese Strukturmodelle der fortgesetzten
+            Orientierung und Navigation zwischen multiplen Ansichten. Mit Blick auf
+            zeitorientierte Daten wird das Potential von 
+Raum-Zeit-Kuben
+
+            demonstriert, die die Navigation zwischen dynamischen Datenprojektionen unterstützen
+            (Bach et al. 2014), und die als 
+Multiple Raum-Zeit-Kuben
+ für
+            multidimensionale Datenbestände weiterentwickelt werden (Windhager 2013). 
+
+            
+B) Methoden die die 
+sequentielle Integration
+ multipler
+            Ansichten in kohärente mentale Modelle unterstützen: Bei der sequentiellen Nutzung
+            multipler Ansichten dienen 
+Seamless Layout Transitions
+ dem
+            Erhalt von bereits vorhandenen „mental maps“ (Freire / Rodríguez 2006) während 
+Seamless Canvas Transitions 
+(Federico et al. 2011)
+            anschaulich die Unterschiede zwischen verschiedenen dynamischen
+            Visualisierungstechniken vermitteln. Techniken der 
+Narrativen
+            Visualisierung
+ verknüpfen schließlich multiple Ansichten über narrative
+            Gestaltungselemente (Segel / Heer 2010), die die Integration durch ergänzende
+            sequentielle Passagen erleichtern. 
+
+            
+C) Methoden die die 
+parallele Integration
+ diverser Ansichten
+            in kohärente mentale Modelle unterstützen umfassen verschiedene Typen von 
+Coordinated Multiple Views 
+(Roberts 2007; Sedlmair et al.
+            2009), durch die verschiedene InfoVis-Layouts, verschiedene zeitliche Selektionen,
+            oder verschiedene Skalierungen in Beziehung gesetzt werden. 
+Koordinierte Interaktionsmethoden
+ wie 
+Linking &amp;
+            Brushing
+ erlauben die vertiefende synchronisierte Exploration und
+            Integration multipler Ansichten. Techniken des 
+Visual
+            Linkings
+ veranschaulichen darüber hinaus Entsprechungen von visuellen
+            Elementen und Strukturen über unterschiedliche Ansichten hinweg (Collins /
+            Carpendale 2007). 
+HyperImage
+-Techniken (Warnke et al. 2007)
+            ermöglichen zusätzliche Verlinkungen paralleler Ansichten – sowie entscheidende
+            Verknüpfungen des lokalen Interfaces mit Bildern und Modellen außerhalb des Systems. 
+
+            
+Der Mehrwert dieses Frameworks ergibt sich aus der erstmaligen Sammlung, Systematisierung und funktionalen Vernetzung von Kohärenztechniken, deren Entwicklung im Rahmen einzelner Applikationen zumeist zur Gänze vernachlässigt wird. Gerade ihre synergetische Erschließung scheint jedoch unverzichtbar, wenn es um zukünftige Systeme mit erhöhter analytischer Auflösung, gesteigerter Nutzerfreundlichkeit, und kohärenter visueller Syntax geht. Neben der praktischen Implementierung dieser Techniken betrachten wir ihre kognitionswissenschaftlich Reflexion und Evaluation als unerlässlich für die Entwicklung von InfoVis-Interfaces der nächsten Generation, die neben den Standardoperationen der visuellen Analyse auch makrokognitive Inferenz- und Syntheseprozesse unterstützen. 
+
+            
+Zudem betrachten wir die kollektive Erkundung und Entwicklung von inter-piktorialen
+              Kohärenztechniken als unmittelbare Voraussetzung für die verbesserte Vernetzung und
+              Co-Konstruktion von geteilten mentalen Modellen ( 
+shared mental
+              models
+) zwischen unterschiedlichen Communities (Swaab et al. 2002). Ein
+              Ausblick richtet sich vor diesem Hintergrund auf die Möglichkeit, durch die
+              verbesserte Vernetzung von visuellen Repräsentationen auch die Abstimmung von
+              Diskursen und Disziplinen in den Digitalen Geisteswissenschaften besser zu
+              koordinieren. 
+
+            
+
+            
+
+              
+
+                
+
+                  
+Bibliographie
+
+                  
+
+                    
+Ausubel, David P.
+ (1960): "The use of advance
+                    organizers in the learning and retention of meaningful verbal material", in:
+                    
+Journal of Educational Psychology
+ 51: 267-272. 
+
+                    
+
+                      
+Bach, Benjamin / Dragicevic, Pierre / Archambault, Daniel /
+                        Hurter, Christophe / Carpendale, Sheelagh
+ (2014): "A Review of
+                        Temporal Data Visualizations Based on Space-Time Cube Operations.", in: 
+EuroVis-STARs
+: The Eurographics Association 23–41. 
+
+                        
+
+                          
+Collins, Christopher M. / Carpendale, Sheelagh
+ (2007):
+                          "VisLink: Revealing relationships amongst visualizations", in: 
+Visualization and Computer Graphics, IEEE Transactions
+                          on
+ 13, 6: 1192-1199. 
+
+                          
+
+                            
+Federico, Paolo / Aigner, Wolfgang / Miksch, Silvia /
+                              Windhager, Florian / Zenk, Lukas
+ (2011): "A Visual Analytics
+                              Approach to Dynamic Social Networks", in: Lindstaedt, Stefanie / Granitzer,
+                              Michael (eds.): 
+Proceedings of the 11th International
+                              Conference on Knowledge Management and Knowledge Technologies (i-KNOW),
+                              Special Track on Theory and Applications of Visual Analytics (TAVA),
+                              Graz 2011
+. New York: ACM 47: 1–47: 8. 
+
+                              
+
+                                
+Freire, Manuel / Rodríguez, Pilar
+ (2006): "Preserving
+                                the mental map in interactive graph interfaces", in: 
+Proceedings of the working conference on Advanced visual
+                                interfaces
+. New York: ACM 270–273. 
+
+                                
+
+                                  
+Jänicke, Stefan / Franzini, Greta / Cheema, Muhammad Faisal
+                                    / Scheuermann, Gerik
+ (2015): "On Close and Distant Reading in
+                                    Digital Humanities: A Survey and Future Challenges", in: 
+EuroVis-STARs
+. The Eurographics Association.
+
+                                    
+
+                                      
+Johnson-Laird, Philip N.
+ (1980): "Mental models in
+                                      cognitive science", in: 
+Cognitive science
+ 4, 1:
+                                      71-115. 
+
+                                      
+
+                                        
+Liu, Zhicheng / Nersessian, Nancy J. / Stasko, John T.
+
+                                        (2008): "Distributed cognition as a theoretical framework for information
+                                        visualization", in: 
+Visualization and Computer Graphics,
+                                        IEEE Transactions on
+ 14, 6: 1173–1180. 
+
+                                        
+
+                                          
+Patterson, Robert E. / Blaha, Leslie M. / Grinstein, Georges
+                                            G. / Liggett, Kristen K. / Kaveney, David E. / Sheldon, Kathleen C. /
+                                            Haviga, Paul R. / Moore, Jason A.
+ (2014): "A human cognition
+                                            framework for information visualization", in: 
+Computers
+                                            &amp; Graphics
+ 42: 42–58. 
+
+                                            
+
+                                              
+Roberts, Jonathan C.
+ (2007): "State of the art:
+                                              Coordinated &amp; multiple views in exploratory visualization", in: 
+Coordinated and Multiple Views in Exploratory
+                                              Visualization, 2007. CMV’07. Fifth International Conference on
+
+                                              IEEE: 61–71. 
+
+                                              
+
+                                                
+Scaife, Mike / Rogers, Yvonne
+ (1996): "External
+                                                cognition: how do graphical representations work?", in: 
+International Journal of Human-Computer Studies
+ 45, 2: 185–213. 
+
+                                                
+
+                                                  
+Sedlmair, Michael / Ruhland, Kerstin / Hennecke, Fabian /
+                                                    Butz, Andreas / Bioletti, Susan / O’Sullivan, Carol
+ (2009):
+                                                    "Towards the big picture: Enriching 3d models with information visualisation
+                                                    and vice versa", in: 
+Proceedings of the 9th International
+                                                    Symposium on Smart Graphics, SG 2009, Salamanca, Spain, May 28-30,
+                                                    2009
+. Berlin / Heidelberg: Springer 27–39. 
+
+                                                    
+
+                                                      
+Segel, Edward / Heer, Jeffrey
+ (2010): "Narrative
+                                                      visualization: Telling stories with data", in: 
+Visualization and Computer Graphics, IEEE Transactions on
+ 16, 6:
+                                                      1139-1148. 
+
+                                                      
+
+                                                        
+Sula, Chris A.
+ (2013): "Quantifying Culture: Four Types
+                                                        of Value in Visualisation", in: Bowen, Jonathan / Suzanne Keene / Ng, Kia
+                                                        (eds.): 
+Electronic Visualisation in Arts and Culture
+.
+                                                        London: Springer 25–37. 
+
+                                                        
+
+                                                          
+Swaab, Roderick I. / Postmes, Tom / Neijens, Peter / Kiers,
+                                                            Marius H. / Dumay, Adrie C. 
+(2002): "Multiparty negotiation
+                                                            support: The role of visualization’s influence on the development of shared
+                                                            mental models", in: 
+Journal of Management Information
+                                                            Systems
+ 19, 1: 129-150. 
+
+                                                            
+
+                                                              
+Tversky, Barbara 
+(1993): "Cognitive maps, cognitive
+                                                              collages, and spatial mental models", in: Frank, Andrew U. / Campari, Irene
+                                                              (eds.): 
+Spatial Information Theory
+. A Theoretical
+                                                              Basis for GIS. Berlin: Springer 14-24.
+
+                                                              
+
+                                                                
+Warnke, Martin / Kuper, Heinz-Günter / Helmers, Sabine
+                                                                
+(2007): "Hyperlmage. Bildorientierte e-Science-Netzwerke", in: 
+cms-Journal 
+29, 80–84. 
+
+                                                                
+
+                                                                  
+Windhager, Florian
+ (2013): "On Polycubism. Outlining a
+                                                                  Dynamic Information Visualization Framework for the Humanities and Social
+                                                                  Sciences", in: Fuellsack, Manfred (ed.): 
+Networking
+                                                                  Networks
+. Origins, Applications, Experiments. Wien: Turia + Kant.
+                                                                
+
+                                                              
+
+                                                            
+
+                                                          
+
+                                                        

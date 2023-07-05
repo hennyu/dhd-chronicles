@@ -1,0 +1,803 @@
+
+        
+
+            
+
+                
+
+                    
+Gegenstandsbereich und Ausgangslage
+
+                    
+Die Aufgabe, kunst- und kulturhistorisch relevante Objekte digital zu dokumentieren, sie inhaltlich zu erschließen und über das Internet zugänglich und recherchierbar zu machen, stellt sich zunehmend nicht nur den “klassischen” Gedächtnisorganisationen wie Museen, Bibliotheken und Archiven. Auch kleinere Sammlungen, etwa an Universitäten (vgl. Koordinierungsstelle für wissenschaftliche Universitätssammlungen in Deutschland, Empfehlungen 2016) oder themenspezifische Forschungs- und Erschließungsprojekte (vgl. Kieven, Schelbert 2014) stehen vor der Aufgabe, Daten zu Kulturgütern strukturiert zu erfassen, sie nachhaltig zu speichern und sie dann – eben im Sinne von 
+                        
+Open Humanities, Open Culture
+ - der Scientific Community und der interessierten Öffentlichkeit zur Nachnutzung zur Verfügung zu stellen (vgl. Schöch 2017).
+                    
+
+                    
+Doch gerade ein solcher, wissenschaftsorientierter und zugleich Disziplinen übergreifender Ansatz ist mit zwei entgegengesetzten Problemen konfrontiert: Zum einen sind die zur Verfügung stehenden Ressourcen für die Beschaffung, Anpassung und Entwicklung von Infrastrukturen, für die inhaltliche Arbeit an Datenmodellen oder die Aufbereitung von Daten und Medien typischerweise sehr knapp bemessen. Zum anderen soll die digitale Erfassung hier oft deutlich mehr leisten als die klassische Objektdokumentation, da Wissensrepräsentation und Kontextualisierung eine größere Rolle spielen. Die traditionelle Vorstellung der Sammlungsdatenbank als eines abgeschlossenen, auf Vollständigkeit und Verbindlichkeit abzielenden digitalen Katalogs ist vor einem solchen Hintergrund zugleich unerreichbar und unzureichend.
+
+                
+
+                
+
+                    
+
+                        
+I. Konzeptionelles. Offene Referenzen als Schlüssel zu einer zugleich mächtigen und offenen Datenstruktur
+                    
+
+                    
+Interessante Perspektiven eröffnen in diesem Zusammenhang die Konzepte des Semantic Web bzw. der Linked Open Data: Durch die semantisch explizit definierte Verknüpfung öffentlich zugänglicher und über persistente Identifier (URI) adressierbarer Datenobjekte ergibt sich ein umfassender, offener Knowledge Graph, der sich aus den unterschiedlichsten epistemologischen Perspektiven befragen lässt. Allerdings ist dieses Konzept, aufs Ganze der digital verfügbaren Ressourcen von Museen, Archiven und Forschungseinrichtungen gesehen, bislang bestenfalls ansatzweise realisiert. Ein Beispiel sei genannt: Der Knowledge Graph des Konsortium NFDI4Culture ist als eines der ehrgeizigsten Projekte auf diesem Feld zunächst darauf beschränkt, die Ressourcen des Konsortiums als Linked Open Data auf der Basis einer Kultur-Ontologie zu beschreiben. (
+                        
+
+                            
+https://nfdi4culture.de/resources/knowledge-graph.html
+
+                        
+). Er bewegt sich also noch auf der Metaebene, die Einbeziehung der Domänen selbst, von konkreten Kulturgütern bis hin zu allgemeinen Sachverhalten wäre der nächste Schritt. 
+                    
+
+                    
+Es stellt sich also die Frage: Wie kann die eigene Sammlung Teil des universellen Knowledge Graph werden? Die Antworten erscheinen zunächst trivial: technisch durch die Publikation der Daten über eine Schnittstelle, konzeptionell durch die semantisch adäquate Datenmodellierung, bestenfalls nach einem zertifizierten Standard (etwa CIDOC CRM, ISO 21127:2014; LIDO oder EAD). 
+
+                    
+Nicht trivial sind allerdings, gerade im Hinblick auf die oben geschilderte Konstellation – forschungsbezogene Sammlungsdokumentation jenseits der klassischen Gedächtnisorganisationen mit sehr begrenzten Ressourcen –, die konkret und praktisch damit verbundenen Herausforderungen, insbesondere im Bereich der Datenmodellierung. Jedenfalls muss man zur Kenntnis nehmen, dass das Konzept der offenen und vernetzten Daten im Bereich der Sammlungsdokumentation noch zu einem sehr geringen Grad umgesetzt ist, obwohl nach unserer Einschätzung die Zielsetzung, Daten zu vernetzen, inzwischen bei vielen Verantwortlichen Zustimmung findet und zunehmend als Notwendigkeit verstanden wird. Auch ist oft die Bereitschaft zu erkennen, im Hinblick auf die eigene Arbeit umzudenken. Es fehlen aber die Perspektiven für eine Implementierung unter gegebenen infrastrukturellen Voraussetzungen.
+
+                    
+Zwar stehen für Datenbank-Lösungen, die über klassische, katalogisierende Objektdokumentation hinausreichen, die Kontextinformation und umfassende semantische Zusammenhänge abbilden und damit vernetzbar sind, heute etwa mit WissKI, ResearchSpace oder Wikibase (vgl. Müller 2022) ausgereifte Open-Source-Systeme zur Verfügung, um die erwähnten Konzepte zu implementieren. Insbesondere kleineren Sammlungen und Forschungsprojekten, denen unser besonderes Interesse gilt, erscheint die notwendige Kombination aus Systemwechsel, Datenmigration und semantisch anspruchsvoller und normgerechter Datenmodellierung jedoch oft als Überforderung.
+
+                    
+Dessen ungeachtet wäre prinzipiell zu fragen, ob die Ausstattung einzelner Institutionen oder Projekte mit hochkomplexen Datenbank-Management-Systemen ein uneingeschränkt erstrebenswertes Ziel ist. Man kann darin auch eine Sackgasse sehen: Die Planung, Implementierung, Wartung und Aufrechterhaltung dieser Großinfrastrukturen binden in hohem Maße Ressourcen und Aufmerksamkeit, während der reale Mehrwert von Nachnutzbarkeit und Vernetzung erfahrungsgemäß gerne etwas aus dem Blick gerät. Eher modular strukturierte, Agilität befördernde Ansätze, die wir zunächst und vor allem in Betracht ziehen, weil sie sich mit geringerem Ressourceneinsatz realisieren lassen, bieten hier aus unserer Sicht eine überlegenswerte Alternative oder zumindest Ergänzung. Der Fokus könnte sich von einer Optimierung der Vernetzbarkeit hin zu einer Vernetzung bereits in der Datenerfassung und -erschließung verschieben.
+
+                    
+Ein weiterer Punkt: Die gerade im kulturhistorischen Bereich relevante und zumeist angestrebte Vernetzung mit globalen Wissensbeständen konnte damit noch nicht erreicht werden.
+
+                    
+Wir setzen da an, wo auch traditionelle Datenbanken seit langem punktuell vernetzen. Bekanntlich bilden Normdaten den ersten Schritt des Verweisens über den eigenen Katalog hinaus. Normdaten wurden im Bibliothekswesen entwickelt, um die einheitliche Ansetzung von Elementen des Katalogs zu garantieren, die in mehr als einem Eintrag und nicht nur im einzelnen (Bibliotheks-)Katalog vorkommen (
+                        
+Woitas 2013
+
+                        
+)
+. Klassische Anwendungsfelder sind die Ansetzung von Personen- und Ortsnamen. Zunächst waren Normdaten damit primär Schreibregeln. Das Prinzip wurde erweitert auf die Normierung von Begriffen und deren Einordnung in klassifikatorische Systeme: Als Klassifikationen oder Thesauri – etwa bei der Schlagwortnormdatei (SWD) – erfüllen Normdaten erweiterte semantische Funktionen bei der inhaltlichen Erschließung.
+                    
+
+                    
+Indem die Normansetzungen zentral gehalten werden und über einen persistenten Identifier stabil referenzierbar sind, werden sie zu Referenzdaten. Sie erzielen neben der Sicherung von Konsistenz und Qualität der Daten einen klassischen Normalisierungseffekt (im Sinne des Entity Relationship Model von E. F. Codd), nur dass die „normalisierenden“ Entity-Relationen über die eigene Datenbank hinausgreifen: Die Daten zur referenzierten Entität müssen (im Prinzip) nicht mehr selbst angelegt und gepflegt werden, es reicht die ID der Normansetzung, in der Praxis ergänzt durch importierte oder begleitende Kerndaten (vgl. zur Normdatennutzung im Kulturbereich Kailus, Stein 2018, Kett et al. 2019).
+
+                    
+Damit beschränkt sich die Funktion des Verweisens nicht mehr auf die Funktion der Normierung, sondern eröffnet zusätzliche Aspekte. Nach Ansicht der Autoren sollte auch daher eher von Referenzdaten gesprochen werden. Wir identifizieren mindestens die folgenden Referenzdatentypen:
+
+
+
+                        
+kontrollierte Vokabulare: Ziel ist die Vereinheitlichung der Fachterminologie und die Sicherstellung semantischer Interoperabilität, d.h. dass in unterschiedlichen Ressourcen vom Gleichen die Rede ist, wenn derselbe 
+                            
+Begriff 
+verwendet wird.
+                        
+
+                        
+Identifikationsfunktion, Disambiguierung: Anspruch, bei Kulturgütern, Monumenten und Orten unverwechselbar deutlich zu machen, von welcher 
+                            
+Entität 
+die Rede ist.
+                        
+
+                        
+Taxonomien, Thesauri und Ontologien: Einrichtung einer begrifflich-inhaltlichen Ordnung der Gegenstandsbereiche, auch mit dem Anspruch, das weitere Konzept des Gegenstands zu erfassen.
+
+                        
+Lexikalische Anreicherung: zum Beispiel erweiterte biographische Angaben zu referenzierten Personen; historische Kontextualisierung von Gegenständen und Sachverhalten.
+
+                        
+Lokalisierung, Georeferenzierung als Sonderfall einer quantitativ definierten Verortung.
+
+                    
+
+                    
+Derart konzeptualisiert, differenzieren sich die Funktionen, die Referenzdaten leisten können: Neben Normierung und Normalisierung spielen auch Identifikation, Erschließung und Anreicherung eine Rolle – und all dies in einer potentiell unendlich und für alle Anwendungsperspektiven skalierbaren Struktur, die daher auch offen sein muss für die möglichst umfangreiche Beteiligung der wissenschaftlichen Community.
+
+                    
+Für die gestellte Aufgabe der Anreicherung und Öffnung einfacher Objektkataloge eröffnen die Referenzdaten in diesem erweiterten Verständnis interessante Perspektiven. Denn sowohl ihre strukturierte und stabile semantische Bestimmung als auch die Vernetzung findet (etwas pauschalisiert und idealisiert gesagt) auf Seiten der referenzierten Repositorien statt und muss nicht (nur) in der eigenen Datenhaltung geleistet werden. Die Realisierung eines semantischen Mehrwerts – Explizität, Präzision, Eindeutigkeit, und damit: Eignung für die Vernetzung der eigenen Daten – geht also theoretisch sogar einher mit einem Effizienzgewinn in der eigenen Datenhaltung. Die Umsetzung stellt jedoch neue Herausforderungen: Die Implementierung der Referenzierung von Daten in unzähligen Repositorien muss bewältigt werden. Vorrangiges Ziel muss es also sein, die Komplexität der vielfältigen Referenzierungen zu reduzieren.
+
+                    
+Die Nutzung von Wikidata (https://www.wikidata.org, vgl. 
+                        
+Vrandečić, Krötzsch
+ 2014, Müller-Birn et al. 2015), der unter einer freien Lizenz verfügbaren Wissensdatenbank der Wikimedia-Familie, erscheint uns hier als der vielversprechendste Ansatz. Wikidata erfüllt als Infrastruktur und hinsichtlich des Datenbestandes einen erheblichen Teil der Anforderungen, die in unserem Bereich an Referenzdaten gestellt werden, und ist ein bedeutender Knoten im Linked Data Web (vgl. Erxleben et al. 2014).
+                    
+
+                    
+Entscheidend ist zunächst, dass Wikidata nicht nur Funktionen traditioneller Normdaten erfüllen kann (vgl. 
+                        
+Voß et al. 
+
+                        
+2014): 
+Wikidata bietet mit seinem aus Items und Properties aufgebauten Datenmodell eine logische Struktur, mit den darin erfassten Daten einen der größten globalen Wissensbestände (vgl. die DHd-Beiträge Schelbert 2017 und Müller-Birn et al. 2018; zu den allgemeinen Potentialen von Wikidata für den Kulturerbesektor vgl. Krötzsch 2016, Poulter 2017, 
+                        
+Schmidt et al. 2022
+). Darüber hinaus steht mit der zugrundeliegenden Software-Suite Wikibase auch eine konkrete Arbeitsplattform frei zur Verfügung, die in einer eigenen Implementierung genutzt werden könnte, was im Zusammenhang dieses Projekts jedoch nicht vorgesehen ist (anders als etwa in den Projekten Rhizome und ArtBase, vgl. Rossenova 2021).
+                    
+
+                    
+Unser Lösungsansatz sieht vor, von der eigenen Datenhaltung zunächst lediglich auf Wikidata zu referenzieren. Die Nutzung der Daten aus Wikidata kann von dieser Basis aus flexibel erfolgen: Das Konzept unseres Projekts verlangt keine 
+                        
+Festlegung auf bestimmte Daten. Eine Option ist, Wikidata-Referenzen nur zu verwenden, um die Durchsuchbarkeit zu verbessern, eine naheliegende andere ist der indirekte Zugriff auf klassische Normdaten (Statements der Rubrik „Identifiers“), möglich ist etwa auch die Kategorisierung von Objekten (bspw. nach übergeordneten Kategorien, die in Wikidata festgehalten sind, bspw: Ort → Land).
+
+                    
+
+                    
+Der Aufwand ist selbstverständlich skalierbar. Aus der geschilderten Ausgangslage (reiche Sammlungen, wenige Ressourcen) richtet sich unser Augenmerk aber (zunächst) auf möglichst einfache Lösungen mit dennoch beachtlichem Ertrag. Die Beurteilung der Erschließungsleistung misst sich bei unserem Ansatz nach dem Verhältnis von Aufwand und erzieltem Mehrwert für Erschließung und Vernetzbarkeit.
+
+                    
+Der notorisch schwierigen und schwierig einzuschätzenden “Datenlage” in Wikidata begegnen wir, indem wir uns auf Daten konzentrieren, die mit einer gewissen Zuverlässigkeit vorhanden sind, sowie durch die Einbeziehung von Daten aus den sekundär referenzieren “klassischen” Normadatensätzen (GND etc.). 
+
+                    
+Auch wenn wir aus dem an sich viel reicheren Daten in Wikidata nur relativ basale Teilmengen verwenden, ergeben sich für die Erschließung des Materials erhebliche Verbesserungen, wenn man etwa für die auf einem historischen Lehr-Dia dargestellte Kirche auch Benennungsvarianten, die landessprachliche Bezeichnung, die Konfession, das Bistum oder die Geokoordinaten des Ortes für die Erschließung (aus Sicht der Nutzer*innen: für das Suchen, Filtern, Sortieren) zur Verfügung hat.
+
+                    
+Die Komplexität der Daten in Wikidata (z.B. Unschärfe der Datierung), die nicht im eigenen System abgebildet werden kann oder soll bzw. nicht vollständig in der Suche wirksam gemacht werden kann, stellt eine Herausforderung dar, der zunächst pragmatisch mit Hinweisen (Disclaimer) begegnet wird. Die darüber hinaus mögliche Implementierung entsprechend komplexerer Lösungen für Datenhaltung, -suche und -visualisierung ist nicht Gegenstand unseres Vortrags.
+
+                    
+Ein weiterer Aspekt ist die Frage nach der Form der Anbindung und damit der Aktualität der verwendeten Referenzdaten aus Wikidata. Hierbei soll nach folgenden Prinzipien vorgegangen werden, die wir im Fallbeispiel im Einzelnen ausführen.
+
+
+
+                        
+Eine Aktualisierung, also der wiederholte Abgleich mit den Referenzdaten, soll grundsätzlich stattfinden (können). 
+
+                        
+Es muss steuerbar sein, welche Daten aktualisiert werden sollen, ob die selbst eingepflegten Daten Priorität vor Daten haben, die über die Referenzierung gewonnen wurden.
+
+                    
+
+                    
+Dem wichtigen Aspekt der Transparenz der Datenprovenienz wird durch die Kennzeichnung der aus Wikidata bezogenen Daten im Frontend Rechnung getragen. 
+
+                
+
+                
+
+                    
+
+                        
+II. Fallbeispiel. Die kunsthistorische Lehrbildsammlung Berlin
+                    
+
+                    
+Die Lehrbildsammlung des Instituts für Kunst- und Bildgeschichte der Humboldt-Universität eignet sich in zweifacher Hinsicht, um diese Konzeption prototypisch zu erproben. Zum einen sind die skizzierten Limitierungen hier gegeben: Die Daten werden im Medienrepositorium der Universität verwaltet, das als Digital-Asset-Management-System (auf der Basis von ResourceSpace, https://www.resourcespace.com/) mit einer relativen flachen Datenstruktur an sich wenig geeignet ist, um einen Linked-OpenData-Ansatz zu realisieren. Zum anderen ist bei der Erschließung von kunsthistorischen Bildobjekten die Vernetzung mit weiteren Daten zum Kulturerbe inhaltlich besonders vielversprechend, da diese bekannte, singuläre Artefakte abbilden (vgl. Schelbert 2022).
+
+                    
+Die kunsthistorische Lehrsammlung entstand mit der Gründung des Fachs seit den 1870er Jahren und stellt trotz erheblicher, teils kriegsbedingter Verluste eine der größten und reichhaltigsten ihrer Art dar (Haffner 2007, Schelbert 2018). Die Fotografien verschiedener Formate und Techniken (Papierabzüge, Glas- und Planfilmnegative, Glas- und Filmdiapositive) verweisen auf Kulturgut und Sachverhalte von großer zeitlicher und räumlicher Bandbreite. Sie interessieren außerdem in hohem Maß hinsichtlich fach-, institutions- und sammlungsgeschichtlicher Bezüge, wodurch sich die Herausforderungen der Referenzierung in besonderer Weise stellen. Es ist eine hohe Zahl an Digitalisaten vorhanden, denen die inhaltliche Erschließung fehlt, und es kann aufgrund der infrastrukturellen Bedingungen nur mit einfachen Datenbanksystemen und einfachen Datenmodellen gearbeitet werden.
+
+                    
+Wikidata wird an dieser Stelle bereits bisher als Schlüssel sowohl zur Anreicherung als auch für die Anschlussfähigkeit der Digitalisate eingesetzt. Anstelle der Anlage komplexer Stammdaten werden die grundlegenden Entitäten (Personen, Geographica, Werke, Körperschaften) mit Wikidata-ID versehen und so mit den entsprechenden Wikidata-Items verknüpft. Potentiell kann das referenzierte Wikidata-Item die oben genannten Funktionen der Referenzierung erfüllen: Es identifiziert, disambiguiert, verweist auf andere Referenz-Repositorien, enthält Geodaten und in seinen Statements zahlreiche relevante Daten.
+
+                    
+Allerdings sieht das Datenmodell im verwendeten DBMS ResourceSpace keine Einbindung von Referenzierungen vor. Ersatzweise sind die Wikidata-IDs deshalb lediglich in den Text der jeweiligen Metadatenfelder geschrieben. Da sie in ihrer Struktur (Q + Nummer) leicht zu identifizieren sind, sind sie sie prinzipiell maschinell verwendbar, jedoch nicht bzw. nur sehr mühsam in den von ResourceSpace vorgesehenen Bedienelementen.
+
+                    
+Es stellt sich also die Frage, wie die in Wikidata enthaltenen Informationen auch in der konkreten Anwendung praktisch nutzbar gemacht werden können. Hier bedarf es einiger infrastruktureller Schritte, die wir in einem Pilotprojekt u.a. im Rahmen des Projekts Digitales Netzwerk Sammlungen der Berlin University Alliance (https://www.ub.hu-berlin.de/de/ueber-uns/projekte/digitales-netzwerk-sammlungen/projekt-digitales-netzwerk-sammlungen) erprobt haben.
+
+                    
+Die technische Konzeption, an der wir uns orientieren, basiert auf den Prinzipien einer Separation of Concerns und der zeitlichen Entkopplung von Nutzung und Aggregation der (Referenz-)Daten. Gerade im Hinblick auf die genannten infrastrukturellen Limitierungen kann es nicht darum gehen, Sammlungsdatenbanken neu zu konzipieren oder in ihrer Struktur an die anspruchsvolle Referenzdatenvernetzung anzupassen. Wir ergänzen vielmehr die eingesetzten Systeme “von außen”, also jenseits der Schnittstelle (im Idealfall ein dynamisch abfragbarer Endpoint, notfalls ein händischer Datenexport) mit einer modular aufgebauten Middleware (Data processing und data aggregator tools auf der Basis von Node js; sekundärer Datenspeicher mit API), über die die semantisch reiche Verknüpfung geleistet wird. Schon auf der Ebene von Wikidata als Referenzdaten-Hub sind diese Operationen komplex und umfangreich, die Einbeziehung der dort referenzierten primären Repositorien (z.B. GND, Getty AAT, Iconclass …) steigert die technischen Anforderungen, die sich aus den Verknüpfungsoperationen ergeben, weiter. 
+
+                    
+Auch hier suchen wir die Lösung nicht in der Skalierung, sondern in der Modularisierung. Module, die bei der Nutzung, etwa bei der Suche nach relevanten Objekten, beim Filtern und Sortieren, angesprochen werden, arbeiten mit bereits hochgradig aggregierten Daten, die praktisch instantan zur Verfügung stehen. Der Prozess der Aggregation läuft dagegen periodisch bzw. durch Triggerung aus der Datenhaltung, also zeitlich entkoppelt von der Nutzung ab. Mit anderen Worten: Der Umsetzungsvorschlag sieht keine dauerhafte Übernahme von Daten aus Wikidata vor. Vielmehr handelt es sich um eine temporäre, asynchron-dynamische Übernahme von Daten aus Wikidata zum Zweck der Suche bzw. zum Zweck der Anzeige angereicherter Daten in einem entkoppelten Frontend (hier realisiert in Vue.js). 
+
+                    
+Die Middleware, in die periodisch Datenabzüge aus Wikidata und der Quelldatenbank eingespielt werden, wird lediglich aus Performanzgründen eingesetzt, da eine reine on-the-fly-Lösung aufgrund der notwendigen kaskadierenden Abfragen in Wikidata nicht praktikabel wäre. Im Fallbeispiel der kunsthistorischen Bilddatenbank werden aus Wikidata Daten für abgebildete Werke in die Middleware übernommen, um auf dieser Basis schnelle Abfragen und Darstellungen von zusätzlichen Daten zum jeweiligen Bildobjekt zu erzeugen. Das Ausspielen der eigenen Daten nach Wikidata zur Korrektur und/oder Ergänzung des dortigen Datenbestandes wäre ein reizvoller weiterer Schritt im Sinne einer echten Vernetzung, den wir aber noch nicht gegangen sind.
+
+                    
+Eine Vorstellung vom Aufbau einer nach diesen Prinzipien konzipierten Architektur vermittelt das folgende Schema :
+
+                    
+
+                        
+
+                        
+Abb. 1: Wikidata-basierte Anreicherung und Erschließung von Sammlungsdaten - Systemarchitektur des Pilotprojekts (Grafik M. Müller)
+
+                    
+
+                    
+                
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Erxleben, Fredo. 2014. Michael Günther, Markus Krötzsch, Julian Mendez, Denny Vrandeăić.
+ "Introducing Wikidata to the Linked Data Web." in:
+                        
+Proceedings of the 13th International Semantic Web Conference
+
+                        
+. New York. 50-65
+
+                    
+
+                    
+
+                        
+Haffner, Dorothee.
+ 2007. "'Die Kunstgeschichte ist ein technisches Fach.' Bilder an der Wand, auf dem Schirm und im Netz." In
+                        
+Bild/Geschichte. Festschrift für Horst Bredekamp
+
+                        
+, hrsg. von Philine Helas, Maren Polte, Claudia Rückert, Bettina Uppenkamp, Berlin: 
+Walter de Gruyter
+                        
+. 119–129
+
+                    
+
+                    
+
+                        
+Kailus, Angela und Regine Stein.
+ 2018. "Besser vernetzt: Über den Mehrwert von Standards und Normdaten zur Bilderschließung." In
+                        
+Computing Art Reader
+
+                        
+, hrsg. v. Piotr Kuroczyński, Peter Bell und Lisa Dieckmann, Heidelberg: arthistoricum. 119-139. 
+
+                        
+
+                            
+https://doi.org/10.11588/arthistoricum.413.c5772
+
+                        
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Kett, Jürgen, Detlev Balzer, Barbara K. Fischer, Susanne Laux, Jens Lill, Jutta Lindenthal, Mathias Manecke, Martha I. Rosenkötter und Axel Vitzthum.
+ 2019.
+                        
+"
+
+                        
+Das Projekt ‚'GND für Kulturdaten' (GND4C)." 
+
+                        
+o|Bib
+
+                        
+, Bd. 6 Nr. 4: 59-97. 
+
+                        
+
+                            
+https://doi.org/10.5282/o-bib/2019H4S59-97
+
+                        
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Kieven, Elisabeth und Georg Schelbert.
+ 2014.
+                        
+"
+
+                        
+Architekturzeichnung, Architektur und digitale Repräsentation. Das Projekt LINEAMENTA.
+
+                        
+"
+
+                        
+kunsttexte.de
+
+                        
+ [
+
+                        
+Sektion Architektur Stadt Raum, Titel der themenspezifischen Ausgabe "Architecture on display"
+
+                        
+] 4/2014: 1-7. 
+
+                        
+https://doi.org/10.48633/ksttx.2014.4.88343
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Koordinierungsstelle für wissenschaftliche Universitätssammlungen in Deutschland.
+ 2016. 
+                        
+Sammlungen an Universitäten
+
+                        
+, herausgegeben vom wissenschaftlichen Beirat der Koordinierungsstelle. 
+
+                        
+
+                            
+https://wissenschaftliche-sammlungen.de/download_file/view/1331/
+
+                        
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Krötzsch, Markus.
+ 2016.
+                        
+Wikidata as a Cultural Heritage Information Hub
+
+                        
+ (Invited talk at the Europeana Network Association AGM 2016). 
+
+                        
+
+                            
+https://iccl.inf.tu-dresden.de/web/Misc3015
+
+                        
+
+                        
+(letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Lill, Jens M.
+ 2019. 
+                        
+"
+
+                        
+Gemeinsam neu definiert: das Projekt GND für Kulturdaten (GND4C)
+
+                        
+.
+
+                        
+"
+
+                        
+AKMB-news
+
+                        
+ 25, 1: 18–23. 
+
+                        
+
+                            
+https://doi.org/10.11588/akmb.2019.1.72474
+
+                        
+
+                        
+(letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Müller, Michael.
+ 2022:
+                        
+Wikibase – taugt die Wikidata-Software zur Sammlungsdokumentation?
+
+                        
+ (Teil 1), Blog Digitales Netzwerk Sammlungen 
+
+                        
+
+                            
+https://dns.hypotheses.org/546?_thumbnail_id=621
+
+                        
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Müller-Birn, Claudia, Benjamin Karran, Janette Lehmann, Markus Luczak-Rösch.
+ 2015: 
+                        
+"
+
+                        
+Peer-production system or collaborative ontology development effort: what is Wikidata?
+
+                        
+"
+
+                        
+ in 
+
+                        
+Proceedings of OpenSym 2015 Conference on Open Collaboration
+
+                        
+. San Francisco. 
+
+                        
+
+                            
+https://doi.org/10.1145/2788993.2789836
+
+                        
+
+                        
+(letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Müller-Birn, Claudia, Georg Schelbert, Martin Raspe, Thorsten Wübbena.
+ 2018.
+                        
+"
+
+                        
+Wikidata. Nutzungsmöglichkeiten und Anwendungsbeispiele für den Bereich Digital Cultural Heritage
+
+                        
+.
+
+                        
+"
+
+                        
+ In 
+
+                        
+DHd 2018 Kritik der digitalen Vernunft. 5. Tagung des Verbands "Digital Humanities im deutschsprachigen Raum"
+
+                        
+. Köln. 63-67. 
+
+                        
+
+                            
+https://doi.org/10.5281/zenodo.4622497
+
+                        
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Poulter, Martin.
+ 2017.
+                        
+Wikidata – the new hub for cultural heritage
+
+                        
+. 
+
+                        
+Wikimedia UK-Blog, 20. Jan.2017. 
+
+                        
+
+                            
+https://blog.wikimedia.org.uk/2017/01/wikidata-the-new-hub-for-cultural-heritage/
+
+                        
+
+                        
+(letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Rossenova, Lozana
+ 2021.
+                        
+Model–Database–Interface: A study of the redesign of the ArtBase, and the role of user agency in born-digital archives
+
+                        
+,
+
+                        
+PhD diss.,
+
+                        
+ London South Bank University. DOI: 
+
+                        
+
+                            
+https://doi.org/10.18744/lsbu.8wz7x
+
+                        
+
+                        
+(letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Schelbert, Georg,
+
+                        
+ 2017
+
+                        
+. 
+
+                        
+"
+
+                        
+Warum nicht gleich Wikidata...?!
+
+                        
+.
+
+                        
+"
+
+                        
+ In 
+
+                        
+DHd 2017 - Digitale Nachhaltigkeit. 4. Tagung des Verbands "Digital Humanities im deutschsprachigen Raum"
+
+                        
+. Bern
+
+                        
+. 287-288.
+
+                        
+
+                            
+https://doi.org/10.5281/zenodo.4622713
+
+                        
+
+                        
+(letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Schelbert, Georg.
+ 2018.
+                        
+Bildgeschichte digital greifbar. Die Glasdiasammlung des Instituts für Kunst- und Bildgeschichte der Humboldt-Universität zu Berlin. Bericht von einem work in progress.
+
+                        
+ Berlin.
+
+                        
+
+                            
+https://edoc.hu-berlin.de/handle/18452/20233
+
+                        
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Schelbert, Georg.
+ 2022.
+                        
+"
+
+                        
+Die kunsthistorische Bilddatenbank zwischen digitalisierter Diathek und visuellem Wissensraum
+
+                        
+.
+
+                        
+"
+
+                        
+ In 
+
+                        
+Lehrmedien der Kunstgeschichte
+
+                        
+, hrsg. v. Hubert Locher und Maria Männig. 
+Berlin: Walter de Gruyter. 354-373
+                    
+
+                    
+
+                        
+Schmidt,
+                        Sophie C., Florian Thiery und Martina Trognitz
+ 2022: "Practices of Linked Open Data in Archaeology and Their Realisation in Wikidata."
+                        
+Digital
+
+                        
+ 2(3): 333-364. 
+
+                        
+
+                            
+https://doi.org/10.3390/digital2030019
+
+                        
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Schöch, Christoph.
+ 2017.
+                        
+"
+
+                        
+Aufbau von Datensammlungen.
+
+                        
+" In
+
+                        
+Digital Humanities: Eine Einführung
+
+                        
+, hrsg. v. Fotis Jannidis, Hubertus Kohle, und Malte Rehbein. Stuttgart: J.B. Metzler. 223-233. 
+
+                        
+https://doi.org/10.1007/978-3-476-05446-3_16
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Voß, Jacob, 
+
+                        
+Susanna Bausch, Julian Schmitt, Jasmin Bogner, Viktoria Berkelmann, Franziska Ludemann, Oliver Löffel, Janna Kitroschat, Maiia Bartoshevska und Katharina Seljuzki. 2014. 
+
+                        
+Normdaten in Wikidata - Handbuch
+
+                        
+, Version 1.0, 22.5.2014. 
+
+                        
+
+                            
+https://serwiss.bib.hs-hannover.de/frontdoor/deliver/index/docId/438/file/normdaten-in-wikidata.pdf
+
+                        
+
+                        
+ (letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Vrandečić, Denny und Markus Krötzsch.
+ 2014.
+                        
+"
+
+                        
+Wikidata: a free collaborative knowledge base
+
+                        
+."
+
+                        
+Commun. ACM
+
+                        
+ 57(10): 78–85.
+
+                        
+
+                            
+https://doi.org/10.1145/2629489
+
+                        
+
+                        
+(letzter Zugriff 15.12.2022)
+
+                    
+
+                    
+
+                        
+Woitas, Kathi.
+ 2013.
+                        
+Bibliografische Daten, Normdaten und Metadaten im Semantic Web – Konzepte der Bibliografischen Kontrolle im Wandel
+
+                        
+ (Berliner Handreichungen zur Bibliotheks-und Informationswissenschaft). Berlin. 
+
+                        
+https://doi.org/10.18452/2086
+
+                        
+(letzter Zugriff 15.12.2022)
+
+                    
+
+                
+
+            
+
+        
+
+    

@@ -1,0 +1,433 @@
+
+        
+
+            
+
+                
+Einleitung
+
+                
+In den Editionswissenschaften ist nicht unbemerkt geblieben, dass Randnotizen in Briefen (fortan: RN) keineswegs von marginaler Bedeutung sind. Vielmehr können sie aufgrund ihrer Länge, ihres inhaltlichen Gewichts und ihres rezeptionsästhetischen Reizes sogar die Hauptsache eines Briefs darstellen. Und das gilt vor allem für solche, die den Briefschreibenden selbst entstammen.
+ So wurde zu Theodor Fontanes „Kunst, auf Briefrändern zu schreiben“ etwa bemerkt, dass sie das Ergebnis „intensiver schriftstellerischer Arbeit” seien, deren imposante „Architektur” schwer zu entschlüsseln ist (Erler 1968: 318-319; Gabler 2020: 1239-1240). Damit stellen RN auch die Herstellung eines Transkripts und seiner grafischen Repräsentation vor eine große Herausforderung, die gewichtige editorische und im Fall von digitalen Editionen auch informationstechnologische Entscheidungen verlangt.
+                
+
+                
+Trotzdem spielen RN in den 
+                    
+Digital Humanities
+ bzw. in digitalen Editionen bisher nur eine marginale Rolle: Die Suche nach Ansätzen, die editorisch und in Bezug auf ein geeignetes Datenmodell bereits bewährte Bau- und Fahrpläne an die Hand geben, erweist sich als eher vergeblich. Bisherige digitale Brief-Editionen geben RN meist konventionell wieder: Diplomatischen Editionskonventionen folgend werden sie topografisch, teils auch zusätzlich farblich abgesetzt präsentiert
+ oder an der zugehörigen Stelle hinzugefügt;
+ bisweilen werden auch Arten von Randbeschriftungen unterschieden.
+ Obgleich alle gesichteten Editionen ihre Transkriptionsregeln explizieren, begründen sie die Art ihres Umgangs mit RN nicht näher. 
+                
+
+                
+In den meisten Fällen ist ein solches Vorgehen ausreichend. Problematisch wird dieses erst, wenn RN mehrere Seiten umgreifen, unterschiedliche Sinneinheiten bilden, deren Abfolge gar schwer durchschaubar bzw. interpretationsbedürftig ist. Eine rein diplomatische Transkription führt dann zu fragmentierten Brieftexten, deren Sinneinheiten im Lesen erst mühsam rekonstruiert werden müssen. Besonders unbefriedigend ist eine solche Präsentationsweise für ‚User’-Kontexte, deren Erkenntnisinteressen sich – wie in dem hier behandelten Fall von Ferdinand Tönnies – primär auf historische, politische, netzwerktheoretische, fach- und theoriegeschichtliche u.ä. Inhalte richten, aber nur selten poetische, literatur- und theorieästhetische Formen in den Blick nehmen. Für solche Fälle bedarf es anderer Lösungen. Wie ein solches hierfür spezifiziertes digitales Design aussehen kann, möchte dieser Vortrag zur Diskussion stellen. Er bezieht sich dabei auf das bereits entwickelte Konzept einer digitalen Edition der Briefe des Soziologen Ferdinand Tönnies. Diese von der DFG geförderte Briefedition entsteht momentan am Kulturwissenschaftlichen Institut Essen, der Schleswig-Holsteinischen Landesbibliothek Kiel und am Trier Center for Digital Humanities (Kompetenzzentrum 2022).
+
+            
+
+            
+
+                
+Beobachtungen zu Randnotizen in Tönnies-Briefen
+
+                
+Die Praxis, briefkommunikativ über Bande zu spielen, tritt bei Tönnies nicht durchgängig, sondern nur episodisch in bestimmten, besonders intensiven Beziehungskonstellationen auf. Und genau dann spielen RN – darin mit Fontane vergleichbar – im brieflichen miteinander ‚zu Rande- wird. Kommen‘ keine marginale, sondern eine zentrale Rolle. Wie zu zeigen sein wird, fungierten RN als Mittel einer Inklusionsstrategie, mit der die Intensität einer Freundschaft gesteigert und diese trotz Konflikten, divergierender Interessen oder Gefühlslagen aufrecht und produktiv gehalten 
+
+            
+
+            
+
+                
+Ferdinand Tönnies: Gemeinschaft und Gesellschaft 
+
+                
+Wer war Ferdinand Tönnies? Wissenschaftsgeschichtlich war er von besonderer Bedeutung, da er zu Beginn des 20. Jahrhunderts mit Max Weber, Georg Simmel und anderen die Soziologie als eine eigenständige Disziplin begründete. Sein 1887 erstmals erschienenes Werk „Gemeinschaft und Gesellschaft“ wurde nicht nur für die frühe Soziologie ein gesellschaftstheoretisches Standardwerk, sondern prägte auch die Kultur- und Bildungspolitik der Weimarer Republik. Das dort ausformulierte Konzept der „Gemeinschaft“, das er in Opposition zur strategischen Handlungssphäre der Gesellschaft konstruiert hatte, übte auf die politischen Diskurse der Republik einen großen Einfluss aus. Zugleich beeinflussten 
+                    
+Gemeinschafts-Konzeptionen
+ auch Tönnies’ epistolare Praxis.
+                
+
+                
+Besonders aufschlussreich ist hierbei die Rolle, die der Soziologe der Sprache attestierte. Er begriff sie nicht nur als Medium von Inhalten, sondern ebenso als das „wahre Organ” von „Verständnis“ (Tönnies 2019: 144). Sprache lasse die Äußerung tiefer Gefühle zu. Gemütserregungen wie Schmerz, Lust, Furcht und Wunsch würden in Laute übersetzt, so dass Menschen aufgrund ihrer anthropologischen Befähigung zur „lebhafte
+                    
+[
+n
+                    
+]
+ Sympathie“ zu einem wechselseitig „intimen Verständnis“ und zur gemeinschaftlichen „Übereinstimmung” gelangen könnten (Tönnies 2009: 147). In dem von Tönnies besonders geschätzten Fall des intellektuellen Austauschs unter Freunden übersteigerte er das Übereinstimmen sogar zu einer „Art von unsichtbarer Ortschaft, eine[r] mystische[n] Stadt und Versammlung“, die er als geistige Gemeinschaft von anderen Vergemeinschaftungen abgrenzte (Tönnies 2019: 139, 137). Gerade die Briefe, in denen er intensiv RN gebrauchte, waren von dieser übersteigerten Gemeinschaftserwartung getragen. Um diesen bislang unbekannten Zusammenhang sichtbar zu machen, musste auch für die digitale Edition eine spezifische Umsetzung gefunden werden.
+                
+
+            
+
+            
+
+                
+Tönnies als Briefschreiber
+
+                
+Tönnies wurde am 26. Juli 1855 in eine Welt der voll entfalteten modernen Postinfrastruktur hineingeboren. Die Epochensignatur der Beschleunigung prozessierte gerade in der hochgradig brieflich geprägten Schriftkultur, wie sie für das Bürgertum des 19. und frühen 20. Jahrhunderts typisch war. In seiner „Kritik der öffentlichen Meinung“ von 1922 schrieb Tönnies: „In unendlichen Mengen schwirren heute Briefe […] hin und her, am meisten innerhalb eines Landes, noch intensiver in engeren Gebieten, aber auch über die Grenzen von allen Orten, zu allen Orten des Erdballes“ (Tönnies 2002: 370). Das galt auch für Tönnies selbst, der im damaligen Wissenschaftsbetrieb bis zur Etablierung von Soziologie eine periphere Stellung einnahm und seine globalen wie lokalen Wissenschaftsbeziehungen primär über Briefe pflegte.
+
+                
+Die hohe Abhängigkeit vom Medium des Briefes schlug sich auch in einer permanenten Reflexion über Möglichkeiten und Grenzen dieser Kommunikationsform nieder, zumal Tönnies den Brief für ein unvollkommenes Surrogat der Kommunikation unter Anwesenden hielt. Trotzdem schrieb er fast täglich Briefe, da diese nicht nur Mittel zum Austausch mit Kollegen waren, sondern zugleich ein Medium zur Stiftung und Pflege sozialer Verbindungen im obigen Sinne.
+
+            
+
+            
+
+                
+Phänomen und Bedeutung von RN in Tönnies-Briefen 
+
+                
+Das Aufkommen von RN lässt sich bei Tönnies ausschließlich in vertrauten Kommunikationssituationen beobachten. Nur nach einer Serie von Briefwechseln, nur nach wiederholten persönlichen Treffen in physischer Anwesenheit, nur nach oder einhergehend mit – diskret oder explizit – bekundeter Sympathie griff er auf dieses Stilmittel zurück. Je persönlicher und intensiver die Korrespondenz wurde, desto häufiger und komplexer setzte er RN ein. Kühlte die Beziehung wieder ab, wurden sie seltener und weniger komplex. Komplexität bezeichnet dabei das Maß an gleichzeitiger Rekursivität und Unübersichtlichkeit, wenn RN sich über mehrere Seiten hinweg erstrecken, in wechselnde Sinneinheiten und in unterschiedliche Arten untergliedern (z.B. fortlaufende Textabschnitte mit Apposition, Unterbrechung, Stern-Kommentar und Fußnotenzitat).
+
+                
+
+                    
+
+                    
+Beispiel für einen Brief mit mehreren RN (Tönnies 1879: 3)
+
+                
+
+                
+                
+
+                    
+
+                    
+Beispiel für eine Postkarte mit mehreren RN (Tönnies 1881: 2)
+
+                
+
+                
+Der Effekt für die Lesenden bestand zunächst darin, dass sie, bei gleichzeitig undeutlich werdender Schrift, eine Übersicht gewinnen, Reihenfolgen bilden und voneinander abgegrenzte Sinneinheiten und Verweiszusammenhänge rekonstruieren müssen. Systematisch zusammengefasst sind mit RN noch weitere kommunikativen Effekte verbunden:
+
+                
+A) Zunächst führt das Hinausschieben des Briefendes zu einer Verlängerung der Produktionssituation, wodurch die briefliche Gemeinschaft mit der adressierten Person prolongiert wird.
+
+                
+B) Sodann bedingt der Zwang, die im Vergleich zum Kerntext i.d.R. schwerer lesbaren Randnotate zu entziffern und zu ordnen, eine längere Lesezeit und damit die Prolongierung der Rezeptionssituation. 
+
+                
+C) RN setzen Impulse zur Anschlusskommunikation. Das gilt sowohl für den Schreibenden, der sich selbst durch RN zur Abfassung neuer RN oder zur Eröffnung neuer Briefseiten reizt, als auch für die Brieflesenden, die mit zusätzlichem Material für weitere Anschlusskommunikationen ‚gefüttert‘ werden. Diese Wirkung verstärkt sich durch eine spezifische Themenwahl. So streute Tönnies in RN bevorzugt Nachrichten aus dem geteilten sozialen Umfeld, so dass das, was ‚Tratsch‘ (Bergmann 1987: 198-202) genannt werden kann, zusätzlich zur Fortsetzung animierte. 
+
+                
+D) Der Themenbereich Tratsch lässt das Bemühen erkennen, mittels diskret eingebrachter Informationen unterschiedliche Netzwerke miteinander zu verknüpfen und diese zu einem Kreis geistig Gleichgesinnter zusammenzuschließen (Simmel 1989: 237-257).
+
+                
+E) Häufig finden sich in RN jedoch auch Ergänzungen oder Präzisierungen literarischer oder terminologischer Art, so dass RN – insbesondere in wissenschaftlichen Kontexten – der literarischen Vernetzung dienten.
+
+                
+In der Summe des Zusammenwirkens von A, B, C und D ergibt sich nicht nur die Prolongierung der briefkommunikativen Gemeinschaft per Produktion und Rezeption, sondern auch eine verstetigte Kommunikation über epistolare Einzelepisoden hinweg.
+
+            
+
+            
+
+                
+Erfassung und Darstellung von Randnotizen
+
+                
+Aufgrund ihrer wichtigen Funktion musste für Randnotizen eine angemessene Präsentationsweise gefunden werden. Was aber heißt angemessen? Diese Frage lässt sich nicht allein aus der unterstellten Bedeutung von RN beantworten, sondern richtet sich zugleich an die Rezeptions- und Nutzungserwartung, die hochgradig durch die bisherige Leseerfahrung geprägt ist. Dabei ist zu beachten, dass in den Briefeditionen anderer zeitgenössischer soziologischer Fachklassiker wie Max Weber und Georg Simmel, an denen unser Editionsvorhaben gemessen wird, Randnotizen keine oder fast keine Rolle spielen.
+ Hinzu kommt eine Fachkultur, die an der Entwicklung von Theorien großes Interesse zeigt, nicht aber an sogenannten ‘philologischen Feinheiten’. Der Brieftext hat daher primär das Kriterium der Lesbarkeit zu erfüllen. Sollte allerdings zugleich die Chance geboten werden, mithilfe des Transkripts das Faksimile entziffern zu lernen, dann wäre eine topografisch getreue Wiedergabe nötig. 
+                
+
+                
+Aus diesen divergierenden Ansprüchen an den Editionstext ergibt sich ein Zielkonflikt: Eine rein topografische Wiedergabe vermag den seitenübergreifenden Sinnzusammenhang von Randtexten nicht wiedergeben, so dass kein ‚lesbarer‘ Text entstünde. Eine Präsentationsweise, die Randnotizen in ihrem ‘Kontext’ darstellt, eignet sich dagegen nicht als „Lesehilfe“. Die Lösungsmöglichkeit besteht somit darin, die digitale Briefedition mit beiden Möglichkeiten der Textwiedergabe auszustatten und zugleich ein möglichst elegantes Wechseln der Präsentationsweise zu gewährleisten.
+
+                
+Die Dualität des Ansatzes muss daher mit einem geeigneten Datenmodell beschrieben und mit einer passenden Erfassungsmöglichkeit ausgestattet werden. Im Projekt geschieht dies während der Transkription eines Briefes in der virtuellen Forschungsumgebung des Softwareprogramms FuD (
+                    
+
+                        
+www.fud.uni-trier.de
+
+                    
+). Auch die Modellierung der RN erfolgt dann im Kontext der gesamten digitalen Briefedition innerhalb der dafür eingesetzten virtuellen Forschungsumgebung, die auf einem relationalen Datenbankmanagementsystem aufsetzt. Dabei erhalten die Randnotizen eindeutige Identifier, mittels derer die Verknüpfung von RN untereinander und innerhalb des Haupttextes abgebildet wird. Weitere Informationen, wie die topographische Positionierung der RN auf der Seite in Form von Metadaten (u.a. Angaben wie „Position: linker Rand; Drehung: 90“ bzw. „Position: unterer Rand; Drehung: 180“) werden auch erhoben. All diese Daten werden in unserem relationalen Entity-Relationship-Modell abgebildet und können somit in ihrer Gesamtkomplexität erfasst werden. Dadurch lassen sich die RN während der Transkription an den betreffenden Stellen einordnen; ebenso lässt sich die logische Lesereihenfolge konstruieren. Zusätzlich erlaubt das Analysemodul von FuD eine Annotation sämtlicher Textteile auf einer Metaebene und damit auch eine sich auf inhaltlicher Ebene bewegende Verknüpfung und Erschließung. Die konsequente Modellierung und Abbildung der Sachverhalte in einer relationalen Datenbank erlauben einen entsprechenden Export der Daten mithilfe einer geeigneten XML-Kodierung, für die im Laufe des Projektes eine Darstellung auf Basis der TEI-Guidelines (u.a. Modul „Linking, Segmentation and Alignment“) implementiert wird.
+                
+
+                
+Über die Darstellung von Brieftexten und Randnotizen hinaus ermöglicht diese Art der Kodierung auch eine quantitative Analyse des Phänomens ‘RN’ sowie eine gezielte Suche nach RN-Inhalten. So können einerseits für Fragen der Art „Bei welchen Korrespondenzpartnern verwendete Tönnies häufig RN?”, „Ändert sich die Häufigkeit von RN über den zeitlichen Verlauf einer Korrespondenz?”, „Wie verhält sich der Textumfang in den RN zur Gesamtlänge eines Briefes?” usw. geeignete Visualisierungen erstellt werden. Andererseits lassen sich durch die Annotation der RN nach dem obigen Muster qualitative Fragen wie „In welchen Korrespondenzen treten vermehrt RN mit dem Thema ‘Tratsch’ auf?”, „Wann werden welche ‘Nachrichten’ bezogen auf die Gesamtkorrespondenz in den RN erwähnt?” usw. beantworten. Auf Basis des Datenmodells können in der grafischen Benutzeroberfläche der Edition dann einerseits die einzelnen Randnotate eines aktuell gezeigten Digitalisats synoptisch oder die RN in ihrem übergreifenden Gesamtzusammenhang wiedergegeben werden. Andererseits können die Visualisierungskomponenten einzelne Befunde zu den vorgenannten Fragen in interaktiver Form anbieten, so dass die Benutzenden jederzeit von der Visualisierung Zugriff auf die Korrespondenzen haben. Durch eine modulare Anordnung der Visualisierungen lassen sich entsprechende Vergleichsmöglichkeiten schaffen. Eine einfache quantitative Analyse der RN innerhalb einer Korrespondenz zeigt die folgende Abbildung, in der die chronologische Verteilung der RN in 159 Briefen von Ferdinand Tönnies an Friedrich Paulsen abgebildet ist:
+
+                
+
+                    
+
+                
+
+                
+Man erkennt, dass Tönnies im Laufe der Kommunikation immer wieder RN verwendet, das Phänomen aber über die gesamte Dauer der Korrespondenz abnimmt.
+
+            
+
+            
+
+                
+Zusammenfassung
+
+                
+Wie gezeigt, spielen RN eine wichtige Rolle in der Art, wie Tönnies per Briefkommunikation bestimmte Netzwerke im Selbstverständnis nach 
+                    
+Gemeinschaft und Gesellschaft
+ strukturiert; als ein komplex genutztes Instrumentarium sind sie daher sowohl für die Art der Briefkommunikation als auch für die gelebte Praxis der von Tönnies entworfenen Theorie äußerst aufschlussreich. Aus diesem Grund musste für die Repräsentation der RN eine philologische, programmiertechnische und ästhetisch angemessene Lösung gefunden werden, die hier zur Diskussion gestellt wird.
+                
+
+            
+
+        
+
+        
+
+
+
+
+
+                        
+                            
+ Im Unterschied zu solchen, die der Leserschaft wie etwa in Form des  Glossierens, Hervorhebens, Verbesserns etc. zu verdanken und Gegenstand intensiver rezeptionsästhetischer Forschung sind.
+
+                        
+                    
+
+
+
+                        
+                            
+In der Briefedition August Wilhelm Schlegels werden etwa Randbeschriftungen im Fließtext farblich (schattiert) abgesetzt (Schlegel 2014-2021).
+
+                        
+                    
+
+
+
+                        
+                            
+In der Briefedition Alfred Eschers (Jung 2022) werden mit Stern o. Ä. markierte Einfügungen “an der passenden Stelle des Brieftextes” integriert; Randnotizen oder nicht “eindeutig placierbare Ergänzungen” werden am Ende des Fließtextes wiedergegeben und per Mouseover im Faksimile mit einem gelben Rahmen sichtbar gemacht. Die Randbeschriftungen sind jedoch nie so komplex, dass sie mehrere Seiten umfassen. Siehe: 
+
+                            
+
+                                
+https://www.briefedition.alfred-escher.ch/briefe/B2616?action=search&amp;view=single&amp;odd=escher.odd&amp;view1=1#1.4.3.6.2.4
+
+                            
+
+                        
+                    
+
+
+
+                        
+                            
+ So unterscheidet die Edition der Briefe Alexander von Humboldts etwa „Ergänzungen“ und „Anmerkungen“ farblich voneinander (Ette 2018-2022). Ergänzungen des Autors werden zudem ausgezeichnet und im Transkript bzw. der “Webansicht” an der als zugehörig interpretierten Stelle im Kerntext, farblich abgesetzt, eingefügt. Siehe: 
+
+                            
+
+                                
+https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/ergaenzungen.html
+
+                            
+
+                        
+                    
+
+
+
+                        
+                            
+ In der Briefedition der Simmel-Gesamtausgabe werden keine RN ausgewiesen. In der Max-Weber-Gesamtausgabe sind sporadisch RN enthalten. Sie werden im “textkritischen Apparat” (Weber 1994: 686, 851) ausgewiesen.
+
+                        
+                    
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Bergmann, Jörg.
+ 1987. 
+                        
+Klatsch. Zur Sozialform der diskreten Indiskretion
+. Berlin: New York: De Gruyter.
+                    
+
+                    
+
+                        
+Erler, Gotthard.
+ 1968. “Ich bin der Mann der langen Briefe” 
+                        
+Fontaneblätter
+ 1/7: 318-319.
+                    
+
+                    
+
+                        
+Ette, Ottmar (Hg.).
+ 2018-2022. 
+                        
+Richtlinien der
+
+                        
+
+                            
+ edition humboldt digital
+
+                        
+, Berlin-Brandenburgische Akademie der Wissenschaften. 
+                        
+
+                            
+https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/ergaenzungen.html
+
+                        
+ (zugegriffen: 2. August 2022).
+                    
+
+                    
+
+                        
+Gabler, Thorsten.
+ 2020. “Theodor Fontanes Briefe” In 
+                        
+﻿
+
+                        
+Handbuch Brief. Von der Frühen Neuzeit zur Gegenwart. Bd. 2: Historische Perspektiven - Netzwerke - Zeitgenossenschaften
+, hg. von Marie Isabel Matthews-Schlinzig, Jörg Schuster, Gesa Steinbrink und Jochen Strobel, 1233-1244. Berlin; Boston: De Gruyter.
+                    
+
+                    
+
+                        
+Jung, Joseph (Hg.).
+ 2022. 
+                        
+Digitale Briefedition Alfred Escher
+, Relaunch Januar 2022, Zürich.
+                        
+ 
+
+                        
+
+                            
+https://briefedition.alfred-escher.ch/briefe/B0503
+
+                        
+ (zugegriffen: 2. August 2022).
+                    
+
+                    
+
+                        
+Kompetenzzentrum – Trier Center for Digital Humanities.
+ 2022. Ferdinand Tönnies-Briefe: Eine digitale Edition. 
+                        
+
+                            
+https://tcdh.uni-trier.de/de/projekt/ferdinand-toennies-briefe-eine-digitale-edition
+
+                        
+ (zugegriffen: 2. August 2022).
+                    
+
+                    
+
+                        
+Schlegel, August Wilhelm.
+ 2014-2021. 
+                        
+Digitale Edition der Korrespondenz
+ [Version-01-22]. 
+                        
+https://august-wilhelm-schlegel.de
+, hg. von Jochen Strobel und Claudia Bamberg, bearbeitet von Caludia Bamberg und Olivia Varwig in Zusammenarbeit mit Cornelia Bögel, Ruth Golyschkin, Bianca Müller, Radoslav Petkov, Christian Senf und Friederike Wißmach (zugegriffen: 2. August 2022).
+                    
+
+                    
+
+                        
+Simmel, Georg.
+ 1989. “Über sociale Differenzierung” In: 
+                        
+Georg Simmel. Aufsätze 1887 bis 1890. Über sociale Differenzierung. Die Probleme der Geschichtsphilosophie (1892)
+, hg. von Heinz-Jürgen Dahme, 109-296. Frankfurt/M.: Suhrkamp.
+                    
+
+                    
+
+                        
+Tönnies, Ferdinand an Paulsen, Friedrich.
+ 25.06.1879. In 
+                        
+Tönnies-Nachlass. Schleswig-Holsteinische Landesbibliothek
+, Cb 54.51: Paulsen, 15.
+                    
+
+                    
+
+                        
+Tönnies, Ferdinand an Paulsen, Friedrich.
+ 19.08.1881. In 
+                        
+Tönnies-Nachlass. Schleswig-Holsteinische Landesbibliothek
+, Cb 54.51: Paulsen, 54.
+                    
+
+                    
+
+                        
+Tönnies, Ferdinand.
+ 2002. “Kritik der öffentlichen Meinung” In 
+                        
+Ferdinand Tönnies. Gesamtausgabe Band 14
+. 
+                        
+1922
+, hg. von Alexander Deichsel, Rolf Fechner und Rainer Waßner. Berlin; New York: De Gruyter.
+                    
+
+                    
+
+                        
+Tönnies, Ferdinand.
+ 2009. “Philosophische Terminologie in psychologisch-soziologischer Ansicht” In 
+                        
+Ferdinand Tönnies. Gesamtausgabe Band 7. 1905-1906
+, hg. von Arno Bammé und Rolf Fechner, 119-250. Berlin; New York: De Gruyter.
+                    
+
+                    
+
+                        
+Tönnies, Ferdinand.
+ 2019. “Gemeinschaft und Gesellschaft” In 
+                        
+Ferdinand Tönnies. Gesamtausgabe Band 2. 1880-1935
+, hg. von Bettina Clausen und Dieter Haselbach. Berlin; Boston: De Gruyter.
+                    
+
+                    
+
+                        
+Weber, Max.
+ 1994. “Briefe 1909-1910” In 
+                        
+Gesamtausgabe. Abteilung 2, Band 6
+, hg. von M. Rainer Lepsius und Wolfgang J. Mommsen. Tübingen: J. C. B. Mohr (Paul Siebeck).
+                    
+
+                
+
+            
+
+        
+
+    

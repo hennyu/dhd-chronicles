@@ -1,0 +1,290 @@
+
+        
+
+            
+Seit 2014 gibt das Institut für Dokumentologie und Editorik (IDE) die digitale Rezensionszeitschrift RIDE (A Review Journal for Digital Editions and Resources) heraus.
+ Mit derzeit (Stand Juli 2021) 70 Rezensionsartikeln zu digitalen wissenschaftlichen Editionen, Textsammlungen sowie Tools und Forschungsumgebungen ist es RIDE in den letzten sieben Jahren gelungen, Rezensionen verstärkt in den Digital Humanities zu verankern. Sowohl RIDE als auch die vom IDE herausgegebenen Kriterienkataloge für digitale Ressourcen wurden u.a. im Rahmen der DHd-Konferenzen kritisch diskutiert (Henny 2018, Neuber et al. 2018, Resch und Rastinger 2020), als Suchkriterium zum Auffinden digitaler Editionen angeführt (Franzini 2012) oder als Unterstützung bei der Korpuserstellung (Ruiz Fabio et al. 2017) und Verbesserung bestehender Applikationen verwendet (Virtueller Forschungsverbund Edirom 2021)
+. Bei der DHd 2022 möchten wir mit einem Poster herausstellen, was es bedeutet, die Arbeit an einem digitalen Rezensionsjournal als “informationstechnologische Datenbankarbeit, als Aushandlung von Metadatenstandards, als digitalen Sammlungsaufbau, als Korpuskuratierung und als FAIRes Forschungsdatenmanagement zu begreifen” (Call for Papers).
+            
+
+            
+Das IDE zeichnet für die digitale Infrastruktur und den Publikationsworkflow von RIDE selbst verantwortlich. Die Publikationsinfrastruktur besteht aus einem Zusammenspiel von eXist-db und Wordpress. Von Beginn an wurden die Rezensionen in XML/TEI codiert, als HTML und PDF publiziert und auch die zugrundeliegenden TEI-Versionen auf GitHub zum Download angeboten.
+ Begleitend zu den Rezensionstexten werden in RIDE außerdem 
+                
+Factsheets
+ veröffentlicht, die auf der Grundlage eines ausgefüllten Fragebogens für jede rezensierte Ressource erstellt werden und wesentliche Informationen in strukturierter Form enthalten. So wird es möglich, vergleichbare Auswertungen über alle Rezensionen hinweg vorzunehmen, die auf der RIDE-Webseite in Form von Diagrammen veröffentlicht werden.
+
+            
+
+            
+Seit etwa 2019 wurde der Workflow von RIDE mit Blick auf technologisch nachhaltige und standardisierte Lösungen sowie die Umsetzung der FAIR-Prinzipien überarbeitet und neu konsolidiert. Die Grundlage dafür bildete die Erstellung eines neuen TEI-Schemas in ODD (“One Document Does it all”)
+. Die Erfahrungen der ersten fünf Jahre haben durch die Rezensionspraxis und Bandbreite der Beiträge gezeigt, in welchen Bereichen das Datenschema enger gefasst und wo es noch erweitert werden musste. Das neue RIDE-Schema orientiert sich so weit wie möglich am Schema des 
+                
+Journals of the Text Encoding Initiative
+ (jTEI).
+ Auch die Abbildung der analytisch komplexen Fragebögen, einem Alleinstellungsmerkmal RIDEs gegenüber anderen Zeitschriften, wurden in das Schema integriert. Neue Elemente des RIDE-Datenmodells sind u.a. die detaillierte Sichtbarmachung der an der Publikation beteiligten Personen und ihrer Rollen, unter Einbeziehung von Normdaten.
+ Die bisher erschienenen Bände wurden bereits dem neuen Schema entsprechend konvertiert.
+            
+
+            
+RIDE ist eine von vielen digitalen Open Access-Zeitschriften in den DH, darunter beispielsweise die 
+                
+Zeitschrift für digitale Geisteswissenschaften
+ (ZfDG), 
+                
+Digital Humanities Quarterly
+ (DHQ) oder 
+                
+Journal of the TEI
+ (jTEI), die Datensätze ihrer Beiträge veröffentlichen. Im Gegensatz zu den genannten Zeitschriften stellt RIDE aber nicht nur singuläre Daten (d.h. XML/TEI-Files), sondern auch den gesamten Datenbestand in zitierfähiger, nachhaltiger und (nach-)nutzerfreundlicher Form unter CC BY Lizenz auf GitHub und Zenodo (mit DOI, in verschiedenen Versionen) zur Verfügung (Institut für Dokumentologie und Editorik 2021). Die Metadaten der Beiträge werden über eine OAI-Schnittstelle ausgeliefert, die bereits von der Deutschen Nationalbibliothek genutzt wird.
+ Darüber hinaus ist ein Großteil der Skripte, die zur Generierung der digitalen Rezensionen verwendet werden, ebenfalls öffentlich verfügbar.
+ Damit ist RIDE nicht nur Open Access, sondern auch FAIR.
+            
+
+            
+Das Poster wird die technischen Grundlagen RIDEs illustrieren und damit einen Blick “hinter die Kulissen” gewähren. Neben einer Beschreibung des derzeitigen Workflows soll der Beitrag demonstrieren, dass die strukturelle und semantische Codierung der Inhalte sowie die Begleitung der Rezensionen durch Kriterien und Fragebögen dazu führen, dass RIDE neben dem Angebot von Texten auch vermehrt datengestützte Zugänge bietet. Dies verstärkt den Blick auf die Gesamtheit der Rezensionen und die rezensierten Gegenstände und fördert rezensionsübergreifende Analysen.
+ Damit verändert sich die Kultur des digitalen Rezensierens und die herausgeberische Arbeit wird vermehrt zur informationstechnologischen Gedächtnisarbeit.
+            
+
+        
+
+        
+
+                        
+https://ride.i-d-e.de
+
+                    
+ Siehe das Label “ride.a.12.4” in den Issues zur WeGA-WebApp: 
+                        
+https://web.archive.org/web/20210706124100/https://github.com/Edirom/WeGA-WebApp/labels/ride.a.12.4
+
+                    
+
+                        
+https://github.com/i-d-e/ride
+
+                    
+ Siehe 
+                        
+
+                            
+https://ride.i-d-e.de/data/charts-scholarly-editions/
+
+                        
+ für die Diagramme zu wissenschaftlichen Editionen und 
+                        
+
+                            
+https://ride.i-d-e.de/data/charts-text-collections/
+
+                        
+ zu Textsammlungen.
+                    
+ Siehe 
+                        
+
+                            
+https://github.com/i-d-e/ride/tree/master/schema
+
+                        
+; zu ODD vgl. 
+                        
+
+                            
+https://wiki.tei-c.org/index.php/ODD
+
+                        
+.
+                    
+
+                        
+https://tei-c.org/guidelines/customization/jtei/
+
+                    
+ Während das ODD-Schema bisher als technisches Schema im Einsatz ist, soll es als menschenlesbare Dokumentation des Datenmodells zukünftig ermöglichen, dass AutorInnen Einreichungen direkt in XML/TEI umsetzen.
+
+                        
+https://ride.i-d-e.de/data/
+
+                    
+
+                        
+Die Skripte sind unter einer GNU General Public License auf GitHub veröffentlicht und können nachgenutzt werden: 
+
+                        
+https://github.com/i-d-e/ride-scripts
+
+                        
+.
+
+                    
+ Wie sie z.B. von RIDE selbst in Form der Diagramme angeboten werden oder von Resch et al. (2020) als externe Nutzerinnen durchgeführt wurden.
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+ACH / ADHO
+ (ed.) (2007-2021): Digital Humanities Quarterly (DHQ). 
+                        
+http://www.digitalhumanities.org/dhq/
+
+                    
+
+                    
+
+                        
+Franzini, Greta
+ (2021): “Catalogue of Digital Editions.” Version 4.0.0. 
+                        
+
+                            
+https://dig-ed-cat.acdh.oeaw.ac.at
+
+                        
+
+                    
+
+                    
+
+                        
+Henny, Ulrike
+ (2018): “Reviewing von digitalen Editionen im Kontext der Evaluation digitaler Forschungsergebnisse”, in: Kamzelak, Roland S. / Steyer, Timo (eds.): 
+                        
+Digitale Metamorphose: Digital Humanities und Editionswissenschaft
+. (= Sonderband der Zeitschrift für digitale Geisteswissenschaften, 2). DOI: 
+                        
+
+                            
+10.17175/sb002_006
+
+                        
+
+                    
+
+                    
+
+                        
+Institut für Dokumentologie und Editorik
+ (ed.) (2021): “Datasets of RIDE (A Review journal for digital editions and resources).” Version 2.1.0. GitHub.com. 
+                        
+https://github.com/i-d-e/ride
+. DOI: 
+                        
+
+                            
+10.5281/zenodo.5081646
+
+                        
+
+                    
+
+                    
+
+                        
+MWW / DHd
+ (ed.) (2016-2021): Zeitschrift für digitale Geisteswissenschaften (ZfdG). 
+                        
+https://zfdg.de/
+
+                    
+
+                    
+
+                        
+Neuber, Frederike / Henny-Krahmer, Ulrike / Sahle, Patrick / Fischer, Franz
+ (2018): “Alles ist im Fluss – Ressourcen und Rezensionen in den Digital Humanities”, Panelorganisation bei der 
+                        
+DHd2018
+, 28. Februar 2018, Köln. Invited Speakers: Rüdiger Hohls, Anne Baillot, Christof Schöch, Jürgen Hermes. Zenodo. DOI: 
+                        
+
+                            
+10.5281/zenodo.4622507
+
+                        
+
+                    
+
+                    
+
+                        
+Resch, Claudia / Rastinger, Nina
+ (2020): “Digitale Editionen im Spannungsfeld zwischen Formalisierung und Interpretation: Rezensionen der Online-Zeitschrift RIDE als Gradmesser für die Zukunft”, in: Schöch, Christoph / Helling Patrick (eds.): 
+                        
+DHd 2020. Konferenzabstracts.
+ Zenodo. DOI: 
+                        
+
+                            
+10.5281/zenodo.4621960
+
+                        
+
+                    
+
+                    
+
+                        
+Ruiz Fabo, Pablo / Bermúdez Sabel, Helena / Martínez Cantón, Clara / Calvo Tello, José (
+2017): “Diachronic Spanish Sonnet Corpus (DISCO).” Madrid: UNED. 
+                        
+
+                            
+https://github.com/pruizf/disco
+
+                        
+. DOI: 
+                        
+
+                            
+10.5281/zenodo.3841583
+
+                        
+
+                    
+
+                    
+
+                        
+Text Encoding Initiative Consortium
+ (ed.) (2011-2021): Journal of the Text Encoding Initiative (jTEI). 
+                        
+https://journals.openedition.org/jtei/
+
+                    
+
+                    
+
+                        
+Virtueller Forschungsverbund Edirom
+ (2021): “WeGa-WebApp.” Version 4.3.0. GitHub.com. 
+                        
+
+                            
+https://github.com/Edirom/WeGA-WebApp
+
+                        
+. DOI: 
+                        
+
+                            
+10.5281/zenodo.4487114
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    

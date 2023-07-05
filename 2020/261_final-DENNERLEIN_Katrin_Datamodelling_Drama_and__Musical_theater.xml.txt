@@ -1,0 +1,473 @@
+
+
+
+
+
+Die Katalogisierung von Sammlungs- und Bibliotheksbeständen
+und zahlreiche Datenbankprojekte aus der Dramen-, Theater- und Musikforschung haben in den letzten Jahrzehnten eine bisher kaum berücksichtigte Fülle von Material zum (Musik-)theater in gedruckter und handschriftlicher Form zu Tage gefördert und recherchierbar gemacht. Die ebenfalls rasch voranschreitende Bild- und Metadatendigitalisierung macht dieses Material der Forschung einfach zugänglich. Ein Portal, das die vielen Einzelprojekte zu Aufführungsdaten, Texten, Noten und Werken gemeinsam recherchierbar machen würde, so dass Strukturen und Zusammenhänge wie Werk- und Aufführungsserien, Gattungszusammenhänge oder Popularität und Wirkung sichtbar werden, gibt es derzeit jedoch nicht.
+
+
+
+
+
+Stattdessen wurden in den 
+letzten Jahren inhaltlich und technisch sehr heterogene Datenbanken zur Erfassung von Dramentexten, Libretti, Noten, Aufführungen und Theatertruppen angelegt.
+
+Je nach Disziplin und Fragestellung bieten sie verschiedene Zugänge, indem sie etwa primär Aufführungen verzeichnen
+
+ oder Aufführungen und handschriftliche oder gedruckte Theatertexte und Theaternoten bzw. weitere Text und Bilddokumente die damit in Verbindung stehen.
+
+Ein anderer Zugang geht von Gattungen, Werken, deren Fassungen und von Werkreihen aus.
+
+Von dieser textuellen Seite lassen sich Materialzusammenhänge dann erschließen, wenn in Portalen die Suche nach Gattungen und Subgattungen möglich ist und die Verlinkung von Werktiteln auf den Eintrag in der Gemeinsamen Normdatei (GND) verwendet wurde. Dies ist in einigen Portalen wie etwa dem Karlsruher Virtuellen Katalog oder dem Verzeichnis der Drucke des 17. Jahrhunderts
+
+ und dem Verzeichnis der Drucke des 18. Jahrhunderts
+ möglich. Ein Normdatensatz enthält eine auf Grundlage eines Regelwerks definierte Ansetzungsform (bevorzugte Namensform), beliebig viele von der Ansetzungsform abweichende Namensformen (Verweisungsformen), Erläuterungen zur Ansetzungsform (z.B. Quellenangabe), weitere normdatenspezifische Informationen und ggf. redaktionelle Hinweise (vgl. Plassmann et a. 2011, Gantert/Hacker 2008). Normdatensätze werden in strukturierter Form in überregionalen, regionalen und lokalen Normdateien erfasst bzw. gespeichert. Im deutschsprachigen Raum gibt es mit der gemeinsamen Normdatei (GND) eine überregionale von der Deutschen Nationalbibliothek gehostete Normdatei.
+
+Hier werden derzeit Personen, Körperschaften, Orte, Werke und Veranstaltungen erfasst. Die Einträge sind freilich von sehr unterschiedlicher Detailliertheit und Vollständigkeit, werden aber laufend ergänzt. Im Gegensatz dazu ist die Verzeichnung von Materialien und deren Einbettung in Werkzusammenhänge in der Musikwissenschaft bereits gut strukturiert und etabliert und über den Katalog Répertoire International des Sources Musicales (RISM) recherchierbar.
+
+
+
+
+
+Um diesen Teil des kulturellen Erbes strukturiert zugänglich zu machen, wäre es nötig Material aus Bibliothekskatalogen, Archivbeständen, Findbüchern und bereits bestehenden Datenbankprojekten zu verknüpfen. Grundlage dafür wären eine umfassende Ontologie des (Musik-)Theaterbereichs, das die Relationen der Objekte und Metadaten abbildete und die Abfrage der Zusammenhänge möglich machte. Zu erfassen wären einerseits die Materialien wie handschriftliche Soufflierbücher, Noten, Theaterzettel, Ariendrucke, Kupferstiche, Videomaterial, Zeitungsberichte usw., aber auch die sie verknüpfenden Praktiken des Produzierens, Bearbeitens, Übersetzens, Aufführens, Kombinierens, Druckens und Distribuierens. Einen zentralen Ansatzpunkt scheint 
+Swiss Performing Arts Datamodel zu bieten.
+
+ Es schließt an das European Collected Library of Artistic Performance, Performing Arts Vocabulary (ECLAP) an und entwickelt dieses weiter.
+
+Es handelt sich um ein äußerst komplexes Datenmodell, das sechs verschiedene Typen von Klassen, 17 Attribute, 23 Relationen und fünf Arten von Qualifiern vorsieht und so Materialien, Aufführungen Akteure verbindet.
+
+
+
+
+
+Das Panel geht von den jüngsten Bestrebungen zur Entwicklung einer Ontologie für die Darstellenden Künste und ihrer Implementierung in einer Triple-Store-Datenbank aus (Birk Weiberg). Ein Vorteil dieses Datenbankformats ist es, dass es auch die Koexistenz von widersprüchlichen Informationen ermöglicht, was insbesondere bei offenen Forschungsfragen etwa bei der Datierung von Aufführungen oder der Zuordnung zu Truppen etc. ein wichtiger Fortschritt ist (Rusher 2002-2004). In einem weiteren Schritt sollen Datenbank-Projekte aus der Theater- (Klaus Illmayer), Musiktheater- (Gesa zur Nieden) und Bibliothekswissenschaft (Katrin Bicher) vorgestellt werden. Wie die Recherche nach Werkzusammenhängen basierend auf neuen Gegenstandsontologien für eine aufführungsorientierte und materialbasierte Dramengeschichte genutzt werden kann, wird Katrin Dennerlein aufzeigen. Dabei wird auch reflektiert, wo die Bibliotheken und Archive ihre Kooperationsmöglichkeiten bisher noch nicht ausschöpfen, wie jüngst erst wieder angemerkt wurde (vgl. Knoche 2017). Die einzelnen Projekte sollen ihre Modellierung im Abgleich mit SPA-Datenmodell darstellen. Am Ende des Panels soll diskutiert werden, um welche Objekte, Attribute und Relationen eine Ontologie zu ergänzen wäre, die die Komplexität des literarischen, aufführungbezogenen und musikalischen Materials abdecken könnte. 
+
+
+
+  
+
+    
+Die SPA-Ontologie und ihre Implementierung
+
+    
+
+      
+Dr. Birk Weiberg (Luzern)
+
+    
+
+
+
+
+
+
+
+
+
+
+ Das Schweizer Archive der Darstellenden Künste (SAPA) ist vor zwei Jahren aus der Fusion zweier Tanz- und Theaterarchive entstanden. Ein wesentlicher Teil der Fusion ist die Zusammenführungen sehr unterschiedlicher Datenbanken. Dafür wurde in einem ersten Schritt ein auf CIDOC-CRM, FRBRoo und dem noch in Entwicklung befindlichen Archivstandard Records in Context (RiC) basierendes Datenmodel entwickelt, welches versucht, die Darstellenden Künste sowohl mittels archivarischer als auch dokumentarischer Ordnungsstrukturen abzubilden. Zur Zeit wird das Datenmodel implementiert und die Bestandsdatenbanken sukzessive in eine Graphdatenbank migriert. Dabei stellt sich immer wieder die Frage, welche Elemente des komplexen Datenmodels sich in welcher Weise praktikabel implementieren lassen und wie die Daten im Triplestore in Zukunft editiert werden können. Ein wesentlicher Aspekt des SAPA-Projekts ist die Zusammenarbeit mit Wikidata, wo es das "WikiProject Performings Arts" gibt, in dem die Schweizer mit internationalen Daten zusammengeführt werden.  Eine nachhaltige Anbindung an den Fachinformationsdienst Darstellende Künste ist ebenfalls geplant. 
+
+
+
+  
+
+    
+
+    
+Modellierung von Inszenierungsdaten am Beispiel von theadok.at
+
+    
+
+      
+Dr. Klaus Illmayer
+
+    
+
+
+
+
+
+
+
+
+
+In der Aufführungsdatenbank „Theadok“,
+
+
+ einem Gemeinschaftsprojekt des 
+
+
+Instituts für Theater-, Film- und Medienwissenschaft der Universität Wien
+
+
+ mit der 
+
+
+Österreichischen Akademie der Wissenschaften – Austrian Centre for Digital Humanities
+
+
+, werden Daten von Theaterinszenierungen aller Sparten aus Österreich gesammelt und für die wissenschaftliche Forschung aufbereitet. Bei der Modellierung konzentriert man sich auf Inszenierungen, Vorlagen, Personen, Bühnen, Ensembles und Festivals, die als Entities konzipiert sind, zwischen denen Relationen bestehen. Bei Personen findet sich der Verweis auf den jeweiligen Eintrag in der Gemeinamen Normdatei (GND) der Deutschen Nationalbibliothek. Die Verweise auf die GND für Werke sind in Arbeit und auch Archivmaterial wird nach und nach ergänzt. Der Datenbestand umfasst derzeit ~30.000 Inszenierungen aus den Jahren 1945-2001, die entweder produziert oder aufgeführt wurden in Österreich.
+
+
+
+    
+
+    
+
+    
+Normdaten für Bühnenwerke - Chancen und Herausforderungen einer kollaborativen und nachhaltigen Erschließung
+
+    
+
+      
+Dominik Stoltz/Katrin Bircher
+
+    
+
+
+
+
+
+
+
+
+An der Staats- und Universitätsbibliothek Dresden (SLUB) soll der RISM zu einem zentralen Nachweisinstrument für Musikdrucke des 16. bis 18. Jahrhunderts ausgebaut werden. 
+
+
+
+
+Dabei spielen die Metadatenauszeichnung des RISM, Werk- und Fassungsklassifikationen nach FRBR und der Verweis auf Personen- und Werk-Normdatensätze der Gemeinsamen Normdateit (GND) eine wichtige Rolle. Im Rahmen des Fachinformationsdienstes Musik 
+
+
+musiconn
+
+
+ wird an der SLUB eine Datenbank zur Erfassung von Aufführungsdokumenten entstehen, sowie ein Fachrepositorium, in dem musikwissenschaftliche Fachliteratur open access zur Verfügung gestellt wird. Die Zusammenführung aller Informationen in einer Datenbank, die eine gemeinsame Abfrage erlaubt, ist eine besondere Herausforderung, die ebenfalls Gegenstand des Vortrages sein wird. 
+
+
+
+    
+
+    
+
+      
+Quellenklassifikation und Datenbank im Projekt „Pasticcio“
+
+      
+
+	
+Prof. Dr. Gesa zur Nieden
+
+      
+
+
+
+
+
+
+Das frühneuzeitliche Opernpasticcio, für das zu überregional bekannten und bereits mehrmals vertonten Libretti Arien verschiedener Komponisten zusammengestellt wurden, zeichnet sich durch die Vielzahl der am Produktionsprozess beteiligten Akteure aus. Für die Produktion von Opernpasticcios war das zugrundeliegende Libretto und seine Anpassung an lokale Gegebenheiten wie auch die Wünsche der Impresari sowie der Sängerinnen und Sänger bei der Auswahl der Einzelarien in gleicher Weise maßgeblich. Im deutsch-polnischen Projekt "Pasticcio. Ways of Arranging Attractive Operas" sollen die damit einhergehenden Transferprozesse durch die Kombination einer digitalen Edition der Notentexte mit einer Datenbank zu den Karrieren der beteiligten Sängerinnen und Sänger abgebildet werden. Bei der Strukturierung der Daten auf der Grundlage verbreiteter Modelle wie FRBR stellt sich jedoch die Frage, welchen Werkstatus das Opernpasticcio besitzt, vor allem im Hinblick auf die Abbildung der Querverbindungen mit weiteren Opern über die im Pasticcio jeweils enthaltenen Einzelarien. Im Vortrag sollen unterschiedliche Möglichkeiten einer Klassifizierung diskutiert werden, die vom Libretto als Werk ausgehen, eine "work cloud" aus Libretto und Notentext vorsehen oder den musikalischen Text des Pasticcios als Werk ansetzen kann. Eine solche Alternative muss nicht zuletzt anschlussfähig an den Umgang mit FRBR in weiteren Disziplinen wie der Literatur- und der Theaterwissenschaft sein, um die digitale Darstellung der Forschungsergebnisse zum Pasticcio über Normdaten in größere Kontexte einbinden zu können.
+
+
+
+    
+
+    
+
+      
+Rewriting History of Drama
+
+      
+
+	
+PD Dr. Katrin Dennerlein
+
+    
+
+
+
+
+
+
+Dramengeschichte wird in der Literaturwissenschaft bisher zumeist als Geschichte einzelner Sprechtheaterwerke nach dem Perlenschnurprinzip erzählt, die kaum einmal in Aufführungskontexte eingebunden sind oder gar die Fassung spezifizieren, von der sie ausgehen. Will man das umfangreiche und heterogene gedruckte und handschriftliche Material in seinen zahlreichen medialen Formen und die Praktiken des Produzierens, Aufführens, Druckens, Distribuierens, Rezensierens, Kritisierens berücksichtigen, benötigt man eine Ontologie, um diese Materialien und Praktiken aufeinander beziehen zu können. Gegenstand des Vortrages sollen die Anforderungen an eine solche Ontologie, sowie die neuen multimedialen und narrativen Darstellungsmöglichkeiten sein, die durch sie ermöglicht werden würden.
+
+
+
+    
+
+
+
+
+ Timetable
+
+
+
+
+
+
+  
+5 Min. Katrin Dennerlein: Einführung
+
+  
+10 Min. Dr. Birk Weiberg: Die SPA-Ontologie und ihre Implementierung
+
+  
+10 Min. Dr. Klaus Illmayer: Modellierung von Inszenierungsdaten am Beispiel von theadok.at
+
+  
+10 Min. Katrin Bircher: „Normdaten für Bühnenwerke - Chancen und Herausforderungen einer kollaborativen und nachhaltigen Erschließung“
+
+  
+10 Min. Prof. Dr. Gesa zur Nieden: Quellenklassifikation und Datenbank im Projekt „Pasticcio“
+
+  
+10 Min. PD Dr. Katrin Dennerlein: Rewriting History of Drama
+
+  
+35 Min. Diskussion des Plenums
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+
+      Man vergleiche etwa die sehr unterschiedlichen Informationszusammenstellungen, die die Recherche nach populären Musiktheaterwerken um 1800 in Datenbanken wie dem Karlsruher Virtuellen Katalog (KVK), dem Fachinformationsdienst Performing Arts
+      (
+https://performing-arts.eu
+), der Europeana
+      (
+https://www.europeana.eu/portal/de
+) oder dem Répertoire International des Sources Musicales
+      (RISM, 
+https://opac.rism.info/metaopac/start.do?View=rism
+).
+
+
+
+
+  Vgl. die informative Zusammenstellung von Datenbanken aus diesem Bereich von Klaus Illmayer:
+  
+https://www.zotero.org/groups/494335/digital_humanities_in_theatre_film_and_media_studies/items
+
+
+
+
+
+  Zum Beispiel die Aufführungsdatenbank „Theadok“
+  (
+https://theadok.at
+),
+  ein Gemeinschaftsprojekt des Instituts für Theater-, Film- und Medienwissenschaft der Universität Wien mit der Österreichischen Akademie der Wissenschaften - Austrian Centre for Digital Humanities.
+
+
+
+
+  Die 2017 fertig gestellte Datenbank zum 
+Hamburger Stadttheater
+
+  (
+http://www.stadttheater.uni-hamburg.de/
+) verzeichnet Aufführungen, Theaterzettel, handschriftliche Theatermaterialien wie Soufflierbücher und Inspektionsbücher, letztere mit händisch eigegebenen Signaturen. Rollenauszügen, Partituren, Stimmen oder Drucke aus dem lokalen oder aus überregionalen Bibliothekskatalogen sind nicht angegeben oder verlinkt. Ähnlich 
+Berliner Klassik. Das vollständige Repertoire von Ifflands Direktion, Dezember 1796 bis 1814
+,
+  
+http://berlinerklassik.bbaw.de/BK/theater/Theaterzettel.html
+.
+  Ebenfalls eine Aufführungsdatenbank ist die Weimarer Theaterzetteldatenbank, weil sie die Erfassung der Aufführungen im 
+Weimarer Hoftheater
+ und im 
+Deutschen Nationaltheater
+ von 1754–1990 zum Ziel hat.
+  Die extrahierten Aufführungs-, Werk- und Personen-Datensätze verweisen auf die Normdatensätze, die Digitalisate der Theaterzettel sind verlinkt.
+
+
+
+
+  Vgl. z.B. „Die Oper in Italien und Deutschland zwischen 1770 und 1830“
+  (
+http://www.musikwissenschaft.uni-mainz.de/musikwissenschaft/projekte/operberlin.html
+).
+  In diesem Projekt kooperieren mehrerer Bibliotheken, so dass über Normdatensätze tatsächlich Fassungen und Aufführungsserien von Opernwerken recherchiert werden können (Vgl. auch die Dokumentation hier: 
+  
+https://de.wikipedia.org/wiki/DFG-Opernprojekt
+). Erfasst werden Opernwerke, Komponisten, Manuskripte, Fassungen, Libretti, Librettisten, Aufführungsserien und Aufführungsdaten. Verlinkt werden hier digital verfügbare Manuskripte der Noten, aber keine Texte und Drucke. 
+
+
+
+
+  
+.
+
+
+
+
+  
+.
+
+
+
+
+  
+.
+
+
+
+
+  
+.
+
+
+
+
+  
+ https://datahub.ckan.io/dataset/360db967-078c-4eca-bcd4-58bb5870753f/resource/9bb9d231-6b39-4e06-a44a-d0d9d939d45f/download/spa_data_model_v0-51_20170926.pdf
+
+
+
+
+
+  
+http://www.eclap.eu/schema/eclap/
+.
+  Eine Auflistung weiterer Datenmodelle aus diesem Bereich findet sich hier:
+  
+https://www.wikidata.org/wiki/Wikidata:WikiProject_Performing_arts/Data_structure
+
+  unter „Existing Data Models / Ontologies outside Wikidata“
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+Bibliographie
+
+
+
+  
+Jonathan Bollen (2016)
+
+  
+: Data Models for Theatre Research: People, Places, and Performance. In: Theatre Journal 68,4 2016, S. 615-632.
+
+
+
+
+
+  
+Estermann, Beat / Christian Schneeberger
+
+  
+  (2017): Data Model for the Swiss Performing Arts Platform. Draft Version 0.51 September 2017 
+
+  
+https://datahub.ckan.io/dataset/360db967-078c-4eca-bcd4-58bb5870753f/resource/9bb9d231-6b39-4e06-a44a-d0d9d939d45f/download/spa_data_model_v0-51_20170926.pdf
+
+
+
+
+
+  
+Gantert, Klaus /  Rupert Hacker
+ (2008):
+  
+ (2008): Bibliothekarisches Grundwissen. München.
+
+
+
+
+
+  
+Knoche, Michael
+
+  
+ (2017): 
+
+  
+Die Idee der Bibliothek und ihre Zukunft. 
+
+
+
+
+
+  
+Engelbert Plassmann
+
+  
+ (et. al.) (2011): Bibliotheken und Informationsgesellschaft in Deutschland. Eine Einführung. Wiesbaden.
+
+
+
+
+
+
+
+
+
+

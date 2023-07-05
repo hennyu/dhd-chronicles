@@ -1,0 +1,196 @@
+
+        
+
+            
+
+            
+Ausgangslage
+
+            
+
+                
+Mit dem Sammlungsschwerpunkt auf schriftlichen Unterlagen aus dem Bereich der Bildenden Kunst unterscheidet sich das Deutsche Kunstarchiv im Germanischen Nationalmuseum in Nürnberg von Kommunal- oder Staatsarchiven. Die ca. 1450 Bestände, die seit den 1960er Jahren gesammelt werden, umfassen Vor- und Nachlässe aus dem deutschen Sprachraum der Gebiete Architektur, Bildhauerei, Bildwissenschaft, Design, Fotografie, Kunstgeschichte, Kunsthandel, Kunsthandwerk, Malerei und Restaurierung und decken den Zeitraum vom späten 19. Jahrhundert bis in die Gegenwart ab.
+
+            
+
+            
+
+                
+Durch den konkreten Schwerpunkt und die strukturelle Ähnlichkeit der einzelnen Bestände wuchs der Wunsch nach einem auf die Archivbestände zugeschnittenen Datenbanksystem.
+
+            
+
+            
+
+                
+2019 wurde der Entschluss gefasst, die seit 2009 genutzte hierarchische Datenbank durch eine semantische und graphbasierte Datenbank zu ersetzen. Ein Systemwechsel war unter anderem notwendig, weil die vorherige Archivsoftware nicht 64-bit fähig war. Anpassungen bei der Onlinepräsentation sind ebenso stark eingeschränkt und berücksichtigen nicht die adäquate Darstellbarkeit auf mobilen Geräten. Ein Upgrade auf eine neuere Version desselben Systems ist kostenpflichtig.
+
+            
+
+            
+
+                
+Während viele Archive zur Erschließung und Onlinestellung ihrer Bestände auf kommerzielle Softwarelösungen zurückgreifen, haben die Archive des Germanischen Nationalmuseums - das Historische Archiv und das Deutsche Kunstarchiv - einen alternativen Weg beschritten. 
+
+            
+
+            
+
+            
+Anforderung
+
+            
+
+                
+Aufgrund der negativen Erfahrung mit der vorherigen Archivsoftware, soll die neue Software Open Source sein. Darüber hinaus ist eine flexible Webpräsentation wichtig, die an die sich stetig ändernden Anforderungen der Nutzer:innen und der Geräte jeweils angepasst werden kann. Die im Archivinformationssystem zur Verfügung gestellten Daten müssen persistent und zitierfähig sein, um Nachhaltigkeit und Zukunftsfähigkeit sicherzustellen. Außerdem ist ein strukturell standardkonformes System zentral für die Implementierung von ISAD(
+G) (Internationale Grundsätze für die archivische Verzeichnung
+                
+) und dem ISO-zertifizierten CIDOC (
+International Committee on Documentation
+                
+) Conceptual Reference Model des International Council of Museums (ICOM).
+
+            
+
+            
+
+            
+Evaluierung
+
+            
+
+                
+Die zugrundeliegende Ontologie für das semantische Datenmodell ist das CIDOC CRM. Ausschlaggebend für diese Entscheidung waren die Flexibilität und die Erweiterungsmöglichkeiten. So konnten die Anforderungen, die der Wechsel eines Erschließungssystems mit sich bringt, diskutiert und eine für die Bedürfnisse des Deutschen Kunstarchivs maßgeschneiderte aber zugleich den archivischen Standards entsprechende Erschließungsstruktur modelliert werden. 
+
+            
+
+            
+
+                
+Bei der Konzeption der Erweiterung des CIDOC CRM wurden nicht nur die Vorgaben der inhaltlich beschreibenden Bestandserschließung berücksichtigt, sondern auch Anforderungen der Dokumentation, der Digitalisierung und der Vernetzung innerhalb der Bestände mitbedacht. Aus intensiven Diskussionen mit allen archiv- und datenbankerprobten Mitarbeiter:innen ging die Konzeption von Mechanismen zur Erfassung von archivinternen Workflows hervor. So wurden im Datenmodell Eingabefelder für restauratorische Maßnahmen, Akzessionierung oder das Depotmanagement ergänzt. Die weiteren beschreibenden Erfassungsfelder basieren auf den Erschließungsstandards ISAD(G) sowie RNAB (Ressourcenerschließung mit Normdaten in Archiven und Bibliotheken für Personen-, Familien-, Körperschaftsarchive und Sammlungen). Das entwickelte Archivinformationssystem bietet den Verzeichner:innen auf diese Weise die Möglichkeit auf allen Ebenen - vom Gesamtbestand bis hin zum Einzeldokument - inhaltliche Informationen mit Daten zur Bestandsverwaltung und -konservierung zu verknüpfen. 
+
+            
+
+            
+
+                
+Die Anwendungsontologie des Deutschen Kunstarchivs bietet neben der Ontologie des International Council on Archives Records in Contexts (RiC-O) eine praxisnahe Diskussionsgrundlage für eine allgemeinere Erweiterung des CIDOC CRM für die archivische Erschließung. Bisher gibt es in diesem Kontext nur vereinzelte Versuche, wie den des Portuguese National Archive (vgl. Melo 2022) oder für Kommunalarchive allgemein (vgl. Vitzthum 2021). Das Portuguese National Archive weicht in der Modellierung des graphbasierten Datenmodells vom Deutschen Kunstarchiv ab. Das heißt, es werden unterschiedliche Klassen des CIDOC CRMs benutzt. Die Modellierung am Beispiel der Kommunalarchive wendet die RiC-Ontologie auf die Archivbestände an. Das Archivinformationssystem des Deutschen Kunstarchivs zeigt exemplarisch, dass sich mithilfe des CIDOC CRM und WissKI Archivbestände adäquat strukturieren sowie erfassen lassen und sich darüber hinaus auch deren Binnenstruktur abbilden lässt.
+
+            
+
+            
+
+                
+Bei der Evaluierung existierender Systeme hinsichtlich der vorliegenden Anforderungen zeigte sich, dass für die Umsetzung des Graphnetzwerks mit einer spezifischen Domänenontologie lediglich WissKI alle Aspekte erfüllt.
+
+            
+
+            
+
+                
+Umsetzung, aktueller Stand und Ausblick
+
+            
+
+                
+Innerhalb von zwei Jahren wurden die Daten ins neue Datenbanksystem migriert. Aktuell verzeichnen die Mitarbeiter:innen des Deutschen Kunstarchivs neue Bestände bereits im WissKI. Um in nationale und internationale Portale Daten liefern zu können, muss ein Export der auf CIDOC CRM basierenden Metadaten in die gewünschte EAD (Encoded Archival Description) xml Struktur entwickelt werden. Zusätzlich wird an einem Konzept zur Onlinestellung der Daten gearbeitet, das im folgenden Jahr umgesetzt werden soll.
+
+            
+
+            
+
+                
+Das Poster veranschaulicht zum einen die Entscheidungsgrundlagen und Vorstellungen der Mitarbeiter:innen des Deutschen Kunstarchivs bezüglich der Umsetzung eines Linked Open Data basierten Archivinformationssystems. Zum anderen wird die Modellierung der Domänenontologie auf Basis von CIDOC CRM abgebildet, die für die Umsetzung des Datenmodells notwendig ist.
+
+            
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Bekiari, Chryssoula und George Bruseker, Erin Canning, Martin Doerr, Philippe Michon , Christian-Emil Ore, Stephen Stead, Athanasios Velios.
+ 2022. „Definition of the CIDOC Conceptual Reference Model.” 
+
+                        
+
+                            
+https://cidoc-crm.org/sites/default/files/cidoc_crm_version_7.2.1.pdf
+
+                        
+
+                        
+ (zugegriffen: 15.12.2022).
+
+                    
+
+                    
+
+                        
+Brüning, Rainer und Werner Heegewaldt, Nils Brübach.
+ 2002. „ISAD(G) - Internationale Grundsätze für die archivische Verzeichnung.“ 2. überarbeitete Ausgabe. https://www.ica.org/sites/default/files/CBPS_2000_Guidelines_ ISAD%28G%29_Second-edition_DE.pdf (zugegriffen: 15.12.2022).
+
+                    
+
+                    
+Clavaud, Florence und International Council on Archives Expert Group on Archival Description.
+ 2021. „Records in Contexts Ontology (ICA RiC-O) version 0.2.“ https://www.ica.org/standards/RiC/RiC-O_v0-2.html (zugegriffen: 15.12.2022).
+
+                    
+
+                        
+Melo, Dora und Irene Pimenta Rodrigues, Davide Varagnolo.
+ 2022. „A strategy for archives metadata representation on CIDOC-CRM and knowledge discovery.” In 
+
+                        
+Semantic Web – Interoperability, Usability, Applicability, 
+
+                        
+Pre-Press 1-32.
+
+                    
+
+                    
+
+                        
+Österreichische Nationalbibliothek, Schweizerische Nationalbibliothek und Staatsbibliothek zu Berlin – Preußischer Kulturbesitz.
+ 2019. „Ressourcenerschließung mit Normdaten in Archiven und Bibliotheken (RNAB) für Personen-, Familien-, Körperschaftsarchive und Sammlungen. Richtlinie und Regeln.“ Wien, Bern, Berlin. 
+
+                        
+
+                            
+https://d-nb.info/1186104252/34
+
+                        
+
+                        
+ (zugegriffen: 15.12.2022).
+
+                    
+
+                    
+Society of American Archivists, Library of Congress.
+ 1999. „EAD Application Guidelines for Version 1.0” https://www.loc.gov/ead/ (zugegriffen: 15.12.2022).
+
+                    
+Vitzthum, Maximilian.
+ 2021. „kommais“ - Zur Umsetzung eines auf Records in Contexts basierenden Archivinformationssystems für Kommunalarchive auf Grundlage der virtuellen Forschungsumgebung "WissKI". Unveröffentlichte Masterarbeit. Erlangen, Nürnberg: Friedrich-Alexander-Universität Erlangen-Nürnberg.
+
+                
+
+            
+
+        
+
+    

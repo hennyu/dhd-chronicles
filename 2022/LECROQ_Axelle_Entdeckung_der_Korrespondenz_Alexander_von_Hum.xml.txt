@@ -1,0 +1,352 @@
+
+        
+
+            
+
+                
+Einleitung
+
+                
+Dieses experimentelle Projekt
+                    
+ zielt darauf ab, die Korrespondenz von Alexander von Humboldt zu entdecken, zu erforschen und zu visualisieren. Ausgangspunkt der Idee ist das Findbuch Alexander von Humboldts Bibliothek, der sich in der Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW) befindet. Bislang ist die Sammlung nur über ein in den 1950er Jahren angelegtes Karteikartensystem zugänglich. Lediglich das Findbuch wurde von Anne McKinney im Rahmen ihres Praktikums für das Projekt "Alexander von Humboldt auf Reisen – Wissenschaft aus der Bewegung" digital reproduziert.
+                
+
+                
+Die ursprüngliche Idee war, zumindest einen Teil der Sammlung digital zugänglich zu machen und sie mit Hilfe neuer Recherchetools zu entdecken. Mit diesem Ziel vor Augen sollte das Findbuch mit modernen Handschriftendatenbanken korreliert werden.
+
+            
+
+            
+
+                
+Geschichte
+
+                
+Das Projekt der Rekonstruktion der Korrespondenz Alexander von Humboldts begann mit der Gründung einer Alexander-von-Humboldt-Kommission bei der Deutschen Akademie der Wissenschaften zu Berlin im Jahr 1956 1960 richteten die Akademien der Wissenschaften in Ost- und Westdeutschland sowie die Österreichische Akademie der Wissenschaften ein gemeinsames Ersuchen um internationale Unterstützung einer Edition von Humboldts Briefwechsel an Akademien, Archive, Bibliotheken und Sammler. Bereits zwei Jahre später waren Kopien von rund 7.600 Briefen aus aller Welt in Berlin eingetroffen (Schuchardt 2010, S.50-56).
+
+                
+Auf der Grundlage dieser stetig wachsenden Sammlung nahm 1970 die Alexander-von-Humboldt-Forschungsstelle ihre Arbeit auf. Von 1973 bis 2014 veröffentlichte ein Team von Forschern 42 Bände mit Korrespondenzen, Monografien und Sammelbänden. Seit 2015 setzt ein neues Projekt "Alexander von Humboldt auf Reisen – Wissenschaft aus der Bewegung" diese langjährige Arbeit im Sinne der Digital Humanities fort und bereitet eine digitale und gedruckte Edition von Alexander von Humboldts Reisetagebüchern und wissenschaftlichen Manuskripten aus seinem Nachlass vor.
+
+            
+
+            
+
+                
+Die Daten
+
+                
+Der Kalliope-Verbundkatalog (
+                    
+https://kalliope-verbund.info/
+) ist sicherlich der größte Katalog von Archiven teilweise deutschsprachiger Institutionen. Die Daten der von Alexander von Humboldt (AvH) gesendeten und empfangenen Briefe wurden von der API (SRU Server) des Kalliope-Verbundes im Dublin Core-Format abgerufen.
+                
+
+                
+Damit dieses digitale Projekt repräsentativ für die jahrelange Arbeit der BBAW ist, war es wichtig, auch Daten aus dem Ausland einzubeziehen. Man einigte sich zunächst auf die Daten der Bibliothèque nationale de France (BnF, 
+                    
+https://data.bnf.fr/
+), die eine benutzerfreundliche API anbietet. Daraufhin wurden die in der Bibliothèque nationale de France aufbewahrten und über deren Online-Katalog zugänglichen Daten der Korrespondenz Alexander von Humboldts im csv-Format abgerufen.
+                
+
+                
+Die in der Suchhilfe der BBAW aufgelisteten Institutionen sind bei weitem nicht nur europäisch, sondern es wurden auch die bei der American Philosophical Society (
+                    
+https://diglib.amphilsoc.org/
+) aufbewahrten Dokumente über Alexander von Humboldt im EAD-Format abgerufen.
+                
+
+                
+
+                    
+Quantität
+
+                    
+Auf der Grundlage von Berechnungen aus dem Jahr 1962 wurde geschätzt, dass Humboldt bis zu 3.000 Briefe pro Jahr schrieb. Hochgerechnet ergab dies eine geschätzte Gesamtzahl von 35.000 bis 50.000 Briefen aus Humboldts Hand; diese Schätzung ist auch heute noch gültig (Biermann und Lange 1962, S. 226). Bei den von Humboldt erhaltenen Briefen, die heute größtenteils als verschollen gelten, gingen Biermann und Lange von etwa 100.000 Briefen aus.
+
+                    
+
+                        
+
+                        
+Abb.1: Anzahl der Dokumente in der Humboldt-Sammlung (* Anzahl der Einträge. Das bedeutet, dass ein Eintrag für mehr als einen Buchstaben stehen kann. Dies ist häufig bei Daten aus der BnF der Fall, wo ein Eintrag für mehrere Dutzend Dokumente stehen kann.)
+
+                    
+
+                
+
+                
+
+                    
+Bearbeitung der Daten
+
+                    
+Jeder Datensatz wurde bereinigt und homogenisiert. Die vier unterschiedlich formatierten Datensätze – CSV der BnF, XML-EAD der APS, Dublin Core des Kalliope-Verbundkatalogs und die Excel-Tabelle des Findbuchs – wurden in einem JSON-Format zusammengeführt. Diese JSON-Datei bildet dann unsere durchsuchbare Datenbank.
+
+                    
+Um die Briefe auf einer Karte zu visualisieren, wurden außerdem neue Daten für jeden Brief hinzugefügt:
+
+                    
+
+                        
+Geopoint, Geoname ID und humboldt digital edition identifier (edh) ID für den Ort der Institution
+
+                        
+Geopoint, Geoname ID und edh ID für den Ort der Briefe
+
+                    
+
+                
+
+            
+
+            
+
+                
+Verwendete Tools
+
+                
+Da es nicht möglich war, eine vollständige Website zu entwickeln, die eine umfassende Benutzererfahrung ermöglicht, wurde beschlossen, zunächst Jupyter-Notebooks zu verwenden. Diese interaktiven und leistungsstarken Notebooks haben den Vorteil, dass sie zahlreiche Widget-Möglichkeiten und Datenvisualisierungen bieten. Für die Datenvisualisierung wurden mehrere Bibliotheken verwendet, unter denen die wichtigsten sind:
+
+                
+
+                    
+ipywidgets (
+                        
+https://ipywidgets.readthedocs.io/en/latest/
+) bietet zahlreiche interaktive HTML-Widgets innerhalb der Zell-Outputs eines Jupyter Notebooks.
+                    
+
+                    
+ipyleaflet (
+                        
+https://ipyleaflet.readthedocs.io/en/latest/
+) ermöglicht die Erstellung von interaktiven Karten innerhalb von Jupyter Notebooks.
+                    
+
+                    
+pandas (
+                        
+https://pandas.pydata.org/
+) bietet Werkzeuge zur Analyse und Manipulation von Daten.
+                    
+
+                
+
+                
+Sie eignet sich besonders für Datenstrukturen.
+
+            
+
+            
+
+                
+Die Visualisierungen und Suchfunktionen
+
+                
+Die Suchfunktionen durchsuchen verschiedene Elemente: Absender, Empfänger, Empfangs- oder Versandort und Archivzentrum. Ein Dropdown-Menü ermöglicht es dem Benutzer, den gewünschten Wert auszuwählen.
+
+                
+
+                    
+Optimale Zoomstufe
+
+                    
+Der Algorithmus berechnet die optimale Zoomstufe, d.h. die niedrigste Zoomstufe bei der alle Punkte auf der angezeigt werden können.
+
+                    
+
+                        
+
+                        
+Abb. 2: Kartenvisualierung für die Datumssuche ‘1802 mit optimale Zoomstufe’.
+
+                    
+
+                
+
+                
+
+                    
+Zugang zur Informationen
+
+                    
+Alle Karten sind interaktiv. Um zusätzliche Informationen zu erhalten, kann der Nutzer auf einen Punkt klicken, wodurch ein PopUp-Menü erscheint.
+
+                    
+
+                        
+
+                        
+Abb. 3: Beispiel von einem PopUp Menu in einer Visualisierung
+
+                    
+
+                
+
+                
+
+                    
+Dynamische Suchfunktion
+
+                    
+
+                        
+
+                        
+Abb. 4: Logik der dynamischen Suchfunktion
+
+                    
+
+                    
+
+                        
+
+                        
+Abb. 5: Darstellung der dynamischen Funktion in Jupyter Notebook: Eine Folge von Dropdown-Menüs, bis es keine weiteren suchbaren Elemente mehr gibt oder nur noch ein Ergebnis (einen Brief) verfügbar ist
+
+                    
+
+                
+
+                
+
+                    
+Darstellung aller Daten auf einer Karte
+
+                    
+
+                        
+
+                        
+Abb. 6: Erste Variante der Darstellung aller Daten: Jede Farbe stellt einen Lebensabschnitt Humboldts dar. Die Legende ist noch nicht interaktiv. Es wäre eventuell interessant, wenn der Nutzer auf die verschiedenen Lebensabschnitte von Alexander von Humboldt klicken könnte, um zu sehen, wie sich seine Korrespondenz im Laufe der Zeit und in den verschiedenen Lebensabschnitten verändert hat.
+
+                    
+
+                    
+
+                        
+
+                        
+Abb. 7: Zweite Variante der Darstellung aller Daten: Der Radius der Punkte ist proportional zur Anzahl der empfangenen und gesendeten Briefe des Ortes. Diese Karte macht deutlich, dass Alexander von Humboldts Korrespondenz alle Kontinente berührt
+
+                    
+
+                
+
+            
+
+        
+
+        
+ Mehr über das Projekt auf Github: 
+                            
+https://github.com/edition-humboldt-collection/corresp-humboldt-dataviz
+
+                        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Biermann, Kurt-R. und Fritz G. Lange
+ (1962): „Die Alexander-von-Humboldt-Briefausgabe“. 
+                        
+Forschungen und Fortschritte
+ 36, 8: S. 225–230.
+                    
+
+                    
+
+                        
+Biermann, Kurt-R.
+ (1965): „Der Zugang an Briefen Alexander von Humboldts hält an“. 
+                        
+Spektrum. Mitteilungsblatt für die Mitarbeiter der Deutschen Akademie der Wissenschaften
+ zu Berlin 11, 2: S. 55–58. 
+                    
+
+                    
+
+                        
+Biermann, Kurt-R.
+ (1974): „Die Alexander-von-Humboldt-Forschung an der Akademie der Wissenschaften der D.D.R. – Ergebnisse und Ziele
+                        
+“. Boston Studies in the Philosophy of Science
+ 15: S. 295–305.
+                    
+
+                    
+
+                        
+ERNiE’s bibliographical details 
+(Encyclopedia of Romantic Nationalism in Europe, ed. Joep Leerssen; Amsterdam: Study Platform on Interlocking Nationalisms, 2015) : https://ernie.uva.nl/](https://ernie.uva.nl/.
+                    
+
+                    
+
+                        
+Hotson, H., &amp; Wallnig, T.
+ (Eds.). (2019): 
+                        
+Reassembling the Republic of Letters in the Digital Age
+. doi:10.17875/gup2019-1146
+                    
+
+                    
+
+                        
+Humboldt, Alexander von
+ (1973). 
+                        
+Die Jugendbriefe Alexander von Humboldt 1787–1799. 
+Hg. und erläutert von Ilse Jahn und Fritz G. Lange. Berlin: Akademie-Verlag.
+                    
+
+                    
+
+                        
+Lecroq, Axelle
+ (2021), Entre enrichissement et développement de projets : l’utilisation de données externes pour la correspondance d’Alexander von Humboldt, sous la direction d´Ariane Pinche, École nationale des chartes (PSL).
+                    
+
+                    
+
+                        
+Mapping the Republic of Letters
+, Stanford University, 2013. http://republicofletters.stanford.edu/,
+                    
+
+                    
+
+                        
+Schuchardt, Gregor
+ (2010): 
+                        
+Fakt, Ideologie, System. Die Geschichte der ostdeutschen Alexander von Humboldt-Forschung
+. Stuttgart: Franz Steiner Verlag.
+                    
+
+                    
+
+                        
+Schwarz, Ingo
+ (2001): „Zur Geschichte der Alexander-von-Humboldt-Forschung an der Berlin-Brandenburgischen Akademie der Wissenschaften“. In: 
+                        
+Die Berliner und Brandenburger Lateinamerikaforschung in Geschichte und Gegenwart. Personen und Institutionen
+. Hg. von Gregor Wolff, S. 107–127. Berlin: Wissenschaftlicher Verlag Berlin.
+                    
+
+                
+
+            
+
+        
+
+    

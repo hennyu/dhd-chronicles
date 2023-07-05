@@ -1,0 +1,409 @@
+
+        
+
+            
+
+                
+Hintergrund
+
+                
+In den letzten Jahren hat sich ein Forschungsfeld im Bereich von Visualisierungen kultureller Sammlungen etabliert, welche die kulturhistorischen Artefakte und Facetten von Sammlungen in Form visueller Interfaces sichtbar und erfahrbar machen (Windhager et al. 2018). Ein Großteil dieser Arbeiten widmet sich einzelnen Sammlungen, die jeweils einer spezifischen Systematik folgen und eine geringe Vielfalt an Objektgattungen und Attributen aufweisen (z.B. Glinka et al. 2017, Gortana et al. 2018). Das hier vorgestellte Forschungsprojekt widmete sich der Frage, wie mehrere Sammlungen visuell in Bezug gesetzt und auf zugängliche Weise exploriert werden können. In enger Zusammenarbeit mit Sammlungsexpert*innen sollten konkrete Ansätze zur visuellen und assoziativen Exploration von zwei unterschiedlichen Sammlungen der Staatlichen Museen zu Berlin (SMB) entwickelt werden. Entstanden ist ein funktionaler Prototyp
+, der auf konzeptionellen Ambitionen wie denen des digitalen Flanierens (Dörk et al., 2011) und der glücklichen Entdeckungen (Thudt et al., 2012) in großzügigen (Whitelaw, 2015) und explorativen Interfaces (Kreiseler et al., 2017) aufbaut und die tradierten Anordnungen objektbezogener und suchbasierter Museumswebseiten aufbricht. Diese Formen der gezielten Informationssuche erfordern ein konkretes Interesse der Suchenden und werden den heterogenen und umfangreichen Beständen musealer Sammlungen nur bedingt gerecht, wenn es um ein assoziatives, Interessen-getriebenes Durchstöbern von Sammlungen und Beständen geht.
+                
+
+                
+Aus der Vielzahl der Bestände und Sammlungen der SMB wurden auf Grundlage verschiedener Aspekte, wie beispielsweise dem Umfang der erfassten Objekte, der Erschließungstiefe der Objektdaten und nicht zuletzt der thematischen Heterogenität, die Bestände der Alten Nationalgalerie sowie des Museums Europäischer Kulturen aus dem 19. Jahrhundert ausgewählt. Während die Sammlung der Alten Nationalgalerie eine der umfangreichsten Epochensammlungen für die Kunst des 19. und frühen 20. Jahrhunderts ist, findet sich im Museum Europäischer Kulturen eine der größten Sammlungen zur Alltagskultur und Populärkunst in Europa. Die Kontraste und Gegensätze, aber auch die Gemeinsamkeiten beider Bestände sollten im Rahmen des Projekts erforscht und erfahrbar gemacht werden.
+
+            
+
+            
+
+                
+Prozess und Vorgehen
+
+                
+Der Forschungs- und Gestaltungsprozess folgte einem iterativen Vorgehen, in dem sich Workshops, Feedbackgespräche und Prototyping im Modus des Co-Designs abwechseln und gegenseitig beeinflussen (Dörk et al., 2020; Chen et al., 2014). So wurden Sammlungsexpert*innen und weitere Mitarbeiter*innen der Museen und des assoziierten Forschungsprojekts museum4punkt0 in den Prozess mit eingebunden. Darüber hinaus wurden fachfremde Personen beteiligt, um neben der versierten Perspektive auch die Interessen, Bedürfnisse und Anforderungen anderer Nutzer*innengruppen verstehen und berücksichtigen zu können. Visualisierung fungiert hierbei als interdisziplinäre Forschungsmethode per se, welche neue Erkenntnisse bereitstellt, aber ebenso fächerübergreifende Diskussionen anregt (Hinrichs et al., 2019) und neuartige Perspektiven auf museale Objekte und Daten eröffnet.
+
+                
+Zum Anfang des Projekts wurde ein Co-Design-Workshop mit den genannten Personengruppen durchgeführt. In Kleingruppen wurden Collagen (siehe Abb. 1) erstellt, auf denen bereitgestellte Bildmaterialen aus den beiden Sammlungen arrangiert und annotiert wurden. Ziel war es, sich auf ästhetischer und abstrakter Ebene mit den beiden Sammlungen zu beschäftigen und jenseits technologischer Beschränkungen Ideen für Visualisierungen zu entwickeln (Chen et al., 2014). In der anschließenden Gruppendiskussion interpretierten zunächst jene Teilnehmer*innen die Collagen, welche die jeweils zu betrachtende Collage nicht erstellt hatten, gefolgt von einer Erläuterung der Ersteller*innen. Dieser Austausch führte in eine fokussierte Diskussion über die Konkretisierung der Ansprüche und Ziele des Projekts und die praktische Umsetzbarkeit insbesondere in Hinblick auf Verfügbarkeit von Daten und die Diversität von Zielgruppen.
+
+                
+Ein Großteil der entstandenen Collagen wies eine assoziative Durchmischung der beiden Sammlungen auf, wobei Schlagworte und Kategorien die Arrangements erklärten. Es wurde mehrfach der Wunsch geäußert, die Verschiedenheit der Sammlungen zu achten, ohne dass dies in einem Interface eine Trennung der Objekte impliziere. Exploration wurde mit zirkulären Streifzügen durch die Sammlungen assoziiert, die entlang visueller Assoziationsketten und erklärenden Beschriftungen angeregt werden sollten. Ein anderer Teil der Diskussion drehte sich um automatische Verfahren der Bildanalyse; hier wurden Gegensätze wie Ähnlichkeit/Differenz, Kuratierung/Algorithmus und Narration/Exploration erörtert, die für den folgenden Designprozess ein fruchtbares Spannungsfeld eröffneten.
+
+                
+
+                    
+
+                    
+Abb. 1: Iterativer Design- und Forschungsprozess mit Collagen, Skizzen, Notebooks und Prototypen.
+
+                
+
+                
+Ähnlichkeitsbasierte Beziehungen wurden für den weiteren Designprozess als Schwerpunkt gewählt. Eine tiefergehende Auseinandersetzung mit den Sammlungsdaten offenbarte eine hohe Heterogenität in der Datenqualität, z.B. in der Datierung und Beschreibung der Objekte. Da die manuelle Anreicherung und Angleichung der Metadaten über den Rahmen des Projekts hinausgingen, wurden Möglichkeiten der algorithmischen Ähnlichkeitsanalyse mittels maschinellen Lernens eruiert. Für die Berechnung von Ähnlichkeiten wurden verschiedene Kombinationen aus Titel- und Bilddaten herangezogen und die resultierenden Layouts auf ihre Plausibilität hin untersucht. Im Designprozess stellte sich eine kombinierte Ähnlichkeitsanalyse, also eine Mischung aus Titel- und Bilddaten in gleicher Gewichtung, für die Platzierung in einem Interface als zielführend heraus, da hier die bestmögliche Durchmischung der Sammlungen erzielt werden konnte.
+
+                
+Zum Ende der explorativen Phase wurde im Austausch mit den beteiligten Kuratorinnen der Sammlungen mögliche Interfacekonzepte und die kombinierte Ähnlichkeitsanalyse besprochen, wobei die Beteiligten zu verständlichen Erklärungen der Anordnung rieten, um den Einstieg in die Visualisierung zu erleichtern. Der Versuch einer automatischen Verschlagwortung mithilfe eines vortrainierten Modells schlug fehl, da hier unspezifische und unpassende Formulierungen (z.B. „Kleptomane“ als Stichwort zu einem Porträt) generiert wurden oder beispielsweise bei Kunstwerken der Fokus auf den visuell dominanteren Bilderrahmen anstatt auf das eigentliche Kunstwerk gelegt wurde. Daraufhin wurden Schlagworte für prominente Objekthäufungen manuell formuliert und im Austausch mit den Kuratorinnen im Interface platziert. Zusätzlich zu regelmäßigen Feedback-Runden mit den Kooperationspartner*innen im Laufe des Gestaltungs- und Entwicklungsprozesses wurde in der finalen Projektphase eine Evaluation nach der Think-Aloud Methode (Carpendale 2008) durchgeführt. Hier wurden Nutzer*innen mit unterschiedlichem Vorwissen zu den Sammlungen oder zur Nutzung von Datenvisualisierungen gebeten beim Explorieren der Visualisierung laut auszusprechen, was sie denken, sehen und interpretieren. Die Erkenntnisse aus der Studie sind abschließend iterativ in das Projektergebnis eingeflossen.
+
+            
+
+            
+
+                
+Visuelle Exploration: Von Wolken zu Pfaden
+
+                
+Das Ergebnis unseres iterativen und kollaborativen Designprozesses ist eine Visualisierung, die fließende Wechsel zwischen einer 
+                    
+Wolken-Ansicht
+ – eine ähnlichkeitsbasierte Übersicht aller Objekte (siehe Abb. 2, links) – und 
+                    
+Pfad-Ansichten
+ – von einer Objekt-Auswahl ausgehende nach Ähnlichkeit geordnete Ketten (siehe Abb. 2, rechts) – ermöglicht. Für die Ähnlichkeitsberechnungen wurden dabei zum einen die visuellen Bilddaten (also visuelle Ähnlichkeiten), als auch Titel (textliche Ähnlichkeit der Objekttitel) herangezogen. Dadurch sollen nicht nur inhaltlich-thematische Verbindungen sichtbarer werden, sondern auch Serendipität (Thudt et al. 2012), also glückliche Zufälle im Finden interessanter Objekte, gefördert werden. Insgesamt werden die heterogenen Objekte unterschiedlicher Sammlungen dabei ohne das Hervorheben von Sammlungszugehörigkeit basierend auf Ähnlichkeitsberechnungen in Beziehung gesetzt, um so die Neugier an den Objekten zu wecken und die Exploration anzuregen. Durch diese implizite Ähnlichkeitsdarstellung werden einzelne Objekte unterschiedlicher Sammlungen in Beziehung gesetzt, ohne vorher eine Normalisierung der Metadaten (wie z.B. Schlagworte) vorzunehmen.
+                
+
+                
+Technisch wurde für die Berechnung der Bild- und Titelähnlichkeiten basierend auf maschinellem Lernen eine Merkmalsextraktion über die kombinierte Nutzung von 
+                    
+TensorFlow
+ (Abadi et al. 2016), 
+                    
+Universal Sentence Encoder Multilingual
+ (Yang et al. 2019) und 
+                    
+Big Transfer
+ (Kolesnikov et al. 2019) in 
+                    
+Python Notebooks
+ vorgenommen. Die webbasierten Visualisierungen wurden prototypisch in 
+                    
+Observable Notebooks
+ und final mit dem JavaScript Framework 
+                    
+Svelte
+, der Datenvisualisierungs-Library 
+                    
+D3.js
+ sowie der WebGL Rendering Library 
+                    
+PixiJS
+ entwickelt.
+                
+
+                
+
+                    
+
+                    
+Abb. 2: Das Interface teilt sich in zwei verbundene Modi: Die Wolken-Ansicht (links) gibt eine Übersicht und die Pfad-Ansicht (rechts) bietet Details eines einzelnen Objekts und jenen, die ihm ähnlich sind.
+
+                
+
+                
+
+                    
+Wolken-Ansicht
+
+                    
+
+                        
+
+                        
+Abb. 3: Tausende von Thumbnails aus zwei musealen Beständen werden auf Basis ihrer Titel- und Bildähnlichkeit arrangiert.
+
+                    
+
+                    
+Die Wolken-Ansicht bietet eine Übersicht und den Ausgangspunkt zur Exploration der beiden Sammlungen (siehe Abb. 3). Hierbei wurden die Objekte basierend auf den berechneten Bild- und Titelähnlichkeiten über 
+                        
+UMAP
+ (McInnes, Healy, and Melville 2018) – eine Technik zur Dimensionalitätsreduktion – auf einer zweidimensionalen Fläche nach Ähnlichkeit verteilt; das heißt, Objekte die sich visuell und auf den Titel bezogen besonders ähnlich sind, liegen in der Visualisierung nahe beieinander und es bilden sich einzelne Cluster besonders ähnlicher Objekte. Die manuell erzeugten Schlagworte bieten eine erste Orientierung und über Klick einen Einstieg in bestimmte Regionen des Arrangements. Die Handschriftlichkeit unterstreicht den Gegensatz zwischen der algorithmischen Anordnung und der kuratorischen Annotation der Cluster. Handschriftliche bzw. händische Annotationen in Projektionen multidimensionaler Skalierungen sind eine bereits angewandte Methode, um algorithmische Dimensionalitätsreduktionen nachvollziehbarer zu machen (z.B. Stefaner 2018, Vane 2018). 
+                    
+
+                    
+Mit der Wolken-Ansicht lässt sich über etablierte Pan+Zoom-Gesten, die Auswahl von Schlagworten oder einzelnen Objekten sowie über die Such-Funktion interagieren. Die Eingabe in der Suche (noch vor der Bestätigung der Suchanfrage) hebt die Suchergebnisse in der Ansicht hervor. So lassen sich auch jene Objekte, die der Alten Nationalgalerie oder dem Museum Europäischer Kulturen entstammen identifizieren.
+
+                    
+Beim Klick auf ein Element oder ein Schlagwort oder über die Zoom-Funktion wird in die Visualisierung hineingezoomt und Details der einzelnen Artefakte werden sichtbar (siehe Abb. 4). Wurde ein Element ausgewählt, so wird der Titel des Objektes angezeigt und besonders ähnliche Objekte werden hervorgehoben. Ebenso werden bei der Eingabe im Suchfeld relevante Objekte in der Wolke hervorgehoben. Ein weiterer Klick auf den Button „im Pfad anzeigen“ bei der Objektauswahl oder die Betätigung der Suchanfrage löst eine Übergangsanimation aus, welche alle zur Auswahl ähnlichen bzw. alle für eine Suchanfrage relevante Objekte hervorhebt und zur Pfad-Ansicht animiert.
+
+                    
+
+                        
+
+                        
+Abb. 4: In der Pfad-Ansicht werden die Details eines ausgewählten Objekts, gefolgt von ähnlichen Objekten entlang eines Fadens in abnehmender Ähnlichkeit, angezeigt.
+
+                    
+
+                
+
+                
+
+                    
+Pfad-Ansicht
+
+                    
+
+                        
+
+                        
+Abb. 5: In der Pfad-Ansicht werden die Details eines ausgewählten Objekts, gefolgt von ähnlichen Objekten entlang eines Fadens in abnehmender Ähnlichkeit, angezeigt.
+
+                    
+
+                    
+Im Gegensatz zur Wolken-Ansicht, die Sammlungsobjekte global nach Ähnlichkeit anordnet, werden in der Pfad-Ansicht ausgehend von einem ausgewählten Objekt bzw. Suchbegriff Objekte absteigend der Ähnlichkeit bzw. Relevanz nach in einer Liste an einem Faden aufgereiht (siehe Abb. 5). Dabei folgt die Pfad-Ansicht dem Prinzip von monadischen Visualisierungen (Dörk et al. 2014), indem sie von einem Objekt ausgehende, individuelle Perspektiven auf andere Objekte der Sammlung ermöglicht. Der Ausschlag des Fadens zeigt Änderungen im Grad der Ähnlichkeit zum ausgewählten Objekt an: Ein größerer Ausschlag bedeutet dabei eine größere Differenz im Vergleich zum vorangegangenen Objekt. Zusätzlich wird der berechnete Ähnlichkeitswert in den Metadaten, ausgehend vom ersten Objekt in der Reihenfolge, angezeigt. 
+
+                    
+Das Ziel dieser Ansicht ist es, assoziative Ketten zu ermöglichen. So werden zum Beispiel Werke, die im Titel das Wort „Blume“ enthalten, mit Stillleben von Blumen, Blumenvasen oder - auf Grundlage der Bildähnlichkeit - mit floralen Schmuckstücken zusammengebracht (siehe Abb. 6). Ähnlichkeits-Pfade, die durch die Nutzung der Suchleiste generiert werden, basieren dagegen auf einer Volltextsuche über die Metadaten-Felder, sodass zum Beispiel auch Pfad-Ansichten basierend auf Materialien oder Künstler*innen angezeigt werden können.
+
+                    
+Die Auswahl eines Objekts in einem Pfad öffnet dessen Metadaten und blendet den Button „Zeige ähnliche Objekte als Pfad“ ein, der bei Selektion dazu führt, dass der Ähnlichkeits-Pfad sich ausgehend von dem nun ausgewählten Objekt neu anordnet. Ein weiterer Button ermöglicht zudem die Bewegung zurück zur Wolke mit Fokus und Zoom auf das dabei ausgewählte Objekt.
+
+                    
+
+                        
+
+                        
+Abb. 6: Der Ähnlichkeits-Pfad ausgehend von einem Blumenstillleben enthält unter anderem auch Blumenvasen oder ein florales Schmuckstück.
+
+                    
+
+                
+
+            
+
+            
+
+                
+Diskussion und Reflexion
+
+                
+Das Visualisierungskonzept wurde sowohl in Zusammenarbeit mit den Kooperationspartner*innen und Museumsmitarbeiter*innen als auch in einem strukturierten Evaluationsprozess mit externen Teilnehmer*innen reflektiert und angepasst. Dabei traten einige Herausforderungen und Fragestellungen auf, welche einerseits die algorithmischen Methoden betrafen, andererseits grundsätzliche Fragestellungen zur Exploration digitaler Sammlungen eröffneten. Zunächst wurde in der Evaluation deutlich, dass ein assoziatives Bewegen durch die Sammlungen – oftmals entlang der Schlagworte – sowohl nach einem selbst gewählten als auch nach einem vorgegebenen Interesse gut funktionierte. Tester*innen hoben dabei hervor, dass sie Entdeckungen gemacht hätten, mit denen sie nicht gerechnet hatten und dass die Visualisierung sich besonders gut zum spielerischen Erkunden eignete. Hingegen konnte die Ähnlichkeits-Anordnung in beiden Ansichten der Visualisierung von den meisten Teilnehmenden kaum vollständig erschlossen werden. Dennoch wirkten die Teilnehmenden grundsätzlich interessiert an der Neuartigkeit der Darstellung und den dadurch aufgeworfenen Fragen und versuchten, die Anordnung mittels visueller Vergleiche der Objekte und Beschreibungstexte zu verstehen. Es lässt sich jedoch auch festhalten, dass von Teilnehmenden oft auf die Suche zurückgegriffen sowie der Wunsch nach einer geführten „Tour“ neben der freien Exploration geäußert wurde.
+
+                
+Hinsichtlich einer Weiterentwicklung des Projektes lässt sich zunächst der Aspekt des maschinellen Lernens nennen, welcher insbesondere in einer Verfeinerung der Ähnlichkeits-Anordnung bestehen könnte, sodass mehr sichtbare Cluster und gegebenenfalls automatisch erzeugte Schlagworte als Ausgangspunkt für eine Exploration zur Verfügung stehen könnten. Ein erstes Experiment zur automatisierten Verschlagwortung zeigte jedoch, dass zumindest eine Überprüfung durch Sammlungsexpert*innen unentbehrlich bleiben wird, da beim maschinellen Lernen kontext- und sammlungsspezifische Informationen bislang nicht herangezogen werden können. Für eine potentielle Weiterentwicklung des Projekts stellte sich darüber hinaus die Frage, ob die algorithmische Anordnung für mehrere und diverse Sammlungen skalierbar wäre; dies bezieht sich sowohl auf die Frage, ob eine automatisierte Clusterbildung mit weiteren Beständen überhaupt erfolgreich wäre, als auch ob die größere Anzahl an Objekten die Performance des Prototypen signifikant mindern würde.
+
+                
+Das Projekt hat wiederholt gezeigt, dass eine interdisziplinäre Zusammenarbeit und kritische Betrachtung von algorithmischen Methoden, insbesondere unter Einbezug von Sammlungsexpert*innen, unerlässlich ist. Während nach einer ersten qualitativen Auswertung festgestellt werden kann, dass der Visualisierungsprototyp, der auf einem Wechsel zwischen globalen und lokalen Ähnlichkeiten beruht, insbesondere im Bezug auf freie Exploration und unerwartete Entdeckungen sehr positives Feedback hervorgerufen hat, so wirft die Verwendung von Visualisierungstechniken auf Basis automatischer Ähnlichkeitsanalysen wichtige Fragen zur Vermittlung algorithmischer Arrangements auf. 
+
+            
+
+        
+
+        
+
+                            
+https://visualisierung.smb.museum
+
+                        
+
+                            
+https://uclab.fh-potsdam.de/smb/smb-demo.mp4
+
+                        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Abadi, Martín / Agarwal, Ashish / Barham, Paul / Brevdo, Eugene / Chen, Zhifeng / Citro, Craig / Corrado, Greg S. / Davis, Andy / Dean, Jeffrey / Devin, Matthieu / Ghemawat, Sanjay / Goodfellow, Ian / Harp, Andrew / Irving, Geoffrey / Isard, Michael / Jia, Yangqing / Jozefowicz, Rafal / Kaiser, Lukasz / Kudlur, Manjunath / Levenberg, Josh / Mane, Dan / Monga, Rajat / Moore, Sherry / Murray, Derek / Olah, Chris / Schuster, Mike / Shlens, Jonathon / Steiner, Benoit / Sutskever, Ilya / Talwar, Kunal / Tucker, Paul / Vanhoucke, Vincent / Vasudevan, Vijay / Viegas, Fernanda / Vinyals, Oriol / Warden, Pete / Wattenberg, Martin / Wicke, Martin / Yu, Yuan / Zheng, Xiaoqiang (2016):
+ “TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems”, in: 
+                        
+Proceedings of the 12th USENIX Conference on Operating Systems Design and Implementation
+: 265–283.
+                    
+
+                    
+
+                        
+Carpendale, Sheelagh
+ (2008): “Evaluating Information Visualizations”, in: Kerren, Andreas / Stasko, John T. / Fekete, Jean-Daniel / North, Chris (eds.): 
+                        
+Information Visualization. Lecture Notes in Computer Science
+ 4950. Berlin, Heidelberg: Springer 19–45.
+                    
+
+                    
+
+                        
+Chen, Ko-le / Dörk, Marian / Dade-Robertson, Martyn
+ (2014): “Exploring the Promises and Potentials of Visual Archive Interfaces”, in: 
+                        
+Proceedings of the 2014 IConference
+: 735–741.
+                    
+
+                    
+
+                        
+Dörk, Marian / Carpendale, Sheelagh / Williamson, Carey
+ (2011): “The Information Flaneur. A Fresh Look at Information Seeking”, in: 
+                        
+Proceedings of the SIGCHI Conference on Human Factors in Computing Systems
+: 1215–1224.
+                    
+
+                    
+
+                        
+Dörk, Marian / Comber, Rob / Dade-Robertson, Martyn
+ (2014): “Monadic exploration: seeing the whole through its parts”, in: 
+                        
+Proceedings of the 32nd Annual ACM Conference on Human Factors in Computing Systems
+: 1535–1544.
+                    
+
+                    
+
+                        
+Dörk, Marian / Müller, Boris / Stange, Jan-Erik / Herseni, Johannes / Dittrich, Katja
+ (2020): “Co-Designing Visualizations for Information Seeking and Knowledge Management”, in: 
+                        
+Open Information Science
+ 4, 1: 217–235.
+                    
+
+                    
+
+                        
+Glinka, Katrin / Pietsch, Christopher / Dörk, Marian
+ (2017): “Past Visions and Reconciling Views: Visualizing Time, Texture and Themes in Cultural Collections”, in: 
+                        
+Digital Humanities Quarterly
+ 11, 2.
+                    
+
+                    
+
+                        
+Gortana, Flavio / Tenspolde, Franziska von / Guhlmann, Daniela / Dörk, Marian
+ (2018): “Off the Grid: Visualizing a Numismatic Collection as Dynamic Piles and Streams”, in: 
+                        
+Open Library of Humanities
+ 4, 2.
+                    
+
+                    
+
+                        
+Hinrichs, Uta / Forlini, Stefania / Moynihan, Bridget
+ (2019): “In Defense of Sandcastles: Research Thinking through Visualization in Digital Humanities”, in: 
+                        
+Digital Scholarship in the Humanities
+ 34: i80–i99.
+                    
+
+                    
+
+                        
+Kolesnikov, Alexander / Beyer, Lucas / Zhai, Xiaohua / Puigcerver, Joan / Yung, Jessica / Gelly, Sylvain / Houlsby, Neil
+ (2019): 
+                        
+Big Transfer (BiT): General Visual Representation Learning
+ https://arxiv.org/pdf/1912.11370 [letzter Zugriff 15.07.2021].
+                    
+
+                    
+
+                        
+Kreiseler, Sarah / Brüggemann, Viktoria / Dörk, Marian
+ (2017): “Tracing exploratory modes in digital collections of museum Web sites using reverse information architecture”, in: 
+                        
+First Monday
+ 22, 4.
+                    
+
+                    
+
+                        
+McInnes, Leland / Healy, John / Melville, James 
+(2018): “UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction”, in: 
+                        
+Journal of Open Source Software 3
+.
+                    
+
+                    
+
+                        
+Shneiderman, B.
+ (1996): “The eyes have it: a task by data type taxonomy for information visualizations”: 
+                        
+Proceedings 1996 IEEE Symposium on Visual Languages: 
+336–342.
+                    
+
+                    
+
+                        
+Stefaner, Moritz
+ (2018): 
+                        
+Multiplicity: A Collective Photographic City Portrait
+ https://truth-and-beauty.net/projects/multiplicity [letzter Zugriff 15.07.2021].
+                    
+
+                    
+
+                        
+Thudt, Alice / Hinrichs, Uta / Carpendale, Sheelagh
+ (2012): “The Bohemian Bookshelf. Supporting Serendipitous Book Discoveries through Information Visualization”, in: 
+                        
+Proceedings of the SIGCHI Conference on Human Factors in Computing Systems
+: 1461–1470.
+                    
+
+                    
+
+                        
+Vane, Olivia
+ (2018): 
+                        
+Visualising the Royal Photographic Society Collection: Part 2
+ https://www.vam.ac.uk/blog/digital/visualising-the-royal-photographic-society-collection-part-2 [letzter Zugriff 15.07.2021].
+                    
+
+                    
+
+                        
+Whitelaw, Mitchell
+ (2015): “Generous Interfaces for Digital Cultural Collections”, in: 
+                        
+Digital Humanities Quarterly
+ 9, 1.
+                    
+
+                    
+
+                        
+Windhager, Florian / Federico, Paolo / Schreder, Gunther / Glinka, Katrin / Dork, Marian / Miksch, Silvia / Mayr, Eva
+ (2018): “Visualization of Cultural Heritage Collection Data: State of the Art and Future Challenges”, in: 
+                        
+IEEE transactions on visualization and computer graphics
+ 25, 6: 2311–2330.
+                    
+
+                    
+
+                        
+Yang, Yinfei / Cer, Daniel / Ahmad, Amin / Guo, Mandy / Law, Jax / Constant, Noah / Abrego, Gustavo H. / Yuan, Steve / Tar, Chris / Sung, Yun-Hsuan / Strope, Brian / Kurzweil, Ray
+ (2019): 
+                        
+Multilingual Universal Sentence Encoder for Semantic Retrieval
+ https://arxiv.org/pdf/1907.04307 [letzter Zugriff 15.07.2021].
+                    
+
+                
+
+            
+
+        
+
+    

@@ -1,0 +1,180 @@
+
+        
+
+            
+
+                
+Das D-WISE Projekt
+
+                
+Das Verbundprojekt D-WISE (
+                    
+www.dwise.uni-hamburg.de
+) ist ein BMBF gefördertes interdisziplinäres Kooperationsprojekt an der Universität Hamburg zwischen den Geisteswissenschaften, vertreten durch das Institut für Empirische Kulturwissenschaft, und dem Fachbereich Informatik, vertreten durch die Arbeitsgruppe Language Technology (Koch et al. 2022). D-WISE entwickelt neue informatische Analyseverfahren unter Einsatz von kontextorientierten Embedding-Repräsentationen und eine Arbeitsumgebung (die D-WISE Tool Suite) als digitale Unterstützung von wissenssoziologischen Diskursanalysen (Keller 2011). Dabei orientiert sich D-WISE an zwei grundlegende Fragestellungen: (1) Zu welchen Zwecken, wann und wie können Automatisierung und DH-Methoden sinnvoll in qualitative diskursanalytische Ansätze und Wissensproduktion integriert werden; welche bestehenden Methoden und Tools können übernommen werden und welche müssen neu entwickelt werden? (2) Wie können hermeneutische Methoden durch die Nutzung (halb-)automatisierter Forschungsprozesse weiterentwickelt werden?
+                
+
+                
+Das D-WISE Projekt zielt darauf ab, den Mangel an digitalen Lösungen für multimodale Diskursanalysen zu beheben. Die Lösungen sollen in der Lage sein, mit der Multimodalität von Materialien sowie der Pluralität von Bedeutungen umzugehen, welche vielfältige Herausforderungen und hohe Komplexitätsanforderungen für digitale Lösungen darstellen. Gleichzeitig müssen die ständig wachsende Zahl digitaler Materialien bewältigen werden, indem die Methodik durch digitale Methoden erweitert wird. 
+
+                
+Die Überbrückung der Lücke zwischen strukturellen Mustern, die mit digitalen Methoden aufgedeckt werden, und interpretativen Prozessen menschlicher Bedeutungsproduktion steht im Mittelpunkt des kollaborativen Ansatzes von Kulturanthropologie und Sprachtechnologie im D-WISE-Projekt. Durch die Kombination von manuellen und digitalen Ansätzen zur Diskursanalyse wird die D-WISE Tool Suite für die digitale qualitative Diskursanalyse in enger Co-Creation Arbeitsweise (Eiser et al. 2023) zwischen Wissenschaftler:innen aus den Geisteswissenschaften und der Informatik geschaffen.
+
+            
+
+            
+
+                
+Die D-WISE Tool Suite für KI-gestützte Wissenssoziologische Diskursanalysen
+
+                
+Die D-WISE Tool Suite
+ (DWTS) wird als offen zugängliche Webapplikation entwickelt und ausgehend von der Evaluation und Reflektion von etablierten DH-Methoden sowie digitalen Tools (u.a. MAXQDA, CATMA, WebAnno) konzipiert. DWTS erweitert das bestehende Angebot und verbessert den Forschungsprozess, insbesondere Diskursanalysen, mittels künstlicher Intelligenz (KI) gestützten Funktionalitäten und teilautomatisierten Prozessen. Hierbei spielen die sich ergänzenden Konzepte von Human-in-the-Loop (Holzinger 2016) und AI-in-the-Loop (Koch et al. 2022) eine zentrale Rolle und werfen für D-WISE relevante Fragestellungen hinsichtlich der Interaktion von Mensch und Algorithmus zur Verbesserung von KI-Forschungssystemen und deren Auswirkungen auf den menschlichen Forschungsprozess auf. Zur Umsetzung werden, extern wie intern, Open-Source-Software, -Bibliotheken und -Lösungen verwendet. 
+                
+
+                
+Das Projekt befindet sich in seinem zweiten Projektjahr mit einer entwickelten Tool Suite, in der zunächst Standard-Funktionalitäten implementiert wurden, wie das Suchen und Filtern, Kodieren und Annotieren und Dokumentieren. Insbesondere wurde auch ein besonderer Fokus auf projekt-zentriertes und kollaboratives Arbeiten, sowie die Unterstützung aller diskursanalytischen Schritte gelegt – vom Crawling und Filtern von Daten, über die Spezifikation des Forschungsphänomens bis hin zu Analyse, Auswertung und Interpretation, aber auch Dokumentation und Reflexion. Die DWTS unterstützt dabei die drei Kodierungsphasen des offenen, axialen und selektiven Kodierens der Grounded Theory, wodurch Muster und Konzepte identifiziert, verknüpft und analysiert werden können. Auch implementiert wurde die kollaborative Arbeit und Memofunktion. Die D-WISE Tool Suite bietet ferner die automatische Erkennung und Codierung von Entitäten
+, wie z.B. Akteur:innen, Organisationen oder Orten sowie Bild-Annotationen. Das integrierte Logbuch ermöglicht einerseits eine automatisierte Erfassung aller getätigten Änderungen zur Dokumentation des Forschungsprozesses sowie die Möglichkeit eines manuell zu führenden Feldtagebuchs.
+                
+
+                
+In den letzten Jahren gab es bedeutende Durchbrüche bei verschiedenen Aufgaben der Computer Vision (ViT, Dosovitskiy et al. 2021), der Verarbeitung von Natural Language Processing Tasks (BERT, Devlin et al. 2019) sowie bei multimodalen Aufgaben (CLIP, Radford et al. 2021). Entsprechende Erkenntnisse und Entwicklungen erlauben dem D-WISE Team multimodale Daten, die aus Text, Bild, (zukünftig auch Video oder Audio) oder einer Mischung aus allen Modalitäten bestehen, innerhalb der D-WISE Tool Suite zu verarbeiten. Insbesondere wird dadurch eine multi-modale Ähnlichkeitssuche
+, also beispielsweise das Auffinden ähnlicher Bilder zu einem Suchtext, ermöglicht. Diese semantische und multi-modale Suchfunktionalität ist neben einer lexialischen Suche in DWTS integriert.
+                
+
+                
+Im Gegensatz zu meist lizenzbasierten und kostenpflichtigen, umfangreichen ‚All-in-one-Lösungen‘ für qualitative Datenanalyse wie MAXQDA, Atlas.ti oder NVivo
+                    
+, 
+wird die D-WISE Tool Suite als frei verfügbare Open-Source-Software mit Fokus auf die Wissenssoziologische Diskursanalyse konzipiert. Daher sind hermeneutisch-zirkuläre Methoden, Filterung und skalierbares Lesen vorherrschende Konzepte. Die Tool Suite unterstützt alle diskursanalytischen Schritte und erlaubt einen zyklischen Forschungsprozess, der eng an den hermeneutischen Zirkel angelehnt ist: DWTS soll beim Hinterfragen und der ständigen Erweiterung des Wissenstandes unterstützen, um zu neuen Fragestellungen, Erkenntnissen und somit zu einem tieferen Verständnis des Phänomens zu gelangen.
+                    
+Im nächsten Projektjahr wird KI-gestützte Sprach- und Videoverarbeitung sowie die Entwicklung von Datenanalysefunktionen vorangetrieben.
+                
+
+            
+
+        
+
+        
+
+
+
+
+
+                         https://github.com/uhh-lt/dwts
+                    
+
+
+
+                         Mittels multi-lingualen Modellen von spaCy (Honnibal 2020).
+                    
+
+
+
+                         Anhand von Word Embeddings (Vasiwani 2017; Devlin 2019) durch Sentence Transformer (Reimers 2019) und CLIP (Radford 2021) zur Berechnung semantischer Repräsentationen der Texte und Bilder.
+                    
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+ 2019. “BERT: Pre-Training of Deep Bidirectional Transformers for Language Understanding.” In 
+                        
+Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)
+, 4171–86. Minneapolis, Minnesota: Association for Computational Linguistics. 
+                        
+https://doi.org/10.18653/v1/N19-1423
+.
+                    
+
+                    
+
+                        
+Dosovitskiy, Alexey, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, and Xiaohua Zhai. Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+ 2021. “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale.” In 
+                        
+9th International Conference on Learning Representations, Volume,
+ 451, pp. 3-7. Online.
+                    
+
+                    
+
+                        
+Eiser, Isabel, Tim Fischer, Florian Schneider, Gertraud Koch, Chris Biemann, Fynn Petersen-Frey. 
+2023. “Open Science Prinzipien und interdisziplinäre Kollaboration in D-WISE: Zwischen Hermeneutik und Digitaler Methode in der Diskursanalyse”. 
+                        
+DHd2023 Luxemburg/Trier. Open Humanities – Open Culture. Konferenzabstracts.
+
+                    
+
+                    
+
+                        
+Holzinger, Andreas.
+ 2016. "Interactive Machine Learning for Health Informatics: When Do We Need the Human-in-the-Loop?." Brain Informatics 3, no. 2: 119-131.
+                    
+
+                    
+
+                        
+Honnibal, Matthew, Ines Montani, Sofie Van Landeghem, Adriane Boyd.
+ 2020. “spaCy: Industrial-strength Natural Language Processing in Python”.
+                    
+
+                    
+
+                        
+Keller, Reiner.
+ 2011. “Wissenssoziologische Diskursanalyse: Grundlegung eines Forschungsprogramms.” 3. Aufl. Interdisziplinäre Diskursforschung. Wiesbaden: VS Verlag für Sozialwissenschaften.
+                    
+
+                    
+
+                        
+Koch, Gertraud, Chris Biemann, Isabel Eiser, Tim Fischer, Florian Schneider, Teresa Stumpf, and Alejandra Tijerina García.
+ 2022. “D-WISE Tool Suite for the Sociology of Knowledge Approach to Discourse.” In 
+                        
+Culture and Computing
+, edited by Matthias Rauterberg, 68–83. Cham: Springer International Publishing.
+                    
+
+                    
+
+                        
+Radford, Alec, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, et al.
+ 2021. “Learning Transferable Visual Models From Natural Language Supervision.” In 
+                        
+Proceedings of the 38th International Conference on Machine Learning
+, edited by Marina Meila and Tong Zhang, 139:8748–63. Proceedings of Machine Learning Research. PMLR. 
+                        
+https://proceedings.mlr.press/v139/radford21a.html
+.
+                    
+
+                    
+
+                        
+Reimers, Nils, und Iryna Gurevych.
+ 2019. “Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks.” In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing, 3982–92. Hong Kong, China: Association for Computational Linguistics.
+                    
+
+                    
+
+                        
+Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, und Illia Polosukhin.
+ 2017. “Attention Is All You Need.” In Advances in Neural Information Processing Systems 30, herausgegeben von I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, und R. Garnett, 5998–6008. Curran Associates, Inc.
+                    
+
+                
+
+            
+
+        
+
+    

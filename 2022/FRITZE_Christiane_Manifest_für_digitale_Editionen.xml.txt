@@ -1,0 +1,240 @@
+
+        
+
+            
+
+	        
+Einleitung
+
+            
+
+                
+Das Institut für Dokumentologie und Editorik sieht aus langjähriger Erfahrung mit vielen Editionsprojekten heraus einen drängenden Bedarf, die besonderen Rahmenbedingungen für digitale Editionen und einige gegenwärtig unbefriedigende Aspekte der wissenschaftlichen Arbeit bei allen Stakeholdern deutlicher zu machen um eine Verbesserung der Situation zu bewirken. Es sieht dafür die Form eines Manifests vor, das im Rahmen eines DHd-Workshops erarbeitet werden soll.
+
+            
+
+            
+Digitale wissenschaftliche Editionen werden in der heutigen Zeit gewöhnlich in Form von Projekten von interdisziplinären Teams realisiert, die mit Drittmitteln gefördert werden. Den Anforderungen der Fördergeber hinsichtlich Nachhaltigkeit, Langzeitarchivierung und Berücksichtigung der FAIR-Prinzipien muss ebenso entsprochen werden wie den gestiegenen Bedürfnissen der Nutzer*innen. Die gegenwärtige Praxis des Edierens impliziert mehrere Probleme, die in den Projekten regelmäßig adressiert werden müssen und Gegenstand des Manifests sind.
+
+            
+
+            
+
+	        
+Zielgruppe des Manifests
+
+            
+Das Manifest richtet sich sowohl an Fördergeber, an Forschungseinrichtungen und das kulturelle Erbe bewahrende Infrastruktureinrichtungen als auch an Editionswissenschaftler*innen.
+
+            
+Zeitlichkeit und Nachhaltigkeit
+
+            
+Projekte sind per definitionem zeitlich begrenzte Unternehmungen. Eine digitale Edition ist mit ihrer Publikation aber nicht abgeschlossen, sondern hat ein vielfältiges Nachleben. Grundsätzlich sind Editionen darauf angelegt, ihre Ergebnisse langfristig nutzbar zu halten, im Idealfall sollen Editionen aber auch kontinuierlich weiterentwickelt werden: Daten müssen dauerhaft erreichbar sein, neue Erkenntnisse und Benutzer sollen einbezogen werden, digitale Systeme und Publikationen müssen kontinuierlich gewartet werden. Es bedarf also auch nach der Erstellung der digitalen Edition einer Infrastruktur, die die digitale Edition langfristig bewahrt und zur Nachnutzung verfügbar hält. Voraussetzung ist jedoch eine saubere Trennung zwischen Editionsdaten, die für sich genommen die Forschungsergebnisse der Editor*innen enthalten müssen, und der “Dissemination” (im Sinne des OAIS-Referenzmodells), die die Benutzerinteraktion mit der Edition realisiert. Konsequenterweise sollten sowohl die Editionsdaten als auch die genutzte Forschungssoftware nach den FAIR-Prinzipien aufbereitet, archiviert und zugänglich gemacht werden. Dies schließt auch die Erstellung der die Edition begleitenden Metadaten und eine persistente Identifikation mit ein. Die Zeitlichkeit der Edition schließt aber den verantwortungsbewussten Umgang mit Änderungen mit ein: Die digitale Edition braucht eine konsistente Versionierung (z.B. nach dem Modell des Semantic Versioning, 
+
+                    
+https://semver.org
+
+                
+).
+            
+
+            
+
+                
+Aus den FAIR-Prinzipien folgen Ansprüche an die Übernahme der digitalen Edition in Nachweissysteme (“Findable”), an die genaue Deklaration der Nutzungsrechte (“Accessible”), an die technische Verfügbarkeit z.B. über etablierte APIs (“Interoperable”) und die Realisierung der Daten nach in der Community geläufigen Standards (“Reusable”). Standards müssen dabei so angewendet werden, dass sie konsistent innerhalb des Projektes und zur Community verwendet werden, sowie dass alle Abweichungen ausreichend dokumentiert sind.
+
+            
+
+            
+Die FAIR-Prinzipien sind aber nur ein Mindeststandard. Erst eine Kapselung der Funktionalitäten in Containerformaten, eine kontinuierliche Betreuung oder eine Migration der Applikation erlaubt bei digitalen Editionen eine Benutzererfahrung, die den Erfahrungen mit der Zeitlichkeit des Mediums Buch gleichkommt.
+
+            
+
+            
+
+	        
+Mindeststandards und Best Practices
+
+            
+Es sollte sich auch von selbst verstehen, dass bestimmte Mindeststandards eingehalten und Best Practices des digitalen Edierens angewendet werden. Dazu gehört zuvorderst, dass das digitale Paradigma von allen an der digitalen Edition Beteiligten verstanden und ernst genommen wird. Erst dann kann eine alle Aspekte umfassende Diskussion zur Datenmodellierung mit allen Beteiligten erfolgen, die Grundlage für die Erstellung der Edition und möglichen sich anschließenden Nutzungsszenarien und Auswertungen ist.
+
+            
+
+            
+
+	        
+Rollen und Zusammenarbeit
+
+            
+
+                
+Treiber für digitale Editionen sind in der Regel Fachwissenschaftler*innen, die den Bedarf sehen, bestimmte wissenschaftlich relevante Quellen für die Nutzung durch die Fachcommunity aufzuschließen. Die Komplexität digitaler Editionen erfordert aber die Einbindung weiterer Akteure, vor allem aus dem methodischen, gestalterischen und technischen Bereich. Dabei entsteht häufig dadurch eine Schieflage, dass die zuletzt genannten Partner oft lapidar als “Techniker” bezeichnet, und nicht als Wissenschaftler*innen auf Augenhöhe akzeptiert werden. Um eine kritische Edition digital zu entwickeln, produzieren und zu präsentieren, bedarf es einer umfassenden Analyse des zu edierenden Materials hinsichtlich der Modellierung und Verdatung. Digitale Workflows müssen konzipiert werden, für die zu erschließenden Quellen muss ein passendes Datenmodell, das gängigen Standards zu entsprechen hat, erarbeitet werden, dieses Modell muss spätere Analysen, Präsentationen und noch nicht bekannte Nutzungsszenarien erlauben. Werkzeuge und ggf. “research software” müssen entwickelt und sachadäquate Präsentationsformen entworfen werden. Zudem ist der Produktlebenszyklus von Software und Online-Gegebenheiten im Allgemeinen kurz, so dass ein zusätzlicher Aufwand darin liegt, auf aktuelle Entwicklungen zu reagieren und immer wieder neue Lösungen zu finden.
+
+            
+
+            
+Bei der Arbeit an komplexen digitalen Forschungsvorhaben treffen nicht nur distinkte Kompetenzbereiche, sondern auch unterschiedliche Arbeitsmethoden und Kommunikationskulturen aufeinander: Software-Entwickler*innen arbeiten derzeit häufig in agilen Settings mit streng getakteten Sprints, die keine Unterbrechungen dulden, Fachwissenschaftler*innen benötigen kurzfristig auf Zuruf Unterstützung. Es ist notwendig Kenntnis von und Verständnis für die jeweils andere Arbeitskultur zu haben und aufzubringen, um sie in das eigene Vorgehen ohne Reibungsverluste integrieren zu können. Nicht zuletzt müssen auch ausgeprägte Projektmanagementkompetenzen im Team vorhanden sein, um das Editionsvorhaben erfolgreich durchführen zu können.
+
+            
+Schließlich müssen digitale Editionen sich auch frühzeitig mit den Personen in Verbindung setzen, die die Infrastrukturen für die Langzeitverfügbarkeit und den Nachweis betreuen (Repositorymanager*innen, Web-Hosts, Bibliothekar*innen etc.).
+
+            
+
+            
+
+	        
+Workshop-Organisation
+
+            
+Die verschiedenen oben angerissenen Aspekte werden in einzelnen Abschnitten des Manifests in Kleingruppen erarbeitet.
+
+            
+Als zu diskutierender Vorschlag wären in einer Gliederung dabei zu unterscheiden: Präambel, Rahmenbedingungen digitaler Arbeit, sachliche Dimension (Mindestanforderungen an digitale Ressourcen), soziale Dimension (Rollen und Rollenverständnisse) und organisatorische Dimension (Editionen als Unternehmen).
+
+            
+
+                
+Die Organisator*innen des Workshops werden zunächst in die Thematik einführen und für die aufgezeigten Probleme sensibilisieren. Anschließend wird das Konzept des Manifesto vorgestellt werden. Vor der Einteilung in Kleingruppen wird Raum gegeben, eigene Erfahrungsberichte beizusteuern. Jede Kleingruppe wird in einem Etherpad einen Abschnitt des Manifests bearbeiten. Um den Schreibprozess zu verkürzen sind die die Etherpads mit Thesen und Statements vom IDE e.V. vorbereitet, die zur Diskussion und Weiterentwicklung angeboten werden. Parallel zur Formulierung der Forderungen im Manifest können entsprechende praktische Hinweise und Umsetzungsvorschläge entstehen, die am Ende in einem gesonderten Handreichungsdokument zusammengefasst werden. Nach der Gruppenarbeit werden die entstandenen Formulierungen im Plenum diskutiert, gegebenenfalls reformuliert, sodass sie von allen Teilnehmer*innen und dann Autor*innen des Manifests mitgetragen werden. Das Manifest soll inhaltlich einen Zustand erreichen, in dem es zu Konferenzende in einer Alpha-Version zur Veröffentlichung unter der Lizenz CC BY bereit steht. Nach dem Workshop wird es eine redaktionelle Überarbeitungsschleife geben, um den Gesamttext formal zu harmonisieren. Gegebenenfalls werden unfertige Abschnitte in einer virtuellen Session zu Ende geführt. Die Veröffentlichung wird in einem Forschungsdatenrepositorium erfolgen. Die Abschlussdiskussion wird vornehmlich darin bestehen, wie das Outreach zum Manifest aussehen kann und wie die virtuelle Zusammenarbeit für die Fertigstellung der zugehörigen praktischen Handreichungen organisiert wird.
+
+            
+
+            
+
+	        
+Organisation/Format
+
+            
+
+                
+Umfang: halbtägiger Workshop
+
+                
+Anzahl Teilnehmende: max. 30
+
+                
+Zielgruppe: Editionswissenschaftler*innen, Digital Humanists. Kein Vorwissen notwendig.
+                
+
+                 
+Ausstattung: Steckdosen, Internetzugang via WLAN
+
+                
+Gruppenarbeit, jede Gruppe erarbeitet einen Aspekt
+
+                
+ggf. Einbezug von anderen Akteuren via Social Media
+
+                
+synchrones Schreiben / Gesamtredaktion
+
+            
+
+                
+
+            
+
+                
+Output des Workshops / Ergebnisverwertung
+
+            
+
+                
+Manifesto als Open Access Dokument mit grafisch ansprechendem Layout, in Web- und Printformat
+                
+
+                
+ebenfalls als offene, versionierte (z.B. Git) Dokumente: Handreichungen für Digitale Editionen, welche die Grundsätze des Manifestos in konkrete Handlungsempfehlungen übersetzt
+                
+
+            
+
+            
+
+                
+perspektivisch: Übersetzung des Manifestos in mehrere Sprachen für die internationale Community und um dem Aspekt der barrierearmen Zugänglichkeit gerecht zu werden.
+
+                
+
+                
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+			
+Morgan, Megan
+ (2021): 
+How To Write a Manifesto.
+
+                        
+
+                            
+https://www.wikihow.com/Write-a-Manifesto
+
+                        
+
+                    
+
+                    
+
+			    
+Deutsche Forschungsgemeinschaft
+ (2015): 
+Förderkriterien für wissenschaftliche Editionen in der Literaturwissenschaft.
+
+                        
+
+                            
+https://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/foerderkriterien_editionen_literaturwissenschaft.pdf
+
+                        
+
+                    
+
+                    
+
+                        
+Hong, N. P. C., Katz, D. S., Barker, M., Lamprecht, A.-L., Martinez, C., Psomopoulos, F. E., Harrow, J., Castro, L. J., Gruenpeter, M., Martinez, P. A., &amp; Honeyman, T.
+ (2021). 
+FAIR Principles for Research Software (FAIR4RS Principles)
+. Research Data Alliance. DOI: 10.15497/RDA00065
+                    
+
+                    
+
+                   
+Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg
+, u. a. (2016):
+			"The FAIR Guiding Principles for Scientific Data Management and Stewardship". In:
+                        
+Scientific Data
+
+                        
+3 (1): 160018.
+
+                        
+
+                            
+https://doi.org/10.1038/sdata.2016.18
+
+                        
+
+                    
+
+                
+
+            
+
+        
+
+    

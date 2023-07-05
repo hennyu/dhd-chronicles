@@ -1,0 +1,716 @@
+
+        
+
+            
+
+                
+
+                
+Das Hauptinteresse der digitalen Literaturwissenschaft gilt noch immer Volltexten und entsprechenden Korpora. Diese bilden denn auch die Grundlage für die entwickelten Methoden und Praktiken. Allerdings sind in jüngster Zeit Zugänge zu Metadaten wichtiger geworden, nicht nur durch die Initiativen von GLAM-Institutionen wie der Deutschen Nationalbibliothek oder des DLA Marbach (Barnet et al. 2021), die immer mehr Informationen über Schnittstellen verfügbar machen. Der Rückgriff auf Standards und offene Daten führt langfristig zu einem digitalen Ökosystem, in dem jedes Projekt von seiner Umgebung profitiert und auch selbst Daten in die Umgebung einspeisen kann. In diesem Kontext ist die 
+
+                
+Datenbank deutschsprachiger Einakter 1740–1850
+
+                
+ angesiedelt, die seit Juni 2020 unter der Adresse 
+
+                
+
+                
+zugänglich ist.
+
+            
+
+            
+
+                
+Die Einakter-Datenbank stellt Metadaten für tendenziell alle zwischen 1740 und 1850 recherchierbaren deutschsprachigen Einakter des Sprechtheaters zur Verfügung. Das Datenmodell orientiert sich dabei an Reinhart Meyers 
+
+                
+Bibliographia Dramatica et Dramaticorum 
+
+                
+(Meyer 1986
+
+                
+–
+
+                
+2011), wurde aber für die digitale Nutzung angepasst. Meyers opulentes Verzeichnis, das seit 1986 alle im 18. Jahrhundert im ehemaligen deutschen Reichsgebiet gedruckten, als Manuskript erhaltenen und gespielten Theaterstücke bibliografiert – schätzungsweise etwa 50.000 Texte bzw. Inszenierungen – hat von Anfang an »das erschreckende Desinteresse einer Wissenschaft an ihren ›Gegenständen‹« belegt, wie es in einer Rezension hieß (Krämer 1998). Denn die literatur- und theaterwissenschaftliche Forschung gründet ihre Aussagen auf eine
+
+                
+n
+
+                
+ verschwindend geringen Bruchteil überlieferter Texte: »Die Folge der literaturwissenschaftlichen Selektion ist, daß etwa 90% der dramatischen Produktion des letzten Drittels des 18. Jahrhunderts aus dem Gesichtsfeld der Germanisten entschwand.« (Meyer 2012: 341; ähnliche Zahlen vgl. Brandt-Schwarze/Oellers 2000: 7) Auch die hier behandelten Einakter, die im Untersuchungszeitraum durchaus populär waren, sind durch keinen Kanon gesichert – früh als »Niederungen der Poesie« (Meyer 1920: 4) betitelt, wurden sie größtenteils aus dem kulturellen Gedächtnis verdrängt.
+
+            
+
+            
+
+                
+Zum Begriff ›Einakter‹
+
+                
+
+                    
+
+                    
+Nachdem vorangegangene Untersuchungen zum Einakter bereits die »spezifische Eigenständigkeit« dieser Form herausgearbeitet haben (Pazarkaya 1973: 1), möchte unsere 
+
+                    
+Datenbank die Erforschung des deutschsprachigen Einakters auf eine neue, breitere, inklusivere und vor allem digitale Basis stellen. Dabei musste zunächst der Terminus ›Einakter‹ (der erst im ausgehenden 19. Jahrhundert gebräuchlich wird) operationalisiert werden, da er selbst in der Forschungsliteratur meist eher unbestimmt gebraucht wird. So kann er sich auf nicht näher bezeichnete Kurzdramen ebenso beziehen wie auf abendfüllende Dramen ohne Akte bzw. Akteinteilung. Ohne eine Arbeitsdefinition droht die Zusammenstellung eines Einakterkorpus willkürlich zu werden. Für die Einakter-Datenbank haben wir uns hauptsächlich auf die explizite Einaktermarkierung (im Peri- oder Epitext) konzentriert. Denn der aktive Gebrauch von Etiketts wie »in einem Akt«, »in einem Aufzug« usw. – oft von Autor*innen oder Herausgeber*innen selbst hinzugefügt – bildet eine sinnvolle, einfach zu beschreibende Gemeinsamkeit dieser Dramen und grenzt das Korpus nach außen ab. Solche Untertitel sind für das deutschsprachige Drama erst ab der Mitte des 18. Jahrhunderts üblich. Die meisten Stücke in unserem Korpus bringen diese Markierung im Untertitel mit. Für Dramen wie Lessings 
+
+                    
+Philotas 
+
+                    
+(Erstdruck 1759), das nur mit dem Untertitel »Ein Trauerspiel« publiziert wurde, ist dann die explizite Bezeichnung als Einakter auf zeitgenössischen Theaterzetteln sowie in der Forschungsliteratur ausschlaggebend. In unserer Datenbank wird jeweils auch auf derlei wechselnde Untertitel, sofern ermittelt, verwiesen.
+
+                
+
+                
+
+                    
+Für den fokalen Zeitraum von 1740–1850 haben wir momentan 2.305 Einakter verzeichnet und entsprechend unseres Datenmodells mit Titel-, Veröffentlichungs- und Aufführungsdaten, Personenverzeichnissen und Links zu benachbarten digitalen Projekten versammelt. Als Beispieleintrag diene Christian Leberecht Heynes Einakter 
+
+                    
+Die beiden Billets
+
+                    
+ 
+
+                    
+(Abb. 1).
+
+                
+
+                
+
+                    
+
+                        
+
+                        
+Abb. 1: Ansicht eines einzelnen Einakters.
+
+                    
+
+                
+
+                
+
+                    
+In einer der wenigen größeren Arbeiten zum deutschen Einakter zählte der schon zitierte Yüksel Pazarkaya für das 18. Jahrhundert um die 500 Stücke (vgl. ebd.: 67), von denen er etwa 200 bis 300 ausgewertet hat (vgl. ebd.: 163 u. passim). Unsere Datenbank geht eine ganze Größenordnung nach oben (wobei unser Untersuchungszeitraum um ein halbes Jahrhundert verschoben wurde, insgesamt aber auch ca. ein Jahrhundert abdeckt). Die Analyse der Gattung wird also auf eine viel breitere Basis gestellt, indem hunderte Stücke in den Blick gelangen, die bisher für die Forschung schlicht nicht sichtbar waren.
+                
+
+            
+
+            
+
+                
+Beobachtungen an einer Grundgesamtheit: Eigenschaften des deutschsprachigen Einakters
+
+                
+
+                    
+Durch die systematische Durchforstung der verfügbaren Quellen und dank des enormen Digitalisierungsfortschritts in den letzten zwanzig Jahren kommen wir erstmals der Grundgesamtheit der gedruckten und gespielten Einakter (die oft nur als Erstdruck oder Manuskript überliefert sind) im genannten Zeitraum nahe. Auch wenn die Datenbank laufend ergänzt wird, wird sich an der Größenordnung nicht mehr viel ändern. Daher beschreiben die quantitativen Aussagen, die wir nun treffen können, den deutschsprachigen Einakter im ausgewählten Untersuchungszeitraum auf Basis nahezu des gesamten überlieferten Materials.
+                
+
+                
+
+                    
+Untertitel
+
+                    
+
+                        
+Gemäß der vergebenen Untertiteln sind etwa zwei Drittel aller Einakter Lustspiele, Komödien oder Possen. Weniger Anteile verfallen auf neutralere Bezeichungen wie Schauspiel, Nachspiel oder Drama.
+                    
+
+                    
+
+                        
+Auffällig ist, dass nur ca. 2,5% der Einakter zu den Tragödien bzw. Trauerspielen gehören (d.h. im Titel als solche bezeichnet werden oder tragisch ausgehen), was vor allem formale Gründe hat. Pazarkaya etwa spricht von der »Unmöglichkeit der Tragödie in einem Akt« (ebd.: 129), da sich eine tragische Handlung nur mühsam und defizitär in die Kürze eines Aktes zwängen lasse. Prozentual mag der gemessene Anteil gering ausfallen, allerdings zeigt unsere Datenbank doch, dass es wesentlich mehr einaktige Tragödien gibt als in der Forschung bisher angenommen wurde. Diese können nun als Phänomen erstmals zusammen präsentiert werden. Unter diesen tragischen Stücken befinden sich neben mehreren Schicksalsdramen von unter anderem Zacharias Werner, Adolph Müllner und Ernst von Houwald auch Trauerspiele ohne tragischen Ausgang, etwa Gustav Freytags Einakter 
+
+                        
+Der Gelehrte
+
+                        
+ 
+
+                        
+(1848).
+
+                    
+
+                
+
+                
+
+                    
+Autor*innenschaft
+
+                    
+
+                        
+Zu den produktivsten Autor*innen im Korpus zählen August von Kotzebue (ca. 90 Einakter), Ignaz Franz Castelli (über 70) und Franz August von Kurländer (über 60). Vielschreiber*innen sind in jener Zeit insgesamt keine Seltenheit (vgl. Schonlau 2014). Kotzebue, der etwa 260 Dramen geschrieben hat, »rühmte sich […], ein Stück in drei Tagen fertig schreiben zu können« (Wiese 1972: 8). Daneben haben sich vor allem auch – damals wie heute fast gänzlich unbekannte – Laienautor*innen in der dramatischen Kurzform versucht. Zirka 10% der Einakter wurden anonym veröffentlicht, allerdings konnten einige Anonymate durch die Arbeit von Reinhart Meyer und anderen inzwischen aufgelöst werden.
+                    
+
+                    
+Der Einakter galt zu jener Zeit auch als Einübungsform und hat viele Erstlingswerke hervorgebracht, beispielhaft seien die später mit umfangreicheren Werken äußerst erfolgreich gewordenen Dramatiker Gotthold Ephraim Lessing oder Adolph Müllner genannt.
+
+                    
+Die Datenbank macht auch den Anteil von Autorinnen an der Dramenproduktion sichtbarer (dank der Verknüpfung der Autor*innen mit ihren Wikidata-Einträgen können die Informationen zum Geschlecht automatisch bezogen werden; eine Statistik dazu befindet sich auf unserer Website). Zwar sind nur knapp 5% der erfassten Einakterautor*innen weiblich, allerdings treten so neben bekannteren Vertreterinnen wie Luise Adelgunde Victorie Gottsched und produktiven Theaterautorinnen wie Johanna Franul von Weißenthurn oder Charlotte Birch-Pfeiffer auch unbekanntere Verfasserinnen von Einaktern zutage.
+
+                
+
+                
+
+                    
+Übersetzungen
+
+                    
+
+                        
+
+                        
+Als erster deutschsprachiger Einakter wird mitunter Johann Ulrich von Königs allegorisches Stück 
+
+                        
+Die verkehrte Welt 
+
+                        
+(1725) angeführt. Allerdings prangt der explizite Hinweis auf dessen Einaktigkeit erstmals nachträglich in einer Ausgabe von 1749 (»Ein Lust-Spiel von einem Aufzuge«). In Frankreich gab es den Untertitelzusatz »en un acte« mindestens 20 Jahre bevor er auch im Deutschen eingeführt wurde. Das erste gedruckte deutschsprachige Drama mit einem Einakterhinweis ist wahrscheinlich 
+
+                        
+Die Widersprecherinn,
+
+                        
+ das 1741/42 in Gottscheds Dramenanthologie 
+
+                        
+Die Deutsche Schaubühne 
+
+                        
+abgedruckt wurde.
+
+                    
+
+                    
+Der Hinweis auf Frankreich ist auch deshalb wichtig, weil ein knappes Drittel der Einakter nachweislich aus Übersetzungen oder Adaptionen besteht, und zwar in großer Mehrzahl (über 90%) aus dem Französischen; andere Sprachen spielen kaum eine Rolle. Die Vorlagen für diese Übersetzungen oder Bearbeitungen haben wir ebenfalls in der Datenbank erfasst, inklusive Metadaten zu Werken und Autor*innen.
+
+                    
+
+                        
+Der hohe Anteil an Übersetzungen hatte zwei Reaktionen zur Folge: Entweder man beschwerte sich über ihre Massenhaftigkeit oder man fand diese berechtigt, da es so wenige gute deutsche Einakter gebe. Castelli, einer der produktivsten Autoren im Korpus, ist gleichzeitig ein Vielübersetzer – Vielschreiberei galt im Untersuchungszeitraum allerdings oft als verwerflich, über Castelli liest man das Folgende: »Auch bei ihm also hat die Quantität der Qualität geschadet, Castelli hat zu viel geschrieben, um Bedeutendes geschrieben zu haben.« (Anonym 1854: 14) In Frankreich erfolgreiche Stücke wurden teils auch mehrfach übersetzt, Molières Einakter 
+
+                        
+Les précieuses ridicules
+
+                        
+ 
+
+                        
+ist dabei ein Extrembeispiel im Korpus, mit mindestens sieben individuellen einaktigen Übersetzungen zwischen 1752 und 1824.
+
+                    
+
+                
+
+                
+
+                    
+Schauplätze
+
+                    
+
+                        
+Unter dem Personenverzeichnis eines Dramas werden typischerweise Ort und Zeit der nachfolgenden Handlung vermerkt. In mehraktigen Stücken kann sich der Ort im Verlauf des Stücks mehrfach verlagern, bei Einaktern ist das normalerweise nicht der Fall. In unserer Datenbank sind geeignete Ortsangaben via Wikidata kodiert (zu den nicht kodierbaren Informationen gehören fiktive Orte wie »Krähwinkel«, unbestimmte Angaben wie »Eine große Stadt in Deutschland« oder allzu allgemeine Lokalisierungen à la »Die Handlung geht vor in Amerika«).
+                    
+
+                    
+Über Wikidata werden dann auch die Geokoordinaten bezogen und mit der JavaScript-Bibliothek Leaflet auf eine Weltkarte gemappt, die ebenfalls auf der Website zu finden ist. Dadurch wird auch ein geodatenbasierter Zugang zum Korpus möglich. Auf besagter Karte wird deutlich, dass sich die Handlung deutschsprachiger Einakter für den von uns beobachteten Zeitraum vor allem in den Grenzen des Alten Reichs entfaltet. Neben Berlin und Wien ist allerdings Paris die mit Abstand häufigste Ortsangabe, was freilich an der Vielzahl von Übersetzungen liegt. Einakter, die in der Neuen Welt, im Nahen, Mittleren oder Fernen Osten spielen, bilden die absolute Ausnahme. Durch unseren exhaustiven Ansatz bei der Korpuszusammenstellung lassen sich diese Ausnahmen aber zum ersten Mal systematisch erfassen.
+
+                
+
+                
+
+                    
+Anzahl der Szenen
+
+                    
+
+                        
+Ein Einakter entspricht formal und inhaltlich nicht einfach nur einem einzelnen Akt eines mehraktigen Dramas. Im Schnitt hat ein genuiner Einakter mehr Auftritte als die Einzelakte umfangreicherer Dramen.
+                    
+
+                    
+Abb. 2 zeigt die Anzahl von Szenen pro Einakter in chronologischer Verteilung. Der Durchschnitt liegt bei 14 Szenen. Für die Mehrzahl der Stücke ist die Szenenanzahl zwischen 7 und 20 angesiedelt, wie man im dunklen Innern der Datenwolke erkennen kann. Als Vergleich seien die 131 zwischen 1740 und 1850 publizierten fünfaktigen deutschsprachigen Dramen des GerDraCor-Korpus (vgl. Fischer et al. 2019) herangezogen, deren durchschnittliche Aktlänge bei knapp unter 7 Szenen liegt.
+
+                    
+Die Spieldauer für die Einakter beträgt typischerweise zwischen 15 Minuten und einer Stunde (teils ist diese explizit mit angegeben).
+
+                    
+
+                        
+
+                            
+
+                            
+Abb. 2: Anzahl von Szenen pro Einakter (chronologisch).
+
+                        
+
+                    
+
+                
+
+                
+
+                    
+Anzahl der Figuren
+
+                    
+
+                        
+
+                        
+Zu den Eigenschaften des Einakters gehört neben der 
+
+                        
+insgesamt 
+
+                        
+geringen Anzahl an Szenen auch eine reduzierte Anzahl an Figuren. Folge davon ist auch eine potenziell weniger komplexe Handlung. Goethe spricht im Bezug auf Michael Beers Einakter 
+
+                        
+Der Paria. Trauerspiel in einem Aufzuge
+
+                        
+ (Erstaufführung 1823) lobend von einer »bewiesenen großen Oekonomie«: »Ohne Zwang sind alle jene tragischen Motive in einen einzigen Akt zusammengebracht, die Handlung entwickelt sich an einem einzigen Ort und der handelnden Person sind nur drey.« (Goethe 1824: 107)
+
+                    
+
+                    
+Die Figurenanzahl der Einakter liegt durchschnittlich bei 7, wobei die Mehrzahl der Stücke zwischen 5 und 7 Personen bzw. Sprechinstanzen im Personenverzeichnis auflistet (Abb. 3). Um wieder mit GerDraCor zu vergleichen: Dort liegt die durchschnittliche Anzahl der Figuren für die 131 Fünfakter des Zeitraum 1740–1850 bei 29. Das Verhältnis zwischen weiblichen und männlichen Figuren liegt für dieselben Fünfakter bei 23:100; hingegen in der Einakter-Datenbank (momentan 2305 Stücke) bei 46:100. Der höhere Anteil weiblicher Figuren in einaktigen Stücken lässt sich unter anderem mit bestimmten Handlungsschwerpunkten erklären (viele einaktige Eheanbahnungskomödien bei nur wenigen Tragödien und historischen Dramen).
+
+                    
+
+                        
+
+                            
+
+                            
+Abb. 3: Anzahl von Figuren pro Einakter (chronologisch).
+
+                        
+
+                    
+
+                
+
+            
+
+            
+
+                
+Die Einakter-Datenbank als Forschungsservice
+
+                
+
+                    
+Unser Datenmodell ist zugeschnitten auf den konkreten Anwendungsfall und im Projekt-Wiki dokumentiert. Die Daten selbst werden im YAML-Format erfasst, die Versionierung erfolgt per Git. Die entstandene Software steht unter der MIT-Lizenz, die Daten unter einer CC-BY-Lizenz.
+                
+
+                
+
+                    
+Übliche bibliografische Metadaten zu den gesammelten Einaktern werden kombiniert mit Links in die Umgebung 
+
+                    
+– 
+
+                    
+darunter DraCor, Wikidata und Projekte wie die Carl-Maria-von-Weber-Gesamtausgabe, aber auch analoge literaturwissenschaftliche Nachschlagewerke wie Meyers 
+
+                    
+Bibliographia 
+
+                    
+(Meyer 1986
+
+                    
+–
+
+                    
+2011), das 
+
+                    
+Dramenlexikon des 18. Jahrhunderts
+
+                    
+ 
+
+                    
+(Hollmer/Meier 2000) oder die im Wehrhahn Verlag erschienenen Kotzebue- und Iffland-Lexika (Birgfeld et al. 2011 und Dehrmann/Košenina 2009).
+
+                
+
+                
+Die hier präsentierten Ergebnisse können jeweils auf dem aktuellen Stand der Datenbank überprüft werden. Vorgehaltene und errechnete Daten werden über leicht zugängliche Endpunkte exponiert, die unsere Daten im CSV- und JSON-Format anbieten. Die Daten können entweder für die Nutzung in Tabellenkalkulationen wie Microsoft Excel oder LibreOffice Calc heruntergeladen oder direkt über eine Programmiersprache bezogen werden. Beispiele für die Verwendung in R gibt es auf der Website des Projekts.
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+
+                        
+Anonym 
+
+                        
+(1854): 
+
+                        
+Ignaz Franz Castelli. Mit Portrait
+
+                        
+. Cassel: Balde.
+
+                    
+
+                    
+
+                        
+Barnet, Arno / Dietrich, Elisabeth / Kolbe, Ines / Schmidgall, Karin 
+
+                        
+(2021): »Vom Nutzen vernetzter Werke. Das Kooperationsprojekt ›Werktitel als Wissensraum‹ des Deutschen 
+
+                        
+Literaturarchivs Marbach und der Herzogin Anna Amalia Bibliothek Weimar«, in: 
+
+                        
+Zeitschrift für Bibliothekswesen und Bibliographie 
+
+                        
+68/3: 138–151. (
+
+                        
+
+                            
+doi:10.3196/186429502068327
+
+                        
+
+                        
+)
+
+                    
+
+                    
+
+                        
+Birgfeld, Johannes / Bohnengel, Julia / Košenina, Alexander 
+
+                        
+(Hg.) (2011):
+
+                        
+ 
+
+                        
+Kotzebues Dramen. Ein Lexikon
+
+                        
+. Hannover: Wehrhahn.
+
+                    
+
+                    
+
+                        
+Brandt-Schwarze, Ulrike / Oellers, Norbert
+
+                        
+ 
+
+                        
+(2000): 
+
+                        
+Die Dramen der Fürstlichen Bibliothek Corvey 1805–1832
+
+                        
+. München: Fink. (
+
+                        
+
+                            
+urn:nbn:de:bvb:12-bsb00040797-1
+
+                        
+
+                        
+)
+
+                    
+
+                    
+
+                        
+Dehrmann, Mark-Georg / Košenina, Alexander
+
+                        
+ 
+
+                        
+(Hg.) (2009): 
+
+                        
+Ifflands Dramen. Ein Lexikon
+
+                        
+. Hannover: Wehrhahn.
+
+                    
+
+                    
+
+                        
+Fischer, Frank et al. 
+
+                        
+(2019): »Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama«, in: 
+
+                        
+Proceedings of DH2019: Complexities
+
+                        
+, Utrecht University. (
+
+                        
+
+                            
+doi:10.5281/zenodo.4284002
+
+                        
+
+                        
+)
+
+                    
+
+                    
+
+                        
+Goethe, Johann Wolfgang
+
+                        
+ 
+
+                        
+(1824): »Die drey Paria«, in: 
+
+                        
+Ueber Kunst und Alterthum. Fünften Bandes erstes Heft
+
+                        
+. Stuttgart: Cotta, 101–108.
+
+                    
+
+                    
+
+                        
+Hollmer, Heide / Meier, Albert 
+
+                        
+(Hg.) (2001): 
+
+                        
+Dramenlexikon des 18. Jahrhunderts
+
+                        
+. München: C.H. Beck
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Krämer, Jörg
+
+                        
+ 
+
+                        
+(1998): »Reinhart Meyer, Bibliographia Dramatica et Dramaticorum. Kommentierte Bibliographie der im ehemaligen deutschen Reichsgebiet gedruckten und gespielten Dramen des 18. Jahrhunderts nebst deren Bearbeitungen und Übersetzungen und ihrer Rezeption bis in die Gegenwart. 2. Abteilung: Einzeltitel. 6 Bde. 1993–1996« [Rezension], in: 
+
+                        
+Arbitrium
+
+                        
+ 
+
+                        
+16/2: 131–134. (
+
+                        
+
+                            
+doi:10.1515/arbi.1998.16.2.131
+
+                        
+
+                        
+)
+
+                    
+
+                    
+
+                        
+Meyer, Elise Marie
+
+                        
+ 
+
+                        
+(1920): 
+
+                        
+Der Einakter in der deutschen Dichtung des achtzehnten Jahrhunderts
+
+                        
+. Leipzig.
+
+                    
+
+                    
+
+                        
+Meyer, Reinhart 
+
+                        
+(1986–2009): 
+
+                        
+Bibliographia dramatica et dramaticorum. Kommentierte Bibliographie der im ehemaligen deutschen Reichsgebiet gedruckten und gespielten Dramen des 18. Jahrhunderts nebst deren Bearbeitungen und Übersetzungen und ihrer Rezeption bis in die Gegenwart
+
+                        
+. 1.–2. Abteilung, 1.–30. Band. Tübingen: Niemeyer.
+
+                    
+
+                    
+
+                        
+Meyer, Reinhart 
+
+                        
+(2010–2011): 
+
+                        
+Bibliographia dramatica et dramaticorum. Kommentierte Bibliographie der im ehemaligen deutschen Reichsgebiet gedruckten und gespielten Dramen des 18. Jahrhunderts nebst deren Bearbeitungen und Übersetzungen und ihrer Rezeption bis in die Gegenwart
+
+                        
+. 2. Abteilung, 31.–34. Band Berlin / New York: De Gruyter.
+
+                    
+
+                    
+
+                        
+Meyer, Reinhart
+
+                        
+ 
+
+                        
+(2012): »Der Anteil des Singspiels und der Oper am Repertoire der deutschen Bühnen in der zweiten Hälfte des 18. Jahrhunderts« [1981], in: Matthias J. Pernerstorfer (Hg.): Ders.: 
+
+                        
+Schriften zur Theater- und Kulturgeschichte des 18. Jahrhunderts
+
+                        
+. Wien: Hollitzer, 341–400.
+
+                    
+
+                    
+
+                        
+Pazarkaya, Yüksel
+
+                        
+ 
+
+                        
+(1973): 
+
+                        
+Die Dramaturgie des Einakters. Der Einakter als eine besondere Erscheinungsform im deutschen Drama des 18. Jahrhunderts
+
+                        
+. Göppingen: Kümmerle.
+
+                    
+
+                    
+
+                        
+Schonlau, Anja: 
+
+                        
+»Es war nicht immer Kotzebue. Eine Revision der Kanonisierung des populären Theaterstücks um 1800«, in: Ina Karg / Barbara Jessen (Hg.): 
+
+                        
+Kanon und Literaturgeschichte. Facetten einer Diskussion
+
+                        
+. Frankfurt/M.: Peter Lang 2014, 259–282.
+
+                    
+
+                    
+
+                        
+Wiese, Benno
+
+                        
+ 
+
+                        
+(1972): »Einführung«, in: Jürg Mathes (Hg.): 
+
+                        
+August von Kotzebue: Schauspiele
+
+                        
+. Frankfurt/M.: Athenäum, 7–42.
+
+                    
+
+                
+
+            
+
+        
+
+    

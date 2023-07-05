@@ -1,0 +1,262 @@
+
+        
+
+            
+
+                
+Einleitung
+
+                
+Visualisierungen in ihren unterschiedlichen Formen stellen nicht nur eine Ergänzung zur klassischen Edition dar, sondern eröffnen durch Verknüpfungsmöglichkeiten und interaktive Elemente neue Perspektiven auf Forschungsdaten. Die Aufbereitung von Kulturdaten zur Visualisierung und ihre Online-Publikation kann Forschende anregen, mit ihnen zu experimentieren. Während die graphische Aufbereitung und Darstellung von Informationen vielleicht als "alte Kulturtechnologie" (Rehbein 2017: 328) bezeichnet werden kann, haben sich Visualisierungen als Teil digitaler Editionen noch nicht durchgesetzt. Ausnahmen sind beispielsweise der Alfred Escher Briefwechsel
+, der über einen Zeitstrahl Zugang zur Korrespondenz herstellt; schleiermacher digital
+ mit zwei Visualisierungen zur Korrespondenz Friedrich Schleiermachers; oder der Sauer-Seuffert Briefwechsel
+ mit graphisch aufbereiteten Statistiken. Dabei bieten Visualisierungen neue und teilweise interaktive Möglichkeiten der Vermittlung historischer Informationen. Visualisierungen können einen neuen Blick auf die Daten einer Edition eröffnen, ob in Karten, Diagrammen oder anderen Visualisierungsmodi, weiter explorierbar durch beispielsweise Filter, Suche, Zoom und Verlinkungen. Wie Visualisierungen eine Edition bereichern können, wird im Projekt "Praktiken der Monarchie"
+ sichtbar und soll auf der DHd2022-Konferenz in einem Posterbeitrag präsentiert werden.
+                
+
+            
+
+            
+
+                
+Projektkontext: Praktiken der preußischen Monarchie
+
+                
+"Praktiken der Monarchie" ist Teil des Akademienvorhabens "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel 1786 bis 1918". Das mit der Digital Humanities-Arbeitsgruppe der Berlin-Brandenburgischen Akademie der Wissenschaften TELOTA
+ kooperierende Vorhaben untersucht, wie sich die Monarchie im 19. Jahrhundert entwickelte und an dessen politischen und gesellschaftlichen Wandel anpasste. Die Forschungsarbeit deckt dabei Bereiche der Verfassungs-, Kultur-, Sozial- und politischen Geschichte ab und untersucht die Monarchie und ihr Verhältnis zu Politik und Gesellschaft auf verschiedenen Ebenen. Neben einer im Druck erscheinenden Edition, entsteht mit den "Praktiken der Monarchie" eine digitale Publikation, um die Forschungsergebnisse sowie eigens erschlossene Quellen als digitale, teils interaktive Präsentation anzubieten. (Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786–1918)" 2021a). Drei dieser Visualisierungen wird das Poster vorstellen: Die Wohntopografie, die Organigramme und die Adjutantenjournale.
+                
+
+            
+
+            
+
+                
+Wohntopographie
+
+                
+
+                    
+
+                    
+Abb. 1: Screenshot der Wohntopographie um 1800
+
+                
+
+                
+Die Wohntopographie
+ bildet Wohnadressen des Hofpersonals sowie der Stadtgesellschaft und wichtiger Institutionen im historischen Berlin als Kartenvisualisierung ab. Das Ziel der Visualisierung ist es, die Verteilung der Wohnorte des Hofpersonals mit der restlichen Stadtgesellschaft zu vergleichen. Die Kartenvisualisierung besteht aus einer zoombaren OpenStreetMap des heutigen Berlins sowie einem darüber platzierten historischen Stadtplan von 1811 (vgl. Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786–1918)" 2021d). Die Wohnadressen von Personen sowie die Standorte wichtiger Institutionen sind mittels farblicher Punkte eingezeichnet. Bei Klick auf die Adresspunkte werden Informationen zu den dort ansässigen Personen oder Institutionen inklusive Verlinkung zum Projektregister angezeigt. Ein Filter bietet die Möglichkeit, Berufsgruppen ein- und auszublenden. Über eine Suche kann gezielt nach bestimmten Personen oder Institutionen gesucht werden. Die Karte für Berlin um 1800 wurde bereits publiziert, vier weitere (für die Stichjahre 1845, 1872, 1892 und 1914) sind geplant. Die zugrunde liegenden Daten liegen im geoJSON-Format vor, die Kartenanwendung wurde mittels der open-source JavaScript-Bibliothek leaflet.js
+ umgesetzt.
+                
+
+            
+
+            
+
+                
+Organigramme
+
+                
+
+                    
+
+                    
+Abb. 2: Screenshot Organigramm des Hofstaats von Königin Luise (1776-1810)
+
+                
+
+                
+Die Organigramme
+ repräsentieren die Hofstaaten und ihre Strukturen (vgl. Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786–1918)" 2021c). In Form eines ausklappbaren Strukturbaums wird die hierarchische Amtsstruktur der betrachteten Hofstaaten abgebildet. Neben den Bezeichnungen und Funktionen werden auch Informationen über die Besetzung der Ämter und Behörden, die Beziehungen zwischen diesen, sowie Veränderungen in der Amtsstruktur im Verlauf der Jahre abgebildet. Über einen Jahresfilter kann ein- und ausgeblendet werden, welche Ämter und Behörden wann hinzugefügt, entfernt, ausgesetzt oder restrukturiert wurden. Das Organigramm zum Hofstaat von Wilhelm I. wurde bereits veröffentlicht. Folgen werden die Hofstaaten vier weiterer Monarchen und ihrer jeweiligen Parallelhöfe (Ehefrauen, Kinder usw.). Im Ergebnis wird ein umfangreiches Bild der Hofstaaten, ihrer Strukturen und Verläufe gezeichnet. Die Hofstaaten werden in TEI-XML erfasst, die Verarbeitung und Darstellung erfolgt mittels XQuery und XSLT.
+                
+
+            
+
+            
+
+                
+Adjutantenjournale
+
+                
+
+                    
+
+                    
+Abb. 3: Screenshot Adjutantenjournal Friedrich Wilhelm IV. Februar 1848
+
+                
+
+                
+Die Journale der diensthabenden Flügeladjutanten des Monarchen, auch Adjutantenjournale
+ genannt, bieten in Form einer eher klassischen Text-Bild-Visualisierung einen Einblick in den Tagesablauf der preußischen Monarchen für den Zeitraum von 1819-1913, da in ihnen die Termine, Orte und Treffen des Hofes festgehalten wurden (vgl. Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786–1918)" 2021b). Die Journale werden auf der Website sowohl als hochaufgelöste Scans der Originale sowie als edierte Texte angeboten. Sachanmerkungen und Verlinkungen zu den Registern der Projektwebsite ermöglichen ein schnelles Einlesen in das Thema und bieten durch ihre spezielle Auszeichnung eine eigene Datenbasis, die für weitere Forschungen genutzt werden kann. Die visuelle Darstellung des Textes mit der mitlaufenden Abbildung des Dokuments ermöglicht zudem einen schnellen Abgleich von Edition und Original. Die Journale werden in TEI-XML erfasst, die Verarbeitung und Darstellung erfolgt mittels XQuery, XSLT und JavaScript.
+                
+
+            
+
+            
+
+                
+FAIR-Data als Voraussetzung für die Weiterverbreitung
+
+                
+Um die Weiternutzung visualisierter Daten zu ermöglichen ist es notwendig, diese nach den FAIR-Prinzipien zu publizieren. Alle in den Visualisierungen verarbeiteten Daten werden daher unter CC-BY-SA-Lizenz zum Download angeboten und über Schnittstellen verfügbar gemacht
+, sodass auch die wissenschaftliche Gemeinschaft und Öffentlichkeit die Möglichkeit hat, mittels eigener Anwendungen an Kulturen der Erinnerung zur preußischen Monarchie mitzuschreiben und weiterzuforschen.
+                    
+
+                
+
+            
+
+        
+
+        
+
+                            
+
+                                
+https://www.briefedition.alfred-escher.ch/briefe/
+
+                            
+
+                        
+
+                            
+
+                                
+https://schleiermacher-digital.de/briefe/visual.xql
+
+                            
+
+                        
+
+                            
+
+                                
+https://edition.onb.ac.at/sauer-seuffert/context:sauer-seuffert/methods/sdef:Context/get?mode=statistic
+
+                            
+
+                        
+
+                            
+
+                                
+https://actaborussica.bbaw.de/
+
+                            
+
+                        
+
+                            
+
+                                
+https://www.bbaw.de/en/bbaw-digital/telota
+
+                            
+
+                        
+
+                            
+https://actaborussica.bbaw.de/wohntopographie/index.xql
+
+                        
+
+                            
+https://leafletjs.com/
+
+                        
+
+                            
+https://actaborussica.bbaw.de/organigramme/index.xql
+
+                        
+
+                            
+
+                                
+https://actaborussica.bbaw.de/adjutantenjournale/index.xql
+
+                            
+
+                        
+
+                            
+https://actaborussica.bbaw.de/vorhaben/index.xql?id=api
+
+                        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786–1918)"
+ (2021a): "Das Akademienvorhaben Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786–1918)" in: Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786-1918)" (eds.): 
+                        
+Praktiken der Monarchie
+. Berlin: Berlin-Brandenburgische Akademie der Wissenschaften Version 4 vom 05.08.2021 
+                        
+https://actaborussica.bbaw.de/v3/P0006476
+.
+                    
+
+                    
+
+                        
+Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786–1918)"
+ (2021b): "Einleitung Adjutantenjournale" in: Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786-1918)" (ed.): 
+                        
+Praktiken der Monarchie
+. Berlin: Berlin-Brandenburgische Akademie der Wissenschaften Version 4 vom 05.08.2021 
+                        
+https://actaborussica.bbaw.de/v3/P0007683
+.
+                    
+
+                    
+
+                        
+Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786–1918)"
+ (2021c): "Einleitung Organigramme" in: Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786-1918)" (ed.): 
+                        
+Praktiken der Monarchie
+. Berlin: Berlin-Brandenburgische Akademie der Wissenschaften Version 4 vom 05.08.2021 
+                        
+https://actaborussica.bbaw.de/v3/P0006306
+.
+                    
+
+                    
+
+                        
+Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786–1918)"
+ (2021d): "Wohntopographie um 1800" in: Akademienvorhaben "Anpassungsstrategien der späten mitteleuropäischen Monarchie am preußischen Beispiel (1786-1918)" (ed.): 
+                        
+Praktiken der Monarchie
+. Berlin: Berlin-Brandenburgische Akademie der Wissenschaften Version 4 vom 05.08.2021 
+                        
+https://actaborussica.bbaw.de/v3/P0006299
+.
+                    
+
+                    
+
+                        
+Rehbein, Malte
+ (2017): "Informationsvisualisierung" in: Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): 
+                        
+Digital Humanities. 
+Eine Einführung. Stuttgart: J.B. Metzler 10.1007/978-3-476-05446-3_23 328-342.
+                    
+
+                
+
+            
+
+        
+
+    

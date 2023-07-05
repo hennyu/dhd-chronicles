@@ -1,0 +1,183 @@
+
+        
+
+            
+
+                
+Das seit 2020 von der DFG geförderte Projekt “duerer.online - Virtuelles Forschungsnetzwerk Albrecht Dürer”
+ baut eine Forschungsumgebung mit vollständigem Werkverzeichnis der Druckgraphik, Gemälde und Zeichnungen des bedeutenden Renaissance-Künstlers sowie dessen Nachlebens auf. In der bis 2023 laufenden ersten Projektphase steht die Erfassung von Werken im Fokus, die im schriftlichen Nachlass explizit genannt sind. Die Bestände der kooperierenden Sammlungen (Kunstsammlungen der Stadt Nürnberg, Albrecht-Dürer-Haus-Stiftung e.V., Nürnberg, Germanischen Nationalmuseum und Albertina, Wien) dienen als Erschließungsgrundlage. Grundsätzlich können und werden bereits Informationen zu Beständen weiterer Sammlungen erfasst. Ziel ist es nach Projektende der Fachcommunity zu ermöglichen, neue Forschungsergebnisse zu den in der Datenbank aufgenommenen Werken zu ergänzen und Werke bzw. Exemplare hinzuzufügen. Nach Projektende soll es der Fachcommunity ermöglicht werden, neue Forschungsergebnisse zu den in der Datenbank aufgenommenen Werken zu ergänzen und Werke bzw. Exemplare hinzuzufügen. Die Fortführung, Pflege und Sichtbarkeit für die Fachcommunity über die Laufzeit des Projektes hinaus wird durch die Integration in das Angebot des Fachinformationsdienstes Kunst, Fotografie, Design - arthistoricum.net an der UB Heidelberg
+ gesichert.
+            
+
+            
+Im Unterschied zu den bereits im Druck vorliegenden Werkverzeichnissen des Künstlers (wie z.B. Schoch/Mende/Scherbaum 2001-2004 für das graphische Werk, Anzelewsky 1991 für Gemälde und Winkler 1936-1939 für Zeichnungen) werden in der Forschungsumgebung Dürers Werke gattungsübergreifend nach einheitlichen Kriterien erschlossen, ebenso Werke der bis in die heutige Zeit andauernden Rezeption. Dabei versteht sich das Projekt nicht als ein weiteres autoritatives Werkverzeichnis, d.h. es werden keine Werke zu- oder abgeschrieben, sondern offen und transparent historische und aktuelle Diskussionen bezüglich der Autorschaft abgebildet und somit eine Grundlage für weitere Forschungen rund um das Werk Dürers und seiner Nachfolge geschaffen.
+
+            
+
+                
+Neben der Erschließung der Werke werden ausgewählte Quellen des schriftlichen Nachlasses transkribiert und ediert. Durch die Auszeichnung mittels TEI
+ und der Anreicherung der ausgezeichneten Werke, Personen und Orte mit Normdaten der Gemeinsamen Normdatei (GND) ist eine Durchsuch- und Recherchierbarkeit dieses Materials möglich, die für Forschende eine Neuheit darstellt. Über eine programmierte Pipeline werden zudem Registerdateien erzeugt, die zusätzlich mit Informationen zu Kunstwerken und Personen aus der Datenbank angereichert werden. Ebenso wird im Datensatz zum jeweiligen Werk/Person automatisch die Verlinkung auf den entsprechenden Registereintrag abgelegt, sodass sich in „duerer.online“ Nennungen der Entitäten in Quellen nachvollziehen lassen.
+            
+
+            
+
+                
+Für das Portal wird die “Wissenschaftliche Kommunikationsinfrastruktur (WissKI)”
+ eingesetzt, eine virtuelle Forschungsumgebung, die den Aufbau von Anwendungen im Bereich der Digital Humanities unter Nutzung von semantic web-Standards ermöglicht. Die Einordnung und Speicherung der erhobenen Daten erfolgt ontologiebasiert mittels einer auf CIDOC CRM
+ (ISO-Standard 21127) basierenden Anwendungsontologie und unter Nutzung der Gemeinsamen Normdatei (GND), des Getty AAT
+ und Iconclass
+. Das Projekt nutzt die “Heidelberger Anwendungsontologie für Werkverzeichnisse” (Sobriel 2022) nach, die um Klassen und Eigenschaften erweitert wurde, die zur Dokumentation eines Kunstwerkes und dessen Werkbiographie benötigt werden. So wurden vor allem Properties aufgenommen, die Beziehungen zwischen Werken beschreiben. Die Relationen (z.B. has copy/ is copy after) wurden nach dem Lightweight Information Describing Objects (LIDO) Schema modelliert (Sobriel 2022, 43).
+            
+
+            
+
+                
+Das mit der Anwendungsontologie umgesetzte Datenmodell berücksichtigt die Erfassung von Unikaten und Werken in mehreren Ausführungen. Das Werkkonzept beschreibt die inhaltliche Entstehung und nimmt alle Informationen auf, die jede Ausführung betreffen und konzeptioneller Natur sind. In der Ebene Ausführung/Exemplar werden spezifische Angaben zu einer Ausführung bzw. einem Exemplar dokumentiert. Das Datenmodell kann somit semantisch korrekt die Rezeption von Originalen darstellen, da diese immer vom Inhalt/Konzept ausgeht.
+                
+ Außerdem müssen keine Informationen mehrfach erfasst werden und zukünftig können graphische Sammlungen Inhalte zu ihrer speziellen Ausführung dem entsprechenden Werk-Datensatz hinzufügen. Das beschriebene Datenmodell und die darauf beruhende konsequente Erschließung von Werk- und Ausführungs-/Exemplarebene ist in ihrer Durchsuchbarkeit in sammlungsübergreifenden Graphik-Portalen derzeit singulär.
+            
+
+            
+
+                
+Neben Beziehungen von Werken untereinander werden u.a. Informationen zu Verkaufsereignissen und Ausstellungen erfasst. Durch Verknüpfung mit den jeweils verkauften oder ausgestellten Werken bzw. Ausführungen können historische nicht mehr existierende Sammlungen bzw. die Ausstellungshistorie eines Exemplars/Ausführung sichtbar gemacht werden. Zudem wird, wenn möglich, seitengenau auf die zur Verfügung stehenden Digitalisate von Auktions- und Ausstellungskatalogen verlinkt, sodass der Forschende schnell an die jeweiligen Nachweise gelangt.
+            
+
+            
+Die Projekte zum Werk von Lucas Cranach d. Ä.
+ und Rembrandt van Rijn
+ sind dem beschriebenen Portal vergleichbar in ihrer Ausrichtung, doch für das Werk Albrecht Dürers besteht bisher kein Angebot, das gattungs- und sammlungsübergreifend Informationen zur Verfügung stellt und dabei auf anschlussfähige offene Formate gemäß der FAIR-Prinzipien unter Verwendung von Semantic-Web-Standards setzt. Damit steht der Dürer-Forschung ein Instrument zur Verfügung, das nicht nur zukünftige Forschungsergebnisse aufnehmen und sichtbar machen kann, sondern auch alle Informationen über Schnittstellen (SPARQL Endpoint) verfügbar macht, sodass es Forschenden möglich ist, mit eigenen Anwendungen Forschungsfragen weiter zu verfolgen.
+            
+
+        
+
+        
+
+
+
+
+
+                    
+                        
+duerer.online [https://sempub.ub.uni-heidelberg.de/duerer.online/] ist seit März 2022 als First View veröffentlicht, https://blog.arthistoricum.net/beitrag/2022/03/22/first-view-erste-werke-auf-duereronline. Dr. Franziska Ehrl ist für die wissenschaftliche Erschließung und Dokumentation der Werke verantwortlich.
+
+                    
+                
+
+
+
+                    
+                        
+ https://www.arthistoricum.net/themen/wvz/albrecht-duerer.
+
+                    
+                
+
+
+
+                    
+                        
+ https://tei-c.org/.
+
+                    
+                
+
+
+
+                    
+                        
+https://wiss-ki.eu/.
+
+                    
+                
+
+
+
+                    
+                        
+CIDOC CRM Conceptual Reference Model wird von der Special Interest Group des International Council for Museums entwickelt, https://www.cidoc-crm.org/.
+
+                    
+                
+
+
+
+                     Getty Art and Architecture Thesaurus des Getty Research Institute [https://www.getty.edu/research/tools/vocabularies/aat/
+                        
+].
+
+                    
+                
+
+
+
+                    
+                        
+Iconclass der Henri van de Waal Foundation [
+
+                        
+https://iconclass.org/].
+
+                    
+                
+
+
+
+                    
+                        
+ Das seit 2009 von der Mellon Foundation “Cranach Digital Archive” konzentriert sich überwiegend auf die Gemälde des Künstlers [https://lucascranach.org/].
+
+                    
+                
+
+
+
+                    
+                        
+ The Rembrandt Database ist eine vom RKD - Netherlands Institute for Art History bereitgestellte Forschungsplattform zu den Gemälden Rembrandts [https://rembrandtdatabase.org/].
+
+                    
+                
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Anzelewsky, Fedja.
+ 1991. Albrecht Dürer. Das malerische Werk. 2. neu bearbeitete Auflage Berlin: Deutscher Verlag für Kunstwissenschaft.
+                    
+
+                    
+
+                        
+Schoch, Rainer, Matthias Mende, Anna Scherbaum, Anna.
+ 2001-2004. Albrecht Dürer. Das druckgraphische Werk. 3 Bde., München u.a. : Prestel.
+                    
+
+                    
+
+                        
+Sobriel, Nicole.
+ 2022. Semantische Datenmodellierung für Werkverzeichnisse (Universitätsbibliothek Heidelberg). https://doi.org/10.11588/data/64KP3N, heiDATA, V1 (zugegriffen: 3. August 2022).
+                    
+
+                    
+
+                        
+Winkler, Friedrich.
+ 1936-1939. Die Zeichnungen Albrecht Dürers. 4 Bde., Berlin: Deutscher Verein für Kunstwissenschaft.
+                    
+
+                
+
+            
+
+        
+
+    

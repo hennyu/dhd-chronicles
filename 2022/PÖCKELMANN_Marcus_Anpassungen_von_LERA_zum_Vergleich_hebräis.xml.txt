@@ -1,0 +1,266 @@
+
+        
+
+            
+
+                
+LERA, ein Tool zum Vergleich von Textzeugen
+
+                
+LERA ist ein interaktives digitales Werkzeug zur Analyse der Differenzen und Gemeinsamkeiten zwischen mehreren Fassungen oder Zeugen, eines Textes
+. Die Berechnung der Differenzen und Gemeinsamkeiten erfolgt in zwei Schritten. In einem ersten Schritt wird eine automatische Alignierung der Segmente, in der Regel der Absätze, der zu vergleichenden Textzeugen auf Basis des Jaccard-Indexes berechnet. Der/Die Fachwissenschaftler:in kann anschließend durch Aufschneiden und Zusammenfügen von Segmenten bzw. durch Bewegen einzelner Segmente die Segmentalignierung manuell nach bearbeiten. In der zweiten Phase erfolgt ein detaillierter, auf der Levenshtein-Distanz basierender Vergleich der alignierten Segmente (Pöckelmann et al., 2021). Die gewonnenen Daten werden in einer synoptischen Gegenüberstellung der einander zugeordneten Segmente samt der farblich hervorgehobenen Textvarianten dargestellt. Ein in LERA integriertes Tool zum 
+                    
+Distant Reading
+ weist den/die Fachwissenschaftler:in auf Stellen hin, an denen sich die Textzeugen stark (oder weniger stark) unterscheiden (Pöckelmann et al. 2015). Neben der direkten Analyse der Textvarianten in LERAs webbasierter Nutzeroberfläche, stehen verschiedene Exportformate
+ für die externe Weiterverarbeitung zur Verfügung.
+                
+
+                
+LERA wurde ursprünglich, von 2012-2016, zur Untersuchung der Genese der 
+                    
+Histoire philosophique et politique des établissements et du commerce des Européens dans les deux Indes
+ von Guillaume-Thomas Raynal im Rahmen eines BMBF-Projektes entwickelt, einem Werk der französischen Aufklärung, welches in vier Druckauflagen (1770, 1774, 1780, 1820) erschien. Die vier Druckauflagen unterscheiden sich insbesondere in der sich ändernden Wortwahl des Autors, bedingt durch den jeweils aktuellen Wissensstand des Autors in Bezug auf die durch die Europäer kolonisierten Gebiete in Mittel- und Südamerika sowie Indien und anderen Teilen Asiens (Bremer et al., 2015). Seit dem wird bzw. wurde LERA in mehreren Editionsprojekten eingesetzt, beispielsweise im Rahmen der Studien der arabischen Manuskripte zu Kalila and Dimna (Gründler und Pöckelmann, 2018), zur Erstellung der Edinburgh Edition der Werke von Arthur Conan Doyle
+ und im Rahmen des Editionsprojektes „The bases of Slovenian narrative prose: A two-century tradition of Slovenian narrative prose from the mid-seventeenth to mid-nineteenth century“
+. Darüber hinaus ist der Einsatz des Werkzeugs im Rahmen des DFG-Langzeitprojektes „Hannah Arendt. Kritische Gesamtausgabe“
+ angedacht. Eine aktuelle Rezension zu LERA hat Roeder (2020) verfasst.
+                
+
+            
+
+            
+
+                
+Anpassungen von LERA im Rahmen des Vergleichs der hebräischen Textzeugen des Traktats 
+Keter Shem 
+Ṭov
+
+                
+
+                
+Ziel des seit 2019 durch die DFG geförderten Projektes „Synoptische Edition des kabbalistischen Traktats 
+                    
+Keter Shem 
+Ṭov
+ mit englischer Übersetzung, Stellenkommentar und rezeptionsgeschichtlichen Studien“
+ war neben einer Printedition von ausgewählten Textzeugen, die die Bandbreite der Versionen der circa 100 handschriftlichen Textzeugen des Traktats 
+                    
+Keter Shem 
+Ṭov
+ darstellen und dafür projektintern in LERA kollationiert wurden, auch eine digitale synoptische Edition. Diese soll es dem/der Fachwissenschaftler:in erlauben, bis zu acht
+ frei wählbare Textzeugen aus den (bisher 60) transkribierten Handschriften auszuwählen, um diese miteinander zu vergleichen und die Unterschiede spaltensynoptisch für die weitere Untersuchung darstellen zu lassen. Abbildung 1 zeigt eine mit LERA dynamisch erzeugte Spaltensynopse am Beispiel eines hebräischen Textsegments.
+                
+
+                
+
+                    
+
+                        
+
+                        
+Abb. 1: Auszug einer Spaltensynopse von je einem alignierten hebräischen Absatz aus fünf unterschiedlichen Textzeugen des Traktats 
+                    
+Keter Shem 
+Ṭov
+ mit detailliertem Vergleich und kritischem Apparat. Siehe auch 
+                    
+
+                    
+
+                
+
+                
+LERA musste zum Erreichen der geisteswissenschaftlichen Projektziele umfassend erweitert werden. Die Plattform wurde für die Verarbeitung und Darstellung hebräischer Texte angepasst. Diese Anpassungen betreffen zum einen die Spezifika der hebräischen Sprache, wie die Darstellung des Alphabets, die rechtsbündige Schreibrichtung in Synopsen, Apparaten und anderen Visualisierungen, die Integration von Vergleichsfiltern für die hebräische Sprache und angepasste Suchfunktionen. Zum anderen weisen die Textzeugen eigene Charakteristika und Sonderelemente auf, z.B. das Anzitieren von Bibelstellen oder die häufige Verwendung von Zeilenfüllern und Kustoden, die entsprechend der projektspezifischen Editionskonventitionen ausgezeichnet und dem System softwareseitig begreiflich gemacht wurden. Die in LERA bisher integrierten Vergleichsalgorithmen mussten überarbeitet werden, damit sie auch für eine große Anzahl von Textzeugen effizient arbeiten und im Rahmen einer interaktiven Anwendung eingesetzt werden können. Als Alternative zu LERAs klassischer Spaltensynopse zur Visualisierung der Textunterschiede wurde zudem eine Zeilenpartitursynopse konzipiert und integriert, die die Textunterschiede und -gemeinsamkeiten zwischen vielen Textzeugen unmittelbar erkennbar machen kann, siehe Abbildung 2.
+
+                
+
+                    
+
+                        
+
+                        
+Abb. 2: Zeilenpartitursynopse einer Textpassage über 20 Textzeugen.
+
+                    
+
+                
+
+                
+Über die Bereitstellung der digitalen Edition hinaus dient(e) LERA als Arbeitsumgebung für die geisteswissenschaftlichen Mitarbeiter des Projektes, insbesondere zur Auswahl und Analyse der Textzeugen für die Printedition. Die diesbezüglich notwendigen Anpassungen umfassen die komfortable Eingabe bei der Transkription der hebräischen Manuskripte. Ein in das Gesamtsystem integrierter Synchronisierungsmechanismus der Datenbestände gewährleistet die automatische Aktualisierung der Synopsen, wenn beispielsweise Transkriptionsfehler – viele von ihnen werden erst über die synoptische Gegenüberstellung der Textzeugen samt Hervorhebung der Unterschiede in LERA gefunden – korrigiert werden müssen.
+
+                
+Ein weiterer wichtiger Aspekt für die Edition von Keter Shem 
+Ṭov
+ ist der verbesserte Umgang mit transponierten Textsegmenten in LERA: Da die Textzeugen vielfach großflächige Umstellungen aufweisen, ist eine direkte Alignierung mancher Segmente nicht möglich ohne die übrige Chronologie aufzubrechen. In diesen Fällen wird die Ähnlichkeit der Segmente visuell in der integrierten Übersichtsleiste zum Distant Reading sowie in der synoptischen Darstellung des Volltextes angedeutet. Das erlaubt sowohl den überblicksartigen Abgleich der Struktur als auch die detaillierte Gegenüberstellung interessanter Fundstellen, obwohl einzelne Abschnitte nicht direkt aligniert werden konnten. Abbildung 3 zeigt dies an einem Beispiel.
+
+                
+
+                    
+
+                        
+
+                        
+Abb. 3: Darstellung transponierter Segmente als Kopien in LERAs Übersichtsleiste und in der Spaltensynopse.
+
+                    
+
+                
+
+            
+
+            
+
+                
+Judaistische Ergebnisse, die mit LERA erzielt wurden
+
+                
+Der anonyme kabbalistische Traktat 
+                    
+Keter Shem 
+Ṭov 
+(„Krone des guten Namens“; um 1260), der häufig auf der Basis eines Responsums von Salomo ben Adret (1235–1310) einem aschkenasischen Prediger, Abraham ben Axelrad aus Köln, zugeschrieben wird, bezeugt die auch in didaktischer Hinsicht für kabbalistische Lehren zentrale Synthese von Spekulationen zum vierbuchstabigen Gottesnamen mit dem Konzept der zehn innergöttlichen Kräfte (
+                    
+Sefirot
+). Die sechzig wichtigsten Handschriften, d.h. über die Hälfte der bekannten Textzeugen, wurden transkribiert und für die digitale Weiterverarbeitung in LERA mit Metadaten aufbereitet, wobei die Auswahl durch Kriterien wie textkritische Relevanz, Datierung, Umfang, Zustand und Verfügbarkeit bestimmt wurde. Neben der Standardversion, die in der Tradition und Forschung bereits durch Druckausgaben bekannt ist – allerdings in deutlich schlechterer Lesart als in der nunmehr vorliegenden Edition –, konnten eine Mischversion und eine Kurzversion unterschieden werden. Darüber hinaus enthalten einige Textzeugen auch Sondergut, das in die jeweiligen Versionen integriert wurde. Eine spezielle Rezeption liegt in MS Jerusalem, NLI, 541, im Kontext der Überlieferung von Schriften vor, die der Schule des Abraham Abulafia (1240–ca.1292) nahestehen. Mithilfe der digitalen Analyse in LERA wurden die stemmatologischen Beziehungen zwischen den Textzeugen untersucht sowie deren Zugehörigkeit zu einzelnen Versionen ermittelt. Die Ergebnisse dieser Forschungen führten zu einer überraschenden Neubewertung: die Versionen von 
+                    
+Keter Shem 
+Ṭov
+ unterscheiden sich nicht einfach nur darin, dass seine Mikroformen unterschiedlich konfiguriert sind, sondern dass diese Mikroformen gleichzeitig Bestandteile anderer Makroformen sind.
+ So ist 
+                    
+Keter Shem 
+Ṭov
+ mit anderen Makroformen wie z.B. den verschiedenen Versionen der sog. 
+                    
+Divre 
+Menaḥem
+ („Worte des 
+Menaḥem“)
+ oder 
+                    
+Perush ‘Eser Sefirot
+ („Auslegung der zehn 
+                    
+Sefirot
+“) sowie des Hohelied-Kommentars des Ezra von Gerona (13. Jahrhundert) überlieferungs- und traditionsgeschichtlich eng verbunden und teilt mit diesen einige Mikroformen. 
+                
+
+                
+Entsprechend des in Abschnitt 2 beschriebenen Vorhabens wurden sechs repräsentative Textzeugen für die Spaltensynopse der Printausgabe identifiziert und in LERA digital kollationiert. Aus dem Werkzeug kann eine Datei exportiert werden, die als Grundlage für den manuell verfeinerten Drucksatz genutzt wird. Erweitert um eine ausführliche Kommentierung und Übersetzung entsteht so derzeit die Printausgabe.
+
+                
+Die entstehende digitale Edition auf Basis der LERA-Arbeitsumgebung ergänzt diese Inhalte um die Möglichkeit, die vollständige Transkription aller Textzeugen einzusehen und automatisch eine eigene Spaltensynopse mit den hervorgehobenen Varianten von bis zu acht frei gewählten Textzeugen generieren zu lassen. Auch hierbei stehen die verschiedenen Visualisierungen zur Analyse sowie diverse Exportformate zur Verfügung.
+
+            
+
+            
+
+                
+Förderung
+
+                
+Die Arbeiten wurden durch die Deutsche Forschungsgemeinschaft im Rahmen des Projekts 
+                    
+Synoptische Edition des kabbalistischen Traktats Keter Shem 
+Ṭov
+ mit englischer Übersetzung, Stellenkommentar und rezeptionsgeschichtlichen Studien
+ unter der Leitung von apl. Prof. Dr. Gerold Necker, Seminar für Judaistik / Jüdische Studien, und Prof. Dr. Paul Molitor, Institut für Informatik, beide Martin-Luther-Universität Halle-Wittenberg, gefördert. Siehe 
+                    
+.
+                
+
+            
+
+        
+
+        
+https://lera.uzi.uni-halle.de
+ Dazu gehören Formate für die Präsentationals auch für die maschinenlesbare Weiterverarbeitung der Vergleichsergebnisse, wie HTML, LaTeX, PDF, JSON oder XML; letzteres nach den Richtlinien der Text Encoding Initiative (TEI).
+https://edinburgh-conan-doyle.org
+https://www.arendteditionprojekt.de
+https://kabbalaheditions.org
+ Die Grenze von acht Textfzeugen ist dabei eine Empfehlung für eine gute Lesbarkeit und keine fixe Beschränkung, welche der klassischen, spaltensynoptischen Darstellung von LERA Rechnung trägt.
+ Die von Peter Schäfer in der judaistischen Forschung etablierten Kategorien „Makroform“ und „Mikroform“ zur Beschreibung des Phänomens fluktuierender Textüberlieferung und -redaktion in der frühjüdischen Mystik werden im Folgenden aus heuristisch-pragmatischen Gründen übernommen, ohne damit bereits einer noch nicht vorliegenden Texttheorie mittelalterlicher kabbalistischer Texte vorzugreifen (Schäfer, 1981, 15f. und 199-201).
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Bremer Thomas / Molitor, Paul / Pöckelmann, Marcus / Ritter, Jörg / Schütz, Susanne
+ (2015): „Zum Einsatz digitaler Methoden bei der Erstellung und Nutzung genetischer Editionen gedruckter Texte mit verschiedenen Fassungen – Das Fallbeispiel der Histoire philosophique des deux Indes von Guiilaume Thomas Raynal“. 
+Internationales Jahrbuch für Editionswissenschaften
+, Hrsg. Rüdiger Nutt-Kofoth und Bodo Pachta, 
+editio
+ 29(1):29-51, de Gruyter. DOI: 10.1515/editio-2015-004
+                    
+
+                    
+
+                        
+Gründler, Beatrice / Pöckelmann, Marcus
+ (2018): „Adjusting LERA for the comparison of Arabic manuscripts of kalila wa-dimna”. In: 
+Proceedings of the 2018 Digital Humanities Conference (DH2018)
+, Mexico City, Mexico.
+                    
+
+                    
+
+                        
+Molitor, Paul / Necker, Gerold / Pöckelmann, Marcus / Rebiger, Bill / Ritter, Jörg
+ (2020): „Keter Shem Tov – Prozessualisierung eines Editionsprojekts mit 100 Textzeugen“. In: 
+DHd-2020 Book of Abstracts
+, Hrsg. Christof Schöch und Patrick Helling. DOI: 105281/zenodo.4621883
+                    
+
+                    
+
+                        
+Pöckelmann, Marcus / Medek, André / Molitor, Paul / Ritter, Jörg
+ (2015): „CATview – Supporing the investigation of text geneis of large manuscripts by an overall interactive visualization tool”. In: 
+Proceedings of the 2015 Digital Humanities Conference (DH2015)
+, Sydney, Australia.
+                    
+
+                    
+
+                        
+Pöckelmann, Marcus / Medek, André / Ritter, Jörg / Molitor, Paul
+ (2021): „A user-friendly platform for synoptical representations of multiple text witnesses”. Submitted for publication in 
+Digital Scholarship in the Humanities
+, April 2021.
+                    
+
+                    
+
+                        
+Roeder, Torsten
+ (2020): „Juxta Web Service, LERA, and Variance Viewer. Web based collation tools for TEI”. 
+RIDE
+, Issue 11: 
+Tools and Environments
+, (Eds.) Anna-Maria Sichani and Elena Spadini. DOI: 10.18716/ride.a.11.5.
+                    
+
+                    
+
+                        
+Schäfer, Peter
+ (1981): 
+Hekhalot-Studien
+, Tübingen: Mohr Siebeck
+                        
+.
+                    
+
+                
+
+            
+
+        
+
+    

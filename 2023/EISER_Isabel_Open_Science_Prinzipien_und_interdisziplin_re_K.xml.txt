@@ -1,0 +1,388 @@
+
+        
+
+            
+
+                
+Das D-WISE Projekt
+
+                
+Das Verbundprojekt D-WISE (
+                    
+www.dwise.uni-hamburg.de
+) ist ein 2021 gestartetes BMBF gefördertes interdisziplinäres Kooperationsprojekt an der Universität Hamburg zwischen den Geisteswissenschaften, vertreten durch das Institut für Empirische Kulturwissenschaft, und dem Fachbereich Informatik, vertreten durch die Arbeitsgruppe Language Technology. D-WISE entwickelt eine prototypische Arbeitsumgebung, die D-WISE Tool Suite (DWTS), in der sowohl innovative KI-Verfahren für die Analyse von multimodalen Daten entwickelt als auch hermeneutische Analysen der wissenssoziologischen Diskursanalyse digital unterstützt und erweitert werden.
+ Dabei wird in dem Projekt herausgearbeitet, zu welchen Zwecken, Zeitpunkten und in welcher Form Digital Humanities (DH)-Verfahren in qualitative diskursanalytische Wissensproduktion analytisch sinnvoll eingebunden werden können. Die erkenntnistheoretische Reflexion und Weiterentwicklung hermeneutischer Methoden in der Nutzung (halb-)automatisierter diskursanalytischer Forschungsprozesse sind integraler Bestandteil innerhalb der konzeptuellen Forschung des D-WISE Projekts. Es sollen Fragen danach beantwortet werden, wie Automatisierung und DH-Methoden sinnvoll in qualitative diskursanalytische Ansätze und Wissensproduktion integriert werden können, welche bestehenden Methoden und Tools dafür übernommen werden können und welche dafür neu entwickelt werden müssen.
+                
+
+                
+Das D-WISE Projekt zielt darauf ab jene Herausforderungen zu adressieren, denen sich Forschende im Hinblick auf methodologische Ansätze aus den Digital Humanities (DH) und der Diskursanalyse sowie dem zunehmenden Umgang mit digitalen Tools und offenen Korpora, bestehend aus heterogenen, multimodalen und großen Datenmengen gegenübersehen. Dabei zielt das Projekt auch darauf ab, den Mangel an digitalen Lösungen für die Analyse von Pluralität von Bedeutungen in multimodalen Materialien zu beheben sowie Dokumentations- und Reflexionsprozesse diskursanalytischen Arbeitens und die Weiterentwicklung der Diskursanalyse als Methode selbst zu unterstützen.
+
+                
+In Co-Creation Ansätzen zwischen Informatik und Geisteswissenschaften wird die diskursanalytische Arbeitsweise durch digitale Methoden erweitert und an digitale Modalitäten angepasst. Das Projekt innoviert dabei sowohl die informatische KI-Technologie kontextorientierter Embedding-Repräsentationen als auch hermeneutische Arbeitsweisen zur wissenssoziologischen Diskursanalyse. Dabei steht auch die Überbrückung der Lücke zwischen strukturellen Mustern, die mit digitalen Methoden aufgedeckt werden, und interpretativen Prozessen menschlicher Bedeutungsproduktion im Mittelpunkt des kollaborativen Ansatzes der Empirischen Kulturwissenschaften und Computerlinguistik innerhalb des D-WISE-Projekts. Dabei legt der D-WISE-Ansatz einen besonderen Akzent auf die Interaktion zwischen Mensch und Algorithmus bzw. Maschine, um KI-Forschungssysteme zu verbessern, die sich auf den menschlichen Erkenntnisprozess auswirken (Oeste-Reiß et al. 2021: 221, 149); Als Datenanalysewerkzeug mit Komponenten des maschinellen Lernens wird die DWTS zukünftig einen interaktiven und wechselseitigen Prozess bieten, in dem maschinell erstellte Vorschläge von Annotator:innen akzeptiert, abgelehnt oder korrigiert werden können, wodurch das maschinelle Lernen mit der Zeit verbessert wird (Yimam et al. 2017, Koch et al. 2022: 77).
+
+            
+
+            
+
+                
+Computergestützte Diskursanalyse und ihre Entwicklungspotenziale
+
+                
+Anthropologisch und soziologisch orientierte Diskursanalysen haben zum Ziel diskursive Konstruktionen von Wirklichkeit, von Wissen oder von Macht-/Wissensbeziehungen zu untersuchen, wobei sie von der Annahme ausgehen, dass der Sprachgebrauch in diskursiven Praktiken eben jene Gegenstände konstituiert, die sie als Wissen behandelt. Grundlage digitaler Ansätze in der Diskursanalyse sind Kodierungsprozesse in Anlehnung an die Grounded Theory: Annotieren und Extrahieren von Zitaten aus Transkripten, Erstellen von Codes, Sub-Codes und Parent Codes und der Identifizierung von Konzepten oder Themen. Die Analyse von Diskursen erfolgt in zirkulären Prozessen der Suche, Auswahl, Analyse und Interpretation von Forschungsdaten, unterstützt durch Literaturarbeit, und wird iterativ durchgeführt, bis die Forschungsfrage beantwortet ist. 
+
+                
+
+                    
+
+                    
+Abb. 1: Schaubild des D-WISE Projektziels der Unterstützung und Erweiterung soziologisch und anthropologisch orientierter Diskursanalysen, © D-WISE
+
+                
+
+                
+Die Verwendung von digitalen Werkzeugen in der Analyse von Diskursen ist weit verbreitet: Ob Organisation, Kodierung, Annotation oder Analyse von Forschungsmaterial – digitale Tools bieten eine nützliche Ergänzung in der qualitativen und quantitativen Datenanalyse. Lizenzbasierte und kostenpflichtige qualitative Datenanalysetools wie MAXQDA, Atlas.ti oder NVivo sind bemüht umfangreiche ‚All-in-one-Lösungen‘ zu bieten und verschiedenen Anforderungen gleichzeitig gerecht zu werden. Zur Verfügung stehende Open Source Tools hingegen konzentrieren sich oftmals auf wenige spezialisierte Funktionen, die dafür teilweise sehr gut beherrscht werden.
+ Catma oder WebAnno sind entsprechende Beispiele für offene Werkzeuge, die jedoch noch viele Wünsche für die qualitative Diskursanalyse offenlassen – Lücken, die mit D-WISE geschlossen werden sollen (Koch et al. 2022: 81; Gius et al. 2021; Eckart De Castilho et al. 2016).
+ Dabei konzentriert sich das Projekt vornehmlich auf drei Aspekte, in denen Entwicklungspotenzial im Bereich digitaler Tools und semi-automatisierter Funktionen identifiziert wurden: Analysen, Kodierungen und Annotationen von multimodalen Daten, die Text, Bild, Audio und Video beinhalten; das Crawlen, Filtern und Management von großen digital zu Verfügung stehenden Datenmengen (‚big data‘); sowie Prozesse der Dokumentation und Reflexion von diskursanalytischen Verfahren und Methoden sowie der Verwendung und des Einflusses digitaler Tools.
+                
+
+            
+
+            
+
+                
+Digitale Diskursanalyse und Hermeneutik in D-WISE
+
+                
+Mit der zunehmenden Integration von IT-Werkzeugen und -Infrastrukturen in die geisteswissenschaftliche Forschung kommt es zu ontologischen Veränderungen in der Wissensproduktion; neue soziale, ethische und/oder politische Konstellationen werden verfestigt, gestört oder geschaffen (Koch 2018: 71). Die Interaktion mit und Interpretation von Datenmodellierung oder Mustererkennung als grundlegende Operationen in den Digital Humanities können die Perspektive von Geisteswissenschaftler:innen auf ihre Quellen verändern (Schwandt 2020: 19). Die zunehmende Integration solcher strukturellen Ansätze in den hermeneutischen Ansätzen diskursanalytischer Forschung kann als sich verfestigende Infrastruktur für die Sozial- und Kulturforschung verstanden werden. Dies wirft methodologische und epistemologische Fragen hinsichtlich der Erforschung sozialer Wirklichkeit und der Pluralität von Bedeutung auf und bringt die Herausforderung mit sich, dass Diskurs- und Arbeitspraktiken in Standardformen gepresst werden (Koch 2018: 70; Koch et al. 2022: 73). Die wachsende Hybridität von manuellen und digitalen Herangehensweisen im Forschungsalltag macht eine Neuverhandlung von einer Hermeneutik notwendig, die „das Dazwischen“ gegenwärtiger geisteswissenschaftlicher Praktiken problematisiert (Fickers und Tatarinov 2022: 7, 11).
+
+                
+
+                
+Im Mittelpunkt dieser Entwicklung steht auch im D-WISE Projekt die Frage, wie Menschen und digitale Strukturen interagieren und auf welche Weise diese Interaktion menschlichen und methodologischen Bedürfnissen dient (Koch et al. 2022: 70). Unterschiede in Forschungsdesign und Methodik (quantitatives bzw. maschinengestütztes ‚distant reading‘ und qualitatives bzw. individuelles ‚close reading‘ von Korpora) sowie in den Ambitionen (Auffinden allgemeiner wissenschaftlicher Gesetze versus Produktion originärer subjektiver Interpretationen in den Geisteswissenschaften) schaffen neue Herausforderungen und Entwicklungspotenziale für das Forschungs- und Tool-Design (Fickers und Tatarinov 2022: 5).
+
+                
+Die Digital Humanities sind davon geprägt eine vielfältige und nach wie vor im Bestehen begriffene Forschungslandschaft zu sein, die eine Reihe von geisteswissenschaftlichen und informatischen Forschungen, Methoden und Technologien umfassen. Dabei kommt immer wieder die Frage auf, inwiefern die Geisteswissenschaften durch ihre Interaktion mit Technologie, Medien und digitalen Methoden Teil an diesen haben (Schlicht 2021: 26 zit.n. Svensson; Fickers und Tatarinov 2022: 6-7). Während komplexe Mensch-Computer-Interaktionen zunehmend in Forschungsprozesse eingebunden werden, können diese zumeist nur in phänomenologisch-deskriptiver und ethisch-normativer Hinsicht ausreichend verstanden werden (Fritz et al. 2020: 3). Teil dabei entstehender Reflexionsprozesse sind auch Herangehensweisen wie die sogenannten „screwmeneutics“, wobei in die digitalen Werkzeuge als Mittel der explorativen Hermeneutik eingetaucht wird und durch spielerisches Herumprobieren und „screwing around with data“ (Fickers und Tatarinov 2022: 9 zit.n. van Zundert 2016 und Ramsay 2014) Erkenntnisse gewonnen, ‚user stories‘ und Kritiken formuliert werden gegenüber angewandten Methoden und Tools (Koch et al. 2022: 73-76; Schwandt 2020: 20).
+
+                
+
+                
+Für die Entwicklung zentraler Innovationen für die qualitative Datenanalyse werden in D-WISE in einem konzeptuellen Rahmen der ‘manuellen Analyse’ bereits vorhandene Features und Tools sowie deren technische und methodische Nutzbarkeit von Projektinternen und -externen Forscher:innen aus verschiedenen Bereichen der Geisteswissenschaften und der Informatik erprobt. Funktionalitäten wie das Kodieren, Dokumentieren oder Visualisieren werden in Co-Creative Prozessen auf ihre Nützlichkeit für Diskursanalyse im Allgemeinen sowie sinnvolle Implementierung für die Tool Suite getestet, eruiert und reflektiert. Diese Integrierung von Erfahrungen und Feedbackschleifen von Wissenschaftler:innen mit verschiedenen Forschungsschwerpunkten macht die DWTS robust für disziplinübergreifende diskursanalytische Ansätze. 
+
+                
+Diese wechselseitige Arbeitsweise, die sich in der Entwicklung der D-WISE Tool Suite manifestiert hat, wird als methodischer Ansatz zur Kombination von manuellen und digitalen Analysemethoden in der qualitativen und quantitativen Sozial- und Kulturforschung angewandt. Kern dieser konzeptuellen Forschung beinhaltet auch die epistemologische Reflexion über Relevanz und Validität der erhobenen Daten, der angewandten Methoden sowie verwendeten Tools und hermeneutischen Prozesse. In diesem wechselseitigen Ansatz von manueller und digitaler Arbeit sollen die User und der Prozess der Diskursanalyse mit digitalen Lösungen, Algorithmen und KI effektiv unterstützt werden und jene Forschungsaspekte ausgemacht werden, in denen hermeneutische Interpretationen notwendig werden. Damit einher geht eine Reflexion darüber, wie digitale Tools und Methoden diskursanalytische Forschungsprozesse generell verändern. Direkt im Forschungsprozess entstanden, legt eine solche Zirkulation von Agency in der Mensch-Computer-Interaktion den Grundstein für diesen Ansatz von wechselseitiger Beeinflussung, Anreicherung und entsprechenden Reflexionsprozessen.
+ Während für die Entdeckung und Produktion von Wissen, von Innovation, Integration und Wiederverwendung von Daten eine gute Verwaltung zentral ist, wird die D-WISE Tool Suite den Anforderungen der Prinzipien der Open Science angepasst, um den Forderungen nach einem größtmöglichen und inklusiven Nutzen von Daten, Kollaboration und ihren Werkzeugen gerecht zu werden (Wilkinson et al. 2016; Schlicht 2021: 29).
+
+                
+
+                
+Neben der Tool Entwicklung findet sich der Wert des Projekts in der Konzeptualisierung selbst. Zentraler Aspekt ist dabei der hermeneutische Ansatz in D-WISE: Die epistemologische Reflektion und die Weiterentwicklung hermeneutischer Methoden und semi-automatisierter Prozesse. Mit diesem methodisch-konzeptuellen Ansatz will das Projekt die Lücke schließen zwischen manuellen und digitalen diskursanalytischen Ansätzen: Dies beinhaltet auf forscherischer Projektseite einerseits den interdisziplinären Brückenschlag durch Co-Creation Konzepte sowie andererseits die Überbrückung auf technischer und methodisch-diskursanalytischer Ebene: zwischen strukturellen Mustern, die durch digitale Methoden erkannt werden sowie hermeneutischen und interpretativen Prozessen der menschlichen Bedeutungsgebung und Wissensproduktion – zwischen qualitativen Ansätzen und ‚close readings‘ und quantitativen Ansätzen des ‚distant readings‘. Teil dessen ist auch die Reflexion der Veränderung empirischer Forschung durch digitale Technologien. 
+
+                
+Dabei dient die Tool Suite als Bindeglied zwischen manueller und digitaler sowie quantitativer und qualitativer Analyse; Durch Hin- und Anleitung zu proprietären Tools, durch semi-automatisierte Kodierungen, Visualisierungen und Mappings können Lücken zwischen quantitativer und qualitativer Analyse überbrückt werden. Durch Weiterentwicklungen von semi-automatisierter Annotation und der Produktion von Sub-Korpora oder Code-Gruppen werden quantitative Verfahren beschleunigt und es kann sich schrittweise einem axialen Kodieren und einer qualitativen Feinanalyse angenähert werden. Der forscherische Schwerpunkt in D-WISE zu der Frage, welche digitalen Tools und Funktionen sinnvoll eingesetzt werden können und wo hingegen der Mensch mit hermeneutischer und interpretativer Leistung sowie mit Skalierungen und Medienwechsel eingreifen muss, ist der methodisch-theoretische und konzeptuelle Rahmen für die Erforschung dieser Überbrückung von quantitativ und qualitativ, von ‚distant‘ und ‚close reading‘, von digital und manuell geleiteten sowie hermeneutisch-interpretativen Zugängen zu Diskursanalyse.
+
+            
+
+            
+
+                
+Die D-WISE Tool Suite als Open Source Software 
+
+                
+Der Prototyp der DWTS wird als webbasierte Open Access Serverarchitektur entwickelt und auf Basis bereits erfolgreich etablierter DH-Methoden und digitalen Tools und deren Reflektion und Evaluation konzipiert.
+ Die Tool Suite ist projekt-zentriert aufgesetzt, und soll kollaboratives Arbeiten und alle diskursanalytischen Schritte unterstützen. Gestartet im Mai 2021, befindet sich die Tool Suite in einem frühen prototypischen Stadium, in dem zunächst erste grundlegende Funktionen und erwartete Standards umgesetzt wurden, wie das Suchen, Filtern, Kodieren, Annotieren sowie Dokumentieren.
+
+                
+
+                
+Der im Rahmen des D-WISE Projektes entwickelte Prototyp der D-WISE Tool Suite wird angelegt als Free and Open Source Software (FOSS) zur digitalen Unterstützung qualitativer Datenanalyse und Diskursanalysen (Schlicht 2021: 34). Eines der Ziele ist es dabei die DWTS so zu entwickeln, dass sie entsprechende Kriterien in Bezug auf Klimafreundlichkeit, Nachhaltigkeit, Langlebigkeit und Offenheit erfüllt (Jentsch und Porada 2020: 91).
+ Dabei wird auch den FAIR-Leitprinzipien für wissenschaftliches Datenmanagement gefolgt, die entwickelt wurden, um den Umgang mit Forschungsdaten, die Ausweitung des Geltungsbereiches von Open Access sowie eine breite Implementierung der Open Science Prinzipien zu unterstützen.
+ Die Idee der Tool Suite im Sinne eines Werkzeug- oder Baukastens strebt an, Tools und Features sowohl innerhalb der Tool Suite anzubieten als auch die Verwendung externer Tools zu ermöglichen und anzuleiten. Dabei sollen, wo immer möglich, extern wie intern, Open-Source-Features, -Tools und -Lösungen implementiert werden (Fischer et al. 2023). Vor allem proprietäre Tools kommen dabei zum Einsatz, die Ansprüche an die Arbeitsweise der qualitativen Diskursanalyse erfüllen und digitale Verfahren entsprechend sinnvoll einbinden. Aus der Implementierung jener Open Science Prinzipien ergeben sich folglich Fragen nach Inklusivität und Gleichberechtigung; Sie sollen zu einer höheren Sichtbarkeit und Auffindbarkeit führen sowie schnellere Verbreitung von Forschungsergebnissen und freien Zugang unabhängig von institutioneller Zugehörigkeit ermöglichen (Schlicht 2021: 28, 29 zit.n. Drucker 2009). Die Wahl von freier und quelloffener Software (FOSS) stellt zudem sicher, dass der Quellcode dieser Werkzeuge stets nachvollzogen werden kann, von Nutzer:innen veränderbar ist und Verarbeitungsschritte dokumentiert, reproduzierbar sowie interoperabel sind – im Idealfall über einen längeren Zeitraum über die Projektphase hinaus (Jentsch und Porada 2020: 92).
+
+                
+
+            
+
+            
+
+                
+Schlussbemerkung: Offener Zugang und Interdisziplinärer Austausch
+
+                
+Kooperatives und interdisziplinäres Arbeiten sowie Fragen nach Open Access gewinnen in den Digital Humanities zunehmend an Bedeutung. Vor allem geisteswissenschaftlich ausgerichtete Forschungsteams interdisziplinärer Projekte können einen wichtigen kritischen Beitrag leisten, um mittels der Verwendung von Werkzeugen, Paradigmen und Konzepten digitaler Technologien, die Idee von digitalen Tools, deren Zugänglichkeit und Instrumentalität neu zu überdenken. Durch die kontinuierliche Zusammenarbeit zwischen Informatik und Geisteswissenschaften wird im D-WISE Projekt sichergestellt, dass in iterativen Zirkeln der Software-Entwicklung die Umsetzung von inklusiven und möglichst unbefangenen Wissens- und Untersuchungsparadigmen unterstützt werden (Koch et al. 2022: 71; Schlicht 2021: 46; zit.n. Liu 2012: 501-502). Dieser Forschungsprozess ist technisch als zyklischer Prozess entwickelt, somit flexibel auf iteratives Arbeiten anpassbar und wiederverwendbar und entspricht selbst einem hermeneutischen Zirkel, der durch wiederholtes Hinterfragen und ständige Erweiterung des Wissensstandes immer wieder zu neuen Fragen, Erkenntnissen und damit zu einem tieferen Verständnis des Phänomens führt. Kritisch reflektiert werden dabei neben der Entwicklung der Tool Suite, auch Prozesse der Wissensproduktion und das zugänglich machen von Wissen und Werkzeugen, angewandten Methoden und Fragestellungen. Die Geisteswissenschaften dienen dabei, wie Liu es formuliert, als „Vektor“ für den Import fremder Wissensparadigmen: Sie bringen neue Phänomen-Ebenen ein durch beispielsweise quantitativ definierte Strukturen, Formen und Zyklen; in den Analyse- und Interpretationsverfahren werden durch digitale Technologien Modellierungen eingeführt und in der Wissensproduktion wird das Repertoire von Ergebnispräsentationen um Visualisierungen, Programmen oder Datenbanken erweitert (Schlicht 2021: 47; zit.n. Liu 2009: 27).
+
+            
+
+        
+
+        
+
+
+
+
+
+                         Das Projekt orientiert sich an soziologisch und anthropologisch ausgerichteten Diskursanalysen, vor allem an dem von Reiner Keller aufgesetzten Forschungsprogramm „Wissenssoziologische Diskursanalyse“, siehe z.B. Keller 2011.
+                    
+
+
+
+                         Digitale Tools unterstützen durch (halb-)automatisierte Verfahren die methodisch geleitete Reduktion größerer Datenmengen oder dienen der Identifikation potenziell relevanter Daten für die manuelle Bearbeitung, Analyse und Interpretation.
+                    
+
+
+
+                         Als weitere Tools zu nennen sind beispielsweise AntConc, Voyant, New/s/leak, sentText oder neue Projekte wie Label Sleuth und InsightNet.
+                    
+
+
+
+                         Fickers und Tatarinov glauben, dass, „indem die digitale Hermeneutik den intellektuellen Raum zwischen dem ‚Unbekannten‘ und dem ‚Vertrauten‘ erforscht, nimmt sie eben jenen Raum ein, den der Wissensphilosoph Hans-Georg Gadamer als ‚Ort‘ der Hermeneutik identifiziert hatte - nämlich ihr Dazwischen.“ (Fickers und Tatarinov 2022: 11; zit.n. Gadamer).
+                    
+
+
+
+                         ‚User stories‘ sind durch Endnutzer:innen formulierte Software-Anforderungen gerichtet an Software Developer zur Weiterentwicklung zentraler Funktionen. 
+                    
+
+
+
+                         In der Mensch-Computer-Interaktion unterstützt einerseits der Mensch computationelle Vorgänge und verbessert das maschinelle Lernen und digitale Tools und andererseits unterstützen digitale Tools menschliche Forschungsprozesse, indem sie diese z.B. beschleunigen oder vereinfachen.
+                    
+
+
+
+                         Der Begriff Open Science verbindet als Oberbegriff verschiedene Ideen rund um den digitalen und freien Zugang.
+                    
+
+
+
+                         Neben den von externen Fellows eingebrachten Erfahrungen mit digitalen Tools wird in internen Tool-Analysen vor allem MAXQDA zur Testung und Evaluation herangezogen. 
+                    
+
+
+
+                        
+                            
+ Eine Demo der Tool Suite sowie erste Evaluationen, bearbeitete Korpora und Ergebnisse werden Anfang 2023 erwartet.
+
+                        
+                    
+
+
+
+                         Die Autoren weisen auf die Auswahlkriterien in dem Leitfaden „Software Evaluation Criteria-based Assessment“ hin, veröffentlicht von dem Software Sustainability Institute.
+                    
+
+
+
+                         Die FAIR Leitprinzipien besagen, dass die Organisation von Daten so ausgeführt werden sollte, dass Daten „
+                            
+F
+indable, 
+                            
+A
+ccessible, 
+                            
+I
+nteroperable, and 
+                            
+R
+eusable“ sind (Schlicht 2021: 33-34; Wilkinson 2016: 2).
+                        
+                    
+
+
+
+                         Quellcodes und Verarbeitungsschritte werden über Github dokumentiert (
+                            
+https://github.com/uhh-lt/dwts
+). Die Tool Suite kann von Nutzer:innen über eigene Server installiert werden, auch um so einen sicheren Umgang mit sensiblen Daten zu ermöglichen.
+                        
+                    
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Eckart De Castilho, Richard, Éva Mújdricza-Maydt, Seid Muhie Yimam, Silvana Hartmann, Iryna Gurevych, Anette Frank und Chris Biemann.
+ 2016. “A Web-Based Tool for the Integrated Annotation of Semantic and Syntactic Structures.” In 
+                        
+Proceedings of the Workshop on Language Technology Resources and Tools for Digital Humanities (LT4DH)
+, 76–84. 
+                        
+https://aclanthology.org/W16-4011
+.
+                    
+
+                    
+
+                        
+Fickers, Andreas und Juliane Tatarinov.
+ 2022. 
+                        
+Digital History and Hermeneutics: Between Theory and Practice
+. De Gruyter. 
+                        
+https://doi.org/10.1515/9783110723991
+.
+                    
+
+                    
+
+                        
+Fischer, Tim, Isabel Eiser, Florian Schneider, Fynn Petersen-Frey, Chris Biemann, Gertraud Koch. 
+2023. „D-WISE – Wissenssoziologische Diskursanalyse“. 
+                        
+DHd2023 Luxemburg/Trier. Open Humanities – Open Culture. Konferenzabstracts.
+
+                    
+
+                    
+
+                        
+Fritz, Alexis, Wiebke Brandt, Henner Gimpel und Sarah Bayer. 
+2020. “Moral Agency without Responsibility? Analysis of Three Ethical Models of Human-Computer Interaction in Times of Artificial Intelligence (AI).” 
+                        
+De Ethica
+ 6(1): 3–22. 
+                        
+https://doi.org/10.3384/de-ethica.2001-8819.20613
+.
+                    
+
+                    
+
+                        
+Gius, Evelyn et al.
+ Catma 6 (Version 6.3). Zenodo, Online (2021).
+                    
+
+                    
+
+                        
+Jentsch, Patrick und Stephan Porada
+. 2020. “From Text to Data: Digitization, Text Analysis and Corpus Linguistics.” In 
+                        
+Digital Methods in the Humanities: Challenges, Ideas, Perspectives
+, hg. von Silke Schwandt, 89-128. Bielefeld: transcript Verlag. 
+                        
+https://doi.org/10.14361/9783839454190-004
+
+                        
+.
+
+                    
+
+                    
+
+                        
+Keller, Reiner.
+ 2011. 
+                        
+Wissenssoziologische Diskursanalyse: Grundlegung eines Forschungsprogramms
+. Wiesbaden: VS Verlag für Sozialwissenschaften. 
+                        
+https://doi.org/doi:10.1007/978-3-531-92058-0
+.
+                    
+
+                    
+
+                        
+Koch, Gertraud.
+ 2018. “The Ethnography of Infrastructures. Digital Humanities and Cultural Anthropology.” In 
+                        
+Cultural Heritage Infrastructures in Digital Humanities
+, hg. von Agiatis Benardou, Erik Champion, Costis Dallas, and Lorna M. Hughes, 63–81. Abingdon, Oxon: Routledge. 
+                        
+https://doi.org/doi:10.4324/9781315575278-5
+.
+                    
+
+                    
+
+                        
+Koch, Gertraud, Chris Biemann, Isabel Eiser, Tim Fischer, Florian Schneider, Teresa Stumpf, und Alejandra Tijerina García. 
+2022. “D-WISE Tool Suite for the Sociology of Knowledge Approach to Discourse.” In 
+                        
+Culture and Computing
+, hg von Matthias Rauterberg, 68–83. Cham: Springer International Publishing. 
+                        
+https://doi.org/doi:10.1007/978-3-031-05434-1_5
+.
+                    
+
+                    
+
+                        
+Oeste-Reiß, Sarah, Eva Bittner, Izabel Cvetkovic, Andreas Günther, Jan Marco Leimeister, Lucas Memmert, Anja Ott, Bernhard Sick, Kathrin Wolter. 
+2021. Hybride Wissensarbeit. Informatik Spektrum 44(3): 148–152. 
+                        
+https://doi.org/doi: 10.1007/s00287-021-01352-0
+.
+                    
+
+                    
+
+                        
+Schlicht, Helene.
+ 2020. “Open Access, Open Data, Open Software?: Proprietary Tools and Their Restrictions.” In 
+                        
+Digital Methods in the Humanities: Challenges, Ideas, Perspectives
+, hg. von Silke Schwandt, 25–58. Bielefeld: Bielefeld University Press. 
+                        
+https://doi.org/doi:10.1515/9783839454190-002
+.
+                    
+
+                    
+
+                        
+Schwandt, Silke
+. 2020. 
+                        
+Digital Methods in the Humanities: Challenges, Ideas, Perspectives
+. Bielefeld: transcript Verlag/ Bielefeld University Press. 
+                        
+https://doi.org/10.14361/9783839454190
+.
+                    
+
+                    
+
+                        
+Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg et al.
+ 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” 
+                        
+Scientific Data
+ 3(1): 1-9. 
+                        
+https://doi.org/10.1038/sdata.2016.18
+.
+                    
+
+                    
+
+                        
+Yimam, Seid Muhie, Steffen Remus, Alexander Panchenko, Andreas Holzinger, and Chris Biemann
+. 2017. “Entity-Centric Information Access with the Human-in-the-Loop for the Biomedical Domains.” In 
+                        
+Proceedings of the Biomedical NLP Workshop associated with RANLP, 
+42-48. 
+                        
+https://doi.org/10.26615/978-954-452-044-1_006
+.
+                    
+
+                
+
+            
+
+        
+
+    

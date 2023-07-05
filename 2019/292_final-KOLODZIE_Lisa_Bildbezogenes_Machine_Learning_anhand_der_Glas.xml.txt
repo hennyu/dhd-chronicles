@@ -1,0 +1,157 @@
+
+        
+
+            
+Farbe ist ein essentieller Teil alltäglicher Kommunikation ohne Worte. Sie kann Gefühle und Gedanken ausdrücken und beeinflussen, ist Teil des Kulturkreises in dem wir aufwachsen und ist daher ein Schlüsselelement in der Vermittlung von Informationen.
+
+            
+Die Glasmalerei als ein zentrales Kommunikationsmedium des Mittelalters, stellt einen wichtigen Gegenstand historischer Forschung dar, lebt von diesem Konzept. Besonders auffällige Merkmale der Glasmalerei sind die Strahlkraft der verwendeten Farben sowie die sakrale Bedeutung, die mit dem Einsatz bestimmter Pigmentierungen einher geht.
+
+            
+Diese Präsentation beschäftigt sich damit, die ausführlich aufgearbeiteten Standfigurenbilder und Ornamentschieben der Elisabethkirche in Marburg hinsichtlich der verwendeten Farben mit Digitalen Methoden zu untersuchen. Dazu werden Techniken aus den Bereichen 
+                
+Machine Learning
+ und 
+                
+Computer Vision
+ im Rahmen einer Masterarbeit herangezogen. Ziel der Arbeit ist das Clustering einer Vereinfachung der Farbwerte von Glasfenstern mit einem Rückbezug auf die Metadaten der Bilder.
+            
+
+            
+Das Projekt Corpus Vitrearum Medii Aevi erfasst und ediert auf internationaler Ebene den Gesamtbestand mittelalterlicher Glasmalereien in Europa und Nordamerika sowie die jeweiligen Restaurierungszustände der Objekte. Die Ergebnisse dieser Analysen werden in gedruckten Bildbänden publiziert. Die Druckeditionen widmen sich einer ausführlichen ikonographischen, stilistischen und handwerklichen Analyse, die Rückschlüsse auf Baufortschritt von Kirchen oder den Netzwerken von Stiftern und Werkstätten zulässt. Die digitalen Bilder des CVMA Deutschland werden über Metadaten mit Normdatensätzen verknüpft und im Onlinebildarchiv zugänglich gemacht.
+
+            
+Einen besonders interessanten Datensatz stellen die Standfigurenbilder und Ornamentscheiben der Elisabethkirche in Marburg dar. Bei diesen beiden Arten der Glasmalerei überschneiden sich technologische Einheit (Fotografie einer einzelnen Scheibe) und thematisch-motivische Einheit. Im Gegensatz zum ausgewählten Beispieldatensatz bestehen Glasmalereien häufig aus großen Fenstern, deren Motive aus mehreren Einzelscheiben bestehen. Diese beziehen sich hinsichtlich der Farbigkeit der abgebildeten Motive aufeinander und qualifizieren sich daher nicht für eine Einzelscheibenanalyse, die im Rahmen dieser Arbeit vollzogen wird. Zudem bietet das Buch 
+                
+Die Elisabethkirche zu Marburg in ihrer ursprünglichen Farbigkeit
+ für die im Vorfeld ausgewählten Fenster einen manuell ausgewerteten Vergleichsdatensatz. Michler analysiert die Glasmalereien hier ausführlich und fügt jeder Untersuchung eine Grafik der verwendeten Farben, sowie ihren Anteil am jeweiligen Motiv bei.
+            
+
+            
+Automatische Bildanalyse mithilfe von Machine Learning wird in den Digitalen Geisteswissenschaften als Methode häufig für das Erkennen handschriftlicher Texte angewendet oder um beispielsweise Textdaten aus retrodigitalisierten Editionen zu gewinnen. Der erste Schritt in einem solchen Prozess ist in vielen Fällen das Reduzieren von Farbwerten. Diese Reduktion auf Schwarz-Weiß-Bilder vereinfacht es der verwendeten Software Linien zu erkennen und Buchstaben zuzuordnen. Daher gilt es, andere Tools und Techniken für den Bereich der im Vorfeld als zentral identifizierten Eigenschaft der Glasfenster ausfindig zu machen die eine Analyse der Farbwerte in den Vordergrund stellen.
+
+            
+In filmwissenschaftlichen Bildanalysen finden auch Graustufen und Farbwerte Beachtung, beispielsweise in quantitativer Farb- und Perspektivenanalyse von Szenen oder sogar ganzen Filmen. Ein Beispiel dazu bildet der Aufsatz 
+                
+Dead and Beautiful: The Analysis of Colors by Means of Contrasts in Neo-Zombie Movies
+ von Pause und Walkowski. Daher ist der Bearbeitungsansatz bisher eher in dieser Fachdisziplin zu suchen als in der Kunstgeschichte.
+            
+
+            
+Für die Analyse ist es zunächst wichtig, wie Farbdaten in Bildern abgespeichert werden. Dafür ist eine genauere Betrachtung sowohl von Bildspeicherungsformaten, Farbräumen (CMYK, RGB, HSV, etc.) und -profilen (sRGB, Adobe RGB, etc.), als auch von Visualisierungen der Pixelangaben vonnöten. Ziel ist hierbei herauszufinden, welche Grundlagen die Farbdaten der Bilder vergleichbar und für Machine Learning-Algorithmen verarbeitbar machen und diese Erkenntnisse auf den Datenbestand anzuwenden.
+
+            
+Nach der Auswertung der Bilddaten werden die Grundlagen von Machine Learning erklärt. Zunächst geht es um die Unterschiede zwischen Supervised und Unsupervised Machine Learning sowie der Auswahl des richtigen Algorithmus nach dem im Vorfeld gesteckten Ziel. Dazu wird insbesondere die Bibliothek TensorFlow eingesetzt, welche frei über Github verfügbar und ausführlich dokumentiert ist.
+
+            
+Basierend auf den genannten Grundlagen wird ein zweistufiges Verfahren angewandt: In der Datenaufbereitung werden die Bilder mithilfe von Unsupervised Algorithmen vergleichbar gemacht. Dieser Schritt ermöglicht das manuelle Festlegen einer Clustermenge, die die Farbwerte der unterschiedlich großen Bilddateien vergleichbar macht. An dieser Stelle werden eine Ausgabe von Farbwerten von drei, fünf und sieben Farbclustern pro Bild, die in einer Tabelle ausgegeben werden, gegenübergestellt. Im zweiten Schritt werden die so vergleichbar gemachten Daten mit einem ebenfalls Unsupervised arbeitenden Clustering-Algorithmus gruppiert. Auch hier ist es wichtig zu betrachten, welche Aussage getroffen werden soll und inwiefern das Verwenden der vorher beschriebenen Cluster die Ergebnisse der Algorithmen beeinflusst.
+
+            
+Die Ergebnisse werden in den kunsthistorischen Kontext der erfassten Glasmalerei des Corpus Vitrearum Medii Aevi analytisch eingearbeitet. Der Text beschreibt das geplante Vorgehen im Rahmen einer Masterarbeit, deren Ergebnisse sich nur aus einem geringen Teil des Bildmaterials des Corpus Vitrearum Medii Aevi zusammensetzt. Von Interesse ist nach Abschluss der Arbeit das Ausweiten auf zusätzliche Bestände.
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Binding, Günther / Speer, Andreas (Hrsg.) (1994):
+ 
+                        
+Mittelalterliches Kunsterleben nach Quellen des 11. Bis 13. Jahrhunderts
+. 
+                        Stuttgart- Bad Cannstatt : Frommann-Holzboog.
+                    
+
+                    
+
+                        
+Bühler, Peter (u.a.) (2018):
+ 
+                        
+Digitale Farbe. Farbgestaltung – Colormanagement – Farbverarbeitung
+. 
+                        Berlin, Heidelberg : Springer Berlin Heidelberg.
+                    
+
+                    
+
+                        
+Frodl-Kraft, Eva (1970):
+ 
+                        
+Die Glasmalerei. Entwicklung, Technik, Eigenart
+. 
+                        Wien [u.a.] : Schroll.
+                    
+
+                    
+
+                        
+Géron, Aurélien (2017):
+ 
+                        
+Hands-On Machine Learning with Scikit-Learn &amp; TensorFlow
+. 
+                        Beijing; Boston; Farnham; Sebastopol; Tokyo : O'Reilly
+                    
+
+                    
+
+                        
+Kurz, Susanne (2016):
+ 
+                        
+Digital Humanities. Grundlagen und Technologien für die Praxis
+. 
+                        Wiesbaden : Springer Vieweg.
+                    
+
+                    
+
+                        
+Michler, Jürgen (1984):
+ 
+                        
+Die Elisabethkirche zu Marburg in ihrer ursprünglichen Farbigkeit
+. 
+                        Marburg : Elwert.
+                    
+
+                    
+
+                        
+Open Source for Science (2018):
+ 
+                        
+TensorFlow-Course
+. 
+                        https://github.com/osforscience/TensorFlow-Course [letzter Zugriff: 12.01.2019].
+                    
+
+                    
+
+                        
+Pause, Johannes / Walkowski, Niels-Oliver (2017):
+ 
+                        
+Dead and Beautiful: The Analysis of Colors by Means of Contrasts in Neo-Zombie Movies
+, 
+                        in: Digital Humanities 2017. Conference Abstracts. https://dh2017.adho.org/abstracts/095/095.pdf [letzter Zugriff: 12.01.2019].
+                    
+
+                
+
+            
+
+        
+
+    

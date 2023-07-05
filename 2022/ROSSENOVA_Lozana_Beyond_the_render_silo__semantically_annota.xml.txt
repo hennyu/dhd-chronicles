@@ -1,0 +1,179 @@
+
+        
+
+            
+
+                
+Research problem
+
+                
+The proliferation of improved scanning technologies and digital record-keeping systems led to mass-digitisation efforts and the launch of numerous online archives and collections (Terras
+                    
+, 2011
+). Cultural heritage and research institutions have had to adapt their practices to account for shifts in what contemporary cultural stewardship and the study of cultural memory entails (Parry, 2010). Collections of images and texts need to be fully accessible to fulfil institutional missions (Kapsalis, 2016; Maher and Tallon, 2018). In the vast majority of cases, access implies viewing siloed resources, such as scanned text pages or photographs of physical objects and sometimes 3D renderings, alongside minimal descriptive metadata. But digital representations of cultural assets in the form of 3D models within disciplines such as architecture, art, archaeology, and 3D reconstruction are particularly heterogeneous in formats and structure, ergo standardized access and visualisation tools fail to meet new research objectives and institutional requirements. Especially as the result of state-of-the-art digitisation efforts, 3D datasets challenge renderers in terms of geometric complexity, memory and bandwidth requirements (Koller et al., 2009). What is more, cultural memory preservation is not guaranteed through digitisation activities alone, but instead requires the active participation of diverse audiences who can search, access and enrich datasets through annotation and critical interpretation.
+                
+
+            
+
+            
+
+                
+Methodology
+
+                
+To address this knowledge gap, a suite of tools is being developed as part of the NFDI4Culture project across several partner organisations. Operating within 
+                    
+Task area 1: Data capture and enrichment
+, the proposed toolchain focuses on the annotation of 3D data within a knowledge graph environment, so that 3D objects’ geometry, attendant metadata, as well as annotations remain searchable, while data interconnections are not lost. The project builds on several existing FOSS tools: 
+                
+
+                
+
+                    
+OpenRefine, a data cleaning, reconciliation and batch upload tool (Sterner 2019); 
+
+                    
+Wikibase, a suite of services developed by Wikimedia Germany; Wikibase is the software behind Wikidata, the largest public knowledge graph on the web; it combines the ability to handle large volumes of data points with sophisticated data querying and extraction services via a dedicated SPARQL endpoint (Thornton et al. 2018); 
+
+                    
+Kompakkt, a browser-based open-source 3D and multimedia viewer Kompakkt with built-in collaborative annotation features (Eide et al., 2019). 
+
+                
+
+                
+The toolchain implementation is taking place in an open, iterative process in close collaboration with the culture community to leverage transparency, reduce duplication of effort and ensure optimal usability. The first milestone of establishing a mechanism for automated deployment of reconciliation services between OpenRefine and an arbitrary, self-managed instance of Wikibase has been completed via Ansible and CI/CD pipelines on GitLab. The next milestone of gathering sample contextual metadata alongside images, videos and related 3D objects is being completed in collaboration with the Corpus der barocken Deckenmalerei in Deutschland (Bayerische Akademie der Wissenschaften, 2021) and research partners at TUM. Once all relevant data is modelled and uploaded in Wikibase’s knowledge graph and linked to persistent storage of the media files, the next milestone is linking the graph database with Kompakkt’s rendering and user interaction environment, which will act as end-user’s entry point to exploring the datasets and annotating images and 3D models with high level of precision. In parallel to the work on the Wikibase-Kompakkt integration, we are extending Kompakkt’s current capabilities, so that we can facilitate collaborative annotation of large-scale 3D pointclouds and meshes with the same ease and efficiency as the currently supported smaller mesh datasets by providing an alternate FOSS pointcloud rendering backend.
+
+                
+The integrated suite of tools follows FAIR principles, and adopts common standards like PIDs or the W3C annotation model. It facilitates linking 3D objects and annotations, and their cultural context (including historical people and places, geo-location and capture-technology metadata), to the broader semantic web and various national and international authority records (GND, Getty’s AAT, VIAF and more). 
+
+            
+
+            
+
+                
+Results
+
+                
+By the end of 2021, the toolchain will be developed as an MVP (minimum viable product) to be tested and refined further with more data partnerships. It will allow a wide range of users to interact with 3D and other types of multimedia objects and annotations, and ultimately open up new digital spaces for research, education and discourse around cultural stewardship and memory preservation without siloing knowledge. The proposed toolchain will extend the potentials of Wikimedia and Europeana GLAM initiatives, while remaining highly flexible and adaptable to individual institutional contexts and research needs. Results – in the form of open-source code repositories, workflow documentation and a public portal for requirements gathering (GitLab, 2021) – are being made available in alignment with community needs.
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliography
+
+                    
+Bayerische Akademie der Wissenschaften
+. (2021). 
+Corpus der barocken Deckenmalerei in Deutschland (CbDD)
+. 
+                        
+https://deckenmalerei.badw.de/
+ (accessed 15 July 2021).
+                    
+
+                    
+Eide, Ø., Schubert, Z., Türkoğlu, E., Wieners, J.G. and Niebes, K.
+ (2019). 
+The intangibility of tangible objects: re-telling artefact stories through spatial multimedia annotations and 3D objects
+. 
+                        Presented at the ICOM Kyoto 2019, 
+25th ICOM General Conference: Museums as Cultural Hubs: The Future of Tradition
+, Kyoto.
+                        
+http://doi.org/10.5281/zenodo.3878966
+                        
+ (accessed 15 July 2021).
+                    
+
+                    
+Gitlab
+. (2021). 
+MVP requirements gathering portal
+. 
+                        
+https://gitlab.com/nfdi4culture-data-enrichment/kompakkt-wikibase-integration/-/requirements_management/requirements
+                        
+ (accessed 15 July 2021).
+                    
+
+                    
+Kapsalis, E.
+ (2016). 
+The impact of open access on galleries, libraries, museums, &amp; archives
+, 
+                        
+http://siarchives.si.edu/sites/default/files/pdfs/2 016_03_10_OpenCollections_Public.pdf
+                        
+ (accessed 15 July 2021).
+                    
+
+                    
+Koller, D., Frischer, B. and Humphreys, G.
+ (2009). 
+Research challenges for digital archives of 3D cultural heritage models, JOCCH
+ 2, (7): 10.1145/1658346.1658347.
+                    
+
+                    
+Maher, K. and Tallon, L.
+ (2018). 
+Wikimedia and The Met: A shared digital vision
+,
+                        Wikimedia Blog.
+                        
+https://blog.wikimedia.org/2018/04/19/wikimedia-the-met-shared-digital-vision/
+                        
+ (accessed 15 July 2021).
+                    
+
+                    
+Parry, R.
+ (ed). (2010).
+                        
+Museums in a Digital Age
+. Abindgon: Routledge.
+                    
+
+                    
+Sterner, E.
+ (2019). "Cleaning Collections Data Using OpenRefine",
+                        
+Issues in Science and Technology Librarianship,
+ 92. 
+                        
+https://doi.org/10.29173/istl30
+                        
+ (accessed 15 July 2021).
+                    
+
+                    
+Terras, M.
+ (2011). "The rise of digitization". In: Rikowski, R. (ed.), 
+                        
+Digitisation Perspectives
+. Rotterdam: Sense Publishers, pp. 3–20.
+                    
+
+                    
+Thornton, K., Seals-nutt, K., Cochrane, E. and Wilson, C.
+ (2018). "Wikidata for Digital Preservation". In:
+                        
+Proceedings of iPRES’18, Cambridge, MA, USA, September 24–27, 2018.
+
+                    
+
+                
+
+            
+
+        
+
+    

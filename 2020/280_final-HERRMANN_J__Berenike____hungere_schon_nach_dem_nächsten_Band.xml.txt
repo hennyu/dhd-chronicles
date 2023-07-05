@@ -1,0 +1,732 @@
+
+
+
+
+
+
+Einleitung 
+
+
+Kaum ein geisteswissenschaftlicher Forschungsgegenstand hat eine so intensive Diskussion erfahren wie die Metapher (Eggs, 2000). Doch existieren nur wenige Ansätze zu ihrer Formalisierung innerhalb der Digital Humanities. Unser Beitrag stellt einen einfachen Ansatz der Metaphernanalyse auf grösseren Datenmengen vor, um auch in nicht-annotierten Texten metaphorische Mappings zu finden. Mit diesem Ansatz analysieren wir konzeptuelle Strukturen des Leseerlebens von Laien-RenzensentInnen. 
+
+
+Mittels einer Verschränkung korpusbasierter und korpusgetriebener Methoden (Tognini-Bonelli, 2001) untersuchen wir ein Korpus von Laienrezensionen (ca. 1,3 Mio Beiträge) explorativ auf den Metapherngebrauch mit der Zieldomäne ‘Leseerleben’. Metaphern werden mit der Kognitiven Theorie der Metapher (KTM) als Denk- bzw. Erfahrungsfiguren (Lakoff &amp; Johnson, 1980, S. 4) gefasst.
+
+
+Ausgehend von Befunden zu Laienbuchrezensionen im Englischen (Stockwell, 2009; Nuttall &amp; Harrison, 2018) und zu feuilletonistischen Rezensionen (Köhler, 1999) operieren wir auf der Sprachoberfläche und inferieren von dort konzeptuelle Mappings zwischen Ziel- und Quelldomänen (Herrmann, im Druck; Shutova, 2017; Steen et al., 2010), wobei besonderes Augenmerk auf das Mapping LESEN IST NAHRUNGSAUFNAHME gelegt wird. Ausgangspunkt ist der Befund Nuttall und Harrisons (2018), dass Nahrungsmetaphern in englischsprachigen 
+                    
+Goodreads
+-Laienrezensionen einen der häufigsten Metapherntypen darstellen (siehe auch Radway, 1986). Von dort konstruieren wir die Arbeitshypothese, dass in den sozialen Settings des als ‘nicht-solitär’ kommunizierten social reading eine Nahrungsmetaphorik – mit ihrer experientiell-sozialen Grundierung – besonders geeignet ist, um Anschlusskommunikation zu evozieren (vgl. Narula, 2014; Peplow et al., 2016).
+                
+
+
+
+
+
+
+Methode
+
+
+
+
+Daten
+
+
+Das LoBo-Korpus (extrahiert von der Social Reading-Plattform
+“Lovelybooks”) beinhaltet ca. 1,3 Mio. deutschsprachige
+Laienrezensionen von 54.000 NutzerInnen, die sich auf jeweils ein Buch
+beziehen. Die Bücher sind kategorisiert nach 15 Genres, die der
+Plattform selbst entnommen sind. Das Korpus ist PoS-annotiert
+(Tree-Tagger), lemmatisiert und in CWB
+(
+http://cwb.sourceforge.net/
+)
+indiziert. Für die manuelle Annotation wurde das UAM CorpusTool
+(Version 2.8.16)
+(
+http://www.corpustool.com/
+) verwendet.
+
+
+
+
+
+
+
+Metaphernidentifikation
+
+
+Angesichts der Herausforderungen einer reliablen automatischen Metapherndetektion (Veale, Shutova, &amp; Klebanov, 2016) wählen wir bewusst eine korpusstilistische Herangehensweise (Deignan &amp; Semino, 2010). Wir verschränken als induktiven Schritt A Kookurrenzanalyse und manuelle Identifikation mit einem deduktiven Schritt B (regelbasierte Suche nach spezifischen Quelldomänen-Indikatoren). Ziel ist eine möglichst hohe Vollständigkeit und Genauigkeit der Identifikation potenzieller Metapherntypen, wobei eine formale Evaluation der Methode im gegenwärtigen Stadium mangels Goldstandard jedoch nicht möglich ist.
+
+
+Um in Schritt A die Metaphern zu finden, die sich auf Leseerleben
+beziehen, müssen zunächst Objekte des Leseerlebens (OdL) identifiziert
+werden. OdL sind Referenten des Leseerlebens
+(
+literarische Werke 
+wie 
+
+Buch, Geschichte, Roman,
+ sowie Teilaspekte wie 
+
+Ende, Seite, Handlung, Spannung, Autor, Figur
+). Sie sind die Nodes, deren Kontext wir auf metaphorische Sprachverwendung untersuchen: Als Indikatoren der Zieldomäne (‘Lesen’) werden sie in Ausdrücken wie 
+
+hungere schon nach dem nächsten Band
+ mit Quelldomänen (hier ‘Nahrungsaufnahme’) verknüpft. In der Korpusanalyse überprüften wir mittels Kookkurrenzen die zusammen mit den Nodes signifikant häufig auftretenden Inhaltswörter (Nomen, Adjektive, Verben) auf metaphorische Verwendung.
+                    
+
+
+Ergänzend zur Korpusanalyse annotieren wir eine Stichprobe auf metaphorischen Sprachgebrauch (Herrmann, Woll, &amp; Dorst, 2019). Unsere erste Fallstudie untersuchte insgesamt 18 randomisiert ausgewählte Rezensionen zu sechs Büchern (je drei pro Buch). Dieses Subkorpus enthält zu gleichen Teilen Rezensionen von “anspruchsvollen Bestsellern” und Fantasy-Romanen. Ziel war es, die Sequenz metaphorischer Ausdrücke sowie die lexikalische und konzeptuelle Variation abzuschätzen. 
+
+
+In Schritt B untersuchten wir ausgehend von der Annahme eines systematischen Mappings LESEN IST NAHRUNGSAUFNAHME (ausgehend von entsprechenden Befunden durch Nuttall &amp; Harrison, 2018, Köhler, 1999) die je hundert häufigsten Lemmata der drei “Inhaltswortklassen” Substantiv, Adjektiv und Verb auf mögliche Indikatoren. Innerhalb eines Fensters von zehn Wörtern um die in Schritt A festgelegten OdL (Ausdrücke, die Zieldomäne LESEN indizieren, z.B. 
+
+Band 
+in 
+
+hungere schon nach dem nächsten Band
+) wurde dabei nach Lexemen mit einer Grundbedeutung in der Domäne NAHRUNGSAUFNAHME (etwa 
+
+hungere
+) gesucht. Mangels eines out-of-the-box semantischen Taggers (vgl. Demmen et al., 2015) nutzten wir Dornseiffs (2004) semantisches Feld ‘Essen und Trinken’ zur Erstellung einer nach Häufigkeit sortierten Lemmaliste. Von den resultierenden 1.386 Lemmata finden sich 993 mindestens einmal im LoBo-Korpus. Ein Problem, das besonders die häufigen Lemmata betrifft, ist Domänengeneralität. Zum einen ist die Zuordnung zur Zieldomäne LESEN nicht immer gegeben, zum anderen ist der metaphorische Wortgebrauch im Einzelfall nicht gesichert (es kann sich z.B. um eine Inhaltsangabe handeln, in der unmetaphorisch von Nahrungsaufnahme die Rede ist). Diese Schwäche haben wir reduziert, indem besonders häufige 
+
+false positives
+ sowie
+besonders periphere Mitglieder des
+semantischen Feldes aus der Liste entfernt
+wurden
+(
+gar, langweilig, hart, Atmosphäre, Pferd, zusagen, 
+etc.). Die resultierende Liste (s. Tabelle 1 für Ausschnitt) erlaubt zwar selbst keine Rückschlüsse auf die tatsächliche Metaphernverwendung, dient jedoch als Zwischenschritt um Nahrungsmetaphern im Korpus zu finden, die sich in der Folge qualitativ untersuchen lassen.
+                    
+
+
+
+
+
+
+
+
+
+  
+ Tabelle 1: 25 häufigste Lemmata aus dem semantischen Feld ‘Essen und Trinken’ (Dornseiff, 2004) innerhalb von 10 Wörtern eines Objekts des Leseerlebens
+
+
+
+
+
+
+Lemma
+
+
+(semantisches Feld: Essen &amp; Trinken)
+
+
+
+
+
+
+Freq. innerhalb von 10 Wörtern eines OdL
+
+
+
+
+
+
+
+
+verschlingen
+
+
+29827
+
+
+
+
+
+
+genießen
+
+
+16665
+
+
+
+
+
+
+Geschmack
+
+
+15992
+
+
+
+
+
+
+fein
+
+
+5885
+
+
+
+
+
+
+zart
+
+
+5316
+
+
+
+
+
+
+bitter
+
+
+3369
+
+
+
+
+
+
+Kost
+
+
+2865
+
+
+
+
+
+
+kosten
+
+
+2690
+
+
+
+
+
+
+köstlich
+
+
+2042
+
+
+
+
+
+
+Essen
+
+
+1682
+
+
+
+
+
+
+Koch
+
+
+1500
+
+
+
+
+
+
+lecker
+
+
+1461
+
+
+
+
+
+
+essen
+
+
+1100
+
+
+
+
+
+
+servieren
+
+
+1094
+
+
+
+
+
+
+riechen
+
+
+1042
+
+
+
+
+
+
+schlucken
+
+
+1016
+
+
+
+
+
+
+Gin
+
+
+1013
+
+
+
+
+
+
+herzhaft
+
+
+965
+
+
+
+
+
+
+Duft
+
+
+956
+
+
+
+
+
+
+kochen
+
+
+910
+
+
+
+
+
+
+Hunger
+
+
+881
+
+
+
+
+
+
+Schokolade
+
+
+846
+
+
+
+
+
+
+scharf
+
+
+845
+
+
+
+
+
+
+fressen
+
+
+718
+
+
+
+
+
+
+
+
+
+
+
+
+Ergebnisse
+
+
+Die Ergebnisse der Schritte 1 und 2 zeigen eine grosse Vielfalt metaphorischer Ausdrücke auf, die sich auf verschiedene Objekte des Leseerlebens beziehen. Aufschlussreich ist dabei nicht die absolute Häufigkeit der Metaphernkandidaten im Korpus – zumal keine zuverlässigen Vergleichsdaten zur Verfügung stehen –, wohl aber die quantitative Analyse der relativen Verteilung auf Rezensionen verschiedener Ratings und Genres. Das Auftreten der hier untersuchten stark wirkungsbezogenen Metaphorik gibt etwa Aufschlüsse über Rezensionsmuster, die sich je nach quantitativer Bewertung und je nach literarischer Gattung unterscheiden. Die qualitative Untersuchung ermöglicht dagegen eine erste Typologie von Mappings, die wir im Folgenden mit Beispielen für konventionelle und kreative Metaphern illustrieren.
+
+
+
+
+Zwischen Konvention und Kreativität
+
+
+Viele Ausdrücke sind erwartete, stark konventionalisierte Metaphern, wie etwa 
+                        
+verschlingen
+ und 
+                        
+Geschmack
+:
+                    
+
+
+
+
+Leider kommt man erst ab der zweiten Hälfte so richtig rein und hat das &lt;Buch innerhalb weniger Stunden verschlungen> 
+
+
+Die &lt;Geschichte kam für meinen Geschmack> zu langsam in Fahrt…
+
+
+
+
+Es finden sich darüber hinaus aber auch viele Beispiele, die einen kreativen Umgang mit Metaphern illustrieren:
+
+
+
+
+Daher empfehle ich ihn gerne weiter an alle , die es ab und an mal etwas romantischer mögen und Lust auf eine &lt;Geschichte haben , die nach Sommer schmeckt> : )
+
+
+Die Entwicklungen um Mia gefallen mir sehr gut und das Buch ist auch so beendet worden , dass der &lt;Lesehunger>auf den zweiten &lt;Teil gut genährt> hinterlassen wird .
+
+
+
+
+
+
+
+
+Eine erste Typologie von Mappings
+
+
+Unsere Resultate zeigen bislang fünf verschiedene Typen von LESEN IST NAHRUNGSAUFNAHME auf. 
+
+
+Lesen wird etwa (A) als eine Form von Nahrungsaufnahme konzeptualisiert, bei der Lesende als ‘Essende’ und literarische Werke und deren Bestandteile als ‘verzehrbar’ positioniert werden.
+
+
+
+
+Die ersten &lt;Seiten habe ich gefressen> , bis ich nach 300 Seiten ins Stocken geriet…
+
+
+Ich fand weite Strecken des &lt;Buches recht fad>, in die Länge gezogen oder nicht wirklich wichtig .
+
+
+Der &lt;Roman ist definitiv keine leichte Kost> , insbesondere , wenn es um Annas körperlichen und seelischen Zustand geht .
+
+
+Hatte sehr lange insgesamt an dem &lt;Buch genagt> , aber es hat sich letztendlich doch gelohnt 
+
+
+Und doch habe ich es in einem Zug durchgelesen und &lt;hungere schon nach dem nächsten Band> .
+
+
+Ich kann es zumindest gar nicht erwarten , die &lt;Romane neun und zehn zu verzehren> oder wie seht ihr das ?
+
+
+Eine &lt;Geschichte , die sauer> aufstößt , die einen wütend macht , die man aber doch nicht eine Minute zur Seite legen kann .
+
+
+
+
+Weiter wird (B) Schreiben als ‘Kochen’ und ‘Bewirten’ dargestellt, wobei Autoren als Köche, Lesende als Gäste und Lektüre als bekocht/bewirtet erscheinen. 
+
+
+
+
+Mit “Dark Wonderland : Herzkönigin” &lt;serviert Howard dem Leser> eine düstere und noch phantastischere Version der Alice-Geschichte in bester Teegesellschaftsmanier.
+
+
+Auch die mittelschwere Portion Liebe und Romantik hat die &lt;Autorin in meinen Augen schmackhaft> verpackt.
+
+
+Die Geschichte wirkte auf mich irgendwie zwanghaft konstruiert nach dem Motto packen wir alle Wunderland &lt;Figuren in einen Topf> geben etwas “ Grusel” und Blut dazu rühren einmal um fertig - Schade !
+
+
+
+
+Darüber hinaus findet sich aber auch (C) ein anderes Mapping, das zwar auf die gleiche Quelldomäne zurückgreift, aber dem Objekt des Leseerlebens selbst als Agnes konstruiert.
+
+
+
+
+Was für den Leser immer besonders schön ist , denn genau solche Paare und &lt;Geschichten verschlucken> einen förmlich .
+
+
+Ein interessanter und unterhaltender &lt;Roman , genährt> durch seriöse Quellen , aber auch durch die Fantasie der Autorin selbst .
+
+
+
+
+Andere Mappings (D) beziehen sich dagegen direkt auf die Objekte des Leseerlebens, werden sprachlich aber als Vergleich realisiert, der nach Steen et al. (2010) stärker intentional markiert ist.
+
+
+
+
+Das &lt;Buch entfalltet sich wie ein guter Wein> erst am Ende.
+
+
+Anfänglich betrachtete ich ein abgebrochenes &lt;Buch wie ein nicht aufgegessenes Essen> , ein verfehltes Ziel beim Joggen , eine Niederlage .
+
+
+Diese &lt;Story wärmt wie eine leckere> Tasse Punsch
+
+
+
+
+Schliesslich findet sich eine Reihe (E) von Mappings, die zwar auf die Quelldomäne NAHRUNGSAUFNAHME und Zieldomäne LESEN rekurrieren, sich dabei aber nicht auf Vorgänge der Nahrungsaufnahme, sondern auf das Embodiment von Emotionen zu beziehen scheinen.
+
+
+
+
+Als ich die ersten Seiten aufgeschlagen habe , musste ich erst einmal &lt;schlucken , denn die Story> hat sich meines Erachtens ziemlich in die Länge gezogen .
+
+
+Man kann die Angst der &lt;Protagonisten förmlich riechen> .
+
+
+Ein &lt;Buch zum an den Fingernägel knabbern> .
+
+
+
+
+
+
+
+
+
+
+Fazit
+
+
+Unsere Studie leistet einerseits einen methodischen Beitrag zur Metaphernidentifikation mit einfachen korpusstilistischen Mitteln und gibt andererseits Aufschluss über die Produktivität der Quelldomäne NAHRUNGSAUFNAHME für die Konzeptualisierung von Leseerleben. Schliesslich zeigt unsere manuelle Annotation weitere Mappings auf, die den Umgang mit Objekten des Leseerlebens nicht als Nahrungsaufnahme konzeptualisieren, sondern als ‘Reisen’ und ‘Bewegung’, oder auch auch als ‘Interaktion mit externen Kräften’. Bücher und Geschichten werden einerseits als ‘Behälter’, andererseits wie ‘Personen’ mit Qualitäten und Intentionen konzeptualisiert, ja als ‘Freunde’ der Lesenden, wobei ‘gegenseitige Kompatibilität’ als axiologischer Wert - situiert zwischen den inhaltlichen und (hedonistisch sowie praktisch) wirkungsbezogenen Werten nach Heydebrand und Winko (1996) - erscheint. Folgestudien sollen die Verbesserung der automatisierten Detektion leisten, unter anderem durch die Einbindung von semantischen Informationen aus GermaNet. So sollen durch systematische Untersuchung der häufigen konzeptuellen Metaphern und ihre Korrelation mit der Lovelybooks-Sterne-Wertung weitere Rückschlüsse auf zugrundeliegende Wertmassstäbe bei der Bewertung von online-Laienrezensionen ermöglicht werden.
+
+
+
+
+
+
+
+
+
+
+
+
+Bibliographie
+
+
+
+
+Demmen, J. / Semino, E. / Demjén, Z. / Koller, V. /
+Hardie, A. / Rayson, P. / Payne, S.
+
+(2015): “A computer-assisted study of the use of Violence metaphors for cancer and end of life by patients, family carers and health professionals” in: 
+
+International Journal of Corpus Linguistics
+, 20/2: 205–231.
+
+
+
+
+  
+Dornseiff, F.
+ (2004): 
+  
+Der deutsche Wortschatz nach Sachgruppen
+. Mit einer lexikographisch-historischen Einführung und einer ausführlichen Bibliographie zur Lexikographie und Onomasiologie (8. völlig neu bearb. u. m. einem alphabet. Zugriffsreg. vers. Aufl. Reprint 2010).
+  
+https://doi.org/10.1515/9783110901009
+
+
+
+
+
+  
+Eggs, E.
+ (2000): «Metapher» in: Gert Ueding (Hg.), Historisches Wörterbuch der Rhetorik, Bd. 5, Tübingen 1109-1183.
+
+
+
+
+  
+Genette, G.
+ (1989): 
+  
+Paratexte: Das Buch vom Beiwerk des Buches
+. (D. Honig, Übersetzung). Frankfurt am Main: Campus.
+
+
+
+
+  
+Herrmann, J. B.
+ (im Druck): «Operationalisierung der Metapher zur quantifizierenden Untersuchung deutschsprachiger literarischer Texte im Übergang vom Realismus zur Moderne» in: Tagungsband DFG-Symposium „Digitale Literaturwissenschaft“ (Villa Vigoni, 09.-13.10.2017). Berlin: De Gruyter.
+
+
+
+
+  
+Herrmann, J. B. / Woll, K. / Dorst, A. G.
+ (2019): “Linguistic Metaphor Identification in German” in: S. Nacey / A.G. Dorst / T. Krennmayr / W. G. Reijnierse (Hg.), MIPVU in Multiple Languages, Amsterdam: John Benjamins.
+
+
+
+
+  
+Heydebrand, R. / Winko, S.
+ (1996): 
+  
+Einführung in die Wertung von Literatur: Systematik - Geschichte - Legitimation
+. Paderborn, Zürich [etc.]: Schöningh.
+
+
+
+
+  
+Köhler, M.
+ (1999): 
+  
+Wertung in der Literaturkritik: Bewertungskriterien und sprachliche Ausdrucksmöglichkeiten des Bewertens in journalistischen Rezensionen zeitgenössischer Literatur
+ (PhD Dissertation, Universitätsbibliothek der Universität Würzburg). 
+  
+https://opus.bibliothek.uni-wuerzburg.de/frontdoor/index/index/docId/784
+
+
+
+
+
+  
+Lakoff, G. / Johnson, M.
+ (1980): 
+  
+Metaphors we live by
+. Chicago, IL: University of Chicago Press.
+
+
+
+
+  
+Narula, S. K.
+ (2014): “Millions of people reading alone, together: The rise of Goodreads” in: 
+  
+The Atlantic
+. 
+  
+https://www.theatlantic.com/entertainment/archive/2014/02/millions-of-people-reading-alone-together-the-rise-of-goodreads/283662/
+
+
+
+
+
+  
+Nuttall, L. / Harrison, C.
+ (2018): Wolfing down the Twilight series: Metaphors for reading in online reviews in: H. Ringrow / S. Pihlaja (Hg.), 
+  
+Contemporary Media Stylistics
+. New York: Bloomsbury Academic.
+
+
+
+
+  
+Peplow, D. / Swann, J. / Trimarco, P. / Whiteley, S.
+ (2016): 
+  
+The discourse of reading groups: Integrating cognitive and sociocultural perspectives
+. London: Routledge.
+
+
+
+
+  
+Radway, J. A.
+ (1986): “Reading is not eating: mass-produced literature and theoretical, methodological, and political consequences of a metaphor” in: 
+  
+Book Research Quarterly
+, 2/3: 7–29.
+
+
+
+
+  
+Steen, G. J.
+ (2009): “Deliberate Metaphor Affords Conscious Metaphorical Cognition” in: 
+  
+Cognitive Semiotics 
+5/1-2: 179-197.
+
+
+
+
+  
+Steen, G. J. / Dorst, A. G. /
+  Herrmann, J. B. / Kaal, A. A. / Krennmayr, T. / Pasma, T. 
+ (2010): A Method for Linguistic Metaphor Identification: From MIP to MIPVU. Amsterdam and Philadelphia: John Benjamins.
+
+
+
+
+  
+Stockwell, P.
+ (2009): Texture: A cognitive aesthetics of reading. Edinburgh: Edinburgh University Press.
+
+
+
+
+  
+Tognini-Bonelli, E
+. (2001): Corpus Linguistics at Work. Amsterdam: John Benjamins.
+
+
+
+
+  
+Veale, T., Shutova, E. / Klebanov, B. B.
+ (2016): “Metaphor: A Computational Perspective” in: 
+
+Synthesis Lectures on Human Language Technologies
+, 9/1: 1–160.
+
+
+
+
+
+
+
+
+

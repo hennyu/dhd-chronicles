@@ -1,0 +1,281 @@
+
+        
+
+            
+Das Dissertationsvorhaben widmet sich der linguistischen, korpusbasierten Analyse des bundesdeutschen Extremismusdiskurses der Jahre 1999 – 2021.
+
+            
+Unter inhaltlichem Gesichtspunkt untersucht das Projekt, wie Extremismus(-varianten)-Frames in Deutschland auf der medialen und politischen Diskursebene verhandelt werden. Aus einer linguistisch-kulturwissenschaftlichen Perspektive ist dabei insbesondere von Interesse, wie einzelne epistemologische Entitäten (Frames) von den Diskursteilnehmenden sprachlich (re-)produziert und variiert (geframet) werden. Dabei soll durch einen Abgleich des Framings auf zwei unterschiedlichen Diskursebenen (Medien, Politik), zu unterschiedlichen Zeitpunkten im Analysezeitraum sowie zwischen einzelnen Akteur:innen innerhalb der Diskursebenen (Parteien, Zeitungen) sprachliches Handeln in Bereichen sichtbar werden, die von zentraler Bedeutung für gesellschaftliche Meinungsbildungsprozesse sind und für die bereits strategische Neuausrichtungen des Extremismusbegriffs beschrieben worden sind 
+                
+(Ackermann et al. 2015). Für die Untersuchung wurde ein Korpus erstellt, das den medialen Diskurs durch den Online-Artikelbestand der Zeitungen 
+                
+Welt
+, 
+                
+Spiegel
+ und 
+                
+Taz
+ des Zeitraumes 1999 – 08/2021 abbildet (pro Zeitung ca. 425 Mio. Token), während die politische Diskursebene in Form von Parlamentsdebatten des gleichen Zeitraums (Blaette 2020, Deutscher Bundestag 2021) repräsentiert ist.
+            
+
+            
+ Als Deutungsrahmen ermöglichen Frames eine sinnstiftende Einordnung sprachlicher Daten. Semantische Frames im Sinne Busses (2012) sind – u.a. Fillmore, Minsky und Barsalou folgend – in einer Slot-Filler-Struktur organisiert. Ein Extremismus-Frame könnte etwa Slots für Akteur:innen, Handlungen oder Ziele der Handlungen aufweisen. Bei jeder Instanziierung des Frames können diese mit Werten gefüllt werden, um z.B. ein konkretes extremistisches Gewaltereignis zu beschreiben. Die damit einhergehende potenziell strategische Auswahl der im Text realisierten Slots und Filler fasse ich in Anlehnung an Klein (2018) und Ziem et al. (2018) als 
+                
+Framing
+.
+            
+
+            
+ In methodischer Hinsicht entwickelt das Projekt erstens ein Verfahren zur korpusbasierten Frame-Identifizierung und versucht zweitens, zwei scheinbar widersprüchliche Paradigmen der korpusbasierten Diskursforschung zu verbinden: die Analyse thematischer Diskurse und die datengeleitete, d.h. 
+                
+corpus driven
+
+                
+(Tognini-Bonelli 2001), Diskursanalyse. Letztere reklamiert für sich ein hohes Maß an Unvoreingenommenheit, steht einer Fokussierung auf thematisch definierte Diskurskorpora jedoch eher ablehnend gegenüber 
+                
+(Bubenhofer 2009: 36; Scharloth et al. 2013). Eine Vereinbarung der beiden Paradigmen kann m.E. gelingen, indem der Prozess der Korpuszusammenstellung von einer Auswahl relevanter Texte durch die Forschungsperson 
+                
+(Busse &amp; Teubert 1994) zu einer algorithmisch unterstützten, möglichst induktiven und datengeleiteten Selektion thematisch passender Texte weiterentwickelt wird. Der analytische Zugang zum Diskurs ist dabei keineswegs frei von Vorprägungen durch die Forschungsperson – sei es bei der Korpus- oder Methodenwahl. Er kann jedoch auf ungleich größere und somit eher repräsentative Diskurskorpora erweitert werden. Die thematische Reduktion des Korpus trägt einerseits der semantischen Kontextgebundenheit einzelner Wortformen Rechnung – so bedeuten etwa ‚links‘ und ‚rechts‘ in der Sportberichterstattung etwas anderes als im Extremismusdiskurs – andererseits werden datengeleitete Zugänge wie Keyword-Analysen so erst ermöglicht. 
+            
+
+            
+Einzelne Lösungsansätze liegen hier bereits vor; so wird als Kriterium für die Reduktion eines themenübergreifenden Korpus auf ein thematisches Diskurskorpus häufig das Vorkommen eines oder mehrerer repräsentativer Schlagwörter in den Texten angesetzt 
+                
+(vgl. aus dem Bereich der Frame-Forschung etwa Baker et al. 2020; Storjohann &amp; Schröter 2011; Ziem et al. 2018). Dass eine Vielzahl sprachlicher Muster einzelne Deutungsrahmen aufrufen und perspektivieren, ist jedoch eine Kernannahme der linguistischen Frame-Theorie 
+                
+(vgl. etwa die Rolle der 
+                
+Lexical Units
+ in Fillmores FrameNet, Ruppenhofer et al. 2016). Ähnlich haben Kozlowski et al. (2019) unter Anwendung von 
+                
+word embeddings
+ gezeigt, dass kulturelle Kategorien über die Zeit stabil bleiben, die assoziierten Wortvektoren jedoch „in constant flux“ (S. 929) sind. Während einzelne Arbeiten auch dies berücksichtigen, indem erst ganze Begriffsfelder empirisch ermittelt und dann in einem nicht-thematischen Korpus abgefragt werden 
+                
+(Czulo et al. 2020), bleiben die diskursanalytischen Potenziale neuerer Verfahren des N
+                
+atural Language Processing
+ weitgehend ungenutzt. Hier können insbesondere unüberwachte Algorithmen wie 
+                
+Topic Modeling
+
+                
+(vgl. zu Potenzialen für die Diskursanalyse Murakami et al. 2017; kritisch Brookes &amp; McEnery 2019) oder 
+                
+Word Embeddings
+ (vgl. zu Anwendungen in diskursanalytischer Forschung etwa Bubenhofer et al. 2020; Kozlowski et al. 2019) einerseits eine Eingrenzung des im Rahmen der Dissertation verwendeten multithematischen Korpus, andererseits einen Zugang zu einzelnen Framings in verschiedenen Diskursbereichen ermöglichen. Auf vorliegende Forschung zur 
+                
+Semantic Frame Induction
+
+                
+(vgl. etwa die im Kontext von QasemiZadeh et al. 2019 veröffentlichten Konferenzbeiträge) kann in dieser Hinsicht nur bedingt aufgebaut werden, da diese zumeist bereits vorliegende FrameNet-Frames zu identifizieren versucht, anstatt epistemologisch komplexere Deutungsrahmen zu rekonstruieren (vgl. zu einer Kritik an FrameNet aus diskurslinguistischer Sicht Busse 2012: 210-213). 
+            
+
+            
+ Mit dem hier skizzierten Dissertationsprojekt wird erstmals eine breit angelegte Untersuchung des bundesdeutschen Extremismusdiskurses seit der Jahrtausendwende geleistet. Einzelne als Frames modellierte Wissensbestände dieses Diskurses werden – einschließlich der sprachlichen Praktiken, die sie formen – sichtbar. Die methodische Verankerung in den Digital Humanities ermöglicht dabei neben einer unvoreingenommeneren und besonders repräsentativen Modellierung des Forschungsgegenstandes auch einen völlig neuen Blick auf die „complex geometry of culture“ (Kozlowski et al. 2019: 931).
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+Ackermann, Jan / Behne, Katharina / Buchta, Felix / Drobot, Marc / Knopp, Philipp
+ (2015): 
+                        
+Metamorphosen des Extremismusbegriffes
+. Diskursanalytische Untersuchungen zur Dynamik einer funktionalen Unzulänglichkeit. Wiesbaden: Springer VS.
+                    
+
+                    
+
+                        
+Baker, Paul / Brookes, Gavin / Atanasova, Dimitrinka / Flint, Stuart W.
+ (2020): "Changing frames of obesity in the UK press 2008–2017", in: 
+                        
+Social Science &amp; Medicine
+ 264.
+                    
+
+                    
+
+                        
+Blaette, Andreas
+ (2020): 
+                        
+GermaParl
+. Linguistically Annotated and Indexed Corpus of Plenary Protocols of the German Bundestag. CWB corpus version 1.0.6. https://doi.org/10.5281/zenodo.3735141.
+                    
+
+                    
+
+                        
+Brookes, Gavin / McEnery, Tony
+ (2019): "The utility of topic modelling for discourse studies: A critical evaluation", in: 
+                        
+Discourse Studies
+ 21 (1): 3-21.
+                    
+
+                    
+
+                        
+Bubenhofer, Noah
+ (2009): 
+                        
+Sprachgebrauchsmuster
+. Korpuslinguistik als Methode der Diskurs- und Kulturanalyse. Berlin: De Gruyter.
+                    
+
+                    
+
+                        
+Bubenhofer, Noah / Knuchel, Daniel / Sutter, Livia / Kellenberger, Maaike / Bodenmann, Niclas
+ (2020): „Von Grenzen und Welten: Eine korpuspragmatische COVID-19-Diskursanalyse“, in: 
+                        
+Aptum
+ 16 (2/3): 156-165.
+                    
+
+                    
+
+                        
+Busse, Dietrich
+ (2012): 
+                        
+Frame-Semantik
+. Ein Kompendium. Berlin: De Gruyter.
+                    
+
+                    
+
+                        
+Busse, Dietrich / Teubert, Wolfgang
+ (1994): "Ist Diskurs ein sprachwissenschaftliches Objekt?", in: Busse, Dietrich / Hermanns, Fritz / Teubert, Wolfgang (eds.): 
+                        
+Begriffsgeschichte und Diskursgeschichte
+. Opladen: Westdeutscher Verlag: 10-28.
+                    
+
+                    
+
+                        
+Czulo, Oliver / Nyhuis, Dominic / Weyell, Adam
+ (2020): "Der Einfluss extremistischer Gewaltereignisse auf das Framing von Extremismen auf SPIEGEL Online". In: 
+                        
+Journal für Medienlinguistik
+ 3 (1): 14-45.
+                    
+
+                    
+
+                        
+Deutscher Bundestag
+ (2021): 
+                        
+Open Data
+. https://www.bundestag.de/services/opendata [letzter Zugriff 01. Dezember 2021]
+                    
+
+                    
+
+                        
+Klein, Josef
+ (2018): " Frame und Framing: Frametheoretische Konsequenzen aus Praxis und Analyse strategischen politischen Framings", in: Ziem, Alexander / Inderelst, Lars / Wulf, Detmer (eds.): 
+                        
+Frames interdisziplinär
+. Modelle, Anwendungsfelder, Methoden. Düsseldorf: Düsseldorf University Press: 289-330.
+                    
+
+                    
+
+                        
+Kozlowski, Austin / Taddy, Matt / Evans, James A.
+ (2019): “The Geometry of Culture: Analyzing the Meanings of Class through Word Embeddings”, in: American Sociological Review. 10.1177/0003122419877135.
+                    
+
+                    
+
+                        
+Murakami, Akira / Thompson, Paul / Hunston, Susan / Vajn, Dominik
+ (2017): "‘What is this corpus about?’: Using topic modelling to explore a specialised corpus", in: 
+                        
+Corpora
+. 10.3366/cor.2017.0118.
+                    
+
+                    
+
+                        
+QasemiZadeh, Behrang / Petruck, Miriam R. L. / Stodden, Regina / Kallmeyer, Laura / Candito, Marie
+ (2019): "SemEval-2019 Task 2: Unsupervised Lexical Frame Induction", in: 
+                        
+Proceedings of the 13th International Workshop on Semantic Evaluation
+ 16-30.
+                    
+
+                    
+
+                        
+Ruppenhofer, Josef / Ellsworth, Michael / Petruck, Miriam R. L. / Johnson, Christopher R. / Baker, Collin F. / Scheffczyk, Jan
+ (2016): 
+                        
+FrameNet II
+. Extended Theory and Practice https://framenet2.icsi.berkeley.edu/docs/r1.5/book.pdf [letzter Zugriff 01. Dezember 2021]. 
+                    
+
+                    
+
+                        
+Scharloth, Joachim / Eugster, David / Bubenhofer, Noah
+ (2013): "Das Wuchern der Rhizome: Linguistische Diskursanalyse und Data-driven Turn", in: Busse, Dietrich / Teubert, Wolfgang (eds.): 
+                        
+Linguistische Diskursanalyse
+. Neue Perspektiven. Wiesbaden: Springer Fachmedien Wiesbaden: 345-380.
+                    
+
+                    
+
+                        
+Storjohann, Petra / Schröter, Melani
+ (2011): "Die Ordnung des öffentlichen Diskurses der Wirtschaftskrise und die (Un-) Ordnung des Ausgeblendeten", in: 
+                        
+Aptum
+ 7 (1): 32-53.
+                    
+
+                    
+
+                        
+Tognini-Bonelli, Elena
+ (2001): 
+                        
+Corpus Linguistics at Work
+. Amsterdam: John Benjamins.
+                    
+
+                    
+
+                        
+Ziem, Alexander / Pentzold, Christian / Fraas, Claudia
+ (2018): "Medien-Frames als semantische Frames: Aspekte ihrer methodischen und analytischen Verschränkung am Beispiel der ‚Snowden-Affäre‘", in: Ziem, Alexander / Inderelst, Lars / Wulf, Detmer (eds.): 
+                        
+Frames interdisziplinär
+. Modelle, Anwendungsfelder, Methoden. Düsseldorf: Düsseldorf University Press: 155-182.
+                    
+
+                
+
+            
+
+        
+
+    

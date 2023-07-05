@@ -1,0 +1,153 @@
+
+        
+
+            
+
+                
+Einleitung
+
+                
+Digitale Arbeitsweisen sind heutzutage vermehrt Grundlage jeglicher editorischer Arbeit. Sie sind dabei nicht klar als abgegrenztes Werk zu sehen, sondern vielmehr als ein nie abgeschlossenes Werk (vgl. Sahle 2013: 8). Im Darmstädter Zentrum für digitale Editionen (ZEiD) an der ULB entwickeln wir verschiedene Ausgabe- und Arbeitsumgebungen, die den unterschiedlichen Rollen der Editionsnutzer*innen gerecht werden: „reader, user and co-worker“ (vgl. Greve Rasmussen 2016: 126).
+
+                
+Das ZEiD deckt alle Aspekte der Aufbereitung von Texten für wissenschaftliche Editionen und alle Bereiche digitaler Editionen von der Planung bis zur Veröffentlichung ab. Es befasst sich mit weitreichenden Fragen der digitalen Editorik, etwa Organisation und veränderten wissenschaftlichen Praktiken von digitalen Editionen (vgl. Sahle 2013: 8). Das ZEiD bearbeitet nicht nur bibliothekseigene Bestände, sondern fungiert auch als Partner für externe Projekte wie „Europäische Religionsfrieden Digital“ und „Gruß &amp; Kuss“ (vgl. Rapp et al. 2022). Unser Team besteht derzeit aus 8 Projektmitarbeiter*innen mit verschiedenen Zeitanteilen.
+
+            
+
+            
+
+                
+Workflow
+
+                
+Vorgesehen ist ein Workflow von der Texterfassung (OCR) der Digitalisate über das Erstellen und Bearbeiten der XML-Grundlage bis hin zur Realisierung der digitalen Edition als Online-Präsentation, welcher je nach Projektbedarf angepasst werden kann. Verschiedene eigens erstellte Transformationswerkzeuge dienen der Konvertierung von Texten aus verschiedenen Formaten wie etwa XML, JSON, WORD-DOCX oder PDF in ein TEI-basiertes (TEI Consortium 2021), an das DTABf angelehnte Basisformat, das spezielle Bedürfnisse des ZEiD berücksichtigt. Durch die Festlegung auf ein hauseigenes TEI-ULB-Basisformat ist die systematische Erfassung der Texte garantiert und die Einheitlichkeit der Texte aus verschiedenen Projekten in der Infrastruktur des Zentrums gegeben. Die Texte können in andere Formate konvertiert, annotiert und mit Metadaten angereichert werden. Weiterhin können Entitäten ausgezeichnet werden, die in einer zentralen Registerdatei verwaltet werden. Zudem ermöglicht das Basisformat die Ausgabe in verschiedenen Formaten, etwa JSON, DOCX, PDF und HTML.
+
+            
+
+            
+
+                
+Framework
+
+                
+Die XML-Dateien werden in exist-db (eXist Solutions 2021) abgelegt und mit Hilfe des Frameworks wdbplus (Kampkaspar 2018) in verschiedenen Präsentationsformen nutzerfreundlich präsentiert. Standardmäßig werden das entsprechende Digitalisat und der transkribierte Text nebeneinander dargestellt. Abweichende Darstellungsformen sind möglich, sodass auf die Besonderheiten der einzelnen Projekte eingegangen werden kann. Weitere Vorteile von wdbplus sind verschiedene APIs, mit deren Hilfe nicht nur einzelne Texte, sondern auch Metadaten einzelner Projekte abgerufen werden können. Auch Volltextsuchen können auf Projektebene sowie projektübergreifend realisiert werden.
+
+            
+
+            
+
+                
+Projekte
+
+                
+Das Projektportfolio des ZEiD umfasst mehrere Projekte, in denen eine Vielzahl an Textsorten mit druck- und handschriftlichen Originalen aufbereitet werden. Die Textsorten reichen dabei von frühneuzeitlichen (Hand-)Schriften über Verfassungstexte des 18. Jhdts. und Zeitungsdrucke aus drei Jahrhunderten bis hin zu handschriftlichen Liebesbriefen aus vier Jahrhunderten. Dabei adressieren wir unterschiedliche Herausforderungen. Herausragend sind hier die OCR und speziell die HTR und die Erstellung von eigens trainierten Modellen und deren Anwendung und die Qualitätskontrolle. Auch die Handhabung der heterogenen Ausgangsformate ist ein wesentlicher Bestandteil der Aufgaben.
+
+                
+Eines unserer bekanntesten Projekte ist „Europäische Religionsfrieden Digital“ (ULB Darmstadt 2021) in Kooperation mit der Akademie der Wissenschaften und der Literatur | Mainz und dem Leibniz-Institut für Europäische Geschichte. Dabei handelt es sich um eine rein digitale Edition von frühneuzeitlichen Religionsfriedensregelungen aus verschiedenen Regionen des heutigen Europas, bei der das ZEiD für das Konzipieren und Erstellen der digitalen Komponenten der Edition und das Entwerfen von Fragestellungen aus den Digital Humanities verantwortlich ist.
+
+                
+In Kooperation mit dem Institut für Sprach- und Literaturwissenschaft der TU Darmstadt das Projekt „Digitalisierung des Darmstädter Tagblatt“ durchgeführt. Das „Darmstädter Tagblatt“ erschien seit ca. 1739 über 3 Jahrhunderte hinweg in diversen Titelformen, Ausgaberhythmen und Formaten, bis es 1986 nach 248 Jahren im „Darmstädter Echo“ aufging.
+
+                
+Im BMBF Citizen-Science-Projekt „Gruß &amp; Kuss” (Liebesbriefarchiv 2021) werden Liebesbriefe erschlossen, analysiert sowie erforscht. Durch das Verbundprojekt wird für alltagskulturelle und gefährdete Quellen, für die bisher kein staatlicher Sammlungsauftrag existiert, die dauerhafte Erforschung und Bewahrung in Gedächtnisinstitutionen erstmals sichergestellt. Hervorgegangen aus dem Liebesbriefarchiv der Universität Koblenz-Landau arbeiten im Projekt verschiedene Institute sowie die Bibliotheken der Universitäten Koblenz-Landau und Darmstadt sowie der Hochschule Darmstadt zusammen. Gemeinsam mit Bürger*innen wird hier u.a. überprüft, inwiefern der Workflow des ZEiDs auch auf heterogene handschriftliche Daten angewendet werden kann oder angepasst werden muss. 
+
+                
+Das Projekt „Open Access Transformation by Cooperation” (OATbyCO) wird vom BMBF gefördert. Darin entwickelt das ZEiD in Kooperation mit der Wissenschaftlichen Buchgesellschaft (wbg) anhand von 700 zum Teil nur noch gedruckt vorliegenden Titeln aus der Backlist der wbg einen XML-basierten Workflow zur digitalen Veröffentlichung, welcher als Modell für gleichartige kooperative Unternehmungen in diesem Bereich dienen soll. Mit dem Aufbau einer digitalen Infrastruktur zur Indexierung, Langzeitarchivierung und Dissemination werden die Titel anschließend im Open Access zur Verfügung gestellt werden.
+
+            
+
+        
+
+        
+
+            
+
+                
+
+                    
+Bibliographie
+
+                    
+
+                        
+eXist Solutions
+ (2021): eXist DB. http://exist-db.org [letzter Zugriff 29. November 2021].
+                    
+
+                    
+
+                        
+Greve Rasmussen, Krista Stinne
+ (2016): “Reading or Using a Digital Edition? Reader Roles in Scholarly Editions” in: Driscoll, Matthew James / Pierazzo, Elena (eds.): 
+                        
+Digital scholarly editing. 
+Theories and practices. UK: Open Book Publisher 119–136.
+                    
+
+                    
+
+                        
+Kampkaspar, Dario
+ (2018): “W. Digitale Bibliothek (wdbplus)”, in: 
+                        
+GitHub
+ https://github.com/dariok/wdbplus [letzter Zugriff 29. November 2021].
+                    
+
+                    
+
+                        
+Liebesbriefarchiv
+ (2021): “Projekt ‘Gruß &amp; Kuss’”, in: 
+                        
+Liebesbriefarchiv
+ https://liebesbriefarchiv.de [letzter Zugriff 29. November 2021.]
+                    
+
+                    
+
+                        
+Rapp, Andrea / Büdenbender, Stefan / Dietz, Nadine / Dunkelmann, Lena / Gnau-Franké, Birte / Liesenfeld, Nina / Schmunk, Stefan / Seltmann, Melanie E.-H. / Stäcker, Thomas / Werner, Stephanie / Wyss, Eva L.
+ (2022): “Mein liebster Schatz! Das Citizen Science-Projekt Gruß &amp; Kuss stellt sich vor”, in 
+                        
+DHd2022. Kulturen des digitalen Gedächtnisses
+: Zenodo.
+                    
+
+                    
+
+                        
+Sahle, Patrick
+ (2013): 
+                        
+Digitale Editionsformen
+. Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels (= Schriften des Instituts für Dokumentologie und Editorik 7). Norderstedt: BoD.
+                    
+
+                    
+
+                        
+TEI Consortium
+ (2021): 
+                        
+TEI P5: Guidelines for Electronic Text Encoding and Interchange
+. [Version 4.3.0]. [31.08.2021]. TEI Consortium. http://www.tei-c.org/Guidelines/P5/ [letzter Zugriff 29. November 2021].
+                    
+
+                    
+
+                        
+ULB Darmstadt 
+(2021): “Europäische Religionsfrieden digital”, in 
+                        
+Universitäts- und Landesbibliothek Darmstadt
+ https://www.ulb.tu-darmstadt.de/forschen_publizieren/forschen/eured.de.jsp [letzter Zugriff 29. November 2021]
+                    
+
+                
+
+            
+
+        
+
+    
