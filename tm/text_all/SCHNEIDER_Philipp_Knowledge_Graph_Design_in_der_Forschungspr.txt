@@ -1,0 +1,98 @@
+
+            Der Vortrag gibt einen aktuellen Überblick zur Modellierung und Implementierung der 
+                Digital Heraldry Ontology. Diese entsteht im Rahmen der Entwicklung eines Knowledge Graphen zur Erfassung, Analyse und historischen Kontextualisierung von heraldischen Darstellungen des Mittelalters und der Frühen Neuzeit unter Berücksichtigung divergierender Beschreibungen und Interpretationsperspektiven.
+            
+            
+                Knowledge Graphen in der historischen Forschung
+                Historische Daten unterliegen einer hohen Komplexität. Sie sind in der Regel lückenhaft, ambivalent, multiperspektivisch, vage, z.T. widersprüchlich sowie stark an eine konkrete Zeit und einen konkreten Kontext gebunden. Gleichzeitig gibt es ein wachsendes Bewusstsein dafür, Forschungsdaten nachnutzbar und interoperabel zur Verfügung zu stellen (Cremer 2021). Eine zunehmend genutzte Technologie, um mit diesen Herausforderungen umzugehen, sind Knowledge Graphen auf Grundlage von Semantic Web Technologien. Hierbei werden Daten in Form von Graphdatenbanken zur Verfügung gestellt, die durch Ontologien im Sinne einer formalisierten 
+                    shared conceptualisation innerhalb einer Fachcommunity strukturiert (Studer 1998) und nach den Prinzipien von Linked Open Data interoperabel und flexibel veröffentlicht werden. Durch diese Interoperabilität kann die Vernetztheit und Interdependenz von historischem Wissen berücksichtigt werden.
+                
+                Dabei ist ein großer Vorteil von Knowledge Graphen, dass sie historische Daten in einer Weise abbilden, die sowohl menschen- als auch maschinenlesbar ist. Sie werden daher als 
+                    symbolische KI verstanden, die, im Gegensatz zu Formen der 
+                    sub-symbolischen KI, wie maschinellem Lernen, eine explizite und von Domänenexpert:innen modellierte Repräsentation von Wissen darstellt (Sack 2021). Dadurch lassen sich die allgemeinen Herausforderungen historischer Daten leichter adressieren.
+                
+                Knowledge Graphen besitzen in vielerlei Hinsicht für die historischen Wissenschaften innovatives Potenzial, das aktuell noch nicht völlig ausgeschöpft ist: Das betrifft die epistemologischen Anforderungen an die Modellierung historischer Daten mit Ontologien (Pierazzo 2019), die Möglichkeit der Kombinierbarkeit und gemeinsamen Auswertbarkeit interoperabler verschiedener Datensätze durch Linked Data (Vogeler 2020) sowie den Einsatz von 
+                    reasoning engines, die durch logische Inferenzen neues Wissen aus bereits vorhandenen Daten ableiten können (Hogan 2021; Ehrlinger 2016).
+                
+                Die Bedeutung von Knowledge Graphen ist daher in den Digital Humanities in den letzten Jahren stark angewachsen und wird in Zukunft wohl noch weiter zunehmen. So stellen etwa große Infrastrukturprojekte, wie NFDI4Memory, NFDI4Culture, Virtual Record Treasury of Ireland oder Biblissima, diese Technologie in den Mittelpunkt. Aber auch auf spezifische Themengebiete fokussierte Forschungsprojekte nutzen Knowledge Graphen zur Strukturierung und Bereitstellung ihrer Daten sowie zur Erkenntnisgewinnung.
+                
+            
+            
+                Die Bedeutung von Wappen für die kulturhistorische Forschung
+                Warum ist diese Technologie für die Erforschung historischer Heraldik des Mittelalters und der Frühen Neuzeit erforderlich? In diesen Epochen waren Wappen der am häufigsten gebrauchte und in Europa meist verbreitete Träger visueller Kommunikation (Hiltmann 2019; Hablot 2017). Verwendet wurden sie von fast allen sozialen Schichten und Gruppen. Wappen dienten dabei neben der Identifikation ihrer Besitzer:innen vor allem verschiedensten komplexen Kommunikationsakten, wie der Markierung von Besitz, Herrschaft, Jurisdiktion, Gruppenzugehörigkeit, Verwandtschaft, oder Ehre (Paravicini 1998). Damit erlaubt ihre Analyse wichtige Einblicke in vormoderne Gesellschaftsstrukturen und Kultur (Hofman 2021) – sie sind also als eigene geschichtswissenschaftliche (visuelle) Quelle zu betrachten.
+                Das betrifft auch den Aspekt der historischen Quellenkritik. Wappen wurden auf den unterschiedlichsten Materialien angebracht – von Handschriften über Urkunden oder Siegel und Münzen bis hin zu Wandmalereien, Teppichen und Möbeln – um nur einige Beispiele zu nennen (Biewer 2003). Dabei konnte dasselbe Wappen – abhängig von diesen konkreten materiellen Kontexten aber auch vom jeweiligen historischen Verwendungskontext – an unterschiedlichen Stellen eine unterschiedliche Bedeutung tragen. Diesen Kontexten muss daher bei der Beschreibung und geschichtswissenschaftlichen Analyse von Wappen Rechnung getragen werden.
+                Trotz ihrer historischen Bedeutung haben heraldische Quellen in den Geschichtswissenschaften nur eine überschaubare Berücksichtigung genossen. Zurückzuführen ist das nicht zuletzt auf den Umfang ihrer Überlieferung, ihre Komplexität sowie die beschriebene Ambiguität (Hiltmann 2019). Auch die Menge an überlieferten Wappen ist eine Herausforderung. Dies betrifft zum einen die Menge an Wappen auf unterschiedlichen Objekten, zum anderen die Menge verschiedener Wappenbilder, die überhaupt (z.T. auf mehreren Objekten) verwendet wurden. Hier gibt es Schätzungen von ca. einer Million verschiedener Wappenbilder die allein im Mittelalter im Umlauf waren (Pastoureau 2018: 42). Um einen leichteren Zugang zu dieser Form historischer Quellen zu ermöglichen, wird im Rahmen des Projekts 
+                    Die Performanz der Wappen an der Humboldt-Universität zu Berlin ein Knowledge Graph entwickelt, der einerseits Wappenbeschreibungen zur Verfügung stellt sowie andererseits Aufschluss darüber gibt, wo, wann und von wem diese Wappen verwendet wurden – ebenso, welche Bedeutung diese Wappen in den jeweiligen Verwendungskontexten vermutlich getragen haben. Damit soll der Knowledge Graph einerseits als datenhaltende Infrastruktur genutzt werden können, die diese Art historischer Quellen für die historische Forschung erstmals umfangreich und nachhaltig verfügbar macht. Vor allem aber soll der Knowledge Graph zum anderen dafür genutzt werden, konkrete geschichtswissenschaftliche Forschungsfragen beantwortbar zu machen. Innerhalb des Projekts betrifft das insbesondere Fragen zur Entwicklung und Diversifizierung heraldischer Kommunikation über die Zeit (Hiltmann 2019).
+                
+            
+            
+                Methodologie zur Entwicklung einer Ontologie für die historische Forschung
+                Diese beiden Anforderungen – die Bereitstellung einer flexiblen und nachhaltigen Infrastruktur sowie die Berücksichtigung von Forschungsfragen – mussten bei der Entwicklung der Ontologie und der gewählten Methodologie beachtet werden. Sie orientierte sich an aktuellen Best Practices des 
+                    Knowledge Engineering.
+                
+                Diese umfassen erstens insbesondere ein durch Fragen getriebenes Design. Die grundlegenden Konzepte einer Ontologie werden hierbei auf Grundlage von sogenannten 
+                    competency questions entwickelt (Shimizu 2020). Hierbei handelt es sich um natürlichsprachliche Forschungsfragen, die mit einer fertigen Ontologie beantwortbar sein müssen. Competency questions geben den inhaltlichen Rahmen vor, was zu modellieren ist. Der vorgestellte Knowledge Graph soll etwa nach verschiedenen Aspekten durchsuchbar sein, die miteinander kombinierbar sein sollen. Gesucht werden soll sowohl nach einzelnen Wappenbeschreibungen als auch nach Verwendungskontexten bestimmter Wappen, ebenso danach welche Wappen auf einem bestimmten Objekt abgebildet sind, sowie welche(s) Wappen zu einer bestimmten Zeit von einer bestimmten Person verwendet wurde(n). Ein hieraus abgeleitetes Beispiel für eine 
+                    competency question wäre somit z.B.:
+                
+                Auf welchen Wandmalereien und in welchen Buchhandschriften, die sich alle auf einen Zeitraum zwischen 1400 und 1500 datieren lassen, findet sich eine identische Sequenz an Wappenbildern, die in der gleichen Reihenfolge auftreten, und welchen Entitäten sind die einzelnen Wappen in den jeweiligen Kontexten zugeordnet?
+                Diese Vielfalt unterschiedlicher zu modellierender und ineinandergreifender Aspekte verweist zugleich auf das zweite Kernthema des modernen 
+                    Knowledge Engineering mit Ontologien: Wichtig ist auch eine möglichst starke Modularisierung der Architektur eines Knowledge Graphen. Dies erfolgt in der Regel über sogenannte 
+                    Ontology Design Patterns. Hierbei handelt es sich um kleinere Teilontologien, die für sich genommen einen bestimmten Sachverhalt abbilden (etwa die Modellierung von menschlichen Personen). Dies ermöglicht es, Teilprobleme getrennt zu modellieren und dadurch eine flexiblere Nachnutzbarkeit und Anschlussfähigkeit der 
+                    Ontology Design Patterns in anderen Kontexten zu gewährleisten (Shimizu 2020).
+                
+                Aus geschichtswissenschaftlicher Sicht sind weitere zusätzliche Anforderungen zu erfüllen, die als Grundprinzipien bei der Ontologieentwicklung gedient haben. Hierzu zählt insbesondere eine möglichst große Nähe zu den modellierten Quellen, wodurch Erkenntnisse der historischen Grundwissenschaften in Datenmodelle übersetzt werden. Als zentral wurde dabei auch die Trennung zwischen Beschreibung und Interpretation einer Quelle im Datenmodell erachtet (Beretta 2021; Theissen-Lipp 2020). Historische Quellenkritik muss also inhärenter Bestandteil eines Modellierungsprozesses sein. Aus der Sicht des 
+                    Knowledge Engineering bedeutet dies, dass die Umsetzung theoretischer epistemologischer Überlegungen zur Repräsentation historischer Daten in konkrete Ontologien (Beretta 2021; Eide 2019) eine Forschungsleistung des Projekts darstellt.
+                
+            
+            
+                Semantic Web Technologien zur Beschreibung und Kontextualisierung visueller Quellen
+                Im Vortrag wird ein Überblick zum aktuellen Entwicklungsstand der für diesen Knowledge Graph erforderlichen Ontologie gegeben. Um die unterschiedlichen Aspekte heraldischer Kommunikation zu erfassen sind insgesamt fünf Teilontologien mit jeweils eigenen Funktionen erforderlich:
+
+                    heraldry: System zur Beschreibung von Wappen
+                    blazon: Bereitstellung von Wappen als konzeptuellen Bilder
+                    representations: Beschreibung konkreter materieller Repräsentationen dieser konzeptuellen Bilder
+                    objects: Objekte zu denen diese Repräsentationen gehören
+                    entities: Personen, Gruppen oder andere Entitäten, die durch Wappen repräsentiert werden können
+                
+                Die erste Ontologie (
+                    heraldry) dient der Beschreibung von Wappen, basierend auf der Praxis und Terminologie des Blasonierens (Hiltmann 2022; Hiltmann 2020). Entscheidend ist dabei, dass es sich bei Wappen trotz ihrer Visualität nicht um Quellen handelt, die sich ausschließlich als Bilder darstellen lassen – vielmehr sind Wappen 
+                    konzeptuelle, 
+                    strukturelle Bilder (Pastoureau 1979). Konkret bedeutet dies, dass jedes Wappen eine Kombination aus bestimmten, in unterschiedlichen Wappen immer wieder verwendeten Figuren, Farben und geometrischen Mustern darstellt. Sowohl diese visuellen “Bausteine” als auch die Art wie sie auf einem Wappen angeordnet sind, werden durch eine halbwegs formale Terminologie und Fachsprache erfasst (
+                    blason bzw. 
+                    blazon) (vgl. Abbildung 1). Diese heraldischen Konzepte werden in der Ontologie formalisiert und erlauben so eine sowohl von Menschen als auch von Maschinen lesbare, verstehbare und analysierbare Beschreibung von Wappen. Auf diese Weise können beliebige heraldische Kombinationen erstellt werden, die dann als Linked Data eindeutig referenziert werden können. Grundlage für die Klassen und Properties dieser Teilontologie waren daher existierende heraldische Konzepte.
+                
+                
+                    
+                    Abbildung 1: Aufteilung heraldischer Begriffe
+                
+                Eine zweite Ontologie (
+                    blazon) speichert die unterschiedlichen Beschreibungen von Wappen, unabhängig von ihrem jeweiligen konkreten Verwendungskontext. Dadurch wird jede erdenkliche Wappenbeschreibung mit einer URI eindeutig referenzierbar.
+                
+                Eine weitere Ontologie (
+                    representation) modelliert das eindeutige Auftreten einer Wappenbeschreibung in einem konkreten materiellen Kontext auf einem bestimmten Objekt. Dieses kann z.B. eine Handschrift, eine Wandmalerei, oder ein Siegel sein. Auf diese Weise lässt sich disambiguieren in welchem konkreten Kontext ein bestimmtes Wappen verwendet worden ist.
+                
+                Diese materiellen Kontexte werden in einer weiteren Ontologie (
+                    objects) repräsentiert. Hier erfolgten ihre quellenkritische Beschreibung und historische Kontextualisierung mit objektspezifischen Metadaten. Dazu zählt beispielsweise die Datierung des jeweiligen Objekts, aber auch sein Verwendungszeitraum und -kontext, mögliche Auftraggeber:innen, oder der heutige Aufbewahrungsort. Einige dieser Objektmetadaten unterscheiden sich dabei bei verschiedenen Quellentypen – so erfordert die Beschreibung eines Siegels etwa andere Metadaten als die Beschreibung einer Wandmalerei.
+                
+                Eine letzte Ontologie (
+                    entities) erfasst schließlich die verschiedenen Entitäten, d.h. Familien, Personen, Institutionen oder auch abstrakte Konzepte, denen in einem bestimmten Kontext eine bestimmte Wappenbeschreibung zugeordnet werden kann. Hierdurch wird also abgebildet, was durch ein Wappen kommuniziert werden kann. Die Auslagerung dieser Aspekte in eine eigene Teilontologie ist dabei notwendig, um modularisierte Klassenstrukturen zu den wappentragenden Entitäten repräsentieren zu können. So lassen sich hier etwa Verwandtschaftsverhältnisse oder territoriale Bezüge abbilden, wodurch flexiblere Abfragen an den Knowledge Graphen möglich werden.
+                
+                
+                    Objects und 
+                    entities beschreiben somit materielle Objekte und wappentragende Entitäten in einem spezifisch heraldischen Kontext. Gleichzeitig ist jedoch auch für diese Teilontologien eine Verknüpfung zu bereits bestehenden (Norm-)Datensätzen im Sinne von Linked Open Data geplant. Über bereits etablierte top-level-Ontologien wie LIDO oder CIDOC CRM können so interoperable Verknüpfungen hergestellt und existierende Metadaten zu wappentragenden 
+                    objects und 
+                    entities nachgenutzt werden.
+                
+                Mit dem beschriebenen Ansatz können heraldische Darstellungen auf unterschiedlichen Quellen und die dazugehörigen Informationen mit anderen Quellenkorpora kombiniert und gemeinsam analysiert werden.
+            
+            
+                Multiperspektivität von Beschreibungen und Interpretationen
+                Darüber hinaus wird jede Form einer Zuordnung event-basiert modelliert – sei es die Zuordnung einer Wappenbeschreibung zu einem konkreten Wappenbild, das auf einem historischen Objekt abgebildet ist oder die Zuweisung eines Wappenbildes in einem bestimmten historischen Kontext zu einer Person oder anderen Entität. Das bedeutet, dass auch mehrere widersprüchliche Zuweisungen innerhalb desselben Kontextes existieren können. Hintergrund ist, dass solche Zuweisungen als historiographische Interpretation verstanden werden müssen, die zunächst als gleichwertig zueinander zu betrachten sind. Eine Zuweisung eines Wappens zu einem Wappenträger ist keinesfalls immer eindeutig und auch die Beschreibung eines Wappenbildes lässt sich auf Grund materieller Fragmentarität historischer Quellen nicht immer eindeutig durchführen. Die Entität, die für diese Zuweisung verantwortlich ist, kann dabei etwa eine moderne Forscher:in sein, aber auch die Umschrift eines Siegels oder der Text in einem mittelalterlichen Manuskript.
+                Abbildung 2 zeigt einen vereinfachten Überblick zur Funktionsweise dieser event-basierten multiperspektivischen Beschreibung eines Wappenbildes in einer Handschrift. Diese konkrete Abbildung in einer Quelle wird durch eine Entität im Knowledge Graphen repräsentiert (durch die URI bei (a) in Abbildung 2). Für dieses Wappenbild existieren zwei divergierende Beschreibungen. Diese beiden unterschiedlichen Wappenbeschreibungen werden jeweils durch ein Beschreibungs-Event (b) mit der Abbildung des Wappens in der Handschrift im Knowledge Graphen verbunden. Die Beschreibungs-Events können dabei durch weitere Metadaten, wie die Entität, die die jeweilige Beschreibung dem Wappenbild in der Quelle zugewiesen hat, angereichert werden. Die eigentlichen Wappenbeschreibungen werden ebenfalls jeweils durch eine eigene Entität repräsentiert (c). Konkret wird hier die Blume im abgebildeten Wappen einmal als „cinquefoil“ und einmal als „rose“ beschrieben. 
+                Den üblichen Herausforderungen bei der Modellierung historischer Daten wie Ambiguität, Vagheit, Unvollständigkeit wird durch diese Repräsentation von Multiperspektivität in der Modellierung der Ontologie(n) Rechnung getragen.
+                
+                    
+                    Abbildung 2: Modellierung von Multiperspektivität bei der Beschreibung von Wappen
+                
+            
+        

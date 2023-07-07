@@ -1,0 +1,95 @@
+
+
+Spezifika literaturwissenschaftlichen Annotierens
+Werden 
+                    Spielräume in der hermeneutischen Textarbeit als legitime – jedoch gewissen Regeln unterliegende – Pluralität der Zugänge zu Literatur verstanden, zeichnet sich literaturwissenschaftliches Annotieren in mindestens drei Aspekten durch Spielräume aus: 1) Literarische Texte können in vielerlei Hinsicht erforscht werden (etwa strukturell, inhaltlich oder inhaltstranszendierend, vgl. Shusterman 1978; Folde 2015). Dabei unterscheiden sich oft inhaltlicher Fokus und Methode der Texterforschung (vgl. Danneberg 1999; Bühler 2003). 2) Aufgrund ihrer Ambiguität lassen sich literarische Texte selbst innerhalb eines Zugangs unterschiedlich verstehen (vgl. Jannidis 2003; Bauer et al. 2010). 3) Der Texterforschungs-Workflow kann je nach Forscherïn unterschiedliche Methoden-Phasen zyklisch durchlaufen (vgl. Nünning & Nünning 2010, 10–21; Puhl et al. 2015, 42–46).
+
+Da DH-Tools möglichst an disziplinspezifische geisteswissenschaftliche Theorien, Methoden und Praktiken rückgebunden werden sollen (vgl. Sahle 2015), sollten digitale Zugänge zur Literaturerforschung diese Spielräume berücksichtigen. Undogmatisches Annotieren mit CATMA 6
+(https://catma.de) ist eine Möglichkeit, wie dies umgesetzt werden kann. Das webbasierte kollaborative Annotations- und Analysetool CATMA – seit 2008 an der Universität Hamburg entwickelt mit derzeit gut 8.000 aktiven Nutzerïnnen weltweit – integriert Textannotation, Analyse und Visualisierung innerhalb einer webbasierten Arbeitsumgebung vor dem Hintergrund einer konzeptionellen Rückbindung an Theorien der (‘undogmatischen’) hermeneutischen Texterforschung. Dies ist im Bereich der DH-Tools einmalig (vgl. Meister, im Erscheinen). Mit CATMA 6 werden innerhalb des DFG-Projektes forTEXT (https://fortext.net) neue Funktionalitäten und ein noch intuitiver nutzbares Interface auf Basis einer grundlegend neu gestalteten, projektzentrierten Systemarchitektur zur Verfügung gestellt.
+                
+Wie CATMA 6 geisteswissenschaftlichen Anforderungen (und damit den genannten Spielräumen) gerecht zu werden sucht, soll anhand von vier Funktionskomplexen demonstriert werden: unterschiedlichen Annotationsmodi, Mehrfachannotation, Metaannotation und kollaborativem Annotieren. Dieser Beitrag kann somit auch als exemplarische Umsetzung der Forderung verstanden werden, einen Brückenschlag zwischen DH- und traditionell-geisteswissenschaftlichen Methoden zu schaffen. 
+
+
+Vom ersten Zugang zur komplexen Interpretation
+
+Zum Verhältnis zwischen Annotation und Interpretation
+Die Interpretation literarischer Texte wird gemeinhin als eine Kernaufgabe literaturwissenschaftlichen Arbeitens betrachtet. Regeln der Textinterpretationen oder Gütekriterien für Interpretationshypothesen sind aufgrund der Theorie- und Methodenvielfalt nicht eindeutig festgelegt. Zwei Überzeugungen scheinen jedoch über unterschiedliche Ausrichtungen hinweg in der literaturwissenschaftlichen Forschungsgemeinschaft (relativ) allgemein anerkannt: (a) Trotz der Pluralität zulässiger Interpretationen gibt es auch Interpretationen, die einem Text 
+                        nicht angemessen sind. Und, damit zusammenhängend: (2) Interpretationen sollten (in gewisser Hinsicht) an das sprachliche Material des Textes angebunden sein.
+                    
+Angesichts dieser Sachlage lässt sich leicht erkennen, warum die Methode der Annotation im Zusammenhang mit Interpretationen fruchtbar angewandt werden kann: Der Prozess des Annotierens geht mit textnahem Arbeiten einher, und Annotationen werden grundsätzlich bestimmten Textstellen zugewiesen. Damit ist Annotation besonders geeignet für kleinschrittige textdeskriptive bzw. -analytische Vorhaben, die dann eine Grundlage für Interpretationen liefern können. Interpretationen selbst werden dann – auch in DH-Projekten – häufig in Form zusammenhängender Texte erstellt, innerhalb derer auf textanalytische Ergebnisse (Annotationen) Bezug genommen wird. Hier kann Annotation demnach als Werkzeug von Interpretation gelten.
+Es kann allerdings durchaus sinnvoll sein, auch Interpretationshypothesen selbst im Prozess des Annotierens zu entwickeln und als Annotationen festzuhalten. Denn zum einen verschwimmt sogar bei gemeinhin als deskriptiv geltenden Operationen wie der narratologischen Analyse otf die Grenze zu (inhaltsspezifizierender) Interpretation. Zum anderen sollte darauf geachtet werden, auch Interpretationshypothesen möglichst an Textstellen rückzukoppeln. Geschieht dies nicht, bleibt der Übergang zwischen kleinschrittiger-analytischer Textbeschreibung und holistisch-synthetischer Interpretation letztlich oft unklar.
+
+Wie groß die Spielräume im Rahmen von Annotation sein müssen – sowohl hinsichtlich des Grads der Formalisiertheit der Annotation (vgl. 2.2) als auch der Einigkeit unter verschiedenen Annotatorïnnen –, hängt entsprechend davon ab, ob es sich um deskriptiv-analytische Annotationen handelt, die als Vorarbeit für Interpretationen fungieren, oder um genuin interpretative Annotationen (vgl. 3).
+   
+
+
+Drei Annotationsmodi
+Viele Annotationstools (bisher auch CATMA) ermöglichen ausschließlich die Annotation mithilfe von Tagsets, also hierarchisch gegliederten Kategorien. Dafür müssen Forschende allerdings schon ein formalisiertes Kategoriensystem haben, mit dem sie den Text untersuchen wollen. Annotation sollte abern auch zur noch unstrukturierten Textexploration nutzbar sein. Zudem sollte auch Interpretation selbst mithilfe von Annotation ermöglicht werden, was aber meist nicht (allein) unter Nutzung von Kategorien umsetzbar ist. In CATMA 6 werden deshalb folgende Annotationsmodi implementiert:
+(1) 
+                        Highlight: Die Highlight-Annotation dient zunächst ausschließlich der Hervorhebung einer interessanten Textstelle. Nutzerïnnen können die annotierte Passage als relevant auszeichnen, auch wenn sie noch keine konkrete Hypothese haben. Mithilfe der Analysefunktionen in CATMA können gehighlightete Passagen gesucht und als Liste angezeigt werden. So lassen sie sich beispielsweise mit anderen Annotationsmodi weiter annotieren, wenn Texterforschung und Interpretation weiter fortgeschritten sind.
+                    
+(2) 
+                        Comment: Im Comment-Modus können Textstellen frei kommentiert werden. Dies ermöglicht es, Gedanken zu einer Textstelle festzuhalten, ohne ein strukturiertes Konzeptrepertoire zu nutzen. So können auch nicht in Kategorien überführbare Interpretationen als Annotation umgesetzt werden. Geplant ist zudem, die Erstellung von Tagsets auf der Basis von Kommentaren zu vereinfachen, beispielsweise indem die Kommentartexte (teil-automatisiert) ausgewertet werden.
+                    
+(3) 
+                        Annotation: Hierunter fallen in CATMA tagbasierte Annotationen, bei denen Textstellen mithilfe hierarchisch gegliederter Konzeptontologien mit einem Tag versehen werden (vgl. Fig. 1). Die Annotationsmodi können iterativ ineinandergreifen und bilden damit auch auf dieser Ebene den sog. ‘hermeneutischen Zirkel’ der Texterschließung ab. Die tagbasierte Form der Annotation setzt am meisten Strukturierung und Formalisierung voraus und ist nicht für alle Formen interpretativer Annotationen nutzbar. Als strukturiertes Werkzeug bzw. als Heuristik für Interpretation ist sie dafür umso fruchtbarer. In CATMA können Tagsets frei erstellt und laufend verändert werden; die Erzeugung einer solchen Konzeptontologie führt dabei zu sehr textnahem Arbeiten und erfordert in produktiver Weise die Reflexion literaturwissenschaftlicher Theorien und Methoden. Inwieweit tagbasiertes Annotieren mit der von Spielräumen geprägten literaturwissenschaftlichen Erforschung von Texten kompatibel ist, wird im Folgenden erörtert.
+                    
+
+
+Figure 1: Annotation in CATMA 6
+
+
+
+
+Voraussetzungen für gewinnbringendes taxonomiebasiertes Annotieren im Rahmen von Textauslegung
+Damit ein strukturiertes Annotieren mit Tagsets nicht nur im Rahmen heuristischer Textbeschreibung genutzt werden kann,
+sondern auch die Spielräume der Textauslegung abbildet, müssen einige Bedingungen erfüllt sein. 
+
+
+Mehrfachannotation
+Neben freiem Generieren und iterativem Überarbeiten von Tagsets ist eine Bedingung für die Nutzung tagsetbasierten Annotierens als interpretationsunterstützender Methode die Möglichkeit der (diversen oder sogar widersprüchlichen) Mehrfachannotation derselben Textstelle. Dies trägt zum einen dem Umstand Rechnung, dass ein Text aus unterschiedlichen Perspektiven untersucht werden kann: Beispielsweise kann eine Textpassage zugleich intermediale Bezüge enthalten und 
+                        Gender-Themen adressieren. Eine mehrdimensionale Kategorisierung der Textstelle muss daher möglich sein.
+                    
+Passagen literarischer Texte sind zudem häufig interpretationsoffen, weshalb unterschiedliche, teilweise auch widersprüchliche Interpretationen gleichermaßen gültig sein können. So mögen etwa (inkompatible) Thesen darüber, wer/was durch eine im Text auftretende Figur verkörpert werden soll, plausibel sein. In CATMA 6 sind freie Tagsetgenerierung und Mehrfachannotationen einer Textpassage möglich, indem Textpassagen, Annotationen und Tags als Knoten in einer Graphstruktur modelliert sind, die sehr flexible Verknüpfungsmöglichkeiten erlaubt.
+
+
+
+Metaannotationen
+Da bei der Interpretation von Literatur die Spielräume nicht grenzenlos sind und nach diversen Regeln gespielt werden muss (vgl. bspw. Jannidis 2003), benötigt eine Annotationsumgebung, die taxonomiegestütztes Interpretieren ermöglicht, auch Optionen zur Einordnung, Erläuterung und Aushandlung von Interpretationen. Diese Rolle erfüllen in CATMA 6 Metaannotationen, die wiederum taxonomiebasiert (als 
+                        Properties und 
+                        Values) bzw. als Metakommentar eingesetzt werden können:
+                    
+Annotationskategorien lassen sich mit Properties versehen, denen pro Annotation feste oder ad hoc vergebbare Values zugeordnet werden können, um Annotationen genauer zu qualifizieren. Die gleiche Funktion erfüllen freitextbasierte Metaannotationen, die erstmalig in CATMA 6 nutzbar sind. Ob Metaannotationen als freie Kommentare oder auf Taxonomiebasis zur Anwendung kommen, kann vom Grad der theoretischen Ausarbeitung der genutzten Interpretationsheuristik abhängen oder eine Frage des Anwendungskontextes bzw. der persönlich präferierten Arbeitsweise sein.
+In technischer Hinsicht sind Annotationen gemäß dem Web Annotation Data Model modelliert und haben als 
+                        body-type die Klasse 
+                        Dataset. Die Struktur ist eine Liste von 
+                        key/multi-value-Paaren. Der Tag der Annotation gibt die möglichen 
+                        keys vor.
+                    
+Während Metaannotationen eingesetzt werden können, um einem Tagset Analysekategorien auf einer horizontalen Gliederungsebene hinzuzufügen, lassen sie sich auch zur Einordnung der Interpretationsentscheidung nutzen. Forscherïnnen können beispielsweise angeben, welche Literatur- oder Interpretationstheorie (z. B. Rezeptionsästhethik oder Poststrukturalismus, vgl. Köppe & Winko 2013) sie herangezogen haben, um eine bestimmte (strittige) Interpretationsentscheidung zu treffen. Ebenso können in die Interpretation einfließende Kontextinformationen aufgeführt (z. B. Wissen über andere Texte), oder Interpretationen auf einer Sicher-unsicher-Skala verortet werden (vgl. Drucker 2011). Solche Metaannotationen helfen, hermeneutische Annotationen im Kontext theoretischer und subjektiver Einbettung zu verstehen; sie ermöglichen, zumindest in Ansätzen, die Angabe von Argumenten für Interpretationsentscheidungen und schaffen die Bedingungen einer literaturwissenschaftlichen Auseinandersetzung über die Plausibilität interpretativer Hypothesen. Besonders sind Metaannotationen notwendig, wenn Textstellen tatsächlich mehrere scheinbar widersprüchliche Annotationen aufweisen – speziell im Kontext kollaborativer Annotation und Textauslegung.
+                    
+
+
+Kollaborative Annotation
+Kollaboratives Annotieren ist in der Linguistik eine etablierte Methode, um Annotationsentscheidungen abzusichern (vgl. Wissler et al. 2014). In der Literaturwissenschaft ist es noch wenig etabliert (vgl. Röcke 2016); auch ist ein behutsameres Vorgehen angebracht, wenn es darum geht, Annotations- bzw. Interpretationsentscheidungen abzusichern. Als fruchtbar hat sich ein iteratives Vorgehen erwiesen, bei dem Forscherïnnen diskrepant annotierte Passagen diskutieren, um Gründe für unterschiedliche Entscheidungen herauszustellen (vgl. Gius & Jacke 2017). Durch eine gründliche Metaannotation kann dieser Workflow verschlankt werden. Je nach Grund kann abgewogen werden, ob es sich um eine legitime Uneinigkeit handelt. So können Interpretationsspielräume bei kollaborativem Annotieren zugleich gewahrt und sinnvoll eingegrenzt werden.
+Kollaboration wird in CATMA ermöglicht durch die mit GitLab per API verknüpfte projektzentrierte Systemarchitektur (vgl. Fig. 2). Eine GitLab-Group wird im CATMA Web UI als CATMA-Projekt gespiegelt, dem – entsprechend dem GitLab-Schema – einzelne Nutzerïnnen mit unterschiedlichen Rollen und Rechten hinzugefügt werden können. CATMA-Projekte werden mit Textdokumenten, Tagsets, Annotationsdaten und potentiell mehreren Projektmitgliedern ausgestattet. Da unterschiedliche Projektkontexte (etwa wissenschaftliche Forschungsprojekte mit mehreren Projektleiterïnnen, Mitarbeiterïnnen und Hilfskräften; Seminarprojekte in der universitären Lehre; Unterrichtsprojekte in der schulischen Lehre) die Festlegung unterschiedlicher Entscheidungsspielräume für die Mitarbeitenden erfordern, können in CATMA 6 jeweils projektbezogen die folgenden Rollen vergeben werden: Projekteigentümerïn/-leiterïn, Partnerïn, Assistentïn, Beobachterïn und Studentïn/Gast. Die Rollen sind dabei mit festen Rechte-Konfigurationen in den Feldern der Projekt- und Mitgliederverwaltung sowie der Erstellung, Bearbeitung und Löschung von Textdokumenten, Tagsets und Annotationsdaten versehen. Durch die Individualisierung von Kooperationsmodi kann festgelegt werden, wie viel Spielraum jedes Projektmitglied haben soll. Arbeitet man beispielsweise in einem Forschungsprojekt kollaborativ und möchte, dass alle Teilnehmenden die gleichen Rechte haben, vergibt man als Projekt-Owner Partner-Rollen. In Seminarkontexten könnte man Assistierenden-, Beobachtenden- oder Studierenden-Rollen vergeben, die jeweils weniger Zugriffsrechte haben.
+                    
+
+
+Figure 2: Systemarchitektur CATMA 6
+
+Das neue Rollen- und Rechtesystem erlaubt somit eine differenzierte Festlegung von Spielräumen auch bei der Konzeption eines kollaborativen Annotationsprojekts. Um einem Projekt weitere Mitglieder hinzuzufügen bietet CATMA 6 zwei Möglichkeiten: (1) das manuelle Hinzufügen einzelner CATMA-Nutzerïnnen durch Eingabe des CATMA-Usernames. Diese Funktion bietet sich für den asynchronen Arbeitsmodus etwa in Forschungsprojekten an. (2) Die 
+                        live-Einladung per generiertem Zahlencode, der nur für den Moment einer geöffneten Einladung gültig ist. Dies ist besonders für Seminar- oder Workshopkontexten eine zeitsparende Option.
+                    
+Die Verknüpfung mit GitLab bietet zudem Versionierungs- und damit einhergehende Konfliktlösungsfunktionen. Denn während CATMA beispielsweise inhaltlich widersprüchliche Mehrfachannotationen erlaubt, stellt das zeilenbasiert arbeitende Versionierungssystem Git einen Konflikt fest, wenn Nutzerïnnen inkompatible Änderungen in ihren Projekten vorgenommen haben, die dieselbe Zeile des zugrundeliegenden Codes betreffen. Nehmen wir beispielsweise an, in einem kollaborativen Forschungsprojekt wurde dieselbe Metaannotation von Nutzerïnnen 1 und 2 je unterschiedlich geändert. Sobald Nutzerïn 2 die Arbeit mit dem Team synchronisiert, meldet CATMA einen Konflikt, anstatt eigenmächtig einer Version den Vorzug zu geben (siehe Fig. 3). Dabei werden eigene und fremde Version nebeneinandergestellt und Nutzerïn 2 kann sich informiert für eine Version entscheiden, ohne tiefergehende Kenntnisse über die zugrunde liegenden technischen GitLab-Prozesse haben zu müssen. Diese Funktionalität unterstützt den – im kollaborativen Modus noch stärker im Vordergrund stehenden – diskursiven Aushandlungsprozess von Annotation und Interpretation und reagiert somit auf die Forderung nach flexiblen disziplinspezifischen Arbeitsabläufen.
+
+
+Figure 3: GUI-Unterstützung zur Konfliktlösung
+
+Das Schaubild (vgl. Fig. 4) verdeutlicht die identifizierten literaturwissenschaftlichen Spielräume (linke Spalte) und die daraus erwachsenden generellen Anforderungen an digitale Arbeitsumgebungen (mittlere Spalte). Wie CATMA 6 diese Anforderungen konkret umsetzt, findet sich in der rechten Spalte.
+
+
+ Figure 4: Technische Umsetzung der Anforderungen interpretatorischer Spielräume
+
+
+

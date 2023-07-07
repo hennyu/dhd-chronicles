@@ -1,0 +1,197 @@
+
+            
+                Einleitung
+                Zu digitalen Methoden, Forschungsdaten, Ressourcen und Diensten im Bereich der Digital Humanities sind zahlreiche Lehr- und Schulungsmaterialien vorhanden, die nicht nur Forschenden, sondern auch Lehrenden und Studierenden einen guten Einstieg in praktische Anwendungsfälle bieten. Als Beispiele finden sich Sammlungen und Plattformen wie TeLeMaCo, DARIAH-Campus
+                    
+                     und linguisticsweb.org
+                    
+                    , die Materialien zu unterschiedlichen Themen der Digital Humanities zusammenstellen. Zudem gibt es eine Vielzahl von einzeln entwickelten Anleitungen zu wichtigen Grundlagen aus dem Bereich der digitalen Editionen, des maschinellen Lernens und des Natural Language Processing (NLP), wie „Digitale Textedition mit TEI“
+                    
+                    , „NLP Based Analysis of Literary Texts“
+                    
+                     oder „TopicsExplorer“
+                    
+                    . Diese sind zumeist über verschiedene Plattformen oder die Webseiten zugehöriger Projekte zu finden. Die Formate der Materialien reichen von einfachen Dokumentationen über aufgezeichnete Vorträge und Präsentationsfolien bis hin zu didaktisch-methodisch ausgearbeiteten Lerneinheiten und Modulen zum Selbstlernen sowie direkt einsetzbaren Unterrichtsmaterialien. Sie variieren in ihrem Schwierigkeitsgrad und können sowohl für einen niederschwelligen Einstieg ohne Vorkenntnisse als auch für eine Vertiefung unterschiedlichster Themen genutzt werden. Die Angebotslandschaft der Lehr- und Schulungsmaterialien ist nicht nur äußerst vielfältig und heterogen, sondern sie zeichnet sich auch dadurch aus, dass sie im Rahmen von unterschiedlichen nationalen und internationalen Projekten, Initiativen und Vorhaben entwickelt, zusammengestellt und der wissenschaftlichen Community zur Verfügung gestellt wird. 
+                
+            
+            
+                Hintergrund und Ziele
+                Um eine bessere Erreichbarkeit und Zugänglichkeit zu bestehenden sowie neuen Angeboten von Lehr- und Schulungsmaterialien im Bereich der Digital Humanities zu ermöglichen, sollten diese in einem zentralen Verzeichnis zur Verfügung gestellt werden. Im Rahmen des CLARIAH-DE Projekts
+                    
+                     wurde – zunächst für die Umsetzung eines Projektmeilensteins – eine Lösung gesucht, die eine übergreifende Suche in frei zugänglichen und nachnutzbaren Lehr- und Schulungsmaterialien zu Forschungsmethoden, Verfahren sowie Werkzeugen im Bereich der Digital Humanities in unterschiedlichen Plattformen und Repositorien bietet (vgl. Annisius et al. 2021, Eckart et al. 2021). 
+                
+                Die Herausforderungen für eine geeignete Lösung bestanden in:
+                
+                    der 
+                        Heterogenität der Formate von verfügbaren Lehr- und Schulungsmaterialien (z. B. Videos, Präsentationsfolien, verschiedene Textformate),
+                    
+                    der 
+                        Heterogenität der Art von Materialien (z. B. Tutorials, Artikel, Dokumentationen, Vorträge),
+                    
+                    
+                        unterschiedlichen Lösungen, Orten und Betriebsformen (z. B. Git-basierte Plattformen, YouTube-Kanäle, institutionelle Repositorien) mit 
+                        unterschiedlichen Zugriffsmöglichkeiten auf die Ressourcen (z. B. mit oder ohne standardisierte Schnittstellen),
+                    
+                    der 
+                        Irregularität bei der Aktualisierung und Erweiterung der Sammlungen mit neuen Materialien, sowie
+                    
+                    der Notwendigkeit einer dynamischen und iterativen 
+                        Erweiterbarkeit des Verzeichnisses 
+                        um zusätzliche Sammlungen.
+                    
+                
+                Es wurde eine Lösung angestrebt, die einen Zugriff auf verteilte und heterogene Sammlungen von Lehr- und Schulungsmaterialien in diversen Formaten ermöglicht und eine systematische Durchsuchbarkeit bietet. Hierbei sollte der Zugang zu den individuellen Sammlungen keineswegs ersetzt werden, sondern im Rahmen der Präsentation relevanter Inhalte eine gezielte Benutzerführung zu diesen angeboten werden. Neben der Verbesserung der Zugänglichkeit und Erreichbarkeit der zur Verfügung gestellten Materialien an einem zentralen Ort gehörte auch die Stärkung ihrer Nachnutzbarkeit in verschiedenen Lehr- und Lernkontexten zu den primären Zielen bei der Entwicklung einer möglichen Lösung. Ausgehend von diesen Zielen entstand der
+                     CLARIAH-DE Tutorial Finder
+                    
+                    
+                    (siehe Abbildung 1), der über die Rolle des CLARIAH-DE Projektmeilensteins hinaus zu einem anschlussfähigen Dienst weiterentwickelt wurde.
+                
+                
+                    
+                    Abb. 1: Der im Rahmen von CLARIAH-DE entwickelte Tutorial Finder
+                
+                Relevante Zielgruppen für das entwickelte Angebot des Tutorial Finders setzen sich zusammen aus:
+                
+                    
+                        Studierenden, die Wissen im Selbststudium aneignen oder Erworbenes vertiefen möchten,
+                    
+                    
+                        Lehrenden, die in thematischer Verbindung zu Lehrinhalten bereits entwickelte Lehrmaterialien finden können, um sie im Rahmen eigener Lehre einzusetzen,
+                    
+                    
+                        Forschenden, die durch die Nachnutzung der Materialien neue Methoden und Ressourcen schnell entdecken und sich aneignen können. Durch die Bereitstellung von eigenen Materialien können sie aber auch aktiv z. B. neue Methoden und Ressourcen vorstellen, ihr Wissen teilen, eigene Materialien verbreiten, diese bekannt machen und die Sichtbarkeit eigener Arbeitsergebnisse erhöhen,
+                    
+                    einer 
+                        interessierten Öffentlichkeit, indem der Tutorial Finder nicht nur der wissenschaftlichen Gemeinschaft vorbehalten ist, sondern die Inhalte offen zur Verfügung stellt und einen schnellen Überblick über diese ermöglicht.
+                    
+                
+            
+            
+                Tutorial Finder
+                
+                    Aufbau des Tutorial Finders
+                    Der CLARIAH-DE Tutorial Finder baut auf einer fachlichen Adaption der in DARIAH-DE entwickelten 
+                        Generischen Suche
+                        
+                         mit den Komponenten der 
+                        Collection Registry
+                        
+                         (CR) und des 
+                        Data Modelling Environment
+                        
+                         (DME) auf
+                        
+                        . Die Generische Suche indiziert digitale Inhalte der Sammlungen gemeinsam mit vorhandenen Metainformationen und ermöglicht einen Zugriff auf diese. Dafür muss die Sammlung zunächst in der CR registriert und beschrieben werden. Die Beschreibung in der CR geschieht anhand des 
+                        DARIAH Collection Description Data Model (DCDDM)
+                        
+                        . In den vordefinierten, aber nur in wenigen Fällen obligatorischen Feldern (siehe Abbildung 2) werden die Sammlung, der Ort der Sammlung, die Lizenz sowie die technische Schnittstelle bzw. die Zugriffsmöglichkeit auf die Inhalte der Sammlung beschrieben.
+                    
+                    
+                        
+                        Abb. 2: Sammlungseditor der CR im Tutorial Finder
+                    
+                    Nachdem eine Sammlung beschrieben, gespeichert und veröffentlicht wurde, erscheint sie in der CR des Tutorial Finders (siehe Abbildung 3). 
+                    
+                        
+                        Abb. 3: In die CR des Tutorial Finder eingetragene Sammlungen
+                    
+                    Anschließend werden mithilfe der DME die Daten der Sammlung unter Beachtung ihres disziplinären Kontexts, ihrer Struktur und Komplexität modelliert, Verknüpfungen erstellt und in Form von Zugriffstellen bereitgestellt. Die Generische Suche kann danach auf Datenmodelle und Mappings der DME zugreifen, Informationen zu den Daten weiterverarbeiten, transformieren und integrieren. Hierdurch entstehen Brücken zwischen heterogenen Sammlungen – unabhängig von dort jeweils angebotenen Datenformaten. Volltexte und Metadaten aus TeLeMaCo können so beispielsweise gemeinsam mit den Transkripten aus dem Digital Medieval Webinar Repository (DMWR) durchsucht und ausgewertet werden.
+                    
+                    Einmal kontextuell erschlossen und modelliert können Datenmodelle auf weitere integrative Formate abgebildet werden. Im Fall des Tutorial Finders wurde zunächst ein – um die Fähigkeit Volltext aufzunehmen – erweitertes Schema von DataCite gewählt. Über die grundlegende Suchfunktionalität hinausgehende Darstellungen in Form von Wissensgraphen werden derzeit evaluiert und weitergeführt.
+                    
+                
+                
+                    Suchfunktionalität des Tutorial Finders
+                    Nachdem eine Sammlung eingetragen ist und ihre Inhalte modelliert sind, kann sie über die Suchfunktionalität des Tutorial Finders durchsucht werden. Hierfür stehen eine 
+                        einfache und eine 
+                        erweiterte Suche zur Verfügung. Die 
+                        einfache Suche (siehe Abbildung 4) erlaubt eine Volltextsuche sowohl auf der Ebene der Primär- als auch der Metadaten – unabhängig von der Existenz von Mappings zwischen den betrachteten Sammlungsdaten. Sie kann auf sämtlichen verfügbaren Sammlungen mit Lehr- und Schulungsmaterialien oder auf einer benutzerdefinierten Teilmenge hieraus ausgeführt werden.
+                    
+                    
+                        
+                        Abb. 4: Suchergebnisse des Tutorial Finders zu „deep learning“ mittels einfacher Suche
+                    
+                    Die 
+                        erweiterte Suche (siehe Abbildung 5) bietet neben der Volltextsuche eine gezielte Suche, bei der spezifische Kriterien zur Einschränkung der Suchergebnisse angewendet werden können, die auf dem Schema von DataCite basieren. So können Metadatenfelder des Datenmodells beispielsweise herangezogen werden, um Suchergebnisse nach Orten oder Genres zu filtern.
+                    
+                    
+                        
+                        Abb. 5: Gezielte Suche nach Audiodateien zu „ocr“ mittels erweiterter Suche
+                    
+                    Wählt man ein Objekt der Ergebnisliste aus, gelangt man zu Informationen über die Zugehörigkeit zu einer Sammlung (siehe Abbildung 6). Insbesondere wird auch die URL präsentiert, unter der das Objekt in seinem ursprünglichen Sammlungskontext zu finden ist. Verfügbare Metainformationen zum Objekt können angesehen und heruntergeladen werden.
+                    
+                        
+                        Abb. 6: Detailansicht zu einem Suchergebnis im Tutorial Finder
+                    
+                    Dabei hostet der Tutorial Finder die Lehr- und Schulungsmaterialien nicht selbst, sondern ermöglicht bzw. erleichtert lediglich den Zugang auf diese über Metadaten und Volltexte. Es sind daher die zugrunde liegenden Lizenzen für die Nutzung in den unterschiedlichen Lehr- und Lernkontexten zu beachten.
+                
+            
+            
+                Angebot und Erweiterung des Tutorial Finders
+                
+                    Aktueller Stand
+                    Der Tutorial Finder ist ein offenes Angebot und befindet sich im stetigen Ausbau. Er wurde zunächst als Dienst für CLARIAH-DE konzipiert, der eine übergreifende Suche nach den Materialien aus den zwei vorangegangen Projekten – CLARIN-D
+                        
+                         und DARIAH-DE
+                        
+                         – wie TeLeMaCo von CLARIN oder DARIAH-Campus ermöglichen sollte. Im Laufe der Entwicklung und Erweiterung wurden in den Tutorial Finder Sammlungen und Materialien aufgenommen, die aus anderen für die Community wichtigen nationalen und internationalen Projekten, Vorhaben und Initiativen, z. B. The Programming Historian
+                        
+                         oder linguisticsweb.org, stammen. Weiterhin finden sich darin einzeln außerhalb jeglicher Sammlungen entwickelte Tutorials und Anleitungen, die jedoch methodisch aufbereitet sind und eine wertvolle Lehr- und Lernquelle zu aktuellen Themen der (Digitalen) Geisteswissenschaften und benachbarter Disziplinen bieten. 
+                    
+                
+                
+                    Erweiterung des Angebots
+                    Die Sammlung des Tutorial Finders wird nicht nur im Rahmen von Text+ erweitert. Auch die Community der Digital Humanities kann hierzu einen Beitrag leisten und Vorschläge zur Angebotserweiterung des Tutorial Finders machen: Interessierte, die eine Sammlung von Lehr- und Schulungsmaterialien oder einzelne Tutorials einem möglichst breiten Nutzerkreis zur Verfügung stellen wollen, können diese über den CLARIAH-DE Helpdesk
+                        
+                         vorschlagen oder sie als authentifizierte Nutzer*innen über den Sammlungseditor der CR (siehe Abbildung 2) im Tutorial Finder selbst anlegen. Sofern erforderlich, kann über den Helpdesk jederzeit auch Unterstützung angefordert werden. So können die Nutzer*innen das Spektrum der angebotenen Materialien unkompliziert erweitern und über den Tutorial Finder auffindbar, durchsuchbar und zugänglich machen.
+                    
+                    Neben der thematischen Relevanz für den Bereich der Digital Humanities bestehen einige grundlegende Voraussetzungen für die Aufnahme einer Sammlung von Lehr- und Schulungsmaterialien in den Tutorial Finder: 
+                    
+                        Die Materialien einer Sammlung müssen unter einem 
+                            freien Lizenzierungsmodell zur Verfügung stehen.
+                        
+                        Die Sammlung muss 
+                            öffentlich zugänglich sein.
+                        
+                        Die Sammlung muss 
+                            aktuell gehalten werden.
+                        
+                        Es muss eine 
+                            Ansprechperson benannt werden.
+                        
+                    
+                    
+                        Lizenzauswahl für Lehr- und Schulungsmaterialien
+                        Die für die Lehr- und Schulungsmaterialien am häufigsten genutzten Standardlizenzen sind die Creative-Commons-(CC)-Lizenzen
+                            
+                            . Sie werden in den Geistes-, Kultur- und Sozialwissenschaften und in Bildungseinrichtungen allgemein für die Lizenzierung von Texten, Bildern und Videos oder Multimediawerken genutzt. Zu den Vorteilen der CC-Lizenzen gehört, dass sie im Vergleich zu anderen Open-Content-Lizenzen verhältnismäßig einfach zu verstehen sowie international anerkannt und anwendbar sind. Den Nutzenden ermöglichen sie, schnell zu erkennen, ob und unter welchen Bedingungen sie das Material verwenden können. Den Autor*innen bieten sie eine Auswahl von modular aufgebauten Standard-Lizenzen, mit denen sie ihre Materialien nach eigenen Bedürfnissen lizenzieren können (vgl. Kamocki & Ketzan, 2014 für mehr Details zu CC-Lizenzen). Für umfassende Informationen zu verschiedenen Lizenzthemen und zur Auswahl einer passenden Lizenz steht die 
+                            CLARIN ERIC Legal Information Platform
+                            
+                             zur Verfügung.
+                        
+                    
+                    
+                        Zugänglichkeit der Sammlung mit Lehr- und Schulungsmaterialien
+                        Die Infrastruktur des Tutorial Finders ermöglicht eine Abfrage von Angeboten einer Sammlung über eine standardisierte Schnittstelle, z.B. OAI-PMH. Die Bereitstellung einer solchen standardisierten Schnittstelle ist jedoch keine Voraussetzung. Wichtig ist nur, dass die Inhalte der Sammlung online zugreifbar sind und so in den Tutorial Finder eingebunden werden können. So verfügt beispielsweise die TeLeMaCo-Sammlung über keine dedizierte Zugriffsschnittstelle. Die Daten wurden in diesem Fall direkt von der Webseite in der DME mithilfe eines iterativen Web-Crawling erschlossen, modelliert und extrahiert und so in den Tutorial Finder übernommen. Ein anderes Beispiel bildet die Anbindung von Sammlungen, die ihre Materialien in einem öffentlich zugänglichen Git-basierten Repositorium zusammenstellen und verwalten, wie The 
+                            Programming Historian oder 
+                            DARIAH-Campus. In diesem Fall kann das Git-Protokoll als Schnittstelle angebunden werden.
+                        
+                    
+                    
+                        Aktualität der Sammlung mit Lehr- und Schulungsmaterialien
+                        Da der Tutorial Finder lediglich den Zugriff auf Sammlungen mit Schulungs- und Lehrmaterialien ermöglicht, die bereits öffentlich zugänglich sind, und sie selbst weder hostet noch pflegt, wird die regelmäßige Überprüfung und Aktualisierung der Sammlungsinhalte von den jeweiligen Autor*innen bzw. den dafür zuständigen Personen vollzogen. 
+                    
+                    
+                        Klärung der zuständigen Ansprechpersonen
+                        Bei der Beschreibung einer Sammlung im Sammlungseditor der CR (siehe Abbildung 2) werden die Autor*innen bzw. die dafür zuständigen Ansprechpersonen ggf. auch mit der Angabe der Affiliation genannt. Diese Angaben sind notwendig, um z. B. Fragen zu Hintergründen der Sammlung, Zugriffsmöglichkeiten oder allgemeinen und technischen Voraussetzungen für die Aufnahmen der Sammlung in den Tutorial Finder zu klären.
+                    
+                
+            
+            
+                Zusammenfassung und Ausblick
+                In diesem Beitrag wurde der Tutorial Finder vorgestellt, der als Angebot des CLARIAH-DE Projekts zum zentralen Durchsuchen von vielfältigen Lehr- und Schulungsmaterialien zu digitalen Methoden, Forschungsdaten, Ressourcen und Diensten im Bereich der Digital Humanities entwickelt wurde. Er ersetzt nicht die bereits vorhandenen Sammlungen von Lehr- und Schulungsmaterialien, da der Tutorial Finder die Materialien nicht selbst hostet, sondern die Suche in verteilten Inhalten ermöglicht, die Sichtbarkeit von Materialien erhöht und ihre Nachnutzbarkeit steigert. Der Tutorial Finder ist für verschiedene Nutzergruppen – Forschende, Lehrende und Studierende aus dem Bereich der Digital Humanities – relevant und kann unter ihrer aktiven Teilnahme erweitert werden. Der Dienst wird derzeit für die weitere inhaltliche und technische Entwicklung in die neu geschaffenen Strukturen der Text+ Forschungsdateninfrastruktur überführt und weiterentwickelt – insbesondere mit Blick auf die organisatorische und fachliche Einbindung in die NFDI Konsortien von Text+ und NFDI4Culture
+                    
+                    
+                
+            
+        

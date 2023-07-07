@@ -1,0 +1,31 @@
+
+            
+                Einleitung
+                Das Osmanische Reich war im 19. Jahrhundert ein im Übergang zur Moderne begriffenes Staatsgebilde, in dem, wie auch in Europa, politische Konzepte wie Nationalismus zunehmend Bedeutung gewannen. Aufgrund dieser Verschiebungen bildeten sich neue Identitäten aus, die weniger religiös, sondern vielmehr nationalstaatlich geprägt waren. In diesem Projekt sollen Informationen zur politischen Situation und zur Wahrnehmung dieser Transformation durch Reisende im Osmanischen Reich in diesem Zeitraum zusammengetragen und erschlossen werden. Dabei wird ein Linked Open Data Ansatz verfolgt, der die extrahierten Entitäten und Informationen als Ressourcen für multimodale Forschungsansätze zur Verfügung stellt. 
+            
+            
+                Methode
+                Das Projekt konzentriert sich auf die Gattung der Reiseberichte (vgl. Wettlaufer 2007) europäischer Reisender im Osmanischen Reich, um die Außenperspektive auf die Verhältnisse im inneren des Osmanischen Reichs zu erfassen (Kilincoglu 2015, 2017a,b;). Hierzu werden die publizierten Berichte europäischer Reisender (vgl. Calikbasi 2004, Genc 2015; Schiffer 1999; Spackman 2017) zunächst identifiziert und in eine Zotero Bibliographie mit Primär- und Sekundärliteratur eingepflegt. Bislang konnte ca. 450 individuelle Berichte identifiziert werden.1 Die gefundenen Berichte wurden in Hinblick auf die darin Reisenden ausgewertet. Digitalisate stehen nach ersten Stichproben für ca. 95% der Berichte über Google Books und Hathi Trust2 zur Verfügung und werden daraus für das Projekt nachgenutzt. Ein im Aufbau befindliches Online-Portal bietet zunächst einen Überblick zu den Reisenden, ihren Berichten und erlaubt Zugriff auf die rechtefreien Volltexten ihrer Reisebeschreibungen.3
+                
+                
+                    
+					
+						Abbildung 1. Open Semantic Desktop Search User Interface (Django) mit Beispieldaten aus dem Projekt.
+					
+                
+                Für die inhaltliche Erschließung der Berichte werden die Texte in einen Suchindex eingepflegt und relevante Entitäten extrahiert, die eine facettierte Suche in dem Apache/Solr-Index möglich machen. Hierfür wird die Suchumgebung Open Semantic Search (OSS)4 verwendet, die eine integrierte NER5 bietet. In einer weiteren Ausbaustufe sollen die Linked Data Kapazitäten von Open Semantic Search verwendet und zusätzliche Metadaten über die Reisenden oder die von Ihnen besuchten Orte eingebunden werden. Dabei können zielgerichtet Ortsnamen automatisiert über wikidata in die NER eingebracht werden (Abb. 2). Weil die automatisierte Generierung von Facetten und Metadaten nicht fehlerfrei möglich sein wird, ist eine manuelle Nachbearbeitung und Anreicherung der Texte notwendig. Das Projekt ist über einen Zeitraum von drei Jahre geplant und soll anschließend nachhaltig über ein geisteswissenschaftliches Forschungsdatenzentrum im Rahmen der NFDI gehostet werden. 
+                
+                
+                    
+					
+						Abbildung 2. Generierung von Facetten aus Listen oder Ontologien bzw. direkt über SPARQL Abfragen. 
+					
+                
+                Die so aufbereiteten Texte, Abbildungen und Metadaten sollen anschließend multimodal und -medial über die GIS Funktionalität der Plattform (ebenfalls in OSS integriert) präsentiert werden. Damit können z.B. die Itinerare der Reisenden visualisiert werden (vgl. auch Wettlaufer 2010, 2011). Zugeordnet zu einen einzelnen Stationen werden Abbildungen, die sich in den Digitalisaten finden und rechtefrei sind, angezeigt bzw. verlinkt. Dadurch wird die Reiseerfahrung plastisch nachvollziehbar und die textuelle Überlieferung in einen geographischen und medialen Kontext gesetzt.
+            
+            
+                Ausblick auf die Ergebnisse
+                Auf der Grundlage dieser Datenaufbereitung sollen anschließend relevante Beschreibungen der politischen Situation im Osmanischen Reich des 19. Jahrhunderts identifiziert und vergleichend analysiert werden. Einige händisch gezogene Stichproben lassen einen reichen Ertrag an Fundstellen erhoffen, die über die nationalstaatlichen Strömungen und Überlegungen dieser Zeit aus der Perspektive von Reisenden Auskunft geben.6 Die extrahierten Metadaten zu Personen, Orten, Publikationen und Reiserouten sollen schließlich mit anderen Ressourcen wie Normdatensätzen und wikidata verknüpft und die gewonnen Erkenntnisse so als Linked Open (Travel) Data maschinenlesbar zur Verfügung gestellt werden. Darüber hinaus soll das Portal offene, reichhaltige und verlässliche Ressource für Wissenschaftler und Forschungsgruppen bieten, die sich für den mittleren Osten im Spiegel von Beschreibungen aus erster Hand im langen 19. Jahrhundert interessieren. Schließlich ist auch eine Nachnutzung der spezifischer Anpassungen in der NLP Toolchaine der OSS Suchumgebung für andere Projekte zur Erforschung von Reiseliteratur geplant.7
+                
+            
+        

@@ -1,0 +1,66 @@
+
+      
+        Einleitung
+        In unserem Poster möchten wir unsere neueste FinderApp GoetheFind vorstellen, die mit
+          computerlinguistischen Methoden die Originalausgabe von Goethes Faust
+          durchsucht. GoetheFind hat einen neuen browser-basierten Faksimile-Viewer, der
+          die Schaltstelle der multimedialen Ausgabe der Suchtreffer darstellt: Die
+          Treffer werden im Faksimile der Originalausgaben gehighlighted dargestellt und
+          mit einer gesprochenen Faust-Hörbuchausgabe verlinkt. Bei Faust I werden die
+          Treffer mit der entsprechenden Szene des Videos der Bühnenaufführung vom
+          Hamburger Schauspielhaus mit Gustav Gründgens (1960) verlinkt. GoetheFind
+          entstand aus unserer FinderApp WiTTFind (Hadersbeck / Pichler; Hadersbeck et al. 2014), die den
+          öffentlich zugänglichen Teil des Nachlasses von Ludwig Wittgenstein durchsucht
+          und mit der wir im Sommer 2014 den EU-AWARD des EU-Projekt Digitised Manuscripts to Europeana (cf.
+          Ploeger 2014) gewannen. 
+          In unserer neuen FinderApp GoetheFind, setzen wir Ideen des „Standoff-Markups“ um, damit „overtagged“-XML vermieden wird. Wir entwickelten eine reduzierte „XML-TEI-P5 anchor-key“ Edition und speichern die Metainformatione in einer „NoSQL-mongo“-Datenbank. Alle relevanten Editions-, OCR- und Transkriptionsinformationen zur multimedialen Trefferausgabe sind in der Datenbank gespeichert.
+        
+        
+          Modellierung der Editionsdaten 
+          
+            Anstatt „overtagged“ XML ein reduziertes „anchor-key“ XML-TEI-P5 mit „NoSQL“-Database
+            Grundlage unserer FinderApp GoetheFind ist die XML-TEI-P5 Textedition im
+              DTABf Format vom Deutschen Textarchiv (DTA) der Berlin-Brandenburgischen
+              Akademie der Wissenschaften (BBAW 2013; Haaf et al. 2015), dazu die
+              Bilddigitalisate der Staatsbibliothek zu Berlin (BBAW 2013) und dem freiem
+              Hochstift Frankfurt des Frankfurter Goethe-Hauses (Signatur: III B / 23).
+              Da wir zur multimedialen Ausgabe der Suchtreffer zahlreiche
+              Metainformationen benötigen und "overtagged" XML des Editionstexts vermeiden
+              wollten, verwenden wir Ideen des „Standoff-Markups“ und lagern alle
+              notwendigen Meta-Informationen in der „NoSQL“ mongo-Datenbank GoetheDB aus.
+              Eine eindeutige Referenz der Datenbankeinträge zum Editionstext lösen wir
+              über den XML-TEI-P5 Tag <anchor/>, der an Seitenanfängen in die
+              Edition eingefügt ist. Die Trefferpositionen werden über ein
+              XML-Attributtrippel (Seite, Zeile, Token) genau spezifiziert. 
+            
+            
+              Vorverarbeitung der Edition, Faksimile, Videoaufführung und Audioaufnahme
+              Da unsere FinderApp die Suchanfragen regelbasiert mit Hilfe von lokalen
+                Grammatiken im Kontext eines Satzes realisiert, verwenden wir als wichtigste
+                Strukturierungsebene Sätze. Goethes Faustdrama bettet Sätze in Rede und
+                Gegenrede, sogenannte Repliken ein, die die zweite Strukturierungsebene
+                darstellt. Zur visuellen Hervorhebung und multimedialen Ausgabe der
+                gefundenen Textstellen im Faksimile ermitteln wir für die Replike
+                geometrische Informationen mit Hilfe eines von uns entwickelten
+                semiautomatischem OCR-Correction Tools. Die Bühnen- und Audioaufnahme werden
+                mit Hilfe des Clarin-Tools: „Munich Automatic Segmentation System WebMAUS“
+                (CLARIN) semiautomatisch transkribiert. 
+              
+            
+            
+              Computerlinguistische Methoden zur Textinterpretation 
+              Mit Hilfe unseres Speziallexikons GoetheLEX, angereichert um historische Sprachvarianten, Part of Speech Tagging und lokalen Grammatiken implementierten wir eine Partikelverb- und Semantische Suche. Bei der Eingabe von Suchanfragen verwenden wir eine symmetrische Autovervollständigung mit Informationen zur Häufigkeit des Auftretens im Text.
+            
+            
+              Treffer im Faksimile-Viewer und multimediale Ausgabe
+              Ähnlich wie bei Google-Docs entwickelten wir einen Browser basierter Faksimile-Viewer mit dem man in einem doppelseitigen Buchlesemodus durch das Dokument blättern kann und die gefundenen Textstellen farblich hervorgehoben werden. GoetheFind vernetzt alle Treffer mit der entsprechenden Replik in der Bühnenaufführung und der Hörbuchausgabe. Sobald der Nutzer auf die Mulitmediabuttons des Treffers drückt, startet im Browser ein Videoviewer oder eine Ausdioausgabe ab dieser Stelle. 
+            
+            
+              Danksagung
+              Wir danken dem Deutschen Textarchiv für die gute Zusammenarbeit und die
+                freundliche Verfügungsstellung der Editionsdaten von Goethes Faust (BBAW 2013).
+                Der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz und dem Freien
+                Deutschen Hochstift, in Frankfurt danken wir für die Wiedergaberechte der
+                Bilddigitalisate der Originalausgabe Goethes Faust.
+              
+            

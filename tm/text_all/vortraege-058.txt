@@ -1,0 +1,107 @@
+
+      
+        Einleitung
+        Unter Usability verstehen wir die Gebrauchstauglichkeit einer Software, die ein
+          Qualitätsmerkmal der Benutzeroberfläche darstellt und als Teilaspekt der
+          gesamten User Experience anzusehen ist. Sie bildet die Grundlage positiver
+          Interaktionen und ist ein wichtiger Faktor für den Erfolg eines Tools. Es spielt
+          dabei eine entscheidende Rolle, inwieweit sich Nutzer_innen innerhalb der
+          Anwendung durch die verständliche Bedienbarkeit und den zu erwartenden Workflow
+          der einzelnen Funktionen zurechtfinden. Dabei ist es hilfreich, sie von Anfang
+          an mit in den Entwicklungsprozess einzubinden und ihre Arbeitsmethoden
+          kennenzulernen. Dazu dienen auch Mockups wie das Beispiel in Abbildung 1
+          illustriert. In diesem Vortrag wollen wir darstellen, wie Usability in den
+          Digital Humanities evaluiert werden kann und welche Probleme sich generell bei
+          der Softwareentwicklung in der Forschung auftun. Dafür werden wir grundlegende
+          Überlegungen zur Usability-Problematik anstellen. Anhand von Nutzungsszenarien
+          am Beispiel des im Projekt LAUDATIO
+          1 (weiter-)entwickelten
+          Forschungsdatenrepositoriums für historische Textdaten demonstrieren wir, wie
+          eine kostengünstige und einfache Usability-Evaluierung stattfinden kann. Als
+          Verfahren wurden hierfür der Thinking-Aloud Test (Lewis / Rieman 1994), eine der
+          wichtigsten Methoden für die nutzerorientierte Evaluation, sowie eine
+          heuristische Evaluation angewandt. 
+          
+            
+            
+              Abb. 1: Mockup der facettierten Suche mit
+              Suchergebnissen
+            
+          
+          
+            
+              Motivation und Hintergrund
+            
+            Die Usability von Tools und deren grafischen Benutzeroberflächen ist essentiell, um Nutzer_innen ein effektives
+              Arbeiten zu ermöglichen und Bedienfehler zu minimieren. Dabei muss man sich in
+              der großen Auswahl bereits existierender, einschlägiger DH-Tools 2 entscheiden, welche Anwendung für ein jeweiliges Szenario geeignet ist. 
+              Was in großen Teilen der Software-Entwicklung Standard ist, findet nur langsam
+                Einzug in die Entwicklung von Tools für die geisteswissenschaftliche Forschung.
+                So stellt Burghardt (2012) eine Kluft zwischen den Tool-Entwickler_innen und den
+                die Tools nutzenden Fachwissenschaftler_innen heraus, die sich beispielsweise in
+                fehlendem Usability-Engineering für linguistische Annotationswerkzeuge
+                niederschlägt. Anhand eines Heuristic Walkthroughs 3 erstellt er Design-Empfehlungen für
+                Annotationswerkzeuge. Er unterscheidet allgemeine und domainspezifische
+                Usability-Probleme. Der Grund für nutzerunfreundliche Funktionen sind häufig
+                mangelnde Ressourcen, aber auch fehlende Expertise auf dem Gebiet – dadurch
+                können entwickelte Tools fehleranfälliger sein, besonders wenn sie nicht
+                ausreichend getestet wurden. Gibbs und Brown (2012) sehen die fehlende
+                Investition in Nutzeroberflächen als Grund für die Ablehnung von Tools durch
+                frustrierte Nutzer_innen. Oftmals sind Software oder Tools von enthusiastischen
+                EntwicklerInnen nur für ein Nischenpublikum gebaut, und die Usability hat bei
+                der Entwicklung keinen hohen Stellenwert. 
+                Bisher wurde der Bedienbarkeit und Benutzbarkeit von digitalen Tools und Anwendungen im Bereich der Digital Humanities wenig Beachtung geschenkt. Aber gerade hier kann eine größere Akzeptanz und Nutzung des Tools/Services erreicht werden. Dabei muss eine Balance gefunden werden zwischen dem finanziellen Mehraufwand durch Umsetzung von Usability-Kriterien und der Spezifität des Tools, die eventuell nur einer kleinen Nutzergruppe zu Gute kommt. 
+                Die Kriterien nach Nielsen (1995) sollten auch bei der Entwicklung geisteswissenschaftlicher Tools/Services Anwendung finden, da sie enorm wichtig sind, um die Validität und die Nachprüfbarkeit der Ergebnisse, die durch ein solches Tool zustande kommen, zu fördern. Ein gut nutzbares Tool hilft dabei, Fehler zu vermeiden und Daten nachnutzbar zu machen – somit wird auch das Vertrauen gefördert.
+              
+              
+                
+                  Usability am Beispiel des LAUDATIO Repositoriums
+                
+                Das evaluierte Repositorium, in dem die Daten gespeichert werden, basiert auf Open-Source-Technologien
+                  4. Dessen Software-Module entsprechen allgemein den Anwendungsfunktionen Präsentation, Speicherung, Importieren und Suche. Basierend darauf wurde zuerst eine heuristische Evaluation
+                  5 durchgeführt, bei der zwei Experten anhand der Usability-Heuristiken von Nielsen das Repositorium begutachteten. Dabei lag der Fokus auf diesen näher spezifizierten Funktionen von LAUDATIO:
+                
+                
+                  Präsentation von Korpora,
+                  Suche nach Korpora und in deren Dokumenten und Annotationen,
+                  Herunterladen von Korpora,
+                  Importieren von neuen und erweiterten Korpora,
+                  Auseinandersetzung mit den verschiedenen Beschreibungen der einzelnen Korpora.
+                
+                Hierbei wurden folgende Problematiken ausgemacht, die einer Nutzbarkeit des Systems abträglich sind :
+                1. Inkonsistenz in der Benennung und Verwendung von mehrdeutigem Vokabular und Missachtung graphischer Konventionen
+                2. Intransparenz des Systemstatus
+                3. Fehlende oder schwer auffindbare Dokumentation
+                4. Fehlende Strategien zur Fehlerverhütung
+                5. Missachtung von Konventionen in der Suche
+                Im nachfolgenden Schritt wurden von Seiten der EntwicklerInnen 10 Aufgaben für einen Usability-Test erstellt, die sich aus Nutzeranfragen und dem alltäglichen Arbeiten mit dem Repositorium ergaben. Diese Aufgaben wurden mit einer Testperson durchgeführt, wobei zwei Personen die Aktionen und die Kommentare der Probandin protokollierten, sowie Screencasts der einzelnen Sessions aufzeichneten.
+                  Hierfür wurde seitens der Betreiber ein Testkorpus mit Metadaten zur Verfügung gestellt, wofür XML-Kenntnisse vorausgesetzt wurden. Die Testperson führte den Test zum einen als nicht eingeloggte Nutzerin und zum anderen als eingeloggte Nutzerin mit erweiterten Rechten durch. Im zweiten Fall konnte sie über den Importprozess ein selbständig verändertes Korpus hochladen und anzeigen lassen. Obwohl die Testerin nicht aus dem Bereich der Linguistik kam und sich deswegen auch erst in die Begrifflichkeiten und Funktionen des Portal einarbeiten musste, wurden erhebliche Usability-Probleme eminent. In einem gemeinsamen Gespräch mit den Betreibern des LAUDATIO Repositoriums wurden die Problematiken benannt und eine Priorisierung der Usability-Probleme vorgenommen. Dabei wurden folgende Punkte als Kriterium für die Priorisierung herangezogen:
+                
+                
+                  Schwere der Problems / Störfaktor bei der Benutzung des Repositoriums
+                  Häufigkeit, mit der die Nutzer mit dem Problem konfrontiert sind
+                  Menge der Ressourcen, die für die Behebung des Problems nötig wären
+                
+                Anhand der Priorisierungsliste wurden Verbesserungen in einem noch unveröffentlichten Prototypen vorgenommen und Massnahmen zur verbesserten Nutzerführung ergriffen. Diese sollen auch vorgestellt werden. 
+              
+              
+                Schlussfolgerung
+                Damit digitale Tools in den Geisteswissenschaften kontinuierlich Verwendung finden, müssen sie auch einfach und effizient zu bedienen sein. Eine einfache Methode um die Usability kostengünstig und schnell testen zu können, bieten die von Nielsen (2012) aufgestellten Merkmale für eine nutzerfreundliche Software: Erlernbarkeit, Einprägsamkeit, Effizienz, Fehlertoleranz und Nutzerzufriedenheit. Spezifische Tools in den Geisteswissenschaften haben jedoch oft nicht die Möglichkeiten, eine grafische Benutzungsoberfläche anzubieten, die all diesen Kriterien vollends gerecht werden. Durch unsere Erfahrungen mit dem LAUDATIO Repositorium schlagen wir deshalb folgende Interpretation der Merkmale vor:
+                
+                  Erlernbarkeit: Die meisten geisteswissenschaftlichen Tools sind sehr speziell und setzen eine fachspezifische Grundausbildung voraus, die sich oft auch schon in dem verwendeten Vokabular niederschlägt. Die Erlernbarkeit sollte also darauf zielen, den NutzerInnen erklärende Tutorials und Dokumentationen anzubieten, die eine Einarbeitung verkürzen. Der Aufwand des Erlernens der Software sollte im Einklang mit dem Nutzen der Software stehen.
+                
+                
+                  Einprägsamkeit: Hier geht es darum, dass NutzerInnen sich auch nach längerer Pause wieder in die Funktionalitäten des Tools einarbeiten können. Wie in Punkt 1 ist hier Dokumentation wichtig, aber auch eindeutiges Vokabular und prägnantes Design. Wenn es viele Parameter zur Einstellung gibt, sollten Möglichkeiten vorhanden sein, diese zu speichern oder zu exportieren, um sie später nachnutzen zu können.
+                
+                
+                  Effizienz: Hier geht es um die Schnelligkeit, mit der NutzerInnen zum Ziel kommen. Dies beinhaltet neben schnellen Ladezeiten auch das Liefern von Systemfeedback für Nutzerinteraktionen.
+                
+                
+                  Fehler: In diesem Punkt geht es um die Toleranz, mit der das System auch fehlerhafte Eingaben von NutzerInnen verarbeitet und zurückmelden kann und dieser trotzdem sein Ziel erreicht. Dies hat aber für geisteswissenschaftliche Tools noch eine andere Dimension: Verfahren und algorithmische Berechnungen müssen so transparent sein, dass NutzerInnen nicht durch falsche Bedienung Resultate, die einen Einfluss auf die Beantwortung der Forschungsfrage haben, zurückgeliefert bekommen. Es sollte immer klar sein, was das Tool mit welchen Daten macht und wie die Resultate zu interpretieren sind und warum welche Ergebnisse erzielt wurden. Es ist natürlich immer die Aufgabe der WissenschaftlerInnen, die sich des Tools bedienen, auf die Verlässlichkeit und Nachvollziehbarkeit ihrer Daten zu achten. Doch spielen hier die graphischen Benutzeroberflächen eine unterstützende Rolle und sollten gerade im wissenschaftlichen Bereich nicht in die Irre führen.
+                
+                
+                  Nutzerzufriedenheit: Natürlich spielt auch die Nutzerzufriedenheit eine Rolle, die sich meist aus dem Vorhandensein der vorangegangen Qualitätsmerkmale ergibt.
+                
+                In diesem Vortrag wollen wir unsere Erfahrung aus dem Usability-Test mit dem LAUDATIO Repositorium schildern und auf die daraufhin eingeleiteten Massnahmen zur Verbesserung der Nutzerführung eingehen. 
+              
+            

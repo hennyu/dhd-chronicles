@@ -1,0 +1,149 @@
+
+
+
+                        
+                              Bei der Erstellung der digitalen Edition folgen wir dem Historical Information Life Cycle (Meroño-Peñuela et al. 2014), wobei wir Ontologien nicht nur in der Anreicherungs-, Bearbeitungs- und Retrieval-Phase des Lebenszyklus, sondern auch in der Analyse- und Visualisierungsphase einsetzen.
+                        
+                    
+
+                        
+                             Unser Ontologie-Entwurfsansatz orientiert sich an der eXtreme Design-Vorgehensweise (Presutti et al. 2009), bei der sog. Competeny Questions aus anfänglichen User Stories abgeleitet werden, um die Anforderungen an die Datenmodellierung und das Information Retrieval zu definieren.
+                        
+                    
+
+                        
+                             siehe hierzu den Modellierungsansatz von Bartalesi et al. 2017
+                        
+                    
+
+                        
+                             Das kann interessant für Analyse und Visualisierung sein, weil, wie Maurer (2015, S. 391 f.) anmerkt, Reiseberichte von wissenschaftlichen Forschern oft einer thematischen Organisation folgen, um „Reiseergebnisse” zu präsentieren, anstatt einfach einer chronologischen Reihenfolge zu folgen.
+                        
+                    
+
+                        
+                             Annotationswerkzeuge wie brat (Stenetorp et al. 2012) oder INCEpTION (Klie et al. 2018) bieten Annotations- und Visualisierungskomponenten für n-äre Relationen (Frames oder Ereignisse inkl. der Rollen von Akteuren). 
+                        
+                    
+
+                        
+                             Siehe dazu etwa das allgemeine Frame 
+                            Travel
+                             mit Frame-spezifischen Eigenschaften zur Beschreibung von reisender Person, Reiseziel, Verkehrsmittel usw. in FrameNet: http://framenet.lexicalsemantics.org/frameIndex.xml?frame=Travel
+                        
+                    
+
+                        
+                             Die Datenmodelle GeoJSON-T, Linked Places und Linked Traces (siehe Grossner et al. 2017) sind bereits gut etabliert, aber es handelt sich dabei nur um Formate für den Datenaustausch und kommen daher in unserem Projekt nicht für den Aufbau der Datenbank in Frage.
+                        
+                    
+            
+                
+                    Bibliographie
+                    
+                        Barabucci, Gioele, Angelo Di Iorio, Silvio Peroni, Francesco Poggi, and Fabio Vitali. 
+                        2013. “Annotations with Earmark in Practice: A Fairy Tale.” In 
+                        Proceedings of the 1st International Workshop on Collaborative Annotations in Shared Environment: Metadata, Vocabularies and Techniques in the Digital Humanities
+                        . DH-Case ’13. Association for Computing Machinery, 10.1145/2517978.2517990
+                    
+                    
+                        Bartalesi, Valentina, Carlo Meghini, and Daniele Metilli. 
+                        2017. “A Conceptualisation of Narratives and Its Expression in the Crm.” In 
+                        International Journal of Metadata, Semantics and Ontologies
+                         12 (1): 35–46.
+                    
+                    
+                        Burrows, Toby, Matthew Holford, David Lewis, Andrew Morrison, Kevin Page, and Athanasios Velios.
+                         2021. “Transforming Tei Manuscript Descriptions into Rdf Graphs.” In 
+                        Graph Data-Models and Semantic Web Technologies in Scholarly Digital Editing
+                        , 143–54. Norderstedt: BoD, http://www.digitalhumanities.org/dhq/vol/16/2/000605/000605.html
+                    
+                    
+                        Eide, Øyvind.
+                        2015. “Ontologies, Data Modeling, and TEI.” In 
+                        Journal of the Text Encoding Initiative
+                        , no. 8 (December), https://doi.org/10.4000/jtei.1191
+                    
+                    
+                        Füssel, Marian, Tim Neu. 2021. “Akteur-Netzwerk-Theorie und Geschichtswissenschaft”. Paderborn: Brill; Ferdinand Schöningh.
+                    
+                    
+                        Giovannetti, Francesca; Tomasi, Francesca.
+                         2022. “Linked data from TEI (LIFT): A Teaching Tool for TEI to Linked Data Transformation” In 
+                        Digital Humanities Quarterly
+                        16 (2). http://www.digitalhumanities.org/dhq/vol/16/2/000605/000605.html.
+                    
+                    
+                        Grossner, Karl, Merrick Lex Berman, and Rainer Simon.
+                         2017. “Linked Places: A Modeling Pattern and Software for Representing Historical Movement.” In 
+                        Digital Humanities 2017: Conference Abstracts
+                        , 463–65, https://dh2017.adho.org/abstracts/204/204.pdf
+                    
+                    
+                        Haaf, Susanne, Alexander Geyken, and Frank Wiegand.
+                         2015. “The Dta ‘Base Format’: A Tei Subset for the Compilation of a Large Reference Corpus of Printed Text from Multiple Sources.” In 
+                        Journal of the Text Encoding Initiative
+                        , no. 8, doi:10.4000/jtei.1114
+                    
+                    
+                        Hellmann, Sebastian, Jens Lehmann, Sören Auer, and Martin Brümmer. 2013. “Integrating NLP using Linked Data”. In: 12th International Semantic Web Conference, 21–25 October 2013, Sydney, Australia.
+                    
+                    
+                        Klie, Jan-Christoph, Michael Bugert, Beto Boullosa, Richard Eckart de Castilho, and Iryna Gurevych. 2018. “The INCEpTION Platform: Machine-Assisted and Knowledge-Oriented Interactive Annotation”. In 
+                        Proceedings of System Demonstrations of the 27th International Conference on Computational Linguistics (COLING 2018), Santa Fe, New Mexico, USA. https://aclanthology.org/C18-2002
+                    
+                    
+                        Kudella, Christoph, and Neil Jefferies.
+                         2019. “How Do We Model the Republic of Letters?” In 
+                        Reassembling the Republic of Letters in the Digital Age
+                        , edited by Howard Hotson and Thomas Wallnig, 41–53. Göttingen: Göttingen University Press, 10.17875/gup2019-1146
+                    
+                    
+                        Mambrini, Francesco.
+                         2016. “Treebanking in the World of Thucydides. Linguistic Annotation for the Hellespont Project.” In 
+                        Digital Humanities Quarterly
+                         10 (2), http://www.digitalhumanities.org/dhq/vol/10/2/000251/000251.html
+                    
+                    
+                        Maurer, Michael.
+                         2015. “Reiseberichte als Wissensspeicher.” In 
+                        Wissensspeicher Der Frühen Neuzeit: Formen und Funktionen
+                        , edited by Frank Grunert and Anette Syndikus, 391–412. Berlin, Boston: De Gruyter, 10.1515/9783050086637-015
+                    
+                    
+                        Meroño-Peñuela, Albert, Ashkan Ashkpour, Marieke van Erp, Kees Mandemakers, Leene Breure, Andrea Scharnhorst, Stefan Schlobach, and Frank van Harmelen.
+                        2015. “Semantic Technologies for Historical Research: A Survey.” 
+                        Semantic Web
+                         6 (6). IOS Press: 539–64, 10.3233/SW-140158
+                    
+                    
+                        Presutti, Valentina, Enrico Daga, Aldo Gangemi, and Eva Blomqvist. 2009. “eXtreme Design with Content Ontology Design Patterns.” WOP.
+                    
+                    
+                        Presutti, Valentina, Eva Blomqvist, Enrico Daga, and Aldo Gangemi.
+                         2012. “Pattern-Based Ontology Design.” In 
+                        Ontology Engineering in a Networked World
+                        , edited by Mari Carmen Suárez-Figueroa, Asunción Gómez-Pérez, Enrico Motta, and Aldo Gangemi, 35–64. Berlin: Springer.
+                    
+                    
+                        Stenetorp, Pontus, Sampo Pyysalo, Goran Topić, Tomoko Ohta, Sophia Ananiadou, and Jun’ichi Tsujii. 2012. “Brat: a Web-based Tool for NLP-Assisted Text Annotation”. In 
+                        Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics, 102–107.
+                    
+                    
+                        tei-c.org. 2019. “A very gentle introduction to the TEI markup language.” https://tei-c.org/Vault/Tutorials/mueller-index.htm.
+                    
+                    
+                        Unsworth, John.
+                         2011. “Computational Work with Very Large Text Collections. Interoperability, Sustainability, and the Tei.” In 
+                        Journal of the Text Encoding Initiative
+                        , no. 1 (June), 10.4000/jtei.215
+                    
+                    
+                        Wettlaufer, Jörg, Christopher Johnson, Martin Scholz, Mark Fichtner, and Sree Ganesh Thotempudi. 
+                        2015. “Semantic Blumenbach: Exploration of Text–Object Relationships with Semantic Web Technology in the History of Science.” In 
+                        Digital Scholarship in the Humanities
+                         30 (suppl_1): i187–i198, 10.1093/llc/fqv047
+                    
+                
+            
+        

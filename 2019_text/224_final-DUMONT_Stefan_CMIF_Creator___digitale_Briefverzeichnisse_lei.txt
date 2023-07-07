@@ -1,0 +1,75 @@
+
+            
+                Der Webservice correspSearch1
+                 wird an der Berlin-Brandenburgischen Akademie der Wissenschaften entwickelt, um digitale und gedruckte Briefeditionen editionsübergreifend zu vernetzen und durchsuchbar zu machen. Darüber hinaus sollen die Briefmetadaten mit correspSearch für neue digitale Forschungsmethoden (wie z.B. aus der Historischen Netzwerkforschung) bereitgestellt werden. Mittlerweile sind über 44.000 edierte Briefe in correspSearch nachgewiesen.
+            
+            
+                Ein wesentlicher Bestandteil von correspSearch ist die Möglichkeit, den Datenbestand mit Metadaten zu eigenen - digitalen oder gedruckten - Briefeditionen zu erweitern. Durch die damit einhergehende Standardisierung der Metadaten auf der Grundlage  der Richtlinien der Text Encoding Initiative (TEI) werden Editionen für die digitale Vernetzung erschlossen. Je mehr Briefmetadaten bereitgestellt und  aggregiert werden, desto größer ist der Nutzen dieser Daten für die Recherche und Forschung. Mit dem CMIF Creator erfasste Daten werden im „Correspondence Metadata Interchange Format” (CMIF) kodiert, das von der TEI Correspondence Special Interest Group entwickelt und gepflegt wird. Anschließend werden die TEI XML-Daten auf Anbieterseite online verfügbar gemacht und vom Webservice per URL abgerufen. Die Metadaten der Briefeditionen werden somit dezentral aggregiert und erfordern nicht den Betrieb einer zentralen Speicherlösung. Der Webservice correspSearch, sowie das zugrundeliegende CMIF und das TEI-Elementset correspDesc wurden 2018 mit dem 
+                Rahtz Prize for TEI Ingenuity2
+                 ausgezeichnet.
+            
+            
+                
+				
+				Abbildung 1. Oberfläche des CMIF Creator, Schritt 1: Metadaten.
+				
+            
+            
+                
+				
+				Abbildung 2. Listenansicht der Briefdatensätze.
+				
+            
+            
+                War es bis vor kurzem nötig, das CMIF manuell zu kodieren, bietet der 
+                CMIF Creator3
+                 nun eine benutzerfreundliche grafische Oberfläche, um eigene Brief-Metadaten in das nötige Format zu übertragen.4
+                 Der mittlerweile in seiner zweiten Version verfügbare CMIF Creator bietet eine einfach zugängliche Möglichkeit, online und browserbasiert Briefeditionen in TEI-konforme CMIF-Dateien zu übertragen. Diese können dann in das Datenbanksystem von correspSearch überführt werden. Durch die browserbasierte Anwendung, die nicht auf serverseitige Speicherroutinen angewiesen ist, können Nutzer*innen die gesamte Verarbeitung lokal ausführen. Das bedeutet, dass die Nutzer*innen jederzeit vollständige Kontrolle über ihre Daten haben, da diese ausschließlich lokal gespeichert werden. Das Zwischenspeichern und Laden begonnener CMIF-Dateien ermöglicht weiterhin eine Bearbeitung über einen längeren Zeitraum. Der CMIF Creator unterstützt die Abfrage von Normdaten der 
+                Gemeinsamen Normdatei
+                 (GND) der Deutschen Nationalbibliothek5
+                 über die von 
+                lobid
+                 bereitgestellte API6
+                , sowie das Abrufen von ortsbezogenen Normdaten aus der Datenbank des Ortsnamendienstes 
+                GeoNames7
+                , und ermöglicht eine in das User Interface integrierte Auswahl und Zuweisung von Normdaten zu Korrespondent*innen und Orten. Die Unterstützung von Normdaten ist essentiell, da correspSearch  für die Auflösung der Ambiguitäten von Personen- und Ortsnamen wesentlich auf die Nutzung von eindeutigen Normdaten-IDs zurückgreift. Die Oberfläche des Editors ist bewusst einfach und gleichzeitig so flexibel wie möglich gestaltet, um das CMIF Format im Frontend möglichst gut abzubilden und auch für weniger technisch versierte Nutzer*innen verfügbar zu machen. 
+            
+            
+                
+				
+				Abbildung 3. Listenauswahl von Normdaten.
+				
+            
+            
+                In den letzten Jahren hat sich JavaScript durch die breite Verwendung von hochentwickelten JavaScript-Frameworks zu einer der zentralen Skriptsprachen im Bereich des Frontend-Development entwickelt. Das zugrundeliegende Datenformat JSON bietet seinerseits eine bewährte und einfache Möglichkeit der Datenspeicherung im Frontend. Da XML-Frameworks oder -Bibliotheken für einen browserbasierten Editor dieses Umfangs als weitestgehend veraltet8
+                 und unzureichend performant evaluiert wurden, erfolgte die Entscheidung schließlich zugunsten einer JavaScript- und JSON-basierten Anwendung. Durch die Crossplatform-Tauglichkeit von JavaScript bietet sich in der Perspektive darüber hinaus großer Spielraum für die Weiterentwicklung des CMIF Creators analog zum Format und den Bedürfnissen der Nutzer*innen.
+            
+            
+                
+				
+				Abbildung 4. Ansicht eines Briefdatensatzes.
+				
+            
+            
+                Während der Arbeit im Editor verbleiben die Daten im JSON-Format und ermöglichen so eine dynamische Nutzung im Kontext des dem Editor zugrundeliegenden reaktiven JavaScript-Frameworks 
+                vue.js9
+                . Durch die Verwendung von 
+                vue.js 
+                in Verbindung mit dem CSS-Framework 
+                Bootstrap10
+                 wird jede Eingabe und Änderung der Nutzer*innen unmittelbar im JSON-Datenmodell abgebildet. Beim Speicherungsvorgang werden die JSON-Daten über die correspSearch-eigene API in valides XML serialisiert, das dann später von correspSearch abgerufen werden kann. Im Falle von invaliden Eingaben enthält der CMIF Creator interne Validierungsfunktionen, die sowohl nach der Eingabe in einzelnen Feldern, als auch vor dem abschließenden Speichervorgang, die Eingaben auf technische Korrektheit überprüft. Finden sich Fehler, so werden diese nicht nur lokalisiert, sondern auch verlinkt, sodass Nutzer*innen direkt zum entsprechenden Eintrag springen können. Beim Laden von validen XML-Dateien in den Editor findet die Umwandlung in JSON ebenfalls über die correspSearch-API statt. Der CMIF Creator wird als OpenSource-Software entwickelt und unter der GNU LGPL lizensiert. Die Quellen sind auf der GitHub-Seite von correspSearch11
+                 frei zugänglich.
+            
+            
+                
+				
+				Abbildung 5. Bei fehlerhaften Einträgen kann die CMIF-Datei nur als JSON-Entwurf gespeichert werden.
+				
+            
+            
+                
+				
+				Abbildung 6. Gibt es keine Fehler, können die Daten als valide .xml-Datei gespeichert werden.
+				
+            
+        

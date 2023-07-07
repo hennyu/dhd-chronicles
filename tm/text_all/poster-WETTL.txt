@@ -1,0 +1,23 @@
+
+Das Projekt „Johann-Friedrich Blumenbach online“ ist ein Forschungsvorhaben der Akademie der Wissenschaften zu Göttingen mit einer Laufzeit von 15 Jahren bis 2024. Es hat sich zum Ziel gesetzt, die gedruckten Veröffentlichungen sowie die Sammlungstätigkeit dieses Göttinger Gelehrten und Begründers der physischen Anthropologie, die sich über einen längeren Zeitraum im letzten Viertel des 18. und im ersten Drittel des 19. Jahrhunderts erstreckt, durch eine digitale Edition für die wissenschaftshistorische Forschung zu erschließen. Eine besondere Herausforderung für dieses ganz digital konzipierte Projekt ist dabei der Aufbau einer nachhaltigen digitalen Infrastruktur über die gesamte Laufzeit des Projekts und darüber hinaus. 
+Nach einer Phase der Zusammenarbeit mit Textgrid, einer virtuellen Forschungsumgebung im Rahmen von dariah.de, wurde seit 2015 ein neuer Ansatz für eine nachhaltige Präsentation der Ergebnisse präferiert, der auf Linked Open Data (LOD) basiert und sich neben den transkribierten XML-Texten und den Metadaten der erfassten Objekte auf die digitalisierten Abbildungen von Texten und Objekten selber konzentriert. Diese sollen in einer PANDORA [Presentation (of) ANnotations (in a) Digital Object Repository Architecture] genannten Annotationsumgebung für die Forschung erschlossen werden. Technologisch und erkenntnistheoretisch schließt sich das Vorhaben den Standards an, die seit einigen Jahren vom International Image Interoperability Framework (IIIF)
+                1 vorangetrieben werden. Aufbauend auf die Schnittstellen dieses Frameworks bietet PANDORA über ein sog. „Manifest“ die Organisation der Präsentation von Bilddaten, die z.B. in einem Repository gespeichert werden. Dieses „Manifest“ besteht aus einem JSON-LD
+                
+2
+ Dokument und wird dynamisch aus einem digitalen Objektrepositorium mit Hilfe von SPARQL-Abfragen
+                
+3
+ erzeugt. Es orientiert sich dabei an der Semantik und dem Konzept der „IIIF Presentation API“
+                
+4
+. Die Architektur des Systems ist in mehreren Schichten organisiert, die jeweils unterschiedliche Funktionen abdecken. Die unterste Ebene bildet der Repository-Layer, in dem mit Fedora Commons eine mächtige Speicherlösung zur Verfügung steht, mit der die Bild- und Objektdaten sowie die zugehörigen Annotationen verwaltet werden können. In den darauf aufbauenden Schichten (Service, API und Web Application Layer) werden die Daten für die Annotationen und Präsentation aufbereitet und schließlich im Client Layer in einem Viewer visualisiert. 
+            
+
+
+
+Mit der Verwendung aktueller standardisierter APIs, die von namhaften Einrichtungen der Kulturgutbewahrung eingesetzt und unterstützt werden, erhofft sich das Projekt eine besondere Nachhaltigkeit der Investitionen, die in den Aufbau des Portals und der Forschungsumgebung fließen. Durch eine Entkoppelung der Open-Source Komponenten in PANDORA, die bei Bedarf einfach ausgetauscht werden können, ohne die Grundfunktionalität zu gefährden, soll eine langfristige und ressourcenschonende Verwendung der Forschungsumgebung gewährleistet werden. Für die Präsentation der Bilddaten können verschiedene Viewer wie z.B. mirador
+                
+5
+ eingesetzt werden, ohne dass eine spezielle Anpassung notwendig ist. Aufgrund der auf Semantic Web Technologien aufbauenden Architektur sowie der Möglichkeit der Bereitstellung der Daten als Linked Open Data über einen Triplestore (Jena Fuseki) ist eine Nachnutzungsmöglichkeit der Daten durch andere Projekte gegeben, die ebenfalls zur Nachhaltigkeit der PANDORA-Lösung beiträgt. 
+            
+Langfristige Forschungsvorhaben im Akademienprogramm stehen vor besonderen Herausforderungen, da noch während der Projektlaufzeit technologische (Weiter-) Entwicklungen zu erwarten sind, die bei Antragstellung weder vorhergesehen noch vollständig antizipiert werden können. Dazu kommt die Herausforderung, digitale Systeme nicht nur für die Präsentation der Ergebnisse sondern auch für den Arbeitsprozess bei deren Erstellung vorzuhalten und kontinuierlich weiter zu entwickeln. Das Poster möchte, am Beispiel des Projekts „Johann-Friedrich Blumenbach online“, eine aktuelle und nachhaltige Lösung für diese Aufgabenstellung vorstellen und in der deutschen Digital Humanities Community diskutieren. 

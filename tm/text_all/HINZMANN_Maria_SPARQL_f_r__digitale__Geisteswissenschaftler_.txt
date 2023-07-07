@@ -1,0 +1,170 @@
+
+            
+                Einleitung
+                Nicht nur in Kultur- und Gedächtnisinstitutionen, auch in DH-Projekten ist derzeit eine Zunahme des Linked Open Data-Paradigmas sichtbar. Wie können Daten im Sinne von „Open Data, Open Cultures“ offen, gut zugänglich, interoperabel vernetzt, maschinenlesbar und langfristig verfügbar dargeboten werden? Im Projekt „
+                    Mining and Modeling Text“ haben wir uns für die offene und kostenlose Software Wikibase entschieden, die einen eigenen 
+                    SPARQL-Endpoint beinhaltet und neben Wikidata von einer wachsenden Anzahl an Forschungsprojekten verwendet wird.
+                
+                Der Workshop setzt es sich zum Ziel, theoretisches und praktisches Wissen zur Modellierung geisteswissenschaftlichen und speziell literaturgeschichtlichen Wissens in Form von Linked Open Data (LOD) zu vermitteln, Einblick in die Syntax der Abfragesprache SPARQL zu geben und den Mehrwert der Aufbereitung von Daten als Wissensgraphen in Anwendungsszenarien aufzuzeigen. Dabei liegt der Schwerpunkt auf der Vermittlung von SPARQL in theoretischen und praktischen Sessions. Teilnehmende sollen die Kompetenz erlangen, die Struktur von SPARQL zu verstehen und eigenständig Queries zu schreiben.
+                
+                    
+                        
+                    Abb. 1: Query und Ergebnisvisualisierung: Welche thematischen Konzepte sind im französischen Roman 1751-1800 vertreten? Beispiel: 
+                    .
+                
+                
+            
+            
+                Linked Open Data für die Geisteswissenschaften
+                Es ist zu beobachten, dass es ein zunehmendes Interesse in der DH-Community gibt, die eigenen Daten in Form von LOD zu veröffentlichen und mit dem Semantic Web zu vernetzen oder die aktuellen Entwicklungen zu reflektieren (Hogan et al. 2021; Ikonić Nešić et al. 2021; Thornton et al. 2021; Alves 2022; Dörpinghaus 2022; Ohmukai / Yamada 2022; Zhao 2022). Auch das Projekt „
+                    Mining and Modeling Text“ hat es sich zum Ziel gesetzt, Daten aus unterschiedlichen Informationsquellen zu aggregieren und im Sinne des LOD-Paradigmas mit weiteren Ressourcen zu verknüpfen (Schöch et al. 2022). Der Mehrwert der aufwändigen Erschließung und Modellierung der Daten wird erst in den vielfältigen und flexiblen Abfragemöglichkeiten deutlich und ist demnach nicht loszulösen von SPARQL.
+                
+                SPARQL (SPARQL Protocol and RDF Query Language) ist eine 2008 vom W3C veröffentlichte, graphenbasierte Abfragesprache für RDF (Resource Description Framework). RDF ist ein Datenmodell, mit dem sich Ressourcen im World Wide Web darstellen lassen. Es ist der zentrale Standard des W3C, der semantische Daten in der charakteristischen Tripel-Struktur bestehend aus ‚Subjekt – Prädikat – Objekt‘ repräsentiert. Ausgehend von einem einzelnen solchen Tripel wird die Struktur eines Knowledge Graphen im Workshop entfaltet und die „Übersetzung“ von Forschungsfragen in natürlicher Sprache in die SPARQL-Syntax erläutert. 
+                
+                    
+                        
+                    Abb. 2: Tripel-Struktur bestehend aus ‚Subjekt – Prädikat – Objekt‘, hier ein Beispiel zu einem literarischen Werk (Candide) aus der MiMoTextBase: 
+                    .
+                
+                Die Abfragesprache SPARQL setzt sich aus mehreren Bausteinen zusammen: 
+                    pattern matching (Filtern des Datenbestands), 
+                    solution modifier (Bearbeitung der Zwischenergebnisse) & 
+                    output (Ausgabe als Tabelle oder Graph; Arenas et al. 2010). SPARQL ermöglicht es User:innen, durch Rekombination von Datensätzen neue Muster in den Daten zu erkennen und hypothesengeleitete Abfragen zu formulieren. Die Stärken dieser Abfragesprache und der Strukturierung von Wissen als RDF Triplestore sollen im Workshop in Anwendungsbeispielen gezeigt werden.
+                
+                SPARQL-Abfragen werden häufig innerhalb eines einzelnen Knowledge Graphen gestellt. Es besteht jedoch auch die Möglichkeit, über mehrere Knowledge Graphen hinweg Abfragen zu stellen, sogenannte 
+                    federated queries (Prud’hommeaux / Buil-Aranda 2013). Hier kommt das volle Potential von LOD zum Vorschein, denn so lässt sich Erkenntnisgewinn aus der Kombination mehrerer Graphen ziehen, ohne durch Replikationen von Datensätzen unnötige Redundanzen zu erzeugen. Im Workshop werden 
+                    federated queries mit Wikidata erlernt und es wird gezeigt, inwieweit Nutzen aus diesen gezogen werden kann.
+                
+                
+                    
+                        
+                    Abb. 3: 
+                    Federated queries in SPARQL erlauben es, eigene Daten und externe Datenbestände (z. B. Wikidata) gleichzeitig abzufragen. Beispiel: 
+                    .
+                
+            
+            
+                Workshop-Konzept
+                Der Workshop vermittelt Grundlagenwissen und Möglichkeiten, die das LOD-Paradigma bietet. Der im Projekt erstellte multilinguale Wissensgraph MiMoTextBase zur Domäne der französischen Literatur des 18. Jahrhunderts soll dabei als Anschauungsbeispiel dienen.
+                
+                    Lernziele
+                    Der Workshop möchte praktisches Wissen vermitteln: Wie schreibt man SPARQL-Queries? Welchen Mehrwert kann ein Knowledge Graph für literaturgeschichtliche Fragen im Besonderen und die Geisteswissenschaften im Allgemeinen bieten?
+                    In dem halbtägigen Workshop wird der Wissensgraph 
+                        MiMoTextBase (Hinzmann et al. 2022a) des Projekts „Mining and Modeling Text“ vorgestellt und es werden Anwendungsszenarien formuliert und visualisiert. Dazu werden Grundlagen der Abfragesprache SPARQL erlernt und eigene Queries formuliert. Wir arbeiten beispielhaft auf dem projektinternen Knowledge Graphen sowie auf Wikidata und werden über 
+                        federated queries die Verbindung mehrerer Wissensgraphen demonstrieren.
+                    
+                    Konkrete Lernziele sind: Erwerb von Grundlagenwissen zu Semantic Web und RDF, LOD, Wikidata Graph; vertiefte Kenntnisse zu SPARQL und die praktische Fähigkeit, eigene SPARQL-Queries zu formulieren; Kennenlernen der Software Wikibase und Exploration der Visualisierungsmöglichkeiten des SPARQL-Endpoints. 
+                
+                
+                    Zielpublikum und Anforderungen
+                    Der Workshop wendet sich an digitale Geisteswissenschaftler:innen mit Interesse an LOD und SPARQL. Spezielle Vorkenntnisse sind nicht notwendig. Teilnehmende benötigen einen Laptop.
+                
+                
+                    Struktur / Ablauf
+                    Der Workshop setzt sich aus aufeinander aufbauenden Sessions zusammen, die jeweils Input-Phasen und Übungsphasen verbinden. Es wird vorab eine ausführliche Tutorial-Seite (inklusive Verlinkung auf weitere hilfreiche Ressourcen zum SPARQL-Lernen) zur Verfügung gestellt, die den Teilnehmenden (und allen weiteren Interessierten) in der Vorbereitung sowie zur Vertiefung nützlich sein kann (Hinzmann et al. 2022b).
+                    Im Zentrum des Workshops stehen drei Blöcke mit jeweils unterschiedlichem Schwerpunkt, in denen das Formulieren von SPARQL-Queries geübt wird (vgl. für Details den Ablauf im Appendix). Auch Teilnehmende ohne Vorkenntnisse werden schrittweise an zunehmend komplexere Queries herangeführt. Der Schwierigkeitsgrad wächst innerhalb der einzelnen Blöcke, wobei der Fokus auf dem eigenständigen Formulieren sowie Anpassen von Beispiel-Queries und dem Klären aller dabei auftretenden Fragen liegen wird.
+                    1. Im ersten Teil liegt der Fokus auf Abfragen zu literarischen Werken. Im Hinblick auf SPARQL geht es hier zunächst um die zentralen Grundlagen wie das Schreiben einfacher 
+                        triple patterns und Möglichkeiten der Kombination mehrerer 
+                        triple patterns zu zunehmend komplexeren Queries. Der Mehrwert, der sich aus solchen Kombinationsmöglichkeiten ergibt, wird mit dem durch die MiMoTextBase gegebenen Fokus auf den französischen Aufklärungsroman besonders deutlich.
+                    
+                    2. Im zweiten Teil widmen wir uns Wikidata als größtem öffentlichen Wissensgraphen, der sich zugleich als ‚Hub‘ begreifen lässt (Neubert 2017), und fokussieren Autor:innen als Entitäten. Autor:innen sind in allen geisteswissenschaftlichen Disziplinen relevant und ein wichtiges Scharnier zwischen verschiedenen Wissensgraphen. Bezogen auf die SPARQL-Syntax gehen wir einen Schritt weiter und integrieren Funktionen wie OPTIONAL und FILTER, um das Spektrum der Abfragemöglichkeiten zu erweitern. Ein Einstieg wird hier mit Queries zu Literat:innen der MiMoText-Domäne gemacht. Im nächsten Schritt können die Teilnehmenden die Daten von Autor:innen in ihrer jeweiligen Domäne in Wikidata explorieren.
+                    3. Der dritte Teil verknüpft die beiden vorigen Teile auf mehreren Ebenen. Der Schwerpunkt liegt auf 
+                        federated queries, wobei wir uns auf Abfragen, die sich über die MiMoTextBase und Wikidata erstrecken, konzentrieren werden. Die genauere Betrachtung von Autor:innen des 2. Teils wird hier fortgesetzt und vertieft. In diesem abschließenden Teil wird der Mehrwert von Standards und geteilten Datenmodellen (Ontologien bzw. 
+                        entity schemata) sowie die Verknüpfung von Ressourcen besonders deutlich. Alle Autor:innen der MiMoTextBase, für die es auch Wikidata-Items gibt, können mit diesen über die Property 
+                        exact match verknüpft werden, wodurch zusätzliche Informationen bereitstehen und diverse Abfragemöglichkeiten eröffnet werden. Die Wikibase-Infrastruktur bietet außerdem vielfältige Explorationsmöglichkeiten, die beispielhaft eingeführt werden (
+                        marker cluster für Geo-Daten, Timelines für Geburtsdatum u. ä.).
+                    
+                    Es soll in der abschließenden Diskussion auch Raum sein, einen kritischen Blick auf Entwicklungen im Bereich des Semantic Web zu werfen, beispielsweise die Frage, welche Monopolisierungskräfte und Marktkräfte Einfluss nehmen (van Hooland / Verborgh 2014, 247–48; Singhal 2012). Zum Abschluss werden die wichtigsten Anwendungsmöglichkeiten und Fragen zusammengetragen und weiterführende Ressourcen (DuCharme 2013; van Hooland / Verborgh 2014; Lincoln 2015; Blaney 2017) sowie bei Interesse Möglichkeiten der Kooperation thematisiert.
+                
+            
+            
+                Appendix 
+                
+                    Ablauf (4 Stunden)
+                    
+                        
+                            10 Min.
+                            Begrüßung (Vorstellung evtl. über Mentimeter) 
+                        
+                        
+                            20 Min. 
+                            Einleitung: Input zu Semantic Web, RDF, LOD für die Literaturgeschichte am Beispiel des Projekts Mining and Modeling Text. Wikidata & Wikibase Ecosystem, Mehrsprachigkeit des Graphen.
+                        
+                        
+                            
+                            SPARQL Teil 1 (MiMoTextBase)
+                        
+                        
+                            20 Min.
+                            (a) Input zu SPARQL-Grundlagen (interaktive Phase), SPARQL-Syntax, Möglichkeiten der Datenvisualisierung in Wikibase, Debugging & Help.
+                        
+                        
+                            35 Min.
+                            (b) Praxis-Teil: Anpassen vorhandener und Formulieren einfacher, eigener SPARQL-Queries auf der MiMoTextBase (Breakout Session bzw. Gruppenarbeit).
+                        
+                        
+                            15 Min.
+                            Pause
+                        
+                        
+                            
+                            SPARQL Teil 2 (Wikidata)
+                        
+                        
+                            20 Min.
+                            (a) Input: Erweiterte Elemente der SPARQL-Syntax wie OPTIONAL und FILTER; Datenmodell für Autor:innen auf Wikidata.
+                        
+                        
+                            35 Min.
+                            (b) Praxis: Formulieren etwas komplexerer Queries auf Wikidata. 
+                        
+                        
+                            15 Min.
+                            Pause
+                        
+                        
+                            
+                            SPARQL Teil 3 (
+                                Federated queries)
+                            
+                        
+                        
+                            20 Min.
+                            (a) Input: Fortgeschrittene SPARQL-Queries: 
+                                Federated queries, 
+                                prefixes definieren, 
+                                marker cluster etc.
+                            
+                        
+                        
+                            35 Min.
+                            (b) Praxis: 
+                                Federated queries etc. anwenden.
+                            
+                        
+                        
+                            15 Min.
+                            Abschließende Diskussion, Empfehlung weiterführender Ressourcen zur Vertiefung des Gelernten.
+                        
+                    
+                
+                
+                    Organisatorisches
+                    Maximale Zahl der Teilnehmenden: 25. Wir benötigen einen Raum mit WLAN und Beamer und bieten gern ein Hybrid-Szenario an. 
+                
+                
+                    Fördernachweis
+                    „Mining and Modeling Text“ (Universität Trier, Trier Center for Digital Humanities) wird von der Forschungsinitiative des Landes Rheinland-Pfalz 2019-2023 gefördert. 
+                
+                
+                    Beitragende
+                    Der Workshop wird von Mitarbeiter:innen des LOD-Projekts „Mining and Modeling Text“ durchgeführt. Das interdisziplinäre Projekt verfügt über einen eigenen SPARQL-Endpoint und wurde in Wikibase implementiert. 
+                    Maria Hinzmann; hinzmannm@uni-trier.de; Trier Center for Digital Humanities, Universität Trier | Historisches Seminar: Digital Humanities, Bergische Universität Wuppertal; Forschungsinteressen: Datenmodellierung, LOD, Textanalyseverfahren.
+                    Anne Klee; klee@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Digitale Textverarbeitung; Digitale Lexikographie.
+                    Johanna Konstanciak; konstanciak@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Digitale Textverarbeitung; XML/Web-Technologien.
+                    Julia Röttgermann; roettger@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: LOD, Textmining-Verfahren wie Topic Modeling, NER und Sentiment Analysis.
+                    Christof Schöch; schoech@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Computational Literary Studies.
+                    Moritz Steffes; steffesm@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Softwaresysteme, Semantic Web Technologien, Forschungsinfrastrukturen.
+                
+            
+        

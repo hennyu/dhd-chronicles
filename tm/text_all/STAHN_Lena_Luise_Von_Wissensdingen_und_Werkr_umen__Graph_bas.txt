@@ -1,0 +1,41 @@
+
+            
+                
+                    Fragestellung und theoretischer Rahmen
+                
+                Die aus der Medientheorie stammende Vorstellung von den überlieferten Dokumenten, den Artefakten als "Wissensdingen", "denen zeitgenössisch zugeschrieben wurde, ein inhärentes Wissen über ihre eigene Natur zu enthalten sowie dieses erschließbar und vermittelbar machen zu können" (Müller 2020, 17), und des durch ihre Kontextualisierung sichtbar gemachten "Wissensraums" (Rheinberger 1992) soll auf Nachlässe und ihre Aufarbeitung in Form von Digitalen Editionen übertragen werden: Das "artefaktische" (Sahle 2017, 239) Dokument bildet das "Wissensding", es ist Träger des Wissens, des Textes im Nachlass. Es wurde von der Autorin erschaffen oder von ihr in ihre Arbeit einbezogen. Mit jedem Objekt verband sie ein Gedanke, eine Idee. Es repräsentiert ein "Stück" ihres Denkens und Arbeitens. Der Nachlass bildet 
+                    als Kontext des Denk- und Arbeitsprozesses den "Wissensraum", der das (Text)Werk als Ganzes verkörpert. 
+                
+                Um das "Autorinnen-Werk" zu erfassen und die Dynamik des Schaffensprozesses aufdecken zu können, entwickelt die Dissertation eine Ontologie, die die Nachlassbestandteile als typologisch, konzeptionell, inhaltlich und strukturell relationierte Elemente beschreibt (Zangerl & Pollin 2020, 125; Spadini & Tomasi 2021, 1f.). Auf Modellebene wird damit ermöglicht, die Arbeitspraktiken, die Prozesse des Denkens und Schreibens, den "Laborcharakter" des Werks nachvollziehbar zu machen. Dabei liegt die Frage zugrunde, inwieweit Ansätze und Methoden der Wissensmodellierung (Davis et al. 1993; Flanders & Jannidis 2015) dazu geeignet sind, den Nachlass als kontextualisierten "Wissensraum" zu öffnen, in dem sich Arbeitspraxis und Werk der Autorin begreifen lassen.
+                
+            
+            
+                Positionierung in den DH: SDE zwischen Text und Daten
+                Obwohl sie mit ihrer stetigen Veränderbarkeit und Aktualität das Potential haben, als "
+                    Protokoll des Forschungs
+                    prozesses" (Sahle 2010, 27) (kursiv übernommen) zu gelten, bleibt der editorische Blick auch Digitaler Editionen (SDE) der statischen, dokument-basierten Sichtweise verhaften (Van Zundert 2016, 83-106). Zur Erschließung von Nachlässen existieren für jeden Dokumenttyp eigene meist der bibliothekarisch-archivarischen Domäne entstammende Regeln, was wenig Raum lässt für Ansätze der Intertextualität (Broich & Schulte-Middelich 1985; Spadini & Tomasi 2021), der Idee, alles sei ein einziger "Text, der sich selbst permanent zitiert" (Neuhaus 2014, 236). Ein übergreifendes, semantisch differenzierendes Modell, in das alle Dokumente eingebettet wären, und damit eine Möglichkeit, ein adäquates Bild der Arbeitspraktiken zu schaffen, die zu ihrer Entstehung innerhalb des Werkkontexts geführt haben, fehlt.
+                
+                Die "Transmedialisierung" verlangt nach Sahle 2017 von der SDE, ihren Schwerpunkt von der medialen Präsentation des Materials auf das "als Daten gefasste akkumulierte Wissen und das ihnen zugrundeliegende Modell als Explikation der editorischen Methode" zu verlagern. Diese Datafizierung (Hyvönen 2020) versucht, eine Antwort auf die relevanter werdende Frage nach der Langzeitverfügbarkeit und Nachhaltigkeit (Fritze 2019) von SDE zu geben: Angesichts der "Begrenzungen von TEI" (Sahle 2017, 247) und der Entwicklung immer neuer, lokaler, eigener Lösungen steigt die Dringlichkeit, die Daten über den Projektzeitraum hinaus "lebendig" und für menschliche und maschinelle Anwendungen nutzbar und interoperabel zu halten und damit einem Informationsverlust entgegenzuwirken (Daquino & Tomasi 2015, 1f.). 
+                
+                Dennoch verbleiben in der praktischen Umsetzung die projektspezifisch angepassten Modelle und (TEI/XML-)Daten häufig innerhalb der (geschlossenen) Projektdatenbank, eine übergreifend interpretierbare, graph-basierte Semantik fehlt, das Konzept des Knowledge Graphs (Rehbein 2017, 165) findet kaum Verwendung (Spadini & Tomasi 2021, 1). Diese Problematik zeigt sich paradigmatisch für den Bereich der Nachlasserschließung: Derzeit befinden sich mehrere Ansätze in der Entwicklung, es fehlt jedoch an Anwendungsbeispielen, während das Nebeneinander vieler neu entwickelter Modelle einen zusätzlichen Aufwand der Konsolidierung erfordert. 
+                
+            
+            
+                
+                    Praktischer Ansatz
+                
+                Ziel des Projekts ist es, durch die Entwicklung einer domänenspezifischen Ontologie den Nachlass Niklas Luhmanns (1927-1998) in einem graph-basierten Datenmodell abzubilden (Allemang & Hendler 2011). Dazu werden existierende Modellierungsansätze aus den Bereichen Museum, Archiv und Bibliothek evaluiert, um die in den Nachlassdokumenten ermittelten Entitäten und Relationen adäquat zu beschreiben. Das im Projekt bereits genutzten FRBRer-Modell (Madison et al. 2009) wird auf seine Passfähigkeit überprüft und ergänzt bzw. durch Alternativen ersetzt. Im Fokus steht FRBRoo/LRM als eine an CIDOC-CRM angepasste FRBR-Version, daneben werden gängige Metadatenschemata wie DCTerms, SKOS, PRISM oder die SPAR Ontologies (Lüschow 2020, 82; Tomasi 2012) sowie spezifisch für bestimmte Fragestellungen entwickelte Ontologien, insbesondere außerhalb des Bibliothekskontextes, untersucht.
+                
+                Das Vorhaben befindet sich noch in der Startphase. Ein erstes Mapping zu FRBRoo/LRM zeigt sich als prinzipiell machbar, die andauernde Entwicklung des Werkmodells im Projekt erfordert jedoch eine kontinuierliche Überprüfung des gewählten Ansatzes.
+            
+            
+                
+                    Kontextualisierung
+                
+                
+                    Der Erkenntnisgewinn des Vorhabens liegt im Bereich der Datenmodelle und Ontologien für die Nachlasserschließung: Die Arbeit am Nachlass Luhmanns steht stellvertretend für wissens- und werktheoretisch basierte Untersuchungen, insbesondere bedingt durch den Zettelkasten als "Werk" und Arbeitsinstrument, dessen Spuren sich durch die weiteren Arbeiten Luhmanns ziehen und den Prozess der Wissensanreicherung nachvollziehbar machen. Der Nachlass in seinem Gesamtkontext ist damit gut geeignet, die trotz bekannter Einschränkungen (s.o.) weithin genutzten Modellierungsansätze aus den bibliothekarisch-archivarischen bzw. editionswissenschaftlichen Bereichen auf die Fragestellung nach Werkcharakter und Arbeitsprozess hin zu überprüfen. Gleichzeitig ist im Verlauf der Modellierung zu erwarten, das Verständnis von Werk und Arbeitsprozess vertiefen und Erkenntnisse auch auf wissenstheoretischer Basis gewinnen zu können.
+                
+                Mit dem resultierenden, konzeptionell und technisch implementierten Knowledge Graph lässt sich das Verhältnis der Dimensionen von "Werk" auf Basis des Nachlasses abbilden. Dieser proof of concept zeigt eine Möglichkeit, der SDE eine Ebene in Form formal explizierter Information (Vogeler 2021, 79) zu geben, die mithilfe informationswissenschaftlicher Methoden Fragen editionswissenschaftlichen, werk-konstitutiven Charakters neu zu betrachten hilft, perspektivisch mit Auswirkungen auch auf die editorische Praxis.
+                
+            
+        

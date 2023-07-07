@@ -1,0 +1,135 @@
+
+            
+                Archiv und Biographik
+                Die Arbeit von Literaturarchiven steht seit deren ersten Konzeptualisierungen im 19. Jahrhundert (Dilthey 1970 [1889]; vgl. Thaler 2011, Schöttker 2016) in einem komplexen Wechselverhältnis zu den philologischen Tätigkeiten der Editorik und Biographik, die im 20. und 21. Jahrhundert noch ergänzt werden u.a. um Textgenetik und Material Media Studies. Während das Zusammenspiel von Archiv und Editorik dabei zuletzt vor dem Horizont der Digitalisierung intensiv diskutiert wird (vgl. exemplarisch Nutt-Kofoth 2019), steht eine Neujustierung des Verhältnisses von Archiv und Biographik (vgl. Fetz 2009) im Zeichen der digitalen Transformation (Wettmann 2018) noch aus.
+                Im Zuge der digitalen Erweiterung seiner Dienste (Trilcke 2019; Trilcke, Busch, Seifert 2021) hat das Theodor-Fontane-Archiv in den vergangenen Jahren nicht nur bio- und bibliographische Datenbestände zu Fontane erstellt und offen im Web nutzbar gemacht, es hat auch an einem Konzept für eine digital-biographische Ressource und deren Umsetzung gearbeitet. Anders als für die Buch-Biographik typisch, wurde dabei kein narrativer Ansatz gewählt. Ziel war es vielmehr, eine Konzeption 
+                    datengetriebener Biographik zu implementieren, die einem chronikalen Prinzip folgt.
+                
+            
+            
+                Konzept der technischen Umsetzung 
+                Orientierungspunkt für die Konzeption und (Daten-)Grundlage für die Umsetzung dieses datenbiographischen Dienstes war die fünfbändige Druckausgabe der 
+                    Theodor Fontane Chronik (Berbig 2010). Das Konzept wie auch das Vorgehen dieser 
+                    Fontane Chronik wurde im Zuge der Umsetzung in zweifacher Hinsicht digitalisiert. Erstens folgt die Print-Chronik dem Prinzip der 
+                    Datenaggregation: Biographische Informationen wurden aus zahlreichen Einzeldatenbeständen (Briefverzeichnisse und -ausgaben, Bibliographien etc.) systematisch zur Chronik zusammengetragen. Zweitens nimmt die Print-Chronik eine datumsbasierte 
+                    Datenkonsolidierung vor, bei der jeder Datensatz einem übergeordneten Tages-, Monats- oder Jahresdatensatz zugewiesen wird. Der im April 2021 veröffentlichte Dienst 
+                    Fontane Chronik digital übernimmt entsprechend nicht nur den Datenbestand der Print-Chronik, sondern implementiert auch diese beiden Prinzipien.
+                
+                Die 
+                    Fontane Chronik digital wird als frei nutzbarer Dienst für Ansicht, Recherche, Suche und Exploration verschiedener Datenbestände des Fontane-Archivs angeboten. Diese Datenbestände werden in der virtuellen Forschungsumgebung FuD, entwickelt vom Trier Center for Digital Humanities (TCDH), vorgehalten und gepflegt. Im Web sind sie als einzelne, vollwertige Dienste adressier- und recherchierbar. Die chronikalen Prinzipien sind in Form der algorithmischen Aggregation und Konsolidierung der unterschiedlichen Datenbestände in einer ElasticSearch-Instanz implementiert. Ein Frontend, das unterschiedliche Zugangsszenarien, Suchlogiken und Darstellungsformen berücksichtigt, präsentiert die Informationen usergerecht.
+                
+            
+            
+                Einzeldatenbestände: Bibliographie, Briefdatenbank, Biographische Datenbank
+                Die Einzeldatenbestände, für die individuelle Dienste mit eigenen Interfaces entwickelt wurden, umfassen die wichtigsten Forschungsdaten zu Fontane. Als digitale Dienste werden dabei die 
+                    Fontane Briefdatenbank und die 
+                    Fontane Bibliographie online in Form offener Kulturdaten webbasiert und kostenfrei verfügbar gemacht. Ergänzt um die Daten der Biographischen Datenbank fließen die Datenbestände dieser Dienste in den übergreifenden Dienst 
+                    Fontane Chronik digital ein.
+                
+                
+                    Bibliographie
+                    Die ursprünglich als Druck publizierte 
+                        Theodor Fontane Bibliographie (Rasch 2006) enthält in systematischer Anordnung bibliographische Daten zu sämtlicher Primär- und Sekundärliteratur von und zu Fontane. 2019 konnte sie als Datenbank 
+                        Fontane Bibliographie online veröffentlicht werden. Sie wird regelmäßig aktualisiert und enthält derzeit 17.641 Metadatensätze. Verknüpfungen gibt es intern u.a. zu den Digitalisaten der 
+                        Fontane Blätter retrodigital. Zudem werden externe Ressourcen verlinkt (z.B. Digitalisate der 
+                        Vossischen Zeitung in ZEFYS).
+                    
+                
+                
+                    Briefdatenbank
+                    Die 
+                        Fontane Briefdatenbank verzeichnet sämtliche bekannte Briefe von Fontane. Informationen aus den archiveigenen Verzeichnisinstrumenten, dem 1988 publizierten ‘Hanser Briefverzeichnis’ und weiteren Quellen werden zusammengeführt, ergänzt und mit (inter-)nationalen Verbunddatenbanken verknüpft, z.B. correspSearch. Erfasst werden brieftypische Metadaten, Schlagworte zum Inhalt, Standortnachweise und Druckgeschichte. Mehr als 6.183 Datensätze sind über ein Interface durchsuchbar. Auf der Grundlage der Print-Chronik wurde die Briefdatenbank um 2.035 erschlossene Von-Briefe sowie 4.125 überlieferte und erschlossene An-Briefe ergänzt. Diese erweiterte Briefdatenbank bildet die Grundlage für die Datenweitergabe an die 
+                        Fontane Chronik digital.
+                    
+                
+                
+                    Biographische Datenbank
+                    Aus XML-Druck-Daten der 
+                        Print-Chronik wurden regelbasiert 19.183 Datensätze in das FuD-Datenbanksystem geparst, wo sie aktualisiert und mit Norm- und Registerdaten angereichert werden. Die biographische Datenbank umfasst Datensätze zu folgenden Typen biographischer Daten: “Unternehmungen, Begegnungen, Ereignisse” (11.749 Datensätze), “Lektüren” (1.404), “Schriftstellerische und journalistische Arbeiten Fontanes” (2.263), “Druck von Publikationen Fontanes” (2.950), “Veröffentlichungen über Fontane” (692), “Wohnungen Fontanes” (125).
+                    
+                
+            
+            
+                Fontane Chronik digital 
+                Auf den drei Einzeldatenbeständen aufbauend operiert die 
+                    Fontane Chronik digital (Abb.1) aggregierend und konsolidierend. Für diesen datenbiographischen Meta-Dienst wurde dabei ein Frontend entwickelt, das das chronikale Konsolidierungsprinzip in Form eines Kalender-Interfaces aufgreift.
+                
+                Mit der Implementierung des chronikalen Prinzips in Form einer Datenbiographik ist ein entscheidender Entwicklungsschritt im digitalen Ausbau des Fontane-Archivs abgeschlossen. Auf der nun bestehenden Infrastruktur aufbauend, steht vor allem die Qualitätssteigerung der Daten (Normdaten, LOD) sowie die Anbindung und Öffnung qua APIs im Vordergrund der Entwicklungsarbeiten.
+                
+                    
+                    Abb. 1: Kalenderansicht der Fontane Chronik digital
+                
+            
+            
+                Digitale Dienste des Theodor-Fontane-Archivs
+                
+                    Berbig, Roland (Bearb.) / 
+                    Theodor-Fontane-Archiv (ed.) (2021 ff.): 
+                    Theodor Fontane Chronik digital. Auf der Grundlage der “Theodor Fontane Chronik” (5 Bde., Berlin: De Gruyter 2010). Potsdam. https://www.fontanearchiv.de/fontane-chronik [letzter Zugriff 13. Juli 2021].
+                
+                
+                    Rasch, Wolfgang (Bearb.) / 
+                    Theodor-Fontane-Archiv (ed.) (2019 ff.): 
+                    Theodor Fontane Bibliographie online. Auf der Grundlage der “Theodor Fontane Bibliographie. Werk und Forschung” (3 Bde., Berlin: De Gruyter 2006). Potsdam. https://www.fontanearchiv.de/fontane-bibliographie [letzter Zugriff 13. Juli 2021].
+                
+                
+                    Theodor-Fontane-Archiv (ed.) (2019 ff.): 
+                    Digitale Handschriftensammlung. Potsdam. https://www.fontanearchiv.de/fontane-handschriften [letzter Zugriff 13. Juli 2021].
+                
+                
+                    Theodor-Fontane-Archiv / Theodor Fontane Gesellschaft (eds.) (2019 ff.): 
+                    Fontane Blätter retrodigital. Technische Betreuung: Universitätsbibliothek Potsdam. Potsdam. https://www.fontanearchiv.de/fontane-blaetter [letzter Zugriff 13. Juli 2021].
+                
+                
+                    Theodor-Fontane-Archiv / UCLab Fachhochschule Potsdam (eds.) (2019): 
+                    Fontanes Handbibliothek visualisiert. Design und Entwicklung: Mark-Jan Bludau. Projektkoordination: Anna Busch. Potsdam. https://www.fontanearchiv.de/handbibliothek [letzter Zugriff 13. Juli 2021].
+                
+                
+                    Theodor-Fontane-Archiv (ed.) (2021 ff.): 
+                    Theodor Fontane Briefdatenbank. Unter Berücksichtigung von “Die Briefe Theodor Fontanes: Verzeichnis und Register” (München: Hanser 1988). Potsdam. https://www.fontanearchiv.de/fontane-briefdatenbank [letzter Zugriff 13. Juli 2021].
+                
+            
+            
+                Bibliographie
+                
+                    Berbig, Roland (2010): 
+                    Theodor Fontane Chronik. Projektmitarbeit 1999–2004: Josefine Kitzbichler. Berlin / New York: De Gruyter.
+                
+                
+                    Dilthey, Wilhelm (1970 [1889]): “Archive der Litteratur in ihrer Bedeutung für das Studium der Geschichte der Philosophie”, in: 
+                    Archiv für Geschichte der Philosophie II,3: 343–367.
+                
+                
+                    Fetz, Bernhard (2009): “Der Stoff, aus dem das (Nach-)Leben ist. Zum Status biographischer Quellen”, in: Fetz, Bernhard (ed.):
+                     Die Biographie. Zur Grundlegung ihrer Theorie. Berlin / New York: De Gruyter 103–154.
+                
+                
+                    Nutt-Kofoth, Rüdiger (2019): “Edition als Archiv? Zur Frage der Konvergenz zweier Wissensformationen im analogen und im digitalen Zeitalter”, in: Kastberger, Klaus / Maurer, Stefan / Neuhuber, Christian (eds.): 
+                    Schauplatz Archiv. Objekt – Narrativ – Performanz. Unter Mitarbeit von Georg Hofer. Berlin / Boston: De Gruyter 107–123. 
+                
+                
+                    Rasch, Wolfgang (2006): 
+                    Theodor Fontane Bibliographie. Werk und Forschung. Berlin: De Gruyter. 
+                
+                
+                    Schöttker, Detlev (2016): “Posthume Präsenz: Zur Ideengeschichte des literarischen Archivs”, in: Lepper, Marcel / Raulff, Ulrich (eds.): 
+                    Handbuch Archiv. Geschichte, Aufgaben, Perspektiven. Stuttgart: J.B. Metzler Verlag 237–246.
+                
+                
+                    Thaler, Jürgen (2011): “Zur Geschichte des Literaturarchivs. Wilhelm Diltheys Archive für Literatur im Kontext”, in: 
+                    Schiller-Jahrbuch 55: 361–374.
+                
+                
+                    Trilcke, Peer / Busch, Anna / Seifert, Sabine (2021): “Vom Ausbau des Digitalen Archivs. Neue digitale Dienste des Theodor-Fontane-Archivs. Chronik und Briefdatenbank”, in: 
+                    Fontane Blätter 111: 173–183.
+                
+                
+                    Trilcke, Peer (2019): “Auf dem Weg zu einem auch Digitalen Archiv. Digitale Dienste des Theodor-Fontane-Archivs”, in: 
+                    Fontane Blätter 107: 98–103.
+                
+                
+                    Wettmann, Andrea (2018): “Die Archive und der ‘Digital Turn’. Eine Standortbestimmung”, in: Bonte, Achim / Rehnolt, Juliane (eds.): 
+                    Kooperative Informationsinfrastrukturen als Chance und Herausforderung. Berlin / Boston: De Gruyter 361–371. 10.1515/9783110587524-038.
+                
+            
+        

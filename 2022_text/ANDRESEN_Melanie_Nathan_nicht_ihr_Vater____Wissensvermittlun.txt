@@ -1,0 +1,123 @@
+
+            Die quantitative Dramenanalyse hat sich lange Zeit vor allem auf formale Merkmale der Textoberfläche konzentriert: Wie häufig treten Figuren auf (vgl. Marcus 1973 [1970]: 287–369), mit welchen anderen Figuren stehen sie gemeinsam auf der Bühne (vgl. etwa Yarkho 2019 [1935–1938]), wie viel sprechen sie (vgl. Moretti 2013: 2–4) und wie viel wird über sie gesprochen (vgl. Willand u.a. 2020: 177–181). All diese Informationen lassen sich, zumindest in maschinenlesbar kodierten Dramen, relativ einfach abrufen und weiterverarbeiten, etwa zu Figurennetzwerken (vgl. etwa Trilcke u.a. 2016: 255–258) oder formalen Analysen der Figurenrede (vgl. Reiter, Willand 2018: 45–75). Im Projekt Q:TRACK (QuaDramA: Tracking Character Knowledge) widmen wir uns einer stärker inhaltlich fokussierten Erschließung von Dramen, genauer Prozessen der Vermittlung von Wissen über Familienrelationen der Figuren. Das (fehlende) Wissen über Verwandtschaftsverhältnisse ist für zahlreiche deutschsprachige Dramen des 18. und 19. Jahrhunderts entscheidendes Element der Handlung, sodass sich eine systematische Untersuchung aufdrängt.
+            
+            In diesem Beitrag gehen wir zunächst auf die Bedeutung von Wissen und Wissensvermittlungen für die Handlung wie auch die Wirkung von Dramen ein. Anschließend beschreiben wir, wie solche Prozesse der Wissensvermittlung in Annotationen erfasst und modelliert werden können. Am Beispiel von Gotthold Ephraim Lessings kanonischem Drama 
+                Nathan der Weise (1779) zeigen wir, wie sich die Analyse eines Dramas auf diese Annotationen aufbauen lässt. Im Fazit blicken wir auf Perspektiven für die Automatisierung und die quantitative Analyse größerer Dramenbestände.
+            
+            
+                Wissensvermittlung in Dramen
+                Die Interferenz von innerem und äußerem Kommunikationssystem im Drama, also die Kommunikation der fiktiven Figuren auf der einen Seite und die Wahrnehmung dieser Kommunikation durch das Publikum auf der anderen Seite, gilt als eine zentrale „Differenzqualität dramatischer Kommunikation“ (Pfister 2001: 80). Die Bühnenfiguren zeichnen sich schon mit Blick auf die Vorgeschichte des Dramas potentiell durch einen unterschiedlichen Wissensstand aus, der sich im Laufe des Stücks fortwährend verändern kann, etwa hinsichtlich ihrer Handlungsziele. Dadurch wird zugleich das Verhältnis zwischen dem Informationsstand des Publikums und demjenigen der einzelnen Dramenfiguren immer wieder neu justiert. Die Exposition reduziert etwa den zu Beginn eines Dramas vorherrschenden Wissensrückstand des Publikums gegenüber den Figuren (vgl. etwa Asmuth 2015: 122). Die Unterschiede im „Grad der Informiertheit“ – Manfred Pfister spricht hierbei in Rekurs auf den Shakespeare-Forscher Bertrand Evans von „diskrepante[r] Informiertheit“ (Pfister 2001: 80, vgl. Evans 1960: viii) – lassen sich vor allem auf zwei ursächliche Unterschiede zwischen innerem und äußerem Kommunikationssystem zurückführen: Während das Publikum in seiner Beobachterrolle jede Szene des Stücks wahrnimmt und dadurch geäußertes partielles Wissen der Figuren abgleichen und aggregieren kann, bleibt bisweilen unklar, über welches Wissen die Figuren tatsächlich verfügen. Das gilt auch für mögliche Zeitsprünge, etwa zwischen zwei Akten des Dramas. Unklar kann zudem sein, inwieweit die Äußerungen einer Figur mit den ‚Tatsachen‘ der fiktionalen Welt übereinstimmen, ob die Äußerungen also glaubwürdig sind (vgl. Jeßing 2015: 50-51). Je nach Handlungsverlauf verfügt das Publikum also zu unterschiedlichen Zeitpunkten des Dramas über einen Informationsvorsprung oder einen Informationsrückstand gegenüber den auf der Bühne agierenden Figuren. Gleiches gilt isoliert betrachtet auch für das interne Kommunikationssystem des handelnden Bühnenpersonals. Die ‚diskrepante Informiertheit‘ zweier Figuren kann so zu unterschiedlichen Bewertungen derselben Situation führen. Figuren, die etwa über das Wissen verfügen, dass zwei verlobte Figuren Geschwister sind, werden diese Verlobung anders beurteilen, als Figuren, denen dieses Wissen fehlt.
+                Diese Kluft zwischen dem Wissensstand der Figuren und demjenigen des Publikums ist als wichtiges Spannungselement des Dramas aufzufassen, da sie für „anhaltende[] Aufmerksamkeit und emotionale[] Erregung“ sorgt (Anz 2007: 464). Besonders geläufig ist dahingehend das Mittel der dramatischen Ironie, das sich aus genau dieser Kluft der Informiertheit speist. Bedingung der dramatischen Ironie ist ein Informationsvorsprung auf Seiten des Publikums, die eine aus Perspektive der sprechenden Figur unverfängliche Äußerung als „gezielte[] Anspielung auf die spätere Katastrophe“ zu deuten verstehen. Elemente wie die dramatische Ironie sind folglich eng mit der Wirkung des Dramas auf das Publikum verknüpft. Schon Aristoteles bestimmt die (kathartische) Wirkung in seiner Dramenpoetik als zentrales Anliegen der Tragödie (vgl. zur Katharsis Schmitt 2008: 333–348 u. 476–510). Als wichtige Handlungsbausteine, um die von ihm für die Wirkung gewünschten Affekte hervorzurufen, betrachtet er den Handlungsumschlag (Peripetie) und die Wiedererkennung (Anagnorisis). Letztere hängt unmittelbar mit der diskrepanten Informiertheit der Figuren zusammen. Aristoteles bestimmt die Wiedererkennung als „Umschlag von Unkenntnis in Kenntnis, mit der Folge, daß Freundschaft oder Feindschaft eintritt“ (Aristoteles 1982: 35). Da solche Erkennungsszenen idealerweise mit dem Handlungsumschlag „dessen, was erreicht werden soll“ (Aristoteles 1982: 35), verknüpft sind, stellen sie zentrale Momente der Wissensvermittlung dar, die ganz entscheidend für die Interpretation des Dramas sein können.
+                
+                Ziel unseres Annotations- und Modellierungsvorhabens ist es deshalb, das sich verändernde Wissen über Familienrelationen sowohl im internen als auch im externen Kommunikationssystem abzubilden. Wir wollen dabei nicht nur die zentralen Szenen der Wiedererkennung annotieren, sondern vor allem die einzelnen Schritte nachvollziehen, die einen solchen für die dramatische Wirkung entscheidenden Wissensumschlag anleiten.
+            
+            
+                Annotation von Wissensvermittlungen
+                In einem ersten Schritt werden Textstellen im Drama, an denen Wissen über Familienrelationen vermittelt wird, manuell annotiert. Entscheidend für die Annotation ist, dass sich der Wissensstand einer Figur oder des Publikums tatsächlich verändert. Relevante Textstellen werden mit einem strukturiert zusammengesetzten Label versehen, das sowohl das vermittelte Wissen als auch die Quelle und das Ziel der Wissensvermittlung benennt. Optional können Attribute hinzugefügt werden, sodass die Annotationslabel nach dem folgenden Schema funktionieren:
+                
+                    transfer(QUELLE, ZIEL, WISSEN, 
+                    ATTRIBUTE
+                    )
+                
+                Quelle und Ziel sind in der Regel entweder Figuren des Dramas oder das Publikum (oder eine Liste mehrerer dieser Entitäten). Als Quelle kann aber auch ein Objekt oder Vorgang in der Welt in Betracht kommen (z. B. eine Beobachtung). Das für unsere Annotationen relevante Wissen ist auf Familienrelationen und Liebesbeziehungen zwischen den Figuren beschränkt, wobei die Annotationsrichtlinien ein festes Inventar von Relationen vorgibt. Formal können hierbei gerichtete Relationen wie 
+                    parent_of(PARENT, CHILD) und ungerichtete Relationen wie 
+                    siblings(SIBLING-A, SIBLING-B) unterschieden werden. Wenn beispielsweise Nathan in Lessings 
+                    Nathan der Weise dem Tempelherrn mitteilt, dass er der Vater von Recha ist, wird diese Wissensvermittlung folgendermaßen annotiert:
+                
+                
+                    transfer(nathan, tempelherr, parent_of(nathan, recha))
+                
+                Durch die optionalen Attribute kann das vermittelte Wissen spezifiziert, also beispielsweise als unsicher oder als Lüge gekennzeichnet werden. Durch ein vorangestelltes Ausrufezeichen können Relationen oder Wissensbestände negiert werden. Beim Wissensstand kann es sich auf einer Metaebene auch um ein Wissen über Wissen handeln. So kann etwa annotiert werden, dass Daja dem Tempelherrn (und dadurch auch dem Publikum) anvertraut, dass Recha gar nicht bewusst ist, dass Nathan nicht ihr leiblicher Vater ist:
+                
+                    transfer(daja, [tempelherr, audience], !knowledge(recha, !parent_of(nathan, recha)))
+                
+                Weitere Details zur Annotation lassen sich den auf unserer Webseite veröffentlichten Richtlinien entnehmen. Die Annotation wird von zwei Annotator:innen parallel mit dem CorefAnnotator (Reiter 2018) durchgeführt und im Anschluss mit der Erstautorin dieses Beitrags besprochen. Da die Annotationsrichtlinien inzwischen hinreichend konsolidiert sind, wird einer der nächsten Schritte in der Analyse des Inter-Annotator-Agreements (IAA) bestehen. Für diese Form der Annotationen – wenige, frei zu positionierende Annotationsspannen und aus zahlreichen Einzelinformationen zusammengesetzte Label – gibt es (noch) kein Standardverfahren zur IAA-Berechnung. Wir sehen das größte Potenzial in einer Variante des Gamma-Maßes (Mathet et al. 2015). Je nach Ergebnis der IAA-Analysen erscheinen künftig auch Einzelannotationen möglich.
+                
+            
+            
+                Wissensbestände inferieren
+                Indem wir erfahren, dass Figur A Elternteil einer Figur B ist, lässt sich schließen, dass Figur B das Kind von Figur A ist, ohne dass dies im Text explizit gemacht werden müsste. Falls weitere Verwandte von Figur A bekannt sind, ergeben sich zudem weitere Verwandtschaftsverhältnisse für Figur B. Die annotierten Wissensvermittlungen müssen deshalb im Anschluss an die Annotation um alle weiteren, logisch inferierbaren Figurenrelationen ergänzt werden. Ziel des Projektes ist es, diese logischen Schlüsse durch ein formalisiertes Regelsystem zu ziehen, das auf die annotierten Wissensveränderungen angewendet werden kann und diese automatisch ergänzt. An einem ersten Prototyp dieses Inferenzsystems arbeiten wir derzeit.
+            
+            
+                Fallbeispiel: Nathan der Weise
+                Die zentrale Wiedererkennung in Lessings 
+                    Nathan der Weise dreht sich um das Figurenpaar Recha und Tempelherr, das sich, nachdem der Tempelherr Recha aus einem brennenden Haus gerettet hat, ineinander verliebt. Die am Ende des Dramas stehende Erkenntnis, dass die beiden Geschwister sind, hängt an zahlreichen Wissensbausteinen, die sich im Laufe des Dramas ergeben. Hierzu gehört insbesondere die Tatsache, dass Recha nicht die leibliche Tochter Nathans, sondern seine Pflegetochter ist, sowie die Klärung der zunächst unbekannten Herkunft des Tempelherrn. Zusätzlich wird am Ende des Stücks die Verwandtschaft mit Sultan Saladin und dessen Schwester Sittah deutlich. Aufschlussreich kann es nun sein, nachzuvollziehen, welchen Weg die einzelnen Wissensbestände durch den Figurenbestand nehmen. Dies soll am Beispiel der Familienrelation 
+                    !parent_of(nathan, recha) illustriert werden, also der Information, dass Nathan nicht der (leibliche) Vater Rechas ist. Abbildung 1 stellt den Weg dieser Information durch das Figurennetz grafisch dar.
+                
+                
+                    
+                    Abb. 1: Welche Figur weiß zu welchem Zeitpunkt, dass Nathan nicht Rechas leiblicher Vater ist? Dargestellt ist der Verlauf des Dramas von links nach rechts, Pfeile zeigen die Weitergabe der Information von einer Figur an die nächste an.
+                
+                Für das Publikum wird dieses Wissen bereits durch die Figurentafel ersichtlich. Recha wird dort im Anschluss an Nathan als „dessen angenommene Tochter“ (Lessing 1971: 206) eingeführt. Dies verleitet zu der Annahme , dass es sich dabei um ein von allen Figuren geteiltes Wissen handelt. Direkt im 1. Auftritt spielt Daja, Rechas Gesellschafterin, auf diese Tatsache an. Sie ist demnach eingeweiht. In Bezug auf Rechas Kenntnis über ihre Herkunft bleibt das Publikum zunächst im Dunkeln. Ihr Ausruf, „Da kommen die Kamele meines Vaters“ (Lessing 1971: 209), ist auch für eine Pflegetochter, die sich dieses Umstands bewusst ist, denkbar. Dem Tempelherrn gegenüber stellt sich Nathan im 5. Auftritt des 2. Aufzugs als Rechas Vater vor. Dass Nathan tatsächlich Rechas Pflegevater ist, erfährt der Tempelherr zum Ende des 3. Aufzugs von Daja, die auf eine christliche Heirat von Recha hofft. Auf der Metaebene („Wissen über Wissen“) wird dem Tempelherrn zudem offenbar, dass Recha sich ihrer tatsächlichen familiären Relation zu Nathan nicht bewusst ist, und klärt diese Frage damit ebenfalls für das möglicherweise noch zweifelnde Publikum. Der Tempelherr gibt dieses Wissen, empört über die zurückhaltende Reaktion Nathans auf seinen Heiratsantrag, an Saladin weiter (4. Aufzug, 4. Auftritt). In der folgenden Aussprache mit Nathan (5. Aufzug, 5. Auftritt) gibt der Tempelherr ihm gegenüber zu, von Daja bereits die wahren Verwandtschaftsverhältnisse erfahren zu haben. Abseits der Bühne hat Daja inzwischen auch Recha über ihren Status als Pflegetochter informiert. Dies erfährt das Publikum, indem Recha diesen Umstand auch Saladins Schwester Sittah berichtet (5. Aufzug, 6. Auftritt), sodass das Wissen nun alle Figuren im Kern des Dramas erreicht hat.
+                Für gleich mehrere Figuren lässt sich aus den Annotationen jedoch nicht direkt ableiten, zu welchem Zeitpunkt sie erstmals über das relevante Wissen verfügen. Nathan und Daja wissen bereits vor Beginn der Dramenhandlung, dass Nathan nicht Rechas leiblicher Vater ist. Direkt aus der Figurentafel lässt sich dieser Umstand indes nicht ableiten. Dass ein Vater  darüber informiert ist, wer (nicht) seine leiblichen Kinder sind, ist auch in Dramen wahrscheinlich (principle of minimal departure, vgl. etwa Ryan 1980), aber nicht alternativlos. Im ersten Auftritt erfährt das Publikum also zunächst expositorisch, dass Nathan und Daja über dieses Wissen schon vor Handlungsbeginn verfügen. Ähnlich dazu wird auch der Moment, in dem Recha erfährt, nicht Nathans leibliche Tochter zu sein, nicht auf der Bühne dargestellt. Erst durch ihren Dialog mit Sittah wird offenbar, dass sie es zwischenzeitlich abseits der Bühne erfahren haben muss.
+                Abbildung 2 stellt den Wissensverlauf für die Information, dass Recha und der Tempelherr Geschwister sind, dar. Nathan (und damit das Publikum) hegen einen entsprechenden Verdacht (in der Abbildung hell dargestellt), seit der Tempelherr im zweiten Akt seinen Familiennamen genannt hat. Erst nachdem sich dieser Verdacht im Gespräch mit dem Klosterbruder bestätigt, eröffnet Nathan allen anderen anwesenden Figuren am Ende des Dramas, dass Recha und der Tempelherr Geschwister sind.
+                
+                    
+                    Abb. 2: Welche Figur weiß zu welchem Zeitpunkt, dass Recha und der Tempelherr Geschwister sind? Die hellere Markierung bei Nathan und dem Publikum zeigt an, dass bereits der Verdacht besteht, der sich erst später bestätigt.
+                
+            
+            
+                Perspektiven für die quantitative Analyse
+                Liegt eine größere annotierte Stichprobe vor, können die annotierten Daten auf Muster untersucht werden, die im Hinblick auf zeitgenössische Dramenpoetiken und deren Normvorstellungen zu interpretieren sind. Anhand unserer bislang annotierten Dramen wollen wir dazu abschließend eine erste statistische Auswertung skizzieren. Das dazugehörige Analysekorpus umfasst zum gegenwärtigen Zeitpunkt elf Dramen. Tabelle 1 zeigt die Gesamtzahl der sechs am häufigsten annotierten Relationen innerhalb dieses Dramenkorpus. Wir führen dabei die Anzahlen beider Annotationen getrennt voneinander auf. Auffällig ist hierbei, dass der Status von Liebesrelationen besonders häufig Gegenstand der Weitergabe von Wissen zu sein scheint.
+                
+                
+                    Tab. 1: Anzahl der sechs dramenübergreifend häufigsten Relationen im annotierten Korpus, aufgeschlüsselt für jeweils beide Annotationen.
+                    
+                        Relation
+                        Anzahl für Annotation 1
+                        Anzahl für Annotation 2
+                    
+                    
+                        in_love_with
+                        66
+                        58
+                    
+                    
+                        child_of
+                        40
+                        41
+                    
+                    
+                        parent_of
+                        32
+                        27
+                    
+                    
+                        !in_love_with
+                        17
+                        16
+                    
+                    
+                        engaged
+                        17
+                        15
+                    
+                    
+                        spouses
+                        14
+                        15
+                    
+                
+                Darüber hinaus lässt sich feststellen, dass die Textstellen, an denen Wissensvermittlungen annotiert werden, ungleich über den Verlauf der Dramen verteilt sind. So treten zu Beginn und gegen Ende eines Dramas gehäuft Annotationen auf (jeweils 13% aller Annotationen), während die übrigen Annotationen relativ homogen über den Handlungsverlauf verteilt sind.
+                Ausgehend von diesen ersten Auswertungen ergeben sich für künftige quantitative Analysen vielversprechende Perspektiven. Neben der bloßen Anzahl an Relationen, die im Verlauf der Stücke als neues Wissen an andere Figuren weitergegeben werden, und der Frage nach dem Zeitpunkt der Wissensweitergabe im Verlauf des Dramas, ergeben sich auch literaturwissenschaftlich avanciertere Fragestellungen. Unterscheiden sich die Muster der Wissensweitergabe für verschiedene Gattungen, also etwa die dramatischen Großgattungen Tragödie und Komödie? Welche Figuren geben das Wissen über familiäre Figurenrelationen weiter, an welche Figuren wird es weitergegeben? Lassen sich hierbei Muster identifizieren, etwa hinsichtlich des Geschlechts der Figuren? Ist es darüberhinaus möglich, die Szenen der Wissensweitergabe näher zu charakterisieren: Wie viele Figuren stehen in diesen Szenen auf der Bühne? Wie viele sind davon an der Wissensweitergabe aktiv beteiligt?
+            
+            
+                Fazit
+                
+                Eine systematische Annotation von Prozessen der Wissensvermittlung im Drama ermöglicht eine Analyse, die über formale Merkmale der Textoberfläche hinausgeht. Liegen die Wissensbestände der Figuren und ihre Entwicklung im Verlauf des Dramas in maschinenlesbarer Form vor, lassen sich Zusammenhänge zwischen verschiedenen Textstellen identifizieren, an denen Widersprüche im Wissen der Figuren deutlich werden oder konflikthafte Relationen auftreten, wenn etwa zwei Figuren zugleich Geschwister und Liebespaar sind. Diese Widersprüche sollen über ein formalisiertes Regelsystem automatisch aus der Annotation der Familienrelationen inferiert werden. 
+                Die Erweiterung der quantitativen Analyse auf Phänomene jenseits der Textoberfläche ist naturgemäß mit größeren Herausforderungen für die Automatisierung verbunden. Vielfach zeigen sich aber sprachliche Muster, etwa Wiederholungen und Rückfragen, die einen als überraschend markierten Wissenszuwachs verdeutlichen (siehe Abbildung 3) und Hoffnung für die automatische Identifikation derartiger Textstellen machen.
+            
+            
+                TEMPELHERR.   Nicht mehr! Ich bitt‘ Euch! – Aber Rechas Bruder? Rechas Bruder ...
+                NATHAN.   Seid Ihr!
+                TEMPELHERR.   Ich? ich ihr Bruder?
+                RECHA.   Er mein Bruder?
+                SITTAH.   Geschwister!
+                SALADIN.   Sie Geschwister!
+                
+                 
+                Abb. 3: Auszug aus
+                    Nathan der Weise, der die Reaktionen der Figuren auf die Information darstellt, dass Recha und der Tempelherr Geschwister sind.
+                
+            
+        

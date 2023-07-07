@@ -1,0 +1,121 @@
+
+
+Einleitung
+
+Kunstwerke eröffnen Spielräume für Interpretationen. Das gilt auch und
+gerade für den Ende des 18. Jahrhunderts vom venezianischen Maler
+Giovanni Domenico Tiepolo geschaffenen Bildzyklus Divertimento per li Regazzi, der verschiedene Motive aus dem Umkreis der aus der Commedia dell’Arte
+ bekannten Figur des Pulcinella aufgreift und diese spielerisch verbindet. Die einzelnen Blätter des Zyklus scheinen eine Art Lebensgeschichte Pulcinellas zu erzählen und sich immer wieder aufeinander zu beziehen oder Werke anderer Künstler aufzugreifen, ohne dass jedoch letzte Gewissheit zu erlangen ist. Die Vieldeutigkeit und der Beziehungsreichtum haben daher ganz unterschiedliche Interpreten bis hin zum bekannten Philosophen Giorgio Agamben (Agamben 2015) auf den Plan gerufen und zu spielerischen Assoziationen verleitet.
+
+
+Gleichzeitig wird am Bildzyklus jedoch deutlich, wie sehr formale Zwänge Spielräume einengen und Deutungsmöglichkeiten festlegen können. In dem von Adelheid Gealt herausgegebenen Katalog (Gealt 1986), der bis heute einen zentralen Ausgangspunkt für die wissenschaftliche Betrachtung des Divertimento bildet, werden die Bilder in einer festen Abfolge dargeboten, die eine bestimmte sukzessive Lektüre des Zyklus vorgibt, hinter der mögliche Querbezüge zurücktreten.
+
+
+Diese Festlegung ergibt sich nicht zuletzt durch die Zwänge des
+Druckmediums, in dem eine lineare Abfolge von Bildseiten unvermeidlich
+ist. Wie in der Diskussion insbesondere im Bereich der
+literaturwissenschaftlichen Editorik deutlich gemacht wurde, eignen
+sich digitale Editionen besonders gut dazu, solche Einschränkungen zu
+überwinden und unterschiedliche Sichtweisen zuzulassen (Sahle 2013, 2,
+166-189). Um die vielfältigen Bezugsmöglichkeiten, die das Divertimento  bereithält, adäquat darzustellen, bietet es sich daher an, das Konzept einer offenen, digitalen Edition auch auf die Präsentation des Bildzyklus zu übertragen. An der Universität Stuttgart wird zurzeit eine solche Edition des 
+Divertimento  erarbeitet. Der innovative Methodentransfer von Text- auf Bilderzählungen greift damit gleichsam aus einer umgekehrten Stoßrichtung aktuelle Überlegungen zur graphbasierten Modellierung von (Text-)Editionen auf (Andrews / Mace 2013, Efer 2017, Kuczera 2016, Kuczera 2017) und vermag dadurch neues Licht auf die Modellierung von Erzähllogiken zu werfen sowie zugleich neue Wege der digitalen Darstellung von Bildkunstwerken zu eröffnen.
+
+
+Bei der Einrichtung der Edition ist zu beachten, dass auch digitale Methoden formalen Zwängen unterworfen sind. Denn um die Interoperabilität und Nachhaltigkeit zu sichern, ist der Rückgriff auf ein standardisiertes Datenmodell notwendig, das den Austausch mit anderen Ressourcen erlaubt. Diese Modellierung bringt eine Einengung mit sich (Pierazzo 2019), die paradoxerweise gerade erst jene Spielräume eröffnet, in denen ein Bildzyklus wie 
+das Divertimento  rekontexualisiert werden kann. Um dessen komplexen Möglichkeitsräume freizulegen, greifen wir auf das im Kulturerbe-Bereich verbreitete Datenmodell des CIDOC-CRM zurück (Le Boeuf et al. 2019). Im Folgenden wollen wir zunächst die kunsthistorische Fragestellung unseres Projekts explizieren, danach dessen Workflow skizzieren und schließlich genauer auf die Datenmodellierung in CIDOC-CRM eingehen, die unter dem Aspekt der Paradoxie des Digitalen zwischen Eröffnung und Einschränkung von Spielräumen diskutiert werden kann.
+
+
+
+
+Kunsthistorische Voraussetzungen
+                
+Das von Tiepolo in den letzten Jahren seines Lebens zwischen 1797 und 1804 geschaffene Korpus besteht aus 104 Zeichnungen, die allesamt die Figur des Pulcinella in verschiedenen Lebenssituationen zeigen. Nimmt man eine von Blatt zu Blatt anhaltende personelle Konstanz der äußerlich kaum unterscheidbaren Pulcinelli an, so kann man in dem Zyklus ein biographisches Narrativ erkennen, das den Weg einer oder vielleicht auch mehrerer Pulcinella-Figuren von der Wiege bis zur Bahre nachzeichnet.
+Aufgrund zahlreicher variierender Wiederholungen oder sich offensichtlich widersprechender Darstellungen ist es jedoch nahezu unmöglich, alle Zeichnungen zu einer konzisen Erzählung zu verbinden (Vetrocq 1979, 19-20). So wird Pulcinella etwa in zwei Darstellungen auf unterschiedliche Weise hingerichtet, während ein weiteres Blatt seine Begnadigung zeigt. Im Gegensatz zu einem ‚gewöhnlichen‘ narrativen Bildzyklus gibt es also keine klar erkennbare Anordnung der Blätter, keinen eindeutig intendierten Erzählverlauf. Stattdessen wird dem Betrachter ein weiter narrativer Spielraum eröffnet, innerhalb dessen eine Vielzahl unterschiedlicher Geschichten konstruiert werden können (Gealt 1986, 16-17, Gottdang 2015, 81-86). Der Rezipient rückt somit an die Stelle des Erzählers bzw. Mitspielers, der einzelne Zeichnungen aussuchen und zu verschiedenen Sequenzen anordnen kann. Doch wird auch hier deutlich, dass es sinnvoll sein kann, Spielräume einzuschränken: Nicht jede denkbare Sequenz ist aus erzähllogischer Perspektive betrachtet gleich valide (Tumanov 2019). Im Sinne einer biographischen Anordnung erscheint es beispielsweise angebracht, Blätter, die Pulcinella als Kind darstellen, vor solche zu ordnen, die ihn als Erwachsenen zeigen.
+
+Zu dieser syntagmatischen Ordnung der Lebensgeschichte des Pulcinella kommt im Zyklus eine paradigmatische Dimension hinzu, die sich durch die Wiederkehr von bestimmten Motiven ergibt. So begegnet etwa auf mehreren Darstellungen ein Topf mit Gnocchi, der Bezüge zwischen den einzelnen Zeichnungen herstellt, die quer zum biographischen Narrativ liegen.
+
+Diese ‘internen’ paradigmatischen Bezüge werden schließlich noch durch eine Reihe ‚externer‘ Verweise auf andere Bilder, Motive oder Praktiken ergänzt, die den Assoziationshorizont skizzieren, vor dem die Zeichnungen zu verstehen sind. So verweist beispielsweise die Szene der Erschießung des Pulcinella aufgrund einer Motivähnlichkeit auf die Erschießung der marodierenden Soldaten aus den Grandes Misères de la guerre Jacques Callots, wodurch sich neue Bedeutungsdimensionen an den Zyklus anlagern lassen.
+
+Aus dieser Ausgangslage ergibt sich folgendes Anforderungsprofil für die digitale Edition:
+
+   Ziel der Edition ist es, explizit keine einheitliche
+  Bildsequenz zu (re)konstruieren, sondern die Ordnungsstrukturen und
+  polyvalenten Verknüpfungen aufzuzeigen, die in den Zeichnungen
+  angelegt sind und es dem Betrachter ermöglichen, diverse Lektürewege
+  durch den narrativen Möglichkeitsraum des Divertimento  einzuschlagen.
+  Dazu ist eine Datenmodellierung nötig, die das Material nach erzähllogischen Gesichtspunkten vorstrukturiert ohne eine genaue Abfolge festzulegen. 
+   Die Datenmodellierung soll neben syntagmatischen auch paradigmatische Bezugspunkte berücksichtigen.
+   Neben internen sind auch externe Verweispunkte zu berücksichtigen, die auf das Semantic Web ausgreifen.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Technische Umsetzung
+                
+
+Zur Formalisierung dieser Zusammenhänge im digitalen Medium erscheint uns ein Graphdatenmodell besonders geeignet. Die möglichen internen und externen Verbindungen zwischen den Bildern werden demnach in RDF-Triples ausgedrückt.
+ Diese Triples werden in einem RDF-Triplestore (zurzeit kommt hierfür GraphDB zum Einsatz) vorgehalten und sollen mittels des php-Frameworks ARC2
+ über SPARQL-Abfragen ausgelesen und in eine HTML-Darstellung ausgegeben werden;
+ geplant ist zudem eine alternative Ausgabe in IIIF-Manifeste.
+ Die Verbindung ins Netz des Linked Data soll durch die Verwendung von Normdaten wie dem Iconclass-Klassifikationssystem
+ ermöglicht werden (zu Chancen und Herausforderungen beim Einsatz von Normdaten in der digitalen Kunstgeschichte vgl. Kailus / Stein 2018).
+
+
+Kernstück ist dabei die Modellierung der Daten in einer vom CIDOC-CRM vorgegebenen Struktur, die die Interoperabilität und Nachhaltigkeit der Daten gewährleistet. Konkret wurde dabei auf die OWL-basierte Version Erlangen-CRM zurückgegriffen
+ und die Modellierung mit Hilfe des Ontologie-Editors Protégé ausgearbeitet.
+ CIDOC-CRM etabliert sich im DH-Bereich immer mehr als
+ Top-Level-Ontologie (Eide / Ore 2019). Für unsere Zwecke bietet sich
+ das CIDOC-CRM jedoch nicht nur aufgrund seines Status als Standard
+ an,
+ sondern auch aufgrund seiner Event-basierten Struktur, die der Modellierung des Bildzyklus besonders entgegen kommt.
+
+
+
+
+Modellierung in CIDOC-CRM
+                
+Die Herausforderung der Modellierung bestand insbesondere darin, eine flexible Anordnung der Bilder zu erlauben, um verschiedenen Gruppierungsmöglichkeiten nach zeitlichen oder inhaltlichen Aspekten gerecht zu werden. Berücksichtigt werden musste, dass die Bilder zwar einer grundlegenden Chronologie folgen (z. B. ereignet sich die Geburt Pulcinellas vor dessen Tod), dass aber auch indifferente Einzeldarstellungen existieren, die nicht in eine eindeutige Reihenfolge gebracht werden können (z. B. verschiedene von Pulcinella ausgeübte Berufe). Zusätzlich können sie auch nach sich wiederholenden Bildmotiven gruppiert werden. Darüber hinaus sollten innerhalb des Bilderzyklus auftretende externe Bezüge auf weitere Werke Tiepolos sowie Arbeiten anderer Künstler berücksichtigt werden.
+
+CIDOC-CRM bietet für diese Aufgabe zwei Vorteile: Zum einen ist CIDOC-CRM Linked-Open-Data-kompatibel, zum anderen „ereignisorientiert“, d. h., Ereignisse können prozesshaft modelliert werden. Dadurch wird der Aufbau einer flexiblen chronologischen Struktur ermöglicht, die sich als Gerüst nicht an der statischen Abfolge der Bilder, sondern an einer gewissermaßen ‘virtuellen’ Lebensgeschichte Pulcinellas orientiert, anhand derer der Bildzyklus gruppiert werden kann. Der Lebenszyklus (E4_Period) lässt sich in Untergruppen segmentieren, die als Ereignisse (E5_Events) angelegt wurden, die sich wiederum in einzelne Handlungen (E7_Activities) aufteilen lassen. Diese Ereignisse und Handlungen können mit Hilfe von 
+Properties
+ in eine chronologische Reihenfolge gebracht werden (so steht etwa der Abschnitt ‘Geburt_und_Kindheit_Pulcinellas‘ in der Beziehung P120_occurs_before zum Abschnitt ‘Pulcinellas_Berufe’). Innerhalb einer Ereignisgruppe bleiben die Einzelbilder ohne weitere chronologische Anordnung frei sortierbar oder können durch die Verknüpfung einzelner Bildhandlungen in eine näher spezifizierte Chronologie gebracht werden. Dadurch lassen sich die grundlegende zeitliche Einteilung, zeitlich nur grob einteilbare Handlungen, aber auch spezifische chronologische Abfolgen modellieren, so dass variable Handlungswege ohne starres „Abfolgekorsett“ möglich werden (Abbildung 1).
+
+
+
+  
+
+
+Um die Wiederholung von einzelnen Bildmotiven zu modellieren, werden diese in den entsprechenden Bildern als vorhanden ausgezeichnet (P62_depicts) und mit der entsprechenden Iconclass-Nummern versehen, die einen ersten Anschlusspunkt an das Semantic Web ermöglichen sollen (Abbildung 2).
+
+
+
+
+
+Bezugnahmen auf externe Kunstwerke wurden durch die Anlegung eines
+eigenen 'Individuals' für jedes dieser externen Werke umgesetzt, die anschließend mit den Bildern des Zyklus verknüpft werden (P130_shows_features_of).
+                
+
+
+
+Fazit
+                
+
+Als grundlegende Struktur für die Modellierung von Tiepolos variablen Bildzyklus hat sich das CIDOC-CRM aufgrund seiner Event-basierten Konzeption erstaunlich praktikabel erwiesen. Wie sich zeigt, sind mit dem Gerüst des CIDOC-CRM alle zuvor skizzierten Anforderungen an die Datenmodellierung des Editionsprojekts umsetzbar, ohne dass Modifikationen nötig wären. Das durch das CRM aufgespannte Beziehungsgeflecht kann in weiterer Folge mittels SPARQL-Anfragen ausgelesen und über das ARC2-Framework in eine HTML-Darstellung umgesetzt werden. Gerade die sich zunächst aus der Notwendigkeit der Standardisierung ergebende formale Einschränkung, die die Modellierung mit CIDOC mit sich bringt, eröffnet damit den Möglichkeitsraum, der das komplexe Beziehungsgeflecht des 
+Divertimento  erst zu Anschauung bringen kann. In dieser Hinsicht offenbart das Modell den doppelten Charakter der Spielräume-Metapher, der für die Anwendung digitaler Methoden charakteristisch sein dürfte: Digitale Modelle eröffnen Spielräume, legen aber zugleich deren räumliche Grenzen fest.
+
+
+Wie weit diese Spielräume geöffnet werden können, hat sich freilich auch in der praktischen Umsetzung zu erweisen. Eine Herausforderung für unser Projekt wird es etwa sein, zu bestimmen, wie 'tief' die Querverweise auf andere Kunstwerke in die Modellierung mit aufgenommen werden können. Welche Motive sind z.B. für die paradigmatische Verknüpfung relevant? Und ist Relevanz hier binär zu denken oder gibt es unterschiedliche Grade von Relevanz? Ist demnach eine 'vollständige' Erschließung relevanter Motive überhaupt zu erreichen? Es steht zu vermuten, dass auch hier die Menge der möglichen Kontextualisierungen potentiell unbegrenzt ist, aber durch die Modellierung beschränkt werden muss. Und wie offen kann wiederum das syntagmatische Gerüst gestaltet werden, ohne dass sich die Nutzerin / der Nutzer in der Vielzahl der Möglichkeiten verliert? Solche und ähnliche Fragen stellen potentielle Limitationen unseres Ansatzes dar, die zwar formal bei der Integration in CIDOC unproblematisch sind, sich aber gewissermaßen auf inhaltlicher Ebene bei der Erstellung unseres Datenmodells abzeichnen. Mit welchen Strategien mit ihnen umgegangen werden kann, hat sich letztlich im Umgang mit dem fertigen Editionsinterface zu erweisen, entsprechende Fragen nach 'Tiefe' und 'Vollständigkeit' der Modellierung stellen aber auch Diskussionspunkte dar, die über unser Projekt auf die grundlegenden Möglichkeiten der Darstellung von Bildkunstwerken hinaus verweisen.
+
+

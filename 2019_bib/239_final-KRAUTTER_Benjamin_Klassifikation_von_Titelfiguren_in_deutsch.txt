@@ -1,0 +1,135 @@
+
+			
+				 Bei einem entsprechenden Versuch erzielten wir Übereinstimmungen zwischen 0.43 und 0.83 (Cohen’s ϰ).
+				 Titelfiguren könnten dann ersatzweise als (Pseudo-)Goldstandard für die Klassifikation von Hauptfiguren genutzt werden, um zu testen, ob Eigenschaften der Titelfiguren auf andere Hauptfiguren übertragbar sind.
+				 Probleme von Morettis Vorgehen diskutiert Peer Trilcke (2013: 226–232).
+				 Wir nutzen dafür das German Drama Corpus: https://github.com/dracor-org/gerdracor.
+				 Die Implementierung erfolgt über die Pakete randomForest und Caret für R: https://cran.r-project.org/web/packages/randomForest/index.html/ und https://cran.r-project.org/web/packages/caret/. Der vollständige Code zu den Experimenten ist zu finden unter https://quadrama.github.io/blog/2018/12/12/detect-protagonists.de/.
+				 Eine genauere Beschreibung aller Features findet sich in Krautter, Benjamin / Pagel, Janis / Reiter, Nils und Willand, Marcus (2018): „Titelhelden und Protagonisten – Interpretierbare Figurenklassifikation in deutschsprachigen Dramen“, in: Litlab Pamphlet 7.
+				 Vollständig korrekt ausgezeichnet wurden die folgenden Dramen: Die beiden Klingsberg, Marino Caboga, Die Piccolomini, Wallensteins Tod, Die Verschwörung des Fiesko zu Genua, Ludwig der Bayer, Die Jungfrau von Orleans, Herzog Theodor von Gothland, Dantons Tod, Hannibal, Napoleon oder Die hundert Tage.
+				 Die 20 wahrscheinlichsten Begriffe von Topic 5 sind: „ich“, „und“, „die“, „nicht“, „der“, „ist“, „zu“, „–“, „das“, „Ich“, „in“, „so“, „den“, „dem“, „es“, „ein“, „mich“, „sie“, „Sie“, „er“.
+				 Etwa: „Herr“, „König“, „Königin“, „Vater“, „Narr“, „Graf“, „Majestät“, „Schuldmeister“, „Mutter“, „Tochter“, „Sohn“, „Doktor“.
+			
+            
+                
+                    Bibliographie
+                    
+                        Algee-Hewitt, Mark (2018): 
+                        Distributed Character: Quantitative Models of the English Stage, 1500-1920, 
+                        in: Digital Humanities 2017: Conference Abstracts: 119–121.
+                    
+                    
+                        Alt, Peter-André (1994): 
+                        Tragödie der Aufklärung. 
+                        Eine Einführung. Basel / Tübingen: Francke.
+                    
+                    
+                        Breiman, Leo (2001): 
+                        Random Forests, 
+                        in: Machine Learning 24(2): 5–32.
+                    
+                    
+                        Declerck, Thierry / Koleva, Nikolina / Krieger, Hans-Ulrich (2012): 
+                        Ontology-Based Incremental Annotation of Characters in Folktales, 
+                        in: Proceedings of the 6th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities: 30–34 http://www.aclweb.org/anthology/W12-1006 [zuletzt abgerufen 13. Oktober 2018].
+                    
+                    
+                        Fick, Monika (2000): 
+                        Emilia Galotti, 
+                        in: Lessing Handbuch. Leben–Werk–Wirkung. Stuttgart: Metzler 316–343.
+                    
+                    
+                        Finlayson, Mark A. (2017): 
+                        ‚ProppLearner‘: Deeply Annotating a Corpus of Russian Folktales to Enable the Machine Learning of a Russian Formalist Theory, 
+                        in: Digital Scholarship in the Humanities 32(2): 284–300 https://doi.org/10.1093/llc/fqv067 [letzter Zugriff 13. Oktober 2018].
+                    
+                    
+                        Fischer, Frank / Trilcke, Peer / Milling, Carsten / Skorinkin, Daniil (2018): 
+                        To Catch a Protagonist: Quantitative Dominance Relations in German-Language Drama (1730–1930), 
+                        in: Digitial Humanities 2018: Conference Abstracts: 193–201.
+                    
+                    
+                        Ho, Tin Kam (1995): 
+                        Random Decision Forests, 
+                        in: Proceedings of the 3rd International Conference on Document Analysis and Recognition: 278–282.
+                    
+                    
+                        Jannidis, Fotis (2004): 
+                        Figur und Person. Beitrag zu einer historischen Narratologie. 
+                        Berlin: de Gruyter.
+                    
+                    
+                        Jannidis, Fotis / Reger, Isabella / Krug, Markus / Weimer, Lukas / Macharowsky, Luisa / Puppe, Frank (2016): 
+                        Comparison of Methods for the Identification of Main Characters in German Novels, 
+                        in: Digital Humanities 2016: Conference Abstracts: 578–582.
+                    
+                    
+                        Krautter, Benjamin / Pagel, Janis / Reiter, Nils / Willand, Marcus (2018): 
+                        Titelhelden und Protagonisten – Interpretierbare Figurenklassifikation in deutschsprachigen Dramen, 
+                        in: Litlab Pamphlet 7.
+                    
+                    
+                        Lessing, Gotthold Ephraim (2000 [1772]): 
+                        Emilia Galotti. Ein Trauerspiel in fünf Aufzügen, 
+                        in: 
+                        Bohnen, Klaus (ed.): 
+                        Lessing Werke und Briefe. 
+                        Bd. 7. Werke 1770–1773. Frankfurt a.M.: Deutscher Klassiker-Verlag 291–371.
+                    
+                    
+                        Martus, Steffen (2011): 
+                        Transformationen des Heroismus. Zum politischen Wissen der Tragödie im 18. Jahrhundert am Beispiel von J. E. Schlegels Canut, 
+                        in: 
+                        Burkhard, Torsten / Hundt, Markus / Martus, Steffen / Ort, Claus-Michael (eds.): 
+                        Politik – Ethik – Poetik. Diskurse und Medien frühneuzeitlichen Wissens. 
+                        Berlin: Akademie Verlag 15–42.
+                    
+                    
+                        Moretti, Franco (2011): 
+                        Network Theory, Plot Analysis, 
+                        in: Literary Lab Pamphlet 2. https://litlab.stanford.edu/LiteraryLabPamphlet2.pdf [zuletzt abgerufen 13. Oktober 2018].
+                    
+                    
+                        Moretti, Franco (2013): 
+                        ‚Operationalizing‘: or, the Function of Measurement in Modern Literary Theory, 
+                        in: Literary Lab Pamphlet 6. https://litlab.stanford.edu/LiteraryLabPamphlet6.pdf [zuletzt abgerufen 13. Oktober 2018].
+                    
+                    
+                        Pfister, Manfred (2001 [1977]): 
+                        Das Drama. 
+                        Theorie und Analyse. München: Fink.
+                    
+                    
+                        Platz-Waury, Elke (2007 [1997]): 
+                        Art. Figurenkonstellation, 
+                        in: 
+                        Weimar, Klaus / Fricke, Harald / Grubmüller, Klaus / Müller, Jan-Dirk (eds.): 
+                        Reallexikon der deutschen Literaturwissenschaft. 
+                        Bd. 1. Berlin / New York: De Gruyter 591–593.
+                    
+                    
+                        Plett, Bettina (2002): 
+                        Problematische Naturen? Held und Heroismus im realistischen Erzählen. 
+                        München / Paderborn / Wien / Zürich: Schöningh.
+                    
+                    
+                        Reiter, Nils / Krautter, Benjamin / Pagel, Janis / Willand, Marcus (2018): 
+                        Detecting Protagonists in German Plays around 1800 as a Classification Task, 
+                        in: EADH 2018: Conference Abstracts. http://dx.doi.org/10.18419/opus-10162 [zuletzt abgerufen 22.12.2018].
+                    
+                    
+                        Ter-Nedden, Gisbert (1986): 
+                        Lessings Trauerspiele. Der Ursprung des modernen Dramas aus dem Geist der Kritik. 
+                        Stuttgart: Metzler.
+                    
+                    
+                        Trilcke, Peer (2013): 
+                        Social Network Analysis (SNA) als Methode einer textempirischen Literaturwissenschaft, 
+                        in: 
+                        Ajouri, Philip / Mellmann, Katja / Rauen, Christoph (eds.): 
+                        Empirie in der Literaturwissenschaft. 
+                        Münster: Mentis 201–247.
+                    
+                
+            
+        

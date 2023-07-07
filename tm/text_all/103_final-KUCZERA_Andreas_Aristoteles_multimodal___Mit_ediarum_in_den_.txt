@@ -1,0 +1,106 @@
+
+            
+                Aristoteles multimodal – Mit 
+                ediarum
+                 in den Graphen
+            
+            
+                In diesem Beitrag wird am Beispiel der Forschungsdaten des 
+                
+                    Akademienvorhabens “Commentaria in Aristotelem Graeca et Byzantina”
+                
+                (CAGB) gezeigt, welchen Mehrwert das Zusammenspiel von Editionsumgebung (Ediarum) und Graphdatenbank (neo4j) bei
+                 Analyse von Forschungsdaten bieten kann und warum Schnittstellen Digitaler Editionen für Graphdatenbanken von zentraler Bedeutung sind.
+                
+            
+			
+                    
+					
+						Abb. 1: Neue Homepage des Aristoteles-Projekts (Quelle: Fechner).
+					
+                        
+            
+                Die Forschungssoftware 
+                
+					ediarum
+				
+                stellt Werkzeuge zur Eingabe, Verwaltung und Präsentation von Digitalen Editionen zur Verfügung (vgl. Abb. 2). Die an der Berlin-Brandenburgischen Akademie der Wissenschaften entwickelte Software
+                 erlaubt es 
+                historische Texte zu transkribieren, auszuzeichnen und zu kommentieren, sowie die einzelnen Text mit anderen Texten und Registereinträgen zu verknüpfen. Aktuell wird das einheitliche Webframework 
+                ediarum.WEB
+                 entwickelt, mit dessen Hilfe die Erstellung von Webpublikationen Digitaler Editionen aus 
+                ediarum
+                 heraus vereinfacht wird. Grundlage dafür ist ein allgemeiner Ansatz, der die Funktionalitäten von Digitalen Editionen über eine Schnittstelle nachhaltig verfügbar macht.
+                
+                Dafür wird der bisherige Programmcode von schon bestehenden auf ediarum basierenden Digitalen Editionen nachgenutzt, vereinheitlicht und erweitert. In absehbarer Zeit ist eine Veröffentlichung von 
+                ediarum.WEB auf 
+                github geplant, damit es wie auch die übrigen Teile von 
+                ediarum frei genutzt werden kann.
+            
+			
+                    
+					
+						Abb. 2: Handschriftenbeschreibung von "Vind. phil. gr. 100" in Ediarum (Quelle: Fechner).
+					
+            
+            
+                Durch die Nutzung dieses einheitlichen Webframeworks kommen alle darin enthaltenen und zukünftig entwickelten Features den damit publizierten Digitalen Editionen zugute. Auch schon bestehende Webseiten, wie etwa die des hier besprochenen Akademienvorhabens CAGB, können in Zukunft auf 
+                ediarum.WEB umgestellt werden.
+                 Bereits abgedeckte Funktionalitäten sind unter anderem die Anzeige und Filterung von
+                 Texten und Registereinträgen, sowie der Zugriff auf Daten und Metadaten über Schnittstellen. Auch gibt es eine Schnittstelle, die dafür entwickelt wurde
+                , die Objekte und ihre Verknüpfungen von 
+                Digitalen Editionen in einem JSON-Format zu exportieren, das sich unter anderem für den Import in Graphdatenbanken eignet. 
+            
+			
+                    
+					
+						Abb. 3: Die gelben Knoten stellen die Aristoteleswerke dar, die roten Knoten Manuskripte, die sich jeweils auf Aristotelesstellen beziehen oder in deren Handschriftenbeschreibung von der Forschung auf andere Manuskripte verwiesen wird. Johannes Tetzel (die Person im linken blauen Knoten) hat vermutlich das rote Manuskrip geschrieben, auf welches es mit der AUTHOR_ATTESTED-Kante zeigt (Quelle: Kuczera/Fechner).
+					
+            
+            
+                Graphdatenbanken haben sich in den letzten Jahren zu einem sehr flexiblen Werkzeug für das Management hochvernetzter Forschungsdaten entwickelt. Im Gegensatz zu relationalen Datenbanken, in denen Daten in verknüpften Tabellen abgespeichert werden, gibt es in 
+                Graphdatenbanken Knoten und Kanten (Kuczera2017 und Kuczera2018). Sie bieten die Möglichkeit, die Daten sehr flexibel aber gleichzeitig eng an der Forschungsfragestellung zu modellieren und zu analysieren. Damit ergeben sich Abfrageperspektiven, die mit relationalen oder XML-basierten Datenbanksystemen nur schwer zu realisieren sind.Solche
+                hochvernetzten Forschungsdaten entstehen im Akademienvorhaben “Commentaria in Aristotelem Graeca et Byzantina” (vgl. Abb. 3). Mit Hilfe von 
+                ediarum
+                 entsteht ein detaillierter Handschriftenkatalog, dessen Ziel es ist, relevante Manuskripte mit mittelalterlichen Kommentaren zu Texten des Aristoteles vor allem aus dem 13. und 14. Jahrhundert zu verzeichnen.
+                
+                 Die digitale Publikation enthält darüber hinaus auch prosopographische Informationen zu den Autoren, Besitzern und Kommentatoren, sowie zu den in den Handschriften enthaltenen Texten. Allein für die drei Objekttypen "Personen", "Manuskripte" und "Aristoteles Werke" sind in der Datenbank mehrere Beziehungsmöglichkeiten eindeutig definiert. So kann ein Manuskript ein Werk des Aristoteles ganz oder teilweise enthalten, eine Person kann etwa Kopist oder Besitzer einer Handschrift sein, ebenso können aber auch die Handschriftenbeschreibungen Verweise auf damit in Beziehung stehende Handschriften enthalten. 
+            
+            
+                Neben den teilweise sehr umfangreichen Handschriften- und Personenbeschreibungen enthalten insbesondere die Beziehungen zwischen den Datenobjekten für die Aristoteles-Forschung interessante Informationen. Im Rahmen der Handschriften- und Personenbeschreibungen wird durch die Beziehungen zunächst eine Kontextualisierung des Gegenstandes vorgenommen, welche die Einordnung und das Verständnis der jeweiligen Handschrift bzw. Person verbessert. Die Beziehungen selbst spannen letztlich ein Netzwerk auf, welches sich mit Hilfe von graph-basierten Werkzeugen filtern, visualisieren und analysieren lässt. Durch die Möglichkeit an einen solchen Graphen präzise Abfragen zu richten, lassen sich schließlich forschungsrelevante Fragen beantworten, deren Erforschung bisher nur durch zusätzliche mühsame Detailarbeit gelingen konnte und die weit über rein statistische Ansätze hinausgeht
+                 Im Gegensatz zur facettierten Filterung, die bei der Filterung auf die direkte Beziehung zwischen zwei Objekten angewiesen ist, können graphbasierte Abfragen auch Abhängigkeiten mit längeren Beziehungspfaden finden und darstellen.
+                 Durch die gleichzeitige Visualisierung und damit 
+                Kontextualisierung von Handschriften, Personen und Aristoteles Werken in
+                 einem gemeinsamen Netzwerk können die bekannten Verbindungen neu bewertet werden. Gerade die Möglichkeit zur Modellierung von multimodalen Netzwerken
+                
+                in Graphdatenbanken bietet flexible Möglichkeiten den Forschungsgegenstand strukturiert zu erfassen und zu analysieren. Im Gegensatz zur historischen Netzwerkanalyse, bei der oft Algorithmen aus anderen Wissenschaftsbereichen wie z.B. der sozialen Netzwerkforschung angewendet werden, können sich Abfragen an eine Graphdatenbank sehr eng an der vom Wissenschaftler selbst gewählten Modellierung orientieren.
+            
+			
+                    
+					
+						Abb. 4: Personen und Texte, auf die sie Zugriff hatten (Ausschnitt) (Quelle: Kuczera/Fechner).
+					
+            
+			Für die Forschung ist es etwa von Interesse herauszufinden, auf welche Texte eine bestimmte Person Zugriff hatte (Abb. 4) oder welche Kopisten und Besitzer von Handschriften eines bestimmten Textes es in einem bestimmten Zeitraum gab. Leider ist in bisherigen gedruckten Katalogen, sowie auch In der Datenbank diese Information nur implizit vorhanden: Die einzelnen Handschriftenbeschreibungen enthalten Angaben zu ihren Besitzern und den in ihnen enthaltenen Texten. Die Rechercheaufgabe besteht also etwa darin, zu einer bestimmten Person alle Handschriften, zu denen sie Zugang hatte, zu finden und weiterhin alle darin enthaltenen Texte. In einer graphbasierten Datenbank ist lässt sich dies in einem einfachen Query ausdrücken, wodurch die Antwort sogar nicht nur für eine Person, sondern auch gleich für alle ausgeführt werden kann.
+			
+                    
+					
+						Abb. 5: Personen und Manuskripte, auf die sie jeweils über ihre persönliche Sammlung Zugriff hatten (Quelle: Kuczera/Fechner).
+					
+            
+            
+                In der Graphdatenbank sind aber auch darüber hinausgehende Abfragen möglich. So lassen sich die Texte finden, die von den meisten Personen besessen wurden, oder Personenpaare, welche die gleichen Manuskriptsammlungen besaßen (Abb. 5). Die Visualisierungen vonN
+                etzwerken ermöglichen den Forschern eine neue Perspektive auf die komplexen Beziehungen von Personen, Manuskripten und Texten. Einen guten Überblick über die Forschungslage zur Rezeption bestimmter Texte, ergibt etwa die Abfrage nach einzelnen Texten, nach den sie enthaltenen Manuskripten und den dazugehörigen Besitzern. Aus der Analyse wird leicht ersichtlich, bei welchen Personen der Zugriff auf einen oder mehrere Texte nachgewiesen werden kann (Abb. 6).
+            
+            
+                Die Anreicherung von Texten mit Kontext, etwa über Register und Kommentare ist ein zentraler Aspekt von Editionen und Digitalen Editionen. Die Daten selbst basieren auf akribischer Forschungsarbeit an den Quellen, die ein großes Hintergrundwissen voraussetzt. Mit dem Export der von Digitalen Editionen behandelten Objekte und Relationen über eine nachnutzbare Schnittstelle wie in 
+                ediarum.WEB
+                 wird die Möglichkeit eröffnet, die vernetzten Forschungsdaten neuen Analysen zugänglich zu machen. Die graphbasierten Analysen reproduzieren die in den Quellen abgebildeten Kontexte und stellen diese erstmals gemeinsam und vernetzt dar. Sie sind nicht als Gegensatz zur bisherigen Forschungspraxis zu sehen, sondern als Fortentwicklung der bestehenden Methoden. Damit helfen sie bei der Bewertung, Kontextualisierung und Einordnung der einzelnen Quellen und des Gesamtkorpus.
+            
+			
+                    
+					
+						Abb. 6: Welche Personen (blau) haben über welche Manuskripte (rot) Zugriff auf die Werke (gelb) “De interpretatione” (links), “De anima” (oben rechts) und “Physica” (unten rechts). (Quelle: Kuczera/Fechner).
+					
+            
+        

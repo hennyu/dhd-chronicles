@@ -1,0 +1,38 @@
+
+            
+                Einleitung
+                Die Ästhetikvorlesungen des Philosophen und Theologen Friedrich Schleiermacher (1768-1834) sind Bestandteil des ästhetischen Diskurses der klassischen deutschen Philosophie nach Kant (vgl. Jaeschke / Arndt 2012), sind aber als Bestandteil dieses Diskurses noch nicht hinreichend untersucht worden. Das sich diesem Desiderat widmende DFG-Projekt, das mit dem Akademienvorhaben „Schleiermacher in Berlin 1808-1834“ assoziiert ist, stellt die Frage, wie die Ästhetikvorlesungen aufgrund von digitalen Methoden erschlossen, wie sie in ihrem Verlauf untersucht und in ihrem philosophiehistorischen Kontext kritisch dargestellt werden können. Das geplante Poster illustriert eine für dieses Projekt zentrale digitale Methode: das von der Digital Humanities-Arbeitsgruppe TELOTA entwickelte Tool ediarum.SKOS.
+                
+            
+            
+                Erfassung und Analyse der Themen und Begriffe der Ästhetikvorlesungen mit dem Tool ediarum.SKOS
+                Das DFG-Projekt schließt an die Hybridedition von Schleiermachers Ästhetikvorlesungen im Rahmen der 
+                    Kritischen Gesamtausgabe Schleiermachers (Schleiermacher 2021) an und ist durch drei zentrale Forschungsfragen gegliedert: 1.) Wie kann die Nutzung und Erschließbarkeit der digitalen Edition durch thematische und begriffliche Zugänge sinnvoll erweitert werden? 2.) Wie kann der Verlauf der drei Ästhetikvorlesungen, die Schleiermacher 1819, 1825 und 1832/33 an der Berliner Universität hielt, aufgrund der überlieferten Dokumente näher bestimmt und in Bezug auf mögliche Veränderungen der Konzeption untersucht werden? 3.) Wie können die Ästhetikvorlesungen in ihrer Eigenbedeutung und in ihrem diskursiven Umfeld mit digitalen Mitteln erörtert werden?
+                
+                Zur Bearbeitung dieser Forschungsfragen wurde beschlossen, die Annotation, Definition und Referenzierung von Themen mit einem digitalen Thesaurus vorzunehmen. Die Modellierung der Themen- und Begriffsfelder basiert auf dem „Simple Knowledge Organisation System“ (SKOS), das auf dem Resource Description Framework (RDF) und RDF-Schema aufbaut (Isaac/Summers 2009), und welches in XML serialisiert werden kann. Das Akademienvorhaben „Schleiermacher in Berlin 1808-1834“ erschließt verschiedene Quellen für digitale und für Druck-Editionen mit 
+                    ediarum, einem oXygen-Framework für den Author-Modus des oXygen XML-Editors. Da semantische Modellierungsformen wie Thesauri bisher nicht in 
+                    ediarum integriert sind, wird im Rahmen des Ästhetik-Projekts ein eigenes Framework entwickelt: ediarum.SKOS. Es bietet eine nutzer:innenfreundliche Oberfläche, um SKOS-basierte Thesauri zu erstellen und zu bearbeiten. 
+                
+                
+                    
+                    Abb. 1: Symbolleiste des ediarum.SKOS Frameworks im Autormodus des oXygen XML Editors
+                
+                Das Framework kann als oXygen Add-on installiert werden und umfasst derzeit verschiedene Grundfunktionen, wie die Erstellung von Konzepten (skos:Concept), von Sammlungen (skos:Collection), die Vergabe von Labels (skos:prefLabel, skos:altLabel) und die Einfügung von Definitionen (skos:definition). An Beziehungstypen zwischen Konzepten sind derzeit Hierarchien (skos:narrower und skos:broader) und Assoziationen (skos:related) implementiert. Ebenfalls Teil von ediarum.SKOS ist ein SKOS-Reasoner in XSLT, der für die Nutzer:innen „per Knopfdruck“ Inferenzen aus den Beziehungen zieht. Zur Verknüpfung von Konzepten des Thesaurus mit historischen Dokumenten innerhalb einer Edition, kann ediarum.SKOS mit weiteren 
+                    ediarum-Modulen (wie ediarum.BASE) sowie mit projektspezifischen 
+                    ediarum-Frameworks kombiniert werden.
+                
+                
+                    
+                    Abb. 2: Datenmodellierung am Beispiel des Konzeptes "Geschichte der Ästhetik als Wissenschaft"
+                
+                Methodisch wurde so vorgegangen, dass in den Textdokumenten der Ästhetikvorlesungen aufgrund von Lektüre und Interpretation eine Gruppe von 14 Themen identifiziert und jedem Thema ein vorläufiges Begriffsfeld zugewiesen wurde. Mithilfe des Tools ediarum.SKOS konnten die identifizierten Themen in Form eines Thesaurus organisiert werden. Für jedes Thema wurde ein Eintrag angelegt und dieser mit weiteren Informationen wie Bezeichnungen, Definitionen und Beziehungen zu anderen Einträgen ausgestattet. Die Themen wurden dann in den TEI-XML-Dateien annotiert und auf den entsprechenden Eintrag im Thesaurus referenziert. Für die Auswahl und Überprüfung der themenspezifischen Begriffe wurde „voyant tools“ hinzugezogen (terms, trends, keywords in context); die sich daraus ergebenen signifikanten Begriffe wurden dann in den Thesaurus integriert und ihre Beziehung zu den Themen bestimmt. Aufgrund dieser Modellierung konnten semantische Beziehungen zwischen Themen und Begriffen in den Ästhetikvorlesungen explizit formalisiert und dadurch in computerlesbarer Weise erfasst werden (Rehbein 2017: 163). Dies ermöglicht, die verschiedenen Themen der Ästhetik Schleiermachers abzufragen, zu durchsuchen, zu analysieren und über das World Wide Web mit kontrollierten Vokabularien anderer Projekte und mit anderen Thesauri zu verknüpfen (Harpring 2010; Zaytseva / Ďurčo 2020).
+                
+            
+            
+                Ausblick
+                Die Erfassung der Themen und Begriffe mit ediarum.SKOS bildet die Grundlage für die Einbettung und Visualisierung des Thesaurus im Rahmen der digitalen Editionsplattform 
+                    schleiermacher digital. Damit soll die Edition der Ästhetikvorlesungen um eine Erschließungsoption erweitert werden, die den Zugang zum Korpus durch einschlägige Themen und/oder durch mit diesen Themen verknüpfte signifikante Sachbegriffe ermöglicht. Dadurch wird es künftig auch möglich, thematische und begriffliche Verknüpfungen mit anderen Ästhetikvorlesungen der Epoche herzustellen, um den ästhetischen Diskurs in autorenübergreifender Perspektive rekonstruieren zu können.
+                
+                Dafür soll ediarum.SKOS über die derzeit implementierten Grundfunktionen hinaus weiterentwickelt und über das Ästhetik-Projekt hinaus nutzbar gemacht werden. Künftig sollen weitere Funktionen zur Verknüpfung von Konzepten mit externen Ressourcen im Sinne von linked open data hinzukommen. Dem Open Science Prinzip folgend, werden Code und Dokumentation im Projektverlauf zur Nachnutzung und Weiterentwicklung unter GNU-Lizenz auf Github publiziert und über Zenodo versioniert.
+            
+        

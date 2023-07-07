@@ -1,0 +1,168 @@
+
+      
+        
+          Abstract
+        
+        
+          Das
+          computergestützte Extrahieren und Visualisieren von Emotionen in Texten ist eine
+          etablierte Technik des “Distant Reading”. Die generelle Stimmung eines Textes
+          kann schnell erfasst werden ohne den gesamten Text lesen zu müssen. Da Emotionen
+          sehr komplex und die Eigenschaften zwischen verschiedenen Emotionen fließend
+          sind, ist die visuelle Charakterisierung von Emotionen schwierig. Wir stellen
+          Emosaic vor, ein Online-Tool welches Emotionen aus
+          benutzerdefinierten Texten filtert und durch systematische und nachvollziehbare
+          Farbumwandlung zur Exploration und Analyse innerhalb einer interaktiven
+          Visualisierung bereitstellt. Die durch drei Dimensionen beschreibbaren Emotionen
+          werden dabei in klar definierte Farbparameter übersetzt.  Ein
+          von uns entwickelter öffentlich zugänglicher Web-Prototyp ( vgl. Geuder et al. 2014-) zeigt
+          anhand interaktiver Visualisierungen erste Analyse- und
+          Explorationsmöglichkeiten dieser Methode. 
+        
+        
+          Einleitung
+          
+            Wörtern wurden bereits in verschiedenen Studien Emotionen anhand von
+              Emotionsdimensionen wie Valenz (V, engl. valence), Erregung (A, engl. arousal)
+              und Dominanz (D, engl. dominance) zugewiesen (Osgood 1962). Diese Dimensionen
+              sind eine Möglichkeit, Emotionen anhand numerischer Werte zu beschreiben und
+              nach der Affect Control Theory Grundlage aller sozialen Interaktionen (Rogers et
+              al. 2013). Mithilfe der in diesem Forschungskontext empirisch entstandenen
+              Emotionswörterbücher können einem Text somit verschiedene Emotionen numerisch
+              zugeordnet werden. Die dreidimensionale numerische Beschreibung von Emotionen
+              ist hingegen dem intuitiven Verständnis nicht leicht zugänglich. Eine visuelle
+              Entsprechung für sämtliche Emotionszustände würde helfen, die mehrdimensionale
+              Emotionalität eines Textes schnell erfassbar und zudem explorierbar zu machen. 
+            
+            
+              Verwandte Arbeiten
+              
+                Die Analyse und Visualisierung von benutzergenerierten Inhalten ist ein spannendes und aktuelles Forschungsgebiet. Sowohl wegen des Entstehens großer Textmengen durch Trends wie Online-Weblogs, durch maschinell auslesbare Schnittstellen zu solchen Diensten und durch die Leistungssteigerung von Hardware und Software, hat das Interesse daran zugenommen.
+              
+              
+                We feel fine
+                
+                (Kamvar et al. 2011) ist ein interaktives Tool welches
+                die Exploration von Emotionen in Weblogs ermöglicht mit dem Ziel den
+                Menschen dabei behilflich zu sein sich selbst bzw. andere Personen besser zu
+                verstehen. Die Ausgabe erfolgt anhand einer experimentellen Visualisierung.
+                Es kann als Suchmaschine verstanden werden, welche das Web nach Emotionen
+                durchsucht. Jede gefundene Emotion wird als Kreis dargestellt. Die Füllfarbe
+                ist abhängig von der zu repräsentierenden Emotion. Glückliche Emotionen
+                werden durch ein helles Gelb vertreten, während Ärger durch ein Rot
+                dargestellt wird. Diese Farbkodierung hilft dem Benutzer bei der groben
+                Unterscheidung von Emotionen, es können diese jedoch nicht weitergehend
+                charakterisiert werden.
+              
+              
+                We feel
+                (Milne et al. 2015) ist ein webbasiertes Tool welches Emotionen in sozialen
+                  Medien verfolgt und aufzeichnet. Das Ziel ist die Aufzeichnung der Weltstimmung
+                  bzw. der Stimmung eines Landes um die Verbreitung von physischen Problemen zu
+                  erforschen. Die Ausgabe erfolgt anhand interaktiver Graphen und Diagramme. Die
+                  Emotionen werden durch deren Namen in Textform dargestellt. Eine Farbkodierung
+                  innerhalb der Diagramme hilft bei der Orientierung wobei auch hier keine
+                  differenzierte Identifikation von Emotionen bzw. Nuancen zwischen ähnlichen
+                  Emotionen möglich ist. 
+                  Während beide Tools als Datengrundlage Emotionen aus Webeinträgen nutzen, ist es
+                    hingegen unser Ziel die benutzerdefinierte Eingabe eines Textes zu ermöglichen.
+                    Zusätzlich sollen sowohl differenzierte als auch nachvollziehbare farbliche
+                    Repräsentationen für Emotionen verwendet werden. Die Farbkodierung von Emotionen
+                    zur besseren Orientierung innerhalb visueller Darstellungen scheint eine
+                    etablierte Methode zu sein, jedoch lassen die bisher vorliegenden
+                    Kodierungssysteme keine fundierte Emotionsbeschreibung zu. Emosaic hingegen nutzt eine direkte Umwandlung der drei Emotionsebenen
+                    in klar definierte Farbparameter, sodass Worte nicht notwendig sind, um
+                    Emotionen in Texten unterscheiden und klassifizieren zu können. 
+                  
+                  
+                    Methodisches Vorgehen
+                    
+                      Farbzuweisung
+                      
+                        Da die Emotionalität eines Wortes nach der Affect Control Theory durch genau einen Punkt im dreidimensionalen Emotionsraum beschrieben werden kann, ist eine Farbzuweisung anhand eines dreiparametrigen Farbraums plausibel. Nach mehreren Iterationen in verschiedenen Farbräumen, wählten wir schließlich den HSV-Farbraum. Die drei Parameter des HSV-Farbraums weisen einen hohen eigenständigen Einfluss auf die resultierende Farbe auf (Farbwert, Farbsättigung und Hellwert). Da der Einfluss eines Parameters auf das Farbresultat klar sichtbar ist, eignet sich dieser Farbraum gut für die Farbumwandlung der drei Emotionsebenen. Von Probanden als plausibel wahrgenommene Ergebnisse erzielten wir, wenn Valenz den Farbwert bestimmt (H, engl. hue), Erregung die Farbsättigung (S, engl. saturation) und Dominanz den Hellwert (V, engl. value).
+                      
+                      Während die Sättigung und die Helligkeit Minima und Maxima analog zu Dominanz und Erregung beschreiben, stellt der Farbwert einen kontinuierlichen Farbverlauf dar. Um eine Farbwertannäherung an den Rändern zu vermeiden, haben wir bei der Farbzuweisung einen Farbwertbereich bewusst ausgespart, sodass eine Grenze zwischen Minima und Maxima deutlich hervortritt. Blau entspricht dem Minimum, rot dem Maximum und grün einem mittleren neutralen Valenzwert. 
+                      
+                        Für die Beurteilung der Zuordnung orientierten wir uns an den sechs Basisemotionen (Liebe, Überraschung, Freude, Wut, Trauer und Angst), wobei wir die Zuweisung der Emotionsdimensionen auf die Farbdimensionen so wählten, dass Liebe einem Rot- / Pinkton entspricht, um der tradierten Farb-Emotions-Zuweisung in der westlichen Kultur zu entsprechen (Abbildung 1a). Eine informelle Studie zeigte, dass diese Form der Zuordnung als intuitiv bewertet wurde. Daneben zeigte sich in Übereinstimmung mit unserer Farbzuweisung, dass negative Gefühle eher dunkel sind und kühlen Farbtönen wie blau oder grün zugeordnet werden (Abbildung 1b), dagegen positive Gefühle eher hell sind und mit warmen Farbtönen wie gelb oder orange in Verbindung gebracht werden (Abbildung 1c).
+                      
+                    
+                    
+                      
+                        Datengrundlage für die Charakterisierung der Emotionen
+                      
+                      
+                        Wir verwenden für die Farbumwandlung das ANEW-Wörterbuch (Warriner et. al
+                          2013) mit über 13.000 englischen Wörtern. Das Wörterbuch wurde ebenfalls vom
+                          Projekt “We feel” verwendet. 
+                        
+                        
+                          
+                            Möglichkeiten der Farbübersetzung
+                          
+                          
+                            Durch die Farbübersetzung können emotionale Stimmungen in Texten visuell
+                              miteinander verglichen werden. Zusätzlich können Emotionen eines Textes in
+                              verschiedenen Ebenen analysiert werden. Sowohl die Gesamtstimmung eines
+                              Textes als auch einzelne Sätze können in den Fokus gerückt werden.
+                              Stimmungsänderungen im Text können so visuell dargestellt werden. Zudem ist
+                              das Filtern von Emotionen möglich. Die farbliche Kodierung unterstützt dabei
+                              die Regulierung der Filter. 
+                            
+                            
+                              Aufbau und Funktionsweise des Tools
+                              Grundlegend für die Funktionsweise des Tools ist die Eingabe eines Textes.
+                                Der Nutzer kann aus vorgegebenen Texten verschiedenster Länge wählen oder
+                                einen eigenen Text innerhalb eines Textfeldes platzieren. Nach der
+                                serverseitigen Textanalyse sind verschiedene statische und interaktive
+                                Darstellungen verfügbar. Die Darstellung der Emotionsanalyse teilt sich in
+                                drei Bereiche auf: Makroansicht, Textansicht und Mikroansicht (Abbildung 2).
+                                Die drei Bereiche sind miteinander verlinkt. Grundlegend für die dynamische
+                                Änderung einer Ansicht  ist die Auswahl von einzelnen Emotionen bzw. Wörtern
+                                oder einem Bereich innerhalb einer Emotionsdimension.
+                                Die Textansicht ist der zentrale Bereich des Tools
+                                (Abbildung 3b). Oberhalb befindet sich ein Histogramm mit permanenter
+                                Positionierung und darunter der zu Beginn eingegebene Text, welcher durch
+                                Scrollen in voller Länge gelesen werden kann. Ist noch keine Auswahl
+                                getroffen, werden alle emotionsrelevanten Wörter innerhalb des Textes durch
+                                Hinterlegung mit der korrespondierenden Farbe hervorgehoben. Bei einer
+                                Auswahl tritt die Farbhinterlegung von Wörtern, welche außerhalb der Auswahl
+                                liegen, in den Hintergrund. Im Histogramm werden alle im Text vorkommenden
+                                Farben angeordnet. Die x-Achse kann mit einer der Emotionsdimensionen belegt
+                                werden. Durch diesen Ansicht wird die Verteilung innerhalb der Dimensionen
+                                sichtbar. Das Histogramm dient zum einen als emotionaler Fingerabdruck und
+                                zum anderen als Auswahlwerkzeug. Der Nutzer hat die Möglichkeit durch
+                                Klicken und Ziehen einen Bereich im Histogramm auszuwählen. Hierdurch
+                                verändert sich dynamisch die Auswahl an Emotionsworten. Durch dieses
+                                Brushing ändern sich entsprechende Elemente in der Makro- und Mikroansicht.
+                                Alternativ zur Mehrfachauswahl kann eine Einzelauswahl durch einen Mausklick
+                                auf das entsprechende Wort vorgenommen werden. 
+                                Die
+                                  Makroansicht bietet einen ersten Überblick über allgemeine Emotionstendenzen und -entwicklungen im Text (Abbildung 3a). Mit dem links platzierten Diagramm kann untersucht werden, inwiefern sich die einzelnen Werte (V, A, D) innerhalb des Textes verändern und wie sie in Beziehung zueinander stehen. Hat der Nutzer eine Auswahl getroffen bietet der Index daneben eine Übersicht darüber, wo sich die entsprechenden Textstellen befinden. Klicken auf den Index ermöglicht schnelles Springen zur entsprechenden Textpassage.
+                                
+                                Die Mikroansicht ermöglicht das Explorieren des Textes
+                                im Detail (Abbildung 3c). Die Wörter innerhalb der getroffenen Auswahl
+                                werden hier aufgelistet. Zu der Emotionsfarbe und der Häufigkeit des
+                                Vorkommens erfährt der Nutzer hier auch die Zusammensetzung aus den
+                                vad-Werten. Hat der Nutzer nur ein Emotionswort gewählt, werden zusätzlich
+                                emotionsverwandte Worte aufgelistet, um weiteres Explorieren des Textes zu
+                                ermöglichen. 
+                              
+                            
+                            
+                              
+                                Zukünftige Arbeiten
+                              
+                              
+                                Die Analyse und Exploration von Emotionen in Texten anhand von Farben, basierend auf deren Emotionsdimensionen ist ein innovativer Ansatz zur Textanalyse. Der Umgang durch Nutzer mit unserem Tool ist dabei Bestand weiterer Untersuchungen. Hierzu ist bereits eine langfristig angesetzte Evaluation gestartet worden, die neben automatisch generierten Parametern der Texte wie Länge und Emotionalität auch von Nutzern angegebenes Feedback wie zum Beispiel dem Verwendungszweck des Tool beinhaltet. Auf Basis der Evaluationsergebnisse planen wir Erkenntnisse zu der Wirkung von Farbumwandlung von Emotionen und dem generellen emotionsbezogenen Interessensfokus von Nutzern zu gewinnen. Limitiert durch unser verwendetes Wörterbuch ist die Analyse momentan ausschließlich auf englische Texte beschränkt. Wir planen weitere Sprachen zu integrieren, insofern ähnliche Wörterbücher für diese Sprachen zur Verfügung stehen. Zudem muss ein möglicher Mehrwert neuer bzw. alternativer Textanalysemethoden untersucht werden. Da Farben und deren emotionale Empfindung kulturabhängig sind, wäre die Untersuchung von Sprachen aus verschiedenen Kulturräumen ebenfalls besonders interessant. Des Weiteren stellt sich die Frage, wie mit der Kombination von Adjektiven und bedeutungsverändernden Partikeln („a little bit“, „very“, „not“, „only“) und der damit einhergehenden Veränderung des emotionalen Gehalts des Wortes umgegangen wird.
+                              
+                              
+                                
+                              
+                              
+                                
+                              
+                              
+                                
+                              
+                            
+                          

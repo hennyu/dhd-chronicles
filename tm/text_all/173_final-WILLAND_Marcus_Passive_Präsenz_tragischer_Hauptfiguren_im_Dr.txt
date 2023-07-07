@@ -1,0 +1,197 @@
+
+
+Einleitung
+Dramen entwerfen einen fiktiven sozialen Raum (Bourdieu 1985), dessen Bewohner sich ständig   aktiv und 
+passiv sozial verhalten, also entweder selbst dramatisch handeln oder zum passiven Gegenstand dramatischer (Ver-)Handlungen werden. Pointiert ließe sich sagen, sie hassen und lieben, bzw. werden geliebt und werden gehasst. Von der Forschung wurde indes nur selten betont, dass die 
+passive Präsenz von Figuren – also das Sprechen über Figuren, die in einer Szene nicht auftreten – ebenso interpretationsrelevant ist wie deren aktive Handlungen. So untergräbt beispielsweise die tragische Protagonistin des Stücks 
+Emilia Galotti (Lessing 1772) die moralische Integrität ihrer sozialen Klasse, indem sie einen anderen Mann als ihren standesgemäß verlobten Appiani verehrt: den Prinzen. Tragödienfähige Fallhöhe (Schopenhauer [1818] 1977) erreicht Emilia aber nicht durch ihr Begehren, sondern durch ihr begehrt werden. 
+
+In unserem Beitrag möchten wir den Zusammenhang zwischen aktiver und passiver Figurenpräsenz in dramatischen Texten untersuchen, indem wir quantitative und qualitative Analysen kombinieren. In einem ersten Schritt entwickeln wir eine Operationalisierung für eine computergestützte Analyse aktiver und passiver Präsenz und werden in einem zweiten Schritt die aus den Analysen resultierenden Ergebnisse mit besonderem Fokus auf Hauptfiguren diskutieren.
+
+
+Forschungsdiskussion
+Seit einigen Jahren gilt die Netzwerkanalyse als eine der zentralen Forschungsgebiete innerhalb der digitalen Dramenanalyse. Typischerweise modellieren Netzwerke auf Basis von Konfigurationsmatrizen (vgl. Marcus 1973, ins. S. 308ff. und Pfister 2001, S. 235–240) aber nur die aktive (szenische) Präsenz von Figuren (Moretti 2011; Trilcke u.a. 2015; Piper u.a. 2017), obwohl Ko-Präsenz-Relationen nur einen eingeschränkten Aussagewert bezüglich der „soziale Welt“ eines Dramas zulassen. Denn sie beruhen lediglich auf Informationen über die Anzahl an Szenen, in denen Figuren gemeinsam auftreten. Aktive Figuren wurden aber natürlich auch anders beforscht. Karsdorp u.a. (2015) stellen einen Ansatz zur automatischen Bestimmung von Liebesbeziehungen vor, Willand und Reiter (2017) verwenden semantische Wörterbücher, um Figurenrede und Geschlecht in einen Zusammenhang zu stellen. Nalisnick und Baird (2013) analysieren das 
+Sentiment aktiver Figuren, allerdings um ihre Dialogpartner zu charakterisieren und dadurch Wendepunkte in den Figurenbeziehungen zu identifizieren. Die passive Präsenz ist bisher noch nicht eingehend untersucht worden.
+
+
+
+  Aktive und passive Figurenpräsenz
+  Die aktive Präsenz von Figuren lässt sich unterschiedlich operationalisieren, etwa indem der Anteil der Rede einer Figur an der Gesamtrede einer Szene oder eines Akts gemessen wird. Abb. 1 zeigt dies für die fünf Akte von 
+  Emilia Galotti. Jeder Balken repräsentiert einen Akt, jede Farbe den Anteil einer Figur an der Gesamtrede des Akts:
+  
+  
+    
+     Abbildung 1: Emilias aktive Präsenz in den fünf Akten des Stücks. Die Farben indizieren unterschiedliche Figuren.
+  
+  
+  
+  
+  In den Akten 1 und 4 ist Emilia überhaupt nicht aktiv präsent. In den Akten 2, 3 und 5 ist sie es, aber der Anteil ihrer Rede vergleichsweise gering. Wieso aber ist sie titelgebende Protagonistin dieses Stücks, wenn sie doch kaum handelt? Deutlich wird das, betrachtet man ihre passive Präsenz:
+  
+    
+     Abbildung 2: Emilias passive Präsenz im Verlauf des Stücks, gemessen anhand von Nennungen ihres Namens durch andere Figuren.
+  
+  
+  
+  
+  Die Punkte in Abb. 2 repräsentieren die Erwähnungen des Namens „Emilia“ in der Rede anderer Figuren (y-Achse) im Verlauf des Stücks (x-Achse). Sie zeigen, dass Emilia während des gesamten Stücks von allen Figuren wiederholt erwähnt wird. Diese 
+  passive Präsenz unterscheidet sie von Nebenfiguren. Betrachtet man die aktivsten Figuren des Stücks (Prinz, Marinelli), so lässt sich in Abb.3 erkennen, dass Emilia genauso oft namentlich erwähnt wird wie diese:
+  
+  
+    
+     Abbildung 3: Namensnennungen aller Figuren in Emilia Galotti.
+  
+  
+  
+  
+  
+  Zusammenfassend liefern diese Analysen Argumente für die Interpretationshypothese, dass Emilia den dramatischen Konflikt nicht selbst aktiv löst – was sie zur positiven Hauptfigur machen würde –, sondern lediglich auslöst. So wird sie zum passiv-tragischen Gegenstand der Figurenhandlung. 
+
+
+  Präsenz messbar machen
+  Für jede Figur definieren wir die 
+  aktive Präsenz als genau die Anzahl an Szenen, in denen diese Figur spricht. So lassen sich Konfigurationsmatrizen erstellen, wie sie auch für Netzwerkanalysen verwendet werden. Die 
+  passive Präsenz wird anhand der Anzahl an Szenen extrahiert, in denen eine Figur namentlich erwähnt wird, aber nicht selbst präsent ist (schließlich können Figuren nicht gleichzeitig aktiv und passiv anwesend sein). Auf Figuren wird auch durch nichtnamentliche Erwähnung referiert, etwa mittels Pronomen oder Nominalphrasen – wobei Pronomen den Großteil der Erwähnungen ausmachen. Eine vollständige Annotation aller Erwähnungen erlaubt weiterführende Analysen, etwa anhand von Netzwerken, die beispielsweise darstellen können, auf welche Weise auf Figuren referiert wird (Nominalphrasen, Pronomen etc.).
+  
+  Gleich in mehrfacher Hinsicht handelt es sich bei der Methode um eine Heuristik: Einerseits erfasst die Analyse von Figurennamen längst nicht alle Erwähnungen einer Figur. Wir gehen aber davon aus, dass der Figurenname mindestens einmal in jeder Szene genannt wird, in der auf eine Figur referiert wird. Andererseits können Szenen sehr unterschiedlich lang ausfallen, was für die hier durchgeführten Analysen der passiven Präsenz unberücksichtigt bleibt. Anders formuliert: Jede Szene ist bei dieser Form der Analyse gleich gewichtet. Unterschiedliche poetologische Funktionalisierungen von Szenen, wie sie im Verlauf der Dramengeschichte zu beobachten sind, u.a. anhand des Abrückens von der 
+  liaison de scène als regelpoetischem Dogma, löst die Heuristik also nicht auf. Die verschiedene Funktionalisierung gilt es somit in der späteren Interpretation zu reflektieren.
+  
+  Sowohl die aktive als auch die passive Präsenz wird der besseren Vergleichbarkeit halber über die Zahl der Szenen normalisiert. Dafür wird die Menge an aktiven Auftritten sowie passiven Erwähnungen einer Figur durch die Gesamtzahl der Szenen im Drama geteilt, sodass der Gesamtwert der Figurenaktivität immer zwischen 0 (spricht nie/wird nie erwähnt) und 1 (spricht in jeder Szene/wird immer erwähnt) liegt. Somit ergibt sich für die Berechnung:
+  
+    
+  
+
+
+  Identifikation handlungskonstitutiver Figuren
+  Die automatische Erkennung von Hauptfiguren in dramatischen Texten ist bisher nur in Ansätzen versucht worden (Krautter & Pagel 2019; Fischer u.a. 2018), sie würde auf dem Gebiet der digitalen Dramenanalyse aber die Grundlage für erkenntnisversprechende Anschlussfragen schaffen. Bloße aktive Präsenz ist für die Identifikation von Hauptfiguren aber nicht ausreichend, denn einige Figurentypen – wie der griechische Chor oder Dienerfiguren – sind häufig sehr präsent, in Bezug auf die Konfliktlösung jedoch irrelevant. Wir adressieren dieses Problem, indem wir sowohl die aktive als auch die passive Figurenpräsenz berücksichtigen.
+  
+  Diese Operationalisierung erlaubt es uns, die figuren- und gattungsspezifische Verteilung der Resultate zu vergleichen und so bisher ungesehene Aspekte von Hauptfiguren zu identifizieren. In diesem Beitrag stellen wir das Genre 
+  Bürgerliches Trauerspiel (BT) und die Strömung 
+  Sturm und Drang (SD) gegenüber.
+  
+
+
+  Korpus
+  Unser Korpus enthält deutschsprachige dramatische Texte aus der Zeit zwischen 1750 und 1800 (Fischer u.a. 2019). Es ist in zwei Teilkorpora aufgeteilt, die auf sehr unterschiedlichen Poetiken beruhen: Sechs Stücke des 
+  Bürgerlichen Trauerspiels (BT) und sechs Stücke des 
+  Sturm und Drang (SD). Diese Subkorpora erscheinen relativ klein, aber um die historische Korrektheit und Interpretierbarkeit der Ergebnisse zu gewährleisten, unterliegt unser Korpus-Design strengen Kriterien: So beschränken wir die Textauswahl auf lediglich diejenigen Tragödien, die konsensual und eindeutig einer Textgruppe zugeordnet werden können. Deshalb ist unter anderem Friedrich Maximilian Klingers Schauspiel 
+  Sturm und Drang, dessen Titel später zur Epochenbezeichnung wurde, nicht im Korpus enthalten. Ebenfalls nicht im Korpus vertreten sind Goethes Stücke 
+  Clavigo und 
+  Stella, Gerstenbergs 
+  Ugolino und Heinrich Leopold Wagners 
+  Die Kindermörderin. Diesen Dramen fehlt eine weitere Untergliederung der Akte in Szenen, wodurch die Präzision der vorgeschlagenen Präsenzmessung anhand von Szenengrenzen erheblich leiden würde. Durch die divergierende Granularität der Segmentierung wären die Präsenzwerte der verschiedenen Dramen kaum mehr vergleichbar.
+  
+
+
+  Ergebnisse
+  
+    
+    Abbildung 4: Figurenverteilung im bürgerl. Trauerspiel.
+  
+  
+  
+  
+  
+  Abb. 4 visualisiert die präsentische Auswertung des BT-Korpus. Jeder Punkt stellt dabei eine Figur dar. In den Stücken treten fast so viele weibliche wie männliche Figuren auf, wobei die sowohl aktiv als auch passiv präsentesten Figuren überraschenderweise weiblich sind. Zudem werden keine Extremwerte erreicht: Alle aktiven Präsenzwerte liegen unter 0,7, alle passiven unter 0,5. Eine Gesamtpräsenz von 1 ist bei keiner Figur zu beobachten. Basierend auf den Präsenzwerten kann ein Schwellenwert etabliert werden, der ungefähr bei 0,4 liegt. Dieser Schwellenwert (gestrichelte Linie in Abb. 4) ergibt sich hier nicht vollständig induktiv aus den Daten, sondern wird theoriegeleitet gesetzt. An dieser Stelle greifen die formale, quantitative und die qualitative Analyse ineinander.
+  
+    
+    Abbildung 5: Figurenverteilung im Sturm und Drang.
+  
+  
+  
+  
+  
+  Die Figurenverteilung in Abb. 5 (SD-Korpus) unterscheidet sich von derjenigen in Abb. 4 deutlich. Der Schwellenwert liegt hier mit 0,6 viel höher. Um als Hauptfigur zu gelten, muss eine Figur im SD also eine höhere Gesamtpräsenz aufweisen als im BT. Dies ist eine der zentralen Erkenntnisse dieses Forschungsbeitrags. Die Figuration (vgl. hierzu Elias 2002) dramatischer Hauptfiguren scheint somit textgruppenspezifisch und durch die Ermittlung des Präsenzwertes analysierbar zu sein.
+  Darüber hinaus ist das Geschlecht ein relevanter Faktor im Gattungsvergleich. Im SD treten insgesamt weniger weibliche Figuren auf und nur 3 von 11 Hauptfiguren sind weiblich. Zudem sind die weiblichen Figuren eher passiv präsent, während die männlichen überwiegend aktiv präsent sind. Auch die insgesamt aktivsten Figuren sind jeweils männlich. Nur eine einzige Figur erreicht den maximalen Präsenzwert von 1, nämlich Guelfo in Klingers 
+  Die Zwillinge:
+  
+  
+    
+    Abbildung 6: Figurenpräsenz in Klingers Die Zwillinge (1776).
+  
+  
+  
+  
+  Nicht zuletzt ist die 
+  Korrelation von aktiver und passiver Präsenz
+  bei Hauptfiguren aufschlussreich: Hauptfiguren (über dem
+  Schwellenwert 0,6) im SD zeigen eine mittelstarke
+  positive Korrelation an (⍴ = 0,56, Pearson-Korrelation). D.h., je aktiver eine Hauptfigur in Dramen des Sturm-und-Drang präsent ist, desto mehr wird auch über sie gesprochen. Im Gegensatz dazu finden wir im BT (Schwellenwert 0,4) eine schwach negative Korrelation (⍴ = -0,1), d.h. hier sinkt die passive Präsenz bei zunehmender aktiver Präsenz leicht.
+  
+  Diese Ergebnisse sind ein gewichtiger Hinweis auf grundlegend divergierende Bauprinzipien dramatischer Texte, die sich offenbar nicht nur durch Handlungen und Themen unterscheiden, sondern auch durch die spezifische Präsenzgestaltung von Hauptfiguren. Da diese Unterschiede durch lineares Lesen jedoch kaum identifiziert werden können, möchte dieser Forschungsbeitrag als Argument für die Erweiterung der qualitativ-interpretierenden Dramenanalyse durch quantitative Methoden verstanden werden.
+
+
+  Weitere Möglichkeiten der Präsenzmessung
+  Die aktive Präsenz einer Figur lässt sich auch anhand anderer Einheiten skalieren, etwa anhand der Akte oder der Gesamtzahl der in einem Drama gesprochenen Repliken. Es wäre ebenfalls möglich, den Wert der aktiven Präsenz als die Zahl der gesprochenen Tokens (i.d.R. Wörter und Satzzeichen) und den Wert der passiven Präsenz als die Zahl namentlicher Nennungen aufzufassen. Dadurch könnten einige zuvor beschriebene Problematiken ausgeräumt werden, etwa die der differierenden Szenenlängen. Figuren, die nur kurze Passagen sprechen oder punktuell erwähnt werden, hätten dann vermutlich kleinere Aktivitätswerte, als es bei der szenisch gebundenen Präsenzberechnung der Fall ist. Die Rede- und Erwähnungsverteilung dürfte als näher an der vom Zuschauer bzw. Leser wahrgenommenen Realität des fiktiven sozialen Raums liegen. Hierbei stellen sich allerdings auch neue Herausforderungen. So kommt der Koreferenz von Figuren ein deutlich größeres Gewicht zu. Da wir zuverlässige Koreferenzen momentan nur für einzelne Stücke manuell annotiert vorliegen haben und somit auf die namentlichen Erwähnungen beschränkt sind, ergeben sich unter Umständen stark fehlerbehaftete Werte: Wenn etwa Figuren, die nur selten namentlich Erwähnung finden, überproportional stark auf andere Weise referenziert werden. Ist die namentliche Erwähnung hingegen an einzelne Szenen gebunden, hat diese Fehlerquelle geringeren Einfluss auf die Werte. Um die Auswirkungen der unterschiedlichen Operationalisierungen zumindest einer ersten Exploration zu unterziehen, nehmen wir die Präsenzanalyse von Klingers 
+  Die Zwillinge ein zweites Mal vor. Dazu definieren wir die aktive Präsenz als die Anzahl an gesprochenen Tokens einer Figur, die passive Präsenz als Anzahl namentlicher Erwähnungen einer Figur. 
+  
+  Abb. 7 zeigt die Präsenzanalyse für Die Zwillinge wobei für aktive und passive Präsenz gilt:
+  
+  
+    
+  
+  
+    
+    Abbildung 7: Figurenpräsenz in Klingers Die Zwillinge (1776) gemäß alternativer Operationalisierung.
+  
+  
+  
+  
+  
+  Verglichen mit den Präsenzwerten in Abb. 6 ergeben sich erhebliche. Aufgrund der wenigen namentlichen Erwähnungen sinkt vor allem die passive Präsenz von Ferdinando von fast 0,8 auf etwa 0,1. Ferdinando wird also konsistent in vielen Szenen erwähnt, die Zahl der Erwähnung bleibt aber insgesamt vernachlässigbar, vergleicht man seinen Wert mit Guelfo. Wir gehen jedoch davon aus, dass die Fehleranfälligkeit der Koreferenzheuristik hier insgesamt ungenauere Ergebnisse liefert. 
+
+
+  Zusammenfassung
+  Der Beitrag stellt eine Methode vor, die ein erweitertes Präsenzkonzept operationalisiert, das neben der aktiven Präsenz dramatischer Figuren auch die passive Präsenz umfasst. Die passive Präsenz operationalisieren wir als Zahl der Szenen, in der eine Figur namentlich erwähnt wird, ohne selbst aktiv auf der Bühne zu stehen. Die Ergebnisse unserer Korpusanalysen lassen auf unterschiedliche Bauprinzipien dramatischer Texte schließen, die an die spezifische Präsenz von Hauptfiguren gebunden sind. Für die Zukunft erscheint es fruchtbar, die hier eruierten Erkenntnisse im Lichte poetologischer Setzungen und Funktionalisierungen – etwa der Vorbildfunktion Shakespeares – zu untersuchen.
+
+
+  Anhang: Korpora
+
+  Sturm und Drang 
+  (SD) Korpus
+
+
+  Klinger, Friedrich Maximilian: 
+  Die neue Arria
+  
+  Klinger, Friedrich Maximilian: 
+  Die Zwillinge
+  
+  Leisewitz, Johann Anton: 
+  Julius von Tarent
+  
+  Schiller, Friedrich: 
+  Die Räuber
+  
+  Schiller, Friedrich: 
+  Die Verschwörung des Fiesco zu Genua
+  
+  Goethe, Johann Wolfgang: 
+  Götz von Berlichingen mit der eisernen Hand
+  
+
+
+  Bourgeois Tragedy 
+  (BT) Korpus
+
+
+  Engel, Johann Jakob: 
+  Eid und Pflicht
+  
+  Hebbel, Friedrich: 
+  Maria Magdalene
+  
+  Holtei, Karl von:
+   Ein Trauerspiel in Berlin
+  
+  Lessing, Gotthold Ephraim:
+   Emilia Galotti
+  
+  Lessing, Gotthold Ephraim: 
+  Miss Sara Sampson
+  
+  Pfeil, Johann Gottlob Benjamin: 
+  Lucie Woodvil
+  
+
+

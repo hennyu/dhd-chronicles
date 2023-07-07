@@ -1,0 +1,61 @@
+
+Die Digitalisierung der Gesellschaft hat längst alle Sparten unseres Lebens erfasst. Die computer-gestützte Forschung in den Geisteswissenschaften, allen voran die Computerlinguistik, blickt bereits auf eine über fünfzigjährige Tradition zurück. Mit dem informationstechnologischen Fortschritt der letzten drei Dekaden verfügt die zeitgenössische Wissenschaft über ein reichhaltiges, teils unüberschaubares Arsenal an digitalen Forschungswerkzeugen und Applikationen, Dokumentationsstandards, Datenformaten, etc. Gleichzeitig führen die neuen Informations- und Kommunikationstechnologien zu einem nie zuvor beobachteten Wachstum von Daten und Wissen (Abb. 1). 
+
+
+Abb. 1: Gesamtmenge an generierten Daten in den vergangenen Jahren (Quelle: 
+
+http://edition.cnn.com/2014/11/04/tech/gallery/big-data-techonomics-graphs/
+
+)
+
+Diese Entwicklung stellt die Informationsgesellschaft vor neue Herausforderungen. Eine in letzten Jahren an Bedeutung gewinnende Vorgehensweise stellt die Strukturierung und Vernetzung der Forschungsdaten in einem mensch- und maschinenlesbaren Format. Einen entscheidenden Anteil an diesem Prozess nimmt die Idee von Semantic Web (Web 3.0) für sich in Anspruch (Berners-Lee / Hendler / Lassila, 2001). Mit der 
+                Öffnung der Datensilos und Verknüpfung der Daten geht die Idee einer semantischen Datenmodellierung und Disambiguierung der Forschungsdaten einher, die in ein weltweites Netzwerk miteinander in Verbindung stehenden Information (Linked Data) mündet. Diesen Ansatz folgend versuchen zurzeit viele Disziplinen ihre fachspezifischen Fragestellungen mit Hilfe einer sprachlich gefassten und formal geordneten Darstellung einer Menge von Begrifflichkeiten (Entitäten) und der zwischen ihnen bestehenden Beziehungen zu repräsentieren (Referenz- und Applikationsontologien). Diese konzeptionellen mensch- und maschinenlesbaren Wissensrepräsentationen können infolge einer Implementierung innerhalb einer Web Ontology Language (OWL) die generierten Forschungsdaten im RDF-Format von Linked Data vorhalten (Graphdatenbank). Für die Disambiguierung der digital vernetzen Datensätze stellt die Entwicklung und Zurverfügungstellung von kontrollierten Vokabularen, Thesauri und Normdaten als Linked Data sowie deren Anbindung an eigene Forschungsdaten einen weiteren bedeutenden Eckpunkt der Datenaufbereitung. 
+            
+Die Gewährleistung einer erfolgreichen Strukturierung und Bereitstellung von Forschungsdaten innerhalb der Geisteswissenschaft im Sinne von Web 3.0 hängt im Wesentlichen von der Verfügbarkeit und Akzeptanz sogenannter 
+                Virtueller Forschungsumgebungen und 
+                digitaler Forschungsinfrastrukturen, die den Wissenschaftlern einen leichten, intuitiven und Mehrwert versprechenden Zugang zum eigenen Forschungsthema im Kontext von Linked Data anbieten. 
+            
+Vor dem Hintergrund des diesjährigen DHd-Tagungsthemas der 
+                Nachhaltigkeit möchten wir uns der CIDOC CRM referenzierten Datenmodellierung und den Virtuellen Forschungsumgebungen sowie ihren Modulen und Features widmen. Das Panel nimmt sich vier laufende Forschungsprojekte auf dem Gebiet der 
+                objekt- und raumbezogenen Forschung zum Anlass aus praktischer Erfahrung multiperspektivisch zu berichten. Dabei wollen wir die E-CRM Entwickler aus DFG-geförderten WissKI I und II Projekt (2009-12, 2014-16) und die Anwender aus sich in unterschiedlichen Stadien befindenden geisteswissenschaftlichen Forschungsprojekten zur Sprache kommen lassen. Zum Ausdruck soll u. a. die Herausforderung der nicht konvergierenden Zielsetzung einzelner Forschungsprojekte kommen, deren Forschungsdaten jedoch im Sinne von Linked Data in der Praxis zusammengeführt werden sollen. Darüber hinaus wollen wir die Schwierigkeiten bei der Entwicklung von einzelnen Features und Modulen unter der Zielsetzung “einen gemeinsamen Weg zu gehen” offenlegen und mögliche Vorgehensweisen für die Zukunft projizieren. Anschließend wollen die die Zukunftsfähigkeit von WissKI-basierten (OWL DL / Graphdatenbank) Forschungsumgebungen und anderen Ansätzen (MySQL/Relationale Datenbank) in der Diskussionsrunde besprechen.
+            
+
+Virtuelle Rekonstruktionen in transnationalen Forschungsumgebungen – Das Portal:
+
+Schlösser und Parkanlagen im ehemaligen Ostpreußen (ViReBa), 2013-2016
+
+Piotr Kuroczyński  
+Das ViReBa-Projekt untersucht den gesamten Prozess der 3D-Computer-Rekonstruktion verloren gegangener Kunst und Architektur. Die vorläufigen Ergebnisse basieren auf der digitalen 3D-Rekonstruktion zerstörter ostpreußischer Barockschlösser (Schlodien, Friedrichstein) und bringen neue Erkenntnisse für die Quellenerschließung, Dokumentation, semantische Modellierung und Visualisierung von 3D-Datensätzen innerhalb der WebGL-Technologie. Der Schwerpunkt liegt dabei auf der Entwicklung eines menschen- und maschinenlesbaren Datenmodels zur Annotation und Integration diverser Meta- und Paradaten einschließlich der semantischen Auszeichnung von 2D und 3D-Datensätzen. Für kollaborative, interdisziplinäre und internationale Forschung bei und an der digitalen 3D-Rekonstruktion wird das CIDOC-CRM-basierte Framework von WissKI als Virtuelle Forschungsumgebung (VFU) seit 2014 adaptiert. Der Impulsvortrag zeigt kritisch die Erfahrungen, Herausforderungen und Potenziale, bei der Einrichtung einer VFU für die digitale hypothetische 3D-Rekonstruktion, die Dokumentation und Archivierung der Forschungsdaten und ihrer Derivate (u. a. im “Virtuellen Museum”).
+
+Forschungsinfrastruktur Kunstdenkmäler in Ostmitteleuropa (FoKO), 2014-2017 
+            
+Ksenia Stanicka-Brzezicka
+Digitale Datenbanken sind in den letzten Jahren in der Erschließung von Kunstobjekten aller Art zum Standard geworden. Dabei ändern sich die technischen Möglichkeiten schnell und die Anpassung der Praktiken und Methoden der Kunstgeschichte stellt erhebliche Herausforderungen. Trotzdem entstehen viele neue kunsthistorische Datenbanken, vor allem in Rahmen von kurzfristigen Projekten, deren Nachhaltigkeit nicht garantiert ist. „Die Kunstgeschichte als Disziplin [hat] es bisher verpasst, neue methodische Grundlagen im Sinne einer nachhaltigen digitalen Quellenkritik bereitzustellen“ – lautet das Urteil in der Einleitung vom Summer Institut “Digital Collections” 2016 in Zürich/Lausanne (http://digital-collections.online/).
+Das FoKO-Projekt, ein internationales Verbundprojekt, das den Aufbau einer interaktiven kunsthistorischen Forschungsinfrastruktur zum Ziel hat, stellt jedoch die Frage der Nachhaltigkeit stark in den Fokus. Im Austausch mit weiteren WissKI-Projekten (ViReBa, CbDD) strebt es nach der Entwicklung eines Datenmodells, das prototypenhaft für Foto- und Kunstdatenbanken verschiedene Entitäten, wie Kunstobjekte und Fotografien, zum einen einzeln, zum anderen Ihrer Eigenschaft der technischen Vervielfältigung nach multipel erfassen und beschreiben kann. Den Schwerpunkt des Projektes stellt die Entwicklung eines Datenmodells, das insgesamt nutzbar und übertragbar sein kann.
+
+Corpus der barocken Deckenmalerei in Deutschland (CbDD), 2015-2040 
+            
+Werner Köhler
+Das Akademie-Projekt ist Mitte 2015 gestartet und hat die umfassende kunsthistorische Erforschung, Dokumentation und Präsentation der zwischen 1550 und 1800 entstandenen Werke der Wand- und Deckenmalerei auf dem Gebiet der Bundesrepublik Deutschland zur Aufgabe, wobei bis zum Jahr 2040 mehr als 5.000 bekannte Objekte dokumentiert werden. 
+Die lange Projektdauer ermöglicht die prototypische Entwicklung einer virtuellen Forschungsumgebung (VFU) für die Domäne der Kunstgeschichte insgesamt. Die Sicherstellung der Nachhaltigkeit einer solchen Entwicklung stellt eine zentrale Aufgabe der IT-Planung und des IT-Projektmanagements dar.
+Aktuell wird das CIDOC-CRM-basierte VFU-Framework WissKI eingesetzt und vor dem Hintergrund der ISO-Qualitätsmodelle zum Software Engineering (ISO/IEC 9126, ISO/IEC 25000) hinsichtlich Funktionalität, Zuverlässigkeit, Benutzbarkeit, Effizienz, Änderbarkeit und Übertragbarkeit der Software evaluiert.
+Im Panel sollen die Projekterfahrungen mit WissKI seit Oktober 2015 konkret dargestellt und mit den Erfahrungen aus den anderen WissKI-Projekten verglichen und diskutiert werden. Darüber hinaus sollen die Rahmenbedingungen für die kontinuierliche Anpassung, Erweiterung und Weiterentwicklung eines grundlegenden VFU-Frameworks für die Digital Humanities und die Entwicklung und Verstetigung einer nachhaltigen Infrastruktur thematisiert sowie Wege zu deren Realisierung aufgezeigt werden.
+
+Topographie in Raum und Zeit: Ein digitales Raum-Zeit-Modell für vernetzte Forschung am Beispiel Nürnberg (TOPORAZ), 2015-2018 
+            
+Armand Brahaj
+TOPORAZ focusses on the topography of a quarter of historical Nuremberg, which is displayed at three to four time levels: the early modern period; (1870), 1939; and the present. The representation consists of geo-referenced 2D maps and 3D models and a factual database covering buildings, furnishing, iconography, persons, and social networks. Maps and 3D models serve as a structure for navigation and help visualizing results from database queries. The information is maintained in a relational database which implements a semantic data model heavily influenced by CIDOC CRM. This approach enables researcher to query for facts like ‘Who inhabited a building at a given time?’, ‘How did a building evolve through history?’ or ‘Who donated this statue and where is it located today?’
+TOPORAZ directly links 3D objects of the interactive city model (e.g. streets, buildings, floors and rooms) to research literature and source material (texts, images, sound) via hotspots. The Virtual Research Environment (VRE) presents those materials to users based on their virtual location within the model and the chosen time level. The VRE supports interdisciplinary research approaches and transdisciplinary networking, brings together researchers from art history, architecture, 3D modelling and computer science. 
+
+WissKI im Museum – Einsatzszenarien im Germanischen Nationalmuseum
+ 
+
+Mark Fichtner
+Das Germanische Nationalmuseum (GNM) vereint als größtes kulturgeschichtliches Museum des deutschen Sprachraums vielfältige Sammlungen und Archive, das Institut für Kunsttechnologie und Konservierung sowie die größte öffentlich zugängliche Spezialbibliothek für deutsche Kulturgeschichte. Die Forschungseinheiten führten aus historischen Gründen und bedingt durch verschiedene Erschließungskonventionen zu spartenspezifischen, an die Anforderungen angepassten Datenbanksystemen. Daraus resultieren nachhaltige Probleme, so sind die Daten trotz ähnlicher Nutzerkreise und sich überschneidender, ergänzender Inhalte nur schwer austauschbar, kaum verknüpfbar und nicht homogen durchsuchbar.
+Zur Lösung dieses Problems wurde im DFG geförderten Projekt „Wissenschaftliche KommunikationsInfrastruktur“ (WissKI) eine Software entwickelt, die eine ideale Plattform für Linked Open Data bietet. Auf Basis von ISO 21127 (CIDOC CRM) als gemeinsame Lingua Franca bleibt die Interpretierbarkeit der Inhalte gewährleistet, während das System durch Domänenontologien an die jeweiligen Fachbereiche angepasst werden kann.
+Der Vortrag stellt WissKI, das seit 2013 am GNM im stetigen Einsatz in nahezu allen Forschungs- und Ausstellungsprojekten ist, aus der Sicht der Informatik vor. Das häufigste der drei Nutzungsszenarien ist der Einsatz als virtuelle Forschungsinfrastruktur, die Kernaufgabe für die das System auch konzipiert wurde. Weiterhin dient es als Softwareplattform für virtuelle Ausstellungen und als einheitliches Ausstellungs- und Planungstool.
+
+Anforderungen an nachhaltige Entwicklung von Software für Forschungsinfrastrukturen
+
+Barbara Fichtl
+Aufbauend auf den Erfahrungen der im Panel vorgestellten Projekte stellt der abschließende Beitrag die Frage nach der Nachhaltigkeit von Software-Entwicklung im Bereich der Digital Humanities. Welche Rahmenbedingungen sind nötig, um Forschungsinfrastrukturen langfristig zu betreiben? Was sollte bei der Projektentwicklung und -durchführung hinsichtlich der Nachhaltigkeit beachtet werden? Wie müsste eine Projektförderung aussehen, die nachhaltige Software-Entwicklung und den langfristigen Betrieb von Forschungsinfrastrukturen unterstützt?

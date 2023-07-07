@@ -1,0 +1,100 @@
+
+            
+                Einleitung
+                Die Wirkung, die Medien wie Literatur, Musik oder Film auf Rezipienten haben, ist häufig Gegenstand kultur- und geisteswissenschaftlicher Arbeiten. Das Rezipieren von beispielsweise Literatur oder Film involviert emotionale Prozesse (Schwarz-Friesel, 2013), welche sich durch physiologische Reaktionen, wie die Veränderung von Atmung, Herzfrequenz oder Schweißabsonderung, ausprägen (Hergovich, 2018). Eben diese Ausprägung in Form von klar messbarer Kenngrößen erlaubt die Digitalisierung der Rezipientenwirkungen durch körpernahe Daten. Diese Digitalisate ermöglichen den digitalen Kultur- und Geisteswissenschaften gezielte Rückschlüsse auf die Wahrnehmung inhaltlicher, narrativer oder stilistischer Aspekte rezipierter Medien zu ziehen. 
+                In dieser Arbeit stellen wir eine einfache Methode vor, Rezipientenwirkung in ihrer physischen Ausprägung zu digitalisieren und auszuwerten. Um leicht eine ausreichend große Datenbasis für quantitativ belegbare Ergebnisse zu schaffen, stellen wir Nutzern und Forschern dazu unsere mobile Applikation “BioReader” als Werkzeug zur Verfügung, das beim Lesen und Medienkonsum den Lesefortschritt sowie physiologische Reaktionen über Fitnessuhren erfasst.
+                In einer Machbarkeitsstudie wurden auf diese Weise körpernahe Sensordaten von 15 Probanden in einer multimedialen Versuchsreihe beim Lesen von vier Kurzgeschichten und Schauen eines Kurzfilms aufgenommen, die wir in diesem Beitrag vorstellen.
+            
+            
+                Verwandte Arbeiten
+                Medienkonsum wird im großen Stil vor allem aus wirtschaftlichen Interessen, beispielsweise von Videostreaming bzw. eBook Anbietern wie Netflix (Tassi, 2018) bzw. Jellybooks (Buchreport, 2017) erfasst und analysiert und misst meist lediglich das Konsumverhalten. Aus wissenschaftlicher Sicht gibt es einige Studien, die physiologische Reaktionen auf multimedialen Konsum untersuchen:
+                So haben (Riese et al., 2014) die Reaktionen der Pupille auf Spannung im Text untersucht und dabei festgestellt, dass es signifikante Korrelationen zwischen dem Durchmesser der Pupille und dem Verlauf der Spannung in einem Text über die Zeit gibt. Eine Studie von (Richter et al., 2011) untersuchte die Reaktion von Lesern auf schmerzassoziierte Wörter wie “bohrend” oder “krampfartig” und stellte fest, dass bei der Verarbeitung derartiger Wörter dieselben Hirnareale aktiviert werden, die für die Verarbeitung realer Schmerzreize zuständig sind. In einer Studie von (Bar-Haim et al., 2004) wurde die Herzfrequenz bei Kindern gemessen, denen sechs Geschichten mit verschiedenen Themen präsentiert wurden. Das Ergebnis dieser Studie zeigte, dass relativ zum zuvor gemessenen Ruhepuls, die Probanden bei einigen Geschichten eine signifikant schnellere Herzfrequenz aufwiesen.
+                In ihrer Studie untersuchten (Baldaro et al., 2001) physiologische Reaktionen auf Filme. Dafür wurden den Probanden zwei zehn-minütige Filmausschnitte gezeigt: ein 
+                    Surgery film über eine Operation am Brustkorb und ein 
+                    Neutral film über Landschaften. Während des Schauens der Filme wurden Körperparameter wie beispielsweise Atemfrequenz und Herzrate erfasst. Es zeigte sich im Vergleich zum 
+                    Neutral film ein stärkeres Absinken der Herzfrequenz während des 
+                    Surgery Films.
+                
+            
+            
+                “BioReader” Tracking-Applikation
+                Die von uns entwickelte Tracking App “BioReader”, ist als eReader konzipiert und erlaubt das Lesen von Texten aus der eigenen Nutzerbibliothek. Diese werden seitenweise auf dem Smartphone dargestellt. Eine Eigenentwicklung war nötig, um die aufgezeichneten Daten den gelesenen Stellen automatisch zuordnen zu können. 
+                
+					
+					
+						 Abbildung 1. Seitendarstellung in App “BioReader”
+					
+                
+                Für die Messung nutzt die App alle verfügbaren Sensoren, die in der über Android Wear gekoppelten Smartwatch verbaut sind. Ist die Uhr verbunden, startet die Messung automatisch mit dem Öffnen eines Textes. Alle Events während der Aufzeichnung, beispielsweise das Drücken von Home-Button, Fokus-Wechsel zu anderen Apps, Schließen der Anwendung, Abschalten des Bildschirms oder Anzeigen des Lock-Screens werden protokolliert, um potentielle Ablenkungen beim mobilen Lesen (Kuzmicova et al., 2018) zu berücksichtigen.
+                Der Nutzer kann sich seinen Lesefortschritt und jeweils aufgezeichneten Sensorwerte für jede Lese-Session auf einer Auswertungsseite visualisieren lassen. 
+                
+					
+					
+						Abbildung 2. Datenvisualisierung mit Lesefortschritt-Anzeige am Beispiel des Gravity und Heart Rate Sensors
+					
+				
+                Um Messwerte während der Rezeption anderer Medien wie beispielsweise Filme oder Musik aufzuzeichnen, verfügt die App über die Möglichkeit Messungen manuell zu starten und zu beenden. Über eine Export-Funktion können alle von der App aufgezeichneten Daten im CSV-Format exportiert werden.
+            
+            
+                Experiment
+                Mit dieser App wurde eine Machbarkeitsstudie durchgeführt, um zu untersuchen, ob mit verbreiteten Fitnessuhren physiologische Reaktionen der Rezipienten auf verschiedene Medien messbar sind.
+                
+                    Korpus Zusammenstellung
+                    Für die im Folgenden präsentierte Studie wurden vier kurze Textausschnitte und ein Kurzfilm ausgewählt, um die Veränderung von Körperparametern während der Rezeption zu untersuchen.
+                    Dabei sollen die Texte bzw. das Video zum einen leicht verständlich und schnell zu lesen bzw. zu schauen sein, zum anderen sollen sie starke emotionale Reaktionen und damit potenziell auch körperliche Veränderungen hervorrufen. Hinsichtlich der Textauswahl wurden dazu unterschiedliche Textarten mit verschiedenen Wirkungszielen verwendet, darunter ein Sachtext (Arbeitstitel: 
+                        Hunde1), welcher in einem nüchternen Sprachstil gehalten ist und zur Eingewöhnung der Probanden dienen soll, eine jugendsprachlich verfasste, narrative Kurzgeschichte (Arbeitstitel: 
+                        Praxis2) mit komischen Erzählelementen und zwei negative Texte: ein Kurzartikel (Arbeitstitel: 
+                        Genie3), der sich durch die Verwendung eines stark negativ konnotierten Vokabulars auszeichnet und ein Textausschnitt (Arbeitstitel: 
+                        James4), welcher den Tathergang während eines Mordes objektiv und chronologisch beschreibt. 
+                    
+                    Bezüglich des Videos fiel die Wahl auf den drei-minütigen Horror-Kurzfilm Lights Out5, der auf kurze, intensive Filmsequenzen mit starken Schockmomenten und die Vermeidung von direkter Gewaltdarstellung setzt.
+                
+                
+                    Durchführung
+                    Jede Versuchsperson wurde zunächst über den Studienablauf, d.h. Reihenfolge der Inhalte und Fragebögen, aufgeklärt. Im weiteren Verlauf bedienten die Teilnehmer selbstständig und abgesehen vom Ablaufplan ohne weitere Anleitung die BioReader App, die zum Lesen der Texte, Starten und Stoppen der Messung und zur Visualisierung der Messwerte verwendet werden sollte. Für die Messung wurde eine Polar M600 Pulsuhr verwendet, die die Probanden während der Studie am Handgelenk trugen. Diese zeichnet unter anderem Sensorwerte für Accelerometer, Gyroskop und Herzfrequenz auf, wobei wir im Rahmen dieser Studie unseren Fokus auf die Herzfrequenz setzen.
+                    Nach dem Lesen aller Texte bzw. Schauen des Videos wurden die Probanden in einem Fragebogen bezüglich der Wahrnehmungsintensität, Immersion bzw. Transportation in die narrative Welt (Appel, Richter 2010), Gefühle bei der Rezeption und Intensität einzelner Teile befragt.
+                    Schließlich füllten die Versuchspersonen noch einen Fragebogen zur Usability der BioReader App aus und beantworteten einige demographische Fragen.
+                
+                
+                    Ergebnisse
+                    Zur Bewertung der Usability und User Experience der App wurde der 
+                        UEQ - User Experience Questionnaire (Laugwitz et al., 2008) eingesetzt, welcher den Gesamteindruck der Nutzer in Bezug auf die Applikation misst. Die Auswertung des Fragebogens ergab, dass die App von den Probanden als sehr nutzerfreundlich und einfach zu bedienen eingeschätzt wurde. Im Folgenden werden die Ergebnisse der Machbarkeitsstudie vorgestellt, die einen Ausblick auf mögliche Anwendungen der App geben soll. Daher beschränken wir uns in diesem Beitrag auf eine explorative Auswertung zur Gewinnung von Hypothesen, die in weiteren Arbeiten statistisch bewertet werden müssen.
+                    
+                    Die Versuchspersonen zeigen im Verlauf der Studie zum Texterlebnis eine mittlere Herzfrequenzschwankung von 23,27 Schläge pro Minute, wobei sie wenigstens um 13, höchstens um 33 Schläge pro Minute im Verlauf schwankt. Wir normieren die Sensordaten pro Teilnehmer, um Abweichungen im Textverlauf zu erkennen und visualisieren diese neben der dazugehörigen Textseite. Ein Punkt repräsentiert auf der Y-Achse den Lesezeitpunkt, auf der X-Achse den Messwert der Herzfrequenz. Die Verbindung der Punkte approximiert linear den normierten Herzratenverlauf eines Probanden.
+                    Um eine Eingewöhnung an die Studiensituation zu erreichen, beginnen alle Teilnehmer mit dem Sachtext. Entsprechend Abbildung 3 messen wir, dass einige Probanden zu Beginn der Studie einen relativ hohen Puls haben, der sich im Verlauf der ersten halben Seite normalisiert. Betrachtet man die Herzfrequenz über alle Textseiten, wird deutlich, dass Probanden an unterschiedlichen Stellen im Text mit einer Veränderung des Pulses reagierten. Bei manchen Probanden scheinen z.B. Gewaltdarstellungen (siehe Abbildung 4) zu einer Pulserhöhung (z.B. H1User4, H2User6 oder H2User7) zu führen, was sich bei einigen Probanden (z.B. H2User7, H1User2, H1User6, H1User4) auch bei komischen Elementen (siehe Abbildung 5) beobachten lässt. 
+                    Zu Beginn des Videos “Lights Out”, in einer Szene, in der sich die Darstellerin unter einer Bettdecke versteckt und bei der Schockszene am Ende des Kurzfilms zeigen einige Probanden deutliche Veränderungen in der Herzfrequenz (siehe Abbildung 6). Diese intensiven Szenen zeichnen sich durch besonders tiefe und laute Frequenzen in der Audiospur aus, die zur Wirkung der Szene beitragen. Die Bewertung der Szenen durch die Probanden deckt sich mit der Analyse der Messwerte und motiviert die Hypothese, dass besonders intensiv erlebte Spannungselemente durch Veränderung in der Herzrate messbar werden.
+                    
+						
+						
+						Abbildung 3. Herzfrequenzverläufe für den ersten Text (Sachtext) im Studienverlauf
+						
+					
+                    
+						
+						
+						Abbildung 4. Herzfrequenzverläufe für einen Textabschnitt mit Gewaltdarstellungen
+						
+					
+                    
+						
+						
+							Abbildung 5. Herzfrequenzverläufe für einen komischen Textabschnitt
+						
+					
+                    
+						
+						
+							Abbildung 6. Video Snapshots, Herzfrequenzen und Audio Waveform für den Film “Lights out”
+						
+					
+                
+            
+            
+                Fazit und Ausblick
+                Die von uns entwickelte App ermöglicht Nutzern bequem Körperreaktionen bei Multimedia Konsum zu tracken und bietet für Studien ein Werkzeug, um Zusammenhänge zwischen Nutzerwahrnehmung, Körperreaktionen und Medieninhalten zu erfassen und zu untersuchen.
+                    In unserer Teststudie konnten wir zeigen, dass die Usability der App von Probanden als sehr gut bewertet wurde und die App in der Lage ist, Sensordaten wie Herzfrequenz zuverlässig zum Lesefortschritt aufzuzeichnen und darzustellen. 
+                
+                Damit eröffnet “BioReader” die Möglichkeit in großangelegten Studien physiologische Reaktionen und Rezipientenwirkung zu digitalisieren und diese zu untersuchen, um damit generalisierbare Erkenntnisse zu gewinnen. Diese können darüber hinaus mit inhaltlichen Analysen, beispielsweise Sentiment-Analyse, kombiniert werden und neue Zusammenhänge zwischen Wahrnehmungsebene und Inhaltsebene aufdecken.
+                In zukünftigen App-Versionen planen wir zusätzliche Sensorik wie beispielsweise Hautleitwertsensor oder die Front-Kamera für eine bildbasierte Emotionserkennung zu integrieren. 
+            
+        

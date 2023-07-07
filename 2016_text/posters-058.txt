@@ -1,0 +1,59 @@
+
+      „Romantik“ und „romantisch“ bezeichnen heute Profanes, wie ein privates Abendessen in
+        edlem Ambiente bei Kerzenschein oder ein idyllisch gelegenes Hotel mit
+        Butzenglasscheiben, meinte aber ursprünglich Ästhetisches, insbesondere
+        Literarisches (DWB). Dieser Bedeutungswandel kann durch die automatische Analyse
+        eines großen Korpus' quantifiziert werden; etwa unter Verwendung des Google Books
+        N-Gram Korpus, das 4% aller je gedruckten Bücher enthält (Michel et al. 2011).
+        Methodische Grundlage für die Analyse sind Verfahren aus der Computerlinguistik
+        (distributionelle Semantik), mittels derer die Bedeutung von Wörtern über den für
+        sie typischen Kotext (also ihren direkten textuellen Kontext) approximiert wird. Ein
+        aktuelles und mächtiges Verfahren ist word2vec (Mikolov et al. 2013), das auf
+        Forschungsarbeiten zu künstlichen neuronalen Netzen basiert (LeCun et al. 2015).
+        Damit gewonnene Repräsentationen können sowohl synchron als auch diachron auf ihre
+        Ähnlichkeit hin verglichen werden, wodurch Bedeutungswandel quantifiziert werden
+        kann. Dies wurde bereits am Beispiel des Englischen durch Kim et al. (2014)
+        demonstriert, die für einen Zeitraum von 100 Jahren Wortrepräsentationen erzeugten
+        und verglichen. Ein Ergebnis war die Quantifizierung des Bedeutungswandels von „gay“
+        hin zu einer Bezeichnung für (männliche) Homosexualität. Zwischen den
+        word2vec-Repräsentationen einzelner Wörter sind zudem semantisch sinnvolle
+        arithmetische Operationen möglich (Mikolov et al. 2013). Beim Vergleich der modernen
+        und der historischen Bedeutung von „romantisch“ und „Romantik“ könnte somit
+        ermittelt werden, ob sie einander ähnlicher sind, wenn beispielsweise sexuelle
+        Aspekte ignoriert werden. 
+        Alternative Verfahren zur Quantifizierung von Bedeutungswandel nutzen die Kookkurrenz
+          von Wörtern in Bi-Grammen (Gulordava / Baroni 2011), oder einen auf Nachbarwörtern
+          trainierten Klassifikator (Mihalcea / Nastase 2012). Dabei kann der erste Ansatz
+          lediglich lokale Zusammenhänge erfassen, während der zweite vordefinierte Zeiträume
+          erfordert, zwischen denen ein Bedeutungsunterschied gesucht werden soll. Riedl,
+          Steuer und Biemann (2014) entwickelten einen distributionellen Thesaurus, der für
+          vordefinierte Zeiträume ähnliche Wörter gruppiert. Nachteil dieser Methoden ist
+          wiederum die Notwendigkeit, den untersuchten Zeitraum in Abschnitte zu unterteilen.
+          Vorteilhaft gegenüber word2vec ist die Möglichkeit, die einzelnen Bedeutungen
+          polysemer Wörter getrennt zu erfassen – statt einer veränderlichen Gesamtbedeutung,
+          liegen Teilbedeutungen mit unterschiedlicher Frequenz vor. Eine semantisch
+          schwächere Form des quantitativen Zugangs, aber nützlich für spätere qualitative
+          Interpretationen, ist die Visualisierung von Kollokationen im Zeitverlauf (Jurish
+          2015).
+          Die bei unseren Untersuchungen erwarteten Ergebnisse umfassen nicht nur die
+            zunehmende Trivialisierung der Wörter „romantisch“ und „Romantik“ während der
+            letzten 200 Jahre, sondern auch eine Reflexion des deutschen Nationalismus im 19.
+            und 20. Jahrhundert, von dem die Epoche der Romantik instrumentalisiert wurde
+            (Kremer 2007: 50-58). Dem entspricht etwa die erhöhte Frequenz von „Romantik“ in
+            deutschen Texten der Zwischenkriegszeit und direkten Nachkriegszeit, die mit einer
+            Verdrängung des Bi-Gramms „romantische Liebe“ einhergeht, das dafür Ende des 20.
+            Jahrhunderts seine maximale Popularität erreicht. 1 Auch erste Ergebnisse mit einer an Kim et al. (2014) angelehnten
+          Untersuchung, für die ein word2vec-Modell auf dem deutschen Google Books 5-gram
+          Korpus trainiert wurde, entsprechen dieser Erwartung – Abbildung 1 zeigt, dass
+          „romantisch“ während der ersten Hälfte des 20. Jahrhunderts eine hohe Ähnlichkeit
+          (als Cosinus im Vektorraum) zu „Ariern“ und „Volksfeind“ hatte. 
+          
+            
+            Wörter mit hoher Ähnlichkeit zu „romantisch“ im Zeitverlauf (hoher Cosinus entspricht hoher Ähnlichkeit).
+          
+          Geplante Folgearbeiten beinhalten, neben der geisteswissenschaftlichen Einordnung der
+            quantitativen Ergebnisse, den Vergleich über mehrere europäische Sprachen hinweg und
+            die Einbeziehung von Sentiment Analysis-Technologien, um die emotionale Ladung der
+            Wörter im Verlauf der Zeit abzubilden (Acerbi et al. 2013). 
+            Die beschriebenen Arbeiten sind Teil eines Promotionsvorhabens am von der Deutschen Forschungsgemeinschaft finanzierten Graduiertenkolleg „Modell 'Romantik'“ der Friedrich-Schiller-Universität Jena.
+          

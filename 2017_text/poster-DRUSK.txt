@@ -1,0 +1,39 @@
+
+
+Einleitung
+Softwarenachhaltigkeit kann im Bezug auf verschiedene Aspekte definiert werden: Umwelt, Gesellschaft, Wirtschaft, Technik, Individuen (vgl. Becker et al. 2015). Von besonderem Interesse für die Forschung ist dabei die technische Nachhaltigkeit von Forschungssoftware, d.h., ob für die eigene Forschungsfrage verwendbare Software existiert, ob diese eigenen Bedürfnissen anpassbar ist, inwiefern ihre Nachnutzbarkeit - und damit auch die Reproduzierbarkeit von Forschungsergebnissen - in Zukunft gesichert ist, etc. Praktisch spielen dabei vor allem zwei Kriterien eine Rolle: die Sichtbarkeit nachnutzbarer Forschungssoftware und die nachvollziehbare Bewertung ihrer technischen Nachhaltigkeit.
+Parallel zur Dokumentation der Nachhaltigkeit von Forschungsdaten in Datenmanagementplänen bieten sich Softwaremanagementpläne zur Dokumentation der technischen Nachhaltigkeit neu erstellter Forschungssoftware an und es ist anzunehmen, dass Förderer in Zukunft diesen Weg einschlagen werden (vgl. Hettrick 2015). Zur Dokumentation von Forschungssoftware bieten sich - ebenfalls parallel zu Forschungsdaten - Repositorien an, die mit Hilfe von Metadaten Forschungssoftware sichtbar und für eine Verwendung bewertbar machen.
+
+
+State of the art
+Solche Metadatenrepositorien existieren bereits, im geisteswissenschaftlichen Bereich beispielsweise DiRT Directory und CLARIN Virtual Language Observatory, für andere oder mehrere Disziplinen SciencePAD und EGI Applications Database (vgl. auch re3data.org). Softwaremetadaten sind ebenfalls zugänglich über Plattformen wie GitHub, Open Hub und Zenodo. Während diese Werkzeuge für die Suche nach verwendbarer Foschungssoftware prinzipiell, wenn auch teilweise nur eingeschränkt, geeignet sind, dokumentiert keins von ihnen umfassend den Grad der technischen Nachhaltigkeit der präsentierten Software ohne die Notwendigkeit massiver Interpretation und Extrapolation seitens der Nutzerin.
+
+
+Ein messendes Metadatenrepositorium für Forschungssoftware
+Um sowohl die Sichtbarkeit als auch die Einschätzbarkeit der technischen Nachhaltigkeit von Forschungssoftware zu gewährleisten bietet sich daher die Konzeption eines Typus von Metadatenrepositorium an, der ausgehend von Druskat (2016) hier beschrieben und weiterentwickelt wird. In einem solchen Repositorium werden hinterlegte Metadaten unter Zuhilfenahme von Nachhaltigkeitskriterien quantifiziert und auf dieser Grundlage Maße berechnet, die nachvollziehbar und reproduzierbar den Grad technischer Nachhaltigkeit abbilden können. Dabei muss ein Metadatenbegriff zu Grunde gelegt werden, der weit genug ist, relevante Informationen für die Bestimmung von sowohl (Nach-)Nutzbarkeit als auch technischer Nachhaltigkeit erfassen zu können.
+
+
+Voraussetzungen
+Für die Umsetzung eines solchen Repositoriums müssen mindestens vier zentrale theoretische Probleme gelöst werden, nämlich 1. wie technische Nachhaltigkeit operationalisierbar definiert werden kann, 2. wie Kriterien für technische Nachhaltigkeit definiert und gewichtet werden können und der Entwurf von 3. möglichst genauen, reproduzierbaren, manipulationssicheren und nachvollziehbaren Maßen sowie 4. von Algorithmen zur Berechnung nachvollziehbarer und reproduzierbarer Maße für technische Nachhaltigkeit auf Grundlage von Softwaremetadaten. Während 4. Gegenstand zukünftiger Forschungsvorhaben sein soll, können die Problemstellungen 1. bis 3. hier kurz detailliert werden.
+
+
+Technische Nachhaltigkeit von Forschungssoftware
+Während im Zusammenhang mit Software der Begriff der Nachhaltigkeit strukturell und inhaltlich ambig diskutiert wird (vgl. Tate 2005; Penzenstadler 2013; Goble 2014; Gröger & Köhn 2015), geben Becker et al. (2015) eine kurze Definition von technischer Nachhaltigkeit: "Technische [Nachhaltigkeit] bezieht sich auf die Langlebigkeit von Information, Systemen und Infrastruktur und deren angemessene Evolution unter sich ändernden Umgebungsbedingungen" (Übers. d. Autors). Konkretisiert man die Aspekte 'Langlebigkeit' und 'Evolution' auf Grundlage des Nachhaltigkeitsmodells von Jörissen et al. (1999), lassen sich drei Ziele technischer Nachhaltigkeit definieren: 1. Sicherung der Existenz der Software, 2. Erhaltung des Produktivpotentials der Software, 3. Schaffung und Bewahrung der Weiterentwicklungs- und Adaptionsmöglichkeiten der Software.
+
+
+Kriterien
+Das zu entwickelnde Metadatenrepositorium muss demnach Metadaten sammeln, die im Hinblick auf diese drei Ziele quantifizierbar sind. Voraussetzung dafür sind Kriterienkataloge, die sich jeweils auf eines der Ziele beziehen und auf Basis derer die Kategorisierung und Quantifizierung der Metadaten erfolgt. Für das Erstellen der Kriterienkataloge bieten etwa Jackson, Crouch & Baxter (2011), CodeMeta (codemeta.github.io), oder OntoSoft (ontosoft.org) eine Arbeitsgrundlage, die jedoch durch dort fehlende Kriterienkategorien wie beispielsweise 'personelle Mittel' erweitert werden muss, etwa auf dem Wege des Crowdsourcing.
+
+
+Interaktivität
+Weiterhin liegt es nahe, Teile des Repositoriums interaktiv zu gestalten. Dies dient nicht nur der Bindung der Community an das Werkzeug, sondern erlaubt vor allem die Gewinnung zusätzlicher Metadaten - beispielsweise zu tatsächlicher und dokumentierter Nutzung einer Forschungssoftware -, sowie die Evaluation bereits hinterlegter.
+
+
+Maße für technische Nachhaltigkeit
+Direkte Interaktion von Nutzern allerdings gefährdet massiv die Objektivität und Reproduzierbarkeit eines zu errechnenden Maßes für die technische Nachhaltigkeit einer Forschungssoftware. Daher ist eine Verteilung der Bemessung über mehrere Maße geraten: Einfach zu quantifizierende und objektive Metadaten (beispielweise Offenheit des Quellcodes, interaktiv hinterlegte Verwendungsnachweise) tragen zu einem harten Maß bei, objektive aber weniger einfach zu quantifizierende Metadaten (beispielsweise das verwendete Buildsystem) zu einem mittelharten Maß, weitere interaktiv erhobene, subjektive und qualitative Metadaten (beispielsweise Nutzerfreundlichkeit) zu einem weichen Maß. Während die härteren Maße auf Grund ihrer Objektivität reproduzierbar und verhältnismäßig manipulationssicher sind, bietet das weiche Maß interpretationswürdige Anhaltspunkte.
+
+
+Ausblick
+Das beschriebene Metadatenrepositorium wäre ebenfalls ein geeignetes Instrument für die Dokumentation neu erstellter Forschungssoftware in Softwaremanagementplänen.
+Eine vollständige Entwicklung des umrissenen Konzeptes und seine Implementierung ist im Rahmen der Dissertation des Autors geplant. 
+

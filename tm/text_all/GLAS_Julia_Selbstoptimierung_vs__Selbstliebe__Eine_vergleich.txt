@@ -1,0 +1,542 @@
+
+            
+                Einleitung
+                Negative Auswirkungen schlankheitsidealisierender Medieninhalte auf Körperbild und -zufriedenheit sind hinreichend belegt (z.B. Frederick et al. 2019, 193, 195; Grabe, Ward und Hyde 2008, 469-470). Inhalte, die Untergewicht oder Essstörungen glorifizieren (z.B #thinspiration), sind mittlerweile auf Instagram verboten. Die 
+                    Fitspiration-Bewegung („fitness“ + „inspiration“) stellt sich selbst als Alternative dar, die Unterstützung auf dem Weg zu einem gesünderen Lebensstil bieten will (Boepple et al. 2016, 133; Holland und Tiggemann 2017, 76). Empirische Untersuchungen belegen zwar ihr Potential, Follower:innen zu mehr Bewegung und gesunder Ernährung zu motivieren (Santarossa et al. 2019, 381; Tiggemann und Zaccardo 2015, 66), weisen aber zugleich negative Auswirkungen auf Körperbild, Selbstzufriedenheit und Stimmung nach (Prichard et al. 2020, 4; Tiggemann und Zaccardo 2015, 64-65). Inhaltsanalysen von #fitspiration-Posts auf Instagram stellen fest, dass diese den Körpertyp „dünn und muskulös“ idealisieren und durch bestimmte Posen oder Kleidung bewusst in Szene setzen – die beworbene Sport- und Ernährungsweise dient also nicht der Förderung von Gesundheit und Wohlbefinden, sondern der „Optimierung“ des eigenen Körpers (Pilgrim und Bohnet-Joschko 2022, 117; Santarossa et al. 2019, 380; Tiggemann und Zaccardo 2018, 1007).
+                
+                
+                    Bewusst als Gegenströmung bezeichnet sich die 
+                    Bodypositivity-Bewegung und stellt es als ihr Ziel dar, gegen unrealistische Gewichts- und Körperideale einzutreten und so insbesondere Frauen zu mehr Körperakzeptanz und Selbstliebe zu verhelfen (Cwynar-Horta 2016, 40).
+                     Studien belegen teilweise positive Auswirkungen von Bodypositivty-Inhalten auf die Körperwertschätzung und -zufriedenheit (Cohen et al. 2019a, 1554-1556; Fioravanti et al. 2021, 13-14), stellen aber auch eine erhöhte Selbst-Objektifizierung fest (Cohen et al. 2019a, 1556-1557). Inhaltsanalysen belegen, dass #bodypositivity-Posts zwar Frauen unterschiedlichen Körperbaus repräsentieren, gleichzeitig aber häufig objektifizierende Merkmale (z.B. freizügige Kleidung, aufreizende Posen) enthalten (Cohen et al. 2019b, 51-52; Lazuka et al. 2020, 89). Außerdem mangele es Bodypositivity in anderen Dimensionen jenseits des Körpergewichts (z.B. Geschlecht, Ethnie, klassische Schönheitsideale) an Variabilität und Vielfalt (Cohen et al. 2019b, 51-52; Cwynar-Horta 2016, 40; Lazuka et al. 2020, 87).
+                
+                Es ist daher die Frage zu stellen, ob die Selbstinszenierung von Bodypositivity als Gegenströmung zu Fitspiration (im Sinne von „Selbstliebe“ statt „Selbstoptimierung“) gerechtfertigt ist oder ob beide Bewegungen doch mehr Gemeinsamkeiten als Unterschiede aufweisen. Bisherige Inhaltsanalysen zu Instagram-Bildern betrachten immer entweder nur Fitspiration- oder nur Bodypositivity-Posts, was einen inhaltlichen Vergleich beider Bewegungen erschwert. Ansatz des hier vorgestellten Projekts ist es daher, Bilder beider Hashtags hinsichtlich derselben inhaltlichen Kategorien zu analysieren. Während in früheren Studien Bilder ausschließlich per Hand kodiert wurden, finden zudem erstmals Methoden der automatischen Bildklassifikation Anwendung, um statistische Gegenüberstellungen von Fitspiration und Bodypositivity an einem großen Bilddatensatz vornehmen zu können.
+            
+            
+                Korpus und händische Annotation
+                Das Korpus umfasst 10000 Bilder, die im Zeitraum März bis April 2022 mit einem der Hashtags #fitspiration oder #bodypositivity auf Instagram gepostet wurden. Eine zufällig gezogene Stichprobe von je 500 Bildern pro Hashtag wurde manuell hinsichtlich verschiedener für einen Vergleich der beiden Bewegungen relevanter inhaltlicher Kategorien kodiert. Betrachtet wurden allgemeine Kategorien zur Art des Beitrags (Bild, Text) und des Abbildungsgegenstands (Person, Lebensmittel) sowie spezifischere Kategorien zur Analyse abgebildeter Personen aus den Bereichen Demographie, körperbezogene Eigenschaften, Kleidung, Freizügigkeit, Art der Pose und Anzeichen einer Objektifizierung. Diese sind in Tabelle 1 mit den Häufigkeiten der einzelnen Ausprägungen unter den Bilddaten aufgeführt. Zur Absicherung der Objektivität der Kodierung wurde ein Teil der Bilder von zwei Personen unabhängig kodiert und die Inter-Koder-Reliabilität bestimmt. Für die einzelnen inhaltlichen Kategorien wurden zwischen 200 und 800 Bilder doppelt kodiert, sodass Cohen’s Kappa Werte über 0.7 für alle Kategorien erzielt werden konnten.
+            
+            
+                Automatische Bildklassifikation
+                Um den Vergleich von Fitspiration- und Bodypositivity-Bildern auf Instagram auf einer möglichst großen Datenbasis durchführen zu können, wurde versucht, die verbleibenden 9000 Bilder mit an den händisch kodierten Daten trainierten Modellen automatisch zu klassifizieren. Der manuell kodierte Bilddatensatz (N = 1000) wurde dazu im Verhältnis 4:1 in Trainings- und Testdaten aufgeteilt. Implementiert wurden neben Modellen aus dem Bereich des traditionellen 
+                    Machine Learning (
+                    Support Vector Machine SVM, 
+                    Decision Tree DT) als aktuelles Beispiel für 
+                    Deep Learning-Verfahren auch 
+                    Convolutional Neural Networks (CNN), die relevante Bildmerkmale selbst extrahieren können (Guo et al. 2017, 721). 
+                
+                Da der Trainingsprozess von CNN-Modellen eigentlich einen weitaus größeren Trainingsdatensatz erfordert (Sheykhmousa et al. 2020, 6309), wurde versucht, die Performanz der Modelle durch Transferlernen zu verbessern. Dabei werden an großen Datensätzen vortrainierte Modelle an wenige annotierte Daten einer neuen Domäne angepasst (
+                    Fine Tuning, vgl. Boumaraf et al. 2021, 3). Im vorliegenden Projekt wurde das am umfassenden Bilddatensatz 
+                    ImageNet trainierte Modell VGG16 (Swasono, Tjandrasa und Fathicah 2019, 178) als Grundlage verwendet, da auf diesem Modlel basierende Transferlernprozesse in der Vergangenheit in verschiedenen Domänen die Klassifikationsergebnisse verbessern konnten (Boumaraf et al. 2021, 23; Dubey und Jain 2020, 5; Swasono, Tjandrasa und Fathicah 2019, 179-181). Für das hier vorgestellte Projekt wurden die letzten vier 
+                    Dense Layers aus der Netzwerkarchitektur entfernt und durch ein weiteres 
+                    Pooling Layer, ein 
+                    Dense Layer, ein 
+                    Dropout Layer (Dropout-Rate 50%) und ein abschließendes 
+                    Dense Layer zur finalen Klassenvorhersage (Aktivierungsfunktion Sigmoid) ersetzt. Nur die Gewichte dieser äußeren Schichten wurden während des 
+                    Fine Tunings (Adaption an den Instagram-Bilddatensatz) neu trainiert, die vortrainierten Gewichte der tieferen Schichten werden beibehalten. 
+                
+                Da für einige inhaltliche Kategorien ein starkes Klassenungleichgewicht im Trainingsdatensatz bestand (z.B. bei der Kategorie „nackte Haut“: Nur 20% der untersuchten Bilder zeigten keine nackten Hautstellen), wurde mit 
+                    Upsampling gearbeitet: Mithilfe von SMOTE wurden zusätzliche Daten der unterrepräsentierten Klasse(n) synthetisch erzeugt, um ein Klassengleichgewicht herzustellen (Chawla et al. 2002, 328).
+                
+                Tabelle 1 zeigt für die verschiedenen Inhaltskategorien, welche Anteile der Daten pro Klasse durch das für diese Kategorie am besten funktionierende Modell korrekt klassifiziert werden konnten. Teilweise erzielten implementierte SVM-Modelle die besten Ergebnisse, die meisten Kategorien ließen sich aber mit einem der CNN-Modelle am besten klassifizieren. Die auf Transferlernen basierenden CNN-Modelle zeigten in allen Fällen bessere Resultate als die CNNs ohne Transferlernen. Auch das Upsampling der unterrepräsentierte(n) Klasse(n) wirkte sich in einigen Fällen positiv auf die Performanz aus.
+                Wie Tabelle 1 zu entnehmen ist, gelang dennoch nicht für alle Kategorien mit einem der implementierten Modelle die Klassifikation mit zufriedenstellenden Ergebnissen. Probleme zeigten sich insbesondere bei multinominalen Klassifikationsproblemen, also Kategorien, die mehr als zwei Ausprägungen unterscheiden. In solchen Fällen, wie etwa dem Körperbau, der beim händischen Kodieren auf einer 9-stufigen Skala (Pulvers et al. 2014, 1643) eingeordnet worden war, wurden für die automatische Klassifikation mehrere Klassen zusammengelegt; dennoch wurden nur unzureichende Klassifikationsergebnisse erzielt. Auch die automatische Klassifikation von Kategorien mit starkem Klassenungleichgewicht führte zu Schwierigkeiten, etwa bei der Kategorie „Entsprechung klassischer Schönheitsideale“: Bilder von Personen, die klassischen Schönheitsidealen überhaupt nicht entsprechen, waren im händisch annotierten Datensatz selten und wurden von dem implementierten Klassifikator nur unzuverlässig erkannt, wohingegen Bilder der häufigeren Klasse „normale/extreme Entsprechung“ meistens korrekt klassifiziert wurden.
+                Für die Kategorien, die im Testdatensatz mit einem der implementierten Modelle gut klassifiziert werden konnten, wurde das jeweilige Modell auf den Gesamtdatensatz angewandt. Das war insgesamt nur für acht Kategorien der Fall, fünfmal wurde dabei ein CNN-Modell mit Transferlernen eingesetzt, dreimal wurde ein traditionelles 
+                    Machine Learning-Modell angewandt. Die statistischen Vergleiche zwischen #fitspiration und #bodypositivity konnten in diesen Fällen anhand des automatisch klassifizierten Gesamtdatensatzes (N = 10000) erfolgen, für die übrigen Kategorien wurden die statistischen Tests nur mit den 1000 händisch annotierten Daten durchgeführt.
+                
+                    
+                        
+                            Inhaltliche Kategorie 
+                            
+                                
+                                    Modell mit den besten Klassifikations-ergebnissen
+                                
+                            
+                            
+                                Anteil richtig klassifizierter Daten pro Klasse (Testdatensatz)
+                            
+                            
+                                Klassenverteilung händisch annotierter Datensatz (
+                                N
+                                 = 1000)
+                            
+                            
+                                Klassenverteilung Gesamtdatensatz (
+                                N 
+                                = 10000)
+                            
+                        
+                        
+                            
+                                
+                                    Beitrag enthält ein Bild 
+                                
+                            
+                            
+                                
+                                    CNN mit Transferlernen, mit Upsampling der Klasse „Nein, kein Bild“
+                                
+                            
+                            
+                                
+                                    Ja, Bild enthalten: 97%
+                                
+                                
+                                    Nein, kein Bild enthalten, Beitrag ist rein textbasiert: 93%
+                                
+                            
+                            
+                                Fitspiration:
+                                Ja: 93,0%
+                                Nein: 7,0%
+                                Bodypositivity:
+                                Ja: 92,2%
+                                Nein: 7,8%
+                            
+                            
+                                Fitspiration:
+                                Ja: 83,8%
+                                Nein: 6,2%
+                                Bodypositivity:
+                                Ja: 81,9%
+                                Nein: 8,1%
+                            
+                        
+                        
+                            Abbildung einer Person 
+                            
+                                CNN mit Transferlernen, ohne Upsampling
+                            
+                            
+                                Ja: 84%
+                                Nein: 54%
+                            
+                            
+                                Fitspiration:
+                                Ja: 60,0%
+                                Nein: 40,0%
+                                Bodypositivity:
+                                Ja: 65,4%
+                                Nein: 34,6%
+                            
+                            
+                                Fitspiration:
+                                Ja: 63,5%
+                                Nein: 36,5%
+                                Bodypositivity:
+                                Ja: 63,7%
+                                Nein: 36,3%
+                            
+                        
+                        
+                            Abbildung eines Lebensmittels 
+                            
+                                CNN mit Transferlernen, ohne Upsampling
+                            
+                            
+                                Ja: 55%
+                                Nein: 100%
+                            
+                            
+                                Fitspiration:
+                                Ja: 4,9%
+                                Nein: 95,1%
+                                Bodypositivity:
+                                Ja: 6,9%
+                                Nein: 93,1%
+                            
+                            
+                                Fitspiration:
+                                Ja: 2,1%
+                                Nein: 97,9%
+                                Bodypositivity:
+                                Ja: 2,2%
+                                Nein: 97,8%
+                            
+                        
+                        
+                            Geschlecht 
+                            
+                                SVM mit Upsampling der Klasse „männlich“
+                            
+                            
+                                Männlich: 74%
+                                Weiblich: 71%
+                            
+                            
+                                Fitspiration:
+                                Männlich: 48,0%
+                                Weiblich: 53,0%
+                                Bodypositivity:
+                                Männlich: 19,0%
+                                Weiblich: 81,0%
+                            
+                            
+                                Fitspiration:
+                                Männlich: 46,9%
+                                Weiblich: 53,1%
+                                Bodypositivity:
+                                Männlich: 38,1%
+                                Weiblich: 61,9%
+                            
+                        
+                        
+                            
+                                Ethnie
+                            
+                            
+                                SVM ohne Upsampling
+                            
+                            
+                                
+                                    Weiß: 79%
+                                
+                                Andere: 29%
+                            
+                            
+                                Fitspiration:
+                                
+                                    Weiß: 81,0%
+                                
+                                Andere: 19,0%
+                                Bodypositivity:
+                                
+                                    Weiß: 82,9%
+                                
+                                Andere: 17,1%
+                            
+                            / (keine Modell-anwendung auf Gesamtdatensatz)
+                        
+                        
+                            Körperbau 
+                            
+                                SVM ohne Upsampling
+                            
+                            
+                                Nicht beurteilbar: 42%
+                                
+                                    Skalawert 1-3: 23%
+                                    
+                                    Skalawert 4: 31%
+                                
+                                
+                                    Skalawert 5: 15%
+                                
+                                
+                                    Skalawert 6-9: 35%
+                                
+                            
+                            
+                                Fitspiration:
+                                1-3: 23,9%
+                                4: 39%
+                                5: 19,7%
+                                6-9: 6,7%
+                                Nicht beurteilbar: 10,7%
+                                Bodypositivity:
+                                1-3: 12,5%
+                                4: 20,2%
+                                5: 20,8%
+                                6-9: 24,1%
+                                Nicht beurteilbar: 22,3%
+                            
+                            / (keine Modell-anwendung auf Gesamtdatensatz)
+                        
+                        
+                            Muskulosität 
+                            
+                                SVM mit Upsampling der Klasse „nicht muskulös“
+                            
+                            
+                                Nicht muskulös: 0%
+                                Sichtbar muskulös: 38%
+                                Sehr/extrem muskulös: 28%
+                                Nicht beurteilbar: 54%
+                            
+                            
+                                Fitspiration:
+                                
+                                    Nicht muskulös: 1,3%
+                                
+                                
+                                    Sichtbar muskulös: 44,3%
+                                
+                                
+                                    Sehr/extrem muskulös: 39,3%
+                                
+                                
+                                    Nicht beurteilbar: 17,0%
+                                
+                                Bodypositivity:
+                                
+                                    Nicht muskulös: 13,7%
+                                
+                                
+                                    Sichtbar muskulös: 30,6%
+                                
+                                
+                                    Sehr/extrem muskulös: 15,5%
+                                
+                                
+                                    Nicht beurteilbar: 40,1%
+                                
+                            
+                            / (keine Modell-anwendung auf Gesamtdatensatz)
+                        
+                        
+                            Entsprechung klassischer Schönheitsideale
+                            
+                                CNN mit Transferlernen, mit Upsampling der Klasse „überhaupt nicht“
+                            
+                            
+                                Überhaupt nicht: 16%
+                                Normal / extrem: 81%
+                                Nicht beurteilbar: 44%
+                            
+                            
+                                Fitspiration:
+                                
+                                    Gar nicht: 1,7%
+                                
+                                
+                                    Normal: 52,7%
+                                
+                                
+                                    Extrem: 15,7%
+                                
+                                
+                                    Nicht beurteilbar: 30,0%
+                                
+                                Bodypositivity:
+                                
+                                    Gar nicht: 5,2%
+                                
+                                
+                                    Normal: 47,1%
+                                
+                                
+                                    Extrem: 23,5%
+                                
+                                
+                                    Nicht beurteilbar: 23,5%
+                                
+                            
+                            / (keine Modell-anwendung auf Gesamtdatensatz)
+                        
+                        
+                            Art der Kleidung
+                            
+                                CNN mit Transferlernen, mit Upsampling der Klasse „Sportkleidung“
+                            
+                            
+                                Sportkleidung: 54%
+                                Sonstige Kleidung: 78%
+                            
+                            
+                                Fitspiration:
+                                
+                                    Unterwäsche: 11,3%
+                                
+                                
+                                    Sportkleidung: 61,5%
+                                
+                                
+                                    eng: 11,7%
+                                
+                                
+                                    normal: 10,1%
+                                
+                                weit: 4,1%
+                                Bodypositivity:
+                                
+                                    Unterwäsche: 23,2%
+                                
+                                
+                                    Sportkleidung: 20,5%
+                                
+                                
+                                    eng: 20,2%
+                                
+                                
+                                    normal: 24,2%
+                                
+                                weit: 6,4%
+                            
+                            
+                                Fitspiration:
+                                Sportkleidung: 52,7%
+                                Sonstige Kleidung: 47,3%
+                                Bodypositivity:
+                                Sportkleidung: 30,7%
+                                Sonstige Kleidung: 69,3%
+                            
+                        
+                        
+                            Abbildung nackter Haut
+                            
+                                SVM mit Upsampling der Klasse „Nein“
+                            
+                            
+                                Ja: 79%
+                                
+                                    Nein: 50%
+                                
+                            
+                            
+                                Fitspiration:
+                                Ja: 85,7%
+                                Nein: 14,3%
+                                Bodypositivity:
+                                Ja: 74,6%
+                                Nein: 25,4%
+                            
+                            
+                                Fitspiration:
+                                Ja: 63,3%
+                                Nein: 36,7%
+                                Bodypositivity:
+                                Ja: 64,3%
+                                Nein: 35,7%
+                            
+                        
+                        
+                            Abbildung nackter Bauch
+                            
+                                DT mit Upsampling der Klasse „Ja“ 
+                            
+                            
+                                Ja: 58%
+                                Nein: 63%
+                            
+                            
+                                Fitspiration:
+                                Ja: 44,4%
+                                Nein: 55,6%
+                                Bodypositivity:
+                                Ja: 41,0%
+                                Nein: 59,0%
+                            
+                            
+                                Fitspiration:
+                                Ja: 38,8%
+                                Nein: 61,2%
+                                Bodypositivity:
+                                Ja: 38,3%
+                                Nein: 61,7%
+                            
+                        
+                        
+                            Person in Bewegung
+                            
+                                CNN mit Transferlernen, mit Upsampling der Klasse „Ja“
+                            
+                            
+                                Ja: 36%
+                                Nein: 91%
+                            
+                            
+                                Fitspiration:
+                                Ja: 31,3%
+                                Nein: 68,7%
+                                Bodypositivity:
+                                Ja: 13,1%
+                                Nein: 86,9%
+                            
+                            / (keine Modell-anwendung auf Gesamtdatensatz)
+                        
+                        
+                            Objektifizierung: Fokus auf bestimmtes Körperteil
+                            
+                                SVM mit Upsampling der Klasse „Ja“ 
+                            
+                            
+                                Ja: 44%
+                                Nein: 82%
+                            
+                            
+                                Fitspiration:
+                                Ja: 24,3%
+                                Nein: 75,7%
+                                Bodypositivity:
+                                Ja: 25,7%
+                                Nein: 74,3%
+                            
+                            / (keine Modell-anwendung auf Gesamtdatensatz)
+                        
+                        
+                            Objektifizierung: Aufreizende Pose
+                            
+                                CNN mit Transferlernen, mit Upsampling der Klasse „Ja“
+                            
+                            
+                                Ja: 23%
+                                Nein: 95%
+                            
+                            
+                                Fitspiration:
+                                Ja: 9,0%
+                                Nein: 91,0%
+                                Bodypositivity:
+                                Ja: 25,4%
+                                Nein: 74,6%
+                            
+                            / (keine Modell-anwendung auf Gesamtdatensatz)
+                        
+                        
+                            Objektifizierung: Gesicht nicht erkenntlich
+                            
+                                SVM mit Upsampling der Klasse „Ja“
+                            
+                            
+                                Ja: 41%
+                                Nein: 72%
+                            
+                            
+                                Fitspiration:
+                                Ja: 32,7%
+                                Nein: 67,3%
+                                Bodypositivity:
+                                Ja: 30,0%
+                                Nein: 70,0%
+                            
+                            / (keine Modell-anwendung auf Gesamtdatensatz)
+                        
+                        
+                            Vorher-Nachher-Vergleich
+                            
+                                CNN mit Transferlernen, ohne Upsampling
+                            
+                            
+                                Ja: 90%
+                                Nein: 99%
+                            
+                            
+                                Fitspiration:
+                                Ja: 8,1%
+                                Nein: 91,9%
+                                Bodypositivity:
+                                Ja: 4,0%
+                                Nein: 96,0%
+                            
+                            
+                                Fitspiration:
+                                Ja: 2,1%
+                                Nein: 97,9%
+                                Bodypositivity:
+                                Ja: 1,1%
+                                Nein: 98,9%
+                            
+                        
+                        Tabelle 1: Übersicht der inhaltlichen Kategorien mit jeweils am besten klassifizierenden Modell sowie der Häufigkeitsverteilungen in händisch annotiertem und Gesamtdatensatz
+                    
+                    
+            
+            
+                Befunde zum Vergleich der Fitspiration- und Bodypositivity-Bilder
+                Statistische Vergleiche der Fitspiration- und Bodypositivity-Bilder bezüglich der untersuchten Kategorien konnten sowohl Unterschiede als auch Gemeinsamkeiten in der Häufigkeit bestimmter Merkmale nachweisen (siehe auch Tabelle 1). Bilder beider Hashtags zeigen zumeist mindestens eine nackte Körperstelle: Die abgebildeten Personen tragen häufig sehr freizügige Kleidung (bei Fitspiration meist knappe Sportkleidung, bei Bodypositivity eher Unterwäsche/Badebekleidung oder enge Alltagskleidung). Auch weitere Anzeichen einer Objektifizierung (Bildfokus auf ein Körperteil gerichtet, anzügliches Posieren, Gesicht nicht erkenntlich) und die Tatsache, dass Personen hauptsächlich in statischer Pose statt in Bewegung abgebildet sind, belegen für beide Hashtags die eindeutige Fokuslegung auf das äußere Erscheinungsbild. Unterschiede zwischen den Hashtags zeigen sich hinsichtlich körperbezogener Merkmale: Frauen haben auf Fitspiration-Bildern einen signifikant schlankeren Körperbau und mehr Muskelmasse als auf Bodypositivity-Bildern, wo mehr unterschiedliche Körperformen repräsentiert sind. Die Betonung klassischer Schönheitsideale (z.B. reine Haut, glänzende Haare) sowie die Überrepräsentation weißer Personen lässt sich hingegen beiden Bewegungen vorwerfen: Personen mit äußeren „Makeln“ wie Cellulite oder Hautunreinheiten sind unter beiden Hashtags deutlich unterrepräsentiert, ebenso wie nicht-weiße Personen. 
+                Zusammenfassend lässt sich festhalten, dass unter dem Hashtag #fitspiration hauptsächlich schlanke und muskulöse Frauen und Männer in Sportkleidung so posieren, dass ihr durchtrainierter Körper möglichst gut zur Geltung kommt. Bodypositivity hingegen repräsentiert zwar mehr unterschiedliche Körpertypen – ist dafür aber größtenteils auf Bilder von Frauen beschränkt, die klassischen Schönheitsidealen entsprechen. Beide Bewegungen setzen durch freizügige Kleidung, Nacktheit und Objektifizierungen einen starken Fokus auf das äußere Erscheinungsbild. 
+            
+            
+                Fazit und Ausblick
+                Die durchgeführte Analyse von #fitspiration- und #bodypositivity-Bildern auf Instagram mit einheitlichen inhaltlichen Kategorien ermöglichte erstmals eine konkrete Gegenüberstellung beider Bewegungen hinsichtlich relevanter inhaltlicher Bildmerkmale. Durch die implementierten Modelle zur automatischen Bildklassifikation konnten die Analysen sich zudem zumindest teilweise auf einen großen Bilddatensatz (N = 10000) stützen. Zwar zeigen sich hinsichtlich Körperbau und Muskulosität die erwarteten Unterschiede zwischen den beiden Hashtags, in den meisten anderen Dimensionen unterschieden sich Bilder beider Bewegungen aber nicht signifikant. Die Selbstinszenierung der Bodypositivity-Bewegung als Gegenströmung zu Fitspiration lässt sich daher nicht belegen: Statt für Selbstliebe unabhängig von Äußerlichkeiten einzutreten, ist an Bodypositivity ebenso wie an Fitspiration die Unterrepräsentation bestimmter Personengruppen, die Objektifizierung von insbesondere Frauen, sowie der starke Fokus auf ein makelloses äußeres Erscheinungsbild im Zuge einer (äußerlichen) Selbstoptimierung kritisch hervorzuheben.
+                Die automatische Bildklassifikation gelang nicht für alle betrachteten inhaltlichen Kategorien, weitere Forschung scheint hier notwendig. Besonderes Augenmerk sollte auf den Umgang mit multinominalen Klassifikationsproblemen sowie unbalancierten Klassen gelegt werden. Der erfolgsversprechenden Methodik des Transferlernens mit CNN-Modellen sollte in Zukunft weiter nachgegangen werden, dabei könnte als Grundlage für den Transferlernprozess spezifischer Modelle, die bereits auf konkrete Klassifikationsaufgaben wie das Erkennen von Gesichtern oder Körperteilen hin vortrainiert sind, hilfreich sein. Ein anderer Ansatz könnte sein, neben den Bildern selbst auch weitere Daten andere Modalitäten miteinzubeziehen, um die beiden Hashtags noch umfassender vergleichen zu können. In Frage kämen hier etwa die sprachlichen Informationen aus Beitragstexten, Kommentare anderer User:innen unter dem Beitrag oder Metadaten zur:m Verfasser:in (z.B. Follower:innenzahl).
+            
+        

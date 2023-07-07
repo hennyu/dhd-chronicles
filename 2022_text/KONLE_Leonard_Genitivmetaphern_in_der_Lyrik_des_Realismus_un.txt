@@ -1,0 +1,156 @@
+
+            
+                Einleitung
+                Ein wichtiger Aspekt der sprachlichen Gestaltung literarischer Texte besteht im Einsatz von Metaphern, Metonymien und Tropen im Allgemeinen. Einzelnen Werken, aber auch ganzen Gattungen oder Epochen wird zugeschrieben, dass ihre Spezifik nicht zuletzt in einer jeweils charakteristischen Verwendungsweise uneigentlicher Rede gründe. Unter anderem betrifft das die Geschichte der Lyrik, das heißt die Geschichte einer Gattung, die laut Benjamin Specht „in Bezug auf die Verwendung von Metaphern die weitesten Lizenzen besitzt“ (Specht, 2017: 90). 
+                Das Ziel dieses Beitrags besteht darin, den Gebrauch von Metaphern in der deutschsprachigen Lyrik des Realismus und der frühen Moderne mithilfe automatisierter, quantitativer Methoden zu identifizieren und zu analysieren. Damit sollen mehrere literarhistorische Forschungsthesen auf einer breiten Datengrundlage geprüft und gegebenenfalls differenziert werden.
+                
+                Die literaturwissenschaftliche Forschung macht die Unterscheidung von realistischer und moderner Lyrik unter anderem am Aufkommen neuer, innovativer Formen uneigentlichen Sprechens fest. In der modernen Lyrik treten Metaphern auf, die als „Radikalisierung, Komplizierung und Steigerung“ lyrischer Bildlichkeit (Hiebel 2005: 28), als Beitrag zur sprachlichen „Verfremdung“ (Lamping, 2010: 148; vgl auch Lamping, 2008: 25f), als „assoziativ-hermetische“ Muster (Specht, 2014: 5) oder auch als „Blume[n] ohne Stiel auf der Oberfläche des Gedichts“ (Neumann, 1970: 195f) zu charakterisieren seien. Die Forschung dürfte sich einig sein, dass die moderne Metaphorik gegenüber der vorherigen, traditionellen Bildlichkeit zu größerer Individualität und Heterogenität tendiert (vgl. zur Homogenität der realistischen (Massen-)Lyrik und ihrer Sprachbilder z. B. Stockinger, 2010: 88). Doch durch welche Textmerkmale sich die neuen, modernen Metaphern im Einzelnen auszeichnen, wird unterschiedlich und zum Teil sogar gegensätzlich konzeptualisiert.
+                
+                    
+                        Große vs. kleine Bildspanne: Hugo Friedrich ist der Auffassung, dass die Bildspanne, also etwa im Fall der Metapher ‚die Asche der Schande‘ der semantische Abstand zwischen den Begriffen ‚Asche‘ und ‚Schande‘, bei modernen Metaphern besonders groß sei (Friedrich, 1992: 17f, 207). Harald Weinrich geht vom Gegenteil aus: „Gerade die Nahmetaphern sind befremdend und verfremdend und erscheinen uns kühn. Fernmetaphern sind ungefährlich.“ (Weinrich, 1963: 335)
+                    
+                    
+                        Abstraktion vs. Konkretisierung: Eine weitere These Friedrichs lautet, dass in der Lyrik der Moderne besonders häufig Konkretes mit Abstraktem verbunden werde, etwa in Metaphern wie ‚der Schnee des Vergessens‘ (Friedrich, 1992: 205; Andreotti, 2014: 317). Gerhard Neumann konstatiert am Beispiel der Metaphorik Mallarmés ein „Zunehmen des konkreten Wortmaterials“ und ein „Untergehen der abstrakten Substantive“ (Neumann, 1970: 199), während Martin Anderle annimmt, dass gerade der Realismus in seiner Bildlichkeit zum “Gegenständliche[n]” tendiere, die Moderne hingegen zum “Metaphysischen” neige (Anderle, 1979: 77-79, Zitat 79).
+                    
+                
+                Unser Beitrag untersucht nur Genitivmetaphern (‚Das Lächeln der Natur‘ usw.); andere Formen, zum Beispiel Adjektivmetaphern (‘Die lächelnde Natur’ usw.), bleiben unberücksichtigt. Zumindest Hugo Friedrich ist allerdings der Auffassung, dass es sich bei Genitivmetaphern ohnehin um den häufigsten Typ von Metaphern in der (modernen) Lyrik handelt (Friedrich, 1992: 205). 
+                Im Normalfall der Genitivmetapher bezieht sich das 
+                    Kopfnomen auf den Ursprungsbereich der Metapher, in dem der Ausdruck im nicht-übertragenen Sinn verwendet wird, während das 
+                    Genitivnomen sich auf den Zielbereich der übertragenen Rede bezieht. Das erste Nomen wird metaphorisch, das im Genitiv wörtlich verstanden (Skirl und Schwarz-Friesel, 2013: 22), z.B. „Lächeln der Natur“, „Feuermeer der Melodie“. Es können auch beide Nomen metaphorisch verwendet werden und gemeinsam auf einen Ursprungsbereich verweisen. Dies ist z.B. der Fall in „Und wenn es Abend ist, / Empfangen sie [die Menschen] den Tau der Gnadensonne“ (Franz Evers: Der Künstler), wo die Genitivmetapher „Tau der Gnadensonne“ sich auf das Alter der Menschen bezieht. Die Verse sind zugleich ein Beispiel dafür, dass in Gedichten Genitivmetaphern auch Teil einer umfassenderen Passage mit uneigentlicher Rede sein können, in diesem Fall einer Allegorie. 
+                
+                Die hier untersuchten Phänomene (Metaphern in Genitivkonstruktionen) sind mithin nicht exakt identisch mit dem Gegenstand der literaturwissenschaftlichen Forschungsthesen (Metaphern im Allgemeinen), auch wenn man davon ausgehen darf, dass Aussagen über den einen Bereich ebenfalls relevant für den anderen Bereich sind. Eine weitere Relativierung betrifft das Untersuchungskorpus: Während sich sich die Forschungsaussagen in der Regel auf kanonisch-moderne sowie des Öfteren auf deutlich nach 1900 erschienene Gedichte beziehen, enthält das hier zu analysierende Korpus lediglich Texte der Jahrhundertwende um 1900 und damit der 
+                    frühen Moderne, zudem umfasst es auch Texte von nicht-kanonischen Autoren und Autorinnen dieser Zeit.
+                
+            
+            
+                Ressourcen
+                Die analysierten Gedichte stammen aus den 7 Anthologien des Realismus und den 13 Anthologien der Lyrik um 1900 mit insgesamt 6249 Texten, die wir im Rahmen des Projekts “The beginnings of modern poetry - Modeling literary history with text similarities” untersuchen. Bei den Anthologien um 1900 handelt es sich um Sammlungen, deren Herausgeber Gedichte aufgrund ihrer Modernität ausgewählt haben (siehe Tabelle 1).
+                
+                    Tab. 1: Korpus Statistik.
+                    
+                        
+                        Anzahl Gedichte
+                        Anzahl Wörter
+                    
+                    
+                        Realismus
+                        3367
+                        400k
+                    
+                    
+                        Moderne
+                        2882
+                        320k
+                    
+                    
+                        Insgesamt
+                        6249
+                        720k
+                    
+                
+                Aus diesem Korpus sind unter Verwendung von spaCy (Montani et al., 2021) 4300 Genitivkonstruktionen extrahiert worden. 
+                
+                Drei Annotatoren haben Genitivkonstruktionen als metaphorisch oder nicht-metaphorisch annotiert. Annotiert wurden die beiden oben beschriebenen Formen von Genitivmetaphern, aber nur wenn sie in dem Muster 
+                    Kopfnomen---Artikel---Nomen_im_Genitiv vorkommen (wir haben das Muster 
+                    Nomen_im_Genitiv---Kopfnomen ignoriert). Während des Annotationsprozesses sind verschiedene Problemfälle aufgetreten. Zum Beispiel konnte die Abgrenzung der Metaphern von einer anderen Form uneigentlichen Sprechens, der Metonymie, herausfordernd sein. Zudem musste entschieden werden, ob eine Metapher im Untersuchungszeitraum über wiederholte Verwendung bereits so etabliert war, dass sie den Charakter des Metaphorischen im Sinn einer Übertragung verloren hatte. Potentiell lexikalisierte Genitivmetaphern (z.B. „Fuß des Berges“) haben wir manuell in Wörterbüchern der Zeit (Sanders, 1865; Heyne, 1895) nachgeschlagen und als metaphorisch markiert, wenn sie dort als Übertragung gekennzeichnet wurden. 
+                
+                
+                    Tab. 2: Zusammensetzung der Trainingsdaten.
+                    
+                        
+                        Genitivkonstruktionen
+                        davon Metaphern
+                        davon keine Metaphern
+                    
+                    
+                        
+                            Annotationen
+                            Realismus
+                        
+                        317
+                        176
+                        141
+                    
+                    
+                        
+                            Annotationen
+                            Moderne
+                        
+                        308
+                        132
+                        176
+                    
+                    
+                        Vorstudie
+                        285
+                        173
+                        112
+                    
+                    
+                        Insgesamt
+                        910
+                        442
+                        468
+                    
+                
+                Der annotierte Datensatz umfasst 625 Genitivkonstruktionen mit einem Agreement von 0.53 und 285 weitere Beispiele aus einer Vorstudie (siehe Tabelle 2). Da für diese keine Zweitannotation zur Validierung vorliegt, werden sie ausschließlich zum Training, nicht zur Evaluation verwendet.
+                
+                Für die automatische Metaphernerkennung verwenden wir neben den Annotationen ein deutsches Bert Model (Chan et al., 2020), ein FastText (Bojanowski et al., 2016) Embedding, trainiert auf dem deutschen Oscar Subkorpus (Open Super-large Crawled Aggregated coRpus, Ortiz Suárez et al., 2020), Supersense Wortlisten aus GermaNet und die in Köper und Schulte im Walde (2016) beschriebene Wortliste zu Abstraktheit, Vorstellbarkeit, Arousal und Valenz.
+                
+                
+                    
+                    Abb. 1: Schema des Systems zur Erkennung von Metaphern in Genitivkonstruktionen. KN: Kopfnomen; GN: Genitivnomen.
+                
+                Die Erkennung der Metaphern geschieht in zwei Schritten. Im ersten Schritt werden regelbasiert Genitivkonstruktionen erkannt (siehe Ressourcen); im zweiten Schritt werden diese als ‘nicht-metaphorisch’ oder ‘metaphorisch’ klassifiziert. Das System zur Klassifikation von Genitivmetaphern setzt sich aus drei Komponenten zusammen: Supersenser, Affecter und Bert (siehe Abb. 1). Damit folgt der Aufbau dem in Tsvetkov et al. (2014) vorgestellten Ansatz Metaphern unter Berücksichtigung von Abstraktheit, Vorstellbarkeit und Wortklasse ihrer Komponenten zu klassifizieren. 
+                Das Training des Supersenser Moduls wird auf den FastText Vektoren der Wörter aus den 20 größten Supersense-Klassen für Substantive aus GermaNet durchgeführt. Diese werden durch überwachte Dimensionsreduktion (Szubert et al., 2019) in einen kleineren Raum mit 10 Dimensionen projiziert. Im Gegensatz zur direkten Verwendung von GermaNet als Eingabe in das System können so out-of-vocabulary Probleme vermieden werden. Außerdem wird durch die Projektion eine reichhaltigere Repräsentation erzeugt in der Supersense-Klassen in Beziehung gesetzt werden können. Eine Evaluation mittels kNN Klassifikation von Substantiven im projizierten Raum in ihre Supersense Klasse ergibt einen F-Score von 0.65.
+                Das Affecter Modul erhält ebenfalls FastText Vektoren, sowie die zugehörigen Werte aus der Wortliste von Köper und Schulte im Walde (2016). Eine 4-fach Regression durch ein MLP erreicht R
+                    2: 0.86.
+                
+                Für die Klassifikation von Metaphern werden die Ausgaben aus Supersenser und Affecter an ein nach (Gao et al., 2019) modifiziertes BERT Modell übergeben. Dieses reicht nicht nur das CLS-Token, sondern auch die Embeddings der Genitivkonstruktion weiter. Bei der Unterscheidung zwischen Metaphern und sonstigen Genitivkonstruktionen erreicht das System einen F1 Score von 0.75 (Details siehe Tabelle 3). Die Klassifikation von Metaphern aus dem Realismus wird zwar leicht besser evaluiert als die aus den modernen Anthologien, der Effekt ist für die weitere Analyse aber vernachlässigbar.
+            
+                Tab. 3: Evaluation der Metaphern Klassifikation
+                
+                               
+            
+            
+                Ergebnisse
+                Es gibt keinen Unterschied zwischen den Epochen in Hinsicht auf die Menge der Genitivkonstruktionen und den Anteil der Metaphern daran. Die These von der größeren Heterogenität und Individualität der modernen Metaphern haben wir mit zwei Operationalisierungen untersucht: Nimmt der Anteil an seltenen Wörtern zu und steigt der Type-Token-Ratio bei Metaphern der Moderne? Den Anteil der seltenen Wörter haben wir mit einem einfachen Verfahren überprüft, nämlich ob die Token im Wordembedding enthalten sind; wenn nicht, wurden sie als ‘seltene Wörter’ identifiziert. Solche Wörter sind in der Lyrik häufig, zumeist handelt es sich um Komposita oder um Schreibvarianten aufgrund der Anpassung ans Metrum. Die Verwendung solcher seltenen Wörter ist auch schon im Realismus häufig: 26%, findet sich aber noch einmal häufiger in der Moderne 33%.
+                Wir haben den Type-Token-Ratio beider Bestandteile der Genitivmetaphern jeder Epoche untersucht und können auch hier einen signifikanten Unterschied feststellen: Bei den Metaphern der Moderne ist die Variabilität des Wortmaterials deutlich größer (siehe Abb. 2 und 3).
+                
+                    
+                    Abb. 2: Variabiltät (sttr) der Genitivnomina nach Epoche.
+                
+                
+                    
+                    Abb. 3: Variabiltät (sttr) der Kopfnomina nach Epoche.
+                
+                Insgesamt können wir also den Eindruck bestätigen, dass die Metaphern der Moderne -- und das noch vor dem Expressionismus -- heterogener und individueller sind.
+                Die These zur Vergrößerung bzw. Verkleinerung der Bildspanne in den Metaphern haben wir überprüft, indem wir den Kosinusabstand der Substantive im FastText-Wordembedding gemessen haben. Wie Abb. 4 zeigt, hat der Abstand weder zu- noch abgenommen.
+                
+                    
+                    Abb. 4: Kosinusdistanz der Wordvektoren (fastText) der Metapherkomponenten nach Epoche.
+                
+                Die These, dass in der Moderne der Abstand zwischen den Nomina einer Genitivmetapher in Hinsicht auf die Abstraktheit zugenommen hat, haben wir mit den Abstraktheits-Werten überprüft, die das oben dargestellten Affecter-Moduls vorhergesagt hat (siehe Abb. 5), ebenso wie die These, dass die Moderne insgesamt zu abstrakteren (oder gerade zu weniger abstrakten) Metaphern neigt.
+                
+                    
+                    Abb. 5: Differenz der Abstraktheit in Metaphern. Formel: Abstraktheit der Kopfnomina - Abstraktheit des Genitivnomina. Hoher Wert: Demut der Finger, Reiz der Schale; Niedriger Wert: Krone des Strebens, Baum der Weisheit. Datengrundlage: 100 Zufallsstichproben mit je 200 Metaphern.
+                
+                Die Forschungsthesen lassen sich durch unsere Daten nicht bestätigen: Weder verändert sich das Level der durchschnittlichen Abstraktheit oder Konkretheit noch die 
+                    Differenz der Abstraktheit-Werte wesentlich. Allerdings kann man einen andersartigen (schwachen, aber signifikanten) Trend beobachten: Abb. 5 zeigt, dass in der Lyrik des Realismus ein leichtes Übergewicht von Metaphern des Typs konkret-abstrakt (“Wasser der Vergessenheit” usw.), in der Moderne hingegen ein leichtes Übergewicht des Typs abstrakt-konkret (“Demut der Finger” usw.) zu beobachten ist. Wie sich diese Metaphern auf Autorinnen und Autoren verteilen, wird in Zukunft genauer zu untersuchen sein. Die folgende Liste zeigt die Metaphern mit der größten Abstraktheit-Differenz: konkret-abstrakt: “Zweig der Pflicht”, “Felsen der Gerechtigkeit”, “Knospe der Hoffnung”, “Blüten des Geistes”, “Becher der Lust” . Abstrakt-konkret: “Forderung des Meeres”, “Lustgetön der Wälder”, “Geist der Taube”, “Zeit der Rose”, “Glorie der Flammen”.
+                
+                Ein Blick auf die beliebtesten Wörter der Metaphern, getrennt nach der Verwendung in der Kopfposition oder im Genitiv, zeigt einige interessante Verschiebungen. Bei den Kopfnomina hat ‘Meer’ eine steile Karriere von Rang 10 auf Rang 1 gemacht, während ‘Hauch’, ‘Geist’ und ‘Traum’ deutlich weniger verwendet werden (siehe Abb. 6). Insgesamt sind die Wiederholungen bei den Kopfnomina weniger häufig und sie nehmen in der Moderne noch ab.
+                
+                    
+                    Abb. 6: Kopfnomina Realismus und Moderne.
+                
+                Die Genitivnomina (Abb. 7) dagegen zeichnen sich durch zahlreiche Wiederholungen aus, allerdings nimmt auch hier die Frequenz in der Moderne ab. Auffällig ist, wie stabil die Wortlisten in den oberen Rängen sind, mit der Ausnahme von “Glücks” und “Todes”, die in der Moderne deutlich häufiger werden.
+                
+                    
+                    Abb. 7: Genitivnomina Realismus und Moderne.
+                
+            
+            
+                Fazit
+                Insgesamt konnten wir einige der von der Literaturwissenschaft aufgestellten Vermutungen bestätigen, z. B. dass die Komplexität der Metaphern in der Moderne ansteigt. Da viele der Forschungsthesen für die Moderne insgesamt formuliert wurden, müssen wir allerdings dort, wo wir diese nicht bestätigen konnten, es zumindest offen halten, ob sie nicht auf spätere Phasen zutreffen. Allerdings deuten wir unsere Befunde doch so, dass die bisherige Forschung den Bruch zwischen den Epochen deutlich überbetont hat. Unsere Ergebnisse weisen vielmehr darauf hin, dass es sich um eine semantische Evolution handelt. Die hier dargestellten Ergebnisse sollen außerdem in Zukunft noch verbessert werden, indem die regelbasierte Erkennung der Genitivkonstruktionen auf eine bessere Grundlage gestellt wird: Da wir zur Zeit kein Korpus an Gedichten haben, in dem alle Genitivmetaphern annotiert sind, können wir den Recall nicht einschätzen. Außerdem soll ein umfassendes Korpus aus Texten des 19. Jahrhundert das Training eines domänenangepassten Fasttext-Modells ermöglichen, das historisch angemessenere semantische Distanzen zurückgibt. Nicht zuletzt soll auch die Erkennungsgenauigkeit des Systems zur Erkennung der Metaphern durch eine Vergrößerung des Trainingskorpus, durch eine aufwendigere Hyperparameter-Optimierung und durch Arbeit an der Architektur verbessert werden. Ein etwas anspruchsvolleres Ziel besteht außerdem in dem Versuch, die Typisierung der Metaphern auf eine andere Grundlage zu stellen, etwa durch Anschluss an die Kategorien linguistischer Metapherntheorien oder an große Ontologien. Nicht zuletzt werden wir untersuchen, wo die kanonisierten Lyriker dieser Zeit, George, Hofmannsthal, Holz und Rilke, stehen.
+            
+        

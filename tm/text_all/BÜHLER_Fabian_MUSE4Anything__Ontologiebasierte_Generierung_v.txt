@@ -1,0 +1,43 @@
+
+            
+                Einleitung
+                Zur Unterstützung der Erforschung von Text und Sprache als einer der Kernbereiche der Digital Humanities (Reichert 2017: 13), haben sich bereits verschiedene Methoden und Werkzeuge etabliert, wie EU Infrastrukturprojekte wie CLARIN (Hinrichs/Krauwer 2014) verdeutlichen. Um sich darüber hinaus Artefakten wie beispielsweise Filmen, Musik, Gemälden oder Architekturen, aber auch abstrakten Artefakten wie Lehr-Lern-Szenarien, mittels digitaler Ansätze zu nähern, ist oftmals die Überführung dieser Artefakte in maschinenlesbare Repräsentationen nötig, was aufwendige und allzu häufig kostspielige Individuallösungen erfordert. Dieser Problematik wollen wir mit der hier vorgestellten Werkzeugunterstützung “MUSE4Anything” begegnen. MUSE4Anything soll die strukturierte und detaillierte Erfassung von unterschiedlichen Artefakten unterstützen. Hierzu erlaubt MUSE4Anything angepasste Eingabemasken zur Erfassung der relevanten Parameter zu erstellen. Diese werden automatisch aus der von dem Benutzer erstellten Ontologie (Ontologie nach dem Verständnis von Furrer (2014: 308-309) als Werkzeug der Wissensrepräsentation) generiert. 
+                Für die Anforderungsanalyse als Basis von MUSE4Anything haben wir die domänenspezifischen Repositorien aus unseren langfristig laufenden Projekten MUSE, welches vestimentäre Kommunikation im Film untersucht (Barzen et al. 2018a, 2018b) und MUSE4Music, das sich mit symphonischer Musik des 19. Jahrhunderts befasst (Barzen et al. 2017), herangezogen.
+                
+            
+            
+                Anforderungsanalyse: MUSE und MUSE4Music
+                MUSE und MUSE4Music zielen auf die Identifikation von Mustern (nach dem Musterbegriff von Alexander et al. (1977)), um zu einem besseren Verständnis des jeweiligen Untersuchungsgegenstandes beizutragen. Dazu müssen in großem Umfang Daten erfasst, analysiert und interpretiert werden. Das Vorgehen und die dazugehörige Werkzugumgebung unterstützen dabei: (i) die Definition der potenziell relevante Parameter mittels Ontologie, (ii) die Auswahl der Kriterien zur Zusammenstellung des Untersuchungsgegenstandes, (iii) die Erfassung der Daten mittels des Repositoriums (iv) die, auf die Art und Struktur der Daten abgestimmte Analyse der Daten und (v) die Überführung der validierten Ergebnisse in Muster (Barzen et al. 2018b).
+                Beide Projekte nutzen Mind-Map Programme, um die Ontologie zu verwalten (Schritt (i)) und ein jeweils speziell entwickeltes Datenrepositorium zur Erfassung der Daten (Schritt (iii)). Der in MUSE erfasste umfangreiche Datensatz (Barzen et al. 2021b), wird aktuell mit verschiedenen Ansätzen aus den Bereichen des Machine Learning erschlossen (Barzen 2021a).
+                Um das hier erarbeitete Vorgehen für weitere Anwendungsfälle zu erschließen, haben wir die vorhandenen Implementierungen systematisch analysiert und Kernanforderungen an ein generisches Werkzeug extrahiert. Diese beinhalten z. B. die Möglichkeit komplex strukturierte und teilweise tief verschachtelte Eigenschaften zu erfassen und die Ontologie direkt im Werkzeug zu erstellen und zu bearbeiten (Bühler 2021: 9–18). Zusätzlich haben wir existierende Lösungen zur Verwaltung von Ontologien, wie Protégé (Musen 2015), OWLGrEd (OWLGrEd 2021) oder VocBench (Stellato et al. 2020), evaluiert (Bühler 2021: 19–24) und uns in Hinblick auf die identifizierten Anforderungen für eine eigene Lösung entschieden.
+            
+            
+                MUSE4Anything
+                Auf Basis der identifizierten Anforderungen haben wir MUSE4Anything entwickelt. MUSE4Anything (Bühler 2021) ist ein generisches Datenrepositorium und unterstützt die Schritte (i) und (iii) aus dem vorhin beschriebenen MUSE-Vorgehen (Abbildung 1). Die benutzerdefinierte Ontologie zur Definition der Domäne, sowie die ggf. enthaltenen Taxonomien, können in dem Werkzeug erstellt (Schritt (i)) und jederzeit bearbeitet werden (Abbildung 2). Aus der Ontologie werden automatisch korrespondierende Eingabemasken für die Datenerfassung (Schritt (iii)) und Detailansichten der Objekteigenschaften generiert (Abbildung 3).
+                Alle Funktionen sind über eine Web-Oberfläche und mit der HTTP-API nutzbar. Dabei wurde im Besonderen für die Datenerfassung auf die Benutzbarkeit des Werkzeugs ohne umfangreiche Vorkenntnisse geachtet. Um die Nachvollziehbarkeit von Änderungen zu gewährleisten, sind alle Einträge, inklusive der Ontologie, versioniert. Die Funktionen des Repositoriums wurden anhand eines Anwendungsfalls basierend auf einem Ausschnitt der MUSE4Music Ontologie (Eusterbrock et al. 2017) evaluiert. Weitere Details finden sich in (Bühler 2021: 25 ff.,41 ff.). Der Prototyp ist auf GitHub unter einer Open-Source-Lizenz frei verfügbar.
+                
+                
+                    
+                        
+                        Abb. 1: Übersicht der von MUSE4Anything unterstützten Arbeitsschritte.
+                    
+                
+                
+                    
+                        
+                        Abb. 2: Screenshot des Taxonomie-Editors mit einer stark vereinfachten Taxonomie aus der MUSE Ontologie.
+                    
+                
+                
+                    
+                        
+                        Abb. 3: Screenshot einer generierten Eingabemaske.
+                    
+                
+            
+            
+                Ausblick
+                MUSE4Anything befindet sich noch teils in der Entwicklung. Weitere Funktionen, darunter eine grafische Visualisierung der Ontologie, ein einfacherer Editor für die Ontologie und eine minimale Benutzerverwaltung, sind bereits in Arbeit. In Zukunft ist auch eine Anbindung an die Auswertungswerkzeuge, die für MUSE entwickelt wurden (Barzen 2021a: 35), vorgesehen.
+                Zusätzlich planen wir für die Evaluierung von MUSE4Anything die Anwendung in einer völlig anderen Domäne: An der Pädagogischen Hochschule Karlsruhe werden im Rahmen des von der "Qualitätsoffensive Lehrerbildung" geförderten Hochschulentwicklungsprojektes "Nachhaltige Integration von fachdidaktischen digitalen Lehr-Lern-Konzepten" (InDiKo) aus unterschiedlichen Fächern innovative digitale Lehr-Lern-Szenarien identifiziert. Um daraus fächerübergreifende didaktische Muster zu ermitteln (Standl/Schlomske-Bodenstein 2021) und für eine Wiederverwendung in der Lehre zu beschreiben, wird als Grundlage zunächst eine interdisziplinäre Taxonomie in einem Konsensvalidierungsprozess entwickelt und in MUSE4Anything abgebildet werden.
+            
+        

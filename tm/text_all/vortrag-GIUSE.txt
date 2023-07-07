@@ -1,0 +1,123 @@
+
+
+Visualisierung als 
+                    Expansion
+
+Jede/r DH-Praktiker/in weiß: Computergestützte Forschung in den Geisteswissenschaften beginnt mit der Übersetzung relevanter Phänomene in digitale Daten. Seltener thematisiert wird dagegen, dass die digitale 
+                    Operationalisierung (Moretti 2013) ein wichtiges Gegenstück am Ende des Forschungsprozesses hat: Die digitale Repräsentation des Untersuchungsgegenstandes wie das generierte Daten-Output müssen in eine nicht-algorithmisierte Form gebracht werden, um überhaupt sinnvoll von Menschen verstanden und weiter bearbeitet werden zu können. Für diesen Prozess der Rückübersetzung hat Goodings (2003) das Konzept der 
+                    Expansion eingeführt.
+                    1
+
+Derartige Expansionsverfahren systematisch zu beschreiben, ist in den Geisteswissenschaften
+                    2 schwierig, besitzen Primär- und Metadaten
+                    3 hier doch meist komplexe und teils sogar exponentiell expandierende Datenstrukturen. Mehr noch: Forschungsfragen, die den geisteswissenschaftlichen Erkenntnisprozess motivieren, sind typischerweise multidimensional; sie reflektieren Zustände, aber zugleich auch historische Abläufe und Bezüge; sie interagieren i.d.R. dynamisch mit dem Erkenntnisinteresse. Das macht Modellierungen wie Datenanalysen um ein Vielfaches aufwendiger – und dies nicht nur für den Computer, der die primären Eingabedaten verarbeitet und neue sekundäre Daten generiert, sondern vor allem für die Forscher/innen, die beide Datentypen wieder miteinander abgleichen und für ihren Erkenntnisprozess fruchtbar machen wollen.
+                
+Visualisierungen gelten heute disziplinübergreifend als probates Mittel der “Expansion” schwer überschaubarer Primär- und Sekundärdaten in intuitiv erfassbarer Form (Goodings 2003:281). In der disziplinspezifischen Perspektive ist allerdings zugleich zu fordern, dass den methodologischen Besonderheiten der 
+                    Humanities Rechnung getragen wird.
+                    4 Drei spezifische Merkmale sind hier zu berücksichtigen:
+                
+
+Geisteswissenschaftliche Verstehensprozesse sind grundsätzlich organisiert als fortlaufende, dynamische Iteration von empirisch-analytischen und theoretisch-modellierenden Operationen. 
+Geisteswissenschaftliche Interpretationsverfahren sind in der Regel ebenfalls nicht als unilineare ‘Auslegungen’ konzipiert, sondern wirken auf die Ausgangsdaten zurück, indem sie diese anreichern, relativieren oder rekonfigurieren. 
+Geisteswissenschaftliche Verstehensprozesse sind nicht nur in hohem Maße kontextsensitiv, sondern zudem reflexiv: Verstanden werden will nicht nur das je gegebene Untersuchungsobjekt, sondern verstanden werden sollen auch (und in Disziplinen wie der Literaturwissenschaft oder der Philosophie mitunter sogar primär) die Bedingungen und Möglichkeiten des Verstehensprozesses selbst. 
+
+Datenvisualisierungen, die als visuelle Expansionsverfahren 
+                    geisteswissenschaftlich funktional sein sollen, müssen diese drei Prozessmerkmale in Form von methodischen wie technischen Spezifikationen abbilden. Sie müssen vor allen Dingen aber auch von einem übergreifenden Visualisierungskonzept angeleitet werden, das epistemologisch ausgerichtet ist und danach fragt, auf welche Art von Erkenntnis die Geisteswissenschaften eigentlich zielen. 
+                
+Trotz der großen Vielfalt an bestehenden Visualisierungstools und Visualisierungsmetaphern gibt es allerdings bislang kein derartiges, theoretisch reflektiertes 
+                    Visualisierungskonzept, das von einer Typologie der Forschungsfragen wie der methodischen Logik geisteswissenschaftlicher Forschungsprozesse her entworfen wäre. Digitale Visualisierungslösungen werden vielmehr von den Geisteswissenschaften unhinterfragt aus anderen Verwendungskontexten importiert (z. B. Kreisdiagramme, Verlaufskurven, Scatter Plots etc. aus der Statistik) oder bestenfalls als ein ‚irgendwie‘ erstaunlich funktionales Tool angenommen (z. B. Word Clouds). Das aber hat zur Folge, dass die Verstehensmöglichkeiten der Geisteswissenschaften von den je gewählten, vielfach aus evidenzzentriert verfahrenden Disziplinen übernommenen visuellen Metaphern determiniert werden.
+                    5
+
+
+
+Zur Entwicklung einer visuellen Grammatik für hermeneutische Verstehensprozesse
+
+Grundlagen: Interaktivität und methodische Passung
+Gegenstand des Projekts “3DH – dreidimensionale dynamische Datenvisualisierung und Exploration für Digital Humanities-Forschungen” ist die Entwicklung und prototypische Implementierung eines solchen Konzepts der geisteswissenschaftlichen Datenvisualisierung.
+                        6 Mit der ‘dritten Dimension’ ist dabei nicht primär die 
+                        räumliche z-Achse gemeint, sondern grundsätzlicher die einer 
+                        konzeptionellen ‘Achse’, die den methodologischen Erfordernissen der Geisteswissenschaften Rechnung trägt.
+                    
+Grundlegendstes dieser Erfordernisse ist, die bildhafte Veranschaulichung von Daten konsequent bi-direktional zu denken. Die 
+                        interaktive Exploration
+7 geisteswissenschaftlicher Datenkomplexe ist deshalb methodische Leitidee für das im Projekt entwickelte Visualisierungskonzept. Konkret heißt dies: Der Bildschirm muss vom bloßen 
+                        Renderer zum 
+                        Two Way Screen werden, der nicht nur Daten und Datenstrukturen als visuelles Output darstellt, sondern umgekehrt auch deren interaktive Manipulation und Analyse ermöglicht. Damit wird der hermeneutischen Analyse- und Interpretationspraxis Rechnung getragen, in der Verstehen ein “produktives Verhalten” ist (Gadamer 1972:280).
+                    
+Zweites Erfordernis ist, dass hermeneutisch funktionale Visualisierungen neben generischen Anforderungen auch die Besonderheiten geisteswissenschaftlicher Praxis in den 
+                        Einzeldisziplinen berücksichtigen. Für deren je spezifische Datentypen und Modi der Datenaggregation sind neben geeigneten visuellen Metaphern insbesondere disziplinspezifische Verfahren der Daten-Manipulation und -Konfiguration zu bestimmen, die technisch als interaktive Manipulation von Visualisierungen umgesetzt werden können, um datenbasierte Forschungszugänge zu eröffnen und zu unterstützen.
+                    
+Das skizzierte Spannungsverhältnis zwischen den allen Geisteswissenschaften gemeinsamen und den disziplinspezifischen Anforderungen an eine visuelles ‘Expansionskonzept’ hat Grinstein (2012) zur Formulierung einer ‘grand challenge’ motiviert:. Er fordert ein Visualisierungssystem, das auf disziplinspezifische Anforderungen reagiert und die in Hinblick auf die jeweilige Forschungsfrage wie die verfügbaren Daten optimale Visualisierungslösung automatisch generieren kann. Diese Vision mag zwar in der Tat ‘grand’ und unter dem Gesichtspunkt der Implementierbarkeit utopisch anmuten; als konzeptionelle Messlatte für das 3DH Projekt ist sie dennoch richtig. Denn nur Visualisierungslösungen, die den systematischen Zusammenhang zwischen den methodischen Anforderungen eines Forschungsvorhabens und den objektspezifischen Eigenschaften der in diesem Kontext erhobenen und generierten Daten konzeptionell reflektieren, haben zumindest eine theoretische Chance, die von Grinstein verlangten ‘Passungen’ automatisch zu ermitteln.
+                        8
+
+
+
+
+
+Vorgehen und erste Ergebnisse
+                
+Das 3DH-Projekt erforscht den Phänomenbereich ‘Datenvisualisierung’ vor diesem Hintergrund unter drei systematischen Aspekten, nämlich 
+(1) einer Typologie hermeneutischer Routinen, Bedingungen und Zielsetzungen des begriffsorientierten (d.h. natürlich- bzw. fachsprachlich artikulierten) Interpretierens von Daten, die in ihrer für den geisteswissenschaftlichen Verstehensprozess kennzeichnenden Ausprägung zu definieren sind;
+(2) einer Syntax grafischer Strategien, die – je nach Kontextbedingung und Prozessphase – die ‘bottom up’-definierten Grundlagen für ein erkenntnisproduktives visuelles ‘mapping’ der vorgenannten hermeneutischen Operationen auf die jeweils behandelten Primär- und Sekundärdatensets bereitstellen; und 
+(3) einer nach Designprinzipien geordneten Taxonomie konkreter Visualisierungstypen, die als ‘top-down’-Determinanten und epistemologische Paradigmen aufgefasst werden können. Die Designprinzipien werden ihrerseits nicht auf die Funktion der bloßen Steuerung visueller Datenrepräsentation am Ende eines geisteswissenschaftlichen Arbeitszyklus reduziert; sie sollen vielmehr als eigenständige, komplementäre Verfahren nicht-sprachlicher, bildgebundener Verstehensoperationen aufgefasst werden. 
+Die Bearbeitung der drei Aspekte soll neben der theoretischen Konzeptentwicklung auch zur Erarbeitung einer visuellen Grammatik für geisteswissenschaftliche Datenvisualisierung führen.
+Im ersten Schritt haben wir eine Reihe exemplarischer Use Cases der DH-Forschung
+                    9 betrachtet. In Anlehnung an Unsworths ‘scholarly primitives’ (Unsworth 2000) wurde untersucht, welche epistemologischen Prinzipien dabei für die Deutung und interaktive Bearbeitung von geisteswissenschaftlichen Daten wichtig waren. Diese Prinzipien können tabellarisch als Gegensatzpaare dargestellt werden:
+                
+
+
+Unreliability (inconsistency)
+Reliability
+
+
+Contradiction
+Consent
+
+
+Ambiguity
+Definiteness
+
+
+Uncertainty
+Plausibility
+
+
+Incompleteness (partial knowledge)
+Comprehensiveness
+
+
+Analogy
+Identity
+
+
+Probability
+Factuality
+
+
+Salience
+Speculativeness
+
+
+Tabelle 1: epistemologische Gegensatzpaare
+Jedes dieser Gegensatzpaare markiert eine Dimension hermeneutischer Praxis, in der datenbasierte Erkenntnisprozesse in der Regel nicht auf normativ geregelte finite Auslegungen von Bedeutung und Wert, sondern auf kontextsensitive, skalierte dynamische Zuschreibungen von Informationsgehalt und Relevanz abzielen. 
+Als epistemologische Matrix bildet diese Tabelle zugleich die Grundlage für die Entwicklung einer ‘Grammar of Graphics’ in Anlehnung an Bertin (1983) und Wilkinson (2005). Wie von Satyanarayan et al. (2016) vorgeschlagen, müssen diese Ansätze allerdings um den Aspekt der Interaktivität erweitert werden. Graphische Merkmale sollen entsprechend durch sog. “Aktivatoren” visuell modalisierbar werden.
+                    10 Der Grad an Unsicherheit einer spezifischen hermeneutischen Zuschreibung könnte z.B. visuell ausgedrückt werden, indem am Bildschirm 
+                    nachträglich – also erst im Zuge der geisteswissenschaftlichen Dateninterpretation – die Transparenz einer Grafik interaktiv manipuliert und zugleich als Datenwert in der zugrundeliegenden Datentabelle erfasst wird. 
+                
+Die so erweiterte visuelle Grammatik soll in eine Notation überführt werden, die möglichst allgemein verständlich, generisch und unabhängig von einer bestimmten Programmiersprache implementierbar sein muss; aufgrund der großen Verbreitung von XML in den Digital Humanities ist eine zusätzliche XML-Notation geplant. Daneben sollen für eine Reihe exemplarischer hermeneutischer Verstehens- und Interpretationsprozesse die systematischen Zusammenhängen zwischen Datenstrukturen und geeigneten Visualisierungsprinzipien erforscht und adäquate Vorschläge für eine (oder mehrere) Visualisierungen erarbeitet werden.
+Die Implementierung der entwickelten Visualisierungen wird eine webbasierte Browser-Anwendung sein, die kollaboratives Arbeiten ermöglicht und über ein Web Service Interface mit anderen Systemen verbunden werden kann. Die Spezifikation der Visualisierungen mit Hilfe einer von einer Grafik-Engine unabhängigen Grammatik erlaubt prinzipiell beliebige Ausgabeformate. Aufgrund der Interaktivität und Webfähigkeit ist zunächst SVG als Format geplant.
+
+
+
+Ausblick
+                
+Auch wenn die weiteren Schritte zur Erarbeitung der visuellen Grammatik und der prototypischen Implementierung geisteswissenschaftlich funktionaler Visualisierungsansätze vorgezeichnet scheinen: Die Frage nach der methodischen Adäquatheit des Vorgehens bleibt für unser Vorhaben weiterhin virulent.
+So stehen bei den epistemologischen Gegensatzpaaren in Tabelle 1 bislang logische Gegensätze des Typs A und non-A (z. B. Reliablity vs. Unreliability) und phänomenologische Gegensätze (z. B. Probability vs. Factuality) nebeneinander. Noch ist nicht geklärt, ob es sich hier um Kategorienfehler im analytischen Sinne handelt, oder ob nicht gerade dieses Nebeneinanderstehen kategorial unterschiedlicher Konzepte dem hermeneutischen Prozess gerecht wird. Welche Konsequenzen hätte es zum Beispiel für ein geisteswissenschaftliches Visualisierungskonzept, wenn sich strikt logische, binäre Modellierungen hermeneutischer Prozesse sogar als prinzipiell ungeeignet erweisen?
+Unter diesem kritischen Vorbehalt erscheinen zum einen konkrete, etablierte visuelle Verfahren in einem neuen Licht. Kann zum Beispiel Shneidermans (1996) bekanntes 
+                    Overview, Zoom, Details on Demand-Mantra für das geisteswissenschaftliche Arbeiten, das auf exemplarisches Sinnverstehen und nicht auf möglichst solide fundierte empirische Übersicht ausgerichtet ist, überhaupt Gültigkeit besitzen? 
+                
+Erst das Nachdenken über die Erfordernisse eines geisteswissenschaftlichen Visualisierungs
+                    konzepts macht es zum anderen möglich, die epistemologische Funktion von Visualisierungen jenseits der bloßen Repräsentation von Datenpunkten auf einem Bildschirm zu begreifen. So gesehen steht die Praxis der Visualisierung als Expansion bzw. ‘Rückübersetzung’ und als Vermittlung zwischen Abstraktion und Phänomenologie in der philosophischen Tradition der 
+                    Aisthesis - ein Aspekt, auf den Wilkinson (2005:1) verweist, wenn er feststellt: “Aesthetics, in the original Greek sense, offers principles for relating sensory attributes (color, shape, sound, etc.) to abstractions.”
+                
+

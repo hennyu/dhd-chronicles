@@ -1,0 +1,75 @@
+
+            
+                Einleitung
+                Aufgrund ihrer poetischen und auch manchmal geradezu abstrusen Sprachverwendung wurde die Alchemie lange Zeit nicht als Wissenschaft ernst genommen. Ihre eigentümliche Fachsprache ist durch eine Vielzahl eigentümlicher kryptographischer Stilmittel gekennzeichnet, darunter die sogenannten 
+                    Decknamen. Dieser Beitrag schlägt einen Workflow vor, wie solche 
+                    Decknamen im Kontext digitaler Edition halbautomatisch gefunden und annotiert werden können. Außerdem wird vorgeschlagen, sie in einem Wissensorganisationssystem inhaltlich zu erschließen, mit dem später deren Interpretation unterstützt werden kann.
+                
+            
+            
+                Zielsetzung und Problemdefinition
+                Der Übergang von alchemischer Sprache zu chemischer Nomenklatur ist allgemein als zentrales Element der Chemiegeschichte anerkannt. Die 
+                    Méthode de nomenclature chimique (1787) wird mitunter sogar erst als die Geburtsstunde der eigentlichen Chemie im Zuge einer ‘Chemical Revolution’ angesehen (Lefèvre 2018). Neuere Studien der Alchemiegeschichte zeigen jedoch, dass auch hinter der vormals häufig als obskur und sinnfrei bezeichneten Sprache der Alchemie valide chemische Erkenntnisse standen (Principe 2013). Die alchemische Sprache selbst bleibt aber wenig systematisch erforscht. Lange war die Forschung durch die von Umberto Eco popularisierte Theorie von der ‘hermetischen Semiose’ (Eco 2016) dominiert, also der Vorstellung, alchemische Decknamen lösten einen endlosen Semioseprozess aus, der nie zu einem Ende kommt, weil hinter dem sogenannten ‘alchemischen Geheimnis’ kein Inhalt stecke (Lippmann 1919; Principe 1992; Newman 1996). Neuere Studien im Zuge der ‘New Historiography of Alchemy’ haben allerdings gezeigt, dass gerade diese Grundannahme jeglicher früherer Theorien zur alchemischen Sprache vor deren Hintergrund nicht mehr haltbar ist (Newman / Principe 1998; Principe / Newman 2001; Martinón-Torres 2011). Das Konzept der ‘alchemischen Sprache’ muss daher einer grundlegenden Revision unterzogen werden. Dieser Beitrag schlägt eine Möglichkeit vor, wie digitale Methoden dazu verwendet werden können. 
+                
+                Die verrätselte, poetische Sprache der Alchemie inspiriert seit jeher esoterische Interpretationen. Unter einer Vielzahl unterschiedlichster kryptographischer Stilmittel sind vor allem die sogenannten Decknamen bekannt, die – oftmals in Form mythologischer Gestalten – von Alchemist:innen und Chymiker:innen anstatt chemischer Formeln verwendet wurden. Dieses Stilmittel kann als (mehr oder weniger metaphorisches) Wortsubstitutionsverfahren verstanden werden, bei dem Begriffen eine alchemische Fachbedeutung zugeschrieben wird, die mit deren sonstiger linguistischer Bedeutung nichts zu tun haben. Dabei entsteht Polysemie, wenngleich die ursprüngliche und die alchemische Bedeutung für gewöhnlich eine gewisse Übereinstimmung in ihren Eigenschaften aufweisen. Diese Sonderbedeutung dieser in linguistischer Hinsicht oftmals allgemein bekannten Wörter (z.B. „der grüne Löwe“) erschließt sich allerdings nur all jenen, die über das entsprechende enzyklopädische Kontextwissen verfügen.
+                
+                Seit den 1990er Jahren hat sich infolge der bereits genannten Pioniersarbeiten von Lawrence Principe und William Newman in der Alchemieforschung die sogenannte ‘New Historiography of Alchemy’ durchgesetzt – ein Forschungsansatz, der versucht alchemische Decknamen chemisch zu lesen und die Lesung über experimentalarchäologische chemische Experimente zu verifizieren. Dieser naturwissenschaftliche Zugang zu alchemischen Texten, die uns aufgrund ihrer eigenartigen Sprache heutzutage mitunter fremd, gar unwissenschaftlich anmuten, hat dazu beigetragen, nicht nur unsere Vorstellung von alchemistischen Sprechweisen, sondern das Alchemiebild im Allgemeinen zu revidieren, indem er chemische Leistungen von Alchemist:innen und Chymikerinnen feststellbar macht. Doch neben der chemischen Nachstellung historischer Rezeptvorschriften können auch digitale Methoden zur Erforschung alchemischer Decknamen beitragen: Das vorliegende Projekt hat sich mit der Frage nach der Funktionsweise alchemischer Sprache befasst. Es hatte zum Ziel, eine digitale Methode zur automatisierten semantischen Annotation und halbautomatisierten Disambiguierung des Stilmittels der sogenannten Decknamen zu entwickeln. Es beleuchtete das Konzept der alchemischen Sprache, indem es sie im Kontext eines digitalen Korpus mithilfe von Machine Reasoning analysierbar machte. Das Korpus der Druckwerke des deutschen Iatrochymikers Michael Maier (1568–1622) (Leibenguth 2002; Tilton 2003) wurde mithilfe automatisierter Annotation und Disambiguierung in Bezug auf seine Decknamenverwendung untersucht; einerseits mithilfe eines Semantic Web Wissensorganisationssystem unter der Verwendung von SKOS und RDFS sowie andererseits mithilfe automatisierter Annotation semanitscher Ambiguität. Teil der Arbeit war neben der Entwicklung eines digitalen Analysetools auch, Einsichten in die Funktionsweise alchemischer Sprache zu vermitteln. Damit steht die Arbeit in der Tradition der durch William Newman und Lawrence Principe begründeten ‘New Historiography of Alchemy’, die sich zum Ziel gesetzt hat, durch Aufschlüsseln alchemischer 
+                    Decknamen überholte Vorstellungen über Alchemie/Chymie und ihre Sprache zu revidieren.
+                
+            
+            
+                Stand der Forschung
+                Michael Maiers Emblemwerk 
+                    Atalanta fugiens (1617/18) erfreut sich seit den 1960er Jahren erhöhter Aufmerksamkeit der Forschungsgemeinschaft, doch der Rest seines Korpus bleibt weitgehend unerschlossen. Um die Jahrtausendwende kritisierte Erik Leibenguth große Teile der Forschungsgeschichte zu Maier als ‘Klitterpublizistik.’ Angesichts des vermehrten Auftretens solcher Beanstandungen tritt die textuelle Tiefenerschließung des Maier’schen Œuvres als dringendes Desiderat der Maierforschung zutage. Doch stellt das Gesamtopus Maier’scher Drucke mit seinen rund 3500 Seiten lateinischen Texts eine ausgesprochen große Aufgabe dar, sofern dieses allein durch menschliches close reading bewältigt werden soll. Text Mining könnte die Antwort auf die beklagten Missstände sein.
+                
+                Alchemische Texte werden mehr und mehr digitalisiert, so auch die Maiers. Die Digital Humanities beginnen sich der Alchemie zuzuwenden, was sich in Bezug auf Michael Maier besonders am jüngst abgeschlossenen 
+                    Furnace and Fugue-Projekt gezeigt hat, bei dem eine multimediale digitale Edition der 
+                    Atalanta fugiens erstellt wurde (Nummedal / Bilak 2019). Einige digitale Editionen wurden bereits für alchemische Texte umgesetzt, doch wurde das digitale Medium dabei zumeist lediglich als leicht zugängliche Plattform angesehen, über die Alchemieforschung schneller rezipiert werden kann und öffentlichkeitswirksamer wird. In seiner Prognose bezüglich der Zukunft der Alchemieforschung erwähnt Martinón-Torres zwar ‘digital resources’, aber nur in Bezug auf ‘primary sources’. Die Möglichkeit, digitale Methoden zur 
+                    Analyse statt zur bloßen Bereitstellung alchemischer Texte zu verwenden, scheint ihm 2011 noch nicht denkbar (Martinón-Torres 2011, 233).
+                
+                
+                    Furnace and Fugue enthält bereits einige digitale Tools, die eine dynamische Interaktion mit den Werkinhalten Maiers erlauben. Diese dienen aber vielmehr dazu, als interaktive Ergänzungen zu rein klassischen 
+                    close reading-Ansätzen verwendet zu werden. Methoden der quantitativen Textanalyse bedient sich 
+                    Furnace and Fugue allerdings noch nicht. Die Interpretation von Begriffen bleibt weiterhin ausschließlich den wissenschaftlichen Aufsätzen vorbehalten. Vorliegendes Projekt setzte sich zum Ziel, digitale Methoden zur automatisierten Disambiguierung von alchemischen 
+                    Decknamen im Korpus der Druckwerke Michael Maiers anzuwenden.
+                
+            
+            
+                Methode und Forschungsfragen
+                Automatisierte Annotation wurde unter Hinzunahme eines formalen Wissensmodells zu einer quantitativen Textanalyse bestimmter durch eine Wissensressource im Vorhinein spezifizierter Begriffe alchemischen Fachvokabulars und ihrer Beziehungen untereinander verwendet. Das Wissensorganisationssystem 
+                    Knowledge Organization System wurde mit dem Semantic Web-Vokabular SKOS (
+                    Simple Knowledge Organization System) und RDFS (
+                    Resource Description Framework Schema) kodiert. Teilautmatisiert gefunden werden konnten alchemische 
+                    Decknamen mitihilfe von Zipf‘s law, da es sich dabei um Wörter vom Typ der Realia handelt. In weiteren Schritten mussten diesen im KOS Properties zugeordnet werden, die für die Interpretation relevante Zusatzinformationen enthalten.
+                
+                Zur Funktionsweise alchemischer Sprache wurden in der Vergangenheit bereits einige Überlegungen beigetragen, doch sind diese meist theoretischer Natur und gehen über Forschungstopoi kaum hinaus, weswegen sie für konkrete Textanalysen nicht fruchtbar zu machen sind (Schütt 1994; Duncan 1981). Bereits bestehende Ressourcen zu alchemischen Begrifflichkeiten waren zur Information über Alchemie, aber nicht zur Annotation konkreter alchemischer Texte gedacht, wie z.B. das Alchemie-Lexikon (Priesner / Figala 1998) oder der Alchemie-Thesaurus der HAB Wolfenbüttel, der der Verschlagwortung und Erschließung alchemischer Buchbestände diente (Frietsch 2017, 2021). Die bisher vorhandenen Ressourcen erlaubten zwar ein Einarbeiten oder Vorinformieren über Alchemie und gewisse alchemische Konzepte durch Einlesen, waren aber nicht für eine automatisierte Annotation konkreter alchemischer Texte geeignet. Die dort vorkommenden Einträge sind häufig allgemeine Überbegriffe, die einerseits zur automatisierten Annotation von Texten zu unkonkret sind, andererseits finden sich die darin enthaltenen Einträge nicht als Zeichenketten im konkreten Text.
+                
+                
+                    Out-of-the-box verfügbare Text-Mining- oder Distant-Reading-Methoden wie etwa Topic Modelling haben sich als nur sehr beschränkt zur Beantwortung alchemiegeschichtlicher Fragestellungen geeignet herausgestellt, besonders wenn es sich um die Analyse komplexer Decknamen handelt, wie z.B. im Fall des ‘Mercurius’. Methoden, die auf Wortzählungen (
+                    bags of words) basieren, sind nicht in der Lage, solche Konzepte adäquat zu disambiguieren, denn “quantitative research …provides 
+                    data, not interpretation” (Moretti 2005). Das erstellte Wissensorganisationssystem wird also verwendet, um Vorkommnisse der darin enthaltenen Begriffe im Korpus Maiers automatisiert zu annotieren. Dadurch entsteht ein Begriffsnetzwerk, das es wiederum erlaubte, Konkordanzen zu erstellen, in denen nicht nur der zu betrachtende Begriff als 
+                    Keyword in Context zugänglich ist, sondern auch andere bereits im vorherigen Schritt annotierte Konzepte vorkommen. So entsteht ein ‘Decknamen-Kontext’: Dabei handelt es sich um ein 
+                    Keyword in Context (KWIC), bei dem nicht der linguistische Kontext, sondern die umliegenden Decknamen aufgeschlüsselt werden. So treffen wir z.B. im Text auf den String ‘Mercurium’, welcher auf das Konzept ‘Mercurius’ verweist. Dieses kann in alchemischer Literatur sowohl chemische als auch mythologische oder historische Kontexte haben. Das 
+                    Decknamen-KWIC zeigt an einem vereinfachten Beispiel, welche Kontexte im umliegenden Text besonders vorwiegen und kann somit eine mögliche Disambiguierung anbieten. Folgend ein Beispiel einer Konkordanzansicht in zu Anschauungszwecken vereinfachtem XML:
+                
+                <example ref="Maier.Arcana.191">
+                tum, aut per <deckname>Lunam</deckname>, <deckname>argentum</deckname>,
+                per <termInQuestion>Mercurium</termInQuestion>
+                <deckname>hydrargyrum</deckname>, per <deckname>Saturnum</deckname>
+                <deckname>plumbum</deckname>, per <deckname>Iovem</deckname>, <deckname>stannum</deckname>,
+                per <deckname>Martem</deckname> <deckname>ferrum</deckname>, communia intellexis
+                </example>
+                Hier zeigt sich an einem einfachen Beispiel, dass der in Frage stehende Term ‘Mercurius’ hier die Kontexte ‘Planeten’ (
+                    Luna, Saturn, Iupiter, Mars), ‘Metalle’ (
+                    argentum, hydrargyrum, plumbum, stannum, ferrum) und ‘Mythologie’ (
+                    Saturn, Iupiter, Mars) aufweist. Da aber alle umliegenden 
+                    Decknamen Planeten oder Metalle sein können, die mit Planetennamen angesprochen werden, ist es sehr wahrscheinlich, dass mit ‘Mercurius’ hier die chemische Substanz gemeint ist, keine mythologische Figur.
+                     Wenn die Annotationen vorhanden sind, kann diese Überprüfung maschinell erfolgen. Weiterführend konnten zudem die Eigenschaften besonders wichtiger Begriffe in RDFS-Tripeln modelliert werden, wodurch Verbindungen zu anderen Konzepten automatisch erkannt werden können. Folgend ein Beispiel zu der Verbindung von Rot und Gold, die in der Alchemie den Zusammenhang zwischen dem roten Stein der Weisen und der Goldherstellung beschreibt, repräsentiert als RDFS-Tripel:
+                
+                :PhilosophersStone :hasColor :red.
+                :red :hasChemicalProperty :tints.
+                :tints :givesPhysicalProperty :citrinitas.
+                :Gold :hasColor :citrinitas.
+                Die hier vorzustellende jüngst abgeschlossene Dissertation hat sich mit der Frage nach der Funktionsweise alchemischer Sprache beschäftigt. Dabei setzte sie sich zum Ziel, eine digitale Methode zur automatisierten polysemantischen Annotation und halbautomatisierten Disambiguierung des Stilmittels der sogenannten Decknamen zu entwickeln. Ein solcher Algorithmus beleuchtet das Konzept der alchemischen Sprache aus einer neuen Perspektive, indem er sie im Kontext eines digitalen Korpus mithilfe von Machine Reasoning im Sinne einer Sonderform der distributionellen Semantik analysierbar macht. Sie hatte sich zur Aufgabe gesetzt, das Korpus der Druckwerke des deutschen Iatrochymikers Michael Maier (1568–1622) mithilfe automatisierter Annotation und Disambiguierung in Bezug auf seine Decknamenverwendung zu untersuchen; einerseits mithilfe eines Semantic Web Wissensorganisationssystems unter der Verwendung von SKOS und RDFS sowie andererseits mithilfe automatisierter Annotation semantischer Ambiguität. Die Dissertation wurde im Mai 2021 abgeschlossen. Das Ergebnis wird als digitale Edition publiziert werden.
+            
+        

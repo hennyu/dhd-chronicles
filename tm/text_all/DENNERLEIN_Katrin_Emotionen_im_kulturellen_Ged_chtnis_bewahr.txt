@@ -1,0 +1,119 @@
+
+            
+                Einleitung
+                Zwischen dem Ende des Dreißigjährigen Krieges und dem Anfang der Restaurationsepoche entwickelt sich das Drama rasant und wird im deutschsprachigen Gebiet zur publikumswirksamsten Gattung dieses Zeitraums (Baumann 1985; Jahn 1996; Krämer 1998; Urchueguía 2015; Meid 2009: 327-501). Es wird zu einer ‚Schule der Affekte’ (
+                    palaestra affectum, Rotermund 1972: 25), in der man lernen soll, gewünschte Emotionen zu empfinden und mit unerwünschten wie Angst, Neid oder Leid angemessen umzugehen (Schings 1971; Schings 1980; Wiegmann 1987; Meier 1993; Schulz 1988; Zeller 2005; Lukas 2005; Schonlau 2017). Heutige Konzepte von Emotionen bilden sich dabei erst nach und nach heraus, so dass sich einzelne Figurenaussagen und die Motivation der Handlung für Rezipient*innen der Gegenwart nicht immer unmittelbar erschließen. Die derzeitigen Bemühungen um eine digitale Konservierung von Dramentextbeständen und ihre Analyse müssen folglich um eine Erschließung der Emotionsstrukturen ergänzt werden, wenn dieser Teil des kulturellen Erbes so im kulturellen Gedächtnis konserviert werden soll, dass er auch verständlich bleibt (vgl. zum Begriff des kulturellen Erbes Tauschek 2013). Gemeint ist dabei nicht ein Alltagsverständnis von Gedächtnis im Sinne dessen, „was das Bewußtsein bewußt erinnert" (Luhmann 1999: 44). Es geht vielmehr um das Gedächtnis sozialer Systeme, das durch Kommunikation in der aktuellen Gegenwart benutzt und reproduziert wird. Plädiert wird vorwiegend dafür, die Emotionen in Dramen des Untersuchungszeitraumes im Speichergedächtnis zu bewahren (vgl. Assmann 2003: 133 ff.). Für das Funktionsgedächtnis, das nur das aktuell Anschlussfähige und Zukunftsorienterte verfügbar hält, sind jedoch zumindest diejenigen Emotionsverteilungen und -verläufe von Interesse, die auch heute noch die Dramaturgie von Dialogformaten bestimmen. 
+                
+                Literaturwissenschaftler haben bisher schwerpunktmäßig wenige Texte einzelner Gattungen hinsichtlich der Frage untersucht, welche emotionale und rationale Wirkung durch sie erreicht werden soll (Pikulik 1965; Sauder 1974-1980; Schings 1971; Nolting 1986). Nur wenige Wissenschaftler*innen erforschen Emotionen der Figuren selbst (Anz 2011; Schulz 1988; Mönch 1993, 344–350; Schonlau 2017). Das führt dazu, dass sehr wenig darüber bekannt ist, welche Figurenemotionen in Dramen dargestellt werden und wann sie im Handlungsverlauf zum Einsatz kommen.
+                
+                Obwohl die Untersuchung von Gefühlen und Emotionen in den letzten Jahren in der computergestützten Literaturwissenschaft für zahlreiche Textgenres an Bedeutung gewonnen hat (siehe Mohammad 2011; Nalisnick/Baird 2013; Reagan et al. 2016; Zehe et al. 2016; Schmidt/Burghardt 2018; Mc Hardy/Adel/Klinger 2019, Kim/Klinger 2019; Jacobs 2019; Pianzola/Rebora/Lauer 2020), wurden speziell emotionale Aspekte in Dramentexten bisher nur vereinzelt untersucht. Der Fokus lag dabei auf der Analyse von Valenz oder Polarität, d.h. der positiven respektive negativen Konnotation von Sätzen und Textteilen, und zumeist auch auf einzelnen Autoren bzw. Werken (Mohammad 2011; Nalisnick/Baird 2013; Schmidt/Burghardt 2018; Schmidt/Burghardt/Dennerlein 2018a; 2018b; Schmidt/Burghardt/Wolff 2019; Schmidt/Burghardt/Dennerlein/Wolff 2019a; 2019b). Die Untersuchung von Emotionsverteilungen und -verläufen in einzelnen Texten, in verschiedenen Genres und Epochen ist das Ziel des Projekts „Emotions in Drama“, das seit April 2020 Emotionen in Dramen dieses Zeitraums in einem kombinierten Verfahren aus händischer Annotation und ihrer Vorhersage mittels Deep Learning-basierter Sprachmodelle erforscht. Im Folgenden sollen konzeptionelle Überlegungen und erste Ergebnisse dieses Projekts vorgestellt werden.
+                
+            
+            
+                Emotionsset
+                Im Anschluss an Schwarz-Friesel verstehen wir Emotionen als 
+                
+                    [...] mehrdimensionale, intern repräsentierte und subjektiv erfahrbare Syndromkategorien, die sich vom Individuum ichbezogen und introspektiv-geistig sowie körperlich registrieren lassen, deren Erfahrungswerte an eine positive oder negative Bewertung gekoppelt sind und die für andere in wahrnehmbaren Ausdrucksvarianten realisiert werden (können). (Schwarz-Friesel 2007: 55).
+                
+                Der Ausdruck von Emotionen kann sich physiologisch, sprachlich oder im Verhalten zeigen. Wir annotieren die von der Figur gemeinte eigene oder zugeschriebene Emotion und nicht diejenigen Emotionen, die Produzenten haben oder die bei Rezipienten ausgelöst werden sollen. Diese gemeinten Emotionen können von den explizit in der Sprache repräsentierten abweichen, so dass bei der Annotation oftmals mehrstufige Schlussprozesse und kontextabhängige Interpretationen nötig sind.
+                
+                Im Untersuchungszeitraum gibt es mehrere historische Kategoriensysteme, die oftmals eine Mischung aus Tugenden und Affekten aufweisen (Zeller 2005; Grimm 2010). Um die Veränderung in der Gewichtung von Emotionen im Untersuchungszeitraum fassen zu können, ist es nötig, solchermaßen von diesen Konzepten zu abstrahieren, dass sie sowohl für den gesamten Zeitraum anwendbar sind als auch Umgewichtungen und Entwicklungen abbilden können. Deshalb haben wir uns dafür entschieden, die Oberkategorien 
+                    Angst, 
+                    Leid, 
+                    Freude und 
+                    Zuneigung zu verwenden und diese auszudifferenzieren. Die Notwendigkeit der Ausdifferenzierung sei an einigen Beispielen kurz erläutert: Die Kategorie des Leids, die zweifellos zentral für das gesamte europäische Drama ist, ist um die neu aufkommende Kategorie des Mitleids zu ergänzen, die mit Lessing ab der Mitte des 18. Jahrhunderts zur Zentralkategorie wird (Schings 1980). Ähnlich verhält es sich mit Liebe, die um zwei Kategorien zu ergänzen ist. Einerseits die der Lust, die bspw. im Barockdrama oder später im Drama des Sturm und Drang eine zentrale Rolle bei der Abwertung von Figuren spielt. Andererseits ist hier eine Oberkategorie nötig, die mit ‚Zuneigung‘ betitelt ist, um auch Freundschaft einbeziehen zu können. Diese Emotion ist zentral für die Anthropologie der Aufklärung und zusammen mit Mitleid und der Abwesenheit von Lust vermutlich charakteristisch für den Epochenumbruch vom barocken zum aufklärerischen Drama (Sauder 1974-1980; Lukas 2005). Hinzugekommen sind zudem eine Kategorie der Ablehnung, die Ärger und Wut/Abscheu beinhaltet, weil sie zentral für ein grundlegendes Verständnis der Handlung ist. Die Kategorie der ‚emotionalen Bewegtheit’ schließlich erscheint zusätzlich nötig, um starke gefühlsmäßige Bewegtheit, die aber inhaltlich nicht genauer spezifiziert wird, auszeichnen zu können. Ab und an wissen die Figuren selbst nicht, was sie fühlen (sollen) und/oder schwanken zwischen mehreren Gefühlen. 
+                
+                Diese Kategorien entsprechen, mit leicht abweichenden Benennungen, auch anderen Emotionstaxonomien, die in der Linguistik und in der Literaturwissenschaft verwendet werden (Schwarz-Friesel 2007; Flüh 2020). Die meisten Emotionsrepräsentationen im Natural Language Processing (NLP) folgen Kategoriensystemen der Psychologie, zumeist den Basisemotionen von Plutchik (Plutchik 1980; Wood et al. 2018a; 2018b). Basal sind hier bspw. Angst, Wut, Freude und Trauer, die wir auch verwenden, aber auch einige andere, die wir nicht als Hauptemotionsbezeichnungen übernommen haben, wie ‚Vertrauen‘, ‚Vorfreude‘, Überraschung‘ und ‚Ekel‘. Diese Emotionen können in unserem Schema ebenfalls annotiert werden, sind jedoch in andere Konzepte integriert. Die ‚Vorfreude‘ ist der ‚Freude‘ eingemeindet, ‚Überraschung‘ der ‚emotionalen Bewegtheit‘, ‚Ekel‘ ist in der Form von Abscheu im Sinne starker Ablehnung berücksichtigt. 
+                Das Annotationsset setzt sich nach jetzigem Stand wie folgt zusammen (+/-: Polarität):
+                
+                
+                    Emotionen der Zuneigung
+                        
+                            Lust (+)
+                            Liebe (+)
+                            Freundschaft (+)
+                            Verehrung, Bewunderung (+)
+                        
+                    
+                    Emotionen der Freude
+                        
+                            Freude (+)
+                            Schadenfreude (+)
+                        
+                    
+                    Emotionen der Angst
+                        
+                            Angst (-)
+                            Verzweiflung (-)
+                        
+                    
+                    Emotionen der Ablehnung
+                        
+                            Ärger (-)
+                            Abscheu, Wut, Hass (-)
+                        
+                    
+                    Emotionen des Leids 
+                        
+                            Leid (-)
+                            Mitleid (-)
+                        
+                    
+                    Emotionale Bewegtheit (keine Polarität)
+                
+            
+            
+                Annotiertes Korpus
+                Bisher wurden in den folgenden 11 Dramen aus dem GerDracor-Korpus (Fischer et al. 2019) und aus einem Korpus von im deutschsprachigen Gebiet sehr erfolgreichen Werken des 
+                    Leopoldstädter Theaters in Wien (Kasperl-Stücke) Emotionen ausgezeichnet. Diese Dramen sind repräsentativ für das noch weitgehend kanonische Gesamtkorpus, enthalten jedoch mit dem 
+                    Mandolettikrämer und dem 
+                    Postzug auch bereits zwei Werke außerhalb des Kanons:
+                
+                
+                    Luise Adelgunde Victorie Gottsched: Das Testament (1745), Komödie
+                    Johann Elias Schlegel: Canut (1746), Tragödie 
+                    Christian Fürchtegott Gellert: Die zärtlichen Schwestern (1747), Komödie
+                    Johann Gottlieb Benjamin Pfeil: Lucie Woodvil (1757), Tragödie 
+                    Joachim Wilhelm von Brawe: Der Freigeist (1758), Tragödie 
+                    Gotthold Ephraim Lessing: Minna von Barnhelm, oder das Soldatenglück (1767), Komödie
+                    Cornelius von Ayrenhoff: Der Postzug (1769), Komödie
+                    Ferdinand Eberl: Kasperl' der Mandolettikrämer (1789), Komödie [Libretto]
+                    Friedrich Schiller: Kabale und Liebe (1784), Tragödie
+                    August von Kotzebue: Menschenhass und Reue (1790), Komödie
+                    Johann Wolfgang Goethe: Faust. Eine Tragödie (1807), Tragödie
+                
+                Insgesamt haben wir bislang 12.364 Annotationen mit einer durchschnittlichen Länge von ca. 25 Tokens gesammelt. Jeweils zwei Annotator*innen haben diese Dramen mit Emotionsinformationen angereichert. Die Übereinstimmung der Annotator*innen (
+                    Inter-Annotator Agreements) entsprechen Kappa-Werten auf der Ebene der Einzelemotionen zwischen 0,3 und 0,4 je nach Drama, was einer schwachen bis moderaten Übereinstimmung entspricht (Landis/Koch 1977). Für die Polaritätsklasse erhöhen sich die Werte auf 0,4-0,6. Diese vergleichsweise geringen Übereinstimmungswerte sind üblich für die Annotation historischer und literarischer Texte (Alm/Sproat 2005; Sprugnoli et al. 2016; Schmidt/Burghardt/Dennerlein 2018b; Schmidt/Burghardt/Dennerlein/Wolff 2019b; Schmidt et al. 2019). Es ist geplant, die Werte durch kontinuierliche Verbesserung der Annotationsanleitung und Schulung der Annotator*innen noch weiter zu verbessern. Ausgezeichnet werden Textabschnitte von variabler Größe, die von einem Wort bis zu mehreren Sätzen reichen, weil sich der Ausdruck von Emotionen auf unterschiedlich lange Textabschnitte beziehen kann. Neben Emotionen werden auch Quell- und Zielinformationen annotiert. Weiterführende Informationen zur Annotation finden sich bei Schmidt/Dennerlein/Wolff (2021b; 2021c).
+                
+            
+            
+                Ergebnisse
+                
+                    
+                    Abb. 1: Absolute und prozentuale Verteilung der annotierten Emotionen.
+                
+                Die am häufigsten annotierte Einzelemotion ist Leid (vgl. Abb. 1). Dies erscheint zunächst verwunderlich, weil das Verhältnis von Tragödien zu Komödien im annotierten Korpus mit fünf zu sechs eine positivere Emotion als Hauptemotion erwarten lässt. Zu bedenken ist jedoch, dass Komödien vor dem obligatorischen guten Ende (Kraft 2011) oftmals beträchtliche Hindernisse enthalten, so dass negative Emotionen eben doch eine zentrale Rolle spielen.
+                Für Verlaufsanalysen der Emotionsannotationen wird jedes Drama nach der Zeichenzahl in fünf gleiche Teile (Quintile) geteilt und die Zahl an Emotionsannotationen pro Kategorie und pro Quintil berechnet. Das Verfahren der Aufteilung in Quintile wird in Anlehnung an eine fünfaktige Struktur gewählt, die zahlreiche Dramen, aber eben nicht alle aufweisen. Es ermöglicht normalisierte Vergleiche von Trends in Dramen, die unterschiedliche viele Szenen und Akte haben. Zum Vergleich der Genres (Tragödien vs. Komödien) wird pro Quintil der Durchschnitt aus den jeweiligen Annotationen aller Dramen eines Genres gebildet. 
+                Wirft man nun einen Blick auf die Verteilung der Emotion ‚Leid‘ im Handlungsverlauf der Dramen, so sieht man, dass diese Emotion in Tragödien durchschnittlich genau doppelt so häufig annotiert wurde wie in Komödien, wie an der y-Achse der Abb. 2 abzulesen ist (durchschnittlich 27-32 Textstellen mit Leid in der Komödie, 45-60 in der Tragödie): 
+                
+                    
+                    Abb. 2: Verlauf der Annotationen der Emotion ‚Leid‘ in Tragödien und Komödien.
+                
+                Zudem kann man in Abb. 2 sehen, dass Leid zu Beginn und am Ende von Tragödien gehäuft auftritt. In der Mitte der Dramen besteht jedoch offensichtlich Hoffnung auf eine Verbesserung der Situation und die Figuren empfinden weniger Leid. In Komödien erkennen wir hingegen nach einer kurzen Abnahme von Leid einen leidvollen Höhepunkt, der jedoch zugleich der Wendepunkt zum Besseren, weniger leidvollen Geschehen ist. 
+                Die Tatsache, dass Leid auch in Komödien die wichtigste Emotion ist, hat sicher auch damit zu tun, dass es sich bei den von uns annotierten Komödien vorwiegend um rührende und satirische Komödien handelt, in denen Zustände und Verhaltensweisen kritisiert und auch einige Tränen über leidvolle Ereignisse vergossen werden. Erst zum Schluss hin fügt sich alles zu einem unverfhofft freudigen Ausgang. Diese Thesen über den Handlungsverlauf in der Komödie lassen sich auch durch die Verlaufskurve der Emotion ‚Freude‘ belegen. In Komödien ist in der Mitte der Handlung, wenn sich die Verwirrungen und Probleme häufen, Freude am wenigsten annotiert, zum Schluss hin steigen die Werte wieder fast auf das Niveau des Anfangs (vgl. Abb. 3). In Tragödien finden sich hingegen kurz vor der Mitte der Handlung die meisten freudigen Aussagen von Figuren (vgl. Abb. 3). Dieser Befund des plötzlichen Abfalls von Freude korreliert mit dem dramaturgischen Konzept der Peripetie, dem Glückswechsel. Nach der idealtypischen aristotelischen Definition führt der Handlungsumschwung unvermeidlich zum schlechten Ausgang. Die Ergebnisse unserer Annotationsanalyse zeigen eine dazu passende stetige Abnahme von Freude in der Tragödie:
+                
+                    
+                    Abb. 3: Verlauf der der Annotationen der Emotion ‚Freude‘ in Komödien und Tragödien.
+                
+            
+            
+                Diskussion und Ausblick
+                Die bisherigen Ergebnisse sind vielversprechend, was die Erkennung emotionaler Schlüsselstellen betrifft. Poetologisch lassen sie sich gut mit dem erklären, was wir über die kanonischen Dramen wissen, allerdings wurden bisher nur elf ausgewählte Dramen mit Emotionen ausgezeichnet. Ziel ist es einerseits, alle 300 bisher digitalisierten Dramen zu analysieren und neue Erkenntnisse über die Verteilung von Emotionen zu gewinnen. Andererseits soll auch geprüft werden, wie sich die Emotionsverteilung verändert, wenn im größeren Umfang nicht-kanonische Dramen einbezogen werden. Zu diesem Zweck erweitern wir das Korpus um ausgewählte Dramen der Wanderbühne, um Dramen des Schultheaterautors Christian Weise und um Libretti der Hamburger Oper.
+                
+                Methodisch gehen wir so vor, dass mithilfe der annotierten Textstellen transformerbasierte Sprachmodelle mit Architekturen wie BERT oder ELECTRA auf die Erkennung von Emotionsklassen trainiert werden (Schmidt/Dennerlein/Wolff 2021b; 2021c). Hier gibt es durch die Entwicklungen der letzten Jahre vielversprechende kontextsensitive Verfahren. Während bisherige Verfahren aus dem traditionellen maschinellen Lernen oder für statische Sprachmodelle Wörter meist ohne Beachtung des Kontextes (also der Wortumgebung) repräsentieren, haben Wörter und Ausdrücke in dynamischen Sprachmodellen je nach Kontext eine andere Repräsentation. Auch können die Modelle besser als bisherige Verfahren mit Wörtern und Phrasen umgehen, die nicht im Vokabular enthalten sind. Diese Modelle sind jedoch zumeist mit zeitgenössischem Sprachmaterial trainiert (z. B. mit Web-Texte wie der Wikipedia oder News-Texten, vgl. Chan/Schweter/Möller 2020). Deshalb planen wir, die bestehenden Sprachmodelle auf historische und fiktionale Sprache, später dann auf dramenspezifische Sprache zu trainieren. Erste vielversprechende Projekte konnten auf diese Weise im Kontext deutschsprachiger und historischer Texte erfolgreiche Prädiktionsleistungen erreichen (Labusch et al. 2019; Schweter/Baiter 2019; Brunner et al. 2020a; Schweter/März 2020). Bisher haben wir die Leistung verschiedener transformerbasierter Modelle evaluiert, die auf zeitgenössischer Sprache vortrainiert sind (unter anderem von Chan/Schweter/Möller 2020) und solche, die mit historischen und/oder literarischen Texten nachtrainiert wurden (unter anderem Schweter 2020, Brunner et al. 2020), sowie das Fine-Tuning von BERT-Modellen mithilfe unserer eigenen Korpora und Theaterstücke untersucht. Ein erstes Zwischenergebnis ist, dass die Vorhersagen mit 
+                    gbert-large und 
+                    gelectra-large von
+                     deepset (Chan/Schweter/Möller 2020) mit 83% Prädiktionsgenauigkeit die besten sind. Diese Zahl bezieht sich auf die Einstufung einer Textstelle als positiv oder negativ. Soll vorausgesagt werden, ob eine Textstelle zu einer unserer Emotionsoberklasse gehört, beträgt die Genauigkeit 57%, für die Vorhersage einer der 13 Einzelemotionen beträgt sie 47%. Weitere Details und Informationen zu ersten Ergebnissen der Emotionsklassifikation auf dem annotierten Korpus findet man bei Schmidt/Dennerlein/Wolff (2021a; 2021c). Hier ist noch ein erheblicher Aufwand nötig, um Sprachmodelle mit Texten unseres Untersuchungszeitraumes und mit Dramen nachzutrainieren.
+                
+            
+        

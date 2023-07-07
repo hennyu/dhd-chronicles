@@ -1,0 +1,153 @@
+
+      
+        Einführung
+        
+          Koreferenzresolution beschäftigt sich mit der Aufgabe unterschiedliche sprachliche Ausdrücke, die die gleichen Entitäten im Text beschreiben, automatisch zu identifizieren. Die meisten state-of-the-art Koreferenzresolutionssysteme basieren auf statistischen Verfahren und verwenden große vorannotierte Trainingskorpora (Pradhan et al., 2011). Die Abhängigkeit von Trainingskorpora stellt ein Problem für die Sprachen dar, für die keine Korpora verfügbar sind, die mit Koreferenzinformationen annotiert sind (Recasens et al., 2010; Pradhan et al., 2012; Zhekova, 2013).
+        
+        
+          Diese Arbeit beschreibt ein Verfahren zur Gewinnung automatischer Koreferenzannotationen durch parallele Korpora für das Russische. Russisch ist eine der Sprachen, für die es noch keine frei verfügbaren Koreferenzannotationen gibt und die daher nicht mit statistischen Koreferenzsystemen bearbeitet werden können. Unser Ziel ist es, Korpora die mehr als einen Zieltext haben zu benutzen (z.B. mehrere Übersetzungen des gleichen Texts/Quelltexts), um die Koreferenzketten von mehreren Zieltexten in den Quelltext zu projizieren. Unser Vorgehen basiert auf der These, dass die Verwendung mehrerer Zieltexte eine bessere Identifikation der Ketten und Grenzen der Mentions (die potentiell koreferenten Phrasen) ermöglicht. Zusätzlich stellen wir die automatisch gewonnenen Koreferenzannotationen (RuCoCo (aus dem Englischen: Russian Coreference Corpus)) für den russischen Originaltext zur freien Verfügung.
+        
+      
+      
+        Verwandte Arbeiten
+        
+          Schon oft wurden parallele Korpora für die Gewinnung automatisch generierter Koreferenzannotationen benutzt (Kobdani et al., 2011; Souza and Orašan, 2011; Rahman and Ng, 2012), das Sprachenpaar Russisch-Deutsch wird allerdings wenig bearbeitet (Grishina and Stede, 2015). Darüber hinaus sind parallele Korpora üblicherweise aus einem Quell- und einem Zieltext gebildet (Ganitkevitch et al., 2013; Dolan and Brockett, 2005) und konzentrieren sich hauptsächlich auf die Bearbeitung der englischen Sprache. In Bezug auf das Russische sind uns keine frei verfügbaren Datensätze bekannt, die auch mehrere Zieltexte enthalten. Ein derartiger Korpus für Russisch, der aus dem Roman
+          Der Idiot
+          von Dostojewskij und drei Übersetzungen davon besteht, wurde zwar bei der
+          Österreichische 
+          Akademie der Wissenschaften
+          ­
+          entwickelt, er steht aber derzeit nicht zur freien Verfügung (Biber et al., 2002; Dobrovol’skij, 2014).
+        
+          
+            
+            Abbildung 1: Interaktives Alignieren in AluDo durch das Suchwort Sonne.
+          
+        
+          Aus diesem Grund haben wir einige Ansätze für die Alignierung von Texten für das Sprachenpaar Deutsch-Russisch implementiert (Zhekova et al., 2014), die in das frei verfügbare und interaktive Online
+            1
+          -
+          Alignierungstool
+          AluDo
+          (siehe Abbildung 1) integriert wurden. Mit Hilfe von AluDo wurde ein paralleler Korpus erstellt, der aus dem Original des Dostojewskij-Romans
+          Verbrechen und Strafe
+          und drei seiner deutschen Übersetzungen (Dostojewskij, 1924; Dostojewskij, 1956; Dostojewskij, 2010) besteht. Einen
+          
+            Teil
+          
+            2
+          des Korpus haben wir bereits frei gegeben (Zhekova et al., 2015). Mit Hilfe dieses Korpus beabsichtigen wir, automatische Koreferenzannotationen für den russischen Quelltext zu erzeugen.
+        
+      
+      
+        Erstellung von RuCoCo
+        
+          IMSCoref für Deutsch
+          
+            Zunächst wird der deutsche Teil mit Koreferenzinformationen versehen, um sie anschließend in den russischen Teil der Paralleltexte projizieren zu können. Dafür wird im ersten Schritt das beste frei verfügbare Koreferenzresolutionssystem (laut die CoNLL Evaluationen), IMSCoref (Björkelund and Farkas, 2012), an die deutsche Sprache angepasst.
+          
+        
+        
+          Datensätze und Annotationen
+          
+            Wir verwenden die SemEval-Datensätze für Deutsch (Recasens et al., 2010), die in das CoNLL-Format umgewandelt werden. Für die Erzeugung von Syntaxbäumen (ParseBits in CoNLL-Daten), die in den SemEval-Daten fehlen, wird der
+            Stanford Parser
+            (Rafferty and Manning, 2008) eingesetzt. Named Entities sind im deutschen Datensatz in den SemEval-Daten auch nicht verfügbar, daher werden sie automatisch mit Hilfe von
+            Stanford NER
+            (Finkel et al., 2005) extrahiert, und zwar mit dem hgc-Modell für Deutsch (Faruqui and Padó, 2010).
+          
+        
+        
+          Featureset
+          
+            Als Baseline-Features werden die Features verwendet, die in IMSCoref für Englisch entwickelt wurden. Das ursprüngliche Featureset für Englisch enthält allerdings Informationen, die in den SemEval-Daten nicht zur Verfügung stehen. Entsprechend werden diese Features ausgelassen (z.B. Speaker-, Genre-Features, usw). Agreement-Features für Deutsch sind zusätzlich integriert worden.
+          
+        
+        
+          Evaluation
+          Tabelle 1: Systemevaluation für Englisch (en) und Deutsch (de) mit den original (Orig), reduzierter (Red) und erweiterter (Erw) Featureset.
+          
+            Um die Güte des für Deutsch adaptierten IMSCoref sicherzustellen, wurde das System für beide Sprachen (Englisch und Deutsch) einem Testlauf unterzogen. Dazu haben wir vier Featuresets getestet:
+            enOrg
+            – das Basisfeatureset von IMSCoref in Englisch;
+            enRed
+            – das reduzierte Featureset für Englisch (ohne die Features für die keine entsprechenden Annotationen für Deutsch vorhanden sind);
+            deRed
+            – das reduzierte Featureset für Deutsch;
+            enErw
+            – das erweiterte Featureset für Deutsch. Die Ergebnisse der Evaluation (anhand Identifikation von Mentions (IM), MUC-, B
+            3
+            -, und CEAF
+            E
+            - Metriken sowie der offizielle CoNLL-Score) werden in Tabelle 1 präsentiert. Die Zahlen zeigen, dass die Features, die für die deutsche Sprache nicht vorhanden sind, auch für das englische IMSCoref wenig informativ sind. Ihre Nichtberücksichtigung reduziert die Genauigkeit des Systems von 59.29% für
+            enOrig
+            auf 58.69% für
+            enRed
+            . Damit ist der CoNLL-Score für die deutsche Basisversion des Systems schon sehr hoch und liegt bei 60.55% (
+            deRed
+            ). Die oben angesprochene Erweiterung der Features für Deutsch bringt eine kleine, aber signifikante Verbesserung von 62.48%.
+          
+        
+      
+      
+        Projektion der Koreferenzannotationen vom Deutschen ins Russische
+        
+          Datenaufbereitung
+          
+            Um das IMSCoref auf die Bearbeitung der deutschen Übersetzungen der russisch-deutschen Paralleltexte (Zhekova et al., 2015) (aligniert auf Satzebene) vorzubereiten, werden diese auch in das CoNLL-Format transformiert.
+            Zuerst werden die Texte mit dem Stanford-Tokenizer tokenisiert. Der TreeTagger (Schmid, 1994; Schmid, 1995) wird danach für das POS-Tagging eingesetzt. Abschließend werden die Texte der Datenaufbereitung mit GIZA++ (Och and Ney, 2003) auf Wortebene aligniert.
+          
+        
+        
+          Kettenprojektion
+          Wir untersuchen drei verschiedene Ansätze für die Übertragung der Annotationen, die im Folgenden beschrieben sind.
+          
+            Setting 1 
+            Dieser Ansatz folgt Postolache et al. (2006). Für jede deutsche Mention wird eine entsprechende Menge von russischen Tokens extrahiert. Der Kopf der erzeugten Mention ist
+            das russische Token, welches mit dem Kopf der deutschen Mention aligniert wurde. Anfang und Ende einer Mention im Deutschen werden auch direkt durch die Alignierungen im Russischen festgelegt. Falls beide nicht aligniert werden können, wird im Russischen keine entsprechende Mention übertragen.
+          
+          
+            Setting 2
+            Bei diesem Setting wird Dependenzinformation im Russischen verwendet, welche mit dem MaltParser (Nivre et al., 2007; Sharoff and Nivre, 2011) erzeugt wird. Dabei wird der lexikalische Kopf einer Mention im Deutschen durch die Wortalignierung ins Russische abgebildet. Daraufhin wird die Länge der Mention durch die Dependenzinformation erzeugt, indem alle Wörter, die in Relation mit dem Kopf stehen, gruppiert werden.
+          
+          
+            Setting 3
+            Dieser Ansatz kombiniert Setting 1 und Setting 2, d.h. falls Setting 1 keine Projektion der Mention erzeugen kann, wird Setting 2 eingesetzt.
+          
+        
+      
+      
+        Evaluation und Fehleranalyse
+        
+          
+            
+          
+        
+        Tabelle 2: Ergebnisse der Projektion von Koreferenzinformationen vom Deutschen ins Russische
+        Da keine Gold-Standard-Annotationen vorliegen, werden vorläufig die ersten 30 Sätze des russischen Textes als ein Dokument im Sinne der Koreferenz betrachtet und manuell (von nur einem Annotator) mit Koreferenzketten annotiert.
+        
+          Die Ergebnisse sind in Tabelle 2 dargestellt, wo alle Übersetzungen (markiert als 1924, 1956, 2010 in der Tabelle) in allen drei Settings (S1, S2 und S3) aufgeführt sind. Die Ergebnisse zeigen, dass durchaus bei allen drei Übersetzungen vergleichbare Zahlen erreicht werden, was innerhalb der drei Settings nicht der Fall ist. Als Erstes zeigt ein Vergleich zwischen der Identifikation der Mentions (IM) für das erweiterte IMSCoref-System im Deutschen (
+          deErw
+          in Tabelle 1) und allen drei benutzten Settings und Übersetzungen, dass die Projektion der Mentions zu einer starken Reduktion der IM-Ergebnisse für Russisch führt. Für alle drei Übersetzungen ist die Projektion in Setting 3 am erfolgreichsten mit F1-Scores zwischen
+          43.36% und 51.97%. Diese Ergebnisse liegen mit mehr als 20 Prozentpunkten unter dem IM F1-Score für Deutsch. IM ist jedoch eine sehr wichtige Unteraufgabe der Koreferenzresolution, die in hohem Maße den Erfolg der Koreferenzaufgabe beeinflusst (Zhekova, 2013). Als Folge der niedrigen F1-Scores sind die CoNLL-Scores für Russisch wesentlich niedriger im Vergleich zu den Ergebnissen des Systems für Deutsch.
+        
+        
+          Eine qualitative Analyse zeigt, dass die meisten Fehler durch falsche Wortalignierungen entstehen. Mentions werden nicht gefunden und übertragen, desweiteren haben die projizierten Mentions oft einen falschen Anfang oder ein falsches Ende und tragen so zu den niedrigen Genauigkeiten bei. Oft führt auch die falsche Alignierung zu einer falschen Identifikation des Kopfes im Russischen, wodurch die Ermittlung der Mentionspan im Setting
+          3 stark beeinflusst wird. Ein Anteil der Fehler ist auch auf Fehlerprojektion basiert – falsche Ketten im deutschen Text werden auch falsch weitergegeben.
+        
+        
+          Jedoch ist es unser Hauptziel zu untersuchen, ob Korpora, die mehr als einen Zieltext enthalten, hilfreicher für die Projektion sein können als traditionelle Korpora. Dafür haben wir zwei zusätzliche Experimente durchgeführt (jeweils 1924/1956 und 1924/1956/2010 in Tabelle 2) – 1924/1956 fügt die Koreferenzketten aus den beiden Übersetzungen (1924 und 1956) zusammen, während in 1924/1956/2010 die Ketten aus alle drei Übersetzungen zusammengefügt werden (das wird manuell nur für die ersten 30 Sätze des Originalwerks gemacht womit wir entgegen den Testset evaluieren können). Die Ergebnisse zeigen, dass die Benutzung von mehreren Texten sehr hilfreich sein kann, da sich der CoNLL-Score von 20.11% für die Übersetzung 1924 auf 22.41% für 1924/1956/2010 erhöht. Das ist ein sehr positives Ergebnis. Wir vermuten, dass mit einer besseren Alignierung und qualitativ hochwertigeren Dependenzannotation für das Russische, diese Verbesserung noch größer ausfallen würde.
+        
+      
+      
+        Zusammenfassung
+        
+          In dieser Arbeit haben wir gezeigt, dass parallele Korpora mit mehr als einem Zieltext für die Gewinnung von automatischen Koreferenzannotationen sehr hilfreich sein können, und dass dadurch Sprachen, die bislang für state-of-the-art Koreferenzsysteme völlig unerreichbar waren, damit bearbeitet werden können. Zusätzlich werden die Koreferenzannotationen für den russischen Originaltext und das manuell annotierte Testset zur freien Verfügung
+          gestellt
+          , womit weitere Pilotstudien für Koreferenzannotation des Russischen möglich gemacht werden.
+          Wir beabsichtigen, das Testset in Zukunft zu erweitern, um adäquatere Ergebnisse bei der quantitativen Analyse der Projektion der Koreferenzinformationen vom Deutschen ins Russische zu erzielen. Außerdem ist ein Verfahren für eine informierte Verbesserung (anhand von Phrasenstruktur, Self-Learning, usw.) von derartigen Annotationen direkt im Zieltext geplant. Die Adaption des
+          IMSCoref-Systems für Deutsch
+          stellen wir auch zur freien Verfügung.
+        
+      
+    

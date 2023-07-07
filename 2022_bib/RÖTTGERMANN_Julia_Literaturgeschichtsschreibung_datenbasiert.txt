@@ -1,0 +1,70 @@
+ Als Beispiel sei hier die Initiative der GND genannt, die eigenen Daten in Wikidata oder zumindest in einer Wikibase-Instanz (die Software hinter Wikidata) zu integrieren: https://blog.wikimedia.de/2020/03/04/wikibase-und-gnd/, letzter Zugriff: 30.11.2021. Zum Begriff “Linked Open Data” vgl. (Berners-Lee et al. 2006: 1–130). Wir nutzen die Quellen 
+                            Wikisource, Ebooks libres et gratuits, GoogleBooks, Rousseau Online und 
+                            Frantext. Diese Metadatentabelle dokumentiert die Korpuszusammensetzung und wird parallel zum Korpusaufbau laufend aktualisiert: http://doi.org/10.5281/zenodo.5040855 /. https://github.com/MiMoText/roman18/blob/master/XML-TEI/xml-tei_metadata.tsv, letzter Zugriff: 30.11.2021.
+                         https://github.com/MiMoText/roman18/blob/master/Python-Scripts/tei2txt_run.py, letzter Zugriff: 30.11.2021. In der Regel werden die Topics durch ein Element des Themenvokabulars repräsentiert, in wenigen Fällen erscheint die Repräsentation durch zwei Themenkonzept-Label treffender. Die Datengrundlage dieses Topic Modeling Durchgangs ist unter folgendem Release zu finden: (Klee/Röttgermann 2020). Zu möglicherweise fehlenden Werken vgl. Dawson 1978. Dawson benennt auch das Desiderat eines Themenindexes. An das Scannen sowie OCR schlossen sich das Generieren von Trainingsdaten sowie die Auszeichnung aller Einträge über ein Machine Learning-Verfahren (CRF) in XML an. Diese bildeten die Datengrundlage für die anschließende Modellierung der Einträge in RDF (vgl. Lüschow 2020), bei der jedoch die einzelnen Keywords noch nicht semantisch modelliert worden sind. Weitere Kategorien umfassen die Erzählform, den Ort der Handlung, die Figuren des Romans, die Tonalität/den Stil des Werks. Ausgewählt wurden zum einen Strings mit mindestens acht Vorkommen in der Bibliographie und darüber hinaus solche mit einer besonderen Relevanz in den anderen Informationsquellen und für die literaturgeschichtliche Domäne insgesamt wie zum Beispiel der String ‘robinsonade’. Zur Dokumentation der Liste vgl. Klee/Hinzmann 2021.  Als dominante Topics bezeichnen wir jeweils diejenigen Topics, die in einem Werk unter den 5 Topics mit den höchsten Wahrscheinlichkeiten sind (siehe oben).  Hierfür werden mit INCEpTION Aussagen in literaturgeschichtlichen Fachtexten annotiert, die in das Wissensnetzwerk eingespeist werden und zugleich als Trainingsdaten für die automatische Extraktion von Themenaussagen dienen.
+            
+                
+                    Bibliographie
+                    
+                        Berners-Lee, Tim / Hall, Wendy / Hendler, James A. / O’Hara, Kieron / Shadbolt, Nigel / Weitzner, Daniel J. (2006): “A Framework for Web Science”, in: 
+                        Foundations and Trends in Web Science 1.1.: 1–130. 10.1561/1800000001.
+                    
+                    
+                        Blei, David M. (2011): “Introduction to Probabilistic Topic Models”, in: 
+                        Communications of the ACM 55.4.: 1–16.
+                    
+                    
+                        Burnard, Lou (2014): 
+                        What Is the Text Encoding Initiative? How to Add Intelligent Markup to Digital Resources. Marseille: Encyclopédie Numérique. 
+                    
+                    
+                        Dawson, Robert L. (1978). “The Martin, Mylne, Frautschi Bibliographie Du Genre Romanesque Français”, in: 
+                        Eighteenth-Century Studies, 11.4., 497–508. 10.2307/2737969.
+                    
+                    
+                        Delon, Michel (2007): 
+                        Dictionnaire européen des Lumières. Paris: PUF.
+                    
+                    
+                        Ehrlinger, Lisa / Wöß, Wolfram (2016): „Towards a Definition of Knowledge Graphs“, in: 
+                        SEMANTiCS (Posters, Demos, SuCCESS) http://ceur-ws.org/Vol-1695/paper4.pdf.
+                    
+                    
+                        Heiden, Serge (2010): 
+                        The TXM Platform: Building Open-Source Textual Analysis Software Compatible with the TEI Encoding Scheme. http://halshs.archives-ouvertes.fr/halshs-00549764/en [letzter Zugriff: 30.11. 2021].
+                    
+                    
+                        Klee, Anne / Hinzmann, Maria (2021): 
+                        MiMoText/vocabularies [Data Set]. https://github.com/MiMoText/vocabularies/blob/main/thematic_vocabulary.tsv [letzter Zugriff: 30.11.2021].
+                    
+                    
+                        Klee, Anne / Röttgermann, Julia (2020): 
+                        Doing Topic Modeling on French 18th Century Novels in the Context of MiMoText Project [Data Set] https://github.com/MiMoText/topicmodeling [letzter Zugriff: 30.11.2021].
+                    
+                    
+                        Lüschow, Andreas (2020): “Automatische Extraktion und semantische Modellierung der Einträge einer Bibliographie französischsprachiger Romane”, in: 
+                        Spielräume: Digital Humanities zwischen Modellierung und Interpretation. Konferenzabstracts, 80–84 10.5281/zenodo.3666690.
+                    
+                    
+                        Martin, Angus / Mylne, Vivienne / Frautschi, Richard L. (1977): 
+                        Bibliographie du genre romanesque français, 1751-1800. London: Mansell.
+                    
+                    
+                        McCallum, Andrew Kach (2002): 
+                        MALLET: A Machine Learning for Language Toolkit. http://mallet.cs.umass.edu.
+                    
+                    
+                        Pageaux, Daniel-Henri (1968): “Voyages romanesques au siècle des Lumières”, in: 
+                        Études littéraires, 1.2.: 205–214. 10.7202/500020ar.
+                    
+                    
+                        Reul, Christian / Christ, Dennis / Hartelt, Alexander / Barbelt, Nico / Wehner, Maximilian (2019): “OCR4all -- An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings”, in: 
+                        ArXiv:1909.04032 [Cs].
+                    
+                    
+                        Röttgermann, Julia (2021): 
+                        Collection de romans français du dix-huitième siècle (1750-1800) / Eighteenth-Century French Novels (1750-1800) [dataset]. Release v0.2.0 10.5281/zenodo.5040855.
+                    
+                
+            
+        

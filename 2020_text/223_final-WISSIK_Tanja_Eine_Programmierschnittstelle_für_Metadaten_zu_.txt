@@ -1,0 +1,22 @@
+
+
+Die DH Course Registry ist eine von den beiden Forschungsinfrastrukturen CLARIN und DARIAH getragene Initiative um Lehraktivitäten im Bereich der digitalen Geisteswissenschaften auch über Universitätsgrenzen hinweg sichtbar zu machen. Auf der Plattform werden Metadaten über BA, MA und PhD Studiengänge, einzelne Lehrveranstaltungen und Module sowie Summer School im Bereich der Digitalen Geisteswissenschaften gesammelt und veröffentlicht. 
+
+
+Die Daten werden nicht zentral gesammelt, sondern community-basiert von den Lehrenden selber eingegeben. Die Daten sind über bestimmte Filteroptionen wie z.B. Land, Art des Studiengangs usw. durchsuchbar und die Ergebnisse werden auch auf einer Karte visualisiert. Um die Daten aktuell zu halten, gibt es im DH Course Registry einen eigenen Workflow und die spezifische Rolle der „Nationalen Moderatoren“. Wenn die Metadaten eines Kurses längere Zeit nicht mehr aktualisiert wurden, wird dieser Kurs nicht mehr online angezeigt. In der Datenbank sind diese Daten aber noch immer gespeichert. Demzufolge birgt die Plattform einen Datenschatz z.B. zur zeitlichen Entwicklung DH bezogen Lehraktivitäten, der bis jetzt der Forschungsgemeinschaft nur auf Nachfrage als Datenbankauszug zugänglich war. Eine Möglichkeit diese Daten für unterschiedliche Nutzergruppen und Nutzungsszenarien zugänglich zu machen ist die Bereitstellung von standardisierten Programmierschnittstellen – kurz APIs genannt. In den letzten Jahren ist die Nutzung von APIs in DH Projekten angestiegen (vgl. Tasovac et al. 2016). Aber auch die Daten, die über die Plattform bereits abfragbar waren, können durch die API sozusagen „mit nach Hause genommen“ und für weitere Forschungsfragen verarbeitet werden (vgl. Cooper, 2010).  Im DARIAH geförderten Projekt „DH Course Registry Sustain“ wurde nun durch die Entwicklung und Bereitstellung einer API dieser Datenschatz für die Forscherinnen und Forscher geöffnet. Bevor die API beschrieben wird, soll auf das Datenmodell eingegangen werden, das der Plattform zugrunde liegt.
+
+
+
+ Abbildung 1: Entity-Relationship Diagramm (ERD) (Wissik et al. im Erscheinen)
+
+
+
+
+
+Die Beziehungen der verschiedenen Objekt-Typen werden in Abbildung 1 wiedergegeben, wie sie durch die Datenbankstruktur der DH Course Registry definiert sind. Alle um “Courses” herum gruppierten Objekt-Typen stellen gleichermaßen kontrollierte Vokabulare dar, nach denen die Datenbank durchsucht werden kann. Die mit den Typen korrespondierenden Tabellen sind ebenfalls durch die API zugänglich, um etwa Filteroptionslisten zu generieren. Auf diese Weise entsteht die Durchsuchbarkeit der Datenbasis für einzelne Universitäten, Länder, Methodiken oder Fachbereiche. Das Datenmodell umfasst darüber hinaus auch noch Informationen zur Zyklizität, Start-Terminen und Präsentationsform (online oder Präsenzkurs) oder der Sprache, um Möglichkeiten zum internationalen Austausch aufzuzeigen. Durch die Erstellungs- und Modifikationsdaten der Einträge, die im Web-UI nicht zugänglich sind, kann die zeitliche Entwicklung des in der DH Course Registry vertretenen Lehrangebots nachvollzogen werden. Eine vollständige OAS 3.0 kompatible Beschreibung der über die API zugänglich gemachten Datenstrukturen im JSON Format ist unter 
+
+https://app.swaggerhub.com/apis-docs/hashmich/DHCR-API/1.0
+
+verfügbar. 
+
+Im Rahmen der Posterpräsentation werden wir die DH Course Registry API vorstellen und einige exemplarische Analysen präsentieren, die durch den API Zugang nun möglich gemacht werden.
