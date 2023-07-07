@@ -1,0 +1,47 @@
+
+            
+                
+                    Towards a Shared Infrastructure for Metaphor Analysis
+                
+                
+                    
+                    The collaborative research center (CRC) 1475
+                    
+                    
+                     
+                    studies the role of metaphors in religious meaning-making.
+                     
+                    In metaphors, meaning is transferred from one semantic domain to another. Metaphors can thus serve as a means to express abstract concepts with reference to more concrete ones closer to human experience. Religion, which cannot directly address its ultimate subject (the transcendent, i.e., gods, otherworlds, etc.), is especially dependent on this procedure. By adopting conceptual metaphor theory 
+                    (
+                    Lakoff and Johnson, 1980; Steen et al., 2010; Nacey et al., 2019)
+                     
+                    the CRC seeks to more thoroughly understand this process theoretically and grasp it methodologically to research its semantic forms empirically and comparatively. Through its multidisciplinary subprojects the CRC contributes to the historiography of religions and to answering systematic questions in the comparative study of religions. It covers a plethora of religious traditions from across the globe, including Christianity, Islam, Judaism, Zoroastrianism, Jainism, Buddhism, and Daoism. The time frame ranges from 3,000 BCE to the present day, including texts from multiple languages and diverse genres, from Korean Confucian ego-documents to Christian online forums.
+                
+                Motivated by the challenge of comparability and interoperability between its extremely heterogeneous subprojects, the CRC deliberately puts emphasis on digital methods. Thus, the shared infrastructure, provided by the information infrastructure (INF) project, does not only support the individual research projects, but fosters conceptual integration. Utilizing this infrastructure the subprojects annotate religious texts to make metaphorical language explicit. For this process we adapt the Five Step Method (Steen, 2011) to not only mark the presence of metaphors, but to include complex analysis of the structural functioning of the metaphor and the resulting domain mappings as well. As a standardization measure we append an additional step, where each concept is linked to a conceptual thesaurus.
+            
+            
+                The Metaphor Workbench
+                Within the INF project, scholars of religion, computational linguists, and computer scientists jointly establish the digital research infrastructure of the CRC and provide the necessary tools for the subprojects.
+                
+                    Shared text repository
+                    An instance of the KIT Data Manager Base Repo (Jejkal et al., 2014) is used as a research data repository for all CRC subprojects. Existing data from the subprojects is stored as structured data objects including their respective metadata in the form of TEI compliant XML files (Burnard and Bauman, 2010) and is available for further processing, enrichment, analysis, etc. via standardized interfaces. In close collaboration with the subprojects, the INF project is evaluating existing representations of their data, required format conversion, legal aspects and rights management, as well as assisting the provision of required descriptive metadata. 
+                
+                
+                    Annotation services
+                    To annotate the metaphors the INF team provides tools for annotation implementing a shared metaphor annotation schema, which is based on the web annotation data model (Young, Sanderson, and Ciccarese, 2017). Because the available annotation tools (like INCEpTION, CATMA, WissKI etc.) are lacking the possibility to create the complex annotations needed for the CRC’s methodology, a new metaphor analysis tool will be developed, which guides and documents the interpretative analysis process. In the future, we will be using NLP expertise present in the CRC’s subprojects to integrate methods of (semi-)automatic metaphor detection and analysis.
+                    Furthermore, the INF project is advising the subprojects that aim for additional, project-specific annotation of their data, particularly with regard to the use of existing annotation standards and best practices. All of the annotations are provided in a Web Annotation Protocol Server (Tonne et al., 2019) as RDF triples to foster analysis across the subprojects and to ensure interoperability and reuse.
+                
+                
+                    Conceptual thesaurus
+                    To facilitate comparability of our metaphor annotations across barriers of languages and cultural traditions, the CRC is developing a conceptual thesaurus (CT) as a shared reference system. Its taxonomy is based on the Historical Thesaurus of English (Kay, 2009), albeit extending and adapting it for the languages and topics prevalent in the CRC. Using the SKOS data model (Miles and Bechhofer, 2009) and principles from Linked Open Data (LOD; Berners-Lee, 2006), the CT will provide a language-independent framework for the annotation of domains used in metaphorical mappings. Linking concrete metaphorical expressions with a central semantic resource enables retrieving conceptually related metaphors from different corpora, and comparatively studying semantic domains used in metaphors.
+                
+                
+                    Thesaurus of religious metaphors
+                    Linking texts, analysis, and concepts, the resulting annotations will make up the thesaurus of religious metaphors (TRM). The TRM will enable studies of metaphors in a systematic and comparative way by providing a semantically indexed collection of religious metaphors, as well as query and analysis tools.
+                
+            
+            
+                Conclusions and Future Scope
+                The CRC’s infrastructure – research data repository, annotation services, conceptual thesaurus and thesaurus of religious metaphors – fosters reusability as well as interoperability with external knowledge graphs by focusing on open data principles and will be published under open licenses. In particular, the emerging TRM will act as a unique resource for scholars worldwide studying religious metaphors. The INF project itself is an integral part of the CRC in providing this shared infrastructure and thus enabling comparative studies on an unprecedented scale in the field.
+            
+        

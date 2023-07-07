@@ -1,0 +1,44 @@
+
+
+Motivation
+Die Beantwortung von Forschungsfragen über bestehende Forschungsdatenquellen im Linked Open Data Web ist von besonders hohe Relevanz für nachhaltige Forschungsarbeiten in den Geisteswissenschaften und insbesondere in der Geschichtswissenschaft (vgl. Meroño Peñuela et al. 2014: 1-27). Eine ständig wachsende Menge an Archivmaterialien, Literaturquellen, Forschungsergebnisse und Forschungsdatenbanken ist online verfügbar. Durch Standardisierungsbestrebungen u. a. durch den Einsatz von RDF und OWL als Beschreibungssprache von Daten ist es möglich diese zu verknüpfen, und Inferenz-Algorithmen auf diesen Ressourcen anzuwenden. Eine typische Herangehensweise an die damit einhergehenden Herausforderungen der Datenintegration ist die Verwendung von Standard-Vokabularen, wie sie z. B. im E-Business erfolgreich praktiziert wird (vgl. Domingue et al. 2011). Im Bereich der Geisteswissenschaften haben sich zum Beispiel mit GND
+                    1 und Europeana Data Model (EDM)
+                    2 solche Vokabulare entwickelt. Darüber hinaus wird CIDOC-CRM
+                    3 von unterschiedlichen Projekten als Modell für die Veröffentlichung von Daten verwendet (vgl. Kurtz et al. 2009). Die Autoren sind in verschiedenen Forschungsprojekten in Deutschland und Frankreich im Bereich der Informatik und der Geschichtswissenschaften aktiv und müssen konstatieren, dass der Weg der Standardisierung in der historischen Forschung schwieriger ist. Dies ist vor allem auf den hohen Grad der domänspezifischen Eigenheiten der vorliegenden Daten, und auf die besondere Rolle projektbezogener Forschungsfragestellungen bei der Datenerstellung und Datenerhebung zurückzuführen (vgl. Beretta 2009).
+                
+Das im Jahr 2012 gegründete Europäische Netzwerk Héloïse
+                    4 zur Vernetzung von online verfügbaren Datenbanken im Bereich der Universitätsgeschichte
+                    5, sieht sich dieser Herausforderung gegenübergestellt. Inhalte regelmäßig stattfindender Workshops sind die Präsentation von verfügbaren Forschungsdatenbanken und deren Verwendung bei auf diese heterogenen Datenbanken aufbauenden Forschungsfragestellungen. Parallel mit der Nutzung der Repositorien in zukünftigen Forschungskontexten erfolgt einekollaborative Daten-Kuration und sichert daher die Langzeitlebigkeit von historischen Forschungsdaten - nicht nur im Sinne von Datensicherung, sondern auch von ständiger Anreicherung und Qualitätsverbesserung der Daten.
+                
+
+
+Heloise Common Research Model
+Mit dem Heloise Common Research Model (HCRM) haben die beiden Autoren dem Konsortium eine Methode präsentiert (vgl. Beretta und Riechert 2016), welches durch die Forschungspartner gemeinsam verfeinert wird und in der Forschungsdomäne eingesetzt werden soll. Das HCRM ist als Schichtenarchitektur konzipiert, bestehend aus drei Schichten: dem Repository-Layer, dem Application-Layer und dem Research-Interface-Layer. In einem parallelem Entwicklungsprozess entsteht neben der detaillierten Definition von Modulen (vgl. Abbildung 1, Beretta und Riechert 2016) im HCRM eine Implementierung der Methodologie in Form der Héloïse-Plattform. 
+
+
+
+Abbildung 1: Heloise Common Research Modell – Überblick über die Schichten und Module (links), Héloïse-Plattform (rechts) (vgl. Beretta und Riechert 2016)
+
+
+
+Repository-Layer 
+Die Datenbanken der Partnern des Héloïse-Netzwerkes, genauso wie externe Informationsquellen, stellen die Basis zur Beantwortung übergeordneter Forschungsfragen. Die Publikation der Daten als LOD erfolgt mit Hilfe etablierter Werkzeuge. So werden u. a. die Werkzeuge OntoWiki (Frischmuth et al. 2013) und D2RQ (Bizer und Cyganiak 2006) zum Publizieren eingesetzt. Die Verlinkung erfolgt innerhalb etablierter Authoring-Prozesse in den Forschungsprojekten.
+                
+
+Application-Layer: 
+Die Applikations
+schicht unterstützt das Auffinden von Ressourcen und deren Verlinkung. Hierfür wird auf generische Werkzeuge und standardisierte Vokabulare aufgebaut, damit einhergehend ist der Zugang auf die Informationen auf diese Standards beschränkt. Als erste Anwendungen im Forschungskonsortium wird gegenwärtig die Implementierung einer Personen-Suche, basierend auf der BIO-Ontologie (Davis und Galbraith 2010), sowie die Darstellung relevanter geographischer Daten, über die Repositorien der Partner, entwickelt.
+                
+
+Research Interface Layer Die Forschungsschicht des Modells bietet einen Zugang auf die Forschungsdaten für neue wissenschaftliche Fragestellungen. Hierfür wird basierend auf einer Meta-Ontologie, wie sie das SyMoGIH Projekt (Beretta 2015, Beretta 2016) für die Geschichtswissenschaft entwickelt hat
+                    6, ein fachspezifisches Meta-Vokabular entwickelt. Dieses Vokabular verbindet einen kollaborativen, domänespezifischen Ansatz mit einer größtmöglichen Unabhängigkeit von spezifischen, Projekt-bezogenen Forschungsfragestellungen und ermöglicht den Datenaustausch im Héloïse-Netzwerk.
+                
+
+
+Héloïse-Plattform
+Zentral für zukünftige Forschungsprojekte im Héloïse-Konsortium ist die Implementierung der Methodologie. Die heterogene Zusammensetzung des Konsortium spricht gegen die Etablierung einer zentralen Administration einer solchen Plattform. Vielmehr ist die Forschungskooperation auf der Ebene der Historiker in einer vergleichbaren Art und Weise bei den assoziierten IT-Partnern zu finden. Die Autoren schlagen daher die Realisierung von Diensten der Plattform durch Microservices vor. Microservice stellen unabhängige Dienste zur Verfügung und sind im Sinne der angestrebten Cloud-basierten Plattform virtualisierbar (vgl. Newman 2015).
+Das Poster stellt die Resultate der iterativen Implementierung des HCRM im Héloïse-Forschungsnetzwerk detailliert vor. Es werden die Ergebnisse der fachlichen Diskussion über zwei Heloise Workshops (Madrid, 2015 und Perugia, 2016) vorgestellt. Der komplette Katalog, der durchgängig im Kontext der Linked-Open-Data-Philosophie, als Open-Source verfügbaren Microservices (Docker Container
+                    7), wird präsentiert und deren Anwendung innerhalb der Heloise-Plattform online gezeigt
+                    8.
+                
+

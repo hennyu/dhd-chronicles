@@ -1,0 +1,143 @@
+
+            
+                Im literatur- und kulturwissenschaftlich ausgerichteten Projekt 
+                    m*w untersuchen wir den Zusammenhang von Genderaspekten und Emotionen in deutschsprachigen literarischen Texten (Schumacher und Flüh 2020). Um bestehende Einzelfallstudien und Erkenntnisse über Genderrollen (vgl. Beauvoir 2018, Bourdieu 2010, Butler 2016, Connell 1996, 2015 Heilman 2003) und Emotionen (vgl. Winko 2003, 2020) in einen größeren Kontext setzen zu können, fragen wir nach Gelingensbedingungen und konkreten Umsetzungsmöglichkeiten einer reflektierten, digitalen Textanalyse. Gleichzeitig geht es darum, die Interdependenz zwischen Gender und Emotionen auf der einen Seite und Textsorte, Genre und zeitlichem Kontext auf der anderen Seite herauszustellen.
+                
+            
+            
+                Rollen und Emotionen jugendlicher Hauptfiguren in zeitgenössischer Fantasy-Literatur
+                Dieser Beitrag zielt darauf ab, das für phantastische Literatur als genrekonstitutiv geltende, aber recht allgemein beschriebene “Klima des Grauens” (Caillois 1974: 56), das Unheimliche (Todorov 2018), auszudifferenzieren. Darüber hinaus betrachten wir die für phantastische Literatur als spezifisch herausgestellten Emotionstypen in Abhängigkeit zu den Genderrollen, die den Emotionssender:innen zugeschrieben werden. Dabei rücken wir die – ebenfalls für das betrachtete Genre typischen – jugendlichen Hauptfiguren in den Fokus. Der Beitrag widmet sich drei eng miteinander verknüpften Forschungsfragen: Welche Genderrollen werden den Protagonist:innen in Fantasyromanen zugeschrieben? Welche Emotionstypen bestimmen das Korpus und wie sehen die Rollen- und Emotionsprofile der Protaginist:innen aus? Fallen genderstereotype, statische Muster auf?
+            
+            
+                Abgeschlossene Vorarbeiten: Annotation von Genderrollen und Emotionstypen im Korpus
+                Unser Beitrag knüpft direkt an eine allgemeinere Fallstudie zum Thema Genderrollen in zeitgenössischer Jugend-Fantasy-Literatur an (Flüh, Horstmann und Schumacher, im Erscheinen) und vertieft die gewonnenen Einsichten. Grundlage der bereits abgeschlossenen Fallstudie stellen 28 deutschsprachige kontemporäre (im Zeitraum zwischen 2015 und 2020 publizierte) Fantasy-Romane für Jugendliche dar. Hierbei haben wir im Rahmen eines Mixed-Methods-Ansatzes Emotionen in Abhängigkeit zu Genderkategorien (männlich, weiblich, neutral) betrachtet, indem ein eigens trainierter Gender-Classifier (Schumacher 2021), der auf Conditional-Random-Fields-Algorithmen (vgl. Sutton und McCallum 2010) basiert und mit dem Stanford Named Entity Recognizer (vgl. Finkel et al. 2005) kompatibel ist, zur automatischen Annotation von Genderrollen mit der digitalen manuellen Annotation von Emotionsinformationen kombiniert wurde.
+                Das Korpus wurde zunächst mit dem Gender-Classifier annotiert, der in allen Texten männliche, weibliche und neutrale Figurenrollen markiert. Die Erkennungsgenauigkeit der genutzten Version erreicht über alle Kategorien hinweg bei gattungsspezifischem Testmaterial einen F1-Score von rund 72% (vgl. Schumacher 2021). Auf die automatische Vorannotation aufbauend, wurde in 25 Romanen mit dem Textanalysetool CATMA (Gius et al. 2021) eine taxonomiebasierte Emotionsanalyse durchgeführt. Die digitale manuelle Annotation funktioniert auf Grundlage eines für die Emotionsanalyse in literarischen Texten entworfenen Tagsets und hierfür entworfenen Guidelines (vgl. Flüh 2020). Die Emotionsanalyse bezog sich auf die Textstellen, an denen vom Gender-Classifier besonders zahlreiche Genderannotationen gemacht wurden. An diesen Gender-Peaks wurde jeweils das semantische Umfeld der Gender-Annotationen nach Emotionsinformationen untersucht. Wir fokussieren also das unmittelbare Textumfeld der Figurenreferenzen und bestimmen, ob und welche emotionstragenden Textstrukturen zu finden sind.
+            
+            
+                Emotionen der Jugend – Ausgestaltung von Emotionsprofilen junger Protagonist:innen
+                Unabhängig von Genderrollen zeigt sich, dass im Korpus Basisemotionen mit negativer Qualität romanübergreifend die Erzählwelten bestimmen. Im gesamten Korpus etabliert sich ein Emotionsprofil, das sich mit abnehmender Häufigkeit zusammensetzt aus:
+                
+                    Angst (925 Annotationen)
+                    Zorn (388 Annotationen),
+                    Freude/Glück (149 Annotationen)
+                    Liebe (219) Annotationen)
+                    Trauer (198 Annotationen)
+                    Ekel (123 Annotationen)
+                
+                Ein Klima des Grauens etabliert sich deutlich über die besonders häufig vorkommenden Angst-Emotionen. Ein genauer Blick auf die Vertreter dieser Kategorie zeigt ein facettenreiches Emotionsprofil, das unterschiedliche Angstzustände und Spielarten der Angst beinhaltet (s. Tabelle 1).
+                    
+                        Tab. 1: Die unterschiedlichen Formen der Angst im Überblick
+                        
+                            Emotionstyp
+                            Vertreter der Kategorie
+                            Anzahl der Annotationen
+                        
+                        
+                            Angst
+                            Besorgnis
+                            383
+                        
+                        
+                            
+                            Schrecken
+                            148
+                        
+                        
+                            
+                            Panik
+                            123
+                        
+                        
+                            
+                            Nervosität
+                            90
+                        
+                        
+                            
+                            Entsetzen
+                            73
+                        
+                        
+                            
+                            Bestürzung
+                            39
+                        
+                        
+                            
+                            Zaghaftigkeit
+                            29
+                        
+                        
+                            
+                            Gruseln
+                            20
+                        
+                        
+                            
+                            Grauen
+                            20
+                        
+                    
+                Die Annotation der Romane zeigt darüber hinaus, dass gerade die beiden bewusst bedeutungsoffen gestalteten Annotationskategorien “UNCATEGORIZABLE” (797 Annotationen) und “PROBLEMFÄLLE” (813 Annotationen) quantitativ ins Gewicht fallen. Während in die Kategorie “Problemfälle” Emotionstypen fallen, die u.a. mehrere polare Gegensätze vereinen, also nicht eindeutig als positiv oder negativ kategorisiert werden können, versammelt die Oberkategorie “Uncategorizable” Emotionen, die nicht einer der Basisemotionen zugeordnet werden können, die aber in ihrer Polarität durchaus eindeutig sind. Viele Textpassagen lassen sich auf Grundlage der strukturorientierten Typologisierung, die sich an der Einteilung von Basisemotionen orientiert (Ekman 1972, Schwarz-Friesel 2007), nicht adäquat beschreiben. In diesen Fällen wurden weitere Emotionstypen definiert; besonders ins Gewicht fallen dabei:
+                
+                    Erstaunen (414)
+                    Bedauern (179)
+                    Interesse (102)
+                    Scham (77)
+                    Aggression (35)
+                
+                Die häufigsten Vertreter dieser Kategorien nuancieren das Emotionsprofil. Scham, Aggression und Bedauern weisen eine negative Qualität auf, während Interesse und Erstaunen eher in die Kategorie positiver Emotionstypen fallen. Auffällig ist, dass alle hier vertretenen Emotionstypen im Diskurs über Sprache und Emotionen als strittige Emotionstypen verhandelt werden. Scham, eine eher intrasubjektiv empfundene Emotion, wird häufig mit ähnlichen Emotionskategorien wie Schuld, Reue oder Bedauern in Verbindung gebracht. Unklar ist hierbei, ob Scham eine eigene Kategorie darstellt oder nicht. Deutlich explosiver und als Selbst- oder Fremdschädigung auftretende Aggressionen lassen sich als Trieb oder als Emotion beschreiben. Fraglich ist auch, ob Erstaunen und Interesse als Emotion klassifiziert werden sollen (Schwarz-Friesel 2007). Hier offenbart sich ein facettenreiches negatives Emotionsprofil, das neben recht eindeutig bestimmbaren negativen Basisemotionen auch eher nach innen gerichtete und Verbundemotionen wie Scham beinhaltet.
+                Da im Annotationsprozess für jede Emotionsannotation die Values männlich, weiblich oder neutral festgelegt wurden, lässt sich nachvollziehen, welche Emotionen mit männlichen Figuren und welche mit weiblichen Figuren in Verbindung stehen. Innerhalb der untersuchten Textpassagen konnten weiblichen Figuren 2200 Mal eine emotionale Reaktion zugeordnet werden, männliche Figuren lediglich 1474 Mal. Es zeigt sich, dass Angst im untersuchten Korpus die zentrale Emotion für beide Gender darstellt. Charaktere beider Geschlechter bilden ein negativ geprägtes Emotionsprofil aus, das unterschiedliche Angstzustände beschreibt: Besorgnis, Erschrecken und Panik bestimmen das Korpus.
+                Nach diesem übergeordneten Blick auf das Korpus, stellt sich nun die Frage, welche Genderrollen für die jungen Protagonist:innen besonders häufig sind, ob diese spezifisch für einzelne Erzähltexte sind, oder ob sich im gesamten Korpus romanübergreifende Muster bilden.
+            
+            
+                Genderrollen der Jugend – Ausgestaltung der Rollenprofile junger Protagonist:innen
+                Um herauszufinden, welche Genderrollen für die jungen Protagonist:innen besonders häufig sind, ob diese spezifisch für einzelne Erzähltexte sind, oder ob sich im gesamten Korpus romanübergreifende Muster bilden, haben wir für alle Protagonist:innen in einer relationalen Graphdatenbank mithilfe der Webapplikation Graphcommons (vgl. Arıkan et al., o.J.) Rollenprofile angelegt. Genderrollen definieren wir nach einem theoretischen Modell, in dem verschiedene in Gender und Masculinity Studies skizzierte Geschlechterrollen in übergeordnete Kategorien zusammengefasst wurden (vgl. Schumacher und Flüh 2020). Rollen wie “Knabe”, “Kind” oder “Mutter” können einer dieser Genderkategorien zugeordnet werden (Mann, Genderneutral, Frau), sind also Genderrollen.
+                
+                Die vom Classifier annotierten Genderrollen wurden durch eine Kollokationsanalyse mit den Protagonist:innen in Verbindung gebracht. Dabei haben wir nach den Gendertags gesucht, in deren Wortumfeld (fünf Wörter davor und danach) der Name der Hauptfigur steht. Anschließend wurde der Annotationskontext daraufhin überprüft, ob mit der annotierten Genderrolle die Hauptfigur bezeichnet wird. Wenn dies der Fall war, wurde die Rolle im Graph mit der Figur verknüpft. Da unser Korpus auch Romanreihen beinhaltet und einige der Hauptfiguren in mehr als einem Roman als Protagonist:in auftreten – was die Vermutung nahelegt, dass die Protagonist:innen von Reihen aufgrund der größeren Textmenge auch mit mehr Rollen bezeichnet werden könnten – wurden die Texte ebenfalls als Knoten im Graphen angelegt und die Hauptfiguren mit den jeweiligen Texten verknüpft. Auf diese Weise entstand im ersten Schritt ein komplexer Graph mit drei Ebenen von Knoten: Texte, Hauptfiguren und Rollen (vgl. Abb. 1). In einem weiteren Schritt wurden Emotionen als vierter Knotentyp hinzugefügt.
+                
+                    
+                    Abb. 1: Graph der Texte, Hauptfiguren und Rollen im Fantasy-Jugendroman-Korpus
+                
+                Betrachtet man die Rollenstruktur des Fantasy-Korpus, fallen mehrere Eigenheiten auf. Zunächst einmal beinhalten die Romane mehr Protagonistinnen als Protagonisten. Elf weibliche Hauptfiguren der Romane und Romanzyklen stehen vier männlichen gegenüber. Zwei der vier männlichen Protagonisten fallen durch besonders vielfältige Rollenprofile auf, während die weiblichen Hauptfiguren insgesamt weniger vielfältige Rollenprofile ausbilden. Die einzelnen Rollen sind dabei häufig stereotyp angelegt, männlichen Protagonisten werden hauptsächlich männlich stereotype Genderrollen zugeschrieben und Protagonistinnen hauptsächlich weibliche. In seltenen Fällen weisen die Protagonist:innen zusätzlich zu ihren binär gegenderten Rollen auch genderneutrale Rollen auf wie “Kind”, “Findelkind”, “Mensch” und “guter Mensch”.
+                Die meisten Hauptfiguren bilden im Rollennetzwerk Cluster aus, wobei die Rollen häufig text- oder reihenspezifisch sind. Ein Beispiel für eine sehr romanspezifische Rolle ist die “Traumhändlerin” in 
+                    Die Stadt der gläsernen Träume und auch die Magierinnen-Rollen von Robin aus 
+                    Burning Magic I-III sind sehr an die erzählte Welt dieser Trilogie gebunden. Die Rolle der Tochter bildet dagegen ein eigenes Cluster (vgl. Abb. 2), was zeigt, dass die familiäre Struktur im gesamten Korpus von herausragender Bedeutung ist.
+                
+                
+                    
+                    Abb. 2: Rollennetzwerk geclustert
+                
+                Darüber hinaus sind die Genderrollen der “Freundin” und des “Mädchens” romanübergreifend bedeutsam; sie sind jeweils mit sieben Protagonistinnen verknüpft. Die Hauptfiguren in dieser Stichprobe deutschsprachiger Jugend-Fantasy-Romane sind also meist Mädchen, für die einerseits das familiäre und andererseits das freundschaftliche Umfeld eine wichtige Bedeutung haben.
+                Zwei der Hauptfiguren fallen dadurch auf, dass sie nur mit einer einzigen Rolle verbunden sind. Es handelt sich dabei um Edda aus der 
+                    Silbermeer Saga und Mingus aus dem gleichnamigen Roman. Tatsächlich werden Edda und ihr Bruder als Findelkinder vorgestellt, deren familiäre Herkunft unbekannt ist und deren wichtigste Verbindung die zueinander ist. Mingus ist ein künstlich erzeugtes Wesen, eine Chimäre aus Mensch und Tier. Es verwundert darum kaum, dass hier die (stereotypen) Genderrollen, die der Classifier erkennt, selten sind. Die einzige Genderrolle, mit der Mingus referenziert wird, ist die des Freundes. Dieser Befund ist für Anschlussuntersuchungen besonders interessant. Da der Gender-Classifier stereotype Genderrollen am besten erkennt, könnte es sein, dass den Protaginist:innen dieser Texte zwar noch mehr Rollen zugeschrieben werden, dass diese aber die hier betrachteten Genderkategorien sprengen und nicht in das zugrundeliegende Kategoriensystem passen. Eine genauere Betrachtung liegt zwar außerhalb des Fokus dieses Beitrags, könnte aber im Rahmen einer Close-Reading-Analyse darauf aufbauen. Die Analyse des Rollennetzwerkes zeigt also insgesamt bereits erste Hinweise auf die Ausgestaltung der Hauptfiguren unseres Korpus. Ein genaueres Bild ergibt sich, wenn die Emotionen, die den Protagonist:innen zugeschrieben werden, mit einbezogen werden.
+                
+            
+            
+                Zusammenführung von Genderrollen und Emotionstypen
+                Um zu erproben, wie das Zusammenspiel von Genderrollen und Emotionen gemeinsam betrachtet werden kann, haben wir zunächst Emotionen in einem kompletten Roman manuell annotiert. Dabei handelt es sich um einen Text mit einer Protagonistin – Ana aus der Trilogie 
+                    Der verwaiste Thron von Claudia Kern (Abb. 3).
+                
+                
+                    
+                    Abb. 3: Beispielhafte Close-Reading-Auswertung der Emotions- und Rollenprofile von Thor und Ana
+                
+                Ana ist die Heldin einer Trilogie (manuell annotiert wurde allerdings nur der erste Teil) und wird stark über Emotionen charakterisiert. Fünf Rollen stehen hier vierzig Emotionen gegenüber. Zwar wurden die Genderrollen automatisch und die Emotionen manuell annotiert, dennoch ist die Differenz hier signifikant. Im gesamten Korpus wurden 68 Emotionen und 83 Genderrollen ausgemacht, die sich auf Protagonist:innen beziehen. Zwar erreicht der Classifier nur eine Erkennnungsgenauigkeit von 72% und annotiert somit höchstwahrscheinlich nicht alle Genderrollen, die mit einer Figur verbunden sind. Auf der anderen Seite handelt es sich aber um eine kontextsensitive automatische Annotation, d.h. die Anzahl der Genderrollen, die erkannt werden kann, ist potentiell unendlich. Die Protagonistin tritt als “Herrin”, “Erbin” und “Fürstin” in Erscheinung, gleichzeitig nimmt sie auch die im Korpus insgesamt sehr bedeutsame familiäre Rolle der Tochter ein. Dass Ana eine Protagonistin ist, die vergleichsweise stark über Emotionen charakterisiert wird, zeigt eine Gegenüberstellung mit den anderen Hauptfiguren im Korpus (vgl. Abb. 4). Die in Abb. 4 in Pink dargestellten Emotionsrelationen überwiegen die dunkelblauen Genderrollenzuschreibungen deutlich; stärker als dies bei anderen Protagonist:innen der Fall ist.
+                
+                    
+                    Abb. 4: Gegenüberstellung männlicher und weiblicher Hauptfiguren mit Emotionsrelationen und Genderzuschreibungen
+                
+                Neben unterschiedlichen positiven Emotionen (Erheiterung, Dankbarkeit, Vertrauen, Zufriedenheit, Zuneigung, Verlangen, Zuversicht und Gelassenheit) steht eine deutlich höhere Anzahl negativer Emotionen (Abneigung, Trübsal, Leid, Schrecken, Kummer, Nervosität, Wut, Bedauern, Bestürzung, Verzweiflung, Widerwille, Scham, Panik, Ratlosigkeit, Aversion, Entsetzen, Verärgerung und Melancholie), die diese Figur charakterisieren und dem negativen genrespezifischen Emotionsprofil entsprechen. 
+                Um zu prüfen, ob es sich hierbei um ein genderspezifisches Muster handelt, haben wir abschließend die anderen Romane im Korpus betrachtet. Um die größere Stichprobe analysieren zu können, haben wir die Romane nicht im Close-Reading-Verfahren annotiert, sondern lediglich Gender-Peaks – Passagen, in denen der Gender-Classifier besonders viele Annotationen hinzugefügt hat – und ein Fenster von sechs Sätzen pro Genderzuschreibung betrachtet (drei vor der Erwähnung einer Genderrolle innerhalb eines Peak-Abschnitts und drei danach). Um anschließend diejenigen Emotionsannotationen ausfindig zu machen, die Emotionen markieren, die den Protagonist:innen zugeschrieben wurden, haben wir erneut Kollokationsabfragen durchgeführt, die ausschließlich Emotionsannotationen im Wortumfeld von namentlichen Erwähnungen der Hauptfigur aufzeigen.
+                
+                    
+                    Abb. 5: Rollen und Emotionsprofile von Hauptfiguren in Jugend-Fantasy-Literatur
+                
+                Der Graph in Abb. 5 zeigt ein interessantes Bild: Nur eine männliche und zwei weibliche Hauptfiguren werden stärker über Rollen als über Emotionen charakterisiert. Bei drei Hauptfiguren sind die Rollen- und Emotionsprofile relativ ausgeglichen. Sechs Protagonistinnen zeigen ein eindeutig stärker über Emotionen als über Rollen definiertes Profil. Es zeigt sich also eine leichte Tendenz zu einer stärkeren Rollenprofilierung der männlichen Hauptfiguren. Die Mehrzahl der Protagonistinnen wird stärker über Emotionen als über Rollen ausgestaltet. An dieser Stelle sind zwei methodenkritische Aspekte zu berücksichtigen: Erstens findet der hier vorgestellte Classifier nicht alle relevanten Entitäten; hier zeigt sich eine grundsätzliche Schwäche von NLP-Ansätzen zur Analyse von (literarischen) Texten. Zweitens führt der vorgestellte Mixed-Methods-Ansatz automatische, d.h. weniger zuverlässige, Annotationen mit manuellen zusammen. Da der Gender-Classifier mit einer Quote von 72% F1-Score nicht alle Vorkommnisse von Genderrollen annotiert, ist es möglich, dass die Figuren eigentlich mehr Genderrollen zugeschrieben bekommen, als hier gezeigt. Die Kontextsensitivität des Tools gewährleistet allerdings, dass sehr viele unterschiedliche Genderrollen automatisch annotiert werden, davon aber nicht immer unbedingt alle Vorkommnisse. Wir gehen darum davon aus, dass die Mehrheit der vorhandenen Genderrollen berücksichtigt werden konnte und der Gender-Classifier eine valide Tendenz der Verteilung aufzeigt. Auch ist bei der hier vorliegenden vergleichenden Analyse vor allem die Balance zu den anderen Texten bedeutsam.
+                Interessant ist auch, welche Emotionen mit den meisten weiblichen Hauptfiguren verknüpft sind. Erstaunen ist mit allen acht Protagonistinnen der Stichprobe verbunden. Besorgnis empfinden sechs der acht weiblichen Hauptfiguren. Bedauern ist bei fünf Charakteren zu finden und Neugier und Zuneigung bei jeweils vier von ihnen. Von diesen fünf am meisten verknüpften Emotionen ist nur eine der Basisemotion der Angst zuzuordnen, nämlich die Besorgnis. Dabei handelt es sich allerdings um eine relativ schwache Form von Angst. Das Klima des Grauens, das für das Genre der Phantastischen Literatur postuliert wurde und das die Gesamtbetrachtung der Emotionen in unserem Korpus bestätigen konnte, geht also nicht wesentlich von den überwiegend weiblichen Hauptfiguren aus. Diese wirken dem eher besorgt, mitfühlend und auch neugierig entgegen.
+            
+            
+                Ausblick
+                Bis hierhin erweist sich das geschilderte Verfahren als sinnvoll, um das Zusammenspiel von Emotionen und Genderrollen zu analysieren. Es eignet sich, um häufig vorkommende Genderrollen und Emotionsprofile zu ermitteln. Genderstereotype Muster zeichnen sich zwar in dieser Fallstudie schon ab, müssten aber durch die Analyse eines größeren Korpus noch bestätigt oder revidiert werden. Der beispielhafte Vergleich mit einem ebenfalls zunächst im Close-Reading betrachteten männlichen Hauptcharakter steht noch aus. Die Betrachtung des Gesamtkorpus gibt einen vorläufigen Hinweis darauf, dass männliche Hauptfiguren etwas weniger stark durch Emotionen und eher durch stereotype Rollenbilder charakterisiert werden. Um diese Tendenz weiter zu untersuchen, müsste allerdings in einer Anschlussstudie die Stichprobe erweitert werden, um mehr Protagonisten in die Untersuchung einbeziehen zu können.
+            
+        

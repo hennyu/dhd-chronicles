@@ -1,0 +1,168 @@
+
+            
+                Einleitung
+                Quantitative Methoden haben in den Filmwissenschaften eine lange Tradition, die bis auf die prädigitale Ära zurückreichen (Salt 1974; Vonderau 2020). Zahlreiche Projekte in den digitalen Filmwissenschaften setzen mittlerweile computergestützte Methoden ein, um quantitative Analysen durchzuführen oder qualitative Arbeiten zu unterstützen. Anwendungsbereiche sind unter anderem die Analyse von Farben (Burghardt et al. 2016; 2018; Kurzhals et al. 2016; Flueckiger 2017; Pause / Walkowski 2018; Masson et al. 2020;), Annotationsmöglichkeiten (Kuhn et al. 2015; Halter et al. 2019; Schmidt / Halbhuber 2020; Schmidt et al. 2020a) oder Schnittlängen und -typen (DeLong 2015; Baxter et al. 2017). Häufig werden dabei die Texte von Filmen (Skripte, Untertitel) analysiert (Hoyt et al. 2014; Holobut et al. 2016; Byszuk 2020; Holubut / Rybicki 2020). Durch Entwicklungen im Bereich der Computer Vision (computergestütze Bilderkennung/Bildanalyse) (CV) bieten sich jedoch neue Möglichkeiten für Digital Humanities (DH)-Projekte, die mit Videos arbeiten, die bereits erfolgreich für Filme, Internetvideos oder Theateraufführungen eingesetzt werden (Zaharieva et al. 2012; Howanitz et al. 2019; Pustu-Iren et al. 2020; Schmidt et al. 2021c; Schmidt / Wolff 2021). Wir präsentieren im folgenden Beitrag eine explorative Studie zum Einsatz einer Auswahl an CV-Methoden, die wir für potentiell wertvoll für den Bereich der Spielfilm-Analyse einschätzen. Wir orientieren uns dabei am explorativen Forschungsansatz definiert von Wulff (1998) für die Filmanalyse. 
+                Als Fallstudie wird die deutschsprachige Kriminalfilm-Reihe „Tatort“ gewählt. Mit ca. 9 Millionen Zuschauern handelt es sich um eine der beliebtesten Fernsehformate in Deutschland. Aufgrund seiner national hohen kulturellen Bedeutung ist der Tatort ein häufiger Untersuchungsgegenstand in der Filmanalyse (Buhl 2013) und wird zur Analyse gesellschaftspolitischer Themen wie Migration (Ortner 2007), Verhältnis von Ost- und Westdeutschland (Welke 2005), des Zusammenhangs von Emotionen und Geschlechtern (Finger et al. 2010) oder zur Analyse von Online-Texten herangezogen (Schmidt et al. 2021d). Der Fokus unserer Analysen liegt auf gruppenbasierten Vergleichen. Als Gruppen differenzieren wir zwischen unterschiedlichen Städten/ErmittlerInnen-Teams. So spielen die einzelnen Folgen des Tatorts in unterschiedlichen Städten mit unterschiedlichen Hauptfiguren. Diese Gruppen transportieren teilweise unterschiedliche Stimmungen, Lokalkolorit sowie Geschlechts- und Altersrepräsentationen in den Figurenkonstellationen.
+                
+                Die Ziele dieses Beitrags sind (1) Nutzen und Limitationen der angewandten Methoden zu analysieren und (2) explorativ festzustellen, ob die Methoden besondere Charakteristiken von, in diesem Fall, Filmgruppen aufzeigen. Als CV-Methoden werden Objekt-, Emotions-, Geschlechts-, Alters- und Ortserkennung untersucht und frei verfügbare state-of-the-art-Modelle verwendet. Die genannten Methoden wurden ausgewählt, weil sie als gewinnbringend für Forschungsideen auf dem vorliegenden Korpus angesehen werden und bereits in ähnlichen Settings exploriert wurden (Schmidt et al. 2021c).
+            
+            
+                Korpus
+                Als Korpus werden 13 Folgen des Tatorts genutzt. Alle Filme (je ca. 90 Minuten) liegen im mp4-Format mit einer Auflösung von 960x540 Pixeln und 25 Frames pro Sekunde vor. Alle angewandten CV-Methoden nutzen Bild-Dateien weswegen wir 1 Frame für jede Sekunde eines Films extrahieren und als Korpusgrundlage verwenden. Abbildung 1 fasst die wichtigsten Metadaten der Filme zusammen.
+                
+                    
+                    Abb. 1: Metadaten des ausgewählten Tatort-Korpus.
+                
+                Wir differenzieren zwischen den folgenden Standorten/ErmittlerInnen-Teams, die im Folgenden für gruppenbasierte Vergleiche genutzt werden: Luzern in der Schweiz (im Folgenden abgekürzt als CH; insgesamt 2 Filme), München (M; 6 Filme), Nürnberg (N; 2 Filme) und Schwarzwald (SW; 3 Filme). Die 4 Gruppen unterscheiden sich bezüglich des Kolorits (ländlich vs städtisch) und in der Alters- und Geschlechtsausprägung. Aufgrund der ungleichen Menge an Filmen pro Gruppe werden im Folgenden primär Werte normalisiert an der Länge (pro Sekunde, gewählte Frames für das Korpus) betrachtet.
+            
+            
+                Objekterkennung
+                Für die Objekterkennung wird Detectron2 von Facebook AI Research verwendet, was als state-of-the-art-Lösung gilt (Wu et al. 2019). Das Modell basiert auf einem vortrainierten maskierten RCCN-Modell und wurde auf dem COCO-Datensatz (Lin et al. 2015) trainiert. Es kann 80 Objektklassen wie Fahrzeuge oder Tiere vorhersagen. Als Schwellenwert für die Erkennung wird eine Wahrscheinlichkeit von 50% gewählt. Dies ist ein eher niedriger Wert, ermöglicht uns aber breitere Explorationen der Methode. Diese und alle anderen Methoden wurden in 
+                    Python mit verschiedenen SDKs implementiert.
+                
+                Die Abbildungen 2-3 illustrieren die je 10 häufigsten Objekte pro Tatort-Gruppe und insgesamt. Wir interpretieren die Ergebnisse rein deskriptiv.
+                
+                    
+                    Abb. 2: Verteilung von erkannten Objekten in der CH, M und N-Gruppe. # ist die absolute Zahl. % der Anteil an den gewählten Frames des jeweiligen Gruppenkorpus.
+                
+                
+                    
+                    Abb. 3: Verteilung von erkannten Objekten in der SW-Gruppe und insgesamt. # ist die absolute Zahl. % der Anteil an den gewählten Frames des jeweiligen Gruppenkorpus.
+                
+                Zu den häufigsten erkannten „Objekten“ gehören (trivialerweise) Personen. Ansonsten wird vor allem Innenarchitektur (Stühle, Tassen, Bücher) erkannt aber auch Bildschirme wie Laptops und Fernseher. Diese Erkennungen basieren vor allem auf Szenen der Recherchen der einzelnen Teams; Bildschirme werden dabei häufig als Fernseher erkannt (siehe Abbildung 4).
+                
+                    
+                    Abb. 4: Frame mit als Fernseher erkannten Computerbildschirmen (CH1).
+                
+                Verhältnismäßig wenig Objekte weisen auf Außenszenen hin wie zum Beispiel Autos (Abbildung 5).
+                
+                    
+                    Abb. 5: Frame mit als Auto erkannten Objekten (M5)
+                
+                Die Unterschiede der einzelnen Tatort-Städte unseres Korpus sind eher gering und die Verteilung sehr homogen. Vereinzelt können Objekthäufungen aufgrund von sehr speziellen inhaltlichen Unterschieden einzelner Folgen festgestellt werden. Die SW-Episoden beispielsweise weisen, im Unterschied zu den anderen Gruppen, vermehrt Betten auf, da eine der Folgen (SW2) in einem Hotel spielt (siehe Abbildung 6).
+                
+                    
+                    Abb. 6: Frame mit als Bett erkannten Objekten (SW2).
+                
+                Es wurde keine systematische Evaluation durchgeführt, jedoch konnte man in der explorativen Analyse feststellen, dass die meisten Ergebnisse korrekt sind. Falsche Zuweisungen sind jedoch nicht selten, wenngleich die Fehlinterpretation häufig nachvollziehbar ist (siehe Abbildung 7).
+                
+                    
+                    Abb. 7: Als „Hund“ erkannte Haare einer Figur (CH2).
+                
+            
+            
+                Figurenanalyse
+                Unter Figurenanalyse bezeichnen wir im Folgenden alle Methoden, die die Gesichter der Figuren als Analyseelement benutzen: Emotions-, Alters- und Geschlechtserkennung.
+                
+                    Emotionserkennung
+                    Gesichtsbasierte Emotionserkennung ist eine etablierte Methode in der Mensch-Maschine-Interaktion mit zahlreichen Anwendungsbeispielen (Halbhuber et al. 2019; Hartl et al. 2019; Schmidt et al. 2020c). Für die Emotionserkennung wird das Python-Modul 
+                        FER (Goodfellow et al. 2013) genutzt. Das Modell führt erste eine Gesichtserkennung durch (Zhang et al. 2016) und dann eine Emotionsprädiktion über ein convolutional neural network (CNN), das auf über 35 000 vorannotierten Bildern trainiert wurde. Das Modell gibt Wahrscheinlichkeitswerte für die sieben Klassen 
+                        Wut, Ekel, Furcht, Freude, Trauer, Überraschung und 
+                        Neutral zwischen 0 und 1 aus, die sich insgesamt zu 1 summieren. Zur Bestimmung der Gesamtemotion eines Frames werden die jeweiligen Werte für die Kategorien summiert und der Durchschnitt gebildet. Für die film- oder gruppenbasierten Analysen werden Mittelwerte über alle Frames hinweg gebildet.
+                    
+                    Abbildung 8 illustriert die wichtigsten statistischen Werte dieser Auswertung.
+                    
+                        
+                        Abb. 8: Deskriptive Statistik für die Emotionserkennung. Minimalwerte sind stets 0. Höchster M (Durchschnitt) pro Emotion für die Gruppen ist hervorgehoben.
+                    
+                    Die häufigsten Emotionsklassen sind Trauer(M=0,31) (siehe Abbildung 9), Neutral (M=0,25) und Wut (M=0,18). Dies ist eine passende Verteilung für die Grundstimmung von Kriminalfilmen. Überraschung und Ekel werden eher selten vorhergesagt. Die Tendenz zu negativem Sentiment und Emotionen findet man bei der Annotation und Prädiktion von anderen narrativen Erzählformen auch (Schmidt / Burghardt 2018; Schmidt 2019; Schmidt et al. 2019; 2021a; 2021b)
+                    
+                        
+                        Abb. 9: Frame mit dem höchsten Wert für Trauer (0,99) im Gesamtkorpus (M5)
+                    
+                    Deskriptiv betrachtet sind die Ergebnisse der einzelnen Episodengruppen erneut sehr homogen. Für Output mit kontinuierlichen Werten überprüfen wir die Unterschiede aber noch mittels Signifikanztests. Wir verwenden einen 
+                        Welch-ANOVA-Test (alle Voraussetzungen für den Test sind erfüllt (Field 2009)) und finden signifikante Unterschiede gemäß eines Signifikanzniveaus von 
+                        p<0,05 (Abbildung 10). 
+                    
+                    
+                        
+                        Abb. 10: Ergebnisse des Welch-ANOVA-Signifikanztest für die Episodengruppen (Emotionen).
+                    
+                    Die Effekte der Unterschiede bestätigen jedoch die deskriptive Interpretation, da sie laut Cohen (1988) als sehr gering einzustufen sind (
+                        η2 < 0,01 = schwacher, < 0,06 moderater und < 0,14 = starker Effekt). Auch Post-Hoc-Tests unter den einzelnen Gruppen weisen zwar signifikante Unterschiede auf, sind jedoch geringfügig.
+                    
+                    Die explorative Evaluation des Materials zeigt, dass die Modelle für extreme Emotionsausprägungen nachvollziehbare Ergebnisse produzieren (siehe auch Abbildung 11), ein Hauptproblem jedoch ist, dass Fehler in der vorangestellten Gesichtserkennung vorkommen. So hat das Modell große Probleme mit der Erkennung von Gesichtern, die nicht frontal in die Kamera blicken. Dies liegt der Tatsache zu Grunde, dass die Modelle primär mit Bildern trainiert werden bei denen die Personen frontal in die Kamera blicken (Goodfellow et al. 2013).
+                    
+                        
+                        Abb. 11: Frame mit dem höchsten Wert für Wut (0,97) im Gesamtkorpus (SW1).
+                    
+                
+                
+                    Alters- und Geschlechtserkennung
+                    Die Vorhersage des Alters und des Geschlechts von Figuren wird mit dem Modul 
+                        py-agender durchgeführt. Es basiert auf einem CNN, das auf dem IMDB-Wiki-Datensatz, bestehend aus über 500 000 annotierten Gesichtern (Rothe et al. 2018), trainiert wurde und erzielt in Evaluationen sehr gute Ergebnisse (Agustsson et al. 2017). Die Altersprädiktion gibt einen Wert zwischen 0 und 100 aus, der das Alter kennzeichnet. Die Geschlechtsprädiktion einen Wert zwischen 0 und 1 für den gilt, <0.5 eher männlich und >0.5 eher weiblich. Für beide Verfahren wurde für jeden Frame der Mittelwert aller erkannten Gesichter für einen Gesamtwert gebildet. In Abbildung 12 werden die Ergebnisse für beide Methoden gesamt und pro Tatortgruppe zusammengefasst.
+                    
+                    
+                        
+                        Abb. 12: Deskriptive Statistik für die Alters- und Geschlechtserkennung. Maximal- und Minimalwerte von M werden pro Episodengruppe hervorgehoben.
+                    
+                    Gemäß der Alterserkennung liegt der Altersdurchschnitt bei 41,47 Jahren. Die dominanten und häufig in Frames gezeigten ErmittlerInnen der ausgewählten Folgen sind jedoch überwiegend Ende 40 und Anfang 50. Die älteste Person im Gesamtkorpus wird mit 72 Jahren identifiziert (Abbildung 13), die jüngste ist ein Kind mit 10 Jahren (Abbildung 14). 
+                    
+                        
+                        Abb. 13: Frame mit der Person mit dem höchsten Alterswert von 75,46 (M2).
+                    
+                    
+                        
+                        Abb. 14. Frame mit der Person mit dem geringsten Alterswert von 10,86 (SW 3).
+                    
+                    Rein deskriptiv sind die Unterschiede zwischen den Gruppen gering. Ein Welch-ANOVA-Test weist erneut auf signifikante Unterschiede mit einem geringen Effekt hin (Abbildung 15). 
+                    
+                        
+                        Abb. 15: Ergebnisse des Welch-ANOVA-Signifikanztest für die Episodengruppen (Geschlecht/Alter).
+                    
+                    Tatsächlich zeigen Post-Hoc-Tests, dass die Hauptunterschiede mit einem mittleren Effekt zwischen den Folgen aus der Schweiz (CH) und aus dem Schwarzwald (SW) bestehen, welche gleichzeitig den höchsten, respektive geringsten Altersunterschied haben. Bei Betrachtung der Filme wird klar, dass dies vor allen daran liegt, dass in den SW-Folgen viele Kinder und Jugendliche mitspielen (Abbildung 14). Ein Problem der Altersanalyse, das wir bei unseren Explorationen identifizieren konnten, ist jedoch in diesem Zusammenhang, dass Kinder und Jugendliche meist überschätzt werden (Abbildung 15). Grund hierfür ist auch wieder die Trainingsgrundlage des Modells, die primär aus Personen im Erwachsenenalter besteht. 
+                    
+                        
+                        Abb. 16: Frame mit Kind, dessen Alter auf 26 Jahre überschätzt wird (M4)
+                    
+                    Mit einem Mittelwert von 0,38 ist eine vermehre Repräsentation männlicher Gesichter festzustellen (Abbildung 12). Dies entspricht auch der realen Figuren-Belegung der Serie, die, obschon sie gemischte ErmittlerInnen-Paare enthält, vor allem in den Nebenfiguren von männlichen Charakteren dominiert wird. Abbildung 17 und 18 zeigen die jeweils höchsten Ausprägungen des Korpus.
+                    
+                        
+                        Abb. 17: Frame mit dem „männlichsten“ Gesicht (Minimalwert für Geschlecht: 0,002) (M2).
+                    
+                    
+                        
+                        Abb. 18: Frame mit dem „weiblichsten“ Gesicht (Minimalwert für Geschlecht: 0,99) (N1).
+                    
+                    Ein Welch-ANOVA-Test zeigt wiederum signifikante Werte mit schwachen Effekten auf (Abbildung 15). Post-Hoc-Tests zeigen, dass der signifikante Unterschied aufgrund der stärkeren Differenzen der Episoden aus München (M) mit den Episoden aus Schwarzwald (SW) und Luzern (CH) zustande kommt. In der Tat sind die beiden letztgenannten Gruppen jene, die ErmittlerInnen-Gruppen bestehend aus Mann und Frau haben und damit höhere Werte Richtung weiblicher Gesichter zeigen. Der erhöhte Wert bezüglich männlicher Ausprägung beim Münchner-Tatort ist zum einen konform mit der Dominanz an männlichen Ermittlern und wird bei der Einzelfolgen-Analyse deutlich, da eine Folge in einem Männergefängnis spielt.
+                    Insgesamt wirkt die Geschlechtsprädiktion plausibel. Ähnlich zur Emotionserkennung ist ein Problem mangelnde korrekte Gesichtserkennung aufgrund nicht-frontaler Kamerawinkel und schwammige, dunkle Einstellungen (Abbildung 19).
+                    
+                        
+                        Abb. 19: Beispiel für falsche Geschlechtserkennung: Das Gesicht wird als männlich (0,29) identifiziert (M6).
+                    
+                
+            
+            
+                Ortserkennung
+                Als Ortserkennung bezeichnen wir die Methodik den groben Schauplatz eines Bildes zu erkennen. Dabei ist nicht der geographische Ort gemeint, sondern die abstrakte Umgebung, also zum Beispiel, ob ein Bild in einem Zimmer spielt oder draußen. Wir verwenden den Trainingsdatensatz 
+                    Places365, der aus über 1,8 Millionen annotierten Bildern besteht. Für unsere Prädiktion nutzen wir ein vortrainiertes CNN und präparieren die Frames in einer Vorverarbeitung für das CNN (Zhou et al. 2017). Anstatt den 365 Teilklassen fokussieren wir uns jedoch auf die Hauptkategorien 
+                    innen, draußen-künstlich, draußen-natürlich und 
+                    draußen-gemischt. Jeden Frame weisen wir die Kategorie zu, die das Modell mit der höchsten Wahrscheinlichkeit vorhersagt. 
+                
+                
+                    
+                    Abb. 20: Häufigkeitsverteilung für die Ortserkennung. # ist die absolute Zahl. % der Anteil an den gewählten Frames des jeweiligen Gruppenkorpus.
+                
+                Unabhängig von der Episodengruppe wird der größte Anteil der Frames als innen kategorisiert (Abbildung 20), was der Realität der Filme entspricht in denen meist Ermittlungen und Recherchen in Zimmern stattfinden (Abbildung 21). 
+                
+                    
+                    Abb. 21: Beispiel für Frame, das als „innen“ erkannt wurde (CH1).
+                
+                Ein Chi-Quadrat-Signifikanz-Test weist dennoch auf signifikante Unterschiede zwischen den Gruppen hin
+                    (χ2 = 809,23; 
+                    p < 0,001; ϕ = 0,06). In der Tat weisen die Episoden aus dem Schwarzwald als einer eher ländlichen Gegend den höchsten Anteil an Frames der Kategorie „draußen“ auf (Abbildung 22). Die CH-Gruppe, die von uns auch als eher ländlich postuliert wurde, kann dies hier aber nicht bestätigen, was jedoch inhaltlich plausibel ist, da beispielsweise eine Folge komplett in den Räumen eines Schiffes spielt.
+                
+                
+                    
+                    Abb. 22: Beispiel für einen Frame, der als gemischt-draußen erkannt wurde (SW1).
+                
+            
+            
+                Methodenreflexion und Ausblick
+                Durch die Durchführung der hier vorgestellten Fallstudie, konnten wir die CV-Methoden gewinnbringend explorieren. Wir konnten signifikante Unterschiede zwischen Episodengruppen identifizieren, die jedoch meist geringe Effekte aufzeigten. Die meisten Charakteristika, die wir so herausarbeiten konnten, bestätigten Annahmen. Neue Auffälligkeiten der Filmgruppen konnten jedoch nicht entdeckt werden. Die Gründe hierfür sind vielseitig: Das Korpus ist, da es sich um die gleiche Serie nur mit variierenden Figuren handelt, bezüglich des Genres, des Settings und der Besetzung eventuell zu homogen um gruppenbasierte Unterschiede in Signifikanztests deutlich zu machen. Vergleiche von Filmgruppen, die sich klarer voneinander unterscheiden (z.B. unterschiedliche Filmgenres), könnten deutlichere Effekte generieren.
+                Trotzdem haben wir vielversprechende Forschungsideen, die mit den präsentierten Methoden in einer Art 
+                    Distant Viewing-Ansatz (Arnold / Tilton 2019) mit ausreichend Filmmaterial untersucht werden können, z.B. für den Bereich Gender Studies Korrelationen zwischen Emotionen und Geschlechtern oder Repräsentationsanalysen der Geschlechter (ähnlich zu Schmidt et al. 2020b). Die momentane Methodenauswahl ist auch noch rein bildfokussiert, wenngleich andere Kanäle z.B. der Audio-Kanal auch Potential für die Analyse haben. In der Tat werden in ersten Projekten in den DH der Einsatz von multimodalen Methoden oder dem Audio-Kanal bereits untersucht (Ortloff et al. 2019; Schmidt et al. 2019; Schmidt / Wolff 2021)
+                
+                Die Exploration der Methoden für die vorliegende Fallstudie haben jedoch auch Probleme in der Exaktheit und Leistung offenbart, z.B. Probleme in der Gesichtserkennung. Systematische Evaluationen sind notwendig, um das Ausmaß der Problematik einschätzen zu können. Auch sind die Klassifikationstaxonomien, beispielsweise der Objekterkennung und Ortserkennung, eventuell nicht passend für die Interessen von FilmwissenschaftlerInnen. Wir planen momentan größere Annotationsstudien, um (1) die Leistung von state-of-the-art-Standard-Modellen exakt zu evaluieren und (2) Trainingsmaterial für die Domänenadaption an eine spezielle Filmdomäne zu erstellen. Für die Annotationsstudien sollen studentische Hilfskräfte größere Mengen eines Querschnitts von Filmframes aus Filmen unterschiedlicher Epochen und Genres annotieren.
+            
+        

@@ -1,0 +1,176 @@
+
+            
+                Einleitung
+                
+                    Unser Beitrag zur Tagung 
+                        Open 
+                        Humanities
+                        , Open Culture präsentiert eine innovativen Vorschlag für die Datenmodellierung zukünftiger digitaler Werkeditionen. Das Modell ist hochgradig flexibel, indem es eine Diversität und komplexe Relationalität der Werkdaten zulässt, und zugleich stabil, wodurch es maximale Offenheit der Rezeption und Nachnutzbarkeit gewährleistet.
+                    
+                
+                
+                    Entwickelt und erprobt wurde das Datenmodell im Zuge der Daten-Migration der Forschungsplattform 
+                        Handkeonline (
+                    
+                    
+                        
+                            https://handkeonline.onb.ac.at/
+                        
+                    
+                    ), bei der eine vorerst “geschlossene” Modellierung von präbibliographischen Daten der verschiedenen, genetisch interpretierten Werkmaterialien aus dem Vorlass zusammen mit bibliographischen Daten der veröffentlichten Werke des Literaturnobelpreisträgers Peter Handke in eine “offene” umgebaut werden musste – wir nennen diese Modellierung eine “offene Werkgenese”. 
+                
+                
+                    In unserer Präsentation werden wir zuerst kurz in die Voraussetzungen der Plattform 
+                        Handkeonline (Punkt 2) und in den aktuellen Forschungsstand der semantischen Modellierung von bibliographischen und präbibliographischen Daten (Punkt 3) einführen. Danach wird anhand von zwei Beispielen der generische Modellierungsansatz für „offene Werkgenesen“ präsentiert (Punkt 4).
+                    
+                
+            
+            
+                Forschungsplattform 
+                    Handkeonline
+                
+                Die Forschungsplattform 
+                    Handkeonline wurde im Zuge eines FWF-Forschungsprojekts am Literaturarchiv der Österreichischen Nationalbibliothek Wien 2011-2015 entwickelt. Sie versteht sich als virtuelles Archiv, das sämtliche auf öffentliche und private Archive in Österreich, Deutschland und der Schweiz verstreute Vorlass-Materialien (wie Notizbücher, Bleistiftmanuskripte und Typoskripte unterschiedlicher Textfassungen sowie Druckfahnen, aber auch annotierte Bücher, Fotos, Landkarten oder sogar Wanderstöcke) zum veröffentlichten Werk Peter Handkes zusammenführt. Die Materialen werden tabellarisch und in Form von Texten beschrieben und in eine entstehungschronologische Beziehung gesetzt, die in Paratexten kommentiert wird. Die werkgenetische Interpretation und Beschreibung erweitern das virtuelle Archiv zu einer Edition. Ergänzt wurde diese durch eine umfangreiche Bibliographie zur Primär- und Sekundärliteratur des über 140 Bücher sämtlicher Genres umfassenden Werks Handkes. Inhaltliche und formale Vielfalt öffnen die Plattform für ein breites Publikum. Sie wird nicht nur für die universitäre Forschung intensiv genutzt, sondern bietet Schüler*innen Unterstützung für Hausarbeiten, wird von Theatern für die Erarbeitung von Stückinszenierungen oder Begleitheften herangezogen und, wie die Aufregungen um den Nobelpreis gezeigt haben, auch von Journalist*innen konsultiert. (Der faktischen Materialdokumentation der Plattform kam etwa innerhalb der kontroversen Debatte um Handkes “Serbien-Bücher” ein wichtige Rolle zu.)
+                
+                Zentrales Anliegen des 
+                    Handkeonline-Projekts war die Präsentation und Weitergabe des erarbeiteten biographischen, literaturwissenschaftlichen und archivalischen Wissens über Handke, die Entstehung seiner Werke, und damit zusammenhängend über die Beschaffenheit und Bedeutung der einzelnen Vorlass-Materialien. Die nachhaltige Modellierung dieser Forschungsdaten, welche erst eine langfristige Verfügbarkeit sowie Ausbau- und Anschlussfähigkeit des Wissens garantiert, wurde dabei vorderhand aus zeitökonomischen und budgetären Gründen vernachlässigt. Vor allem aber fehlte noch das geeignete konzeptuelle Modell das von Literatur-, Editions- oder Archiv- und Informationswissenschaft gemeinsam gedacht wird, und damit auch eine praktische Vorlage. Die Daten von 
+                    Handkeonline wurden im Altsystem flach strukturiert und in einem proprietären Format vorgehalten. Die Folgen wurden bereits nach Projektende deutlich: die innovative Darstellung der Werkgenese war zwar Vorbild für andere Projekte, aber diese wurde weder in den Daten repräsentiert noch nachhaltig strukturiert. Deutlich zeigte sich das Problem in dem 2021, also nur sechs Jahre später begonnenen digitalen Editionsprojekt 
+                    Peter Handke Notizbücher der Österreichischen Nationalbibliothek Wien und des Deutschen Literaturarchivs Marbach (
+                    
+                        https://edition.onb.ac.at/handke-notizbuecher
+                    ): auf die wertvollen Daten über die Notizbücher konnte sogar intern nur mehr kompliziert über die dem Content-Management-System (Drupal) zugrunde liegende relationale Datenbank zugegriffen werden. Die damals getroffenen Zuordnungen der einzelnen Datenfelder konnten wegen des geschlossenen Datenformats teilweise nicht mehr vollständig rekonstruiert werden.
+                
+                Aufgrund der Bedeutung von 
+                    Handkeonline beschloss die Österreichische Nationalbibliothek die Daten-Migration in die erst später eingerichtete 
+                    Nachhaltige Infrastruktur für digitale Editionsprojekte an der Österreichischen Nationalbibliothek (ÖNB-DE) und nützt diese Gelegenheit zum vollständigen Re-Design der Daten und Datenstruktur. Ziel ist die Transformation sämtlicher für 
+                    Handkeonline generierte Beschreibungsdaten zum Werk Peter Handkes nach TEI/XML und die Bereitstellung eines werkgenetischen Katalogs als 
+                    Linked Open Data-Datensatz. Diese Umsetzung liefert einen wesentlichen Beitrag zu einer Forschungskultur, die Vernetzung und Dynamik von Forschungsprozessen ins Zentrum rückt. Folgende Herausforderungen galt es dabei zu bewältigen:
+                
+
+                    Einen Modellierungsansatz zu finden, mit dem präbibliographische und bibliographische Daten gemeinsam repräsentiert und in Beziehung gesetzt werden können.
+                    Die geschlossene in eine offene Werkgenese umzuwandeln und den Datenkatalog entsprechend den FAIR-Prinzipien (Findable, Accessible, Interoperable, Reuseable) zur Verfügung zu stellen.
+                
+            
+            
+                Modelle für präbibliographische und bibliographische Daten
+                Zur Erschließung und Verbreitung von bibliographischen Daten haben sich im wissenschaftlichen Bereich verschiedene bibliographische Datenbanken (
+                    Initiative for Open Citation (i4oc.org)) etabliert, wie z.B. 
+                    OpenCitation oder 
+                    GoogleScholar, die sich allerdings auf die Erfassung bereits veröffentlichter Werke konzentrieren. Das gilt auch für eine Reihe weitverbreiteter Standardvokabulare für die grundlegenden Begriffe zur Dokumentation und Beschreibung bibliographischer Daten wie etwa 
+                    Dublin Core Element Set und 
+                    Metadata Terms (
+                    
+                        https://www.dublincore.org/
+                    ) und 
+                    Schema.org. Das 
+                    BIBFRAME-Vokabular (
+                    
+                        https://www.loc.gov/bibframe/docs/index.html
+                    ) wiederum ist ein vor allem im wissenschaftlichen Bereich gängiges (Austausch-)Format und man kann MARC- und RDA-Daten im Linked-Data-Standard RDF abbilden – dieses Vokabular ist jedoch ebenfalls ungeeignet für die Repräsentation präbibliographischer Werkmaterialien. Für das Projekt 
+                    Handkeonline sind diese gängigen Vokabulare somit zu limitiert, da hier unveröffentlichte Werke und unterschiedlichste Werkvorstufen (Werkmaterialien) weder erfasst noch in ihrer teilweise komplexen Relationalität zu den publizierten Werken abgebildet werden können.
+                
+                Eine differenzierte bibliographische Basiskodierung, wie sie Martina Gödel und Sebastian Zimmer (2017) auf der Basis der 
+                    Functional Requirements for Bibliographic Records (FRBR) (Coyle 2016) für die Werke und vor allem den Zettelkasten von Niklas Luhmann gemacht haben (
+                    
+                        https://niklas-luhmann-archiv.de/
+                    ), ist die Voraussetzung für weitere Forschungen zur Werkgenese. In dem von uns gewählten Ansatz spielt gerade dieser Aspekt deshalb von Beginn an eine Schlüsselrolle. Auch unsere Modellierung bibliographischer Daten basiert wie zuvor schon bei Stefanie Gehrke et al. (2016), Frederike Neuber (2016), Gödel und Zimmer (2017) oder Andreas Lüschow (2020) auf den Grundkonzepten von FRBR, doch wir gehen für unsere Anforderungen noch einen Schritt weiter:
+                
+                Wir greifen, um die für unsere Abbildung der Werkgenesen notwendige Flexibilität (Werkdatendiversität und -referenzierbarkeit) bei gleichzeitiger Stabilität zu erreichen, die für eine Anschluss- und Ausbaufähigkeit der Daten notwendig ist, auf das im Museumsbereich gebräuchliche Format FRBR
+                    OO zurück. FRBR
+                    OO ist eine Harmonisierung des FRBR-
+                    Entity-Relationship-Models und des 
+                    Conceptual Reference Models des 
+                    International Council of Museums CIDOC CRM (
+                    
+                        https://www.cidoc-crm.org/
+                    ). Letzteres wurde entwickelt, um die in der Museumsdokumentation relevanten Objekte und Konzepte (Ereignisse) zu beschreiben und institutionsübergreifend Daten austauschen zu können (Doerr, Crofts 2004, 15). FRBR
+                    OO führt diese ereigniszentrierte Sichtweise nun auf Werke aller Art ein. Die Anwendung von FRBR
+                    OO für die Modellierung von komplexen Werkgenesen ist, soweit wir die digitalen Editionen der letzten Jahre überblicken, neu; sie bringt viele Vorteile. FRBR
+                    OO ermöglicht eine exakte Darstellung der komplexen Genese von Handkes Werken: Erstens, weil das Modell differenzierte Werkbegriffe bereitstellt, die uns erlauben, nicht nur die zahlreichen literarischen Genres, die Handke bedient (Prosa, Theater, Hörspiel, Film, Briefe, Interviews, Essays, Gedichte, Journale), sondern auch seine bislang unveröffentlichten, aber Werken entsprechenden Notizbücher zu formalisieren. Zweitens, weil FRBR
+                    OO auf CIDOC-CRM basiert, ist es möglich auch individuelle, nichtbibliographische Materialien zu beschrieben. Drittens können mit FRBR
+                    OO die Vorstufen eines Buches (
+                    Manifestation Singleton) von einer veröffentlichten Ausgabe
+                     (Manifestation Product Type) in den Daten klar unterschieden werden. Viertens schließlich erlaubt uns FRBR
+                    OO, über das Ereignis 
+                    Expression Creation die für eine Darstellung von Werkgenesen wichtige zeitliche und materielle Einordnung der einzelnen Fassungen.
+                
+            
+            
+                Datenmodellierung von 
+                    Handkeonline mit FRBRoo
+                
+                Für die Modellierung von 
+                    Handkeonline gilt es die vielfältigen Werkmaterialien aus dem Vorlass mit den publizierten Werken in Zusammenhang zu bringen. Peter Handkes Notizbüchern kommt dabei für die Genese seiner Werke ein besonderer Stellenwert zu: sie sind Materialsammlung oder Skizze für mehrere publizierte Werke; sie sind erste Textfassung für die gedruckte Notizauswahl in Journalen und darüber hinaus in ihrer Gesamtheit noch unveröffentlichtes Werk, das im Zuge des digitalen Editionsprojektes 
+                    Peter Handke Notizbücher erstmals publiziert wird. Wir gehen deshalb von zwei unterschiedlichen Werkbegriffen aus: einmal von dem von Handke autorisierten veröffentlichten Werk mit seinen verschiedenen Vorstufen und einmal von einem von Handke verfassten, aber nicht als Werk autorisierten vorerst noch unveröffentlichten, fortlaufenden Werk – den Notizbüchern, die für sich stehen und zugleich Vorstufe sein können. Dabei geht es in der Reflexion des Werkbegriffs bei der Datenmodellierung immer um das Ausloten von Grenzen, hier zwischen Flexibilität (Diversität und Relationalität oder Referenzialität) und Stabilität.
+                
+                Im Folgenden wird das neue Modellierungskonzept von 
+                    Handkeonline erstens für veröffentlichte Werke und zweitens für Notizbücher exemplarisch skizziert. Die kursiven Ausdrücke und in eckigen Klammern angegebene Informationen beziehen sich auf die Spezifikationen laut dem FRBR
+                    OO–Modell (Bekiari et al. 2015). Die Begriffe 
+                    Manifestation und 
+                    Expression bleiben unübersetzt (Arbeitsstelle für Standardisierung 2006).
+                
+                
+                    Modellierung veröffentlichter Werke
+                    Handkes Werke werden grundsätzlich über die Entität 
+                        Work [1] erfasst. Die zugleich als Buch und Theaterstück oder Film publizierten Werke werden jedoch als 
+                        Complex Work [F15] beschrieben, dessen Werkkomponenten (
+                        Performance Work, Recording Work, Work) über 
+                        has member [R10] zueinander in Beziehung gesetzt werden. Zur Rekonstruktion der Werkgenesen wird jede Textfassungsversion (z.B. Vorfassung, Druckfahnen, Druckfassung etc.) der Buchpublikation als Entität vom Typ 
+                        Expression [F2] angesehen. Die Erstausgabe wird als 
+                        Publication Expression [F24] mit 
+                        Manifestation Product Type [F3] modelliert. 
+                    
+                    Die anderen Textfassungsversionen ordnen sich relativ zu dieser chronologisch ein. Um die zeitliche Abfolge dieser einzelnen 
+                        Expression-Entitäten in FRBR
+                        OO beschreiben zu können, wird jeweils ein Ereignis 
+                        Expression Creation [F28] definiert, das Angaben zum Entstehungszeitraum über die Entität 
+                        Time-Span [E52] beinhaltet. Auf diese Art lässt sich die Werkhistorie als Abfolge von Ereignissen logisch rekonstruieren. Im Ereignis können auch Personen und Werke, die den Herstellungsprozess beeinflusst haben, repräsentieren werden. Es kann daher ein Unterschied zwischen Textfassungsversion und Notizbuch als selbständiges Werk in die Werkgenese integriert werden (
+                        was influenced by [P15]).
+                    
+                    Alle 
+                        Expressions, die das präbibliographische Werkmaterial repräsentieren, erzeugen (
+                        created [18]) Entitäten des Typs 
+                        Manifestation Singleton [F4]. Bei Bedarf kann die 
+                        Expression auch in einzelne 
+                        Expression Fragments [F23] unterteilt werden, um die Textstadien in einer feineren Granularität abbilden zu können. Abbildung 1 veranschaulicht die eben besprochene werkgenetische Modellierung am Beispiel des 1981 als Buch erschienenen und 1982 bei den Salzburger Festspielen uraufgeführten Theaterstücks 
+                        Über die Dörfer von Peter Handke.
+                    
+                    
+                        
+                        Abbildung 1: Beispielhafter Graph der werkgenetischen Beschreibung zum Werk Über die Dörfer von Peter Handke.
+                    
+                
+                
+                    Modellierung Notizbücher und digitale Edition
+                    Nicht veröffentlichte Notizbücher von Peter Handke werden im Modell durch die Entität 
+                        Individual Work [F14] repräsentiert; die daraus realisierte 
+                        Self-Contained Expression [F22] kann wiederum als Ereignis (
+                        Expression Creation [F28]) detailliert beschrieben werden. Schließlich wird das Notizbuch als 
+                        Manifestation Singleton [F4] im Datensatz erfasst. Auf Werkebene werden die Notizbücher über 
+                        is logical successor [R1] in Beziehung gesetzt
+                        . Für alle Notizbücher, die in der digitalen Edition 
+                        Handke Notizbücher erstmals publiziert werden, werden Beziehungen auf Expression-Ebene (
+                        is component of [P148]) zur digitalen Edition hergestellt. Die digitale Edition wird als fortlaufendes Werk (
+                        Serial Work [F18]) repräsentiert, das kontinuierlich aktualisiert wird.
+                    
+                    Vergleich zu 
+                        Handkeonline
+                    
+                    Im Vergleich zum Datenmodell von 
+                        Handkeonline können mit dem vorgestellten System die Entitäten qualitativ miteinander in Beziehung gesetzt werden, was u.a. auch die erwähnte zeitliche Relation zulässt. Die ursprüngliche flache Struktur wird im neuen Modell durch ein Netzwerk repräsentiert, wodurch sich eine Bandbreite von neuen Auswertungsmöglichkeiten ergibt. Damit wird die Grundlage für ein durchsuchbares, interoperables Netzwerk geschaffen, welches das Auffinden von Ressourcen erleichtert und neue Forschungsfragen ermöglicht.
+                    
+                
+            
+            
+                Ausblick
+                Das von uns entwickelte generische Datenmodell ist für spezifische Beschreibungen erweiterbar, die darin gefassten Daten frei nachnutzbar. Was mit 
+                    Handkeonline begonnen wurde, kann in der Tiefenerschließung durch andere Forschungsprojekte erstmals umfassend nachgenutzt werden. Davon profitiert vor allem auch das Editionsprojekt 
+                    Peter Handke Notizbücher.
+                
+                Die hier präsentierte Modellierung unterstützt nicht nur das Verständnis der Werkgenesen von Peter Handkes Werken, sondern ist Vorbild für zukünftige DH-Projekte, die präbibliographische Daten zusammen mit bibliographischen Daten semantisch differenziert erfassen wollen.
+                Erst durch die hier besprochene Öffnung der Daten entsteht die Affordanz zur Repräsentation in vollem Umfang. Die Effekte sind vielfältig: Die Migration der isolierten Daten und deren Re-Modellierung nach anerkannten Standards machen das Material langzeitarchivfähig und schaffen die Grundlage für LOD. Durch den Einsatz von FRBR
+                    OO wird die Interoperabilität der vernetzten Informationen sichergestellt. Insgesamt werden durch die Öffnung neue Wege der Analyse geschaffen. Abfragen zu werkhistorisch relevanten Aspekten werden möglich: Wie die differenzierte Abfrage der Werkkomponenten oder zu aufführungsspezifischem Material oder sogar zu parallelen Entwicklungsprozessen; gleichzeitig wird auch eine Visualisierung von Stammbäumen zur Entstehung der Werke möglich. Wir erwarten mit Spannung, wie sich unsere Anwendung der formalen Semantik von FRBR
+                    OO in Zukunft auf die Reflexion über Werk und Werkgenesen auswirken wird.
+                
+            
+        

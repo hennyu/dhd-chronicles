@@ -1,0 +1,197 @@
+
+
+Einleitung
+Wer J.R.R. Tolkiens Erzählung von der Begegnung Bilbo Beutlins mit dem Feuerdrachen Smaug, der tief im Einsamen Berg einen gigantischen Schatz bewacht, las oder auf der Leinwand opulent inszeniert sah, hatte wohl mit großer Wahrscheinlichkeit das Gefühl, einer ähnlichen Geschichte irgendwann schon einmal begegnet zu sein. Und dies zu Recht, ist doch das Aufeinandertreffen eines Helden mit einem gefährlichen Drachen, das oftmals auf einen Kampf auf Leben und Tod hinausläuft, ein weitverbreitetes, lange tradiertes Narrativ, welches sich auch im Mittelalter großer Beliebtheit erfreute und dementsprechend häufig aufgegriffen wurde. So stellen sich Siegfried, Beowulf, Tristan, Georg und Lancelot – um nur einige wenige zu nennen – erfolgreich gefährlichen Drachen entgegen. Neben Beowulf ergeben sich besonders zu Siegfried explizite Verbindungen: Siegfried, der auch außerhalb des Nibelungenliedes in einer Vielzahl von Texten präsent ist, tötet in der 
+Völsunga Saga – hier den Namen Sigurd tragend – den Drachen Fáfnir, der in einer Höhle in der Wildnis haust, um in den Besitz des Drachenhortes zu gelangen. Richard Wagner hat diese Episode in seinem 
+Ring des Nibelungen aufgegriffen; J.R.R. Tolkien hat sich für 
+The Hobbit or There and Back Again davon inspirieren lassen.
+
+Um nicht auf zufällige Entdeckungen von ähnlichen Narrativen angewiesen zu sein, sondern einen systematischen Vergleich der Strukturen und Bausteine von Erzähltem in der Literatur und in Bildern des Mittelalters zu ermöglichen, wurde das Projekt
+ONAMA – 
+Ontology of the Narratives of the Middle Ages – ins Leben gerufen.
+
+
+
+Forschungsstand
+Die Erforschung von Narrativen hat in den Literaturwissenschaften eine lange Tradition, wenngleich narratologische Ansätze für Texte aus der Zeit des Mittelalters im Vergleich zu Texten der Neuzeit in geringerem Maße vorhanden sind (vgl. Störmer-Caysa 2007; Contzen/Kragl 2018). Für Erzählungen in (unbewegten) Bildern besteht hier hingegen Aufholbedarf, der unter anderem in der weit geringeren Präsenz erzähltheoretischer Forschungsansätze in der Kunstgeschichte und den Bildwissenschaften begründet ist (einen Überblick bietet Speidel 2018; konkret zu mittelalterlichen visuellen Medien vgl. Niehr 2015; Suckale 2009, Bd. 1: 427f.; Franzen 2002: 14–19). Die Ansätze der Intermedialitätsforschung bzw. Bild-Textforschung (vgl. u.a. Schellewald 2011 und Wolf 2017) wurden bis dato vor allem für Quellen genutzt, die per se schon unterschiedliche mediale Aspekte beinhalten (z.B.: illuminierte Handschriften). Übernahmen von Narrativen oder bestimmten Bausteinen eines Narrativs in unterschiedlichen Quellen bleiben dabei meist außen vor. 
+Die Methoden der Digital Humanities werden bis dato nur am Rande für die Erforschung von Narrativen genutzt. So entwickeln beispielsweise verschiedene Projekte zur Erforschung von Erzähltexten ontologische Repräsentationen narrativer Strukturen (z.B. Ciotti 2016, Khan et al. 2016). Narrativ-Ontologien, die auf die semantische Verknüpfung medial heterogener Quellen und Artefakte über Elemente der Erzählungen abzielen, sind als Recherche- und Explorationstools im Museums- und Medienarchivbereich angesiedelt (exemplarisch Damiano 2019 bzw. Damiano/Lieto 2013, Metilli et al. 2019, Mulholland et al. 2004). Im Bereich der Germanistik wurden Konzepte für eine narratologische Textauszeichnung digitaler Corpora entwickelt (Dimpel 2019, Gius 2015). Modelle, die Spezifika des Erzählens in Bildern berücksichtigen, sind rar (Xu et al. 2017). Dies ist nicht zuletzt am Mangel an weiter verarbeitbaren Basisdaten für solche Analysen begründet.
+
+
+Datengrundlage
+ONAMA ist ein interdisziplinäres Joint Venture, welches sich auf die breite Datenbasis von zwei Langzeitprojekten aus dem Bereich der Digital Humanities stützt: einerseits die
+Mittelhochdeutsche Begriffsdatenbank (MHDBDB, Universität Salzburg) und andererseits die Bilddatenbank
+REALonline des Instituts für Realienkunde des Mittelalters und der frühen Neuzeit in Krems, welches ebenfalls Teil der Universität Salzburg ist.
+                
+In REALonline sind visuelle Medien unterschiedlicher Gattungen und Techniken, die schwerpunktmäßig vom 14.–16. Jahrhundert entstanden, in über 20.000 Datensätzen derart erfasst, dass alle semantischen Bestandteile eines Bildes und ihre Eigenschaften sowie Beziehungen zwischen diesen einzelnen Bildelementen dokumentiert werden (vgl. Matschinegg/Nicka et al. 2019, Matschinegg/Nicka 2018). Aktuell gibt es bereits über 1,2 Millionen semantische Annotationen in REALonline. In der MHDBDB bietet ein onomasiologisches Begriffssystem den Zugang zu derzeit über 650 Texten, die von Heldenepen über religiöse Kleindichtung bis hin zu Fabeln reichen (vgl. Hinkelmanns 2019, Dimpel/Zeppezauer-Wachauer/Schlager 2019). Die Annotationen der mehr als 10,5 Millionen tokens ermöglichen extensive semantische, morphologische, lexikalische und metrische Suchanfragen. Aus diesen beiden Datenpools werden im Projekt ONAMA exemplarisch mittelalterliche Narrative ausgewählt und an ihnen ein Modell für eine medienübergreifende Beschreibung von Handlungen, Aktanten, Settings und zeitlichen Strukturen entwickelt.
+
+
+Methode
+ONAMA zielt auf die formale Darstellung sowohl von transmedial fassbaren Bausteinen von Narrativen als auch von den jeweiligen Umsetzungen dieser Grundelemente in konkreten Bildern und Texten des Mittelalters ab. Die im Projekt erarbeitete Ontologie auf Basis der Web Ontology Language (OWL) bildet die Grundlage für den Vergleich von Narrativen. Dabei können Muster und Besonderheiten ihres Aufbaus durch Abfragen identifiziert werden, deren Ursachen und Funktionen in weiterer Folge untersucht werden können. Es wird damit weit mehr als nur der allgemeine „Plot“ einer Geschichte oder eines Bilderzyklus erfasst. Die Entwicklung des ONAMA-Grundmodells und seine Verfeinerung sind dabei die ersten Schritte im Projekt. Wir definieren (wenn möglich in Anlehnung an bestehende Klassifkationssysteme wie Motif-Index [Birkhan/Lichtblau/Tuczay 2005-2010] oder ICONCLASS) zunächst Narrativ-Konzepte (concepts) (siehe Abb.1). Diesen werden dann die jeweiligen
+Narrativ-Realisierungen (realisations) zugeordnet. Gemeint sind mit letzteren die Narrative in der Form, wie sie in dem zu annotierenden Werk (Bild oder Textstelle) tatsächlich vorkommen. Um in weiterer Folge sowohl bei 
+concepts als auch bei 
+realisations nach einzelnen Narrativelementen und ihren Kombinationen suchen zu können, nutzt das ONAMA-Modell das ursprünglich aus der Linguistik stammende Konzept semantischer Rollen. Damit wird ermöglicht, die Zusammensetzung und Art des Zusammenhangs zwischen Akteuren, Handlungen, Objekten und Settings für jedes einzelne Narrativ/jede Handlungseinheit zu spezifizieren. Die Handlungseinheiten werden in jeder Überlieferung zu Abfolgestrukturen verbunden. Wo möglich, werden Verbindungen zwischen ONAMA und dem CIDOC Conceptual Reference Model hergestellt. Am Ende des Entwicklungsprozesses steht die Publikation der Narrativ-Ontologie, die Anfang 2020 geplant ist. Im Rahmen der Annotation des ausgewählten Korpus wird daran weitergearbeitet und bei Bedarf werden weitere Adaptionen des Grundmodells veröffentlicht. 
+
+Obgleich sich die im Projekt bearbeiteten Beispiele aus einem Pool von deutschsprachigen Texten und mittelalterlichen Kunstwerken speisen, lässt sich die in ONAMA entwickelte Ontologie prinzipiell auch auf andere Sprachen und Medien hin erweitern. ONAMA erfasst die Ebene der Geschichte mit den Bausteinen 
+Handlung, Person, Objekt und 
+Ort und ist damit grundsätzlich als intermediales Modell angelegt.
+
+
+Als Ausgangsmaterial haben wir einerseits mit dem „Trojanischen Krieg“ einen spezifischen Erzählstoff herangezogen, der durch Realisierungen in beiden Datenbanken dokumentiert ist und sich somit gut für eine erzähltheoretische Auswertung unterschiedlicher Umsetzungen eines Narrativs in mehreren Versionen bzw. in Bild und Text eignet. Die Bilder stammen aus dem Cod. 2773 der Österreichischen Nationalbibliothek, einer reich illustrierten Prachthandschrift mit Guido de Columnis’ 
+                    Historia destructionis Troiae in einer deutschen Übersetzung (Mitte des 15. Jh.); die literarischen Bearbeitungen des Trojastoffes sind Herborts von Fritslâr 
+                    Liet von Troye (um 1190–1200) sowie Konrads von Würzburg 
+                    Der Trojanische Krieg (letztes Viertel des 13. Jh.). Andererseits werden entlang eines bestimmten Motivs, das auch Überschneidungen zur Trojaliteratur aufweist – dem „Bekämpfen oder Zähmen wilder Tiere/Wesen” – unterschiedliche verbal oder bildlich überlieferte Narrative aus beiden Datenbanken ausgesucht und modelliert, um eine Datenbasis zur Untersuchung der konkreten sprachlichen oder bildlichen Umsetzungen dieser jeweils geschilderten Interaktionen im Kontext ihrer verschiedenen Einbettungen zu schaffen. Der Nutzen der digitalen Ontologie für die mediävistische Erforschung von Narrativen wird im Projekt anhand von Fallstudien evaluiert, die auf den generierten Daten basieren. 
+
+
+
+ Abbildung 1: Beispiel für die Narrativ-Modellierung mit ONAMA auf Konzept- und Realisierungsebene. Briseida erhört Diomedes und besucht den durch Troilus im Kampf Verwundeten an seinem Krankenlager: eine in mittelalterlichen Adaptionen des Troja-Stoffkreises eingeführte Begebenheit, bildlich umgesetzt z.B. durch REALonline Archivnr. 006455 (Historia destructionis Troiae, Wien, Österreichische Nationalbibliothek, Cod. 2773, fol. 175v.), episch verarbeitet im Liet von Troye (MHDBDB-Text „TRY”). Durch semantische Rollen sind die jeweils beteiligten Entitäten mit dem Narrativ verbunden. Mit der Verbindung „hasRole“ können hingegen über die unmittelbar dargestellte Handlung hinausreichende Rollen von Akteuren erfasst werden.
+
+
+
+Forschungsfragen und Ergebnisse
+Mit ONAMA entsteht eine sprach- und medienunabhängige Ontologie zur Erschließung mittelalterlicher Narrative, die als ein neues digitales Werkzeug althergebrachte und immer noch weit verbreitete fachliche Grenzen zwischen bildlicher und textlicher Überlieferung überwindet und so der Beantwortung interdisziplinärer sowie intermedialer Forschungsfragen dient. So interessiert sich ONAMA beispielsweise dafür, wie Narrative in Bild und Text realisiert beziehungsweise materialisiert werden; in welchem Kontext die materiellen Umsetzungen stehen und wie sich Wechsel von Medien und materiellen Informationsträgern auf das vermittelte Narrativ auswirken. Mit Hilfe der Narrativ-Ontologie können Bild- und Textquellen derart annotiert werden, dass Abfrageergebnisse sowohl Rückschlüsse auf Genese und Tradierung von Erzählkernen, Figurenkonstellationen, Handlungsmuster etc. im jeweiligen Medium als auch in der medienübergreifenden Zusammenschau ermöglichen.
+Da die Nutzer*innen über das im Laufe des Projekts umgesetzte ONAMA-Frontend gleichzeitig auf umfangreiche Annotationen zu Narrativen in Bildern und Texten zugreifen können, werden Bezüge oder Unterschiede innerhalb der breit gefächerten Korpora zu mittelalterlichen Quellen in den beiden Datenbanken einfach identifizierbar. Die narrativen Muster, die Texten und Bildern inhärent sind, werden nach zeitgemäßen digitalen Standards annotiert, visualisiert und können damit besser empirisch bewertet werden. Darüber hinaus werden sämtliche im Rahmen von ONAMA generierten Daten auch für komplexe Abfragen via SPARQL zugänglich sein und der Scientific Community unter Creative Commons-Lizenz zur Verfügung gestellt, damit sie beispielsweise als Basis für Fragen zu Narrativen in anderen digitalen Korpora weiterverwendet werden können.
+Im Rahmen des Vortrags werden sowohl das Projekt ONAMA (Laufzeit März 2019 – Februar 2021) vorgestellt, das aus Mitteln des Förderprogramms 
+                    go!digital der Österreichischen Akademie der Wissenschaften finanziert wird, als auch erste Ergebnisse präsentiert.
+                
+
+
+
+
+Bibliographie:
+
+Primärliteratur:
+
+Herbort von Fritslâr: 
+                        Liet von Troye. Hrsg. v. Karl Frommann (= Bibliothek der gesammten deutschen National-Literatur von der ältesten bis auf die neuere Zeit, Bd. 5). Quedlinburg / Leipzig: Basse 1837. 
+                    
+
+Konrad von Würzburg: 
+                        Der Trojanische Krieg. Hrsg. v. Adelbert von Keller. Stuttgart: Litterar. Verein 1858.
+                    
+
+The Saga of the Volsungs. The Icelandic Text according to MS Nks 1824 b, 4°. With an English Translation, Introduction and Notes by Kaaren Grimstad (= Biblioteca Germanica Series Nova Vol. 3) Saarbrücken: AQ-Verl. 2000.
+                    
+
+J. R. R. Tolkien: 
+                        The Hobbit or There and Back again. London: HarperCollins 2006.
+                    
+
+Richard Wagner: 
+                        Der Ring des Nibelungen. 
+                        Ein Bühnenfestspiel für drei Tage und einen Vorabend. Zweiter Tag: Siegfried. Textbuch mit Varianten der Partitur. Hrsg. v. Egon Voss. Stuttgart: Reclam 2007.
+                    
+
+
+Forschungsliteratur:
+
+Birkhan, Helmut / Lichtblau, Karin / Tuczay, Christa (2005-2010): Motif-Index of the German Secular Narratives from the Beginning to 1400, 7 Bde., Berlin u. a. Online-Ausgabe im Verlag der Österreichischen Akademie der Wissenschaften (ÖAW), Wien 2009. http://hw.oeaw.ac.at/motifindex?frames=yes (06.11.2019)
+                    
+
+Ciotti, Fabio (2016): “Toward a Formal Ontology for Narrative”, in: 
+                        Matlit 4 (1): 29–44 DOI: 10.14195/2182-8830.
+                    
+
+Contzen, Eva von / Kragl, Florian (eds.) (2018): 
+                        Narratologie und mittelalterliches Erzählen. Autor, Erzähler, Perspektive, Zeit und Raum (= Das Mittelalter: Beihefte 7)
+                        . Berlin / Boston: de Gruyter.
+                    
+
+Damiano, Rossana (2019): “Investigating the Effectiveness of Narrative Relations for the Exploration of Cultural Heritage Archives”, in: Papadopoulos, George Angelos / Samaras, George / Weibelzahl, Stephan / Jannach, Dietmar / Santos, Olga C. (eds.): 
+                        Adjunct Publication of the 27th Conference on User Modeling, Adaptation and Personalization. Larnaca, Cyprus, 09.-12.06.2019. New York: ACM Press 417–423.
+                    
+
+Damiano, Rossana / Lieto, Antonio (2013): “Ontological representations of narratives. A case study on stories and actions”, in: Finlayson, Mark A. / Fisseni, Bernhard / Löwe, Benedikt / Meister, Christoph (eds.): 
+                        2013 Workshop on Computational Models of Narrative. CMN 2013. Hamburg, 04.–06.08.2013. Wadern: Schloss Dagstuhl - Leibniz-Zentrum für Informatik 76–93 
+                        
+http://drops.dagstuhl.de/opus/volltexte/2013/4149/pdf/p076-damiano.pdf
+ [letzter Zugriff am 1. August 2019].
+                    
+
+Dimpel, Friedrich Michael (2019): „Narratologische Textauszeichnung in Märe und Novelle. Mit Annotationsbeispielen und exemplarischer Auswertung von Sperber und Häslein durch MTLD und Sozialer Netzwerkanalyse“, in: 
+                        Zeitschrift für digitale Geisteswissenschaften 4. text/html Format. DOI: 
+                        
+10.17175/2016_012
+.
+                    
+
+Dimpel, Friedrich Michael / Zeppezauer-Wachauer, Katharina / Schlager, Daniel (2019): „Der Streit um die Birne: Autorschafts-Attributionstest mit Burrows’ Delta und dessen Optimierung für Kurztexte am Beispiel der ‚Halben Birne‘ des Konrad von Würzburg“, in: Bleier, Roman / Fischer, Franz / Hiltmann, Torsten / Viehhauser, Gabriel & Vogeler, Georg (eds.).: 
+                        Digitale Mediävistik (= Das Mittelalter. Perspektiven mediävistischer Forschung; Band 24, Nr. 1) 71–90.
+                         DOI: 10.1515/mial-2019-0006.
+                    
+
+Franzen, Wilfried (2002): 
+                        Die Karlsruher Passion und das „Erzählen in Bildern“. Studien zur süddeutschen Tafelmalerei des 15. Jahrhunderts. Berlin: Lukas Verlag.
+                    
+
+Gius, Evelyn (2015): 
+                        Erzählen über Konflikte. Ein Beitrag zur digitalen Narratologie (= Narratologia 46). Berlin / Boston: de Gruyter.
+                    
+
+Hinkelmanns, Peter (2019): „Mittelhochdeutsche Lexikographie und Semantic Web: Die Anbindung der ‚Mittelhochdeutschen Begriffsdatenbank‘ an Linked Open Data“, in: Bleier, Roman / Fischer, Franz / Hiltmann, Torsten / Viehhauser, Gabriel & Vogeler, Georg (eds.).: 
+                        Digitale Mediävistik (= Das Mittelalter. Perspektiven mediävistischer Forschung; Band 24, Nr. 1) 129–141. DOI: 
+                        
+10.1515/mial-2019-0009
+.
+                    
+
+Hinkelmanns, Peter / Landkammer, Miriam / Nicka, Isabella / Schwembacher, Manuel / Zeppezauer-Wachauer, Katharina (in Vorbereitung): „Beyond the Plot. Der Vergleich mittelalterlicher Narrative im Semantic Web mit ONAMA", erscheint in: 
+                        Narrare-Producere-Ordinare. New Approaches to the Middle Ages (agora. Wiener philologisch-kulturwissenschaftliche Studien/Vienna Philological and Cultural Studies). Wien: Praesens.
+                    
+
+Khan, Anas Fahad / Bellandi, Andrea / Benotto, Giulia / Frontini, Francesca / Giovannetti, Emiliano / Reboul, Marianne (2016): “Leveraging a Narrative Ontology to Query a Literary Text”, in: Miller, Ben / Lieto, Antonio / Ronfard, Rémi / Ware, Stephen G. / Finlayson, Mark A. (eds.): 
+                        7th Workshop on Computational Models of Narrative. CMN 2016. Krakau, 11.-12.7.2016. Wadern: Schloss Dagstuhl - Leibniz-Zentrum für Informatik 10:1–10:10 
+                        
+http://drops.dagstuhl.de/opus/volltexte/2016/6711/
+ [letzter Zugriff am 1. August 2019].
+                    
+
+Matschinegg, Ingrid / Nicka, Isabella (2018): „REALonline enhanced. Die neuen Funktionalitäten und Features der Forschungsbilddatenbank des IMAREAL“, in: 
+                        MEMO 2: Digital Humanities & Materielle Kultur 10–32 
+                        http://memo.imareal.sbg.ac.at/wsarticle/memo/2018-matschinegg-nicka-realonline-enhanced [letzter Zugriff am 5. September 2019].
+                    
+
+Matschinegg, Ingrid / Nicka, Isabella / Hafner, Clemens / Stettner, Martin / Zedlacher, Stefan (2019): „Daten neu verknoten. Die Verwendung einer Graphdatenbank für die Bilddatenbank REALonline“, in: Blümm, Mirjam / Kollatz, Thomas / Schmunk, Stefan / Schöch, Christof (eds.): 
+                        DARIAH-DE Working Papers Nr. 31. Göttingen: DARIAH-DE 1-36 
+                        http://nbn-resolving.org/urn:nbn:de:gbv:7-dariah-2019-3-5 [letzter Zugriff am 9. September 2019].
+                    
+
+Metilli, Daniele / Bartalesi, Valentina / Meghini, Carlo (2019): “A Wikidata-based tool for building and visualising narratives”, in: 
+                        International Journal on Digital Libraries 3 (2) DOI: 10.1007/s00799-019-00266-3.
+                    
+
+Mulholland, Paul / Collins, Trevor / Zdrahal, Zdenek (2004): “Story fountain: intelligent support for story research and exploration”, in: Vanderdonckt, Jean (ed.): 
+                        Proceedings of the 9th international conference on intelligent user interfaces. New York: ACM 62–69.
+                    
+
+Niehr, Klaus (2015): „Erzählebenen, Erzählformen, Erzählmotive im Bild. Die Festtagsseite des Göttinger Barfüßerretabels“, in: Aman, Cornelia / Hartwieg, Babette (eds.): 
+                        Das Göttinger Barfüßerretabel von 1424. Akten des wissenschaftlichen Kolloquiums, Landesmuseum Hannover, 28.–30. September 2006. Ergebnisband des Restaurierungs- und Forschungsprojektes (= Niederdeutsche Beiträge zur Kunstgeschichte N.F. 1). Petersberg: Imhof 161–176.
+                    
+
+Schellewald, Barbara (2011): „Einführung, I. Bild und Text im Mittelalter”, in: Krause, Karin / Schellewald, Barbara: 
+                        Bild und Text im Mittelalter. Köln: Böhlau 11–21.
+                    
+
+Speidel, Klaus (2018): “How single pictures tell stories. A critical introduction to narrative pictures and the problem of iconic narrative in narratology” [engl. Manuskript eines Beitrags, der in polnischer Sprache unter dem Titel “Jak pojedyncze obrazy opowiadają historie. Krytyczne wprowadzenie do problematyki narracji ikonicznej w narratologii” in: Kaczmarczyk, Katarzyna (ed.), 
+                        Narratologia transmedialna. Wyzwania, teorie, praktyki. Krakow: Universitas 2017, 65–148, erschienen ist] 
+                        
+https://www.researchgate.net/publication/327653026
+ [letzter Zugriff am 14. August 2019]. 
+                    
+
+Suckale, Robert (2009): 
+                        Die Erneuerung der Malkunst vor Dürer, 2 Bde. (= Historischer Verein Bamberg für die Pflege der Geschichte des Ehemaligen Fürstbistums e.V.: Schriftenreihe 44). Petersberg: Imhof.
+                    
+
+Störmer-Caysa, Uta (2007), 
+                        Grundstrukturen mittelalterlicher Erzählungen. Raum und Zeit im höfischen Roman. Berlin / New York: de Gruyter.
+                    
+
+Wolf, Werner (2017): „Intermedialität: Konzept, literaturwissenschaftliche Relevanz, Typologie intermedialer Formen [2014]”, in: Bernhart, Walter (Hg.):
+                         Selected Essays on Intermediality by Werner Wolf (1992–2014). Theory and Typology, Literature-Music Relations, Transmedial Narratology, Miscellaneous Transmedial Phenomena (= Studies in Intermediality Online 10). Leiden / Boston: Brill Rodopi 173–211. DOI: https://doi.org/10.1163/9789004346642_008
+                    
+
+Xu, Lei / Meroño-Peñuela, Albert / Huang, Zhisheng / van Harmelen, Frank (2017): “An Ontology Model for Narrative Image Annotation in the Field of Cultural Heritage”, in: Adamou, Alessandro / Daga, Enrico / Isaksen, Leif (eds.): 
+                        Proceedings of the Second Workshop on Humanities in the Semantic Web (WHiSe II). Wien, 22.10.2017 (=CEUR Workshop Proceedings Vol. 2104). CEUR 117–122.
+                    
+
+

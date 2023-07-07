@@ -1,0 +1,186 @@
+
+            
+                Das Prinzip Synopse
+                Digitale Editionen stehen häufig vor der Herausforderung, verschiedene Zustände eines Dokuments oder auch Varianten eines Textes in einer gegenüberstellenden Ansicht, also synchron anzeigen zu wollen. Das erstere Szenario ist dokumentenbezogen und kann beispielsweise dem Vergleich von Digitalisat, diplomatischer Transkription, Lesetext, XML-Text oder Plaintext dienen (Abb. 1), während das andere Szenario textbezogen ist und der Vermittlung von unterschiedlichen Überlieferungszuständen oder textgenetischen Verwandtschaften dient (Abb. 2). Dem jeweiligen Dokument oder Text können ferner Kommentare, Annotationen, Apparate und Metadaten anbeigestellt werden.
+                
+                    
+                        
+                        Abb. 1: Dokumentbezogene synoptische Darstellung. Exemplarischer Screenshot: Theodor Fontane, "Notizbuch A1".
+                     Theodor Fontane: Notizbücher. Digitale genetisch-kritische und kommentierte Edition.
+                    (zugegriffen: 14. Dezember 2022).
+                
+                    
+                
+                
+                
+                    
+                        
+                        Abb. 2: Textbezogene synoptische Darstellung mit flexiblen Spaltenmanagement. Exemplarischer Screenshot: Märchen "Rumpelstilzchen" (nach den 
+                    Kinder- und Hausmärchen der Gebrüder Grimm). 
+                    LERA – Locate, Explore, Retrace and Apprehend complex text variants.
+                    (zugegriffen: 14. Dezember 2022).
+                
+                    
+                
+                
+                
+                    Interfaces mit mehrspaltigem Layout
+                    Interfaces digitaler Editionen adressieren diese Herausforderungen fast immer mithilfe eines mehrspaltigen Layouts. Die sogenannte Synopse (abgeleitet von griech. 
+                        syn-optikós "das Ganze zusammensehend") ist eine klassische Darstellungsform, bei der zueinander in Beziehung stehende Dokumente oder Texte in zwei oder mehr Spalten nebeneinander angezeigt werden (vgl. das Konzept der "Composite Design Patterns", dazu z. B. Javed/Elmqvist 2012). Die Beziehung zwischen den gegenübergestellten Ressourcen drückt sich in dem jeweiligen Punkt der Synchronisierung aus: Diese kann beispielsweise an Seiten, Absätzen oder auch an einzelnen Zeilen vorgenommen werden. Das Layout erzeugt aus diesen Synchronisations-Punkten die 'ersichtliche' Verbindung zwischen den abgebildeten Ressourcen (zum Prinzip der "Juxtaposition" und die Kombination mit anderen Abbildungsmethoden vgl. Gleicher et al. 2011). Hingegen ist in den Daten diese visualisierte Verbindung nicht immer explizit abgelegt, sondern kann auch in einem 'soften' Konstrukt bestehen, beispielsweise indem regulär aufgebaute IDs und konsekutive Nummerierung verwendet werden, um Digitalisat und XML-Dateien abzugleichen. Denkbar ist zudem, dass zwei nebeneinanderstehende Texte aus ein und demselben Dokument generiert werden, wie etwa eine diplomatische Umschrift mit einem aufgeschlüsselten Lesetext daneben, oder auch zwei Textfassungen auf der Grundlage eines textkritischen Inline-Apparats.
+                    
+                
+                
+                    Divergenz der Ansätze
+                    Synoptische Ansichten werden aktuell fast ausschließlich individuell für die jeweiligen Editionsprojekte konzipiert und programmiert. Eine Ursache dafür ist darin zu sehen, dass die jeweils gegenüberzustellenden Inhalte von Projekt zu Projekt extrem unterschiedlich ausfallen können, sowohl in der Art ihrer Beziehung zueinander, als auch in der eigenen Ausprägung. Dokumentenzentrierte Ansätze wie z. B. im 
+                        Deutschen Textarchiv (Abb. 3) und in 
+                        DiScholEd (Abb. 4) stellen einzelnen Digitalisaten verschiedene Derivate der dazugehörigen XML-Codierung gegenüber.
+                    
+                    
+                        
+                            
+                            Abb. 3: Dokumentenzentrierter Ansatz. Exemplarischer Screenshot: Gottfried Keller, "Der grüne Heinrich", 
+                        Deutsches Textarchiv. 
+                         (zugegriffen: 14. Dezember 2022).
+                    
+                        
+                    
+                    
+                    
+                        
+                            
+                            Abb. 4: Dokumentenzentrierter Ansatz mit nutzerseitiger Auswahl der Spalteninhalte. Exemplarischer Screenshot: E. T. A. Hoffmann, "Der Sandmann", hg. von Anna Busch. 
+                        Briefe und Texte aus dem intellektuellen Berlin um 1800, hg. von Anne Baillot. 
+                        (zugegriffen: 14. Dezember 2022).
+                    
+                        
+                    
+                    
+                    Projekte mit Fokus auf Textgenese stellen indessen mehrere Textdokumente gegenüber und setzen diese in der Regel nach Strukturabschnitten (Kapitel, Absätze, Zeilen) in Beziehung – was einen völlig anderen Präsentationsansatz darstellt. In diesem Fall gehen die Ansätze zudem in divergente Richtungen, deren Pole einerseits durch eine platzintensive Rasterdarstellung wie z. B. in LERA (Abb. 2) und andererseits durch ein auf eine Spalte (!) verdichtetes Konzept wie z. B. in der "spinal edition" des 
+                        Frankenstein Variorums (Abb. 5) gebildet werden. Es besteht somit der Bedarf an einem allgemeinen Modell synoptischer Präsentationskonzepte, welches die Grundlage eines generischen Interface-Frameworks für Digitale Editionen bilden könnte.
+                    
+                    
+                        
+                            
+                            Abb. 5: Verdichtung der Synopse auf eine einzelne Spalte. Exemplarischer Screenshot: 
+                        Frankenstein Variorum, hg. von Elisa Beshero-Bondar, Rikk Mulligan und Raffaele Viglianti. 
+                        (zugegriffen: 14. Dezember 2022).
+                    
+                        
+                    
+                    
+                    Des Weiteren erlauben bestehende Ansätze bereits die nutzerseitige Auswahl der Spalteninhalte wie bei DTA (Abb. 3) und 
+                        DiScholEd (Abb. 4), teils sogar mit der zusätzlichen Möglichkeit des Spaltenmanagements wie bei den 
+                        Fontane Notizbüchern (Abb. 1) und im generischen 
+                        EVT Viewer (Abb. 6). Dies ist insbesondere mit steigender Zahl der Spalten notwendig (vgl. LERA, Abb. 2).
+                    
+                    
+                        
+                            
+                            Abb. 6: Synoptische Darstellung mit flexiblen Spaltenmanagement, hier im EVT Viewer [Abk. für Edition Visualization Technology]. Exemplarischer Screenshot: 
+                        Codice Pelavicino, hg. von Enrica Salvatori und Edilio Riccardini. 
+                        (zugegriffen: 14. Dezember 2022).
+                    
+                        
+                    
+                    
+                    Als nicht nur technische, sondern vor allem auch konzeptionelle Herausforderung kommt noch Responsivität hinzu. Das Nutzungskonzept der Edition muss sich an unterschiedliche Endgeräte – und damit an die mögliche Zahl der sichtbaren (!) Spalten – anpassen können. Letzteres hat einen unmittelbaren Einfluss auf die Zugänglichkeit und Nutzbarkeit der Ressourcen. Dies hat außerdem zur Folge, dass die oben genannten divergierenden Präsentationskonzepte für die Gegenüberstellung verschiedener Textvarianten behandelt werden müssen, was schließlich auf ein Konzept hinausläuft, welches grundsätzlich von einer variablen Spaltenzahl ausgeht.
+                    Einen weiteren Aspekt bringt das Projekt TAPAS (Abb. 7) ein, welches dem Nutzer die Auswahl der dem Layout zugrundeliegenden XML-Renderingskripte erlaubt, die zudem jeweils responsiv agieren. Dies verdeutlicht nicht nur, dass die Grundlage für anpassbare Lösungen in der Trennung zwischen Daten- und Präsentationsschicht besteht, sondern gerade auch, dass dieser Umstand prinzipiell für Interfaces nutzbar ist, sofern die spezifische Abbildungslogik einmal formalisiert wurde. Der hier aufgezeigte Weg ist z. B. mithilfe von XSLT und ggf. ODD vollständig innerhalb des X-Technologiestacks umsetzbar (näheres bei Flanders/Hamlin 2013).
+                    
+                        
+                            
+                            Abb. 7: Synoptische Präsentation von TAPAS. Exemplarischer Screenshot: François-Joseph Bérardier de Bataut, "Sixième entretien. Narration historique", 
+                        Essai sur le récit, hg. von Christof Schöch. TAPAS. 
+                        http://www.tapasproject.org/berardier/files/sixi%C3%A8me-entretien-narration-historique(zugegriffen am 14. Dezember 2022).
+                    
+                        
+                    
+                    
+                
+            
+            
+                Die Software "Synopticon"
+                Das Software-Entwicklungsprojekt 
+                    Synopticon (vgl. Herbst 2022, auf GitHub verfügbar) verfolgt das Ziel, die typischen Anforderungen spaltenorientierter Interfaces digitaler Editionen in einer generischen Lösung zusammenzufassen, so dass es perspektivisch in bestehende Webseiten digitaler Editionen mit geringem Aufwand eingebunden werden kann. Auch die Einbindung in Editions-Frameworks wird verfolgt: So ist Synopticon bereits mit der modularen Architektur von 
+                    ediarum (Berlin-Brandenburgische Akademie der Wissenschaften 2022), das ebenfalls auf einen X-Technologiestack aufbaut, kombinierbar.
+                
+                Um den unterschiedlichen Ansprüchen verschiedener Editions-Nutzungs-Konzepte zu entsprechen, können in der individuellen Konfiguration von Synopticon Beschreibungen der Text- und Dokumentenrelationen abgelegt werden. Dabei wird zwischen Textansichten (bspw. diplomatische Ansichten, konstitutive Lesetexte, Textvarianten etc.) und Zusatzinformationen (bspw. kritischer Apparat, Informationen zum Textumfeld etc.) unterschieden. Das Projekt ging hervor aus der Bachelor-Arbeit von Yannik Herbst (2021), die am Zentrum für Philologie und Digitalität (ZPD) der Universität Würzburg bereut wurde. Im Jahr 2022 erhielt das Projekt eine Förderung vom Universitätsbund Würzburg und bildet inzwischen eine Basiskomponente im Portfolio des ZPD.
+                
+                    Herausforderungen
+                    Eine allgemeine Herausforderung stellt zunächst die Synchronisierung der Ansichten in Abhängigkeit von verschiedenen User-Interaktionen dar (Blättern, Scrollen etc.). Diese müssen projektspezifisch und in Abhängigkeit von dem jeweiligen Editionskonzept konfigurierbar sein, bilden also einen Teil der generischen Synopticon-Konfiguration. Zudem müssen dort weitere User-Interaktionen einbezogen werden, die ebenfalls eine Veränderung des Spalteninhalts hervorrufen oder sogar eine Resegmentierung des Textes zur Folge haben können (ähnlich LERA, vgl. Pöckelmann et al. 2022). Eine weitere Herausforderung besteht in den Konfigurationsmöglichkeiten der Spalten in Abhängigkeit von dem allgemeinen Nutzungskonzept der digitalen Edition. Daran knüpft sich zugleich die responsiv bedingte Variierbarkeit der sichtbaren Spalten und die jeweiligen Anpassungen des Nutzungskonzepts. Diese zahlreichen teils nutzer- teils projektspezifischen Anpassungen, die ermöglicht werden sollen, werfen Fragen der Referenzierbarkeit auf. Im Kontext von digitalen Editionen müssen Ansichten derselben reproduzierbar und zitierfähig sein.
+                
+                
+                    Umsetzung als Software-Architektur
+                    Für Frontend und Backend von Synopticon kommen unterschiedliche Open-Source-Frameworks zum Einsatz (Abb. 8). Im Frontend sorgt 
+                        Vue.js für die Organisation der verschiedenen Informationen und Strukturen. Auf Benutzerwunsch (bspw. Auswahl einer Textvariante) werden Anfragen an die von ediarum.Web gestellte Schnittstelle geschickt. Diese liefert als Antwort entweder HTML-Bruchstücke oder JSON, wobei die HTML Bruchstücke durch XSLT Transformationen ("Views") der zugrunde liegenden XML Dateien erzeugt werden.
+                    
+                    
+                        
+                            
+                            Abb. 8: Makrostruktur einer mittels Synopticon umgesetzten digitalen Editions-Webapplikation. Grafik: Yannik Herbst.
+                        
+                    
+                    
+                    Das Frontend wurde mit dem JavaScript-Framework 
+                        Vue.js (You 2022) realisiert. Um zu ermöglichen, dass das Frontend in viele unterschiedliche Projekte aufgenommen werden kann, wurde es als Single-Page-Anwendung konzipiert, welche mittels einer JavaScript-, einer CSS- und einer Konfigurations-Datei in bestehende Webseiten eingebunden wird. Der modulare und auf wiederverwertbaren Komponenten aufbauende Ansatz von 
+                        Vue.js sowie die Konfiguration von 
+                        Synopticon ermöglicht es, projektspezifische Anforderungen mithilfe bereits bestehender Konfigurations- und Softwarekomponenten aus anderen Projekten zu realisieren. Somit wird der Weg für ein nachhaltiges und nachnutzbares Softwaredesign geebnet.
+                    
+                    Als Framework kommt aktuell 
+                        ediarum.WEB (Fechner 2022) zum Einsatz, das im Bereich der digitalen Editionen bereits verbreitet ist. Dieses dient der Kommunikation zwischen Frontend und der XML-Datenbank 
+                        eXist (Meier 2022) des Backends und enthält die dazu notwendigen Schnittstellen und Konfigurationsmöglichkeiten. Außerdem beinhaltet es notwendige Konsistenzchecks und Error-Handling. Das Ökosystem von 
+                        ediarum (.BASE.edit, .REGISTER.edit, .WEB, .DB) bietet außerdem die Möglichkeit, den gesamten Workflow von Datenakquise bis hin zur Präsentation zu integrieren. Dieser Workflow, inklusive der Präsentation mittels Synopticon, wird derzeit in verschiedenen am ZPD betreuten Projekten erprobt.
+                    
+                
+                
+                    Aktuelle Beispielprojekte
+                    Drei aktuelle Usecases decken diverse Synchronisations-Beziehungen ab. Ein Beispiel ist das DFG-geförderte Projekt 
+                        Narragonia 
+                        L
+                        atina (Baier/Hamm 2021), in dessen BMBF-Vorgängerprojekt 
+                        Narragonien 
+                        D
+                        igital (Burrichter/Hamm 2021) eine projektspezifische Synopse entwickelt wurde, die als Ausgangspunkt bzw. als Inspiration für die Entwicklung der generischen Lösung 
+                        Synopticon diente. Das Projekt erarbeitet eine kommentierte zweisprachige Hybridedition der beiden lateinischen "Narrenschiffe" von Jakob Locher (1497) und Jodocus Badius (1505), die verschiedene Druckausgaben, insbesondere Übersetzungen desselben Originalwerkes gegenüberstellt (Abb. 9) und die beiden "Narrenschiffe" mittels eines digitalen Kapitel-Kommentars interdisziplinär und vergleichend erläutert.
+                    
+                    
+                        
+                            
+                            Abb. 9: Synoptische Vergleichsansicht zweier Ausgaben desselben Originalwerkes im Projekt 
+                        Narragonien digital (Burrichter/Hamm 2021). Exemplarischer Screenshot: "Das Narren Schyff / La nef des folz du monde", 
+                        (zugegriffen: 14. Dezember 2022).
+                    
+                        
+                    
+                    
+                    Ein weiteres Beispiel ist das interdisziplinär ausgerichtete Akademieprojekt 
+                        Richard Wagner Schriften, dessen Ziel es ist, erstmals die gesamte Hinterlassenschaft der rund 230 Texte Richard Wagners mit ca. 5.000 Seiten Umfang auf Basis aller überlieferter historischer Textzeugen philologisch zu erschließen und in einer vollständigen, historisch-kritischen Edition der Schriften mit umfassendem Kommentar zu bündeln. Dabei werden einem Text sowohl sein Apparat, sein Textumfeld und ggf. vorhandene Digitalisate gegenübergestellt (Abb.10).
+                    
+                    
+                        
+                            
+                            Abb.10: Projektspezifische Anpassung der durch Synopticon zur Verfügung gestellten Funktionalität für die Gegenüberstellung von Text mit einem dazugehörigen textkritischen Apparat. Exemplarischer Screenshot: Richard Wagner, "Le Freischutz". In 
+                        Richard Wagner Schriften. 
+                        https://wagner-schriften.de(zugegriffen: 14. Dezember 2022).
+                    
+                        
+                    
+                    
+                
+            
+            
+                Zusammenfassung und Ausblick
+                
+                    Synopticon bündelt mehrere verschiedene konzeptionelle Anforderungen spaltenorientierter Layouts digitaler Editionen. Vor dem Hintergrund zahlreicher Beispiele aus bereits bestehenden, projektspezifischen Lösungen betont der vorliegende Ansatz die Notwendigkeit einer verallgemeinerten Formalisierung von Interfaces bezüglich deren Layouts und deren Funktionalitäten. Hinsichtlich der Nachhaltigkeit der Infrastrukturen für digitale Editionen und deren Interfaces kann in einem solchen Modell eine Schlüsselfunktion bestehen.
+                
+                Seitens des ZPDs wird 
+                    Synopticon bereits als Standardinstrument für synoptische Interfaces digitaler Editionen genutzt und kontinuierlich weiterentwickelt. Es wird angestrebt, im Rahmen zukünftiger Editionsprojekte sowohl die Funktionalität als auch die Interoperabilität von Synopticon zu erweitern: Perspektivisch soll 
+                    Synopticon zunächst modular kompatibel zur Editionssoftware 
+                    ediarum werden, bevor die Kombinierbarkeit mit anderen Frameworks weiter ausgelotet wird. Als weiterer konzeptioneller Bestandteil wird die generische Einbindung von Digitalisaten durch das 
+                    Image Interoperability Framework (IIIF) angestrebt. Des Weiteren zeigten Jänicke et al. (2017) bereits auf, dass synoptische Ansichten nicht nur Nutzungsszenarien des klassischen 
+                    close reading bedienen, sondern durchaus auch in der Lage sind, auch Distant Reading oder kombinierte Methoden zu befördern, so dass mit hinzukommenden Kooperationsprojekten eine weitere Flexibilisierung von 
+                    Synopticon in Aussicht steht. Ferner könnten zukünftig auch Schnittstellen zu Textanalyse-Tools (z. B. 
+                    Voyant, LERA, etc.) und nach den Richtlinien der 
+                    Text Encoding Initiative (TEI) ausgezeichnete Textkorpora (ggf. via NFDI Text+) eingebunden werden.
+                
+            
+        

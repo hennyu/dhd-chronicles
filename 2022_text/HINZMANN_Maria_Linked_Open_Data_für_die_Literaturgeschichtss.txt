@@ -1,0 +1,67 @@
+
+            
+                Zielsetzung und Projektstruktur
+                Im Umgang mit dem stetig wachsenden ‚digitalen Kulturerbe‘ bietet die Weiterentwicklung der systematischen Datenerschließung und Wissensrepräsentation bisher nicht ausgeschöpfte Potentiale für die Literaturgeschichtsschreibung. Vor diesem Hintergrund werden im Projekt
+                     Mining and Modeling Text (MiMoText) quantitative Methoden der Informationsextraktion (‚Mining‘) und Datenmodellierung (‚Modeling‘) ineinander verschränkt, um ein literaturgeschichtliches Wissensnetzwerk aufzubauen (vgl. Abb. 1). Der Fokus liegt zunächst auf französischen Romanen (1751–1800). Die Übertragbarkeit in andere Domänen wird berücksichtigt. Zentrales Anliegen ist es, den Bereich der quantitativen Methoden zur Extraktion, Modellierung und Analyse geisteswissenschaftlich relevanter Informationen aus umfangreichen Textsammlungen weiterzuentwickeln und aus interdisziplinärer (geistes-, informatik- und rechtswissenschaftlicher) Perspektive zu erforschen.
+                
+                
+                    
+                    Abb. 1: Informationsquellen des Wissensnetzwerks.
+                
+                Bezogen auf den Gegenstandsbereich ist ein Ausgangspunkt, dass die über rund zwei Jahrhunderte akkumulierten literaturhistorischen Forschungserkenntnisse größtenteils nicht unmittelbar nutzbar sind, da diese sehr umfangreich sind, nicht digital vorliegen oder auf unterschiedliche Orte und Quellen verteilt und in unterschiedlichen Sprachen publiziert sind. 
+                    MiMoText begegnet diesem Desiderat, indem es Informationen aus drei unterschiedlichen Quellentypen im Aufbau des fachspezifischen Wissensnetzwerks miteinander verknüpft: Metadaten aus Nachweissystemen, Texteigenschaften aus Primärtexten, Sachinformationen aus Fachliteratur. In vier Teilbereichen (Research Areas/RAs) werden Lösungen für die Informationsextraktion, ihre Modellierung, die rechtlichen Rahmenbedingungen sowie die Infrastruktur erarbeitet (vgl. Abb. 2).
+                
+                
+                    
+                    Abb. 2: Projektübersichtsgrafik.
+                
+            
+            
+                Open Science-Prinzipien
+                Für die Bereitstellung der Daten sowie die Arbeit und Infrastruktur im Projekt sind Open Science-Prinzipien tragend. Dies betrifft u.a. die Veröffentlichung FAIRer Daten (Röttgermann/Schöch 2020) im Open Access (Schöch 2021), die Nutzung von Open Source-Tools wie 
+                    INCEpTION (Klie et al. 2018) und 
+                    OCR4all (Reul et al. 2019) sowie Wikibase als Infrastruktur, die dem Linked Open Data (LOD) folgt. Im rechtswissenschaftlichen Teilbereich werden die rechtlichen Rahmenbedingungen von Text und Data-Mining in den Geisteswissenschaften auch im Hinblick auf eine offenere und nachhaltigere Nutzung von Forschungsdaten erforscht (vgl. Erler-Fridgen 2021a; Erler-Fridgen 2021b; Erler-Fridgen 2021c; Raue/Schöch 2020; Schöch et al. 2020).
+                
+            
+            
+                Mining – Extrahieren von Informationen aus drei Quellentypen
+                
+                    Bibliographische Daten
+                    Für unsere Domäne ist die 1977 von Mylne, Martin und Frautschi veröffentlichte 
+                        Bibliographie du genre romanesque français 1751-1800 (BGRF) zentral, da sie die Grundgesamtheit der Romane definiert. Die BGRF wurde von Andreas Lüschow aufwendig erschlossen und nach aktuellen bibliographischen Standards modelliert (Lüschow 2020).
+                    
+                
+                
+                    Primärliteratur
+                    Im Teilprojekt zur Primärliteratur wird schrittweise ein Korpus von etwa 200 Romanen aufgebaut, wovon bereits reichlich 100 Texte in XML-TEI verfügbar sind (vgl. Röttgermann 2021; Klee/Röttgermann 2020). Eine Reihe von Analyseverfahren wurde bereits auf diesen Textbestand angewandt, darunter Topic Modeling (vgl. Klee/Röttgermann 2020), NER (Orte und Figuren) sowie explorativ Sentiment Analyse.
+                    
+                
+                
+                    Sekundärliteratur
+                    Das mittelfristige Ziel besteht darin, durch überwachtes Lernen die automatische Extraktion von Aussagen (RDF-Tripel) zu ermöglichen. Um Trainingsdaten zu generieren und Tripel in das Wissensnetzwerk einspeisen zu können, werden aktuell literaturgeschichtliche Texte in INCEpTION annotiert. Die Daten sollen als Statements über eine noch zu entwickelnde toolübergreifende Pipeline in unsere projektspezifische Wikibase importiert werden.
+                    
+                
+            
+            
+                Modeling – Repräsentation und Vernetzung von Wissen
+                Im Aufbau des LOD-Wissensnetzwerks werden literaturgeschichtliche Aussagetypen in einer systematischen Ontologie modelliert und die extrahierten Informationen als RDF-Tripel repräsentiert (vgl. Abb. 3). Der Mehrwert des Netzwerks wird durch exemplarische Nutzungsszenarien in Form von SPARQL-Abfragen konkretisiert. Frageoptionen wie „Tritt Thema x in einem bestimmten Zeitraum y gehäuft auf?“ verdeutlichen, welcher Nutzen daraus für eine datenbasierte Literaturgeschichtsschreibung entstehen kann. Exemplarisch werden Einblicke in die Infrastruktur gegeben (vgl. Abb. 4).
+                
+                    
+                    Abb. 3: Thematische Aussagen (Property „about“) über das Werk Candide aus den drei unterschiedlichen Informationsquellen.
+                
+            
+            
+                Domänenspezifische Herausforderungen & Chancen
+                Ein Standardisierungsprozess wie er sich beispielsweise im 
+                    CIDOC CRM (http://www.cidoc-crm.org) niederschlägt, steht für die Domäne der Literaturgeschichte noch am Anfang. Das Projekt konzentriert sich auf Aussagen über literarische Werke und Autor:innen, bisher vor allem thematische Aussagen (vgl. Schöch et al. 2022) sowie Handlungsorte (vgl. Hinzmann et al. angenommen). Dabei ist das beständig wachsende Wissensnetzwerk in der Zusammenführung von Informationen aus verschiedenen, auch widersprüchlichen Quellen möglichst offen im Hinblick auf unterschiedliche Nutzungsszenarien und Fragerichtungen. Durch die Menge der aggregierten Daten lassen sich literaturhistorische Annahmen bestätigen, revidieren oder präzisieren und neue Fragestellungen sowie eine Metaperspektive auf den literaturwissenschaftlichen Diskurs entwickeln.
+                
+                
+                    
+                    Abb. 4: Screenshot von thematischen Aussagen zu  Candide in der MiMoText-Wikibase.
+                
+            
+            
+                Präsentationsstrategie
+                Das Poster veranschaulicht die Integration der verschiedenen Informationsquellen in der Datenmodellierung sowie das Zusammenspiel der verschiedenen Teilprojekte und Tools im Aufbau und in möglichen Nutzungsszenarien des mehrsprachigen Wissensnetzwerks.
+            
+        

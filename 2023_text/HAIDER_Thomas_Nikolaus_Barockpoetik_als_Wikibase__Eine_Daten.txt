@@ -1,0 +1,36 @@
+
+            
+                Motivation
+                Dieses Poster stellt eine Datenbank vor, die sich  auf die thesaurierende Erschließung sämtlicher Konfessionsaspekte in den deutschen Poesielehrbüchern der Barockzeit richtet. Das barocke Poetikparadigma, das sich zeitlich von Opitz’ 
+                    Buch von der Poeterey (1624) bis zu Gottscheds 
+                    Critischer Dichtkunst (1730) erstreckt (Wesche 2004, 164), wird damit erstmals systematisch im Hinblick auf Fragen der Konfessionalität beforscht, die gerade für das 17. und 18. Jahrhundert von zentraler historischer Bedeutung sind. Das Projekt hat sich zum Ziel gesetzt, die konfessionsgeschichtlichen Inhalte von insgesamt 54 historisch einschlägigen Poetiken offen zugänglich und durchsuchbar zu machen. Damit fällt es unter das Konferenzthema ‚Open Data‘.
+                
+                Die Datenbank entsteht im Rahmen des Teilprojekts “Uneindeutige Barockdichtung. Poetische und konfessionelle Ambiguität in Schlesien als kulturdynamische Faktoren einer neuen deutschen Dichtkunst (1620 bis 1742)” der DFG-Forschungsgruppe “Ambiguität und Unterscheidung. Historisch-kulturelle Dynamiken”, das Prof. Wesche gegenwärtig an der Universität Göttingen leitet. Die Wikibase ist zu finden unter 
+                    
+                        http://barockpoetik.de
+                    
+                
+            
+            
+                Datenmodellierung
+                Im Fokus steht, die Modellierung der Daten so vorzunehmen, dass die Inhalte dynamisch abrufbar sind. Dies wurde umgesetzt durch eine dedizierte Wikibase, die unsere spezifischen Inhalte im Stil von Wikidata darstellt und per Volltextsuche und einem SPARQL Query Interface zugänglich macht. Die Daten sind dabei als ‚Items‘ und ‚Properties‘ organisiert, wobei Items als Knoten und Properties als Kanten in einem Graph verstanden werden können, was es uns erlaubt beliebige Beziehungen im Graphen darzustellen und zu suchen.
+                Zentrale Elemente der Datenbank sind Autoren und ihre Werke, welche als Items gespeichert wurden. Siehe etwa das Item:Q29 (
+                    
+                        http://barockpoetik.de/mediawiki/index.php/Item:Q29
+                    ), welches den Eintrag für den Autor Martin Opitz festlegt, und dabei diverse Statements definiert, die für die Autoren relevant sind (wie etwa das verfasste Werk, seinen Vor- und Nachnamen, das Geburts- und Todesjahr) und auf einen Eintrag in der GND verweist (Deutsche Nationalbibliothek). Autoren, die in der Wikipedia geführt sind, werden ebenfalls mit einem Link dorthin ausgestattet.
+                
+                Das assoziierte Werk von Opitz, 
+                    Das Buch von der Deutschen Poeterey, ist hingegen unter Item:Q82 abgelegt (
+                    
+                        http://barockpoetik.de/mediawiki/index.php/Item:Q82
+                    ). Neben relevanten Metadaten (Publikationsjahr und -ort, Autor, Digitalisat), enthalten Einträge zu Werken Informationen zu bibliographischen Angaben, zur Sekundärliteratur sowie die werkeigenen Kapitelüberschriften. Hinzu kommen als Kernstück der Arbeit Textstellen, die konfessionsgeschichtlich relevant sind. Die Verschlagwortung folgt hier innerhalb der im Projekt entwickelten Systematik ‚Dichtung/Theologie‘, ‚Inspiration‘, ‚Sprachgenealogien‘, ‚Themen/Gattungen‘, ‚Autoritäten‘, ‚Widmungen/Adressaten‘ und ‚Exempelpolitik‘.
+                
+                Einzelne Textstellen sind dabei als Items angelegt, um sie mehrfach verschlagworten zu können (wobei eine Textstelle unter verschiedenen Schlagworten geführt werden kann). Zudem besitzt jede Textstelle eine Angabe zu ihrer Fundstelle, um sie im Digitalisat ausfindig zu machen.
+                 Die Volltextsuche erlaubt es, nach bestimmten Inhalten zu suchen. Etwa ergibt eine Suche nach dem Wort ‘Mensch’ alle Textstellen, in denen dieses Wort vorkommt, oder eine Suche nach ‘[aq]’ liefert alle Textstellen mit einer Auszeichnung für die Schriftart ‘Antiqua’, welche in frühneuzeitlichen Drucken konventionell für fremdsprachliches Material verwendet wird. Diese Textstellen können wiederum durch eine ‘Inverse Suche’ dem jeweiligen Werk zugeordnet werden.
+                Der SPARQL Endpoint erlaubt es uns, beliebige Daten zu extrahieren, wie etwa eine Übersicht der Autoren mit ihren Werken, oder zum Beispiel alle Werke, die ‘Exempelpolitik’ enthalten, mit ihren Autoren, und den entsprechenden Textstellen, sortiert (oder gefiltert) nach Publikationsjahr. 
+            
+            
+                Fazit
+                Die Datenbank leistet im Bereich der Geschichte der Poetik als einem zentralen Forschungsgebiet der germanistischen Literaturwissenschaft einen substantiellen Beitrag zur Exploration aktueller Methoden der Linked Open Data (Chiarcos et al., 2022; Sturgeon, 2022) und der Nutzung von Wikidata in den Digital Humanities (Zhao, 2022) in einem (frühneuzeit-)historischen Forschungsgebiet, indem es nicht nur um die Digitalisierung und (forschungs-)öffentliche Bereitstellung von Textdaten geht, sondern diese zugleich mit einem auf Fragen der Konfessionalität gerichteten Erkenntnisinteresse digital aufbereitet und empirisch ausgewertet werden. Übergeordnetes Forschungsziel ist es dabei, von der Universität Göttingen aus ein erweiterbares Portal „Barockpoetik digital“ zu etablieren, in dem die Forschungsdaten zum Thema zentral gebündelt und verfügbar gehalten werden. Als konkrete Erweiterungsperspektive erschließt das Team derzeit im Rahmen des DFG-Schwerpunkprogramms „Übersetzungskulturen der Frühen Neuzeit“ sämtliche Aspekte, die im Poetikkorpus translationsgeschichtlich relevant sind.
+            
+        

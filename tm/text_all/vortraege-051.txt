@@ -1,0 +1,137 @@
+
+      
+        Hintergrund
+        Das bis heute bekannteste Werk der spanischen Literatur ist weltweit als „Don Quijote“ von Miguel de Cervantes geläufig. Dass Cervantes aber, wie kurz zuvor Mateo Alemán, mit einem Fälscher zu kämpfen hatte, der den ersten Band des „Quijote“ ungefragt weiter dichtete und ein Jahr vor der eigenen Fortsetzung durch Cervantes einen zweiten Band aus eigener Feder unter dem Namen Alonso Fernández de Avellaneda heraus brachte, wissen die wenigsten Leser des „Quijote“. Es ist im strengen Sinne des Wortes auch keine Fälschung oder ein Plagiat, sondern die freie Fortsetzung eines erfolgreichen Romans unter eigenem Namen bzw. in diesem Fall unter Pseudonym. Die Identität Avellanedas ist bis heute unbekannt.
+      
+      
+        Fragestellungen / Stand der Forschung
+        Angesichts der historischen Publikationsbedingungen in Spanien der frühen Neuzeit
+          (Chartier 2006), stellt sich die Frage, ob eine Autorschaftsattribution mithilfe
+          stilometrischer Methoden auf der Grundlage aktuell zugänglicher digitalisierter
+          Buchausgaben überhaupt möglich ist. Doch auch Patrick Juola und Christopher
+          Coufal nahmen 2010 die Ausgabe des „Don Quijote“, die im Project Gutenberg
+          zugänglich ist als Grundlage ihrer Analyse, die als Ergebnis hatte, dass
+          Cervantes nicht der Autor der letzten 69 (von 74) Kapitel des 2. Bandes des „Don
+          Quijote“ sei (Coufal / Juola 2010). Aus dieser provokanten These entwickelte
+          sich aber keine wissenschaftliche Debatte innerhalb der internationalen
+          Hispanistik und auch die DH-Experten Juola und Coufal erweiterten ihre
+          Fragestellung nicht auf die sich unmittelbar anschließende Frage, wer der Autor
+          des „falschen“ Quijotes von Avellaneda sei. Auch eine weitere statistische
+          Untersuchung der beiden Teile des „Quijote“ von Cervantes berücksichtigt nicht
+          Avellaneda (López Quintero 2011). Die Tatsache, dass sich der Stil Cervantes'
+          innerhalb des zweiten Teils des „Quijote“ ändert, ist in der Hispanistik
+          anerkannt und wird im Allgemeinen mit dem Erscheinen der apokryphen Fortsetzung
+          durch Avellaneda in kausalen Zusammenhang gebracht (Strosetzki 1991: 93;
+          Ehrlicher 2008: 42ff.; Blasco 2007: XVII; Gómez Canseco 2008). Bislang wurde
+          jedoch der Stil Cervantes' gerade im Vergleich zu seinem Nachahmer Avellaneda
+          zumeist als in jeder Hinsicht überragend dargestellt (vgl. zu einer kompakten
+          Darstellung dieser Missachtung Avellanedas: Alvarez Roblin 2014). Erst durch die
+          jüngste Reihe von neuen Ausgaben der Avellaneda-Fortsetzung wird dessen
+          literarische Leistung in der Fachwelt anerkannt (Gómez Canseco 2014; Alvarez
+          Roblin 2009; Suárez Figaredo 2014; López-Vázquez 2011). Mit dem wachsenden
+          Interesse an Avellaneda nimmt auch die Suche nach dessen Identität mithilfe
+          digitalisierter Korpora zu. Zum größten Teil stützen sich diese
+          Autorschaftsattributionen auf schlichte Recherchemöglichkeiten von CORDE (Corpus
+          diacrónica del español), CREA (Corpus de Referencia del Español Actual) und
+          GoogleBooks (Suárez Figaredo 2011; Madrigal 2009; López-Vázquez 2011; Blasco
+          2005; Jiménez 2007) oder auf philologisch-historische Recherchen (Cruz Casado
+          2008; Sánchez Portero 2006). Insgesamt werden im Laufe der Recherche nach der
+          wahren Identität Avellanedas 39 Namen ins Spiel gebracht. Von 18 dieser
+          Kandidaten liegen digitalisierte Texte frei zugänglich vor. Dennoch nutzt keiner
+          der Autorschaftsdetektive aktuelle Methoden der DH zur Autorschaftsattribution
+          (wie z. B. JGAAP oder Stilometrie mit R; vgl. Juola 2012; Eder 2015). Neben der
+          Autorschaftsattribution bzgl. Avellanedas apokrypher Fortsetzung des „Quijote“,
+          stellt die Hauptfrage dieses Papers, die stilistische und stilometrische
+          Unterscheidung zwischen Cervantes und Avellaneda dar. Es kann gezeigt werden,
+          dass nur mithilfe stilometrischer Methoden, die festgefahrene Fachdiskussion
+          neue Perspektiven und unerwartete Ergebnisse erhält. 
+        
+        
+          Die Methode
+          Mithilfe des stylo-Pakets für R (Eder / Rybicki 2011), das für spanischsprachige Texte noch vergleichsweise wenig getestet wurde, sollen zum einen die vorliegenden Autorschaftsattributionen falsifiziert und die Fragen nach stilistischer Nähe zwischen Cervantes, Avellaneda und anderen zeitgenössischen Autoren spanischer Prosa geklärt werden. Somit wird auch die Methode hinlänglich ihrer Komptabilität mit spanischsprachigem Korpus überprüft. Dazu konnte die neueste Version des stylo-package (0.6.0) und die von Jannidis et al. (2015) vorgestellte Cosine Distance genutzt werden.
+          Zu diesem Zweck wurde zunächst ein passendes Korpus erstellt, das repräsentativ
+            für die Zeit von 1585-1630 spanische Prosawerke enthält und sich auch aus den
+            Kandidaten für die Autorschaft des apokryphen „Quijote“ zusammensetzt. Die Texte
+            stammen aus digitalen Editionen von cervantesvirtual, Wikisource und Project
+            Gutenberg. Sie wurden einheitlich in plain-text-Format abgespeichert und von
+            Textteilen, die nicht von selben Autor stammen (wie z. B. einleitende
+            Bemerkungen des Herausgebers) befreit.
+            Um zunächst ein sicheres Set zu haben, das sowohl die Autorschaft als auch Genre und Epoche betreffend vergleichbar ist, wurden zunächst nur 4 Autoren mit unterschiedlich vielen Texten ausgewählt (insgesamt 32 Texte). Eine Vergleichbarkeit die Textlänge betreffend hätte bedeutet entweder nur die Novellen oder nur die Romane miteinander zu vergleichen. Da es auch mit unterschiedlicher Textlänge zu guten Ergebnissen kam, wurde auf diese Angleichung verzichtet (vgl. Eder 2010). Das Korpus wurde mit zwei verschiedenen und anerkannten Distanzmaßen (Eder’s Delta und Cosine) und 100-5000 MFW als Cluster-Analyse ausgewertet. Schrittweise wurden dann weitere Kandidaten hinzugefügt und die Ergebnisse bewertet. Die Problematik, die sich dabei ergab, war, dass es wenig Sinn macht, Autoren mit ins Korpus zu nehmen, von denen nur ein Textbeispiel vorliegt, da diese keinem „Partner“ im Dendrogramm zugeordnet werden können und somit fälschlicherweise eigentlich weiter voneinander entfernte Texte zusammen geclustert dargestellt werden. Um dieses Problem der Cluster-Analyse zu umgehen, wurde im Vergleich eine Principle Component Analysis (PCA) durchgeführt, die eine bessere Darstellung der Distanzen zwischen den einzelnen Texten im Raum zeigt.
+          
+          
+            Die Ergebnisse
+            Im ersten Korpus mit 32 Texten funktioniert die Zuordnung sehr gut. Die Cervantes-Texte sind trotz ihrer starken Größenunterschiede (Novellen mit ca. 7000 und Romane mit ca. 200.000 Wörtern) klar zusammen geclustert. 
+            
+              
+              Abb.1: Cluster Analysis mit R (stylo), 900 MFW, Eder’s
+              Delta
+            
+            
+              
+              Abb. 2: Cluster Analysis mit R (stylo), 5000 MFW, Eder’s
+              Delta
+            
+            Ab 900 MFW und darunter ist die Autorschaftszuordnung mit Eder’s Delta einwandfrei, bei darüber liegenden Zahlen schlich sich beständig der Nachahmer-„Lazarillo“ von Cortés de Tolosa und auch der Block der Werke von Castillo Slórzano zwischen die Cervantes-Werke. Zum Vergleich wurde der gleiche Versuch mit Cosine Distance durchgeführt und brachte keine größere Veränderung in der Darstellung. Weiterhin blieb der Roman von Cortés de Tolosa hartnäckig bis zum 300 MFW unter den Cervantes-Werken, jedoch konnte Castillo Solórzano früher heraus genommen werden.
+            
+              
+              Abb. 3: Cluster Analysis mit R (stylo), 300 MFW, Cosine
+              Distance
+            
+            
+              
+              Abb. 4: Cluster Analysis mit R (stylo), 5000 MFW, Cosine
+              Distance
+            
+            Interessant ist hier, dass die PCA mit denselben Variablen zeigt, wie weit entfernt der „Lazarillo“ von Cortés de Tolosa doch von den übrigen Werken Cervantes‘ entfernt ist (und zwar bei allen 100-5000 MFW):
+            
+              
+              Abb. 5: PCA mit R (stylo), 5000 MFW, Cosine Distance
+            
+            Deutlich wird vor allem, dass der “Lazarillo”, den Cortés Tolosa in Nachahmung des Originals (anonym 1554) geschrieben hat, sehr von seinem übrigen Werk abweicht, aber ebenso noch deutlich von den Cervantes-Werken entfernt ist. Das erklärt sich allerdings leicht durch die sprachliche Unterscheidung der vorliegenden Edition des Werkes, die eine ältere Form des Kastilischen verwendet und daher in der Vergleichbarkeit eingeschränkt bleibt.
+            Spannender werden die Ergebnisse, wenn man Avellaneda und weitere Kandidaten hinzunimmt:
+            
+              
+              Abb. 6: Cluster Analysis mit R (stylo), 5000 MFW, Cosine
+              Distance (Korpuserweiterung: 43 Texte)
+            
+            
+              
+              Abb. 7: Cluster Analysis mit R (stylo), 800 MFW, Cosine
+              Distance 
+            
+            Auch mit der Korpuserweiterung bleiben die Zuordnungen relativ stabil (außer Cortés de Tolosa, wie zuvor). Keiner der möglichen Kandidaten wird jedoch Avellaneda zugeordnet, sondern der apokryphe „Quijote“ wird mit den anderen beiden Teilen von Cervantes zusammen geclustert – dies bleibt über 100-5000 MFW konstant. Auch mit dem einer PCA bestätigt sich dieses Ergebnis (vgl. Fig. 8: der blaue Punkt bei den schwarzen zeigt Avellaneda im Umkreis der Cervantes-Werke):
+            
+              
+              Abb. 8: PCA mit R (stylo), 5000 MFW, Cosine Distance
+            
+            In einer nächsten Korpuserweiterung nehmen wir weitere Kandidaten mit Prosabeispielen hinzu, von denen nur ein Text zur Verfügung steht.
+            
+              
+              Abb. 9: Cluster Analysis mit R (stylo), 100 MFW, Cosine
+              Distance (Korpuserweiterung: 49 Texte)
+            
+            
+              
+              Abb. 10: Cluster Analysis mit R (stylo), 5000 MFW, Cosine
+              Distance
+            
+            Es wird schnell deutlich, dass die Einzelgänger unter den Texten, das zuvor stabile Gefüge auseinanderbringen und offensichtlich nicht für die statistische Untersuchung zu gebrauchen sind. Erstaunlich bleibt jedoch, dass selbst in diesem sehr vagen Clustering (je nach MFW schieben sich die einzelnen Texte mal dort mal dort hin), die drei „Quijote“-Texte konsistent bei 100-5000 MFW ein Cluster bilden. Kein anderer Kandidat schafft es in die Nähe von Avellaneda. 
+            Auch die PCA bringt keine entscheidenden Vorteile gegenüber der Cluster Analysis. Espinel und Úbeda gruppieren sich zwar in die Cervantes-Gruppe, aber nicht direkt zu Avellaneda.
+            
+              
+              Abb. 11: PCA mit R (stylo), 5000 MFW, Cosine Distance
+            
+          
+          
+            Schlussfolgerungen 
+            Wenn überhaupt ein Autorname anstelle desjenigen Avellanedas genannt werden
+              sollte, müsste es nach den vorliegenden Ergebnissen Cervantes selbst sein, der
+              in einem gekonnten Spaß ganz im Sinne seines Quijote die Leser mit der eigenen
+              falschen Fortsetzung an der Nase herum führt. Oder aber beide Autoren haben
+              ihren Stil gegenseitig aufeinander abgestimmt, dass sie sich derart im
+              Wortgebrauch ähneln. Es würde sich als folgende Untersuchung ein rolling delta
+              anbieten, um eine kollaborative Autorschaft ausmachen zu können und um den
+              vorgeblichen Stilwechsel im zweiten Teil von Cervantes' „Quijote“ genauer
+              definieren und mit Avellaneda in Zusammenhang bringen zu können.
+            
+          

@@ -1,0 +1,271 @@
+
+            
+                Einleitung
+                Der literarische Wandel vom Realismus zur Moderne ist nach wie vor Gegenstand vielfältiger literaturwissenschaftlicher Debatten. Eine dieser Debatten betrifft die Frage, wie sich die Gestaltung von Emotionen in lyrischen Texten veränderte. Während einige typologisch argumentierende Forscher:innen (z. B. 
+                    Andreotti 2014) davon ausgehen, dass die moderne Lyrik gegenüber der traditionelleren Lyrik des Realismus zu einer nüchternen, nicht-emotionalen Ausdrucksweise tendiert, argumentieren andere (z. B. 
+                    Winko 2003) ausgehend von zeitgenössischen Selbstbeschreibungen, dass die Lyrik der frühen Moderne – historisch verstanden – sehr wohl Emotionen gestalte, wenn auch in modifizierter Weise (vgl. zu dieser Debatte auch 
+                    Konle u. a. 2022).
+                
+                Zu bedenken ist, dass die damalige Lyrik keine homogene Einheit bildet. Aussagen darüber, inwiefern sich die Emotionsgestaltung ‘der’ Lyrik veränderte, lassen sich differenzieren. Ein naheliegendes, wichtiges Differenzmerkmal lyrischer Texte – und damit ein potentiell relevanter Einflussfaktor auf die Emotionsgestaltung – ist die Gattung. Ziel dieses Beitrags ist deshalb, zu prüfen, inwiefern sich lyrische Gattungen in unserem Untersuchungszeitraum durch spezifische Emotionsprofile auszeichnen und ob die Entwicklung der Lyrik vom Realismus zur frühen Moderne unter der Perspektive der Emotionsgestaltung, die wir in  (
+                    Konle u. a. 2022) herausgearbeitet haben, mit der Zugehörigkeit zu bestimmten lyrischen Gattungen zusammenhängt. An diesem Beispiel soll gezeigt werden, wie wichtig es auch für quantitative Untersuchungen ist, literarische Phänomene nicht isoliert zu betrachten, sondern als Teil eines komplexen Systems zu modellieren, in dem unterschiedliche Faktoren einander beeinflussen. Der Beitrag versteht sich als Schritt hin zu einer solchen multifaktoriellen Modellierung von Literatur und literarischem Wandel.
+                
+            
+            
+                Ressourcen
+                Das zu analysierende Korpus besteht aus Texten in Lyrikanthologien aus dem Untersuchungszeitraum, die sich auf Gedichte von Zeitgenoss:innen konzentrieren. Das Teilkorpus ‘Realismus’ umfasst Gedichte aus Anthologien, die zwischen 1850 und den frühen 1880er Jahren publiziert wurden; das Teilkorpus ‘Moderne’ enthält Texte aus Anthologien, die um 1900 erschienen sind und deren Herausgeber:innen die Gedichte aufgrund ihrer Modernität ausgewählt haben. Welche Texte als ‘realistisch’ und welche als ‘modern’ gelten, wird in diesem Beitrag also aus zeitgenössischer Sicht (und nicht aus Sicht heutiger Forscher:innen) modelliert. Da keine der einbezogenen Anthologien nach 1911 erschienen ist, beschränken sich die Analysen auf die 
+                    frühe Moderne.
+                
+                
+                
+                    
+                        
+                        Anthologien
+                        Gedichte
+                        Wörter
+                    
+                    
+                        Realismus
+                        8
+                        3367
+                        400k
+                    
+                    
+                        Moderne
+                        12
+                        2882
+                        320k
+                    
+                    
+                        Insgesamt
+                        20
+                        6249
+                        720k
+                    
+                    Tabelle 1: Korpus Statistik
+                
+                Für 1412 Korpustexte wurden die Gattungszugehörigkeit und die Emotionsgestaltung annotiert. Die Gattungsannotation hält fest, ob ein Text bestimmten im Untersuchungszeitraum relevanten thematischen Gattungen (Naturlyrik, Liebeslyrik usw.) sowie nicht-thematischen Gattungen (Ballade, Lied usw.) angehört und ob er situativ bestimmt oder situativ unbestimmt ist. Wenn im Folgenden von ‘Gattungen’ die Rede ist, sind in aller Regel die thematischen Gattungen gemeint, auf die sich dieser Beitrag erst einmal konzentriert. Die Gattungszuordnung ist weder exklusiv noch zwingend: Während der Annotation konnten einem Text genau eine, aber auch keine oder mehrere Gattungen zugewiesen werden. Die Emotionsannotation zielt darauf ab, die im Text gestalteten Emotionen (und nicht die Leseremotionen) zu erfassen. Genutzt wurde ein Set von 40 diskreten Emotionen, darunter zum Beispiel Liebe, Trauer, Hoffnung, Sehnsucht oder Hass. Einerseits handelt es sich um Emotionen, die in gängigen Emotionstheorien 
+                    (Ekman 1992; 1999; Plutchik 1980b; 1980a; 2001) als grundlegend angesehen werden, andererseits wurden zusätzliche Emotionen, die in den Korpustexten häufig vorkommen, aufgenommen, um das Emotionsset an das historische Material anzupassen. Die Annotationseinheiten sind Wörter bzw. Wortfolgen. Da für viele einzelne Emotionen nicht genügend Annotationen vorliegen, um ihre maschinelle Detektion trainieren zu können, werden die Emotionen nachträglich zu sechs Gruppen zusammengefasst: Liebe, Freude, Trauer, Erregung/Überraschung, Angst und Wut. Die Gruppierung orientiert sich an der Emotionshierarchie in 
+                    Shaver u. a. (1987).
+                
+                
+                    
+                        Gattung
+                        Liebe
+                        Natur
+                        Philosophie
+                        Religion
+                    
+                    
+                        Anzahl
+                        350
+                        286
+                        163
+                        100
+                    
+                    
+                        Gattung
+                        Poetologie
+                        Politik
+                        Kultur
+                        Geschichte
+                    
+                    
+                        Anzahl
+                        61
+                        21
+                        104
+                        118
+                    
+                    Tabelle 2: Annotierte Gattungen
+                
+                Jedes Gedicht wurde zunächst von zwei Annotator:innen annotiert; anschließend haben die beiden Annotator:innen ihre Annotationen miteinander verglichen, die Disagreements diskutiert und eine Konsensannotation erstellt. Auf den Konsensannotationen beruhen alle weiteren Auswertungen. Das Agreement der Einzelannotationen beträgt 0.69 (Krippendorffs Alpha).
+            
+            
+                Methoden
+                Um Gattungslabel für das gesamte Korpus herstellen zu können, sollen Classifier trainiert und angewandt werden. Da Gedichte sehr kurz sind, kommt ein Verfahren auf bag-of-words-Basis nicht in Betracht. Stattdessen wird auf das Fine-Tuning neuronaler Sprachmodelle zurückgegriffen. In einer Vorstudie zur Gattung Liebeslyrik sollen das geeignetste Sprachmodell und Hyperparameter ermittelt werden. Getestet werden die Modelle gbert-large 
+                    (Chan, Schweter, und Möller 2020) und gottbert-base 
+                    (Scheible u. a. 2020). Das beste Ergebnis wird mit gbert-large erzielt (Batchsize 20, Learning Rate 1e-5 und 50 Epochen). Durch eine Anpassung auf das Lyrikkorpus durch fortgesetztes Pretraining
+                    (Gururangan u. a. 2020) kann die Performance weiter gesteigert werden (siehe Tab. 3 ,gbert-large-poetry).
+                
+                
+                    
+                    
+                        Modell
+                        Accuracy (std)
+                    
+                    
+                        gbert-large-poetry
+                        .880 (.022)
+                    
+                    
+                        gbert-base
+                        .854 (.040)
+                    
+                    
+                        Gottbert-base
+                        .826 (.032)
+                    
+                    Tabelle 3: Ergebnis der Vorstudie zur Gattung ‘Liebeslyrik’. Evaluation durch 5-fold-cross validation.
+                
+                Das Modell wird mit den ermittelten Hyperparametern verwendet, um binäre Classifier für alle übrigen Gattungen zu trainieren. Da die Klasse der nicht zur fokussierten Gattung gehörenden Gedichte in jedem Fall größer ist, wird epochenweise Random Undersampling angewandt. Für politische Lyrik wird kein Modell trainiert, da nicht genügend Beispiele vorhanden sind (siehe Tabelle. 2).
+                
+                    
+                    
+                        Gattung
+                        Liebe
+                        Natur
+                        Poetologie
+                        Geschichte
+                        Politik
+                        Philosophie
+                        Religion
+                        Kutlur
+                    
+                    
+                        Acc
+                        .880
+                        .833
+                        .623
+                        .872
+                        -
+                        .723
+                        .815
+                        .470
+                    
+                    
+                        Std
+                        .022
+                        .024
+                        .224
+                        .026
+                        -
+                        .028
+                        .059
+                        .169
+                    
+                    Tabelle 4: Ergebnisse der Evaluation der Classifier für thematische Gattungen (5-fold cross-validation).
+                
+                Tabelle 4 zeigt die Qualität der trainierten Classifier. Da die Performance für die Gattungen Kultur und Poetologie nicht ausreicht, um solide Analysen zu ermöglichen, werden diese im Weiteren nicht behandelt und fallen, wie Politik, der Kategorie ‘Sonstige’ zu, die daneben diejenigen Gedichte umfasst, die keiner thematischen Gattung zugeordnet wurden.
+                Für Informationen zur Annotation von Emotionen und Modellen zur Emotionsdetektion siehe 
+                    (Konle u. a. 2022).
+                
+            
+            
+                Ergebnisse 
+                
+                    
+                     Verteilung von thematischen Gattungen in Realismus und Moderne. Absolute Anzahl über Balken. Die Kategorie ‘Sonstige’ repräsentiert diejenigen Gedichte, die keiner der übrigen in dieser Abbildung gezeigten thematischen Gattungen zugeordnet wurden.
+                
+                Verteilung von thematischen Gattungen in Realismus und Moderne. Absolute Anzahl über Balken. Die Kategorie ‘Sonstige’ repräsentiert diejenigen Gedichte, die keiner der übrigen in dieser Abbildung gezeigten thematischen Gattungen zugeordnet wurden.
+                60% der untersuchten Gedichte konnten (mindestens) einer der fünf Gattungen Liebeslyrik, Naturlyrik, religiöse Lyrik, philosophische Lyrik oder Geschichtslyrik zugeordnet werden. Liebeslyrik und Naturlyrik sind im Korpus deutlich verbreiteter als religiöse Lyrik, philosophische Lyrik und Geschichtslyrik. Im Epochenvergleich werden nur begrenzte Verschiebungen sichtbar; die Rangfolge der Häufigkeiten bleibt konstant (siehe Abb. 1).
+                Wie die Gattungen kommen auch die Emotionen im Korpus unterschiedlich oft vor: Emotionen der Gruppen Liebe, Freude und Trauer werden deutlich häufiger gestaltet als Emotionen der Gruppen Erregung/Überraschung, Angst und Wut. Die Häufigkeit positiver Emotionen – Liebe und Freude – nimmt zur Moderne hin ab 
+                    (Konle u. a. 2022).
+                
+                
+                    
+                    Emotionsprofile nach Gattungen. Die Emotionen wurden mit dem Median 
+                        aller Gedichte normalisiert, um auch Unterschiede in wenig häufigen Emotionen (Anger, Fear, Agitation) sichtbar zu machen. Die 0-Linie markiert die Übereinstimmung mit dem Median aller Gedichte, darüber bedeutet mehr und darunter weniger Emotion.
+                    
+                
+                Die Ergebnisse (Abb. 2) zeigen, dass Gattungen eigenständige Emotionsprofile ausbilden; dies gilt auch für die nicht durch Emotionen definierten Gattungen. Einige Gattungen verhalten sich in Hinsicht auf bestimmte Emotionen ähnlich, z.B. philosophische Gedichte und Geschichtslyrik in Hinsicht auf die Gruppen Freude und Trauer, weichen aber in anderen Emotionen stark voneinander ab. Während z.B. in Liebeslyrik – wenig überraschend – Emotionen der Gruppe Liebe dominant sind, werden in Geschichtslyrik Emotionen der Gruppen Liebe und Freude unter- und Emotionen der Gruppen Wut und Angst überproportional dargestellt.
+                Ein kontrastiver Blick auf Gattungen unter der Perspektive von Epochen (Abb. 3) zeigt, dass sich (1) die lyrische Emotionsgestaltung in der frühen Moderne gegenüber dem Realismus verändert, und zwar (2) je nach Gattung in unterschiedlicher Weise. 
+                
+                    
+                    Emotionsprofilenach Epochen und Gattungen. Die Abbildung zeigt anders als Abb.2 nicht die Abweichung vom Median, sondern den Mittelwert der Emotionen.
+                
+                Der summarische Trend über alle Gattungen zu weniger Emotionen, verursacht vor allem durch den Rückgang positiver Emotionen in der Moderne (siehe Konle u.a. 2022), betrifft nicht alle Gattungen in gleicher Weise. Während sich die Ergebnisse zu Liebes-, Natur- und philosophischer Lyrik noch diesem Trend zuordnen lassen, entwickeln sich Geschichts- und religiöse Lyrik durch Zunahme negativer Emotionen eigenständiger. Religiöse Lyrik läuft dem Trend sogar durch ein vermehrtes Auftreten von Emotionen der Gruppe Liebe entgegen. Diese Befunde erlauben einen differenzierten Blick auf Emotionen, Gattungen und deren Veränderung in der frühen Moderne.
+                
+                    Case Study: Religiöse Lyrik
+                    Anschließend an unsere Ergebnisse stellt sich die Frage nach den Faktoren, welche die gattungsspezifischen Emotionsprofile zu unterschiedlichen Zeitpunkten beeinflussen. Für Geschichtslyrik bietet sich die These an, dass mit der Thematisierung von Konflikten und Feindseligkeiten 
+                        (Detering und Trilcke 2013) negative Emotionen einhergehen. Ob in der frühen Moderne diese Themen zunehmen oder stärker mit Emotionen verbunden werden, muss geprüft werden. 
+                    
+                    Die Entwicklung der Emotionen in religiöser Lyrik ist noch komplexer, es nehmen nicht nur negative Emotionen zu, sondern auch die der Gruppe Liebe, bei gleichzeitigem Rückgang der Gruppe Freude. Diese Beobachtung kann an Einsichten der Forschung anschließen und diese ergänzen. Bekannt ist, dass moderne Lyrik trotz z.T. dezidierter Kritik noch „vielfältig auf religiöse Traditionen bezogen“ bleibt 
+                        (Detering 2016, 126), dass sie sich u.a. stärker von christlichen Institutionen entfernt und religiöse Motive umdefiniert. Offenbar verbindet sie aber auch mehr und andere Emotionen mit dem Thema als die Lyrik des Realismus. Einen ersten Hinweis auf den Zusammenhang zwischen Motiven und Emotionen gibt Tabelle 5, die u.a. eine Verschiebung der distinktiven Substantive von der Institution zu Personen sowie eine Tendenz zu symbolfähigen Ausdrücken zeigt. Die Verschiebung zum persönlichen Glaubensaspekt könnte die erhöhte Anzahl der Emotionen erklären. Betrachtet man die in der frühen Moderne häufiger werdenden Emotionen (Tab. 6) zeigt sich, dass ein Teil der Zunahme über die Sexualisierung religiöser Inhalte erklärt werden kann. Zur Erklärung der vermehrten negativen Emotionen wären weitere Untersuchungen nötig. Aufschlussreich ist auch, dass sich der Darstellungsmodus religiöser Lyrik insofern ändert, als in Gedichten der frühen Moderne verstärkt Emotionswörter und Wörter vorkommen, die Emotionen körperlich, z.B. gestisch oder mimisch ausdrücken.
+                    
+                    
+                        
+                        
+                            Realismus
+                            Moderne
+                        
+                        
+                            
+                                Wald
+                                Kirche
+                                Kaiser
+                                Bischof
+                                Segen
+                                Grab
+                                Priester
+                                Glocke
+                                Mönch
+                                Heil
+                                Werk
+                                Sieg
+                                Haus
+                                Friede
+                                Dom
+                                Andacht
+                                Lenz
+                                Sonntag
+                                Mahl
+                                Ehr
+                            
+                            
+                                Gott
+                                Seele
+                                Nacht
+                                Auge
+                                Mensch
+                                Tod
+                                Weib
+                                Licht
+                                Welt
+                                Stimme
+                                Traum
+                                Kreuz
+                                Brust
+                                Blut
+                                Volk
+                                Erde
+                                Herz
+                                König
+                                Kind
+                                Leib
+                            
+                        
+                        Tabelle 5: Distinktive Substantive der Gattung Religion. Ranking nach Keyness. genauer: Simple Maths Parameter 
+                            (Brezina 2018, S.85).
+                        
+                    
+                    
+                        
+                        
+                            Abnehmend
+                            Zunehmend
+                        
+                        
+                            
+                                Freude
+                                Ausgeglichenheit
+                                Lust (nicht-sexuell)
+                                Aufregung
+                                Dankbarkeit
+                            
+                            
+                                Liebe
+                                Abneigung
+                                Sehnsucht
+                                Leid
+                                Lust (sexuell)
+                            
+                        
+                        Tabelle 6: Verschiebung der Emotionen zwischen Realismus und Moderne in religiöser Lyrik (Datengrundlage: Manuell annotierte Gedichte).
+                    
+                
+            
+            
+                Fazit
+                Die gleichzeitige Beobachtung von Gattung und Emotion zeigt nicht nur, dass Gattungen wesentlichen Einfluss auf die Verteilung von Emotionen haben, sondern auch, dass der Übergang von Realismus zu früher Moderne innerhalb von Gattungen eigenen Dynamiken folgt. Im Fall religiöser Lyrik und Geschichtslyrik verlaufen diese Dynamiken sogar in Widerspruch zum Gesamttrend. Im Anschluss ergeben sich drei weitere Perspektiven: Wie sehen die Emotionsprofile der nicht-thematischen Gattungen aus? Welche anderen differenzierenden Faktoren neben der Gattung können wir identifizieren, z.B. Autorschaft, Publikationsort, Intertextualität usw.? Ein wichtiger Aspekt könnte die Zeit sein, bezogen auf kleinere Einheiten als Epochen: Wie entwickeln sich die Lyrik und die einzelnen Gattungen unter der Perspektive der Emotionsgestaltung in der Zeit, etwa von Jahrzehnt zu Jahrzehnt?
+            
+        

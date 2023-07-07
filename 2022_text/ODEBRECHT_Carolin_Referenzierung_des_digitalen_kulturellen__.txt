@@ -1,0 +1,42 @@
+
+            
+                Forschungsgegenstand
+                
+                    Historische Textdaten wie etwa Urkunden, Briefe, Tagebücher aber auch literarische Texte sind integraler Bestandteil unseres kulturellen Erbes und insofern für viele geisteswissenschaftliche Fachbereiche wie die Sprach-, Literatur- und Geschichtswissenschaften die empirische Forschungsgrundlage. Für deren Referenzierung und Erschließung wurden insbesondere in den historischen Disziplinen und  Methodiken zur Einordnung und Kritik solcher Quellen geprägt (grundlegend etwa: Droysen 1868: 16-19; Bernheim 1907: 113-134), die wiederum auch für andere wie die oben genannten Fachbereiche intellektuelle Zugänge zu Forschungsressourcen ermöglichen können. Die Anpassung der Quellenkritik an die spezifischen Eigenschaften digitalisierter und genuin-digitaler Quellen ist dagegen ein interdisziplinär zu verortendes Desiderat in dem emergierenden komplementären digitalen Forschungsparadigma „Digital Humanities“ (für die Geschichtswissenschaften etwa: Föhr 2019; Margulies 2009). Mit domänenspezifischen Zugängen, die sich Beschreibungsansätze aus den genannten Fachbereichen zu eigen machen, können (historische) Textdaten trans- und interdisziplinär kritisch eingeordnet, gefunden, erschlossen und wiederverwendet werden (vgl. FAIR Data Wilkinson et al. 2016).
+                
+                
+                    In unserem Beitrag zeigen wir, wie eine domänenspezifische Datendokumentation, -kritik und -referenzierung mit standardisierten Methoden (TEI ODD Burnard 2013, UML-Modell für Metadaten Odebrecht 2019) für das LAUDATIO-Repositorium (Guescini, Schulz und Odebrecht 2021) und damit für die historisch arbeitenden Textwissenschaften umgesetzt werden kann. Die Dokumentation und Kritik nehmen sich dabei die historische Quellenkritik als Vorbild. Entsprechend werden in LAUDATIO sowohl äußerlich beschreibende als auch aus den Inhalten extrahierte Metadaten verwendet, um eine Einordnung und Erschließung der textuellen Quellen zu ermöglichen und zugleich neue Wege zu deren korpusimmanenter wie -übergreifender Recherche und Analyse zu bieten. Ein Schwerpunkt wird hierbei zunächst auf Personen- und Ortsbezüge gesetzt (wie zum Beispiel mit GND). Dabei leiten uns drei Fragenkomplexe an:
+                
+                I) Wie können wir diese multiplen Perspektiven (Kritik, Erschließung und Dokumentation) auf eine Quelle und über mehrere Quellen hinweg in einem Modell abbilden? Wie können wir Referenzen zu Personen und Orten in verschiedensten Quellen abrufbar machen? Wie gelingt die Einordnung der Quellen in etablierte Taxonomien beziehungsweise Ontologien? 
+                II) Wir erweitern diesen Forschungsgegenstand um die folgende Perspektive: Wie ordnen sich Transkripte und Annotationen in dieses Informationsgefüge ein? Wie lassen sich deren digitale Repräsentationen und deren (gewollte) Manipulationen so beschreiben, dass auch dieser Teil der digitalen Quellenkritik sind? 
+                III) Wie kann aus dieser Informationsdichte eine Exploration erfolgen, die den Forschenden die so versammelten Quellen als Forschungsdaten auffindbar, zugänglich, interoperabel und wiederverwendbar macht?
+                
+                    Um sich der Beantwortung dieser Fragen anzunähern und um im Rahmen einer nachhaltigen Infrastruktur als Weiterentwicklung des bestehenden Forschungsdatenrepositoriums LAUDATIO entsprechende Lösungsansätze umzusetzen, haben wir in einem ersten Schritt in einem interdisziplinären Team aus zentraler Infrastruktureinheit, Korpuslinguistik, Forschungsdatenmanagement und Geschichtswissenschaften 56 User Stories entwickelt, die wir in der Posterpräsentation vorstellen und mit der Community diskutieren.
+                
+            
+            
+                Anwendungsperspektive
+                Diese User Stories und deren Akzeptanzkriterien stellen für uns die wesentliche Implementierungsgrundlage der Weiterentwicklung von LAUDATIO über die bisherige sprachwissenschaftliche Zielgruppe hinaus dar. LAUDATIO will explizit ein Angebot an Geisteswissenschaftler:innen verschiedenster Disziplinen zur nachhaltigen Publikation und Nachnutzung textbasierter Forschungsdaten machen. Eine breite Diskussion und ggf. Anpassung/Erweiterung ist daher essentiell. Nur so können wir LAUDATIO als Publikationsplattform in der Nutzerdomäne erweitern und einen wichtigen Beitrag für Open Science leisten sowie das Forschungsdatenmanagement unseres kulturellen Texterbes unterstützen.
+            
+            
+                
+                    User Stories für die Erschließung von Textdaten
+                
+                
+                    Die User Stories repräsentieren die Bedarfe von historisch Forschenden, die das Repositorium und dessen Filter-/Suchinterfaces zur Forschungsdatenpublikation und -recherche verwenden. Zwei entscheidende Befunde, die sich aus der Entwicklung der User Stories ergeben haben, betreffen die Umsetzung der FAIR-Prinzipien sowie die Berücksichtigung der Forschungs- und Arbeitsprozesse insbesondere im Bereich des Datenmanagements der Zielgruppe(n). Nachfolgend zeigen wir ein Beispiel für eine User Story mit Akzeptanzkriterien, die sich aus den Forschungsprozessen und Workflows der nutzenden Community ableiten:
+                
+                
+                    User Story: 
+                    Als Geschichtswissenschaftler:in möchte ich eine Liste von Orten, die in den Dokumenten genannt sind, um nach für mich relevanten Dokumenten zu recherchieren.
+                
+                Akzeptanzkriterien:
+                
+                    Dynamische Generierung von Ortslisten aus dem Metadatenindex
+                    Metadatenindex hält verschiedene Typen von Orten vor (Publikationsort, Ort genannt in Dokument)
+                    Orte sind, wo möglich, mit Geodaten referenziert
+                    Auswahl und Anzeige der Ortsliste über die Expertensuche
+                    Auswahl und Anzeige der Ortsliste über die Metadatenanzeige pro Korpus und pro Dokument 
+                
+                Der thematische Schwerpunkt liegt bei uns in der Modellierung flexibler, unterschiedlich granularer und miteinander verschränkter Referenzierungen, die auf Korpus-, Text- und Annotationsebene ansetzen und miteinander interagieren. Personen, Orte und Werke sind Entitäten, die für eine digitale Quellenkritik entscheidende Informationen tragen. Ein umfassendes Desiderat für die Weiterentwicklung von LAUDATIO sind die Akzeptanzkriterien, welche das messbare Ergebnis und damit den Erfolg der User Story für die nutzende Community beschreib-, validierbar und im Rahmen der Entwicklung implementierbar machen. Wir diskutieren auf der Postersession nicht nur die User Stories sondern auch die Akzeptanzkriterien.
+            
+        

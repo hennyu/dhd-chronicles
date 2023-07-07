@@ -1,0 +1,66 @@
+
+            
+                
+                
+                Abstract:
+            
+            
+                
+                
+                Das interdisziplinäre Projekt an der Schnittstelle der Baugeschichte und angewandter Informatik untersucht sechs Burgen der mittelalterlichen Pfalz um den Zusammenhang zwischen Sozialhierarchie, Architektur und Landschaft zu forschen. Das Ziel ist neue Kenntnisse zur chronologischen Baugeschichte zu gewinnen anhand der Verbindung heterogenen Daten in einer Graphendatenbank. Drei Komponente bezogen auf verschiedenen Methoden der Informatik und Geoinformatik dienen dazu Ergebnisse in einer 
+                Neo4j-basierten Datenbank zu verbinden: 1. Räumliche Landschaftanalysen in Geographischen Informations-Systemen (GIS), basieren auf der systematischen Auswertung digitaler Geländemodelle (DGM) mit 32 weiteren geo-referenzierten historischen Landkarten (1540-1799 n.Chr.), und werden durchgeführt, um neue Kenntnisse zur strategischen und politischen Funktionen der Bauten zu erhalten; 2. Die Fallstudien werden fotogrammetrisch sowie mit einem terrestrischen Laserscanner (TLS) hochgenau vermessen und zur detaillierten Landschaftsanalyse in den GIS verknüpft; 3. Eine Netzwerkanalyse von 310 überlieferten Urkunden (882-1589 n.Chr.) der Inhaber der Burgen um das Projekt in den historischen Kontext der Pfalz einzuordnen und Verbindungsstrukturen aufzuzeigen. 
+            
+            
+                
+                
+                    Abbildung 1: Lage der Burgen als Fallstudien des Projektes CITADEL.
+                
+            
+            Einführung:
+            Das CITADEL Projekt erstellt einen integrativen Forschungsansatz in der drei Komponenten, bezogen auf drei Methoden, vereint werden können. Die Methoden bestehen aus der Anwendung einer Graphendatenbank in 
+                neo4j, 3D terrestrischen Laserscans und fotogrammetrischen Modellen der ausgewählten Burgen, die zusammen im GIS mit 
+                weiterführenden, georeferenzierten historischen Landkarten zur Landschaftsanalyse der Pfalz kontextualisiert ausgewertet werden. Der Zweck dieser Integration verschiedener Datensätze ist es, neuartige Kenntnisse zur Konstruktion mittelalterlicher Burgen im Zusammenhang mit der Landschaft und dem politischen Umfeld mit einhergehender Sozialhierarchie und wechselseitiger Beeinflussung zu gewinnen. Dahingehend wurden zur weiteren Methodenentwicklung die Burgen der mittelalterlichen Pfalz in der Umgebung von Kaiserslautern als Fallstudien erforscht (Abb. 1).
+            
+            Die Fallstudien—Die Königspfalz Lautern (oft Kaiserspfalz genannt), die Deutschherrenkommende Einsiedel (heutiger Einsiedlerhof) und die Burgen Beilstein, Hohenecken, Perlenberg und Wilenstein—bilden die pfälzische Kulturlandschaft des Mittelalters am Nordrand des Pfälzerwaldes ab, und sie dienten aufgrund der relativ guten Quellenlage, schon oft als Untersuchungsobjekte für Archäologen und Historiker. Leider gibt es nur wenig Information über die Burg Perlenberg und fast keine Information über das Netzwerk, d.h. die Interaktionen der Burgen miteinander sowie ihre Funktionen im Mittelalter. Die Fragen nach dem Status der Burgherren, der Netzwerkverbindungen und der herrschaftlich-organisatorischen Leistungsfähigkeit dieser Strukturen in Bezug auf die topographische Lage in der Landschaft sind weitgehend unbeantwortet (vgl. Liddiard, 2011). Diese Fragen können nur von dem verfolgten integrativen Forschungsansatz weiterführend beantwortet werden. 
+            
+                
+                
+                    Abbildung 2: 3D-Modell der Königspfalz in Kaiserslautern in der Seitenansicht.
+                
+            
+            Datenquellen und Methoden:
+            Die heterogenen Datenquellen von CITADEL bestehen aus historischen Urkunden der Ministerialenfamilien der Burgen, den hochdetaillierten selbst aufgenommenen 3D-TLS und den fotogrammetrischen Modellen (Abb. 2), historischen Landkarten der Pfalz und digitalen Geländemodellen (DGM). Die überlieferten Urkunden der Ministerialenfamilien 
+                von Beilstein, 
+                von Hohenecken, 
+                von Lautern/de Lutra und 
+                von Wilenstein versorgen das Projekt mit zentralen, historischen Informationen in Bezug auf Bauphasen, sowie dem Status und Amt der Mitglieder der obengenannten Familien. Der gesellschaftliche Stand des sogenannten ‚Adels‘ oder ‚niederen Adels‘ prägte die Form der jeweiligen Burg, insbesondere zum Thema Macht und der Repräsentation der Macht (Untermann, 2007). Allerdings ist die Auswirkung dieser Prägung nicht explizit erforscht worden, und nur vier bis sechs Bauphasen sind in den Urkunden deutlich erwähnt, was nicht ausreicht, um alle Bauphasen der sechs Burgen über die Jahrhunderte feinchronologisch zu erfassen. Des Weiteren sind alle Burgen heute Ruinen, die aufgrund der fragmentarischen Erhaltung mehr oder weniger Ansatzpunkte bieten, die Bauphasen der Strukturen klar zu bestimmen. Burg Hohenecken stellt dabei eine noch heute recht gut erhaltene Ausnahme dar. Die Netzwerkanalyse verbindet dabei den politischen Einfluss zur jeweiligen Zeitebene in Bezug auf die erforschten Bauphasen der Burgen. Damit können architektonische Elemente der Bauphasen mit dem entsprechenden gesellschaftlichen Status der Personen verbunden werden.
+            
+            Die Burgen wurden durch TLS (Terrestrische Laserscans) mit einer Präzision von drei Millimetern im Rahmen des Projektes aufgenommen. Dieselben Burgen wurden zusätzlich fotogrammetrisch erfasst. Durch die Verbindung von TLS und Fotogrammmetrie werden hochgenau vermessene und gleichzeitig fotorealistische Modelle für alle sechs Burgen erzeugt (Pattee, 2016), die als herrschaftliche Schnittstellen, Knotenpunkte der räumlichen Landschaftsanalyse im GIS darstellen. Gleichzeitig werden bauhistorische und strukturelle Untersuchungen ausgeführt, bzw. zu Bauphasenanalysen, Bauquerschnitten und Mauerneigungen, die mit den vorherigen Bauuntersuchungen verglichen werden, um neue Kenntnisse zu generieren.
+            Die historischen Landkarten und Urkunden dienen dazu, das Projekt in den geographisch-geschichtlichen Kontext der Pfalz einzuordnen. Die bisher genutzten Karten konnten von der 
+                David Rumsey Map Collection (Stanford University Library) kostenfrei heruntergeladen und im GIS georeferenziert werden. Damit können Straßen und Wege in der Umgebung der Burgen in der frühen Neuzeit durch auf den historischen Karten ausgewiesene Kreuzungen lokalisiert werden. Leider ist der Datensatz der historischen Landkarten jedoch unvollständig erhalten geblieben, um genauer festzulegen wie die Straßen und Wege die einzelnen Burgen miteinander vernetzten. Daher werden 
+                Least-Cost-Path-Berechnungen im GIS erzeugt, wobei plausible hypothetische Wegverbindungen aufgrund der Oberflächengestalt des Reliefs und weiteren „physischen Kostenfaktoren“ kalkuliert werden.
+            
+            Ergebnisse:
+            Die Graphendatenbankanalyse in 
+                neo4j hat deutliche Tendenzen betreffend des Zusammenhangs zwischen Ministerialenfamilien und benachbarten Klöstern aufgedeckt. Leitende Mitglieder der Familien, die sich am Anfang ihres Amtes als Ministerialen der stauferischen Könige und Kaiser mit der Kirche eng verbunden haben, konnten ihre Familien vor einem politischen Untergang nach Amtsrücktritt erfolgreicher schützen, als Familien die sich nicht frühzeitig mit der Kirche verbanden. Die Macht der Ministerialen hat sich in der zweiten 
+                
+                Hälfte des 13. Jahrhunderts stark reduziert, und viele dazugehörige Familien haben geliehene Ländereien rasch verkauft, um sich von der königlichen Herrschaft, der sie vertraglich verpflichtet waren, zu trennen (Spieß, 1975). Andere Familien fingen aber schon am Ende des 12. Jahrhunderts an, geliehene Ländereien an Klöster zu verschenken, um ein starkes Verhältnis mit der Kirche zu entwickeln und gleichzeitig eine fortschreitende Trennung von der kaiserlichen Gewalt zu vollziehen—dies ist bisher weitgehend unerforscht (Bihrer, 2011). 
+            
+            In 
+                neo4j konnten wir feststellen, wann und an wen die vier Ministerialenfamilien der obengenannten Burgen Ländereien verschenkt oder verkauft haben, und zwar im zeitlichen Verlauf. Im Zusammenhang mit der Entwicklung der Burgen wird es deutlich, dass die Familien die schon früh anfingen mit der Kirche zu handeln, ihre Burgen des Weiteren prächtiger ausgebaut haben. Die kirchliche Verbindung in der Form von familienzugehörigen Geistlichen, Pfründen, Klerikern und sogar einem Bischof hielten die betreffenden Familien auf hohem Stand, auch nach der politischen Veränderung der Macht der Ministerialen am Ende des 13. Jahrhunderts. Die Bauphasen der Burgen unterstützten diese These, da nur die Burgen der kirchlich stark verbundenen Familien nach 1300 regelmäßig noch ausgebaut wurden. Nur die Burg Hohenecken wurde in den folgenden Jahrhunderten sogar als Schloss etabliert. Die erkennbaren Bauphasen der Burg Hohenecken zeichnen gleichzeitig die Phasen der politischen Macht der Inhaber ab und zwar hauptsächlich nachdem keiner der Familie noch als Ministeriale diente. D.h. die Familie konnte sich immer noch auf hohem Kostenniveau ihren Stammsitz ausbauen, da sie noch über beträchtliche Finanzmittel verfügte. Welche architektonischen Elemente genau zu diesen Zeiten gebaut wurden, wird noch bauhistorisch untersucht, anhand der präzisen Laserscans und Foto realistischen, fotogrammetrischen Modelle. 
+            
+            Die Landschaft der Burgen und die dazu angeliehenen Ländereien, nahegelegenen Straßen und Seen prägten die Entwicklung einer Burg ebenso, wie die politischen Einflüsse. Zu diesen Landschaftsuntersuchungen gehörten 
+                Least-Cost-Path-Analysen, um energetisch effiziente Wegführungen zwischen den Ausgangs- und Endpunkten der Burgen zu berechnen, vgl. Herzog 2017. Darüber hinaus wurden im GIS Sichtfeldanalysen durchgeführt, um festzustellen, was oder wie weit man von einer bestimmten Höhe, z.B. vom Bergfried einer Burg, sehen konnte. Die 3D-Laserscanmodelle der Burgen dienen im GIS als Ausgangslagen der Knotenpunkte der 
+                Least-Cost-Path-Analysen, und sie liefern gleichzeitig genau vermessene Höhen der Burgen für die Sichtfeldanalysen (Abb. 3). Interessanterweise konnten die Burgmannen der sechs Burgen sich gegenseitig nicht sehen, zumindest in der heutigen bewaldeten Lage. Dies spricht dafür, dass die Bergfriede der Höhenburgen einem anderen Zweck dienten, nämlich um Ländereien im eigenen Besitz und nahegelegene Straßen zu beobachten, statt benachbarte Burgen zu überwachen.
+            
+            
+                
+                
+                    Abbildung 3: 12 km-Radius im Rahmen der Sichtfeldanalyse vom 29-Meter hohen Bergfried der Burg Hohenecken; hellblau: sichtbar; Rest: unsichtbar.
+                
+            
+            Aussicht
+            Neue Kenntnisse werden auf Mikro- und Makroebene der Studie entstehen, in denen die Fragen vom Status der Burgherren, der Netzwerkverbindungen und der herrschaftlich-infrastrukturellen Leistungsfähigkeit bezüglich der topographischen Lage in der Landschaft hinterfragt und neu beantwortet werden können. In einem folgenden Arbeitsschritt werden Straßen- und Wegverläufe der historischen Landkarten mit den berechneten Verbindungen aus den 
+                Least-Cost-Path-Analysen und mit Entwässerungsanalysen der Bäche und Flüsse für potentielle Wegverläufe, bzw. Netzwerke verglichen. Dabei soll herausgefunden werden, welche Straßen und Wege im Mittelalter überhaupt existieren konnten, wenn man bedenkt, dass durch den bekannten mittelalterlichen Wasserbau und die einhergehende Fischteichanlage vielerorts Täler unpassierbar waren. Folgende Analysen der Wassereinzugsgebiete der Täler des Waldgebietes werden der Berechnung von Entwässerungsmustern und Abflussregimen in den Hanglagen dienen und damit diese Fragestellung detailliert beantworten. Die Vereinigung dieser Methoden ermöglicht den Gewinn neuer Kenntnisse, um zu einem holistischen Bild der Funktion der mittelalterlichen Burgen der Pfalz zu gelangen. 
+            
+        

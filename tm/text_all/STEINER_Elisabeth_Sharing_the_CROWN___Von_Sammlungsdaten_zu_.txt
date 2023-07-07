@@ -1,0 +1,33 @@
+
+            
+                Die Reichskrone des Heiligen Römischen Reiches ist eines der wichtigsten Symbole europäischer Geschichte. Heute ist sie Teil der Sammlungen des Kunsthistorischen Museums (KHM) in Wien. Im Zuge des vom KHM initiierten CROWN-Projekts
+                 wird eine umfassende Analyse der Reichskrone durchgeführt. Ziel dieser Analyse ist es nicht nur den konservatorischen Status des Objektes zu bestimmen, sondern auch die Diskussion um Entstehungszeit und Entstehungsort voranzubringen. Dazu werden alle Bestandteile der Krone, die Platten, das Stirnkreuz, der Bügel, die Edelsteine und Zierelemente etc. aus unterschiedlicher Perspektive - naturwissenschaftlich, konservatorisch, (kunst)historisch - analysiert. Dieses interdisziplinäre Vorhaben läuft noch bis 2024.
+            
+            
+                Im Rahmen des CROWN-Projekts wird ein einzelnes Objekt - die Reichskrone - im Vergleich zu einigen wenigen ausgewählten Vergleichsobjekten eingehend und möglichst umfassend beschrieben und analysiert. Die Forschungsdaten, die sich aus der Anwendung naturwissenschaftlicher Analysetechniken zur Untersuchung der Herstellungstechniken und der verwendeten Materialien ergeben, werden mit The Museum System (TMS)
+                 erfasst. TMS ist eine weit verbreitete, aber proprietäre Softwarelösung, die für Museen entwickelt wurde. Sie bietet eine relationale Datenbank, die für die Inventarisierung, Dokumentation und Verwaltung von Sammlungen verwendet wird. Die Verwendung von TMS ist nicht nur auf vorhandene Ressourcen zurückzuführen, sondern hat pragmatische Gründe: Die Etablierung eines weiteren Systems zur Erfassung kann im jetzigen Projektkontext nicht erfolgen. Bei den im CROWN-Projekt erfassten Daten handelt es sich nicht um Inventardaten, also deskriptive Daten, die Objekte in einer Sammlung beschreiben und wofür TMS primär entwickelt wurde, sondern um hochspezifische Forschungsdaten. Ziel dieses Beitrags ist es, einen Workflow zur Überführung der in TMS erfassten Daten zu beschreiben, an dessen Ende eine hochstrukturierte, den FAIR-Kriterien entsprechende und Linked-Open-Data-fähige (LOD) Ressource steht.
+            
+            
+                LOD beschreibt die freie und offene Zurverfügungstellung von strukturierten Daten über das Web. Oft wird der Technologiestack des Semantic Web verwendet. Fundamentale Grundlage ist dabei das Resource Description Framework (RDF)
+                , das ein standardisiertes und graphenbasiertes Modell zur Darstellung und zum Austausch von Daten und deren Semantik.
+            
+            
+                Die verschiedenen Forschungsfragen können nur im Rahmen einer interdisziplinären Untersuchung der gemeinsamen Auswertung und Interpretation des Datenmaterials, zu dem auch historische Bild- und Schriftquellen gehören, beantwortet werden. Diese wiederum, d.h. die Verbindung von wissenschaftlichen Messungen und Quellen, geht weit über die übliche Beschreibung von Objekten in Sammlungen hinaus. Da den Autor*innen für dieses Vorhaben kein geeigneter Standard bekannt ist, wird ein Semantic-Web-Ansatz verfolgt. Dieser beinhaltet die Entwicklung einer domänenspezifischen Ontologie und deren Anbindung an die Top-Level-Ontologien CIDOC-CRM
+                 und Basic Formal Ontology (BFO)
+                . Im Ontology Engineering Prozess wird auf etablierte Ontology Design Patterns
+                 und Modellierungswerkzeuge zurückgegriffen. Die Domäne umfasst die formale Abbildung der im CROWN-Projekt erfassten Daten, also die Zusammenführung technologischer Untersuchungen und naturwissenschaftlicher Analysen mit Ergebnissen der historischen bzw. kunsthistorischen Forschung. Folgendes Beispiel soll die Domäne veranschaulichen:
+            
+            
+                Eine “Hochfassung für Perle mit Einsteckstiften” ist eine Komponente an einer Platte der Reichskrone. Dabei handelt es sich um eine 30 x 30 x 20 mm große Fassung aus Gold. Fünf Punkte auf dieser Fassung werden im Zuge des CROWN-Projektes mit drei Analyseverfahren untersucht: 3D Mikroskopie, Röntgenfluoreszenzanalyse (XRF) und Multispectral Imaging (MSI). Jede Analyse umfasst eine Beschreibung des Messvorgangs, Messdaten in tabellarischer Form als CSV oder XLSX, sowie Ergebnisse in Form von Diagrammen als bspw. BMP, sowie eine (kon-)textuelle Interpretation bzw. Schlussfolgerung der Messung durch die Fachwissenschaftler*in. Zusätzlich gibt es ggf. eine historische Quelle, etwa eine überlieferte Beauftragung eines Goldschmieds, in der weitere Informationen enthalten sind, oder eine kunsthistorische Quelle in Form eines Gemäldes in dem die Fassungen zu einem bestimmten Zeitpunkt abgebildet sind. Ziel der domänenspezifischen Ontologie ist es, genau diese Informationen formal zusammenzuführen und als Forschungsressource nachnutzbar zu machen. 
+            
+            
+                Der dabei entwickelte Best-Practice-Workflow kann von anderen Forschungsvorhaben in Museen, die TMS nutzen, nachgenutzt werden. Dieser beinhaltet das Ontology Engineering, also die Umsetzung der Domäne als Ontologie und den Export und die Transformation von TMS nach LOD mittels Python. Python erlaubt weiters ein Semantic Enrichment, also die Normalisierung von Entitäten mittels Reconciliation durch Wikidata, sowie andere kontrollierte Vokabularien (z. B. Getty
+                 oder GND
+                )
+            
+            
+                
+                    Am Ende dieser Überlegungen steht nicht eine Software, sondern ein beschriebener Workflow, in dem unterschiedliche Komponenten modular austauschbar sind. Das heißt konkret: statt TMS könnte auch ein anderes System zur Verwaltung und Erfassung von Inventardaten stehen, oder auch eine andere Programmiersprache verwendet werden als Python, mit der man in der Lage ist, programmatisch über einen Export oder eine Schnittstelle Daten nach RDF zu überführen. Der Fokus liegt auf der Interoperabilität verschiedener Werkzeuge und der Gestaltung dieser Schnittstellen. Die Autor*innen sind sich bewusst, dass ein Modell, das dieses Vorhaben auf generischer Ebene löst (Top Level Ontology), von zentralem Interesse ist. Das gegenständliche Projekt ist als eine prototypische Vorarbeit zu einem solchen Vorhaben zu verstehen. 
+                
+            
+        

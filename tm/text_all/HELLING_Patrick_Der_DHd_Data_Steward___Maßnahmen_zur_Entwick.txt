@@ -1,0 +1,55 @@
+
+            
+                Der DHd Data Steward
+                Mit der Ernennung eines Data Stewards hat der Verband Digital Humanities im deutschsprachigen Raum e.V. (DHd) auf der Jahreskonferenz 2020 in Paderborn eine Funktion geschaffen, um eine umfassende Datenstrategie für alle Materialien, Publikationen und Ergebnisse, die im Kontext des DHd-Verbandes entstanden sind/entstehen werden, zu entwickeln. Sie sollen im Sinne der FAIR-Prinzipien (Wilkinson et al. 2016) (1) langfristig gesichert und archiviert als auch (2) nach Möglichkeit nachhaltig publiziert und verfügbar gemacht werden.
+                
+                Mit diesem Posterbeitrag soll die bisherige Arbeit des DHd Data Stewards präsentiert sowie ein Blick in die Datenzukunft des Verbandes gegeben werden. 
+            
+            
+                Materialien der DHd-Konferenzen 
+                
+                    Langfristige Verfügbarkeit von DHd-Konferenzwebsites
+                    Einen zentralen Gegenstand und Zugangspunkt einer DHd-Jahreskonferenz stellt die Konferenzwebsite dar. Die Erstellung und das Hosting werden von den lokalen Organisator*innen übernommen. Nach einer Konferenz fehlt es häufig an notwendigen Mitteln für den langfristigen Betrieb dieser Konferenzwebsites.
+                    Zur Gewährleistung einer dauerhaften Erreichbarkeit wurde damit begonnen, statische HTML-Versionen einzelner Konferenzwebsites zu erzeugen, um mögliche technische Abhängigkeiten aufzulösen und den Kurationsaufwand herunterzufahren. Mit einem Umzug auf die technische Infrastruktur der Alliance of Digital Humanities Organizations (ADHO) sollen die Konferenzwebsites langfristig als Unterseite der Verbandswebsite bereitgestellt.
+                    
+                
+                
+                    Nachhaltige Publikation aller einzelnen DHd-Beiträge
+                    Das Book of Abstracts einer Jahreskonferenz stellt ein wichtiges Publikationsinstrument dar. Seit 2016 wurden die Book of Abstracts via Zenodo publiziert (siehe Burr 2017; Stolz 2017; Vogeler 2018; Sahle 2019; Schöch 2020). Für die erste DHd-Jahreskonferenz 2014 wurde kein Book of Abstracts publiziert. Die Beiträge zur DHd-Jahreskonferenz 2015 sind als PDF-Datei über die Konferenzwebsite verfügbar (siehe Stiegler 2015). 
+                    Wenngleich die Books of Abstracts ein wichtiges Schaufenster der deutschsprachigen Digital Humanities (Sahle 2019; Schöch 2020) sind, ermöglichen sie weder eine eindeutige Zitierbarkeit einzelner Beiträge noch ihre Erfassung in digitalen Katalogen. Potentiale und Lösungsansätze zum Umgang mit DHd-Beiträgen wurden bereits in verschiedenen Formaten community-getrieben adressiert (Cremer 2018; Andofer 2019: Andorfer et al. 2019; Lordick 2020; Steyer et al. 2020).
+                    Um die DHd-Beiträge einzeln zitierbar zu veröffentlichen, wurden alle Beiträge gesammelt: 
+                    
+                        2016, 2018-2020: TEI-Dateien via GitHub
+                            
+                        
+                        2017: TEI-Dateien von lokalen Organisator*innen
+                        2015: gesammelte PDF-Datei von lokalen Organisator*innen
+                        2014: gesammelte, unvollständige PDF-Datei von lokalen Organisator*innen + weitere Beiträge durch Autor*innen als PDF- und Word-Dateien
+                    
+                    Zur Erstellung einzelner PDF-Dateien zu jedem Abstract wurde für die Jahrgänge 2016-2020 auf bestehende Transformationsskripte zur Erstellung von Book of Abstracts aus TEI-Dateien zurückgegriffen. Die Skripte wurden angepasst, um für jedes Abstract einzeln eine PDF-Datei zu generieren.
+                    
+                    Zur persistenten Publikation der DHd-Beiträge wurde das generische Online-Repositorium Zenodo gewählt. Hier wird bereits seit 2019 eine DHd-Community als zentraler Publikationsort kuratiert.
+                    
+                    Mit Hilfe weiterer XSL-Transformationsskripte wurden für die Jahrgänge 2016-2020 jeweils eine Konferenz-Metadatendatei generiert, die dem DataCite-Schema und den Anforderungen von Zenodo entspricht (siehe 
+                        Abb. 1).
+                        ,
+                    
+                    
+                        
+                        Abb. 1: Metadatenschema zu den DHd-Beiträgen mit Beispieleinträgen.
+                    
+                    Für den Upload der Abstracts auf Zenodo wurde automatisiert für jedes Abstract ein Ordner (Bundle) mit PDF-Datei, TEI-Datei (sofern vorhanden) und Metadatensatz im JSON-Format generiert. Die Publikation dieser Bundles erfolgte automatisiert durch einen eigenen Publikationsworkflow (siehe Abb. 2) über die Zenodo REST API-Schnittstelle in die DHd-Zenodo Community. Die DHd-Beiträge verfügen über Digital Object Identifier (DOI), sind via OpenAIRE auffindbar und wurden durch die computer science bibliography (dblp) katalogisiert.
+                        ,
+                    
+                    
+                        
+                        Abb. 2: Der Publikationsworkflow.
+                    
+                
+            
+            
+                Ausblick und nächste Schritte
+                Der Umzug von alten Konferenzwebsites auf die ADHO-Infrastruktur soll vorangetrieben werden. Empfehlungen für die technische Umsetzung zukünftiger Konferenzwebsites soll deren Umzug auf die ADHO-Infrastruktur vereinfachen. Zusätzlich bedarf es einer Policy zur Speicherung, Archivierung und ggf. Publikation von DHd-Materialien die außerhalb von der Jahreskonferenzen entstanden sind. Zuletzt sollen die entwickelten Workflows und die technische Realisation zur Sicherung und Publikation der einzelnen DHd-Abstracts im Rahmen einer durch die Community getragenen TaskForce zur kontinuierlichen Unterstützung der wechselnden Konferenz-Organisator*innen weiterentwickelt und optimiert werden. Die Einrichtung einer solchen TaskForce ist im Kontext der DHd 2022 Konferenz in Potsdam geplant. Ein Aufruf zur Beteiligung der Community wird im Vorfeld kommuniziert. Ein wichtiger Ansatz ist hier die Aufbereitung der TEI-Dateien, damit diese auch im Index of Digital Humanities Conferences (Weingart, Eichmann-Kalwara und Lincoln 2020) katalogisiert werden. Eine entsprechende Initiativgruppe hat sich bereits in einem Workshop auf der vDHd-Konferenz 2021 (Andorfer, Busch, Cremer et al. 2021) formiert.
+                
+            
+        

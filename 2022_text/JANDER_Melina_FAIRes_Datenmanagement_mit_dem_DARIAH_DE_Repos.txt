@@ -1,0 +1,135 @@
+
+            
+                Einleitung
+                
+                    Forschende, Lehrende und Studierende produzieren bei ihrer Arbeit kontinuierlich Daten. Im Zuge des kulturellen Wandels bleibt die Frage danach, wie mit diesen Daten den FAIR-Prinzipien (
+                    F
+                    indable, 
+                    A
+                    ccessible, 
+                    I
+                    nteroperable, 
+                    R
+                    eusable; Wilkinson et al. 2016) entsprechend umgegangen werden kann, stets aktuell und nach wie vor ungelöst. Im direkten Austausch mit der Community hat CLARIAH-DE (durch qualitative Interviews mit verschiedenen Zielgruppen)
+                     unterschiedliche Bedarfe ermittelt, u.a. die Möglichkeit, Forschungsdaten auffindbar, zugänglich und nachnutzbar zu speichern. Das DARIAH-DE Repository wird diesen Anforderungen gerecht, indem sein Publikationswerkzeug, der DARIAH-DE Publikator, mit grafischer Nutzeroberfläche und detaillierten (mehrsprachigen) Beschreibungs- und Hilfetexten auch jene Nutzende abholt, die keine Vorerfahrung im Forschungsdatenmanagement mitbringen. Um diese Qualitätsmerkmale zertifiziert zu belegen, befindet sich das DARIAH-DE Repository derzeit im Beantragungsprozess des CoreTrustSeals (
+                        https://www.coretrustseal.org/
+                    
+                    ). Das Repository ist Teil des von der SUB Göttingen für das NFDI-Konsortium Text+ (
+                        https://www.text-plus.org/
+                    
+                    ) angebotenen Dienstes der DARIAH-DE Data Federation Architecture (DFA), die insgesamt fünf Dienste in sich vereint. Diese adressieren eine nachhaltige Publikation, aussagekräftige Beschreibung, Mapping und Auffindbarkeit der Forschungsdaten. Dabei stellt die DFA schrittweise jene Dienste bereit, die wichtige Aspekte des Research Data Lifecycles (Puhl et al. 2015) abdecken.
+                
+                Im Workshop soll das DARIAH-DE Repository mit seinen Funktionalitäten sowohl im übergeordneten Kontext der FAIR-Prinzipien als auch im technischen Kontext der DFA vorgestellt werden. Mit den Teilnehmenden werden die einzelnen Schritte des Publikationsprozesses durchlaufen, um mit diesem vertraut zu werden und mögliche Hemmschwellen bei der Datenpublikation zu senken. Gleichzeitig bietet der Workshop Raum für konstruktives Feedback. Perspektivisch kann dies dazu beitragen, den Wandel innerhalb der akademischen Publikationskultur hin zu einem grundlegenden Bewusstsein von Open Access voranzutreiben und somit die Kartierung der Forschungsdatenlandschaft positiv zu beeinflussen. 
+                Der Workshop richtet sich an Geisteswissenschaftler*innen in allen Stufen der akademischen Laufbahn und unabhängig von ihrer zugehörigen Institution, ihrer Arbeit oder ihren Forschungsinteressen, da der Bedarf an nachhaltiger Datenpublikation in all diesen Bereichen gleichermaßen hoch ist. Das Repository wird sowohl von Einzelforscher*innen als auch kollaborativ in Forschungsprojekten genutzt. Es beinhaltet aktuell 267 Kollektionen mit mehr als 1.700 Dokumenten. 
+            
+            
+                Repositorien in den Geistes- und Kulturwissenschaften
+                Das Angebot an Forschungsdatenrepositorien ist vielfältig. Manche Repositorien beschränken sich auf einzelne Fachdisziplinen (z.B. AMAD für Mittelalterstudien), andere auf bestimmte Formate und Communities (bspw. das Bildarchiv Foto Marburg oder das Deutsche Textarchiv) oder Publikationstypen (Forschungs(roh)daten vs. Publikationen). Ferner bieten manche nur Archivfunktionen ohne Veröffentlichung an und viele können ihre Dienste nur für eine kurze Zeit aufrechterhalten. Andere wiederum sind kostenpflichtig (z.B. RADAR).
+                
+                    Das DARIAH-DE Repository kombiniert die oben genannten Elemente und geht somit über reine Archivfunktionen hinaus. Dennoch kann es als generisches Repositorium nicht alle Bedarfe einzelner Fachcommunities adressieren (z.B. Helling et al. 2020). Seit 2017 ist es durch die DFA (vgl. Abb. 1) und seine Anbindung an DARIAH- und CLARIAH-DE Teil größerer Infrastrukturen, die Nachhaltigkeit garantieren und an geisteswissenschaftliche NFDI-Konsortien angeschlossen sind (Brünger-Weilandt et al. 2020). Nach Ablauf des Förderzeitraums von DARIAH-DE wurde es im Rahmen der DARIAH-DE Betriebskooperationsvereinbarung weitergeführt und war außerdem Teil des Angebots von CLARIAH-DE, das nun als Angebot der SUB Göttingen in Text+ übergegangen ist. Via CLARIAH-DE existiert ein Helpdesk
+                    , über den Fragen gestellt werden können. Technisch wird das DARIAH-DE Repository von der GWDG und SUB Göttingen betrieben. Um die Fachwissenschaft gezielt anzusprechen und einen thematischen Rahmen für die Forschungsdaten zu bieten, ist es zwar geistes- und kulturwissenschaftlich ausgerichtet, hierbei aber nicht an Einzelwissenschaften gebunden. Es ist ferner durchsuchbar, nicht rein institutionell und bietet neben zitierfähigen Links bspw. auch die Vergabe von Persistenten Identifikatoren (DataCite DOI und ePIC Handle). Darüber hinaus sind die Verwendung des Repositoriums sowie der gesamten DFA, die Speicherung von Daten und alle zusätzlichen Services nicht mit Folgekosten für die Nutzenden verbunden.
+                
+                
+                    
+                    Abb. 1: Schematische Darstellung der DARIAH-DE DFA.
+                
+            
+            
+                Das DARIAH-DE Repository in der Forschungsdaten-Föderationsarchitektur
+                
+                    Im Rahmen digitalen Forschens gelten die FAIR-Prinzipien zunehmend als Leitlinien. Für Forschende ist es daher wichtig, dass schon der Publikationsprozess auf eine FAIRe Publikation hin ausgerichtet ist (Ivanović et al. 2019). Diesem Anspruch wird das DARIAH-DE Repository auf nutzendenfreundliche Weise gerecht: Mit einem DARIAH- oder Föderationsaccount greifen Nutzende auf den Publikator in einem grafischen Interface zu und können mit wenigen Klicks mit dem Einspielen der Daten und der Auszeichnung der Metadaten beginnen. Das Dublin Core Metadatenschema liegt hier als Standard zugrunde und ermöglicht es auch jenen Forschenden, die nur wenige Metadaten eingeben möchten, ohne großen Aufwand ihre Daten zu beschreiben. Das Design von Eingabemaske und Fileupload wird dabei als eines wahrgenommen, mit dem intuitiv gearbeitet werden kann (Cremer 2018). 
+                
+                Die im Publikator erstellten Kollektionen können in einem nächsten Schritt in der Collection Registry eingetragen und mit weiteren deskriptiven Metadaten ausgezeichnet werden. Mit der Generischen Suche beinhaltet die DFA außerdem ein Front-End für die in der Collection Registry verfügbar gemachten Daten und deren Metadaten. Durch den modularen Aufbau der DFA können die in ihr vereinten Werkzeuge und Dienste – unter Nutzung u.a. der DARIAH-DE Authentifizierungs- und Autorisierungsinfrastruktur (AAI) sowie der DARIAH-DE Storage API zur Speicherung von Forschungsdaten (Schmunk / Funk 2018) – somit sowohl kombiniert in einem Workflow als auch individuell genutzt werden. Das technische Workaround für einen Datenimport ins Repository lässt sich dabei folgendermaßen beschreiben (vgl. Abb. 2):
+                
+                    Publikator: Die Nutzenden laden ihre zur Publikation vorbereiteten Daten über die Eingabemaske ins Repository und versehen sie mit Metadaten entsprechend des Dublin Cora Metadatenschemas. Sowohl die Objekte als auch ihre Metadaten werden als Kollektion per API an den DARIAH-publish Service übermittelt.
+                    DARIAH-publish Service: Die Metadaten werden validiert, Referenzen auf Objekte innerhalb der einzuspielenden Kollektion werden von Dateipfaden auf Identifier umgeschrieben und ggf. werden weitere beschreibende Metadaten generiert. Die gesamte Kollektion wird an den DARIAH-crud Service weitergegeben.
+                    DARIAH-crud Service: Die Kollektion wird im DARIAH-Storage gespeichert. Dabei werden die Metadaten in die Indexdatenbank eingetragen und es wird ein Persistenter Identifikator (PID) erzeugt.
+                    OAI-PMH Service: Der OAI-PMH Service kann öffentlich nach neuen Datensätzen des DARIAH-DE Repositorys angefragt werden. Dazu nutzt er den Metadatenindex des Repositorys. Über diesen Service indiziert auch die Generische Suche regelmäßig alle Daten der Collection Registry und kann sie so den Nutzerinnen und Nutzern komfortabel zur Verfügung stellen.
+                
+                
+                    
+                    Abb. 2: Schematische Darstellung des Repositorys und des Workarounds im Publikator.
+                
+            
+            
+                Ablauf der Workshops und Organisatorisches
+                
+                    Unser halbtägiger Workshop wird den Teilnehmenden die Funktionen des Publikators sowie die Möglichkeiten der Collection Registry und die Einbettung in die DFA auf praktische Weise nahebringen. Dies geschieht durch das im Forschungsdatenmanagement typische Szenario des Einspielens eigener Daten sowie der Vorbereitung und Durchführung von deren Publikation. Nach einer kurzen
+                     Vorstellungsrunde wird einleitend die DFA im Kontext der FAIR-Prinzipien vorgestellt, sodass möglichst viel Zeit für die praktische Anwendung der Werkzeuge in der DFA zur Verfügung steht. Der Workshop richtet sich an alle am FAIRen Publikations- und Archivierungsprozess interessierte Forschende in den Geistes- und Kulturwissenschaften. Technisches Know-How ist nicht von Nöten, da sich der Workshop auf die praxisnahe Durchführung konzentriert und die zugrunde liegende Technik dabei als Hintergrundwissen vermittelt. Voraussetzungen zur Teilnahme sind folglich nur ein funktionierender Rechner und eine stabile Internetverbindung. Um die Tools der DFA nutzen zu können, ist ein Login in die DARIAH AAI nötig, der mit einem DARIAH-Account oder über viele Forschungsorganisationen und -institutionen möglich ist. Um den Publikationsprozess einzuüben, stellt die Workshoporganisation einen Beispieldatensatz bereit. Gerne können aber auch eigene Daten mitgebracht und verwendet werden. Um eine optimale Durchführung zu gewährleisten und möglichst individuell Feedback geben zu können, ist die Anzahl der Workshopteilnehmenden auf 20 beschränkt.
+                
+                
+                    Format
+                    Halbtägiger Workshop bestehend aus einem kurzen Vortrag sowie einem deutlich längeren Praxisteil, in dem die Teilnehmenden durch den Publikationsprozess und die weiteren Funktionen des Repositorys geführt werden.
+                
+                
+                    Zeitplan
+                    
+                        
+                            Zeit
+                            Inhalt
+                        
+                        
+                            60 min
+                            
+                                
+                                    Kurzvorstellung der Workshopleitung u. Teilnehmenden
+                                    Evaluation der Erwartungen
+                                    Impulsvortrag: FAIRes Datenmanagement – das DARIAH-DE Repository
+                                
+                            
+                        
+                        
+                            15 min
+                            
+                                
+                                    Pause
+                                
+                            
+                        
+                        
+                            75 min
+                            
+                                
+                                    Hands-On: Publizieren mit dem DARIAH-DE Repository (Teil 1)
+                                
+                            
+                        
+                        
+                            15 min
+                            
+                                
+                                    Pause
+                                
+                            
+                        
+                        
+                            75 min
+                            
+                                
+                                    Hands-On: Publizieren mit dem DARIAH-DE Repository (Teil 2)
+                                    Ausblick: Weitere Services der DFA 
+                                    Workshopabschluss
+                                
+                            
+                        
+                    
+                
+                
+                    Zielpublikum
+                    
+                        Geisteswissenschaftler*innen mit Interesse an FAIRer Datenspeicherung und –publikation
+                        Vorkenntnisse nicht notwendig
+                    
+                
+                
+                    Teilnehmerzahl
+                    
+                        max. 20
+                    
+                
+                
+                    Techn. Anforderungen
+                    Seitens der lokalen Organisation benötigen wir einen ausreichend großen Raum mit stabiler Internetverbindung und üblicher Präsentationstechnik (Beamer). Die Teilnehmenden müssen einen eigenen Laptop mitbringen und sich möglichst im Vorfeld des Workshops einen DARIAH- oder Föderationsaccount einrichten. Es wird von unserer Seite ein Beispieldatensatz für die Veröffentlichung von Forschungsdaten auf dem Testserver des DARIAH-DE Repository zur Verfügung gestellt. Selbstverständlich können auch eigene Forschungsdaten mitgebracht werden.
+                
+            
+        

@@ -1,0 +1,87 @@
+
+            
+                Einleitung
+                Der vorliegende Beitrag greift das Konferenzmotto „multimedial, multimodal“ der DHd 2019 durch die Einführung des methodischen Konzepts des
+                     Scalable Viewings im Kontext filmwissenschaftlicher Forschung auf. Angelehnt an Designprinzipien aus dem Feld der Datenvisualisierung (Keim et al. 2008) und ersten Beiträgen zu einer Idee des Scalable Readings (Weitin 2017) zielt der Begriff Scalable Viewing darauf, die dynamische, multi-perspektivische Repräsentation von Forschungsdaten als methodischen Kernbestandteil einer computergestützten Filmanalyse zu etablieren und zugleich zu systematisieren. Diese Systematisierung basiert auf zwei Forschungsprojekten, die sich mit Aspekten von Farbigkeit, ästhetischen Reizen, Figuren, Montage sowie Dialogen und Filmskripten auseinandergesetzt haben und die zur Illustration des Scalable Viewing-Konzepts im Rahmen des Vortrags vorgestellt werden.
+                
+                In den letzten Jahren wurde eine Reihe von Tools zur Visualisierung von Bewegtbilddaten präsentiert (vgl. Schoeffmann et al. 2015). Die gestiegene Bedeutung dieses Themas zeigt sich in Teilen auch in der Ausrichtung eines eigenständigen Tracks (
+                    https://trecvid.nist.gov/) im Rahmen der 
+                    Text Retrieval Conference (TREC). Während die meisten Tools und Visualisierungen aus dem Bereich der Informatik stammen, gibt es zunehmend auch Visualisierungen, die speziell das Feld der Digital Humanities adressieren. So hat Lev Manovich im Rahmen des 
+                    Visualizing Vertov-Projekts (Manovich 2013) ein exploratives Visualisierungsinterface für die Analyse von Vertov-Filmen kreiert, das weit darüber hinaus zur Anwendung gekommen ist, so zum Beispiel bei der Untersuchung der 
+                    Jean Desmet Collection (Olesen u. a. 2016) oder bei einer Auseinandersetzung mit 55 Filmen aus den 
+                    Walt Disney Animation Studios (Ferguson 2017). 
+                    ScriptsThreads (Hoyt 2014) ist ein weiteres Werkzeug, das die Figurenkonstellation in Filmen automatisiert extrahiert und visualisiert. Wiederum andere Visualisierungswerkzeuge fokussieren auf die Darstellung der Entwicklung von Stimmungen (
+                    sentiment analysis) oder dominanter Farbstrukturen (Burghardt et al. 2016; Hohman et al. 2017, Pause & Walkowski 2018). Besonders stark rezipiert wurde in diesem Zusammenhang das zum Begriff für eine Reihe von Visualisierungsansätzen gewordene Projekt 
+                    MovieBarcodes (
+                    
+                        http://moviebarcode.tumblr.com/;
+                     vgl. Abbildung 1), das sich konzeptuell mindestens bis 2001 zurückverfolgen lässt (Barbieri, 2001).
+                
+                
+                    
+					
+						Abbildung 1. Star Wars: Episode VIII - The Last Jedi (2017), Quelle: http://moviebarcode.tumblr.com/image/173580407805
+					
+                
+            
+            
+                Scalable Viewing: Skalierbarkeit von Abstraktion und Visualisierung
+                MovieBarcodes wie auch ein Großteil der anderen in diesem Kontext relevanten Visualisierungen basieren in der Regel auf einem Distant Reading-Ansatz, da sie die visuelle Ebene der Farbverwendung oder anderer Features innerhalb eines Films auf einen Blick darzustellen versuchen. Mit dem Begriff des ‘Distant Reading’ beschreibt Franco Moretti (Moretti 2013) die rein quantitative Analyse großer literarischer Korpora. Distant Reading soll eine abstrakte Repräsentation literarischer Werke ermöglichen, die auf der Grundlage bestimmter Vorentscheidungen in Daten und Diagramme übersetzt und so großmaßstäblich vergleichbar gemacht werden. Die Vogelperspektive etwa auf die Entwicklung einer ganzen literarischen Gattung über mehrere Jahrzehnte hinweg eröffnet dabei unweigerlich Einsichten, die über die qualitativ-hermeneutische Analyse und das 
+                    Close Reading eines literarischen Texts nicht generierbar wären. Freilich nimmt eine derart distanzierte Perspektive Verluste in Kauf, indem sie dasjenige, was an den literarischen Werken kommensurabel ist, isoliert. Auf dieser Grundlage artikulieren sich dann die meisten der gegenüber digitalen Methoden geäußerten Vorbehalte, zum Beispiel jene des Reduktionismus, Empirismus oder Szientismus, die unmittelbar mit wissenschaftspolitischen Grundsatzentscheidungen zusammenfallen. Sie greifen die vermeintliche Abbildfunktion von Visualisierungen an, indem sie ihre Selektivität in den Vordergrund rücken. Solche Vorbehalte erweisen sich jedoch als nicht länger haltbar, sobald Visualisierungen im Rahmen einer vielgestaltigen Praxis konzipiert werden, die im besten Falle durch die Visualisierung selbst initiiert wird und die Statik des Abbildes auflöst.
+                
+                In Erweiterung des von Martin Müller 
+                    (https://scalablereading.northwestern.edu/) eingeführten und von Thomas Weitin (2017) am deutschen Novellenschatz erprobten Konzepts des 
+                    Scalable Readings wollen wir für eine computergestützte Auseinandersetzung mit Bewegtbildern, die in der Regel eine aisthetische Dimension aufweisen, den Begriff des 
+                    Scalable Viewings vorschlagen. Während sich Moretti in seinem Buch vom Close Reading methodisch in einer Form abgrenzen zu wollen scheint, die nachgerade Unvermittelbarkeit suggeriert, stellt Scalable Viewing die Verbindung zu den traditionelleren Methoden der Geisteswissenschaften im Sinne eines mixed methods-Ansatzes (Kuckartz 2014) wieder her:
+                
+                Wer die Oxford-Klassiker-Ausgabe der Odyssee liest (...), ist im Grunde bereits ein ‚distant reader‘ der Gesänge, die Homer zugeschrieben worden sind. Und gerade der distant reader im herkömmlichen Verständnis, der mit digitalen Analysen Daten und Visualisierungen erzeugt, muss diese verstehen und interpretieren. „Scalable Reading“ bedeutet indes nicht nur, dass sich close und distant reading methodisch durchdringen, es steht für ein integriertes Verständnis aller Akte des Lesens … (Weitin 2015: Abschnitt 2)
+                In diesem Sinne lässt sich die an Müller und Weitin angelehnte Idee einer freien Skalierung als methodische Durchdringung von Distant and Close Viewing fassen. Im Rahmen einer Analyse von Bewegtbildern lässt sich dieser Ansatz mit bestehenden Gestaltungsrichtlinien zur Informationsvisualisierung ("Overview first, zoom and filter, then details-on-demand"; Shneiderman 1996) und dem Ansatz der 
+                    Visual Movie Analytics (Kurzhals et al. 2016) verbinden, wie am Beispiel des nachfolgend beschriebenen 
+                    Scalable MovieBarcode-Tools gezeigt werden kann.
+                
+                Wie eingangs bereits erläutert wurde, handelt es sich bei MovieBarcodes um eine typische Distant Reading-Visualisierung, werden doch Filme in komprimierter Form anhand der Farbverwendung und deren linearer Abfolge dargestellt. Um im Sinne des vorgeschlagenen Scalable Viewing-Konzepts weitere Detailebenen für die Analyse verfügbar zu machen, wurde das Konzept der 
+                    Scalable MovieBarcodes entwickelt (Burghardt et al. 2018). Dabei kann ein Film in beliebigen Zoom-Stufen dargestellt werden, von einer Überblicksdarstellung im Sinne klassischer MovieBarcodes bis hin zur Detailansicht auf Ebene einzelner Keyframes (vgl. Abb. 2). Darüber hinaus wurde die bei MovieBarcodes rein auf die Farbinformation beschränkte Visualisierung um eine textuelle Ebene ergänzt, indem Dialoge und Figurennamen mit den jeweiligen Keyframes aligniert wurden (für technische Details vgl. Burghardt et al. 2018). Die Dialoge werden je nach Sprecher in unterschiedlichen Farbcodes als kleine Rechtecke unterhalb der Keyframes visualisiert und können bei Bedarf auch als Untertitel angezeigt werden (vgl. Abb. 3). Gleichzeitig erlaubt die textuelle Erschließung des Films die gezielte Suche nach Keyframes mit bestimmten Figuren und Schlüsselwörtern, wodurch eine Skalierung der MovieBarcodes anhand bestimmter Filterkriterien ermöglicht wird (vgl. Abb. 4).
+                
+                
+                    
+					
+						Abbildung 2. Darstellung unterschiedlicher Zoomstufen der Scalable MovieBarcodes-Visualisierung am Beispiel von “Pretty Woman” (Garry Marshall, 1990). Oben: Überblick über alle Einstellungen; unten: Detailansicht einzelner Keyframes.
+					
+                
+                
+                    
+					
+						Abbildung 3. Detailansicht einer Einstellung bei “Pretty Woman” (Garry Marshall, 1990) mit Anzeige der transkribierten Dialoge.
+					
+                
+                
+                    
+					
+						Abbildung 4. Darstellung eine Sub-MovieBarcodes, der Einstellungen mit dem Suchbegriff “love” enthält.
+					
+                
+            
+            
+                Erweiterung des Scalable Viewing-Konzepts um die Dimensionen Korpusgröße und Medialisierung
+                Das Beispiel der Scalable MovieBarcodes demonstriert, entsprechend der zuvor geäußerten These, wie durch Interaktivität und Zoomfähigkeit der Visualisierung den Fallstricken einer auf eine Abbildfunktion reduzierten Visualisierung als reines Distant Viewing entgegengearbeitet werden kann. An die Stelle des Abbildes tritt die freie Skalierung zwischen Distant und Close Viewing. Was das Beispiel darüber hinaus implizit auch noch deutlich machen kann, ist die Inkongruenz zwischen der Distant und Close Viewing-Dimension einerseits und der Frage nach der Größe des untersuchten Korpus andererseits. Scalable MovieBarcodes zeigen, dass ein Distant Viewing eines Einzelwerks genauso wie ein Close Viewing von dreißig Sequenzen (shots) innerhalb desselben Tools denkbar sind. Die Produktivität einer solchen Distant Viewing-Analyse einzelner Filme konnte zuletzt auch anhand der detaillierten Untersuchung dreier Zombiefilme (Pause & Walkowski 2018) unter Beweis gestellt werden. Verhindert werden soll durch diese Differenzierung vor allem eine voreilige Gleichsetzung von Distant Viewing-Methoden mit “Big Data”. Aus diesem Grund ist der Scalable Viewing-Ansatz um die Skalierbarkeit der Positionierung zwischen Einzelwerk- und Korpus-Perspektive zu ergänzen. So erlauben es computergestützte Methoden, beide Perspektiven innerhalb eines einzigen Forschungsprozesses positiv aufeinander zu beziehen.
+                Schließlich konstituiert das gemeinsame Arrangement aus Skripttext, extrahierten Frames und diagrammatischen Elementen eine dritte, eigenständige Dimension des Scalable Viewing-Ansatzes. Bei Weitin wird diese Dimension angedeutet, wenn von “einer weiteren ‘scale’ medialer Formen und analytischer Aufbereitungen” die Rede ist (Weitin 2015). Genau genommen sind hier zwei miteinander verwandte Möglichkeitsräume angesprochen: Zum einen geht es um den Versuch, möglichst viele Modalitäten des Forschungsgegenstandes selbst zu medialisieren, d.h. in Repräsentationen wie farbige Rechtecke, gestauchte, 1-Pixel breite Frames und ähnliches zu verarbeiten und dadurch analytisch zugriffsfähig zu machen. Zum anderen kann es aber auch darum gehen, ein einziges Merkmal des Forschungsgegenstands in vielen, möglichst unterschiedlichen Modalitäten aufzubereiten.
+                
+                    
+					
+						Abbildung 5. Die Repräsentation eines spezifischen Farbeffekts als numerische, diagrammatische und aisthetische Größe in einem interaktiven Filmanalyse-Dashboard.
+					
+                
+                Ein Beispiel hierfür ist das im zweiten Fallbeispiel präsentierte 
+                    HoloViews-Dashboard 
+                    (http://holoviews.org/). Das Dashboard wurde im Rahmen einer Analyse von 24 Politthrillern erstellt und kombiniert unterschiedliche Formen der Repräsentation von Farbeffekten in verschiedenen miteinander in Beziehung stehenden Widgets. Abbildung 5 zeigt, wie ein solcher Farbeffekt gleichzeitig: (a) als Punkt auf einem, den gesamten Film umspannenden Scatterplot, (b) als numerische Größe des relativen Pixelanteils am Frame sowie (c) als ein durch Histogramm-Backprojection isolierter Bereich auf dem Filmstill dargestellt werden kann. Die Bedeutung des Farbeffekts ist somit Folge einer multimodalen Kontextualisierung.
+                
+                Werden nun alle drei diskutierten Dimensionen zusammengedacht, so ergibt sich ein dreidimensionaler Möglichkeitsraum, innerhalb dessen unterschiedliche Scalable Viewing-Ansätze systematisiert werden können (Abbildung 6).
+                
+                    
+					
+						Abbildung 6. Die drei Achsen des Scalable Viewing.
+					
+                
+                Die Pointe eines Ansatzes, der Scalable Viewing als eigenständiges methodisches Konzept vorstellt, liegt mithin in der Möglichkeit, progressiv innerhalb ein und desselben Forschungsprozesses zu skalieren, anstatt sich für einen Distant oder einen Close Viewing-Ansatz, für eine Fallbeispielanalyse oder einen Big Data-Ansatz oder für die effizienteste Form der Darstellung bzw. das effizienteste Tool zu entscheiden. Dabei bezieht das vorgeschlagene Konzept die schon im Scalable Reading-Ansatz angedachte, integrative Perspektive nicht allein auf die epistemischen Objekte der Filmwissenschaft, sie sieht die Leistung computergestützter Analyseverfahren gerade darin, dass unterschiedliche Formen des Zugriffs auf das Material durch diese selbst immer von Neuem angeregt werden. Die Skalierung dient nicht der Kompensation der einen digitalen Methodik, vielmehr ist die Pluralisierung von Perspektiven auf das Untersuchungsmaterial selbst das Resultat eines durch computerisierte Verfahren erweiterten, wissenschaftlichen Möglichkeitsraums, der im Rahmen eines konzeptuellen Scalable Viewing-Rahmenwerks methodologisierbar wird. Gerade den Digital Humanities sollte es ein Anliegen sein, nicht immer schon festgelegten Methoden zu folgen, sondern den eher experimentellen Weg einer epistemischen “Bastelei” einzuschlagen, in welcher Zugriff wie Untersuchungsobjekt erst im Prozess emergieren.
+            
+        

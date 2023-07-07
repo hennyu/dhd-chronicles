@@ -1,0 +1,110 @@
+
+            Mit der Entwicklung der Computergrafik seit den 1960er, und explizit seit den 1990er Jahren, wurde die virtuelle Rekonstruktion für die objekt- und raumbezogene Forschung entdeckt und eingesetzt 
+                (Messemer, 2016). Drei Dekaden nach ihrer Popularisierung stellen wir fest, dass der Einsatz der 3D-Modellierung und Visualisierung vorrangig der Vermittlung in Form altbewährter Bildpublikationen bzw. Filmanimationen erfolgt. Die vielfältigen Möglichkeiten des Computers werden in Folge einer fehlenden digital-orientierten Methodik und Infrastruktur, allen voran der wissenschaftlichen Dokumentation und Publikation der Ergebnisse, nicht ausgeschöpft. 
+            
+            Dabei stellt die 3D-Retrodigitalisierung vorhandener Artefakte infolge der 3D-Laserscanner und Photogrammetrie sowie die quellen-basierte, hypothetische 3D-Rekonstruktion physisch nicht (mehr) vorhandener Objekte einen adäquaten Zugang zum Forschungsobjekt in der Archäologie, Kunst- und Architekturgeschichte sowie der Denkmalpflege dar. Als Repositorien für die wissenschaftlichen 3D-Modelle bieten sich in erster Linie die Universitätsbibliotheken an, sodass über eine metadatenbasierte Kontextualisierung der 3D-Datensätze nachgedacht wird 
+                (Blümel, 2013), auch wenn noch keine Institution bereit ist die Ergebnisse aus 3D-Rekonstruktionen als wissenschaftlichen Sammlungsbestand aufzunehmen und langfristig zur Verfügung zu stellen.
+            
+            Das Potenzial der 3D-Modelle für die objektorientierte Forschung steckt zum einen in der genauen Wiedergabe der geometrischen und materiellen Eigenschaften eines Objekts. Zum anderen geht mit der vorausgehenden, tiefgreifenden Interpretation der Quellen und der kreativen, hypothetischen Nachbildung des Objekts ein umfangreiches Objektverständnis beim Autor der Rekonstruktion einher 
+                (Favro, 2012). Der Mehrwert eines digitalen 3D-Modells beginnt für die Wissenschaft mit der nachhaltigen Verknüpfung der wissenschaftlichen Fragestellungen mit den Quellen, ihrer Interpretation und den daraus resultierenden Ergebnissen in mensch- und maschinenlesbarer Form 
+                (Kuroczyński, 2017). 
+            
+            In Anlehnung an die Bauindustrie, welche als Antwort auf den einsetzenden digitalen Wandel seit Mitte der 1990er Jahre die Methode des 
+                Building Information Modelling (BIM) und das Datenaustauschformat 
+                Industry Foundation Classes (IFC) hervorgebracht hat, müssen sich die Digital Humanities erst noch auf eine digital-orientierte Methodik im Umgang mit den wissenschaftlichen 3D-Modellen einigen. Ohne eine Standardisierung des Datenmodells und des Austauschformats wird die Nachhaltigkeit, Interoperabilität und Nachvollziehbarkeit der digitalen 3D-Objekte, und somit der eigentliche Mehrwert der Modelle, nicht gewährleistet sein. 
+            
+            Als zukunftsweisende Technologie in diesem Kontext setzt sich die Formalisierung des Wissens in strukturierten Datenmodellen (Ontologien), die Vernetzung digitaler Ressourcen (Linked Data) und eine webbasierte interaktive Visualisierung von 3D-Datensätzen infolge der WebGL-Technologie durch. Die computergerechte Art der Formalisierung und Strukturierung des Wissens, wie sie bereits Anfang der 1980er Jahre seitens der Kunstgeschichte postuliert wurde 
+                (Heusinger, 1983), ermöglicht die Operationalisierung der Daten und fördert den computergestützten Erkenntnisgewinn und die web-basierte Wissensvernetzung. Im Bereich der Bauforschung und Denkmalpflege seien Projekte, wie 
+                MonArch
+                (Freitag & Stenzer, 2017), und 
+                SACHER
+                (Apollonio et al., 2017) zu nennen, die ein umfassendes und kollaboratives Management des (digitalen) Kulturerbes anbieten und innovative Web-3D-Viewer, wie 
+                3DHOP (http://3dhop.net/), einsetzen. Sie erlauben eine umfassende Dokumentation der Schadenskartierung und der Konservierungsarbeiten, sowie eine Kontextualisierung des Objekts mit weiteren Linked Data-Ressourcen.
+            
+            Bei der quellen-basierten historischen Rekonstruktion sind allen voran Projekte zu nennen, welche den interpretativen Prozess der 3D-Modellieurng erfassen und die web-basierte Visualisierung nachvollziehbar machen. Projekte, wie 
+                Digital 3D Reconstructions in Virtual Research Environments
+                (Kuroczyński, Hauck, & Dworak, 2016) oder 
+                DokuVis
+                (Bruschke & Wacker, 2016), zeigen das Potenzial einer nachhaltigen Erfassung der Prozesse und der Verknüpfung der 3D-Datensätze mit Ereignissen, Quellen und Akteuren als Linked Data auf (Abb. 1).
+            
+            
+                
+                
+                    Abb. 1: Konzept einer web-basierten virtuellen Forschungsumgebung für quellen-basierte, digitale 3D-Rekonstruktionen; umgesetzt im Projekt 
+                    Digital 3D Reconstructions in Virtual Research Environments
+                    , 
+                    
+                        www.patrimonium.net
+                    
+                     (Copyright: Piotr Kuroczyński, 2016) 
+                    
+            
+            Für die Digital Humanities eröffnen diese Projekte einen neuen Zugang zum Wissen hinter den 3D-Modellen. Eine Grundvoraussetzung hierfür bieten mensch- und computerlesbare Datenmodelle, die eine digital vernetzte Abbildung des Wissens rund um die 3D-Modelle innerhalb einer Applikationsontologie erlauben. Die strukturierten, digitalen Forschungsdaten können in Folge mit der graphen-basierten SPARQL-Abfragesprache für RDF operationalisiert werden, sodass neue Erkenntnisse und Rückschlüsse aus explizitem und implizitem Wissen generiert werden können. 
+            Basierend auf den Anforderungen und Erfahrungen der vorangegangenen Projekte möchte der Beitrag der Fragestellung nach der fehlenden digital-orientierten Methodik und mangelnder Infrastruktur in der wissenschaftlichen, quellen-basierten 3D-Rekonstruktion nicht mehr vorhandener Kunst und Architektur nachgehen. Hierbei wird untersucht, inwieweit bewährte Lösungen aus dem Bauwesen, welche eine fachübergreifende modell-basierte Dokumentation und Kommunikation mittels der IFC-Schnittstelle praktizieren, für die geisteswissenschaftlichen Fragestellungen objektbezogener Disziplinen nutzbar sind. Als Beispielobjekt wird dabei die 1938 zerstörte 
+                Synagoge am Anger in Breslau/Wrocław, im heutigen Polen, herangezogen. Im Zuge der Auseinandersetzung mit dem soziokulturellen Kontext des Synagogenbaus in der zweiten Hälfte des 19. Jahrhunderts soll die objektbezogene 3D-Modellierung innerhalb einer weitverbreiteten Open BIM-Software untersucht werden. Liegen bereits erste Erkenntnisse aus der BIM-konformen Modellierung von historischen Objekten vor 
+                (Murphy, 2012) und häufen sich die Leitfäden in dem Bereich des Bauwesens, insbesondere im 
+                Bauen im Bestand
+                (Antonopoulou & Bryan, 2017), so fehlt es weiterhin an einer übergeordneten digital-orientierten Methodik, die über die 3D-Modellierung hinaus eine historische Untersuchung und Verankerung der Objekte in einem breiten geisteswissenschaftlichen Kontext ermöglicht (Abb. 2).
+            
+            
+                
+                
+                    Abb. 2: Semantische Segmentierung 
+                    WestPart
+                    und 3D-Modellierung innerhalb der Open BIM-/CAD-Software von ARCHICAD 21 (Copyright: Hochschule Mainz, 2018)
+                
+            
+            Anhand der 
+                Synagoge am Anger soll diese Methodik und eine anwendungsorientierte, virtuelle Forschungsumgebung (open source, basierend auf Wiss-KI, 
+                http://wiss-ki.eu/) für die Erfassung und Verarbeitung der digitalen Daten, sowie die Publikation der Forschungsergebnisse im Sinne von Open Access untersucht und vorgestellt werden. Die Arbeit behandelt zum einen die Fragen der Quellenerschließung, der Rechteverwaltung und Lizenzen der zu publizierenden Inhalte, zum anderen wird der klassische Arbeitsprozess (Workflow) einer digitalen 3D-Rekonstruktion unter den neuen Anforderungen einer wissenschaftlichen Dokumentation der Arbeitsprozesse im Sinne von seitens der London Charter proklamierten 
+                Paradata in Frage gestellt 
+                (Baker, 2012). Der Ansatz einer Verbindung von objektorientierter, BIM-konformer 3D-Modellierung mit den dehnbaren Abbildungsmöglichkeiten komplexerer geisteswissenschaftlicher Zusammenhänge zwischen den Objekten, Quellen, Ereignissen und Akteuren innerhalb einer flexiblen virtuellen Forschungsumgebung bietet eine neuen 
+                virtuellen Forschungsraum für die objektorientierten Fächer (Abb. 3).
+            
+            
+                
+                
+                    Abb. 3: Frontend vom Objekteintrag 
+                    WestPartMainPart: rose window type 1
+                     innerhalb der virtuellen Forschungsumgebung zur digitalen Rekonstruktion der Synagoge von Oppler in Breslau, 
+                    
+                        http://www.vfu-oppler.hs-mainz.de/
+                    
+                     (Copyright: Hochschule Mainz, 2018)
+                
+            
+            Die Attributierung und Auszeichnung der BIM-Objekte und die Möglichkeit der Verknüpfung einzelner Elemente mit externen Daten, z.B. mit den Instanzen innerhalb einer virtuellen Forschungsumgebung, ermöglicht die seitens der Kunstgeschichte lang ersehnten digitalen
+                 Fußnoten des Modells
+                (Hoppe, 2001). Die webbasierten BIM-Viewer, bspw. 
+                Solibri Model Checker, bieten heute einen einfachen Zugriff auf das Wissen hinter dem 3D-Datensatz, das weit über die reinen Geometrie- und Materialinformationen hinausreichen kann. Der vorgestellte Begriff eines 
+                Historic Building Information Modelling für parametrische Objekte 
+                (Murphy, 2012) bekommt durch die Erweiterung des Wissenshorizonts infolge der begleitenden Verknüpfung mit den Daten einer virtuellen Forschungsumgebung eine neue Dimension (Abb. 4). 
+            
+            
+                
+                
+                    Abb. 4: Semantische Anreicherung und Verknüpfung der Objekte infolge der Attributierung unter den Objekteigenschaften; das Objekt 
+                    Rosette
+                     als (1) Bibliotheksobjekt mit der attributierten (2) Verknüpfung zur Objektinstanz in der virtuellen Forschungsumgebung; die URL führt zur Obejktdarstellung gemäß Abb. 3 (Copyright: Hochschule Mainz, 2018)
+                
+            
+            Die Nutzung des Datenaustauschformats IFC als Träger von geisteswissenschaftlichen Informationen wird in diesem Kontext näher untersucht. Die Weiterentwicklung eines Datenmodells (Applikationsontologie) zur formalen Abbildung der Sachverhalte einer quellen-basierten, hypothetischen 3D-Rekonstruktion wird vorgestellt. Dabei lehnt sich die Datenmodellierung an das CIDOC Conceptual Reference Model (CRM), ISO 21127:2006, an und stellt weiterführende Fragestellungen an die Modellierung und Anbindung weiterer relevanter Link (Open) Data-Ressourcen. Hier stellt sich die Frage, inwieweit heute die Einbeziehung weiterer einschlägiger Ressourcen neue Möglichkeiten der Auswertung komplexer Sachzusammenhänge und implizierten Wissens unterstützen kann. Bekanntermaßen befinden sich die kontrollierten Vokabulare und Thesauri in der Entwicklung und werden mit den Herausforderungen der Übersetzung von Fachbegriffen konfrontiert. Eigene Lösungen zur Verwaltung von Klassifizierungen spielen weiterhin eine wichtige Rolle 
+                (Piotrowski, Colavizza, Thiery, & Bruhn, 2014) und werden in die Betrachtung mit einbezogen.
+            
+            Im Zentrum des Beitrags steht die Dokumentation einer kreativ-interpretativen, quellen-basierten 3D-Rekonstruktion und die Sicherung der Wissenschaftlichkeit, indem die Arbeitsprozesse nachvollziehbar bleiben. Die projektbezogenen Ergebnisse lassen fundierte Erkenntnisse zu, die in einem breiten Blickfeld der technologischen Entwicklung gesetzt werden. Die Entwicklung der VR-/AR-/MR-Technologien führt zu neuen immersiven und interaktiven Erfahrungen, welche wiederum neue Zugänge zu den Forschungsergebnissen und neue Formen der Vermittlung mit sich bringen, die bei der Koordination fachübergreifender Abläufe im Bauwesen bereits eingesetzt werden (Abb. 5).
+            
+                
+                
+                    Abb. 5: AR-Anwendung „kARtka z Synagogą“ 
+                    
+                        (https://arvr.hs-mainz.de/pl/)
+                    
+                     für die öffentlichkeitswirksame Vermittlung der Synagoge mittels Postkarte und Grundriss als Tracker; 2000-fach ausgeteilt während des Gedenkens zur 80. Jährung der Reichspogromnacht am 10.11.2018 in Breslau/Wrocław, Polen (Copyright: Hochschule Mainz, 2018)
+                
+            
+            Wir befinden uns am Anfang eines technologischen Prozesses, bei dem die Digital Humanities im Bereich der Handhabung und Nutzbarmachung der 3D-Datenstätze von vorausgehenden Branchen lernen können. Wir stecken noch in 
+                Kinderschuhen der Digitalisierung und sind am Anfang einer langwierigen inhaltlich-methodologischen Etablierung digitaler 3D-Rekonstruktion als einer bewährten Forschungsmethodik. Erst wenn unsere 3D-Modelle semantisch strukturiert, langfristig und offen im Netz zur Verfügung gestellt werden können, können zukunftsweisende Anwendungen wie 
+                3D Wikipedia 
+                (Russell, Martin-Brualla, Butler, Seitz, & Zettlemoyer, 2013) sowie ein daraus resultierender Diskurs im Sinne von Open Science an den Modellen geführt werden. Der vorliegende Beitrag möchte eine Diskussion und Entwicklung in diese Richtung anstoßen.
+            
+        

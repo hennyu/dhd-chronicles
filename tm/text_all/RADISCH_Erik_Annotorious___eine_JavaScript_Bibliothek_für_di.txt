@@ -1,0 +1,106 @@
+
+            
+                
+                Dieser Workshop richtet sich an Software-Entwickler im Digital Humanities-Bereich, die für die Konzeption und Umsetzung von Software-Tools, Forschungsinfrastrukturen und User Interfaces verantwortlich sind, bzw. in deren Arbeitsbereich der Umgang mit visuellen Medien fällt. Der Workshop behandelt speziell das Thema der 
+                digitalen Bildannotation
+                , und zeigt, wie mit Hilfe der open source JavaScript-Bibliothek 
+                    Annotorious
+                
+                 
+                mit geringem Aufwand maßgeschneiderte, an Projektbedürfnisse angepasste Bildannotations-Interfaces entwickelt werden können. Der Workshop geht dabei auch auf typische Use Cases ein, wie z.B. die semantische Annotation mit kontrollierten Vokabularen oder die Annotation zum Zweck des “ground truth building” für machine learning-Anwendungen. In praktischen Übungen vermittelt der Workshop die Grundlagen der Verwendung der Bibliothek, sowie die Möglichkeiten zur Integration in bestehende Infrastrukturen und der Anpassung und Erweiterung über die umfangreiche Programmierschnittstelle und das Plugin-Ökosystem.
+            
+            
+                Bildannotation in den Geisteswissenschaften
+                Als einer der sieben “scholarly primitives” (Unsworth 2000) kommt der Annotation in der geisteswissenschaftlichen Forschungspraxis eine wichtige Bedeutung zu. Die Idee, Dokumente mit Notizen oder Marginalien zu versehen, reicht mindestens bis zu den Manuskripten des Mittelalters zurück. Aber vor allem im digitalen Kontext eröffnet die Praxis der Annotation Wissenschaftlern neue Möglichkeiten, um Wissen und Forschungsergebnisse zu organisieren, zu teilen, sich kollaborativ mit anderen Forschern auszutauschen, und gemeinsam an der Analyse und Interpretation von Quellmaterial zu arbeiten (Barker und Terras 2016). Annotationen können dabei vielfältige Formen annehmen. Sie erweitern den Kontext, indem sie ein Quelldokument mit Zusatzinformationen anreichern, z.B. über Provenienz, Aufbau oder Autorenschaft; sie tragen zur Verbesserung der Auffindbarkeit in digitalen Sammlungen bei, insbesondere für Laien, die nicht oder wenig mit domänenspezifischer Terminologie vertraut sind (Hunter et al. 2008); sie machen die Struktur eines Dokuments transparent und explizit, und unterstützen damit bei der Analyse; oder sie liefern zusätzliche Details über bestimmte Aspekte, die bei Interpretation und Verständnis helfen können (Haslhofer et al. 2009).
+                Besonders in geisteswissenschaftlichen Projekten variieren die Anforderungen an Annotationswerkzeuge für digitale Inhalten sehr stark. Das betrifft nicht nur Fragen der grundlegenden Benutzerinteraktion und Usability, sondern vor allem die fachlichen und technischen Aspekte: zum Beispiel die Einbindung projektspezifischer Taxonomien und Eingabe-Schemata; die Anpassung von User Interface-Elementen an bestehende Arbeitsabläufe oder Kuratierungspraktiken; die Integration in bestimmte existierende Systeme wie ein spezifisches Sammlungs- oder Content-Management-System; oder die Anbindung an verschiedene Datenbank-Backends. Diese Heterogenität, und die oft sehr spezifischen Probleme geisteswissenschaftlicher Projekte führen in vielen Fällen dazu, dass überlegt wird, maßgeschneiderte Annotationswerkzeuge von Grund auf selbst zu entwickeln - was allerdings wiederum zeit- und ressourcenintensiv ist.
+                Genau für dieses Problem bietet Annotorious eine Lösung an. Einerseits bietet es vorgefertigte Basis-Komponenten, mit deren Hilfe mit geringem Aufwand ein umfangreiches Bild-Annotationstool in die eigene Forschungsumgebung eingebunden werden kann. Andererseits bietet es dabei aber viele Möglichkeiten, den Annotationsprozess individuell zu gestalten, und maßgeschneidert an die Bedürfnisse des jeweiligen Projektes anzupassen.
+            
+            
+                Über Annotorious
+                Annotorious ist eine JavaScript-Bibliothek mit deren Hilfe Bildannotationsfunktion einfach in eine bestehende Webseite oder eine Browser-basierte Webapplikationen eingebunden werden kann. Annotorious ist dabei bewusst keine off-the-shelf"-Lösung. Es Bedarf der Erstellung einer eigenen Lösung, um Annotorious zu nutzen. Das mag im ersten Augenblick abschrecken. Allerdings lässt sich eine Basisvariante schon mit wenigen Codezeilen ein Standardszenario umsetzen, in welchem eine Annotationsebene an bestehende Bilder “angeheftet” wird. Je nachdem, welche Bedürfnisse die jeweilige Fragestellung mit sich bringt, stehen Benutzern verschiedene Zeichenwerkzeuge zur Verfügung (Rechteck, Polygon, Freihandzeichnen etc.). In einem weiteren Schritt mit den gezeichneten Markierungen verschiedene Zusatzinformationen verknüpft werden, z.B. Kommentare oder Tags (siehe Abbildung 1, 2 und 3). Hier liegt die wirkliche Stärke des Annotationstools. Sowohl die Zeichenwerkzeuge als auch der integrierte Annotations-Editor sind dabei erweiterbar. Sie lassen sich nach Bedarf um projektspezifische Elemente, wie zum Beispiel Eingabefelder für strukturierte Daten, ergänzen. Das Tool ist dadurch mit sehr wenigen Codezeilen hochgradig individualisierbar und je nach Nutzungsszenario erweiterbar, was es perfekt für geisteswissenschafltiche Problemstellungen macht.
+                
+                    Annotorious läuft ausschließlich im Browser, und hat keine server-seitigen Abhängigkeiten. Über die umfangreiche Programmierschnittstelle (API) lässt es sich nahtlos in bestehende Umgebungen integrieren, und an verschiedene graphische Anforderungen (visuelles Erscheinungsbild, Branding etc.) anpassen. Als Bildformate unterstützt Annotorious nicht nur die gängigen browser-kompatiblen Dateitypen (JPEG, PNG), sondern auch eine Reihe von Formaten für hochauflösende zoombare Bilder, wie insbesondere IIIF, Zoomify oder DeepZoom. Diese werden über den in den Geisteswissenschaften weit verbreiteten Image Viewer OpenSeadragon
+                    
+                    
+                    untersützt, der ebenfalls sehr einfach in bestehende Systeme integriert werden kann, und für den Annotorious als Plugin-Variante zur Verfügung steht. Um Annotationsdaten in einem möglichst interoperablen und zukunftssicheren Format zu halten, setzt Annotorious als Speicherformat das vom World Wide Web Consortium standardisierte 
+                        W3C Web Annotation Data Model
+                    
+                     
+                    ein.
+                
+                
+                    Die Entwicklung von Annotorious wurde unter anderem durch 
+                        Pelagios
+                    
+                     
+                    ermöglicht, einer internationalen Digital Humanities Initiative die sich insbesondere mit dem Thema der semantischen Annotation von räumlich-/geographischen Bezügen in Texten und Bildern beschäftigt. Die weitere Entwicklung läuft inzwischen aber unabhängig als selbstständiges Community-Projekt weiter, das die Bibliothek unter der BSD-3-Clause open source Lizenz zur uneingeschränkten Verwendung zur Verfügung stellt. Die Entwickler-Gemeinde wird dabei durch eine 
+                        Projektwebseite mit umfassender Dokumentation
+                    
+                    , sowie einen aktiven 
+                        Support Chat-Kanal
+                    
+                     
+                    tatkräftig unterstützt. Aktuelle Nutzer von Annotorious im geisteswissenschaftlichen Kontext, bzw. im Bibliotheksbereich sind z.B. das Metropolitan New York Library Council
+                    
+                    
+                    , die britische Crowdsourcing-Plattform MicroPasts
+                    
+                    
+                    , oder das Projekt “Wissenschaftliche Bearbeitung der buddhistischen Höhlenmalereien in der Kuča-Region der nördlichen Seidenstraße” der Sächsischen Akademie der Wissenschaften.
+                    
+                    
+                
+            
+            
+                Lernziel
+                Ziel des Workshops ist es, den Teilnehmern umfassenden Einblick in den Funktionsumfang und in die Einsatzmöglichkeiten von Annotorious zu geben, und sie in die Lage zu versetzen, selbstständig Annotationsumgebungen zu erstellen, sie gemäß den eigenen Forschungsbedürfnissen individuell anzupassen, und über Plugins zu erweitern. Im Rahmen von praktischen Übungen werden die Teilnehmer dazu Basisszenarios auf dem eigenen Notebook entwickeln und Grundkomponenten (visuelles Erscheinungsbild, Annotations-Editor) anpassen. Weiters werden fortgeschrittene Themen angesprochen und die nötigen Konzepte vermittelt, die die Teilnehmer benötigen um auch komplexere Erweiterungen und eigene Plugins für Annotorious selbst zu schreiben. 
+            
+            
+                Voraussetzungen
+                
+                    Die Teilnehmer benötigen ein eigenes Notebook um an den praktischen Übungen teilzunehmen, sowie grundlegende Kenntnisse der Web-Entwicklung (HTML, CSS, JavaScript). Fortgeschrittene Erfahrung mit JavaScript, bzw. die Installation erweiterter JavaScript Entwicklerwerkzeuge (node, npm) ist 
+                    nicht zwingend erforderlich 
+                    aber, vor allem hinsichtlich der fortgeschrittenen Themen (Entwicklung eigener Erweiterungen) von Vorteil. Die Teilnehmerzahl ist auf 15 Personen beschränkt. Ein separater Call for Papers ist nicht nötig.
+                
+            
+            
+                Workshop Ablauf
+                Der Workshop wird einen halben Tag in Anspruch nehmen, und gliedert sich in 3 Teile (jeweils ca. 45min-1h30min), gefolgt von einem allgemeinen Frage & Antwort-Teil.
+                Im ersten Teil wird gemeinsam ein Basis-Setup von Annotorius in einer eigenen Webseite erstellt. Hierbei wird auf grundlegende Fragen wie Annotationsmodi (Zeichenwerkzeuge, headless mode, Annotorious standard vs. OpenSeadragon), Backend-Anbindung und Integration von bestehendem Benutzermanagement eingegangen. Die wichtigsten Funktionen und Konzepte der Programmierschnittstelle werden besprochen; und es wird anhand von zwei unterschiedlichen Beispielen gezeigt, wie Datenspeicher für Annotorious realisiert und angebunden werden können.
+                
+                    Im zweiten Teil werden bereits existierende Erweiterungen vorgestellt. Es wird in das Plugin-Ökosystem eingeführt, und gezeigt wie typische Use Cases (z.B. die Integration einer visuell an die eigenen Bedürfnisse angepassten Zeichenwerkzeugleiste, oder der Umgang mit mehrseitigen Bilddokumenten) mit existierenden Plugins stark vereinfacht werden können. Es wird näher auf das von Annotorious verwendete Datenformat, das 
+                        W3C Web Annotation Data Model
+                    
+                     
+                    eingegangen, und der Zusammenhang zwischen Datenmodell und Editor-Komponenten besprochen. Es wird gezeigt Annotationsdaten sinnvoll in andere gängige Formate konvertiert werden können. Der Fokus liegt dabei insbesondere auf Formaten die relevant für die Annotation von Landkarten sind (GeoJSON oder WKT), bzw. Auf Formaten für die Verwendung von Annotationen  als Trainingsdaten für Neuronale Netze (Coco-Dataset-Format).
+                
+                Im letzten Teil wird eine kurze Einführung in die internen Plugin Schnittstellen von Annotorious gegeben, die die Entwicklung eigener Erweiterungen - z.B. neuer Zeichenwerkzeuge oder von Zusatzkomponenten für den Annotations-Editor - ermöglichen. Der Workshop schließt mit einem Überblick zu fortführendem Material, das den Teilnehmern das Selbststudium von fortgeschrittenen Themen ermöglicht, sowie einer allgemeinen abschließenden Frage-und-Antwort- bzw. Diskussionsmöglichkeit.
+            
+            
+                Benötigte technische Ausstattung
+                Es wird ein Beamer und ein Flipchart benötigt.
+            
+            
+                Beitragende
+                Dr. Rainer Simon ist Senior Research Software Engineer in der Forschungsgruppe Data Science & Artificial Intelligence am Austrian Institute of Technology in Wien, wo er sich vorwiegend mit der Entwicklung von digitalen Tools und Plattformen zur Unterstützung geisteswissenschaftlicher Forschung beschäftigt. Er arbeitet seit mehr als 15 Jahren im Bereich der Digital Humanities, und hat während dieser Zeit mit einer Vielzahl von Partner aus dem akademischen und dem GLAM (Galleries, Libraries, Archives, Museums) Bereich zusammengearbeitet. Er ist der Urheber und Haupt-Betreuuer des Annotorious Open Source Projektes.
+                Dr. Erik Radisch ist wissenschaftlicher Mitarbeiter der Sächsischen Akademie der Wissenschaften zu Leipzig, wo er augenblicklich vor allem im Projekt “Wissenschaftliche Bearbeitung der buddhistischen Höhlenmalereien in der Kuča-Region der nördlichen Seidenstraße” involviert ist. Hier integrierte er ebenfalls Annotorious in die Projektseite und erweiterte die Annotationsmöglichkeiten um die Erfassung von Multipolygonen. Bereits vor seiner Arbeit an der sächsischen Akademie der Wissenschaften beschäftigte er sich intensiv mit wissenschaftlichen Methoden der Bildanalyse im Bereich der Digital Humanities.
+                
+                    
+                        
+                        Abb. 1: Beispiel für eine Polygonannotation mit einem Annotationseditor, der eine Taxonomie in Baumstruktur integriert hat.
+                    
+                
+                
+                    
+                        
+                        Abb. 2: Der Annotationseditor ermöglicht es, verschiedene Informationen mit der Bildannotation zu verknüpfen.
+                    
+                
+                
+                    
+                        
+                        Abb. 3: Beispiel der Standardannotation mit Rechtecken.
+                    
+                
+            
+        

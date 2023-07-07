@@ -1,0 +1,78 @@
+
+
+
+                         Korpus:  
+                            Winko u. a. 2022; Korpusbeschreibung: 
+                            Winko u. a. 2022a.
+                        
+                    
+
+                         Annotationsrichtlinien Lyrische Gattungen: 
+                            Kröncke u. a. (2022b)
+                        
+                    
+
+                         Annotationsrichtlinien Emotionsmarker und Emotionen: 
+                            Kröncke u. a. (2022)
+                        
+                    
+
+                         Code und Daten: https://github.com/LeKonArD/Gattungen_und_Emotionen_dhd2023
+                    
+
+                         Batchsize (5,10,15,20), Learning Rate (1e-5, 5e-5, 1e-4) und Epochen (10,20,50)
+                    
+
+                         10 Epochen über das gesamte Korpus, Batchsize 64, Learning Rate 1e-5
+                    
+
+                             Dieses Vorgehen ist mit dem Fokus unseres Aufsatzes auf Gattungen begründet. Die gewählte Normalisierung führt dazu, dass Unterschiede zwischen Textgruppen visuell identifiziert werden können. Da die absoluten Häufigkeiten der Emotionen im Korpus stark schwanken (Liebe kommt 7-fach häufiger als Wut vor), ist es nicht möglich, diese in einer Graphik abzubilden, ohne die Unterschiede der Gattungen zu marginalisieren. Ähnliches gilt für die Art der Normalisierung: Wir haben uns für den Median über alle Gedichte entschieden, da dies die ‘neutralste’ Variante ist. Normalisierung mit den Gedichten, die keiner Gattung zugeschlagen werden, erscheint wahllos, da wir über diese Gruppe nichts wissen. Eine Normalisierung durch balanciertes Sampling der Gattungen impliziert die Annahme, dass jede Gattung gleich häufig ist und die Verteilungsunterschiede durch einen 
+                                Selection Bias entstanden sind. Dies ist aber in Anbetracht der Größe des Korpus unwahrscheinlich.
+                            
+                        
+
+                             Ein t-test auf den euklidischen Distanzen der Emotionsprofile religiöser Lyrik in Moderne und Realismus resultiert in einem signifikanten Unterschied (p < 0.05).
+                        
+            
+                
+                    Bibliographie
+                    Andreotti, Mario. 2014. 
+                        Die Struktur der modernen Literatur: Neue Wege in die Textanalyse. Einführung Epik und Lyrik. 5. Aufl. Bd. 1127. Wien/Köln/Weimar.
+                    
+                    Brezina, Vaclav. 2018. 
+                        Statistics in Corpus Linguistics: A Practical Guide. 1. Aufl. Cambridge University Press. https://doi.org/10.1017/9781316410899.
+                    
+                    Chan, Branden, Schweter, Stefan, Möller, Timo (2020). German’s next language model. In: COLING 2020 – Proceedings of the 28th International Conference on Computational Linguistics. December 8-13, 2020 (Virtual Event), pp. 6788–6796 
+                    Detering, Heinrich. 2016. „Lyrik und Religion“. In 
+                        Handbuch Lyrik. Theorie, Analyse, Geschichte, herausgegeben von Dieter Lamping, 119–28. Stuttgart: Metzler.
+                    
+                    Detering, Heinrich, und Peer Trilcke, Hrsg. 2013. 
+                        Geschichtslyrik. Ein Kompendium. 2 Bde. Göttingen: Wallstein.
+                    
+                    Ekman, Paul. 1992. „An Argument for Basic Emotions“. 
+                        Cognition and Emotion 6 (3–4): 169–200. https://doi.org/10.1080/02699939208411068.
+                    
+                    Ekman, Paul. 1999. „Basic Emotions“. In 
+                        Handbook of Cognition and Emotion, herausgegeben von Tim Dalgleish und Mick J. Power, 45–60. Chichester, UK: John Wiley & Sons, Ltd. https://doi.org/10.1002/0470013494.ch3.
+                    
+                    Gururangan, Suchin, Ana Marasović, Swabha Swayamdipta, Kyle Lo, Iz Beltagy, Doug Downey, und Noah A. Smith. 2020. „Don’t Stop Pretraining: Adapt Language Models to Domains and Tasks“. arXiv:2004.10964 [cs], Mai. http://arxiv.org/abs/2004.10964.
+                    Konle, Leonard, Merten Kröncke, Fotis Jannidis, und Simone Winko. 2022. „Emotions and Literary Periods“. In 
+                        Digital Humanities Conference Abstracts, 278–81. Tokyo. https://dh2022.dhii.asia/dh2022bookofabsts.pdf.
+                    
+                    Kröncke, Merten, Fotis Jannidis, Leonard Konle, und Simone Winko. 2022a. „Annotationsrichtlinien Lyrische Gattungen“. https://doi.org/10.5281/zenodo.6021007.
+                    Kröncke, Merten, Fotis Jannidis, Leonard Konle, und Simone Winko. 2022b. „Annotationsrichtlinien Emotionsmarker und Emotionen“. https://doi.org/10.5281/zenodo.6021152.
+                    Plutchik, Robert. 1980a. „A General Psychoevolutionary Theoey of Emotion“. In 
+                        Theories of Emotion, 3–33. Elsevier. https://doi.org/10.1016/B978-0-12-558701-3.50007-7.
+                    
+                    Plutchik, Robert. 1980b. „A Psychoevolutionary Theory of Emotions“. Social Science Information 21 (4–5): 529–53. https://doi.org/10.1177/053901882021004003.
+                    Plutchik, Robert. 2001. „The Nature of Emotions“, American Scientist, 89 (4): 344–50.
+                    Scheible, Raphael, Fabian Thomczyk, Patric Tippmann, Victor Jaravine, und Martin Boeker. 2020. „GottBERT: a pure German Language Model“. arXiv. http://arxiv.org/abs/2012.02110.
+                    Shaver, Phillip, Judith Schwartz, Donald Kirson, und Cary O’Connor. 1987. „Emotion Knowledge. Further Exploration of a Prototype Approach“. Journal of Personality and Social Psychology 52 (6): 1061–86. https://doi.org/10.1037/0022-3514.52.6.1061.
+                    Winko, Simone. 2003. 
+                        Kodierte Gefühle: zu einer Poetik der Emotionen in lyrischen und poetologischen Texten um 1900. Berlin: Erich Schmidt Verlag.
+                    
+                    Winko, Simone, Leonard Konle, Merten Kröncke, und Fotis Jannidis. 2022a. „Lyrikanthologien 1850-1910“. https://doi.org/10.5281/zenodo.6053951.
+                    Winko, Simone, Leonard Konle, Merten Kröncke, und Fotis Jannidis. 2022b. „Korpusbeschreibung der Lyrikanthologien 1850-1910“. https://doi.org/10.5281/zenodo.6053972.
+                
+            
+        

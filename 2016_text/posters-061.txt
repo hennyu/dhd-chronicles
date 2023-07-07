@@ -1,0 +1,136 @@
+
+      
+        Motivation
+        Vor allem durch die häufige Nutzung in den sozialen Medien sind Tag Clouds
+          heutzutage weit verbreitete Visualisierungen um den Inhalt textbasierter Daten
+          zu veranschaulichen. Im Forschungsbereich der Informatik wurden zahlreiche
+          Verfahren zur Berechnung von Tag Clouds entwickelt, unter anderem Wordle (Viégas et al. 2009). Abbildung 1 zeigt eine durch
+          Wordle generierte Tag Cloud für die häufigsten Schlagworte aus den fünf
+          Shakespeare Werken As You Like It, Macbeth, Othello, Richard III und Romeo and Juliet. Wie für Tag Clouds üblich, wird die
+          Häufigkeit eines Wortes mit Schriftgröße kodiert. Leider tragen die weiteren
+          visuellen Eigenschaften – Farbe, Position und Orientierung – der Darstellung
+          keine Informationen. In unserer Posterpräsentation möchten wir TagPies
+          vorstellen, ein im Rahmen des Digital Humanities Projektes eXChange entwickeltes Tag Cloud
+          Layout. Während das Design von TagPies bereits vorgestellt wurde (Jänicke et al.
+          2015), sollen hier repräsentative Anwendungsszenarien illustriert werden. Ein
+          TagPie kann als Hybrid aus Tag Cloud und Pie Chart gesehen werden, bei dem
+          mehrere einzelne Tag Clouds miteinander zu einer Einheit verschmelzen. Im
+          Gegensatz zu herkömmlichen Tag Clouds verwenden TagPies neben Schriftgröße auch
+          Farbe und Position als Informationsträger und ermöglichen damit den Vergleich
+          von Schlagworten verschiedener Kategorien. Abbildung 2 zeigt einen TagPie für
+          die häufigsten Schlagworte aus den oben genannten Shakespeare Werken. Wie in den
+          folgenden Beispielen bestimmt die Größe einer Textklasse im Vergleich zu den
+          anderen die Größe des zugehörigen Kuchenstückes im TagPie. Weitere Beispiele in
+          den Abbildungen 3 und 4 veranschaulichen die sprachunabhängige, vielseitige
+          Anwendbarkeit von TagPies
+          (Jähnicke 2015) – welche als Web-basierte Open Source JavaScript Bibliothek
+          implementiert und damit projektunabhängig einsetzbar sind – für verschiedene
+          geisteswissenschaftliche Fragestellungen. 
+          
+            
+            Abb. 1: Wordle Tag Cloud vereint Schlagworte
+            aller Texte.
+          
+          
+            
+            Abb. 2: TagPie ermöglicht den Vergleich von
+            Schlagworten zwischen den Texten.
+          
+          
+            
+            Abb. 3: Das Voynich-Manuskript ist ein mehr als
+            einhundert Seiten umfassendes, in einer Geheimschrift verfasstes Werk
+            (wahrscheinlich aus dem frühen 15. Jahrhundert), welches bis heute nicht
+            entschlüsselt wurde und damit viele Wissenschaftler fasziniert. Die
+            TagPie-Visualisierung ermöglicht die visuelle Exploration von
+            Wort-Kontexten, welche neueren Analysen zufolge (Montemurro / Zanette
+            2013) interessante Muster aufweisen.
+          
+          
+            
+            Abb. 4: Das Editionsprojekt “Die DDR im Blick der
+            Stasi” (BStU 2016) stellt die geheimen Stimmungs- und
+            Lageberichte der “Zentralen Auswertungs- und Informationsgruppe” (ZAIG)
+            des MfS einer breiten Öffentlichkeit zur Verfügung. Der TagPie zeigt die
+            Kookkurrenzwörter für die Nachnamen ausgewählter, besonders in den Fokus
+            der Stasi geratener kirchlicher Amtsträger. Weiterführende Informationen
+            in (Kuras et al. 2014). 
+          
+        
+        
+          Über die Nutzung von TagPies in eXChange 
+          Das Digital Humanities Projekt eXChange untersucht den Gebrauch medizinischer und politischer Fachtermini in antiken griechischen und lateinischen Texten. Zur explorativen, vergleichenden Analyse sind TagPies in eine Rechercheplattform eingebunden, die den Geisteswissenschaftlern einen dynamischen Zugriff auf Textstellen ermöglicht, die eingegebene Suchterme enthalten. Jeder Suchterm wird innerhalb des TagPies durch einen Sektor repräsentiert, der seine häufigsten Kookkurrenzen anzeigt. Im Vergleich zu traditionellen Suchergebnislisten geben TagPies damit einen schnellen Überblick über die Kontexte, in denen die Suchterme verwendet wurden. Der TagPie ist interaktiv explorierbar und ermöglicht Close Reading durch die Selektion eines Schlagwortes via Mausklick, welches Textpassagen anzeigt, die sowohl den Suchterm als auch die gewählte Kookkurrenz enthalten. Im Folgenden sind zwei typische Anwendungsszenarien aus dem eXChange Projekt erläutert.
+          
+            
+              Vergleich von 
+              gibbus
+               und 
+              gibbosus
+            
+            Für den Ausdruck “bucklig” findet man in lateinischen Wörterbüchern die
+              Synonyme “gibbus” und “gibbosus”. Mit Hilfe von TagPies soll diese Synonymie
+              überprüft werden (Abbildung 5); das Ergebnis berücksichtigt die Belegstellen
+              aller Deklinationsformen der Suchterme. Die schwarz eingefärbte Schnittmenge
+              im Zentrum liefert besonders auf den Körper bezogene Wörter wie “triefäugig”
+              (lippus), “Fuß” (pede) oder “gebrochen” (fracto). Der grüne Sektor für
+              “gibbus” zeigt weitere physische Begriffe wie “Rücken” (dorso), “Kopf”
+              (caput) und “Gehirn” (cerebri). Der rote Sektor liefert die Resultate für
+              “gibbosus”. Sie zeigen auffällig viele Begriffe aus dem Sachfeld der
+              christlichen “Moral”, etwa “Begierde” (cupiditatis), “geizig” (avarum),
+              “Mäßigung” (modestia) oder “sich rühmen” (glorietur). Der TagPie zeigt
+              demnach eine Tendenz, dass „gibbus“ eher bei physischen Eigenschaften,
+              „gibbosus“ eher bei moralischen Eigenschaften verwendet wurde (vgl.
+              physisch: Cels. IV 1,5; VIII 1,23; Iuv. 6,109; 10,294; moralisch:
+              christliche Exegeten). Ein Wörterbuch wie der Thesaurus Linguae Latinae
+              differenziert die Semantik zwar auch in “eigentlich” und “übertragen“, aber
+              über die Häufigkeit und Tendenz der Verwendung beider Begriffe gibt es im
+              Vergleich zu den TagPies keine Hinweise. Damit übersteigen TagPies den
+              “rekonstruktiven” Charakter von Wörterbüchern, indem sie auf die reale
+              Verwendung in den Textkorpora rekurrieren.
+              
+                
+                Abb. 5: Vergleichende Analyse von gibbus und gibbosus mit
+                Belegstellen für gibbus und dorso sowie aus dem Sachfeld der christlichen “Moral”. 
+              
+            
+            
+              Vergleich von ατρεμ*, ησυχ* und ακινητ*
+              Für die datenbankbasierte Suche wurden die trunkierten Formen ατρεμ*, ησυχ*
+                und ακινητ* – jeweils Synonyme für “ruhig” bzw. “unbewegt” – verwendet.
+                Weiter sollte in der vergleichenden Analyse untersucht werden, ob ατρεμ* als
+                medizinischer Fachterminus zu bezeichnen ist. Der resultierende TagPie
+                (Abbildung 6) verdeutlicht aufgrund der vielen gemeinsamen Kookkurrenzen der
+                Begriffe, gekennzeichnet durch die unterstrichenen Terme im mittleren
+                Bereich, dass die drei Wortgruppen in der Literatur häufig synonym verwendet
+                werden. ησυχ* liefert mit großem Abstand die meisten Belege und ist in den
+                verschiedensten Kontexten zu finden. Für ακινητ* gibt es viele Kookkurrenzen
+                mit κινουν (bewegen), zurückzuführen auf die aristotelische Philosophie, in
+                der der Gegensatz zwischen Unbewegtheit und Bewegtheit eine große Rolle
+                spielt. Da verschiedene medizinische und anatomische Begriffe ausschließlich
+                in den Kontexten von ατρεμ* auftreten, kann man ατρεμ* als medizinischen
+                Fachterminus bezeichnen. Beispiele hierfür sind Formen von διαφορητικος
+                (“schweißtreibend” oder “streuend”, u. a. von Tumoren und Medikamenten) oder
+                schlicht ητορ “Herz”. Die entsprechenden Belegstellen finden sich dann u. a.
+                in den medizinischen Schriften des Galen und Oribasius. Weitere Analysen der
+                einzelnen Belegstellen, aber auch weitere Visualisierungen mithilfe der
+                TagPies (z. B. mit Eingrenzung auf das Corpus Hippocraticum) sind geplant,
+                um die qualitative Auswertung der Ergebnisse fortzuführen.
+                
+                  
+                  Abb. 6: Vergleichende Analyse von ατρεμ*, ησυχ* und ακινητ* mit Belegstellen für für ακινητ* und κινουν sowie
+                  ατρεμ* und διαφορητικος. 
+                
+              
+            
+            
+              
+                Zusammenfassung
+              
+              Die Distant Reading Visualisierung TagPies ermöglicht den Vergleich verschiedener
+                Kategorien von Schlagworten innerhalb einer Tag Cloud. Im Rahmen des Projektes
+                eXChange hat sich die Verwendung von TagPies zur vergleichenden Analyse von
+                Fachtermini in antiken Texten als wertvoll erwiesen. In einer Posterpräsentation
+                würden wir typische Anwendungsszenarien der beteiligten
+                Geisteswissenschaftler_innen demonstrieren.
+              
+            

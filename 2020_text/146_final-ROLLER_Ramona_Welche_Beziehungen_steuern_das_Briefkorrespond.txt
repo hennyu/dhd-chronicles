@@ -1,0 +1,128 @@
+
+
+  Einleitung
+  Die europäische Reformation war eine gesellschaftliche Erneuerungsbewegung im 16. Jahrhundert, die die Spaltung der katholischen Kirche zur Folge hatte (Kaufmann, 2016; Strohm, 2017). Jene Periode zeichnete sich durch einen regen Briefverkehr zwischen Gelehrten aus, die so miteinander im Austausch blieben. Diese Briefkorrespondenzen lassen sich als Netzwerk darstellen, eine beliebte Modellierungsmethode, um Verbindungsmuster in sozialen Systemen zu repräsentieren (Newman, 2018).
+  Wir konstruieren ein Korrespondenznetzwerk der Reformatoren aus Briefdaten mit dem Ziel, Aspekte des sozialen Systems der Reformation zu analysieren. Dieses Netzwerk beruht auf 20.000 Briefen, welche zwischen 1510 und 1575 von 2.000 Personen in ganz Europa verschickt und empfangen wurden. Reformatoren werden zu Punkten reduziert (Knoten), welche durch Linien (Kanten) miteinander verbunden sind, wenn sie sich Briefe geschrieben haben. Die Richtung der Kanten identifiziert Sender und Empfänger.
+  Das Problem dieser Netzwerkkonstruktion ist, dass jene Briefdaten nicht alle Briefe, inklusive Sender und Empfänger, enthalten, die während der Reformation verfasst wurden. Dies kann verschiedene Gründe haben: Lediglich Briefe von „wichtigen“ Akteuren wurden aufbewahrt, Briefe wurden absichtlich vernichtet oder wurden noch nicht digitalisiert. Bei unseren Briefdaten handelt es sich also um eine unrepräsentative Stichprobe von unvollständigen Daten. Diese unvollständigen Daten führen zu verzerrten Netzwerktopologien, welche die Interpretation des Netzwerks beeinflussen und somit zu falschen Rückschlüssen auf das reale System führen können (Eliassi-Rad et al., 2019).
+  
+  Netzwerkrekonstruktion, also die Wiederherstellung des globalen Netzwerks mithilfe des observierten verzerrten Netzwerks, ist ein schwieriges und noch stets ungelöstes Problem. Ein grosser Nachteil bisheriger Lösungsansätze ist, dass sie ausschließlich Eigenschaften des observierten Netzwerks verwenden, um genau jenes zu rekonstruieren (Liben-Nowell & Kleinberg, 2007; Eagle & Lazer, 2009; Wu et al., 2009). Diese eingeschränkte Sichtweise lässt außer Acht, dass das observierte Netzwerk nur eine Form sozialer Interaktion widerspiegelt, nämlich Briefkorrespondenz. In Wirklichkeit bestand das soziale System der Reformation aus vielen verschiedenen Interaktionen und Beziehungen, die sich gegenseitig beeinflussen. Neben Briefkorrespondenzen können Reformatoren zum Beispiel auch durch persönliche Gespräche, Familienbande oder Kollegenschaft miteinander verbunden sein. Wenn wir verstehen, wie verschiedene soziale Beziehungen miteinander zusammenhängen, können wir diese Zusammenhänge eventuell nutzen, um fehlende Briefkorrespondenzen zu rekonstruieren.
+  Hierzu sind mehrere Zwischenschritte erforderlich: Wir müssen zunächst verstehen, (i) welche Beziehungen wichtig sind, (ii) wie diese mit dem observierten, jedoch unvollständigen Netzwerk zusammenhängen (iii) und wie wir von diesem Zusammenhang auf einen vergleichbaren Zusammenhang im globalen, jedoch unbekannten, Netzwerk schließen können. Diese Zwischenschritte lassen sich mithilfe von Regressionsanalyse und Inferenzstatistik untersuchen. 
+  Regressionsanalyse ist eine statistische Methode, um den Zusammenhang zwischen Variablen in vorhandenen Daten zu quantifizieren. 
+  Inferenzstatistik benutzt Wahrscheinlichkeitstheorie, um von jenem ermittelten Zusammenhang in der Stichprobe Rückschlüsse auf die gesamte Population zu ziehen.
+  
+  In diesem Beitrag veranschaulichen wir den Nutzen von Regressionsanalysen und Inferenzstatistik am Beispiel des Briefkorrespondenznetzwerks der Reformatoren. Im Speziellen sind wir an folgender Frage interessiert: 
+  Welcher Zusammenhang besteht zwischen der geographischen Distanz zwischen Reformatoren-Paaren und der Anzahl Briefe, die sie sich schreiben?
+  
+  Wir erklären, warum etablierte Regressionsmodelle nicht auf das Korrespondenznetzwerk der Reformatoren angewandt werden können und stellen eine neue Methode vor, die Netzwerkregression, welche jene Nachteile entschärft. Zuletzt zeigen wir, wie wir die Netzwerkregression für statistische Inferenz nutzen können. Unsere Arbeit zeigt Möglichkeiten auf, Unsicherheiten in unvollständigen Daten zu quantifizieren und jene in die Interpretation der Ergebnisse mit einzubauen.
+
+
+  Datengrundlage und Korrespondenznetzwerk
+  Unsere Daten beruhen auf den Briefeditionen sieben ausgewählter Reformatoren. Martin Luther (ProQuest LLC, 2019), Philipp Melanchthon (HAW, 2019), Ulrich Zwingli (Moser, 2019), Heinrich Bullinger (Bodenmann, 2019), Martin Bucer (Simon & Friedrich, 2018), Andreas Karlstadt (Kaufmann, 2012) und Oswald Myconius (Wallraff, 2016). Unser ausschlaggebendes Auswahlkriterium bestand darin, dass die Briefdaten öffentlich digital zugänglich sind, sodass wir sie mit einem Web-Crawler aus den entsprechenden Datenbanken herausfiltern konnten. Wir verwenden den Begriff „Reformator“ als Sammelbegriff für alle Sender und Empfänger in unserem Datensatz, obwohl viele jener Personen keine protestantischen Theologen waren. „Reformator“ umfasst somit auch Adlige, Humanisten, Katholiken und andere gesellschaftliche Gruppen. 
+  
+  Neben den Sendern und Empfängern der Briefen beinhalten unsere Daten das Sendedatum, sowie Sende- und Empfangsort. In der Datenvorverarbeitung haben wir Synonyme in Personen- und Ortsnamen eindeutigen Entitäten zugeordnet, sowie das jeweilige taggenaue Sendedatum aus den Ausgangsdaten abgeleitet.
+  Abbildung 1 zeigt das Briefkorrespondenznetzwerk, welches wir aus obigen Daten erstellen. Wir stellen fest, dass die sieben ausgewählten Reformatoren als Sternzentren mit vielen Briefverbindungen erscheinen, wohingegen Knoten in der Netzwerkperipherie kaum Briefverbindungen aufweisen. Hier zeigt sich bereits, wie unsere Datenauswahl die Netzwerktopologie beeinflusst. Demnach sind die dazugehörigen deskriptiven Statistiken der Netzwerktopologie nicht aussagekräftig für die Reformationszeit. Abbildung 2 listet jene Statistiken auf, um das unvollständige Korrespondenznetzwerk besser zu beschreiben.
+  
+    
+      
+      Abbildung 1: Unvollständiges Briefkorrespondenznetzwerk der Reformatoren. Die Knotengröße veranschaulicht die Anzahl gesendeter und empfangener Briefe. Die Kantendicke veranschaulicht die Anzahl gesendeter Briefe.
+    
+  
+  
+    
+      
+      Abbildung 2: Deskriptive topologische Netzwerkmaße im unvollständigen Briefkorrespondenznetzwerk der Reformatoren. Knoten-spezifische Maße werde als Durschnittswert (< >) zusammen mit der Standardabweichung (σ) angegeben. Das „norm“ Kürzel, gibt normalisierte Werte an (Minimum=0, Maximum=1). Wir weisen eindrücklich darauf hin, dass diese Netzwerkmaße lediglich ei­ne 
+      Beschreibung des Briefkorrespondenznetzwerk darstellen. Aufgrund unserer unvollständigen Daten ist die Netzwerktopologie verzerrt und eine Interpretation der resultierenden Netzwerkmaße in Bezug auf die Reformation daher nicht möglich. 
+      
+    
+  
+
+
+  Soziale Beziehungen auswählen
+  Gemäß Schritt (i) (siehe Einleitung), müssen zunächst einige Beziehungstypen für die Analyse ausgewählt werden. Die Auswahl erfolgt auf Grundlage von vorhandenen Theorien und Datenverfügbarkeit.
+  Wir konzentrieren uns hier auf die geographische Distanz zwischen Reformatoren, eine Beziehung, die bereits zur Rekonstruktion von antiken Handelsnetzwerken genutzt wurde (Amati et al., 2019). Da unsere Korrespondenzdaten den Sende- und den Empfangsort der jeweiligen Briefe enthalten, benutzen wir die GoogleMaps API, um die Gehstrecke zwischen Sender und Empfänger per Brief zu berechnen. Für unsere Analyse ist es unbedeutend, dass die ermittelte moderne Gehstrecke nicht mit historischen Geh- oder Poststrecken übereinstimmt. Wichtig ist, dass die Größenordnungen vergleichbar sind. Unsere Methode gewährleistet zum Beispiel, dass die Strecke über die Alpen heute wie damals um den gleichen Faktor länger ist als die Strecke zwischen Wittenberg und Heidelberg.
+  Wir analysieren zwei mögliche Hauptszenarien wie geographische Distanz die Anzahl der Briefe zwischen Reformatoren beeinflusst: Auf der einen Seite schreiben sich Reformatoren weniger Briefe, je weiter sie auseinander wohnen, da die Kosten steigen (z.B. teure Boten), um jene zu verschicken (Kostenszenario). Auf der anderen Seite schreiben sich Reformatoren mehr Briefe, je weiter sie auseinander wohnen, da Briefe das einzige Kommunikationsmittel waren, um lange Abstände zu überbrücken (Zweckmäßigkeitsszenario). Über kurze Abstände ist es demnach praktischer persönliche Gespräche zu führen, anstatt Briefe zu schreiben.
+  Neben der geographischen Distanz testen wir zwei Kontrollfaktoren. Dies sind weitere soziale Beziehungen, an deren Effekt auf die Anzahl Briefe wir nicht per se interessiert sind, die jene Anzahl aber dennoch beeinflussen und deshalb mitberücksichtigt werden müssen. Der erste Kontrollfaktor ist Reziprozität, ein Grundprinzip des menschlichen Handels, wobei eine Person die Handlung ihres Gegenübers erwidert.
+  Der zweite Kontrollfaktor ist religiöse Homophilie. Homophilie beschreibt ein soziologisches Prinzip, wonach Menschen verstärkt interagieren, wenn sie sich ähneln (z.B. gleicher Bildungsstatus). Religiöse Homophilie beschreibt die Annahme, dass Reformatoren, die dieselbe protestantische Strömung vertreten, sich mehr Briefe schreiben, als wenn sie unterschiedliche Strömungen unterstützen.
+
+
+  Etablierte Modelle und ihre Schwächen
+  Regression ist ein statistisches Modell, welches den Zusammenhang und dessen Stärke zwischen verschiedenen Variablen mithilfe einer mathematischen Funktion beschreibt. Auf das Briefkorrespondenznetzwerk bezogen, können wir zum Beispiel ermitteln, wie die geographische Distanz, Reziprozität und religiöse Homophilie die Anzahl Briefe zwischen Sender- und Empfänger-Paaren beeinflussen. Abbildung 3 veranschaulicht eine einfache lineare Regression.
+  
+    
+      
+      Abbildung 3: Schematisches Beispiel einer einfachen linearen Regression. Die Abhängigkeit zwischen geographischer Distanz (x-Achse) und der Anzahl Briefe per Sender-Empfänger-Paar (y-Achse) wird durch die lineare Funktion y = β0 + β1*x 1 + ε beschrieben. β0 ist der y-Achsenabschnitt. β1 ist die Steigung der Geraden und quantifiziert die Stärke des ermittelten Zusammenhangs zwischen Distanz und Briefanzahl. ε ist der Fehlerterm, der unbeobachtete Zufallsvariablen repräsentiert. Für jede weitere getestete soziale Beziehung (z.B. Homophilie), fügen wir eine Dimension in der Abbildung hinzu und ergänzen die obere Formel mit einem weiteren β*x. Das heißt, wir berechnen eine Gerade im mehrdimensionalen Raum.
+      
+    
+  
+  Der ermittelte Zusammenhang zwischen den Variablen ist nicht absolut, sondern abhängig von Fehlern in der Datenmessung und Bestimmung der Parameterwerte (β‘s). Diese Unsicherheiten lassen sich in der Regression modellieren und können so in die Interpretation der Ergebnisse mit einbezogen werden.
+  Allerdings setzt die Regression voraus, dass Observationen unabhängig sind, eine Annahme, die in Netzwerken ungültig ist, da die Postion von Kanten durch die restlichen Kanten eingeschränkt ist. Klassische generative Netzwerkmodelle, wie das 
+  Exponential Random Graph Model, machen jene Annahme zwar nicht, sind aber sehr rechenintensiv und daher für Netzwerke mit mehreren hundert Knoten nicht geeignet (An, 2016). Für das Briefkorrespondenznetzwerk sind wir daher auf ein alternatives Modell angewiesen, die Netzwerkregression.
+  
+
+
+  Netzwerkregression
+  
+    Konzept und Definition
+    Ähnlich wie bei der klassischen Regression ermittelt die Netzwerkregression den Zusammenhang und dessen Stärke zwischen einer abhängigen und einer oder mehrerer unabhängiger Variablen (Casiraghi, 2017). Allerdings sind nun die abhängige und die unabhängigen Variablen keine einfachen Zahlen mehr (z.B. Briefanzahl, geografische Distanz in km), sondern Netzwerktopologien. Ausgangspunkt für die Netzwerkregression ist ein mehrlagiges Netzwerk, dessen unterste Lage ein Interaktionsnetzwerk darstellt (abhängige Variable) und jede weitere Lage jeweils ein soziales Beziehungsnetzwerk darstellt (unabhängige Variablen) (siehe Abbildung 4).
+    
+      
+	
+	Abbildung 4: Mehrlagiges Netzwerk als Ausgangspunkt für die Netzwerkregression. Die unterste Lage (grün) repräsentiert das Briefkorrespondenznetzwerk der Reformatoren. Jede weitere blaue Lage repräsentiert jeweils eine soziale Beziehung zwischen den Reformatoren: geographische Distanz, Reziprozität und religiöse Homophilie. Alle Lagen beinhalten dieselben Knoten (Reformatoren), welche aber unterschiedlich miteinander verbunden sind, weil die Kanten verschiedene soziale Relationen darstellen. Ziel der Netzwerkregression ist es einen Zusammenhang zwischen den blauen und der grünen Lage herzustellen, um die Topologie des Briefkorrespondenznetzwerk durch soziale Beziehungen zu erklären.
+      
+    
+    Jede Netzwerklage, die eine unabhängige Variable repräsentiert, wird durch eine Matrix
+    (R) dargestellt, welche die soziale Beziehung für jedes Reformatoren-Paar quantifiziert. Ähnlich wie in der klassischen Regression quantifiziert der Parameter β die Stärke des Zusammenhangs zwischen einer 
+    R Matrix und dem Briefkorrespondenznetzwerk.
+    
+    Mithilfe der R Matrizen wird nun die Wahrscheinlichkeit per Reformatoren-Paar berechnet, dass dieses durch eine Kante verbunden ist. Diese Berechnung basiert auf einem statistischen Modell dem generaliserten hypergeometrischen Ensemble (Casiraghi & Nanumyan, 2018). Mit diesen Verbindungswahrscheinlichkeiten werden neue synthetische Netzwerke generiert, deren Topologien wissentlich durch die getesteten sozialen Beziehungen zustande kommen. Falls sich das observierte Netzwerk sehr stark von den synthetischen unterscheidet, sind die getesteten sozialen Beziehungen keine gute Erklärungen für die Topologie des observierten Netzwerks. Umgekehrt schon.
+    
+  
+  
+    Anwendung im Briefkorrespondenznetzwerk
+    Wir konstruieren zunächst die jeweiligen R Matrizen für die sozialen Beziehungen geographische Distanz, Reziprozität und religiöse Homophilie. Im Bezug auf geographische Distanz möchten wir herausfinden, ob die Anzahl der Briefe einem Kostenszenario (größere Distanz führt zu weniger Briefen) oder einem Zweckmäßigkeitsszenario (größere Distanz führt zu mehr Briefen) folgt. Für dieses Ziel teilen wir den Effekt der geographischen Distanz auf zwei R Matrizen auf, die jeweils eine Exponentialfunktion der geographischen Distanz darstellen. R(1) hat die lineare Distanz per Sender-Empfänger-Paar im Exponenten und R(2) die quadratische.
+    
+    
+      
+	
+      
+    
+    wobei 
+    dist die geografische Distanz zwischen zwei Reformatoren i und j darstellt.
+    
+    Abbildung 5 zeigt ein schematisches Beispiel der R(1) Matrix.
+    
+    
+      
+	
+	Abbildung 5: Schematisches Beispiel der linearen geografischen Distanzmatrix 
+        R(1). Reihen repräsentieren die Briefsender und Spalten die Empfänger, also jeweils die Knoten (Reformatoren) im Netzwerk. Für jedes Sender-Empfänger-Paar berechnen wir eDistanz [km]. Wenn Luther und Melanchthon zum Beispiel 2 km von einander entfernt wären, würden wir e2=7,28 in die entsprechende Matrixzelle eintragen. Die Werte auf der Diagonalen sind 1, da Sender und Empfänger hier die gleiche Person sind, die sich räumlich nicht aufteilen kann (Distanz = 0 km, e0=1). Reformatorn ist der letzte Reformator im Datensatz.
+        
+      
+    
+    Die R Matrizen für Reziprozität (R(3)) und religöse Homophilie (R(4)) werden jeweils mit numerischen Ersatzwerten und der change statistic konstruiert. Letztere ist ein Standardmaß für Netzwerkmuster in generativen Netzwerkmodellen (Snijders et al., 2006). Wir aggregieren die vier R Matrizen, um für jedes Sender-Empfänger Paar die Chance zu berechnen, dass es sich Briefe schreibt. In dieser Berechnung ermitteln wir den Wert für jeweils ein β pro 
+    R Matrix. Die β‘s beschreiben, wie sehr die entsprechende soziale Beziehung die Anzahl geschriebener Briefe beeinflusst. Abhängig vom Vorzeichen der ermittelnden  β‘s, werden vier Verläufe unterschieden, wie sich die geographische Distanz auf jene Chance auswirkt (siehe Abbildung 6). 
+    
+    
+      
+	
+	Abbildung 6: Schematische Repräsentation der Auswirkung von geographischer Distanz (x-Achse) auf die Wahrscheinlichkeit zum Briefeschreiben (y-Achse) in Abhängigkeit des Vorzeichens der ermittelten β Koeffizienten für R(1) und 
+	R(2). Sind beide β‘s positiv, steigt die Chance, dass Reformatoren sich Briefe schreiben, mit wachsender geographischer Distanz. Dies ist das absolute Zweckmäßigkeitsszenario). Sind beide β‘s negativ, sinkt die Chance, dass Reformatoren sich Briefe schreiben, mit wachsender geographischer Distanz. Dies ist das absolute Kostenszenario. Ist das lineare β negativ und das quadratische β positiv, ist die Chance, dass Reformatoren sich Briefe schreiben, hoch für sehr kurze und sehr lange Distanzen. Dies ist ein Kosten- oder Zweckmäßigkeitsszenario). Ist das lineare β positiv und das quadratische β negativ, ist die Chance, dass Reformatoren sich Briefe schreiben, hoch für mittlere geographische Distanzen. Das Kosten- und das Zweckmäßigkeitsszenario sind in Balance.
+        
+      
+    
+    Abbildung 7 zeigt die Ergebnisse der Netzwerkregression. Die Vorzeichen der β Koeffizienten für geographische Distanz geben an, dass das Zweckmässigkeitsszenario bei großen geographischen Distanzen dominiert und das Kostenszenario bei kurzen Distanzen. Es ist also wahrscheinlicher, dass Reformatoren sich Briefe über sehr kurze und sehr lange Distanzen schreiben als über mittlere.
+    
+      
+	
+	Abbildung 7: Ergebnis der Netzwerkregression. Der negative und positive Koeffizient für geographische Distanz zeigen, dass Reformatoren sich vor allem über sehr kurze und sehr lange Distanzen Briefe schreiben. Die positiven Koeffizienten der Kontrollfaktoren weisen darauf hin, dass Reziprozität und religiöse Homophilie die Anzahl geschriebener Briefe positiv beeinflussen.
+      
+    
+    Die Koeffizienten für Reziprozität und religiöse Homophilie zeigen jeweils, dass beide Faktoren einen positiven Effekt auf die Anzahl versendeter Briefe haben. Demnach steigt die Chance, dass ein Reformator A einem anderen Reformator B Briefe schreibt, falls B bereits Briefe an A geschrieben hat und beide Reformatoren dieselbe religiöse Strömung vertreten. Am absoluten Wert der β Koeffizienten sehen wir, dass Reziprozität einen größeren Effekt hat als religiöse Homophilie.
+    Diese Ergebnisse sind an sich nicht überraschend, könnten jedoch sehr nützlich für die Netzwerkrekonstruktion sein. Aus den Werten für Distanz, Reziprozität und Homophilie können wir die oben beschriebenen Wahrscheinlichkeit berechnen, dass Reformatoren sich Briefe geschrieben haben. Falls unsere Daten keine Briefverbindung zwischen zwei Reformatoren aufweisen, jene berechnete Wahrscheinlichkeit aber groß ist, können wir annehmen, dass jene Briefe in unseren Daten schlicht fehlen. Unter der Annahme, dass Briefe zur Verbreitung reformatorischen Gedankenguts genutzt wurden, können wir anhand der β-Werte bestimmen, welche sozialen Beziehungen die Etablierung der Reformation vorangetrieben haben. Dies erlaubt uns eine neue Perspektive auf die Reformation, welche nicht bestimmte Hauptfiguren (z.B. Luther als Wegbereiter der Reformation) oder einzelne Großereignisse (z.B. Erfindung des Buchdrucks, Augsburger Religionsfrieden) als Antriebsfaktoren für die Reformation in den Vordergrund rückt, sondern sich auf die lokalen Interaktions- und Beziehungsstrukturen der Leute von damals konzentriert.
+    Unabhängig von der Reformation lassen sich mithilfe der Netzwerkregression Interaktionsnetzwerke jeglicher Art beschreiben. Beispiele für weitere Interaktionsnetzwerke umfassen den Handel mit Gütern, finanzielle Transaktionen und persönliche Gespräche. Wenn wir zusätzlich zu jenem Interaktionsnetzwerk auch Informationen zu den sozialen Beziehungen zwischen den Knoten im Netzwerk haben (z.B. Verwandtschaft, Heirat, Arbeitsverhältnis und Homophilie), können wir mithilfe der Netzwerkregression ermitteln wie sehr jene Beziehungen das Interaktionsnetzwerk beeinflussen. Die Auswahl des Interaktionsnetzwerks und der sozialen Beziehungen hängt von theoretischen Überlegungen und der Datengrundlage ab. Welche Interaktionen und Beziehungen sind für den Forschungsstand von Belang? Sind die gewünschten Daten zugänglich?
+  
+
+
+Fazit
+Wir beschreiben den Zusammenhang zwischen sozialen Beziehungen und einem Interaktionsnetzwerk mithilfe einer Netzwerkregression. Am Beispiel des Briefkorrespondenznetzwerks der Reformatoren haben wir aufgezeigt, dass sehr kurze und sehr lange Distanzen, Reziprozität, sowie Zugehörigkeit zur selben religiösen Strömung die Chance vergrößern, dass Reformatoren sich Briefe schreiben. Diese Ergebnisse geben mögliche Hinweise, wie externe Faktoren, soziale Normen und Gruppendynamiken Briefkorrespondenzen beeinflussen. Sie sind erste wichtige Bausteine, um das globale unbekannte Briefkorrespondenznetzwerk zu rekonstruieren.
+

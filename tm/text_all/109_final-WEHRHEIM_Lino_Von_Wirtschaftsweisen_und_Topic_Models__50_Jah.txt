@@ -1,0 +1,379 @@
+
+            
+                Text Mining für historische Fragestellungen
+                Aufgrund der zunehmenden Verfügbarkeit digitaler Textsammlungen kommt Methoden des Text Mining 
+                    
+                    (Heyer 2009) auch für zeit- und wirtschaftshistorische Fragestellungen eine immer größere Bedeutung zu. Der Beitrag geht der Frage nach, ob und wie ein spezifischer Ansatz, die automatisierte Inhaltsanalyse mittels Topic Modelling 
+                    
+                    (Blei 2012), für die Untersuchung eines wirtschaftshistorisch bedeutsamen Korpus eingesetzt werden kann: der Jahresgutachten des Sachverständigenrats zur Begutachtung der gesamtwirtschaftlichen Entwicklung (SVR), eines der prominentesten Gremien in der ökonomischen Politikberatung. Ihr erstes Jahresgutachten veröffentlichten die „Wirtschaftsweisen“ 1964, seither hat sich ein beachtliches Korpus angesammelt, dessen Umfang für Untersuchungen mit einer zeitlich oder thematisch begrenzten Fragestellung zwar ein weniger großes Hindernis darstellt 
+                    
+                    (Schanetzky 2007; Strätling 2001); wird jedoch eine diachrone Fragestellung verfolgt, bieten Topic Models einen vielversprechenden Ansatz. Diese haben in den vergangenen Jahren in verschiedensten Wissenschaftsbereichen Anwendung gefunden 
+                    
+                    (Boyd-Graber et al. 2017; Wehrheim 2018), wobei ihre Popularität maßgeblich auf das von 
+                    
+                    Blei et al. 
+                    
+                    (2003) eingeführte Model der 
+                    Latent-Dirichlet-Allocation (LDA) zurückzuführen ist.
+                
+            
+            
+                Korpus, Vorverarbeitung und Modellerstellung
+                Das untersuchte Korpus besteht aus den zwischen 1965 und 2015 veröffentlichten Publikationen des SVR, d.h. 51 Jahresgutachten, 23 Sondergutachten und 7 
+                Expertisen. Hinzu kommen die seit 1968 veröffentlichten Jahreswirtschaftsberichte, in denen die Bundesregierung ihre Sicht der Wirtschaftslage erörtert und zum Jahresgutachten Stellung bezieht und die ein naheliegendes Vergleichskorpus bilden. Die Texte wurden über die Parlamentsdokumentation des Deutschen Bundestags 
+                bezogen. Die dort bereitgestellten OCR-Scans weisen eine sehr hohe Textqualität auf. Längere Dokumente wurden anhand der jeweiligen Gliederung in Einzelkapitel geteilt 
+                    
+                    (Jockers 2013). Dabei sollten möglichst gleich lange Texte entstehen und diese möglichst einheitliche Themenbereiche enthalten. Daher wurden Texte teilweise erneut auf einer tiefer liegenden Gliederungsebene geteilt. Daraus resultierte ein Korpus aus 1.150 Dokumenten mit einem Textumfang von 8,3 Millionen Wörtern (Vorworte, Inhalts- und Literaturverzeichnisse sowie Anhänge wurden entfernt). Dieses Vorgehen besitzt den Vorteil, dass so thematisch homogenere Texte entstehen, welche wiederum abgrenzbare, spezifische Topics produzieren. Für die Auswertung wurden anschließend die Topic-Anteile der einzelnen Teil-Dokumente aggregiert, indem der Mittelwert über alle Teile des jeweiligen Dokuments gebildet wurde, was die Ergebnisse zwar anfällig für statistische Ausreißer macht, aber eine sich jeweils zu eins addierende Topic-Verteilung ergibt, was für spätere Anwendungen notwendig ist.
+                
+                Das Korpus wurde um häufig auftretende Wörter (Stopwörter) bereinigt 
+                    
+                    (Boyd-Graber et al. 2015). Das Topic Model wurde mit 
+                    MALLET erstellt (2.000 Iterationen, Optimierung alle 20 Iterationen) und die dort integrierte Stopliste genutzt. Zudem wurden alle Wörter mit einer absoluten Häufigkeit größer-gleich 1.000 entfernt, wobei nach manueller Durchsicht bestimmte bedeutungstragende Begriffe davon ausgenommen wurden. Die Stopliste wurde nach einem ersten Testlauf um weitere häufig auftretende Wörter ergänzt. Zudem wurden aus Kompatibilitätsgründen Umlaute und Eszett entfernt. Die optimale Anzahl an Topics wurde zunächst mittels der R-Erweiterung 
+                    ldatuning von 
+                    
+                    Murzintcev 
+                    
+                    (2016) geschätzt, allerdings lieferte der daraus resultierende Wert von etwa 30 nur sehr unspezifische Topics. Daher wurde die Topic-Anzahl sukzessive erhöht und schließlich ein Wert von 70 festgelegt, welcher einen Kompromiss zwischen Spezifität und Redundanz der Topics darstellt.
+                
+            
+            
+                Ergebnisse
+                Die meisten der 70 Topics können unmittelbar als kohärente ökonomische Themen interpretiert 
+                werden. Da einige Topics unterschiedliche Teilaspekte eines Oberthemas betreffen, wurden diese zu „Obertopics“ zusammengefasst, indem die entsprechenden Topic-Anteile addiert wurden. Als Kriterium wurde ihre begriffliche Ähnlichkeit, ausgedrückt in der Kosinus-Ähnlichkeit 
+                    
+                    (Aletras und Stevenson 2014; Wiedemann 2016), herangezogen, wobei auch Topics gruppiert wurden, die zwar nur eine geringe Ähnlichkeit, dafür aber eine hohe inhaltliche Übereinstimmung aufwiesen. Damit reduzierte sich die Topic-Anzahl auf 10 Obertopics, von denen 8 große ökonomische Themenbereiche umfassen, sowie 12 Einzeltopics 
+                    (Tabelle 1).
+                
+                
+                    
+                        
+                            Obertopic
+                        
+                        Nr. der einbezogenen Topics
+                        
+                            Token-
+                                Anteil
+                            
+                        
+                        
+                        Einzeltopics (Topic-Nr.)
+                        Token-Anteil
+                    
+                    
+                        Allgemein- sprache
+                        06, 09, 11, 26, 29, 44
+                        
+                            25,08%
+                        
+                        
+                        
+                            Europa (58)
+                        
+                        
+                            0,87%
+                        
+                    
+                    
+                        Arbeitsmarkt
+                        08, 13, 20, 21, 24, 53, 40, 57
+                        
+                            9,59
+                        
+                        
+                        Methodik (10)
+                        
+                            0,78
+                        
+                    
+                    
+                        Finanz- und Eurokrise
+                        03, 19, 27, 41, 69
+                        
+                            4,71
+                        
+                        
+                        Wettbewerb (14)
+                        
+                            0,76
+                        
+                    
+                    
+                        Geldpolitik
+                        05, 23, 46, 48, 50, 54, 63, 66, 67
+                        
+                            10,09
+                        
+                        
+                        
+                            Expertise Demographie (38)
+                        
+                        
+                            0,70
+                        
+                    
+                    
+                        Öffentliche Finanzen
+                        01, 15, 31, 32, 35, 42, 52, 60, 64, 68
+                        
+                            12,54
+                        
+                        
+                        
+                            Agrarpolitik (12)
+                        
+                        
+                            0,62
+                        
+                    
+                    
+                        Ost-/Westdeutschland
+                        07, 18, 37
+                        
+                            3,38
+                        
+                        
+                        
+                            Erneuerbare Energien (45)
+                        
+                        
+                            0,56
+                        
+                    
+                    
+                        Soziale Sicherung
+                        00, 22, 39, 65
+                        
+                            3,83
+                        
+                        
+                        
+                            Produktivität & Innovation (49)
+                        
+                        
+                            0,54
+                        
+                    
+                    
+                        Verteilung
+                        30, 47
+                        
+                            1,77
+                        
+                        
+                        
+                            Energie- versorgung (16)
+                        
+                        
+                            0,52
+                        
+                    
+                    
+                        Weltwirtschaft
+                        28, 33, 43, 55, 59, 62
+                        
+                            9,34
+                        
+                        
+                        
+                            Expertise Lebensqualität (04)
+                        
+                        
+                            0,47
+                        
+                    
+                    
+                        Wirtschafts- entwicklung
+                        02, 17, 25, 36, 56
+                        
+                            12,63
+                        
+                        
+                        
+                            Strukturwandel (51)
+                        
+                        
+                            0,45
+                        
+                    
+                    
+                        
+                        
+                        
+                        
+                        Immobilien- markt (61)
+                        
+                            0,39
+                        
+                    
+                    
+                        
+                        
+                        
+                        
+                        
+                            Bildung (34)
+                        
+                        
+                            0,38
+                        
+                    
+                    
+                        Summe
+                        
+                        92,96
+                        
+                        
+                        7,04
+                    
+                
+                Tabelle 1: Topics der Jahresgutachten
+                
+                    Die Topic-Verteilungen können für einige grundsätzliche Aussagen über das Korpus herangezogen werden. Zum Vergleich des Inhalts zweier Dokumente wird in der Literatur die Jensen-Shannon-Divergenz (JSD) herangezogen, welche die Differenz der Topic-Verteilungen misst 
+                    
+                    (Steyvers und Griffiths 2007). Abbildung 1 zeigt die thematische Divergenz zwischen einem Jahresgutachten und dem jeweiligen Vorjahresgutachten. Die JSD ist mit durchschnittlich 0,37 gering (maximale Divergenz besteht bei JSD=1), die Jahresgutachten weisen also eine hohe thematische Kontinuität auf. Allerdings ergeben sich einige thematische Brüche, wie etwa durch die Wiedervereinigung im Jahresgutachten 1990 oder die Finanzkrise im Jahresgutachten 2009. Die thematische Vielfalt lässt sich mittels eines in der Ökonomik genutzten Maßes zur Messung der Konzentration der Marktmacht von Unternehmen abbilden: dem Herfindahl-Hirschman-Index (HHI). Dieser ist definiert als die Summe der quadrierten Marktanteile aller Unternehmen, welche sich mit den Topic-Anteilen eines Dokuments vergleichen lassen. Somit kann auf Basis der Topic-Anteile eines Jahresgutachtens dessen „thematische Konzentration“ ermittelt werden. Wie anhand von Abbildung 1 deutlich wird, weisen die Jahresgutachten eine schwache und zudem abnehmende thematische Konzentration auf (maximale Konzentration, d.h. ein Monopol, besteht bei HHI=1).
+                
+                
+                    
+                    
+                        Abbildung 1. Topic-Divergenz und -Konzentration der Jahresgutachten
+                    
+                
+                Dass die Gutachten nur eine geringe jährliche Themenveränderung aufweisen, erscheint angesichts der institutionellen und personellen Kontinuitäten des Rates durchaus plausibel 
+                    
+                    (Schanetzky 2007). Nichtsdestotrotz stellt sich die Frage, ob und inwieweit nicht zumindest ein längerfristiger, eher gradueller Wandel zu beobachten ist. Um einen solchen zu bestimmen, wurden die Jahresgutachten analog zur Vorgehensweise bei 
+                    
+                    Wiedemann 
+                    
+                    (2016) auf Basis der Topic-Verteilungen in Cluster eingeteilt, wobei sich die in Abbildung 2 dargestellten sechs Cluster ergaben. Im zweiten Schritt wurden die durchschnittliche Topic-Verteilung für jedes Cluster berechnet.
+                
+                
+                    
+                        
+                        
+                            Cluster/
+                                Periode
+                            
+                        
+                        Token
+                    
+                    
+                        1.
+                        1965-1974
+                        665.068
+                    
+                    
+                        2.
+                        1975-1989
+                        1.685.157
+                    
+                    
+                        3.
+                        
+                            1990-1999
+                        
+                        1.471.786
+                    
+                    
+                        4.
+                        
+                            2000-2007
+                        
+                        1.610.708
+                    
+                    
+                        5.
+                        
+                            2008-2013
+                        
+                        820.253
+                    
+                    
+                        6.
+                        
+                            2014-2015
+                        
+                        271.820
+                    
+                
+                 
+                    
+                
+                
+                    
+                    
+                        Abbildung 2: Topic-Verteilungen der Jahresgutachten nach Topic-Clustern
+                        Quelle: eigene Darstellung in Anlehnung an 
+                            
+                            Wiedemann 
+                            
+                            (2016).
+                    
+                
+                Zur Illustration seien drei Obertopics herausgegriffen. Die Entwicklung des Obertopics 
+                    Arbeitsmarkt weist einen positiven Trend und eine hohe Korrelation mit der Entwicklung der Arbeitslosenquote auf (Korrelationskoeffizient: 0,6), besonders bis zu Beginn der 1990er Jahre. In anderen Worten korreliert der Umfang, in dem der SVR über das Thema Arbeitsmarkt schrieb, positiv mit der tatsächlichen Entwicklung auf dem Arbeitsmarkt. Der Ausschlag des Jahresgutachten 1977 erklärt sich mit einer ausführlichen Diskussion der Ursachen der Arbeitslosigkeit, vor allem mit einem hohen Anteil von Topic 40. Dieses enthält viele mit einer angebotsorientierten Erklärung von 
+                    Arbeitslosigkeit verbundene Begriffe wie „Investition“, „Kostenniveau“ oder „rentabel“.
+                
+                
+                    
+                
+                
+                    
+                    
+                        Abbildung 3: Obertopic Arbeitsmarkt Anmerkungen: Arbeitslosenquote bis 1991 früheres Bundesgebiet. Quelle: eigene Darstellung, Bundesagentur für Arbeit.
+                    
+                
+                Auch das Obertopic 
+                    Geldpolitik weist mit seinem fallenden Trend einen der entsprechenden ökonomischen Variablen, der Inflationsrate, ähnelnden Verlauf auf. Allerdings ist hier der Zusammenhang weniger stark als im Falle des Arbeitsmarkts (0,45), da das Obertopic neben der Preisniveauentwicklung auch andere Bereiche der Geldpolitik betrifft (erstere ist durch das Untertopic 67 repräsentiert, hier beträgt der Korrelationskoeffizient 0,63).
+                
+                
+                    
+                
+                
+                    
+                    
+                        Abbildung 4: Obertopic Geldpolitik Anmerkungen: VPI = Verbraucherpreisindex des statistischen Bundesamts (bis 1990 Preisindex für die Lebenshaltung aller Privathaushalte), Veränderung ggü. Vorjahr. Quelle: eigene Darstellung, statistisches Bundesamt.
+                    
+                
+                
+                    Als drittes Beispiel sei das Obertopic 
+                    Soziale Sicherung genannt. Hier ist die Sozialleistungsquote eine naheliegende Vergleichsvariable, mit welcher der Topic-Anteil leicht positiv korreliert (0,51). Allerdings wird anhand der Entwicklung deutlich, dass sich der SVR erst seit Ende der 1990er Jahre in größerem Umfang mit der Sozialpolitik befasste, einer Zeit, die mit dem Antritt der rot-grünen Regierung und deren Reformpolitik ganz im Zeichen der Sozialpolitik stand. Den Obertopics 
+                    Öffentliche Finanzen, 
+                    Wirtschaftsentwicklung und 
+                    Weltwirtschaft ließen sich ebenfalls ökonomische Variablen zuordnen, beispielsweise die Staatschuldenquote (0,44), die Wachstumsrate des Bruttoinlandsprodukts (0,28) und der Leistungsbilanzsaldo (-0,06), für die verbleibenden Obertopics erscheint eine solche Zuordnung hingegen wenig 
+                    sinnvoll.
+                
+                
+                    
+                
+                
+                    
+                    
+                        Abbildung 5: Obertopic Soziale Sicherung Anmerkungen: Sozialleistungen in Prozent des BIP, bis 1990 unrevidierte Werte, ab 2009 einschließlich privater Krankenversicherung, bis 1991 früheres Bundesgebiet. Quelle: eigene Darstellung, Bundesministerium für Arbeit und Soziales
+                    
+                
+                Mit der Arbeit von 
+                    
+                    Wegner 
+                    
+                    (1985) liegt eine Vergleichsstudie zwischen den Jahresgutachten und Jahreswirtschaftsberichten vor, in denen die Bundesregierung u.a. zu den Jahresgutachten Stellung bezieht. Mittels der JSD kann dieser Vergleich aus einer neuen Perspektive angestellt und zeitlich erweitert werden. Da die JSD einer Topic-Verteilung über dieselben Topics bedarf, wurde ein weiteres Model für die Jahresgutachten und Jahreswirtschaftsberichte entworfen, aus dem vergleichbare Topics 
+                    resultierten.
+                    Die in Abbildung 6 dargestellte Entwicklung zeigt, dass beide Subkorpora grundsätzlich eine mittlere bis schwache Divergenz aufweisen, sich also thematisch ähneln, wobei durchaus Schwankungen zu beobachten sind. Zusätzlich wurde die sprachliche Ähnlichkeit zwischen Jahresgutachten und Jahreswirtschaftsbericht auf Basis der Kosinus-Ähnlichkeit bestimmt. Nach Abzug der Stopwörter ergibt sich eine recht hohe, tendenziell abnehmende Kosinus-Ähnlichkeit, d.h. Jahresgutachten und Jahreswirtschaftsbericht nutzen ein ähnliches Vokabular. Die Korrelation zwischen JSD und Kosinus-Ähnlichkeit ist leicht negativ (-0,3), was plausibel erscheint: Je größer die Divergenz, desto kleiner ist die Ähnlichkeit.
+                
+                
+                    
+                    
+                        Abbildung 6: 
+                            
+                            JS-Divergenz und Kosinus-Ähnlichkeit von Jahresgutachten und Jahreswirtschaftsbericht
+                    
+                
+            
+            
+                Fazit und Ausblick
+                Die Frage, ob sich die Jahresgutachten des SVR für eine Untersuchung mit Topic Models eignen, kann eindeutig bejaht werden. Für die gewählten Modellparameter ergeben sich interpretierbare, sinnvolle Topics, deren zeitliche Entwicklung auf Basis eines Vergleichs mit entsprechenden ökonomischen Variablen und generellen historischen Entwicklungen plausibel erscheint. Der forschungspraktische Nutzen ist in diesem Fall der folgende: (1) können die für ein bestimmtes Thema relevanten Textpassagen identifiziert werden, was das für historische Forschungsfragen unabdingbare 
+                    close reading erheblich vereinfacht. Die Makroperspektive des Topic Models hilft, Relevantes von weniger Relevantem abzugrenzen und den Blick auf strukturelle Veränderungen des Korpus zu lenken. (2) ermöglicht bzw. erleichtert diese Makroperspektive diachrone Fragestellungen. Beispielsweise lassen sich durch die verschiedenen Bestandteile der Obertopics Veränderungen in der Betrachtungsweise eines ökonomisches Themengebiets, etwa des Arbeitsmarkts, identifizieren. Der empirische Zugang erlaubt zum einen den Abgleich mit Ergebnissen historisch-qualitativer Arbeiten zum Sachverständigenrat. Zum anderen werden die Jahresgutachten quantitativen Forschungsansätzen zugänglich gemacht. So ließe sich etwa untersuchen, in welcher zeitlichen bzw. kausalen Beziehung ökonomische Realität und deren Analyse durch den SVR zueinander stehen 
+                    
+                    (Lüdering und Winker 2016); (3) eröffnen sich neue Möglichkeiten des Vergleichs mit anderen Quellen, wie den Jahreswirtschaftsberichten oder der Presseberichterstattung, was gerade für die Frage nach dem Beratungserfolg der Wirtschaftsweisen vielversprechend erscheint.
+                
+            
+        

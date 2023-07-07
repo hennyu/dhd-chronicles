@@ -1,0 +1,35 @@
+
+            Beginen sind geistliche Frauen, die ohne Klausur und Gelübde in mittelalterlichen Städten lebten und im Gegensatz zu den klösterlichen Nonnen im Stadtbild präsent waren. Rechtlich waren sie Laien und unterstanden der weltlichen Obrigkeit. Daher sind sie in Rechtsquellen der Stadt präsent, auch in den berühmten Schreinsbüchern der Stadt Köln. 
+            Diese bieten eine für den Betrachtungszeitraum (13.–15. Jh.) außergewöhnlich dichte Überlieferungssituation (Militzer 1999), da in ihnen bereits seit dem 12. Jahrhundert Rechtsgeschäfte erfasst wurden, zu denen insbesondere Immobilienübertragungen zählten. Durch eine seit den 1990ern andauernde Auswertung der Schreinsbücher konnten bisher rund 2100 Beginen identifiziert werden. Die Ergebnisse dieser Auswertung liegen in Form von Regesten in einer Textdatenbank vor, die zudem Informationen zu Verwandtschaftsbeziehungen, der sozialen Stellung der Frauen und ihren Wohnstätten in der Stadt verzeichnet.
+            Im März 2022 ist an der Universität zu Köln ein DFG-gefördertes Projekt (DFG 2022) unter der Leitung von Frau Dr. Letha Böhringer angelaufen (Böhringer 2022). Das Projekt verfolgt zwei interdependente Ziele: 1.) die erste umfassende Monographie zur Sozialgeschichte der Beginen in Köln vorzulegen, 2.) die Wissensbasis, d.h. die Quellenauswertung, digital so aufzubereiten, dass diese nach prosopographischen, sozialgeschichtlichen und sozialtopographischen Fragestellungen hin ausgewertet und in einer Webplattform öffentlich zugänglich gemacht werden kann. Diese Arbeit wird am Cologne Center for eHumanities durchgeführt, das erste Ergebnisse zur Datenmodellierung und Georeferenzierung mithilfe historischen Kartenmaterials der Stadt Köln vorstellen wird.
+            
+                Datenmodellierung und Informationsextraktion
+                Die vorhandenen Regesten mit 4848 Einträgen sind in eine XML-Struktur überführt worden und müssen, da wesentlich als Fließtext festgehalten, durch regex-Anweisungen und XSL-Transformationen in relevante Informationseinheiten vorstrukturiert werden. Hierbei geht es primär um die Identifikation von Akteuren, topographischen Angaben und Relationen (Verwandtschaftsbeziehungen, Transaktionen). Methoden des NLP, wie Named Entity Recognition, werden hierbei ebenfalls ergänzend erwogen.
+                Bei der Datenmodellierung orientiert sich das Projekt an methodisch verwandten Vorhaben und etablierten Standards (Grünwald 2021). Auf der Ebene der semantischen Verknüpfung wird die eventbasierte Beschreibung durch CIDOC CRM Anwendung finden (s. Abb. 1). Die spezialisierte Bookkeeping Ontology for Historical Accounts (Pollin 2022), die auf CIDOC CRM basiert, wurde ebenfalls evaluiert.
+                
+                    
+                        
+                    Abb 1.: Regest Schrb. 12 fol. 61r, nach CIDOC CRM V.7.0.1
+                
+                
+            
+            
+                Kartographie/Topographie
+                Immobilienbesitz und Wohnstätten der identifizierten Beginen lassen sich in großer Zahl und mit erstaunlicher Genauigkeit lokalisieren. Dies ist vor allem deshalb möglich, weil die Quellengrundlage überwiegend Immobiliengeschäfte zum Gegenstand hat und für die Stadt Köln ein Standardwerk zur städtischen Topographie vorliegt, das ebenfalls auf der Auswertung der Schreinsbücher beruht (Keussen 1910) und ein Referenzierungssystem für Häuser der mittelalterlichen Stadt bietet. Die Referenzen auf Keussens System wurden bei der Erstellung der Fließtext-Regesten bereits systematisch nachgehalten und können so digital genutzt werden.
+                Dank der Bereitstellung von historischem Kartenmaterial durch die Historische Gesellschaft Köln e.V., in dem die Straßen-Parzellen-Einteilung Keussens in ursprünglich für den Druck vorbereiteten proprietären Formaten des Programms Adobe Freehand abgebildet wurde (die nun durch das Beginen-Projekt verlustfrei in offene Formate überführt worden sind), steht dem Projekt eine vektorisierte Gesamtkarte Kölns zum hohen und späten Mittelalter Kölns nach der zweiten Stadterweiterung zur Verfügung (s. Abb. 2).
+                
+                    
+                        
+                    Abb 2.: J. Bigalke/Kliomedia/Historischen Gesellschaft Köln e.V./Greven Verlag
+                
+                
+                Dies eröffnet eine Reihe von Möglichkeiten, die vom Minimalziel eines Exports als hochauflösende Rasterdatei, die über einen Map-Tile-Server in Webviewer eingebunden werden kann und das Markieren von Positionen und Clustern auf der Karte ermöglicht, bis hin zum Maximalziel eines Export der Vektoren für unterschiedliche topographische Typen (Mauer, Straßenzüge, Bezirksgrenzen, Kirchen, Klöster, "Parzellen") und Einbindung in GIS-Programme und Webpräsentation reicht.
+                Das Projekt wird die verschiedenen Optionen vorstellen und in seiner Posterpräsentation der Frage nachgehen, ob sich das Referenzsystem aus Keussens Topographie systematisch auf die eingezeichneten Haussegmente übertragen und so als dynamische Visualisierung auf der Grundlage von Datenbankabfragen realisieren lässt.
+            
+            
+                Zusammenfassung
+                Dank der Vorarbeiten in der Auswertung der Schreinsbücher kann das Beginen-Projekt auf Regesten zurückgreifen, die eine Vielzahl an Informationen zu geistlichen Frauen im Köln des Mittelalters enthalten und es nach ihrer Strukturierung im weiteren Projektverlauf erlauben werden, prosopographische Netzwerkanalysen vorzunehmen. Daher wird das Poster als ersten Kernaspekt die Datenmodellierung eines exemplarischen Regesteneintrags visualisieren.
+                Zweiter Kernaspekt der DH-Komponente in dem Projekt und entsprechend der Posterpräsentation ist die Georeferenzierung und Verortung der geographisch gebundenen Daten mit den historischen Karten der mittelalterlichen Stadt Köln, sowie die Frage nach den damit verbundenen sozialtopographischen Auswertungsmöglichkeiten. Vorbehaltlich der lokalen Begebenheiten streben wir eine Live-Demonstration der Kartenvisualisierungen auf einem Laptop/Tablet an.
+                Jenseits dieser ersten vorläufigen Projektergebnisse möchten wir mit dem Poster zur Diskussion stellen, inwiefern das Projekt wichtige Vorarbeiten zum besseren Verständnis der Struktur und Semantik der Schreinsbucheinträge leisten kann, da die vollumfängliche Erschließung der Schreinsbücher ein lange bestehendes Desiderat der mediävistischen Forschung darstellt.
+            
+        

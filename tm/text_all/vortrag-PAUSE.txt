@@ -1,0 +1,97 @@
+
+
+Ein Aspekt, der zunehmende Aufmerksamkeit in der jüngeren Geschichte algorithmischer und statistischer Filmanalyse gewinnt, ist die Analyse der Farbigkeit von Filmen. Ein frühes Beispiel ist die stark rezipierte Abschlussarbeit des Grafikdesignstudenten Frederick Brodbeck (2011) (siehe Abbildung 1), der für eine Sequenz von Frames aus verschiedenen Filmen die dominanten Farben analysiert, aneinanderreiht und so ein Farbprofil des Films erzeugt. Einen ähnlichen Ansatz verfolgen Dillon Baker (2015) sowie Burghardt (2016). Die genannten Beispiele weisen sind jedoch trotz des interessanten Einblicks den sie bieten nicht unproblematisch.
+            
+
+
+
+
+Abbildung 1: 
+Beispiele eines Farbclusterings verschiedener Filme bei Brodbeck (2011)
+
+
+Im Fall von Brodbeck und Burghard
+t
+ wird für die Bestimmung der dominanten Farben in einem Frame der Clustering-Algorithmus 
+K-Means
+ verwendet
+
+1
+
+. Dieser Algorithmus ist die gängigste Strategie zur Farbquantifizierung und findet sich auch in den einschlägigen Computer Vision Bibliotheken wie zum Beispiel 
+OpenCV
+
+2
+
+ 
+wieder
+. Die Problematik von K-Means im Kontext der filmwissenschaftlichen Farbanalyse ist vielfältig. Sie beginnt damit, dass dem Algorithmus vorgegeben werden muss, wie viele Farbcluster er erzeugen soll. Somit kann er bei der automatisierten Anwendung von bis zu 180.000 Frames pro Film nicht dem Umstand Rechnung tragen, dass es etwa farblich komplexere und einfachere Frames gibt. 
+
+Tatsächlich gibt es ein überwachtes Verfahren in dem K-Means in einer Schleife mit unterschiedlicher Clusteranzahl auf den selben Frame angewendet wird und im Sinne des sogenannten 
+                Silhouette Koeffizienten das bester Ergebnis bestimmt wird. Allerdings entspricht ein Clusteringergebnis bei dem die Clusterzentren bei weitestgehender Kompaktheit möglichst weit voneinander entfernt sind nicht unbedingt dem filmwissenschaftlich brauchbarsten Ergebnis (siehe Abbildung 2).
+            
+
+
+
+Abbildung 2: Clusteranalyse eines Frames aus The Walking Dead mit 2 bis 9 Clustern. Die Anzahl von 2 Clustern erzeugt den besten Silhouette Koeffizienten.
+            
+Intuitiv wichtige Farben eines Bildes gehen verloren. Dieses generelle Problem der Anwendung von K-Means lässt sich besonders eindrucksvoll an dem roten Mädchen aus 
+                Schindlers Liste aufzeigen (siehe Abbildung 3). Ein Grund dafür ist die Tatsache, dass K-Means eine Tendenz zur Bildung gleichgroßer Cluster aufweist. Folglich präferiert K-Means ein auf Verteilung hin ausgerichtetes Konzept von Dominanz.
+            
+Ein weiteres Problem von K-Means ist der Umstand, dass der Algorithmus bei jeder Anwendung leicht variierende Ergebnisse erzeugt, wobei die Variation im häufig verwendeten Spektrum zwischen 3 und 5 Clustern am größten ist. Dies kann dazu führen, dass bei einer Anwendung ein Farbton vertreten ist, der in einem weiteren Durchlauf in anderen Clustern aufgeht. Ebenfalls bleibt in den bisherigen Projektkontexten der Umstand unreflektiert, das K-Means unterschiedlich clustered, je nachdem mit welchem Farbraummodell der Frame repräsentiert wird.
+
+
+
+Abbildung 3: Farbclustering eines Ausschnitts aus Schindlers Liste
+            
+Das Problem der Präferenz für eine gleichmäßige Größe von Clustern sowie das zuletzt genannte zeigen die Notwendigkeit auf, die Idee einer dominanten Farbe im Kontext der computerunterstützten Filmanalyse stärker zu diskutieren. Dies ist bisher jedoch nur unzureichend erfolgt. Ein Mitgrund hierfür ist der Umstand, dass die genannten Projekte keine filmwissenschaftliche Deutung in Zusammenhang mit ihren Entwicklungen publiziert haben. Dadurch bleibt völlig offen, welche Semantik die erzeugten Muster tragen und inwieweit sie die Interpretation von Filmen beziehungsweise Filmkorpora inspirieren können. Dieser eher theoretische Problematik läßt sich auch nicht durch ein Ausweichen auf andere Clustering-Algorithmen wie DBSCAN oder Verfahren wie hierarchisches Clustering entgehen.
+Angesichts der genannten Probleme erscheint die Entwicklung eines Ansatzes vonnöten, der einen technisch weniger anfechtbaren Ausgangspunkt für eine computergestützte Untersuchung von Farben im Film liefert und zugleich Anschlüsse für mögliche Interpretationen der Werke bereitstellt. Ein in diesem Zusammenhang produktives Konzept könnte das Modell der “Sieben Farbkontraste“ des Bauhaus-Künstlers und Kunstpädagogen Johannes Itten darstellen (Itten 1961: 36-109), welches die Strukturen von Farblichkeit innerhalb eines Bildes zu systematisieren erlaubt. Ausgehend von der Grundannahme, dass Farben ihre Wirkung immer in Abhängigkeit von anderen im Blickfeld befindlichen Farben entfalten, unterscheidet Itten sieben grundlegende Kontrasttypen:
+
+den Farbe-an-sich-Kontrast, in dem ungetrübte und daher deutlich unterscheidbare Primär-, Sekundär- oder Spektralfarben aufeinander stoßen, 
+den Hell-Dunkel-Kontrast, 
+den Kalt-Warm-Kontrast, 
+den Qualitätskontrast, der zwischen gesättigten und trüben Farben entsteht, 
+den Quantitätskontrast, der sich aus der Größe der gegenübergestellten Farbflächen ergibt, 
+den Komplementärkontrast sowie 
+den diesem entgegengesetzten Simultankontrast, in dem gerade das Fehlen einer Komplementärfarbe zur subjektiven Verzerrung der dargestellten Farbflächen führt.
+
+Jeder dieser Kontrasttypen ist nach Itten mit spezifischen wirkungsästhetischen Einsatzmöglichkeiten verknüpft: So steuern sie etwa die Aufmerksamkeit der Zuschauer, ermöglichen Raumwirkungen, schaffen Orientierung oder Desorientierung, unterstützen die symbolische Semantik der Bilder oder lösen Assoziationen und Emotionen aus. Auch wenn sich die meisten dieser Effekte nicht generalisieren lassen, erscheint hier eine allgemeine rezeptionsästhetische Beschreibung doch eher möglich als bei einer Interpretation von Einzelfarben (etwa Rot als Signalfarbe, Blau als Symbol für Trauer oder Tod usw.), wie sie in der Filmanalyse bis heute Einsatz findet (etwa bei Marschall 2009). 
+
+Eine computergestützte Bestimmung nicht nur des generellen Farbclusters eines Filmes, sondern der in ihm angelegten wesentlichen Kontrasttypen kann einen ersten Ansatz für eine differenzierte Interpretation filmischer Farbschemata liefern. So kann ein Film etwa durch einen über den gesamten Filmverlauf hinweg stabilen Gegensatz von warmen und kalten Farben gekennzeichnet sein, auf der Ebene des Hell-Dunkel-Kontrastes aber eine deutlich progressive Dynamik aufweisen (zu progressiven und synopitschen Farbschemata vgl. Wulff 1988) und in wenigen besonderen Szenen starke Komplementärkontraste verwenden. Eine auf diese Weise ausbuchstabierte Entschlüsselung der komplexer Farbaspekte eines Films ließe sich dabei einerseits im Rahmen eines 
+close readings 
+zurate ziehen, indem etwa die dynamischen Aspekte der Farbgestaltung auf die Erzählstruktur des Werkes bezogen oder mit der Analyse inhaltlicher 
+Leitmotive, bestimmter Figuren, dominanter Montageformen oder des 
+Mise en Scènes 
+verbunden werden (zur generellen Problematik der Interpretation vgl. Flückiger 2011). 
+
+Andererseits ließe sich eine computergestützte Kontrastanalyse für einen synchronen oder diachronen Vergleich mehrerer Einzelwerke oder ganzer Werkgruppen einsetzen: So ließe sich etwa überprüfen, ob sich der spezifische Stil eines Autorenfilmers auch in einem besonderen Farbprofil niederschlägt, ob sich nationale Kinematographien durch ihre Farbigkeit unterscheiden lassen oder ob sich für bestimmte Genres innerhalb konkreter Zeitspannen ein charakteristischer Einsatz besonderer Kontrastmomente nachweisen lässt. 
+Die Farbanalyse von Filmen in Form von Kontrasten bietet in der Umsetzung ebenfalls  eine Reihe von Vorteilen gegenüber der zuvor beschriebenen Verfahrensweise. Zunächst einmal erlauben einige Kontrastarten bereits die Untersuchung von Merkmalen der Farbsprache des Films vor der Identifikation zentraler Farben eines Frames und damit jenseits der Anwendung genannter Cluster-Algorithmen. Dies wird dadurch möglich, dass spezifische Repräsentationen des Farbraums Farben in Eigenschaften zerlegen, die direkt versuchen bestimmte Kontraste zu simulieren oder aus denen sich Kontraste leichter ableiten lassen. Am einsichtigsten ist dies im 
+                HSV-Farbmodel (Hue, Saturation, Value).
+            
+So is Value eine Form der Darstellung des Hell-Dunkel-Kontrast, während Saturation den Qualitätskontrast beschreibt. Zu beachten ist hier jedoch auch, dass der Value Wert nicht vollständig identisch mit der Hell-Dunkel Empfindung eines durchschnittlichen Filmbetrachters ist. Eine Übersetzung in einen solch empfunden Hell-Dunkel Kontrast ist jedoch möglich. 
+Die Dynamik eines bestimmten Kontrastes in einem Film kann nun erzeugt werden, indem für jeden extrahierten Frame ein Histogramm für den entsprechenden Kontrasttyp generiert wird. Die Sequenz dieser Werte lässt es zu, Muster in der Gestaltung dieses Kontrastes innerhalb des Films oder eines Filmkorpus zu identifizieren. Dabei bieten unterschiedliche Darstellungsweisen der Histogrammergebnisse in Kombination mit weiteren Phänomenen wie zum Beispiel der Berechnung des 
+                mean absolute deviation weiteren Deutungsspielraum. Ein Beispiel für eine sequenzielle Aneinanderreihung von Histogrammen eines Kontrasttyps als Scatterplot zeigt Abbildung 4.
+            
+
+
+
+
+Abbildung 
+4
+: 
+Scatterplot einer Histogramm-basierten Analyse des Hue Kontrasts in 28 Days Later
+
+Nicht alle Kontraste kommen ohne die Bestimmung eines als absolut verstandenen Farbwertes aus. Dies ist zum Beispiel beim Simultan- und Komplementärkontrast der Fall. Der vorgestellte Ansatz ist auch nicht als Ersetzung von Clusteringverfahren zu verstehen. Beide Verfahren können auch komplementär eingesetzt werden. So kann eine Analyse des Farbe-an-sich-Kontrastes der Schwierigkeit entgegenwirken, dass K-Means einer vorgegebenen Clusterzahl folgt, bzw. der Silhouette Koeffizient keine für die Filminterpretation brauchbaren Ergebnisse produziert. Konkret kann ein hoher Farben-an-sich-Kontrast zum Anlass für die Bestimmung einer größeren Clusterzahl und umgekehrt genutzt werden. Desweiteren erlaubt das Verständnis von Farbigkeit als Kombination von Kontrasten das eingangs angesprochene Phänomen zu untersuchen und produktiv anzuwenden, dass K-Means für Daten die unterschiedlichen Farbraummodellen folgen unterschiedliche Ergebnisse liefert.
+Der Hauptpunkt dieses Ansatzes ist es nicht ‘objektiv richtigere’ Clusteringergebnisse zu bekommen, sondern auf der Grundlage der Erkenntnis das es kein ‘richtiges’ Clustering von Farben in Farbkompositionen geben kann, hilfreiche und interpretierbare Ergebnisse mit gleichen und komplementären Verfahren zu produzieren. Der Kern von Ittens Herangehensweise an Farbkompositionen ist die Erkenntnis, dass ihre Analyse im wesentlichen ein wahrnehmungstheoretisches Problem ist. Entsprechend kann es erfolgreicher sein, bei der Herausarbeitung bestimmter Dimensionen von Farblichkeit zu beginnen anstatt die Varianz in diesen Dimensionen durch Clustering vor jeglicher Analyse zu reduzieren. Die angedeuteten Verfahren zeigen, dass es technisch gesehen nicht schwierig sein muss, diesem Umstand innerhalb einer Digital Humanities Perspektive Rechnung zu tragen.
+
+
+Der Vortrag wird die aufgezeigten Probleme bei der Farbanalyse von Filmen, den vorgestellten alternativen Ansatz sowie die Brauchbarkeit dieses Ansatzes als unterstützendes Rahmenwerk für die Filminterpretation an Hand der drei Zombiefilme 
+28 Days Later
+, 
+[REC]
+ 
+und 
+World War Z
+ 
+vorstellen und illustrieren.
+

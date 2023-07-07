@@ -1,0 +1,119 @@
+ Die digitale Publikation erfolgt auf einem Onlineportal (
+                            
+                                https://bdn-edition.de
+                            ) sowie im Langzeitarchiv 
+                            TextGrid Repository (
+                            
+                                https://textgridrep.org
+                             [letzter Zugriff 25. November 2021]) unter der freien Lizenz CC BY-SA 3.0, während die aus dem gleichen Datenbestand generierte Printausgabe (vgl. Nösselt 2019; Griesbach 2019; Bahrdt/Semler 2020) vom Tübinger Wissenschaftsverlag 
+                            Mohr Siebeck begleitet wird.
+                         Vgl. TEI P5: Guidelines for Electronic Text Encoding and Interchange by the TEI Consortium. Originally edited by C. M. Sperberg-McQueen and L. Burnard [...] Version 4.3.0. Last updated on 31st August 2021 (
+                            
+                                https://guidelines.tei-c.de
+                             [letzter Zugriff 25. November 2021], „3.12.2.5 Scopes and Ranges in Bibliographic Citations“) sowie die im Projektportal (s. Anm. 1) dokumentierte Schemaanpassung.
+                         Vgl. 
+                            
+                                https://github.com/Bibliothek-der-Neologie/bdnBible
+                             sowie zur o.g. Print-Serialisierung: 
+                            
+                                https://gitlab.gwdg.de/bibliothek-der-neologie/print
+                             [letzter Zugriff 25. November 2021].
+                         Die externe XML-Repräsentation der Bibel dient als Referenz für die Analyse der in den Editionsdaten vorkommenden Bibelverweise. Sie ist angelehnt an die 
+                                Zefania XML Bible Markup Language (
+                                
+                                    https://sourceforge.net/projects/zefania-sharp
+                                 [letzter Zugriff 25. November 2021]), wird allerdings projektspezifisch angepasst. – Bei den Sinneinheiten handelt es sich weniger um nutzerabhängige Interpretationserzeugnisse als vielmehr um naheliegende Sinnabschnitte, die aus den Handlungsverläufen und Gliederungen der biblischen Texte recht eindeutig hervorgehen und auf diese Weise traditionell geworden sind. Dass das Modul selbstverständlich auch andere Sinneinheiten ermöglicht, die dann zu anderen Zwischenergebnissen führen, wird im Vortrag diskutiert. – Während die externe Bibel-XML vor allem in dem unter 2.1 erläuterten Modul („Sinneinheiten") Verwendung findet, dient das zu Beginn des Abschnitts genannte Zwischenformat der Vereinheitlichung und Vereinfachung des unübersichtlichen Editionsdatenbestands für die weitere Auswertung und liegt als Vorstufe allen drei Modulen (2.1 bis 2.3) zugrunde.
+                             Die in den Abschnitten 2.1 und 2.2 vorgestellten Module zielen insofern auf den Übergang von quantitativen Statistiken in kritisch-hermeneutische Textuntersuchungen, als damit in unübersichtlichen Editionsdaten zentrale biblische Sinneinheiten oder Abschnitte mit auffälliger Bibelstellendichte identifiziert werden können, die eine weitere inhaltliche Kontextualisierung und Analyse anregen. Dabei steht weniger ein Kategoriensystem-orientiertes Vorgehen im Mittelpunkt, wie es Verfahren der qualitativen Inhaltsanalyse oder Mixed Methods (vgl. Kuckartz 2014) nahelegen, als vielmehr eine datenbasierte Schaffung von Textzugängen, die durch traditionelle Verfahren so nicht erreicht würden. Für mögliche Weiterentwicklungen mit Blick auf qualitative Forschungsmethoden ist der Ansatz aber durchaus offen. Vgl. das Kapitel „12 Critical Apparatus“ der TEI Guidelines (s. Anm. 2). Gemäß der projektspezifischen Schemaanpassung erfolgt die Unterscheidung der kritischen Apparate im 
+                                tei:rdg über 
+                                @wit mit Werten "
+                                #a", "
+                                #b", "
+                                #c" usw. (Textzeugen) sowie 
+                                @type mit Werten "
+                                v" (variant), "
+                                pp" (paraphrase), "
+                                pt" (parenthesis) und "
+                                om" (omission). Mit dieser Klassifikation lassen sich die textkritischen Phänomene der neologischen Schlüsseltexte im Rahmen der Hybridausgabe präzise beschreiben, aber auch die entsprechenden Interdependenzen zwischen den zahlreichen Bibelverweisen und der Textgenese automatisiert abfragen.
+                            
+            
+                
+                    Bibliographie
+                    
+                        Albrecht, Christian / Chapman, Mark D. / Kaufmann, Thomas / Markschies, Christoph / Molendijk, Arie L. / Von Soosten, Joachim (2006): "Erinnerungsarbeit durch Klassikeredition. Die Bedeutung akademischer Selbsthistorisierung für die Zukunft des Protestantismus" in: Graf, Friedrich Wilhelm (ed.): 
+                        Geschichte durch Geschichte überwinden. Ernst Troeltsch in Berlin (Troeltsch-Studien. Neue Folge 1). Gütersloh: Gütersloher Verlagshaus 253–284.
+                    
+                    
+                        Anderson, Clifford (2019): "Digital Humanities and the Future of Theology" in: 
+                        Cursor. Zeitschrift für explorative Theologie 1. 
+                        https://doi.org/10.17885/heiup.czeth.2019.1.24000 [letzter Zugriff 25. November 2021].
+                    
+                    
+                        Anderson, Clifford / Wicentowski, Joseph (2020): 
+                        XQuery for Humanists (Coding for Humanists). College Station: Texas A&M University Press.
+                    
+                    
+                        Assmann, Jan (2005): "Der Begriff des kulturellen Gedächtnisses" in: Dreier, Thomas (ed.): 
+                        Kulturelles Gedächtnis im 21. Jahrhundert. Tagungsband des internationalen Symposiums vom 23. April 2005 (Schriften des Zentrums für Angewandte Rechtswissenschaft 1). Karlsruhe: Universitätsbibliothek 21–29.
+                    
+                    
+                        Bahrdt, Carl Friedrich / Semler, Johann Salomo (2020): 
+                        Glaubensbekenntnisse (1779–1792), eds. Pietsch, Andreas / Weidemann, Christian (BdN I). Tübingen: Mohr Siebeck.
+                    
+                    
+                        Beutel, Albrecht (2007): "Biblischer Text und theologische Theoriebildung in Luthers Schrift ‚Von weltlicher Oberkeit, wie weit man ihr Gehorsam schuldig sei‘ (1523)" in: Beutel, Albrecht: 
+                        Reflektierte Religion. Beiträge zur Geschichte des Protestantismus. Tübingen: Mohr Siebeck 21–46.
+                    
+                    
+                        Griesbach, Johann Jakob (2019): 
+                        Anleitung zum Studium der populären Dogmatik (1779, 4. Aufl. 1789), ed. Stallmann, Marco (BdN III). Tübingen: Mohr Siebeck.
+                    
+                    
+                        Jannidis, Fotis (2010): "Methoden der computergestützten Textanalyse" in: Ansgar Nünning / Vera Nünning (eds.): 
+                        Methoden der literatur- und kulturwissenschaftlichen Textanalyse. Ansätze - Grundlagen - Modellanalysen. Stuttgart/Weimar: Metzler 109–132.
+                    
+                    
+                        Kuckartz, Udo (2014): 
+                        Mixed Methods: Methodologie, Forschungsdesigns und Analyseverfahren. Wiesbaden: Springer VS.
+                    
+                    
+                        Moretti, Franco (2007): 
+                        Graphs, Maps, Trees. Abstract Models for Literary History. 
+                        https://hdl.handle.net/2027/heb.08911 [letzter Zugriff 25. November 2021].
+                    
+                    
+                        Nösselt, Johann August (2019): 
+                        Anweisung zur Bildung angehender Theologen (1786/89, 3. Aufl. 1819/19), eds. Beutel, Albrecht / Lemitz, Bastian / Söntgerath, Olga (BdN VI). Tübingen: Mohr Siebeck.
+                    
+                    
+                        Piper, Andrew (2016): 
+                        There will be numbers. Cultural Analytics 1. 
+                        https://doi.org/10.22148/16.006 [letzter Zugriff 25. November 2021].
+                    
+                    
+                        Radonic, Ljiljana / Uhl, Heidemarie (2016): 
+                        Gedächtnis im 21. Jahrhundert. Zur Neuverhandlung eines kulturwissenschaftlichen Leitbegriffs. Bielefeld: transcript-Verlag.
+                    
+                    
+                        Sahle, Patrick (2017a): "Digital Humanities und die Fächer. Eine schwierige Beziehung?" in: 
+                        Forum Exegese und Hochschuldidaktik. Verstehen von Anfang an 2: 7–27.
+                    
+                    
+                        Sahle, Patrick (2017b): "Digitale Editionen" in: Fotis Jannidis / Hubertus Kohle / Malte Rehbein (eds.): 
+                        Digital Humanities. Eine Einführung. Stuttgart: J.B. Metzler 234–249.
+                    
+                    
+                        Schöch, Christof (2017): "Quantitative Analyse", in: Jannidis / Kohle / Rehbein: 
+                        Digital Humanities 279–298.
+                    
+                    
+                        Wettlaufer, Jörg (2016): "Neue Erkenntnisse durch digitalisierte Geschichtswissenschaft(en)? Zur hermeneutischen Reichweite aktueller digitaler Methoden in informationszentrierten Fächern" in: 
+                        Zeitschrift für digitale Geisteswissenschaften
+                        https://doi.org/10.17175/2016_011 [letzter Zugriff 25. November 2021].
+                    
+                    
+                        Zahnd, Ueli (2020): "Netzwerke, historisch und digital. Digital Humanities und die Mittlere und Neue Kirchengeschichte" in: 
+                        Verkündigung und Forschung 65: 114–123.
+                    
+                
+            
+        

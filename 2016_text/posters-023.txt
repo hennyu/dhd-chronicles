@@ -1,0 +1,33 @@
+
+       Tatsächlich werden allerdings, obwohl Transparenz und Reproduzierbarkeit von Forschungsergebnissen seit langem als die Grundpfeiler der wissenschaftlichen Gemeinschaft gelten, in der Praxis viele digitale Datensätze und Werkzeuge unter Lizenzen verbreitet, die unnötig restriktiv bzw. nicht zweckmäßig sind, oder bleiben gar vollständig ohne Lizenz. Dies liegt vor allem daran, dass die Wahl einer geeigneten Lizenz einem durchschnittlichen Wissenschaftler ohne hinreichende rechtliche Beratung Schwierigkeiten bereiten kann.
+       Als Lösung wurden einige Tools entwickelt, die den Nutzer durch den Dschungel der unzähligen, verfügbaren, „öffentlichen Lizenzen“ leiten und ihm so erlauben, die Lizenz zu wählen, die für seine Zwecke am geeignetsten ist. Diese Werkzeuge werden auf Englisch als „License Choosers“, „License Selectors“ oder „License Wizards“ bezeichnet; im Folgenden werden wir sie als Lizenzauswahlwerkzeuge bezeichnen.
+       Bevor diese näher beschrieben werden, soll zunächst der Begriff der „öffentlichen Lizenz“ definiert werden. Eine öffentliche Lizenz ist eine Lizenz, die nicht einem individuellen Nutzer, sondern der breiten Öffentlichkeit (also jedem potenziellen Nutzer) bestimmte Rechte einräumt. Für Software gibt es solche öffentlichen Lizenzen bereits seit den 1980er Jahren. Damals entstanden Software-Lizenzen wie die BSD-License, die MIT Lizenz oder die GNU GPL. In anderen Wissenschaftsbereichen oder im Bereich der Textdaten kamen solche öffentliche Lizenzen allerdings erst Anfang des 21. Jahrhunderts infolge der Gründung der Creative Commons (CC) Foundation auf.
+       Die jüngste CC-Lizenzversion, CC 4.0., die 6 verschiedene Lizenzen, einen „Waiver“ und eine „Public Domain Mark“ bereithält, eignet sich sehr gut für Datensätze, da sie nicht nur das Urheberrecht, sondern auch das Recht an Datenbanken erfasst. Auch ältere Versionen sind aber noch in Verwendung.
+       Bei der Wahl einer Lizenz ist darauf zu achten, dass die Lizenzen, die für Software geeignet sind, nicht gleichermaßen für Daten geeignet sind und umgekehrt.
+      Darüber hinaus sind nicht alle öffentlichen Lizenzen „frei“, da einige Lizenzen beispielsweise nicht den Anforderungen für das Open Access / Open Data / Open Source Label genügen.
+      In unserer Präsentation werden wir kurz drei Online-Tools vorstellen, die speziell für die Lizenzierung von Forschungsmaterialien entwickelt wurden.
+       Das Licentia Tool wurde im Jahr 2014 von Cristian Cardellino für INRIA
+        (Französisches Institut für Forschung in Informatik und Automatisierung) entwickelt
+        und ist genau genommen ein Verbund dreier Tools: einer Lizenzsuchmaschine,  die es
+        ermöglicht, Lizenzen zu finden, die genau die Anforderungen erfüllen, welche zuvor
+        durch den Nutzer festgelegt wurden, eines Lizenzkompatibilitätsprüfers, der die
+        Kompatibilität von unterschiedlich lizenzierten Daten prüft  und eines
+        Lizenz-Visualizers, der graphikbasierte Visualisierungen der Lizenzen in Open
+        Digital Rights Language Deontology (ODRL) darstellt.
+         Der ELRA License Wizard, der im April 2015 von der European Language Resources
+          Association veröffentlicht wurde, ermöglicht es dem Nutzer, bestimmte Eigenschaften
+          festzulegen, um dann eine Auswahl an korrespondierenden Lizenzen zu treffen.
+           Schließlich stellen wir den License Selector vor, der im Jahr 2014 von Pawel
+            Kamocki, Pavel Stranak und Michal Sedlak im Rahmen einer Kooperation zweier
+            CLARIN-Zentren, dem IDS Mannheim und Karls-Universität Prag entwickelt wurde. Er
+            benutzt einen Algorithmus (eine Serie von Ja / Nein-Fragen), der den Nutzer durch
+            den Lizensierungsprozess begleitet. Er kann sowohl für die Lizenzwahl von Daten als
+            auch von Software verwendet werden und bietet ein integriertes
+            Lizenzinteroperabilitätswerkzeug. Lizenzen, die die Anforderungen für das Open
+            Access,  Open Data und Open Source Label erfüllen, sind dabei besonders
+            gekennzeichnet. Anders als die vorstehenden Tools ist es unter Open Software- und
+            Open Data-Lizenzbedingungen verfügbar.
+            
+              Alle drei Tools haben Vor- und Nachteile. Ihr größter Nachteil ist, dass sie in verschiedenem Ausmaß eine sehr spezifische Sprache nutzen, die ein juristisches Grundverständnis insbesondere zum Urheberrecht erfordern. Zudem bedienen sie sich alle - notwendigerweise - zu einem gewissen Grad einer Verallgemeinerung, insbesondere um die Lizenzinteroperabilität zu beurteilen. Nichtsdestotrotz sind sie für die Forschungsgemeinschaft als sehr hilfreich einzuschätzen, vereinfachen sie doch die Nachnutzung von Tools und Daten in den Digital Humanities ganz erheblich.
+            
+          

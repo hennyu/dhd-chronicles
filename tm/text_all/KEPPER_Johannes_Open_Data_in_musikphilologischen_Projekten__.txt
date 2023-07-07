@@ -1,0 +1,79 @@
+
+            
+                
+                    Abstract
+                
+                
+                    Datenmanagement ist eine zentrale Fragestellung für sämtliche Projekte im Bereich der Digital Humanities (Altenhöner et al. 2020). Warum also ein gesonderter Blick auf DH-Projekte mit einem musikeditorischen Hintergrund? Die Publikationspraxis musikwissenschaftlicher Editionen unterscheidet sich im Kern deutlich von derjenigen in anderen Disziplinen. Hieraus ergeben sich fachspezifische Herausforderungen, die durchaus Einfluss auf die Konzeption bestehender digitaler Musikeditionsprojekte nehmen. Im Rahmen des Vortrags wollen wir versuchen, diese Besonderheiten herauszuarbeiten und anhand des von der Mainzer Akademie der Wissenschaften und der Literatur geförderten Projekts “Beethovens Werkstatt” Ansätze zur Umsetzung von Open Data auch im Bereich der Musikphilologie aufzuzeigen. Potenziale ergeben sich dabei sowohl auf inhaltlicher Seite, also in Bezug auf die erarbeiteten Daten, wie auf methodischer Seite, d.h. in Bezug auf die entwickelten Tools. 
+                
+            
+            
+                Zur Ausgangslage: Publikationspraxis und Wertschöpfungsketten musikwissenschaftlicher Editionen
+                
+                    W
+                    ährend es etwa in der Literaturwissenschaft eine Fülle verschiedener Publikationsformen gibt – Studienausgaben, Leseausgaben, kritische Ausgaben usw. –, konnte sich in der Musikwissenschaft nie eine entsprechende Vielfalt wissenschaftlicher Ausgabentypen entwickeln. Schon die ersten musikalischen Gesamtausgaben formulierten in ihren Vorworten den Doppelanspruch als Ausgaben ‘für Wissenschaft und Praxis gleichermaßen’ (vgl. Fellerer 1980:185; Kepper 2011:180). Die Ursache waren schon damals finanzielle Erwägungen: Die manuelle Erstellung der Druckvorlagen für Notenstich bzw. -druck war schon immer ein sehr zeitintensiver Prozess. Breitkopf und Härtel etwa hatten 1869 insgesamt 14 Notenstecher in Dienst (Hase 1968:386), die in 1867 eine Jahresleistung von “über 5000 Platten” hatten (Hase 1968:394). Setzt man diese Zahlen ins Verhältnis, landet man bei etwa 357 Platten pro Notenstecher. Dieser Zeitbedarf von etwa einem Arbeitstag pro 
+                    Seite Notentext blieb im Notenstich bis zur Verbreitung des computerbasierten Notensatzes gegen Ende des 20. Jahrhunderts recht konstant (Popp 2017). Dem standen bereits im 19. Jahrhundert recht geringe Auflagenhöhen gegenüber, und auch heutige Gesamtausgaben haben oft Subskribentenzahlen im unteren dreistelligen Bereich. Die Bände dieser Gesamtausgaben sind i.d.R. sehr aufwendig ausgestattet und werden entsprechend teuer verkauft – oft genug ebenfalls im unteren dreistelligen Bereich. Die Inhalte für diese Bände werden zumeist durch öffentlich geförderte Projekte erstellt und den Verlagen kostenfrei, teils sogar mit einem zusätzlichen Druckkostenzuschuss zur Verfügung gestellt. Auf dieser Basis liegt die eigentliche Wertschöpfung für die Verlage dennoch an nochmals anderer Stelle: Erst mit sogenannten praktischen Ausgaben für den professionellen wie nichtprofessionellen musikalischen Gebrauch wird ein größerer Markt jenseits von Bibliotheken und Musik
+                    wissenschaft
+                     adressiert. Außerdem eröffnen der Vertrieb von Leihmaterial und v.a. die Lizenzierung von Aufführungen bzw. Rundfunksendungen wichtige Einnahmequellen. Aufgrund der bereits erwähnten hohen Produktionskosten ist es üblich, diese praktischen Ausgaben mit möglichst geringem Aufwand aus den wissenschaftlich-kritischen Ausgaben zu destillieren und, beispielsweise mit dem schillernden Label “Urtext”, zu vertreiben. Dafür wird oft der bereits vorhandene Notentext mit einem neuen Vorwort versehen, der Kritische Bericht – wenn überhaupt berücksichtigt – auf wenige Seiten kondensiert, und so mit minimalem Aufwand eine Ausgabe erstellt, die immer noch den aus Marketingsicht günstigen Anspruch erhebt, auf neuesten wissenschaftlichen Erkenntnissen zu basieren. Dass diese Wissenschaftlichkeit gerade aus den entfallenden Teilen resultiert, ist aus dieser Perspektive unerheblich. Viel wichtiger ist es aus Verlagssicht, dass sich das Notenbild schon der wissenschaftlichen Ausgaben nicht durch ein (vermeintliches) Übermaß diakritischer Auszeichnung für eine praktische Nachnutzung disqualifiziert, sondern mit einem vertretbaren Aufwand an diese Zweitverwertung angepasst werden kann. Solche wissenschaftsfremden Prämissen sind prägend für Ausgaben, die dem Paradigma “für Wissenschaft und Praxis gleichermaßen” unterworfen sind.
+                
+                
+                    Nicht
+                     erst angesichts der sich stark verändernden gesetzlichen Rahmenbedingungen (v. a. das im Juli 2021 in Kraft getretene 
+                    Zweite Open Data Gesetz
+                     der Bundesregierung verpflichtet ab 2024 zur Veröffentlichung aller mit Bundesfinanzierung erhobenen Forschungsdaten als Open Data) und der bereits entsprechend veränderten Vorgaben der Drittmittelgeber (vgl. z. B. die DFG-Information Nr. 25 “Konkretisierung der Anforderungen zum Umgang mit Forschungsdaten in Förderanträgen” vom 14.3.2021:
+                     
+                
+                
+                    
+                    ) für den Umgang mit Forschungsergebnissen erscheint diese Wertschöpfung fragwürdig. 
+                
+                
+                    Es 
+                    dürfte offensichtlich sein, dass Musikverlage bislang kaum als treibende Kraft für Open Data / Open Culture in Erscheinung getreten sind. Anders sieht es bei vielen DH-Projekten aus. Die freie Zugänglichkeit der Forschungsdaten spätestens zum Ende des Förderzeitraums ist inzwischen weitgehend obligatorisch. Auch Förderinstitutionen im Bereich Musikwissenschaft wie die Union der Akademien in Deutschland als Förderer der meisten musikphilologischen Langzeitprojekte in Deutschland legen insbesondere bei Neuvorhaben inzwischen verstärkt Wert auf Open Access – bei bestehenden Projekten stehen dem i.d.R. die bestehenden, langfristigen Verlagsverträge im Wege. Damit stehen die Geldgeber an der Seite der meisten Projekte im Umfeld der Digital Humanities. Im Sinne des 
+                    ratchet effect
+                     (Tomasello 2009) arbeiten diese Projekte oft in der Annahme, im Zuge ihrer Forschung Daten zu erstellen, die auch für nach– oder anders gelagerte Forschungsfragen hilfreich sein können. Hierfür ist es aber zwingend notwendig, nicht nur die abgeschlossenen Ergebnisse zu publizieren, sondern auch die ihnen zugrundeliegenden Rohdaten. Zum Wandel der förderpolitischen Rahmenbedingungen gesellt sich dabei ein arbeitskultureller, vor allem aber auch ein Wandel editionstheoretischer Herangehensweisen vor dem Hintergrund der Digitalität, die a) die Statik und Linearität von (musikalischem) Text zugunsten netzförmiger, aber auch dynamischer, prozessualer Darstellungsweisen erweitert (Droese/Münzmay 2015; Stadler 2019), b) editorische und historische Objekte in hybriden Textgebilden zusammenführt (die häufig komplette digitalisierte Re-Publikationen von Kulturobjekten einbinden, die digital ‚beschriftet‘ und vernetzt werden; Münzmay 2018) und c) Multimodalität editorisch handhabbar macht. Neben die herkömmliche Befassung mit dem Werktext treten neue musikphilologische Gegenstände, wie etwa phonographische Quellen (Orcalli 2017; Münzmay/Siegert 2019; Pasdzierny 2019) oder textgenetische bzw. Schreibprozesse (Kepper/Sänger 2017; Kepper/Cox 2021).
+                     
+                
+            
+            
+                Beethovens Werkstatt
+                
+                    Das 
+                    etwa in der Mitte seiner auf 16 Jahre angelegten Laufzeit stehende Projekt Beethovens Werkstatt reiht sich ein in eine Riege musikeditorischer Projekte, die bewusst mit den Konventionen der Musikphilologie, d. h. mit Konzepten wie ‚Historisch-kritische Werkedition‘ und ‚Gesamtausgabe‘, brechen und so neue Perspektiven aufzuzeigen versuchen. Dies wird in der Projektkonzeption unmittelbar deutlich: Wie kein anderes musikwissenschaftliches Akademieprojekt versteht sich Beethovens Werkstatt als 
+                    methodisches
+                     Grundlagenforschungsprojekt, das ganz bewusst schon im Antrag auf eine Auflistung der zu behandelnden Werke verzichtet, sondern lediglich für bestimmte Fragestellungen mit Beispielen versieht. Ziel ist demnach die Untersuchung dieser philologischen Fragestellungen (Darstellung von Varianz, Schreibprozessen und Revisionsprozessen; Fassungsvergleiche; Skizzeneditionen), nicht das starre Abarbeiten von Werklisten. In vielen Fällen ist dafür die Betrachtung von teils stark begrenzten Auszügen vollkommen 
+                    ausreichend – die thematisierten Werke werden also nicht in Gänze thematisiert. Angesichts der eingangs geschilderten üblichen Verwertungsketten im Musikbereich ergibt sich daraus quasi zwangsläufig eine weitere Besonderheit des Projekts: Der bewusste Verzicht auf die Zusammenarbeit mit einem Musikverlag. Auch wenn in bestimmten Modulen des Projekts durchaus vollständige Werke im Sinne genetischer Textkritik erarbeitet werden, so dass eine musikpraktische Nutzung zumindest einiger Projektdaten nach entsprechender Aufbereitung durchaus vorstellbar wäre, ist dies gerade nicht die Zielsetzung – auch, weil das Projekt aller Voraussicht nach nicht in entsprechendem Maß an der Wertschöpfung beteiligt würde, um den damit verbundenen Aufwand zu kompensieren. Stattdessen werden sämtliche Projektdaten – XML-Daten nach dem Standard der Music Encoding Initiative MEI, SVG-Daten sowie die im Projekt entwickelte modulare Forschungs- und Visualisierungssoftware „VideApp“ – frei zur Verfügung gestellt. Damit steht es Verlagen offen, nun allerdings bei eigenem Aufwand entsprechende Ausgaben auf dieser Datengrundlage zu erstellen. Für das Projekt ergibt sich daraus kein echter Nachteil. Ein gründliches Verlagslektorat – was wohl der aus Projektsicht attraktivste Vorteil einer Zusammenarbeit wäre – ist ohnehin längst nicht mehr bei allen Musikverlagen bzw. Verlagsverträgen selbstverständlich.
+                     
+                
+                An 
+                    die Stelle der Ausrichtung auf Verlagspublikationen tritt eine enge und wechselseitige Verzahnung von inhaltlicher Erschließung des Gegenstands, Datenerstellung, -aufbereitung und -pflege sowie Entwicklung der Software, die eine Darstellung und Interaktion mit diesen Daten erlaubt. Auch hier zeigt sich eine Eigenheit des Projekts, die es stärker in eine Reihe mit DH-Grundlagenforschungsprojekten als mit herkömmlichen Musikeditionen stellt: Die erstellten Daten sind für sich genommen nicht ausreichend, um die Editionsinhalte zu transportieren. Zumindest auf absehbare Zeit ist nicht davon auszugehen, dass Standardsoftware wie der „DFG-Viewer für musikalische Quellen“ oder die diesem zugrunde liegende Verovio-Rendering-Bibliothek für MEI die Projektdaten in Gänze sinnvoll auswerten können. Vielmehr bedarf es auch der im Projekt erstellten Software, da erst diese die spezifischen Datenmodelle und Konzepte zur genetischen Edition von Musik greifbar macht. 
+                
+                Beethovens 
+                    Werkstatt verfolgt damit einen integralen Ansatz für eine verschränkte, Hand-in-Hand-gehende Daten-Erarbeitung und Toolentwicklung. Dieser Ansatz ist dabei inhaltlich notwendig – auch mit viel Fantasie und ohne äußere Vorgaben fällt es schwer, sich eine auch nur ansatzweise vergleichbare Umsetzung der Projektergebnisse außerhalb digitaler Medien vorzustellen. Es handelt sich also um eine genuin digitale Edition im von Patrick Sahle beschriebenen Sinne (Sahle 2017:239). 
+                
+                
+                    Aus 
+                    diesem grundlegend digitalen Ansatz folgen aber andere Anforderungen, als sie in musikwissenschaftlichen Editionsprojekten sonst üblich sind. Neben Überlegungen zur Publikation der Daten bedarf es auch entsprechender Überlegungen zum Umgang mit der Forschungssoftware. Beethovens Werkstatt verfolgt von Beginn an die Strategie, sämtliche 
+                    Software als 
+                    Open Source
+                     in öffentlichen Repositorien auf GitHub zu entwickeln. Abgesehen von terminologischen Diskussionen, deren Zwischenschritte auf dem Weg zu einer ersten veröffentlichten Version im Glossar des Projekts zunächst in einem nur intern zugänglichen Wiki-System festgehalten werden, findet auch die gesamte inhaltliche Arbeit des Projekts als 
+                    Open Data
+                     öffentlich statt (
+                    Open Access
+                    ). Über parallele 
+                    Continuous Integration-Pipelines
+                     werden stabile Zwischenstände dieser Arbeit öffentlich, tagesaktuelle Stände hingegen zunächst nur für den internen Gebrauch in leicht zugänglicher Form aufbereitet und zur Verfügung gestellt. Unabhängig davon kann die Arbeit des Projekts über die entsprechenden Repositorien jedoch jederzeit vollständig und frei zugänglich nachvollzogen werden. Ein völlig freier “Blick in die Werkstatt” ist damit jederzeit möglich. Auch in dieser Meta-Perspektive wird also das “deiktische Prinzip” des Projekts umgesetzt: Statt teils umständlicher Erläuterungen versucht die sog. VideApp, genetische Prozesse möglichst anschaulich zu visualisieren. Entsprechend direkt ist der Zugang zur Arbeit des Projekts (der freilich der gängigen Logik von Forschungsförderung folgend dennoch in regelmäßigen Berichten dokumentiert wird).
+                
+                
+                    Damit 
+                    bietet Beethovens Werkstatt ein ideales Anschauungsbeispiel zur Komplexität digitaler musikwissenschaftlicher Editionen, die sich u. a. aus nicht-linearen bzw. dynamischen Inhalten bzw. Visualisierungen historischer Objekte und darin manifester genetischer Prozesse sowie der Multimodalität der zur Umsetzung notwendigen Daten speist. Für einzelne der genannten Bereiche gibt es 
+                    best practices
+                    , an denen sich Projekte orientieren können: Für den Bereich der Editionsdaten ist eine revisionssichere Publikation beispielsweise bei Zenodo gut möglich. Für den Bereich der Softwareentwicklung lassen sich 
+                    Continuous Integration
+                     / 
+                    Continuous Delivery
+                    -Workflows mit Docker und GitHub Actions umsetzen. Was aber, wenn die genutzte Software sowohl integraler Bestandteil der Edition ist als auch zeitgleich unabhängig von diesen Daten zur Nachnutzung in anderen Kontexten nutzbar sein soll? Bislang gibt es keine etablierten Standards, die sich einfach für neue Projekte adaptieren ließen, und auch Beethovens Werkstatt hat in diesem Feld wiederholt neue Ansätze erprobt. Der Vortrag wird diese Erfahrungen dokumentieren und problematisieren, was für eine weitergehend standardisierte Lösung notwendig wäre.
+                     
+                
+            
+        

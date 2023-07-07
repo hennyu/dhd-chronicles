@@ -1,0 +1,38 @@
+
+      
+        Benutzerintegration in Monasterium
+        Monasterium ist das größte digitale Urkundenarchiv Europas. Es wurde im Jahr 2001 initiiert und beinhaltet heute etwa eine Million Urkundendatensätze aus dem Mittelalter und der Frühen Neuzeit. 
+        Das Angebot von Monasterium hat sich mittlerweile entscheidend über die reine Präsentation von Urkunden hinaus entwickelt. Monasterium ist ein Portal mit vielen Datenlieferanten und einer seit Projektstart offenen Datenaufnahmepolitik. Dieser Umstand begünstigte das kontinuierliche Wachstum des Datenbestandes, machte ihn aber gleichzeitig amorph hinsichtlich Erfassungs- und Erschließungstiefe. Aus diesem Grund ist für Monasterium die Integration der Benutzerinnen und Benutzer in der Datenerzeugung besonders wichtig. Die Integration verläuft (1) über kollaborativ-partizipative Nutzerveranstaltungen, sogenannte „MOMathons“, (2) über benutzerfreundliche Editionswerkzeuge wie WYSIWYM-Editoren, (3) über Visualisierung von vernetztem Wissen durch Georeferenzierung und (4) über verbesserten Retrieval durch „Drill Down“-Einsatz. Das Poster gibt einen Einblick in den aktuellen Stand der Entwicklungen. 
+        Im Allgemeinen setzt die Bewältigung des Softwarepakets von Monasterium, genannt MOM-CA (Monasterium Collaborative Archive) eine stabile, effiziente und vor allem skalierbare Softwarearchitektur voraus. Grundlage des Datenbankmanagementsystems ist die Java-basierte XML-Datenbank „eXist“ mit darauf aufsetzendem XRX-Framework. Die Entwicklung von Monasterium erfolgte bis 2014 hauptsächlich am Kölner HKI. Heute übernehmen diese Aufgabe Digitale Geisteswissenschaftler und -innen vom CCeH in Köln, ZIM in Graz, ICARUS in Wien. Der Sourcecode von MOM-CA wird open source auf Github verwaltet und zur Verfügung gestellt.
+        
+          Benutzerintegration durch „MOMathons“
+          Monasterium veranstaltet regelmäßig sogenannte „MOMathons“. Dabei haben Teilnehmerinnen und Teilnehmer die Möglichkeit auf Basis des Crowdsourcing-Prinzips bei der Tiefenerschließung von Urkunden mitzuwirken. Dieses kollaborativ eingebrachte Wissen vergrößert das Datenmaterial, das über Monasterium der Öffentlichkeit zugänglich gemacht wird. Die bei diesen Veranstaltungen entstehende Benutzererfahrung ist auch für die Fortentwicklung der Plattform wichtig. Durch „MOMathons“ kann eine direkte Rückmeldung unmittelbar in die Programmiertätigkeit einfließen. So eingebunden, hat jede Nutzerin und jeder Nutzer auf eigene Art und Weise die Möglichkeit zu dem Erfolg des Projektes beizutragen.
+        
+        
+          Benutzerintegration durch WYSIWYM-Editor
+          Das Ziel einer virtuellen Editionsumgebung ist seit jeher ein wichtiger Entwicklungsaspekt von Monasterium. Um Wissen in der Webdatenbank strukturiert sammeln und veröffentlichen zu können, mussten die Barrieren des Zugangs für die Benutzerinnen und Benutzer minimiert werden. Aus diesem Grund wurde ein XML-generierender WYSIWYM-Editor entwickelt. Aktuell ist die dritte Editorengeneration umgesetzt. Es handelt sich dabei um eine Javascript-basierte Editionsumgebung, die die Beschreibung der Urkunden intuitiv ermöglicht: Der Editor bietet eine Mischung aus strukturierten Eingabemasken und Freitextfeldern an, die den Zugriff auf kontrollierte Vokabularien sowie Text-Bild-Verknüpfungswerkzeuge bereitstellt. Durch den benutzerfreundlichen Aufbau des Editors können sich so Anwenderinnen und Anwender auf die Erfassung der eigentlichen Inhaltsdaten konzentrieren.
+        
+        
+          Benutzerintegration durch Georeferencing-Tool
+          Um den Nutzerinnen und Nutzern weiterhin intuitive Orientierung innerhalb des mitunter sehr schnell anwachsenden Bestandes zu bieten, wurde ein Georeferencing-Tool implementiert. 
+          Die Kartenfunktionalität dient nicht nur einer intuitiven Darstellung von Ausstellungsorten, sondern lässt zudem eine direkte Bearbeitung der mit den Urkunden verknüpften Geoinformationen zu. Das Tool ist in enger Verbindung mit der neuen Suchfunktion in Monasterium zu sehen. So haben die Benutzerin und der Benutzer die Möglichkeit, auf einen Blick für sie räumlich interessante Urkunden wahrnehmen und deren Relevanz einschätzen zu können.
+        
+        
+          Benutzerintegration durch „Drill Down“
+          Der in dieser Größe einzigartige archivübergreifende Datenbestand lässt bei Monasterium herkömmliche Such- und Ordnungsfunktionalitäten an ihre Grenzen stoßen. Besonderes Augenmerk wurde und wird deshalb auf eine Erweiterung der Suchfunktion gelegt. Diese wird dahingehend verbessert, dass Treffermengen auf Basis verschiedener Urkunden-Attribute visualisiert und gefiltert werden können. Strukturen und Verbindungen innerhalb des Datenbestandes können besser erfasst und aufgedeckt werden. User werden insofern integriert, als das sie die Datenbank auf gezielte Forschungsfragen durchsuchen können und durch das „Drill Down“ ausschließlich relevante Treffer geliefert bekommen.
+        
+      
+      
+        Zusammenfassung
+        Um eine ganzheitliche Integration der Benutzerinnen und Benutzer zur Datenerzeugung anbieten zu können, werden bei der Softwareweiterentwicklung von Monasterium unterschiedlichste Zugänge berücksichtigt: Für direktes Benutzerfeedback sorgen „MOMathons“. Auf einer inhaltlich textbasierten Ebene wird die Datenerfassung durch WYSIWYM-Editoren erleichtert. Auf einer visuellen Ebene gestaltet die Kartenfunktionalität das Material anschaulicher und auf semantischer Ebene wird die Qualität der Informationsrückgewinnung durch die Granulierung der Suchparameter und entsprechender Suchtreffervisualisierung erhöht. Alle Entwicklungsebenen zusammen genommen lassen Monasterium als eine vielversprechende integrative und interaktive Forschungs-, Kommunikations- und Präsentationsumgebung erscheinen.
+      
+      
+        
+          Bibliographie
+          ICARUS = International Centre for Archival Research
+          (2001-2016): Monasterium.net. Virtuelles
+          Urkundenarchiv http://icar-us.eu/cooperation/online-portals/monasterium-net.
+        
+      
+    
+  

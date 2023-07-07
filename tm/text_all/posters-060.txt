@@ -1,0 +1,122 @@
+
+      
+        Einleitung 
+        Ein Stemma codicum ist ein Stammbaum, der jedoch nicht die Verwandtschaft von Wesen oder Sprachen, sondern von Manuskripten darstellt. Dabei symbolisiert ein Knoten in der Terminologie der Graphtheorie ein Manuskript und eine Kante einen Kopierprozess. Bei jedem handschriftlichen Kopierprozess passieren Fehler, die dazu führen, dass alle Manuskripte unterschiedliche Textfassungen aufweisen .
+          1
+        
+      
+      
+        Geschichte der Stemmatologie 
+        Laut Timpanaro (2005) ist das Stemma von C. Schlyter aus dem Jahre 1827 eines der
+          frühesten Stemmata im wissenschaftlichen Sinne überhaupt, s. Abbildung 1.
+          Nachdem Editoren zu Beginn des Printzeitalters für handschriftlich tradierte
+          Texte entscheiden mussten, welche Version eines Textes sie drucken und damit
+          einer breiten Masse zugänglich machen, entstand langsam ein Bewußtsein für die
+          Notwendigkeit einer genauen Analyse der Manuskriptgenealogie, um möglichst
+          präzise den Autorentext wiederzugeben. Im Printzeitalter bedeutete dies die
+          Reise an verschiedene teils weit auseinanderliegende Aufbewahrungsorte der
+          Manuskripte, den händischen Vergleich der Wortlaute der Manuskripte und später
+          den Vergleich durch Photographien (Faksimiles). Gleichzeitig wurde die
+          theoretische Auseinandersetzung mit der richtigen Art und Weise,
+          Übereinstimmungen und Divergenzen in Manuskripten zu interpretieren immer
+          genauer geführt. Als Beispiele sind besonders Bedier (1928) und Maas (1937) zu
+          nennen. 
+          Der Übergang ins digitale Zeitalter erfolgte in den 90er Jahren des letzten
+            Jahrhunderts, vgl. z. B. Robinson and O’Hara (1996); van Reenen et al. (1996);
+            Robinson et al. (1998). Hierbei wurde aus der bio-informatischen Phylogenie viel
+            Methodik entlehnt und die meisten Programme, die bis heute zur Berechnung und /
+            oder Visualisierung in der automatisierten Stemmatologie eingesetzt wurden,
+            stammen aus der Bio-Informatik. Dort herrschen andere Foci, die zu bis dato in
+            der Stemmatologie nicht bekannten neuen Visualisierungen geführt haben (s. u.).
+            Der vorliegende Artikel bezieht sich im Kern nicht auf die digitalen Methoden
+            der Berechnung von Similaritäten in Stemmata, sondern auf die dem auch in der
+            manuellen Stemmatologie folgende Umsetzung in eine geeignete Visualisierung. 
+            
+              
+              
+                Abb. 1: Frühes Stemma, nach O’Hara (1996), aus H. S. Collin
+                und C. Schlyter, 1827, Corpus Iuris Sueo-Gotorum Antiqui, Z Haeggstrom,
+                Stockholm,1. 
+              
+            
+            
+              Geschichte der Visualisierung 
+              Die Geschichte der Visualisierung eines Stemmas oder von Stammbäumen läuft
+                parallel zur allgemeinen Geschichte der Stemmatologie, weist jedoch Unterschiede
+                zu den anderen Trees-of-history, wie sie O’Hara (1996) getauft hat, auf. Zum
+                Beispiel wurde der buchstäbliche Baum selber zwar sowohl in der Sprachevolution,
+                als auch in der Phylogenie zur Illustration herangezogen, nach bestem
+                Autorenwissen nicht (wenn überhaupt wesentlich seltener) jedoch in der
+                Stemmatologie. Bereits Schlyter benutzt 1827 Kreise als
+                Manuskriptrepräsentatoren und unterlegt den Baum mit einer Zeitskala, die jedoch
+                für das Gros der Stemmata nicht üblich ist. Wenige Konventionen sind in der
+                Philologie für Stemmata allgemein verbindlich. Griechische Buchstaben
+                repräsentieren verlorengegangene Manuskripte; Kontamination, der Prozess zwei
+                Vorlagen für eine Kopie zu benutzen wird durch eine gestrichelte Kante von einem
+                zweiten anzestralen Manuskript her symbolisiert. Seit dem Übergang ins digitale
+                Medium werden Visualisierungen publiziert, die parallel zu biologischen
+                Darstellungen die Wurzel ins Zentrum, aber nicht an den Kopf der Darstellung
+                rücken. Diese aus der Phylogenie entlehnte Darstellungsweise beruht
+                zugegebenermassen auf anderen Foci der Phylogenie, für die die Similarität der
+                Blätter im Mittelpunkt steht, während die Stemmatologie ebenso an den
+                Zwischenknoten interessiert ist. Die Darstellung in Abbildung 2 zeigt ebenfalls
+                eine farbliche Kennzeichnung von Manuskriptgruppen. Die vielfältigen
+                Möglichkeiten der digitalen Darstellung, wie z. B. dieses farbliche Unterlegen
+                sind jedoch noch nicht konventionalisiert.
+                  
+                    
+                
+                  Abb. 2: Ein Stemma, das von bio-informatischer Software
+                  (SplitsTree) generiert wurde, Howe et al. (2001). 
+                  
+                
+                
+                  Dynamisches Stemma 
+                  Im digitalen Medium sind Visualisierungen und Berechnungen möglich, die im
+                    Printzeitalter schlichtweg nicht realisierbar gewesen sind. Was die
+                    Stemmatologie angeht, bezieht sich dies auf die Möglichkeit dynamischer
+                    Stemmata. Dynamische Stemmata sind z. B. solche Stemmata bei denen das
+                    dynamische Stemma sich aus mehreren Unterstemmata S 0 , ..,
+                    S n zusammensetzt, wobei jedes dieser Unterstemmata einen
+                    Zeitpunkt ti in der Genese des endgültigen Stemmas repräsentiert. Auf diese
+                    Weise können auch Zyklen, wie sie von Andrews and Mace (2013) angesprochen
+                    wurden genetisch analysiert werden. Jedes Mal, wenn also eine Manuskriptkopie
+                    angefertigt wurde, entspricht dies einem neuen Zeitpunkt ti und damit einem
+                    neuen Unterstemma S i , welches de facto dem Stemma S i−1 plus einer Kante (dem Kopierprozess) sowie eines Knotens
+                    (des neuen Manuskriptes) entspricht. Entsprechend lassen sich Phänomene wie der
+                    Verlust von Manuskripten, z. B. durch eine Bücherverbrennung oder Kontamination
+                    einbinden. 
+                    Die dynamische Darstellung, s. beispielhaft Abbildung 3 ist eine wichtige
+                      Innovation, die im Printzeitalter für jedes Teilstemma eine eigene Abbildung
+                      erfordert hätte, wobei diese Abbildungen bis auf ein einziges Detail einander
+                      geglichen hätten. Eine solche Darstellung wurde nach bestem Wissen des Autors
+                      daher nicht, definitiv nicht als Standard produziert. Eine Posterpräsentation
+                      als Printmedium kann jedoch mit Farben oder aufeinanderfolgenden Einzelbildern
+                      die Animation simulieren und digital literaten Betrachtern so einen Eindruck des
+                      digitalen Erscheinungsbildes vermitteln. Epistemologisch ist der Übergang von
+                      einem statischen Stemma zu einem dynamischen gleichzeitig ein Desideratum und
+                      eine Aufgabe der digitalen Geisteswissenschaften. Die digitalen
+                      Geisteswissenschaften leisten hier den Übergang vom Print ins digitale Zeitalter
+                      in der Weise, dass die Möglichkeiten des Digitalen erfasst und bestmöglich zur
+                      Erweiterung oder auch Transformation der disziplinenspezifischen Grundlagen,
+                      Methoden und Werkzeuge für den hermeneutischen Prozesses umgesetzt werden.
+                      Gleichzeitig emanzipiert sich das digitale Stemma hierbei vom statischen
+                      Printgegenpart, indem es die bloße Nachahmung des alten im neuen Medium
+                      überkommt. Die Dynamisierung von Bäumen ist eine digitale Bereicherung nicht nur
+                      für die Stemmatologie, sondern auch für die Phylogenie und Sprachevolution und
+                      bietet auf Anhieb mehr visuelle Information als ein statisches Stemma. Durch die
+                      Identifikation der Wurzel eines Stemmas, die z. B. durch die Nutzung
+                      paläographischer Gegebenheiten forciert werden könnte, kann die dynamische
+                      Animation operationalisiert werden oder aber man legt eine manuell erarbeitete
+                      Genese zu Grunde. Das Stemma in Abbildung 3 wurde mit der Software LaTeX
+                      (Packete tikz und animate) erstellt und durch GIMP in ein gif übertragen. Der
+                      Vorteil eines animierten Stemmas ist es dank des Überganges von einem statischen
+                      Bild des Endzustandes des Stemmas zu einer animierten Sequenz
+                      aufeinanderfolgender Zustände des Stemmas im selben visuellen Raum das intuitive
+                      Verständnis der Stemmagenese zu fördern oder vielleicht sogar erst zu
+                      ermöglichen.
+                        
+                          
+                        
+                    
+                  

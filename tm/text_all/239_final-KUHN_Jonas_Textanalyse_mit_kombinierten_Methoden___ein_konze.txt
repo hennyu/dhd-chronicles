@@ -1,0 +1,71 @@
+
+
+Einleitung
+Die Zahl und Intensität der Aktivitäten im interdisziplinären Spektrum der 
+                    Digital Humanities (DH) bzw. 
+                    Computational Social Science ist in den vergangen 5-10 Jahren enorm angewachsen. Nicht zuletzt dank eines undogmatischen Selbstverständnisses der Forschungscommunity basieren die Aktivitäten auf einem Methodenpluralismus, dem eine ebenso facettenreiche Methodenreflexion entspricht. Gleichwohl ist es für die wissenschaftliche Praxis unerlässlich, dass sich Teilcommunities, die ein vergleichbares Erkenntnisinteresse innerhalb des DH-Spektrums verfolgen, über den konzeptuellen Rahmen sowie die aus ihm folgenden Maßstäbe verständigen, die sie an ein methodisch valides Vorgehen anlegen. 
+                
+
+
+Forschung mit kombinierte komputationell/geisteswissenschaftlichen Methoden
+Dieser Beitrag fokussiert auf denjenigen Teilbereich der DH, der sich zum Ziel setzt, adaptierbare datenorientierte Computermodelle methodisch adäquat in kombiniert komputationell/geisteswissenschaftliche Arbeitspraktiken zu integrieren. Methodologisch zielt diese Teildisziplin also darauf ab, Forschungsfragen aus einem geisteswissenschaftlichen Kontext mit kombinierten Methoden (bzw. mit “mixed methods”) adäquat bearbeiten zu können. Basierend auf eigenen Erfahrungen und dem Austausch innerhalb der DH-Community ist unsere Einschätzung, dass Mitglieder von Forschungsteams, die im Spektrum der komputationell/geisteswissenschaftlichen Methodenkombination eingehende Projekterfahrung gesammelt haben, eine ausdifferenzierte Wahrnehmung der zu kombinierenden Arbeitspraktiken entwickelt haben. Ein methodologischer Metadiskurs, der eine enge Verzahnung der kombinierten Methoden thematisiert, findet jedoch nur in engen Zirkeln – häufig projektintern – statt. Für neu etablierte Projektkooperationen ist es daher nach wie vor schwierig, Workflows aufzusetzen, die ein reflektiertes Vorgehen garantieren. Zudem wird für unterschiedliche methodische Komponenten die jeweilige Adäquatheit häufig nicht auf dem gleichen Reflexionsniveau diskutiert: so kann für die “komputationelle” Praxis, das Modellverhalten im Rahmen einer Evaluation und Fehleranalyse zu reflektieren, auf klarere Konventionen aufgebaut werden als etwa für ein Hinterfragen der Annahmen zum Interpretationskontext der untersuchten Texte, die mit der Operationalisierung zentraler Analysekategorien einhergehen.
+                
+Es erscheint uns daher an der Zeit, intensiver über einen geeigneten konzeptionellen Rahmen für Arbeiten aus einem der DH-Teilbereiche zu diskutieren, in denen kombinierte Methoden zum Einsatz kommen – einen Rahmen, der eine gleichermaßen adäquate Reflexion für alle einfließenden Vorannahmen ermöglicht und zudem einfach genug darstellbar ist, dass sich ein methodisch adäquater Workflow mit vertretbarem Aufwand und ohne Brüche konstruieren lässt. 
+
+
+Vier Aspekte des konzeptionellen Rahmens für die Methodenkombination 
+In diesem Beitrag stellen wir Kernpunkte eines generalisierten arbeitspraktischen Vorgehensmodells dar, das wir aus den Erfahrungen des Stuttgarter 
+Zentrums für reflektierte Textanalyse (CRETA) heraus entwickelt haben, in dem Beteiligte aus einer Reihe von unterschiedlichen Textwissenschaften und Computerwissenschaften kooperieren. Wir beschränken den Forschungsgegenstand auf Texte, öffnen den Raum aber für sehr unterschiedliche Arten von Fragestellungen: eine literaturwissenschaftliche Auseinandersetzung mit (poetischen) Primärtexten soll ebenso abgedeckt werden wie die Analyse von wissenschaftlichen Diskursen (etwa in der Philosophie) oder von Texten als Quellen für historische oder sozialwissenschaftliche Untersuchungen. Eine paradigmatische Auswahl erster Forschungsresultate der am Zentrum angesiedelten Projekte bietet der Band Kuhn/Pichler/Reiter (erscheint).
+
+
+  Die Motivation für den vorgeschlagenen konzeptionellen Rahmen liegt nicht vordringlich in einer deskriptiven wissenschaftstheoretischen Betrachtung. Vielmehr soll der Rahmen Ansatzpunkte für die konkrete Praxis bieten – etwa für 
+  Best-Practice-Vorschläge. Wir fokussieren auf vier ineinandergreifende Aspekte, die für die DH zentral sind. Keiner dieser Aspekte ist grundsätzlich neu für die Methodendiskussion – hier geht es jedoch um eine handhabbare Gesamtkonzeption.
+
+Als konkrete Illustration des Vorgehens mögen Arbeiten aus dem QuaDramA-Projekt dienen (Krautter/Pagel 2019, Krautter et al. 2018): ein Korpus von deutschsprachigen Dramen wird mit kombinierten Methoden erschlossen; ein exemplarischer Analyseschritt dabei liegt in der Klassifikation von Figuren nach bestimmten Typen. Einige Figurentypen sind bereits literaturwissenschaftlich etabliert (zärtlicher Vater) oder lassen sich relativ treffsicher aus der Figurentafel (Tochter) oder den Metadaten (Titelfigur) extrahieren. Andere Typen wie z.B. die Protagonistin bzw. der Protagonist entziehen sich einer aus unmittelbar verfügbaren Texteigenschaften oder Metadaten ableitbaren Zuweisung, sind jedoch von Bedeutung für literaturhistorische Betrachtungen (etwa für die Frage, inwieweit Emilia Galotti als Titelfigur aus G. E. Lessings bürgerlichem Trauerspiel (1772) den Status einer Protagonistin hat). Eine Annäherung an derartige Kategorien mit kombinierten Methoden kann ausgehend von klaren Fällen eine vorläufige Operationalisierung ansetzen, darauf aufbauend datenbasierte Computermodelle erzeugen und die Modellvorhersagen auf dem Gesamtkorpus in den Prozess einer Verfeinerung der Operationalisierung einfließen lassen.
+
+
+ Abbildung 1: Typisches Vorgehen bei der komputationellen Modellierung nicht-trivialer Kategorien in der DH-Textanalyse
+
+
+
+
+
+Als Ausgangspunkt skizziert Abbildung 1 ein DH-Vorgehen, das sich bei nicht-trivialen Modellierungsaufgaben etabliert hat – in Anlehnung an ausgeprägte methodische Konventionen in der Korpus- und Computerlinguistik (vgl. u.a. Hovy/Lavid 2010, Kuhn/Reiter 2015, Stefanowitsch 2018, Kuhn 2019): Die Analysekategorie, die im Rahmen einer geisteswissenschaftlichen Gesamtfragestellung angewendet werden soll, wird konzeptuell operationalisiert – gängiger Weise in Form von präzisen Annotationsrichtlinien. Der erste zentrale Aspekt für eine effektive Praxis der Methodenkombination liegt in der 
+                    (I) Anwendung der Annotationsrichtlinien auf ein geeignetes Korpus von Referenzdaten. Die Referenzannotation kann anschließend durch die datenbasierte Entwicklungsmethodik der Computerwissenschaften für die Modelloptimierung herangezogen werden: sie fixiert das Ziel für eine Optimierung der Vorhersagekraft von möglichen Modellarchitekturen und deren Parametrisierungen.
+
+Das bislang geschilderte Vorgehen fokussiert ausschließlich auf die technische Optimierung der Vorhersagemodelle für fixierte Referenzdaten. Ein effektiver konzeptioneller Rahmen für die Methodenkombination muss daneben Prozessen Raum geben, die eine sukzessive Verfeinerung der Analysekategorien vornehmen, um einem geisteswissenschaftlichen Fragenkomplex gerecht zu werden. Hier sind mehrere Aspekte zu unterscheiden: 
+                    (II) eine Inspektion der Vorhersageergebnisse der (technisch optimierten) Modelle kann empirische Indikatoren zu Tage fördern, die Anlass zu einer 
+                    Revision der Operationalisierung geben. Neben dem Entwicklungszirkel auf der rechten Seite muss es also einen Zirkel auf der linken Seite geben. Ein solches Revisionsmodell ist im Rahmen eines 
+                    Prototyping-Ansatzes bzw. in der agilen Softwareentwicklung verbreitet – unabhängig davon, ob sich die Zielkategorisierung selbst in einem technischen Rahmen bewegt oder ob sie einem von der computerwissenschaftlichen Methodik abweichenden Rahmen entstammt.
+
+Letzteres ist allerdings bei einer komputationell/geisteswissenschaftlichen Methodenkombination der Fall. Die Gütekriterien, die zur Revision einer geisteswissenschaftlichen Analysekategorie führen, können grundsätzlich anderen methodischen Prinzipien und Vorannahmen folgen. Eine probehalber vorgenommene Operationalisierung eines vielschichtigen Konzepts in der Textanalyse (z.B. Protagonisten in Dramen) mag sich zum Beispiel als unergiebig erweisen, obgleich die komputationelle Umsetzung entsprechend den Referenzdaten eine hohe Vorhersagequalität ermöglicht. 
+                    (III) der textanalytische Inferenzschritt (für den eine Computermodellierung vorgenommen wird) und die 
+                    datenbasierte Modellierung sind jeweils in 
+                    eigene methodische bzw. arbeitspraktische Rahmen eingebettet; zentrale Aufgabe für die „Mixed methods“-Forschung ist die Spezifikation von adäquaten Übersetzungsschritten. 
+                
+
+
+Abbildung 2: Konzeptionelle Trennung der arbeitspraktischen/methodischen Rahmen für einen textanalytischen Inferenzschritt und seine datenorientierte Modellierung; beide folgen eigenen Zyklen der Verfeinerung/Weiterentwicklung 
+
+
+
+
+
+Abbildung 2 zeigt entsprechend eine stärker ausdifferenzierte Skizze des konzeptionellen Rahmens. Der vierte Aspekt ist hier bereits angedeutet: 
+                    (IV) Ein bestimmter 
+                    Analysebefund zu einem Text hinsichtlich einer Analysekategorie ist 
+                    stets in Bezug auf einen angenommen Interpretationskontext (mit potenziell vielfältigen relevanten Dimensionen) zu sehen. Ein textanalytischer Inferenzschritt (die innere blaue Box) wird also dargestellt als Ableitung eines Befundes aus einem Text, gegeben eine bestimmte Instantiierung der Kontextfaktoren, für die teilweise eigene Analysekategorien angesetzt werden müssen. (Zum Beispiel könnte die Operationalisierung der Kategorie 
+                    Protagonist verwoben sein mit einer Analyse der aktiven und der passiven Präsenz der Figur, welche jeweils als eigene Kategorien zu operationalisieren sind.) 
+                
+Wie Abbildung 2 suggeriert findet die Übersetzung aus der geisteswissenschaftlichen in die Sphäre der datenbasierten Computermodellierung sinnvollerweise für einzelne Inferenzschritte separat statt (obgleich wie in Fn. 5 angedeutet die Computerarchitektur für einen Schritt selbst technisch komplex sein kann). Es wird deutlich, dass bei der Bearbeitung von nicht-trivialen Fragestellungen rasch ein vielschichtiges Geflecht von Komponenten mit unterschiedlichem Status entsteht. Ein Hauptziel der hier vorgeschlagenen Konzeption liegt darin, das Augenmerk auf genau jene Statusunterschiede zu lenken, die für ein methodisch reflektiertes Vorgehen zu relevanten Vorannahmen relevant sind. 
+Strukturell sind die Elemente unserer Konzeption trotz der darstellbaren Komplexität vergleichsweise einfach – sie konzentrieren sich auf die Aufgabe der methodenübergreifenden Übersetzung mittels der referenzdatengestützten Operationalisierung und komputationellen Modellierung. Für die konkrete arbeitspraktischen Projektroutine sollte also eine verhältnismäßig übersichtliche Sicht auf die relevanten Komponenten möglich sein. Die abschließende Abbildung 3 demonstriert jedoch, dass der konzeptionelle Rahmen bei Bedarf eine Schnittstelle zu einer sehr differenziert ausgearbeiteten wissenschaftstheoretischen Konzeption wie der von Danneberg/Albrecht 2017 bietet. (Aus Platzgründen können wir in diesem Abstract nicht auf Details eingehen.) Ein reflektiertes Vorgehen kann also auch auf fundamentalere Fragen etwa zur Problematisierung von divergierenden Wissensansprüchen über Disziplingrenzen hinweg eingehen.
+
+
+Abbildung 3: Bei Bedarf können die Wissensbereiche detailliert ausspezifiziert werden, die in die Methodenkombination gehen – aufbauend auf der wissenschaftstheoretischen Konzeption disziplinärer Praxis als Bearbeitung eines wissenschaftstheoretischen Problems nach Danneberg/Albrecht 2017 (mit den Komponenten (i) problematisierte Wissensansprüche, (ii) Wertungskomponenten, (iii) Fragenkomplex)
+
+
+
+
+
+
+

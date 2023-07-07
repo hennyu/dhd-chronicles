@@ -1,0 +1,156 @@
+
+            Die Medienspezifik zeitbasierter performativer Künste, wie Musik, Theater, Tanz und auch Film, stellt Analyseansätze, die nach der ästhetischen Erfahrung fragen, vor zahlreiche Herausforderungen: Es geht in diesen Ansätzen nicht um die ‘objektiv-messbaren’ Eigenschaften der Artefakte und Aufführungen, sondern darum, die intersubjektive Erfahrungsdimension in den Blick zu nehmen – sie zielen auf das Denken und Fühlen, das im Filme-Sehen (Kappelhoff 2018) oder Musik-Hören entsteht. Ein tradiertes analytisches Vorgehen besteht in der Dekonstruktion solcher Erfahrungsprozesse in detaillierte Beschreibungen zeitlicher Prozesse – von Partituren über Tanznotationen bis hin zu mehrdimensionalen Einstellungsprotokollen. Solche Instrumente und Techniken rücken vermehrt in den Fokus der Digital-Humanities-Forschung, wobei die Verbindung ästhetischer Theorien und Techniken der Datengewinnung, -haltung, -verarbeitung und -aufbereitung eine der zentralen Herausforderungen des Feldes markiert (Arnold et al. 2019, Flückiger/Halter 2020, Freedman et al. 2019). Drei Schlüsselaspekte eines solchen Methodendesigns werden im Folgenden anhand der Begriffe der 
+                Synchronizität, 
+                Prozessualität und 
+                Komparabilität beleuchtet. Audiovisuelle Bilder werden erst dann analytisch handhabbar, wenn sie auf unterschiedlichen Beschreibungsebenen gleichzeitig erfasst werden, um dann deren Zusammenspiel in den Blick zu nehmen (Synchronizität). Dabei sind einzelne Beschreibungen immer kontextabhängig und nicht objektorientiert, sondern auf die zeitliche Entfaltung eines Ganzen bezogen (Prozessualität). Das Forschungsinteresse ist dabei selten auf ein einzelnes Werk begrenzt, sondern richtet sich an ein Genre, einen Themenkomplex oder einen audiovisuellen Diskurs (Komparabilität). Es besteht so die Anforderung nach komplexen, vielschichtigen Beschreibungen, die gleichzeitig jedoch auf einen größeren Korpus bezogen werden können. Dies übersteigt häufig die Kapazitäten einzelner Forscher*innen, jedoch ermöglichen systematisierte filmanalytische Annotationen gleichermaßen die Vergleichbarkeit der analytischen Beobachtungen mehrerer Annotator*innen, als auch die Integration (semi-)automatisch erzeugter Annotationen.
+            
+            Einer solchen Korpusstudie widmete sich die Nachwuchsgruppe “Affektrhetoriken des Audiovisuellen” (2016–2021, Freie Universität Berlin/ Hasso-Plattner-Institut, kurz: “AdA”), die den audiovisuellen Diskurs zur globalen Finanzkrise (nach 2007) hinsichtlich wiederkehrender affektrhetorischer Muster untersuchte. Das Projekt gründete auf theoretischen Annahmen zum Filme-Sehen, dem Verhältnis der Wahrnehmung von Zuschauenden und sich zeitlich entfaltenden audiovisuellen Bilder und knüpfte an die eMAEX-Methode an (Kappelhoff et al. 2011-2016), die auf die analytischen Grundprinzipien von Segmentierung und Qualifizierung zurückgreift, um Erfahrungsfigurationen zu rekonstruieren (Bakels et al. 2020a, 2020b). 
+            Um eine feingliedrige und multidimensionale Beschreibung mit interpersoneller Annotation für einen größeren Korpus leisten zu können, galt es das filmanalytische Beschreibungsvokabular in der AdA-Filmontologie maschinenlesbar zu systematisieren (für eine ausführlichere Darstellung siehe Bakels et al. 2020c). Das resultierende systematische Vokabular 
+                orientiert sich ebenso an methodischen Standardbegriffen der Filmwissenschaft (z.B. Einstellungsgrößen oder Montagefiguren), wie an ansatzspezifischen Fachbegriffen der eMAEX-Analyse (z.B. ‘Ausdrucksbewegung’ oder ‘Dynamiken des Bildraums’). Die AdA-Filmontologie umfasst 502 einzelne Annotationswerte, die 78 Annotationstypen zugeordnet sind, die wiederum auf 8 Beschreibungsebenen wie Akustik, Montage, Bildkomposition oder Kamera organisiert sind (siehe Abb. 2).
+            
+            Mit einem auf Basis der AdA-Filmontologie generierten Template konnten in der Annotationssoftware 
+                Advene (Aubert/Prié 2005) semantisch strukturierte Linked Open Data-Annotationen erstellt werden. Insgesamt wurden mehr als 125.000 Annotationen manuell erstellt für 4 komplette Filme, 2 Webvideos, Beiträge aus 35 Nachrichtensendungen sowie einzelne Szenen aus 10 weiteren Filmen. Darüber hinaus wurden über 440.000 Annotationen für 76 Filme sowie 315 Nachrichtensendungen automatisch generiert. Um die affektrhetorischen Muster auf Grundlage dieser manuellen und automatischen Annotationen allerdings korpusübergreifend analysieren zu können, insbesondere hinsichlich ihrem inhärenten multidimensionalen Zusammenspiel, d.h. auf unterschiedlichen Beschreibungsebenen, und kontextabhängig im zeitlichen Verlauf, war ein Framework zur Exploration des umfassenden Annotationsdatensatzes notwendig, für das verfügbare Annotations- und Visualisierungssoftware (wie Advene, ELAN, Dive+ der Clariah Media Suite) nicht ausgelegt war. Die zeitgleich entwickelte VIAN WebApp (https://www.vian.app/) legt im Zusammenspiel mit der VIAN-Annotationssoftware wiederum den zentralen Untersuchungsfokus auf die Farbanalyse.
+            
+            
+                
+                    Entwicklung & Architektur
+                
+                Der AdA Annotation Explorer wurde entwickelt, um sämtliche im AdA-Projekt erstellten zeitbasierten Videoannotationen zu verwalten und über eine webbasierte Oberfläche für die Exploration und Analyse zugänglich zu machen. Hierbei stand einerseits im Fokus, alle im Projekt entstehenden Daten zur freien Nutzung und Weiterverwendung zu veröffentlichen und andererseits die Anforderungen aus der korpusübergreifenden Filmanalyse umzusetzen, um Annotationsdaten gezielt nach bestimmten Kriterien abzufragen, zu filtern und die Ergebnisse kontextabhängig (d.h. in ihrer Einbettung in szenische Kompositionen) zu visualisieren.
+                
+                Der Annotation Explorer wurde über eine entkoppelte Client-Server-Architektur mit RESTful API (Masse 2011) realisiert (siehe Abb. 1), die auf offene Standards für den Datenaustausch und auf Verwendung von Open-Source-Komponenten setzt.
+                
+                    
+                    Abb. 1: Architektur des Annotation Explorers
+                
+                Die Serverkomponenten im Backend sind für die Speicherung der Daten in einer Graphdatenbank (Triplestore) und für die Bereitstellung von Funktionen zum Datenabruf (REST-API) zuständig. Die Clientkomponenten des Frontends laufen ausschließlich im Browser und bilden die Benutzerschnittstelle, die eine Zusammenstellung von Annotationen mittels Eingabe von Auswahlkriterien (Filme, Szenen, Annotationswerte, etc.) ermöglicht und die Filterung und Weiterverarbeitung der Ergebnisse der REST-API übernimmt. Die aufbereiteten Daten werden mit der Open-Source-Software FrameTrail visualisiert, die es erlaubt, interaktive Videos und damit verlinkte Inhalte direkt im Browser anzusehen.
+                
+                
+                    
+                        Datenhaltung
+                    
+                    Das Datenmanagement des Annotation Explorers folgt den Linked Open Data-Prinzipien, um die in aufwändiger Arbeit erstellten Annotationen und Metadaten als maschinenlesbare, offene Daten für die Nachnutzung zu veröffentlichen. Sie werden mithilfe von Openlink Virtuoso gespeichert und mit LodView angezeigt. Der öffentliche SPARQL-Endpunkt erlaubt auch das Abfragen und Nutzen der Daten mit selbst entwickelten Queries. Die Nutzung von W3C Standards, die Bereitstellung von öffentlichen URIs für Annotationsdaten, Metadaten und Vokabular, sowie die dokumentierte Ontologie, ermöglichen die Nutzung der Projektergebnisse im Sinne der FAIR Data Prinzipien.
+                    
+                    Zu den Daten des Projekts gehört die 
+                        AdA-Filmontologie, ein systematisches Vokabular auf Basis von OWL und RDF, welches filmanalytische Begriffe – geordnet nach Annotationsebenen, Annotationstypen und Annotationswerten (siehe Abb. 2) – für feingranulare semantische Videoannotationen definiert und per URIs erreichbar macht.
+                    
+                    
+                        
+                        Abb. 2: Klassenstruktur der AdA-Filmontologie am Beispiel kameraspezifischer Konzepte
+                    
+                    Die 
+                        Korpus-Metadaten umfassen beschreibende Information (wie z.B. Titel, Laufzeit, Veröffentlichungsjahr, Regisseur) zu allen Filmen im Videokorpus zur globalen Finanzkrise. Die Metadatenfelder werden mit bestehenden Vokabular-Properties aus DBpedia, schema.org und Dublin Core kodiert und sind ebenfalls per URI abrufbar. Der Korpus umfasst 391 Filme in den Kategorien Spielfilme, Dokumentarfilme und Nachrichten.
+                    
+                    
+                        Semantische Videoannotationen sind der Hauptteil der Daten, die im Triplestore gespeichert werden. Sie erfassen die zeitbezogenen Anmerkungen zu den Filmen auf den unterschiedlichen Beschreibungsebenen unter Verwendung des systematischen Vokabulars. Das Annotationsmodell basiert auf dem W3C Web Annotation Data Model und der Media Fragments URI Spezifikation (siehe Abb. 3).
+                    
+                    
+                        
+                        Abb. 3: Beispielannotation einer Kamerafahrt für den Film “Company Men” als RDF-Graph visualisiert.
+                    
+                
+                
+                    
+                        Datenabruf
+                    
+                    Die im Projekt entwickelte REST-API bildet die Schnittstelle zwischen dem User Interface und den im Triplestore gespeicherten Videoannotationen, Metadaten und Ontologiedaten. Sie bietet über einen Web-Dienst per HTTP eine Reihe von Funktionen an, die entsprechend der Anfrageparameter SPARQL-Datenbankabfragen generieren, ausführen und direkt im Browser weiterverarbeitbare JSON bzw. JSON-LD Formate zurückliefern. Sie ist in Java implementiert und verwendet die Frameworks Apache Jena, Javalin und JSONLD-JAVA. Neben der Bereitstellung der Ontologiedaten und der Verwaltung der Metadaten, ist die Hauptaufgabe der REST-API, die feingliedrige und multidimensionale Beschreibung der Filme korpusübergreifend anhand bestimmter Kriterien abrufbar und durchsuchbar zu machen.
+                    
+                    Videoannotationen können pro Film, pro Szene und pro Annotationstyp abgerufen werden (siehe Abb. 4). Die REST-API ermöglicht außerdem eine Volltextsuche nach einem oder mehreren Schlüsselwörtern und liefert alle Trefferannotationen korpusübergreifend zurück (Beispiel: “crisis”, nur ganze Worte, nur im Annotationstyp ‘Dialogtext’). Um Muster im Korpus zu finden, ist eine Value Search nach ein oder mehreren Annotationswerten möglich. Dabei werden die Stellen zurückgeliefert, bei denen Werte 
+                        zeitgleich (auch teilweise überlappend) auftreten (z.B. Musikstimmung “traurig” zusammen mit nahen Einstellungsgrößen). 
+                    
+                    
+                        
+                        Abb. 4: Veranschaulichung des Datenabrufs für drei Annotationstypen aus zwei Szenen eines Films
+                    
+                
+                
+                    
+                        Frontend (Zusammenstellung & Visualisierung)
+                    
+                    Die 
+                        Zusammenstellungskomponente im Annotation Explorer Web-Frontend erlaubt der Benutzer*in Anfragen an die Datenbasis zu stellen. Dafür werden Formularfelder zur Film-, Text-, Bilder- und Wertesuche (siehe Abb. 5) mit nutzerfreundlicher Autocomplete-Funktion angeboten, um ein schnelles Auswählen aus der großen Menge von Metadaten zu ermöglichen. Entsprechend der Nutzereingaben werden REST-API Aufrufe erzeugt, Annotationen geladen und für den Arbeitsbereich zusammengestellt.
+                    
+                    
+                        
+                        Abb. 5: Übersicht der vier Anfragemöglichkeiten im Annotation Explorer
+                    
+                    Filmmetadaten und Ontologiedaten werden im Filterbereich in zwei Baumansichten (Facettensuche) dargestellt, geben Aufschluss darüber, wie viele Annotationen in den jeweiligen Kategorien gefunden wurden, und ermöglichen das weitere Einschränken des Suchergebnisses.
+                    Die kontextabhängige 
+                        Visualisierung der Annotationen erfolgt in einer Timeline-Darstellung zusammen mit einem Videoplayer, bei der angefragte Annotationstypen als Spuren dargestellt werden (siehe Abb. 6). Für diesen Zweck wird FrameTrail eingesetzt, das im Rahmen des Projekts durch den Autor Joscha Jäger hinsichtlich der Darstellung spezieller Annotationstypen, Sortiermöglichkeiten, Szenen- bzw. Filmvergleich und Exportmöglichkeiten erweitert wurde.
+                    
+                
+            
+            
+                
+                    Anwendung & Analyse
+                
+                Das graphische User-Interface des Annotation Explorers – der sogenannte Workspace – ist zentral für die Nutzer*inneninteraktion, das meint in erster Linie Film- und Medienwissenschaftler*innen ohne Programmierkenntnisse (siehe Abb. 6). Dabei kommen die drei zu Beginn genannten Schlüsselaspekte des Methodendesigns in der konkreten Nutzung des Annotation Explorers zum Tragen.
+                
+                    
+                    Abb. 6: Workspace des Annotation Explorers
+                
+                
+                    
+                        Prozessualität
+                    
+                    Gegenstand der eMAEX-basierten Filmanalyse ist eine sich in der Wahrnehmung entfaltende Bewegung. In diesem Kontext ist nicht nur die enge Verknüpfung der Annotationen mit dem interaktiven Videoplayer herauszustellen, der die direkte Rückbindung der Analysebeobachtungen an das Bewegtbild ermöglicht und dabei deren Einbettung erlebbar macht, vielmehr sind die Einzelannotationen nicht als statische Eigenschaften oder isolierte Zeitpunkte von Interesse, sondern stets in der zeitlichen Entfaltung und in Bezug auf größere Zeitsegmente (etwa szenische Kompositionen). 
+                    Entscheidend ist dabei auch die Skalierbarkeit der Ansicht: so lassen sich sowohl einzelne Szenen als auch ganze Filme durch eine Szenenauswahlleiste oder freies Zoomen in den Blick nehmen.
+                   
+                            
+                        
+                        
+                            
+                            Abb. 7: Optischer Fluss-Makroprofil eines Films (oben) und Detailansicht einer Szene (unten)
+                    
+                    Mit dem Wechsel zwischen Makro und Mikro in der Ansicht ganzer Filme können Schlüsselsequenzen (z.B. dramaturgische Umschlagpunkte) anhand Extrema einzelner Analysedimensionen (etwa extreme Nahaufnahmen, besonders (un-)bewegte Abschnitte, sehr leise Passagen oder schnelle Wortwechsel auf Ebene des Dialogs) identifiziert werden.
+                    Der Annotation Explorer ist so gestaltet, dass nicht der einzelne analytische Befund in Annotationsform grafisch isoliert dargestellt wird, sondern stets als Teil eines komplexen Gefüges. So lassen sich durch unterschiedliche Darstellungsoptionen beispielsweise Einstellungsgrößen als farbiges Balkendiagramm anzeigen, bei der die Höhe des Balkens Auskunft über die Nähe der Kamera zum Referenzobjekt und die Breite Auskunft über die Dauer der einzelnen Einstellungen gibt (siehe Abb. 8). Auf diese Weise wird der Blick der Analysierenden auf den Prozess der Entfaltung im Hinblick auf spezifische Gestaltungsdimensionen gelenkt: Im Fall von Einstellungsgrößen die Modulation von Nähe-Distanz-Verhältnissen.
+                    
+                        
+                        Abb. 8: Darstellung einer Abfolge von Einstellungsgrößen
+                    
+                
+                
+                    
+                        Synchronizität
+                    
+                    Die Expressivität audiovisueller Bilder ist nicht auf eine Gestaltungsdimension zu reduzieren, sondern erst der Blick auf das Zusammenspiel unterschiedlicher Dimensionen gibt Aufschluss über die Affektdramaturgie einer Sequenz. So lassen sich im Annotation Explorer unterschiedliche Kombinationen von Annotationstypen zusammenstellen und über die Baumansichten (Facettensuchen) detailliert anpassen (siehe Abb. 9).
+                    
+                        
+                        Abb. 9: Annotations-”Partitur” im Annotation Explorer.
+                    
+                    Es lässt sich beispielsweise untersuchen wie ein akustisches Phänomen (z.B. Einsatz und Taktung von Musik) mit einem optischen Phänomen (z.B. Schnittrhythmus) interagiert, dieses aufgreift, verstärkt oder konterkariert. Die FrameTrail-Implementation im Workspace bietet die Möglichkeit unterschiedliche Visualisierungsformen auf den so abgerufenen Annotationsdatensatz anzuwenden und mit wenigen Klicks unterschiedliche Annotations-”Partituren” zu erstellen. Diese können entweder über die URL geteilt und gespeichert, oder als offline verfügbare HTML-Pakete heruntergeladen werden.
+                
+                
+                    
+                        Komparabilität
+                    
+                    Die Untersuchungsperspektive des AdA-Projekts und die Frage nach affektrhetorischen Mustern zielte aber nicht nur auf einzelne Filme und Sequenzen, sondern korpusübergreifende vergleichende Analysen. Dazu galt es die Möglichkeit bereitzustellen, Analyseabfragen verschiedener Filme direkt nebeneinander zu legen ohne an Funktionalität (interaktiver Videoplayer, Filter- und Suchoptionen, Darstellungsoptionen) einzubüßen. So lassen sich in der Playeransicht zwei Filme bzw. Szenen nebeneinander anzeigen, während weitere Vergleichsfilme/-szenen durch seitliches Scrollen ins Bild gebracht werden können (siehe Abb. 10).
+                    
+                        
+                        Abb. 10: Vergleich zweier Filme.
+                    
+                    
+                    In einer Listenansicht können wiederum mehrere Filme und Szenen untereinander angezeigt werden (siehe Abb. 11).
+                    
+                        
+                        Abb. 11: Vergleich in der Listenansicht.
+                    
+                    Zur Entwicklung und Überprüfung von Analysehypothesen gibt es unterschiedliche Suchfunktionen: etwa die Value Search oder die Volltextsuche, die für die Suche nach Schlagworten oder erwähnten Personen im Dialog (sei es auf Basis manueller Transkripte, redigierter Untertitel oder automatischer Spracherkennungsalgorithmen) genutzt werden kann oder auch für die Ergebnisse von automatischen Image Captioning-Extraktoren, das Aufspüren wiederkehrender oder ungewöhnlicher Bildelemente.
+                    Eine weitere Möglichkeit ist die Reverse Image Search, bei der eine Bilddatei als Suchanfrage hochgeladen werden kann. Diese wird dann mit Keyframes jeder Einstellung des gesamten Korpus abgeglichen und die ähnlichsten Bilder werden mit Metadaten versehen ausgegeben (siehe Abb. 12).
+                    
+                        
+                        Abb. 12: Reverse Image Search im Annotation Explorer.
+                    
+                    Die jeweiligen Anfrageergebnisse lassen sich wiederum im Framework des Annotation Explorers mit weiteren Annotationen kombinieren und können somit innerhalb sich zeitlich entfaltender Dynamiken, die auf dem Zusammenspiel unterschiedlicher Dimensionen beruhen, analysiert werden.
+                    
+                
+            
+            
+                
+                    Forschungsperspektiven
+                
+                In den Pilotstudien zum audiovisuellen Diskurs zur globalen Finanzkrise (2007–) erwies sich der Annotation Explorer insbesondere im Hinblick auf die Korpusexploration und die Überprüfung von filmübergreifenden Forschungshypothesen als nützliches Werkzeug der Mustererkennung (im Sinne von Bakels et al 2020a, 115f). Im Kontext der Frage nach der audiovisuellen Gestaltung und Motivik gesellschaftlicher Krisenkommunikation in Nachrichten, Spiel- und Dokumentarfilmen bot das Framework neue Möglichkeiten der Exploration in unterschiedlichen Zusammenhängen. Werden einzelne Aspekte eines audiovisuellen Motivs durch die bereits implementierten (semi-)automatischen Erkenner erfasst, so ermöglichen diese das schnelle Auffinden weiterer Vorkommnisse. So zeigte eine Studie zum Stilmittel des “Brokerface”, dass Bildkompositionen von angespannten Gesichter von Aktienhändlern im Zusammenspiel mit Monitoren einen wiederkehrendes Topos in der Verhandlung der Frage nach den realen Auswirkungen virtueller Marktentwicklungen spielt (vgl. Scherer & Stratil (in Ersch.)). Eine weitere Studie zum Motiv der plötzlich hereinbrechenden BREAKING NEWS als Kipp- und Höhepunkt von Krisendramaturgien veranschaulicht hingegen wie das Zusammenspiel von automatischer Schnitt-, Bildbewegungs- und Lautstärkeerkennung Rhythmusprofile hervorbringt, die Aufschluss über deren affektive Dimension geben (Stratil, in Ersch.). Ein solcher dynamischer ‘Fingerabdruck’ einer Szene, der sich durch die (Darstellungs-)Prinzipien der Prozessualität, Synchronizität und Komparabilität in den Annotationsdaten als Muster zu erkennen gibt, ermöglicht es Aussagen zur Affektorientierung audiovisueller Sequenzen direkt am Material zu plausibilisieren und Charakteristika und Vergleichspunkte herauszuarbeiten. 
+                    Die grundlegende Architektur des Annotation Explorers ermöglicht die flexible Kombination von (semi-)automatischen und manuellen Annotationen. Werden Kernkompositionsprinzipien allerdings nicht durch (semi-)automatische Erkenner tangiert, ist die Analyse auf die zeitaufwändigeren manuellen Annotationen angewiesen. Der Nutzen des Frameworks im Bereich der Korpus-Exploration verschiebt sich dann hin zu mikroanalytischen Detail- und Vergleichsstudien, anhand derer nachvollzogen werden kann, wie kompositorische Prinzipien quer zu einzelnen Gestaltungsebenen als übergreifendes dynamisches Muster in Erscheinung treten. Es konnte so beispielsweise gezeigt werden, wie das Gefühl der Enttäuschung in einem Finanzkrisenfilm nicht als narrative Information zum Ausdruck kommt, sondern als filmische Ausdrucksbewegung (Bakels et al. 2020b).
+                
+                Die Architektur des Annotation Explorers ermöglicht die Verknüpfung semantischer Daten mit einer geisteswissenschaftlichen Perspektive auf die Expressivität audiovisueller Medien und stellt so Fragen nach der Anwendbarkeit solcher Technologien in qualitativen Ansätzen – nicht als Alternative, sondern als ergänzendes Instrument zur Weitung und Systematisierung des analytischen Blicks.
+            
+        

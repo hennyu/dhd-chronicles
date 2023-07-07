@@ -1,0 +1,217 @@
+
+
+Einleitung
+Die Ogham-Schrift ist eine in Irland und im westlichen Teil Britanniens (Wales und Schottland) vokommende antike Sammlung von Zeichen, die überwiegend auf (Grab-)steinen zur Dokumentation von Namen der Verstorbenen, ihrer Verwandtschafsbeziehungen oder auch für kleinere Geschichten verwendet wurde. Dabei stellt die Ogham-Systematik kein eigenständiges Alphabet, sondern eine Codierung in z.B. lateinische Alphabete dar.
+
+Der Ogham-Zeichensatz besteht aus 26 Buchstaben. Wörter bzw. Sätze sind jeweils von unten nach oben bzw. links nach rechts zu lesen. Die Zeichen
+werden neben einem zentralen Mittelstrich durch nach links (Aicme
+Beithe,
+ᚁᚂᚃᚄᚅ) bzw. rechts (Aicme hÚatha,
+ᚆᚇᚈᚉᚊ) abgehende
+rechtwinklige Striche charakterisiert. Durch schräge oder waagerechte
+Striche (oft auch Punkte), die den Mittelstrich durchkreuzen, werden
+Aicme Muine (
+ᚋᚌᚍᚎᚏ) und Aicme Ailme (
+ᚐᚑᚒᚓᚔ) dargestellt. Darüber
+hinaus gibt es sechs ergänzende Forfeda Zeichen (
+ᚕ ᚖᚗ ᚘᚙᚚ), welche im
+Mittelalter durch Lautveränderungen und Anpassungen an die lateinische
+Sprache hinzugefügt wurden. Das Ogham-Alphabet ist im Unicode
+Standard 
+(Range: 1680–169F) enthalten und gewährleistet so die Digitalisierbarkeit der Schrift. Eine der größten öffentlich zugänglichen Sammlungen von Ogham-Steinen befindet sich im Stone Corridor des University College Cork (UCC).
+
+
+
+  
+ Abbildung 1: Ogham Stone 4 im UCC Stone Corridor  (Florian Thiery, CC BY 4.0, https://commons.wikimedia.org/wiki/File:UCC_Stone_4.jpg) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Stand der Forschung
+
+Die Ogham-Schrift wurde in der Vergangenheit von verschiedenen
+Wissenschaftlern  erforscht. Nach der Entdeckung der Ogham-Schrift
+(Ferguson 1864) und der anschließenden Erstellung des Ogham-Alphabets
+(Graves et. al. 1878) datierte MacNeill (1929) einige der
+Ogham-Inschriften. Das wohl kompletteste Standardwerk findet sich in
+Macálister (1945, 1949). Dieser hat darin das weitverbreitete
+Nummerierungsschema CIIC etabliert. Neben weiteren Forschungen der
+Geschichtswissenschaft zum Inhalt der Ogham-Inschriften erstellte
+Forsyth (1997) ein erstes Korpus von 37 Inschriften. Das Ogham 3D Projekt
+scannt derzeit (155 Ogham Steine verfügbar) irische Ogham-Steine und stellt diese als Epidoc zur Verfügung.
+
+
+Die auf den Steinen transkribierten Inschriften können in `formula words` (FW) und `nomenclature words` (NW) unterschieden werden. Beispiele für FW
+sind MAQI
+ᚋᚐᚊᚔ (engl. son, z.B. CIIC 203) MUCOI
+ᚋᚒᚉᚑᚔ (engl. tribe/sept, z.B. CIIC 197), ANM
+ᚐᚅᚋ (engl. name, z.B. CIIC 206), AVI
+ᚐᚃᚔ (engl. descendant, z.B. CIIC 40), CELI
+ᚉᚓᚂᚔ (engl. follower/devotee, z.B. CIIC 215) und
+KOI
+ᚕᚑᚔ (engl. here is, z.B. CIIC 48).
+
+
+Die Nomenklatur der irischen Personennamen enthüllt Details der frühgälischen Gesellschaft. Beispiele für solche NW
+sind CUNA
+ᚉᚒᚅᚐ (engl. wolf/hound, z.B. CIIC 154) oder
+CATTU
+ᚉᚐᚈᚈᚒ (engl. battle, z.B. CIIC 58). Andere Namen
+weisen auf einen göttlichen Vorfahren hin. Der Gott Lugh (LUC
+ᚂᚒᚌ) oder das Wort ERC
+ᚓᚏᚉ (engl. heaven/cow) kommt in vielen Namen wie
+LUGADDON
+ᚂᚒᚌᚌᚐᚇᚑᚅ (vgl. CIIC 4) oder ERCAVICCAS
+ᚓᚏᚉᚐᚃᚔᚉᚉᚐᚄ (vgl. CIIC 196) vor. Elemente, die
+physikalische Eigenschaften beschreiben, sind ebenfalls üblich. Zum
+Beispiel DALAGNI
+ᚇᚐᚂᚐᚌᚅᚔ (engl. one who is blind, CIIC 119) oder
+DERCMASOC
+ᚇᚓᚏᚉᚋᚐᚄᚑᚉ (engl. one with an elegant eye, CIIC 46).
+
+
+
+Ansatz
+
+Wir stellen die Ogham-Steine, deren Inhalte, die Beziehungen der auf Steinen vermerkten Personen, ihre Stammeszugehörigkeiten und weitere Metadaten als Linked Data bereit und ermöglichen somit 
+deren Verarbeitung durch eine Reihe von
+Wissenschafts-Communities. Durch die Verwendung von Vokabularen wie
+Wikidata (Vrandečić et. al. 2014), FOAF (Brickley 2007) und Lemon
+(McCrae 2012) gewährleisten wir die Erstellung eines semantischen
+Wörterbuchs für Ogham, welches wir dynamisch aus Textquellen 
+mittels Natural Language Processing Verfahren der Keyword Extraktion 
+extrahieren. 
+Die für uns relevanten Keywords haben wir aus der Literatur gesammelt und in unserem Repository veröffentlicht.
+Die Erfassung der Ogham-Steine als Linked Data Ressourcen erlaubt es, durch Verknüpfung von Wissen und dessen Anreicherung folgende Forschungsfragen anzugehen:
+
+
+Klassifikation von Steinen (Familienhierarchie, Namensbeschreibung etc.)
+Visualisierung von Zusammenhängen (Verwandtschaftsbeziehungen, Stammesgrenzen) aus Linked Data generierten Karten
+Formale Erfassung und maschinenlesbare Kodierung von Ogham-Zeichen nach dem Vorbild von PaleoCodage (Homburg 2019)
+
+Als Datenbasis für die Analysen stützen wir uns auf eine
+Wikidata-Retrodigitalisierung des CIIC Corpus von Macálister (1945, 1949), Epidoc-Daten des Ogham in 3D Projekts, sowie auf die Celtic Inscribed Stones Project (CISP) Datenbank, die uns dankenswerterweise von Dr. Kris Lockyear zur Verfügung gestellt wurde. Des Weiteren pflegen wir aktiv fehlende und passende Elemente in Wikidata ein, um so später die Daten der Research Community im Sinne des SPARQL Unicorn (Thiery and Trognitz 2019a, 2019b) bereitzustellen. Der Sourcecode unserer App steht quelloffen auf GitHub zur Verfügung (Homburg & Thiery 2019).
+
+
+
+Ergebnis
+
+Erste Extraktionsergebnisse zeigen zunächst die Clusterung der
+irischen CIIC Oghamsteine (323 Steine)  in Abbildung 2. In den
+Abbildungen 3-5 ist ersichtlich, dass sich Inschriften zu FW und NW
+räumlich unterscheiden (z.B.  Abbildungen 3  und 4 zu MAQI  und CUNA).
+Für das CISP Datenset (2504), für das wir aktuell noch keine
+Geokoordinaten besitzen, sind  in Tabelle 1 die erste
+Analyseergebnisse aufgeführt. Sie zeigen eine ähnliche Verteilung der
+Keywords wie im CIIC Datenset.  Das Poster stellt diese und weitere
+Ergebnisse unserer  ersten räumlichen Analysen dar. Weitere Daten
+können unserem  Webviewer entnommen werden. 
+
+
+  Tabelle 1: Klassifikation der Steine aus CISP
+
+Keyword
+Vorkommen im CISP Dataset
+
+
+MAQI (son)
+710 (28%)
+
+
+AVI (grandson)
+72 (3%)
+
+
+CELI (fellow)
+7 (0,2%)
+
+
+CUNA (dog)
+174 (7%)
+
+
+CATTU (cattle)
+94 (4%)
+
+
+NIOTA (nephew) 
+20 (0,8%)
+
+
+BRAN (raven)
+34 (1,3%)
+
+
+BROCI (badger)
+2 (0,08%)
+
+
+ERC (cow)
+38 (1,5%)
+
+
+IVA (tree)
+18 (0,8%)
+
+
+VIR (man of battle)
+38 (1,5%)
+
+
+LUG (god)
+73 (3%)
+
+
+
+
+
+
+
+  
+   Abbildung 2: Cluster von Oghamsteinen in Irland nach Fundorten
+
+
+
+
+
+
+   Abbildung 3: Oghamsteine mit Verwandschaftsbeziehungen
+
+
+                
+
+
+
+   Abbildung 4: Oghamsteine mit Referenzen zu Tieren oder der Natur
+
+
+
+
+
+
+
+
+   Abbildung 5: Oghamsteine mit Referenzen zu Menschen und Schlachten
+
+
+
+
+
+Future Work
+
+In Zukunft wird die Datenbasis mit erneuerten Daten des Ogham 3D Projektes und weiteren Quellen angereichert, sowie die Bereitstellung von
+Ogham-Daten in Wikidata forciert. Hierbei wird uns Sophie Charlotte Schmidt weiterhin in unserem Ogi-Ogham Projekt unterstützen. 
+Mit einem größeren Korpus werden die Analysen noch bessere Ergebnisse hervorbringen. Zudem ist eine Erweiterung der OliA Ontologien (Chiarcos and Sukhareva 2015) für Ogham angedacht, sowie die Publikation der Daten als Linked Data in Web.
+
+
+

@@ -1,0 +1,105 @@
+
+            
+                Minimal Editing
+                Digitale Editionen sind in der Regel kostspielige Großprojekte, die von Drittmittelförderung abhängig sind. Projektmitarbeiterinnen und -mitarbeiter müssen umfangreiche technische und philologische Fähigkeiten mitbringen und die Projekte werden meist in sehr spezifischen Editionsumgebungen entwickelt – Elena Pierazzo nennt derartige digitale Editionen “Haute Couture”-Editionen (Pierazzo 2019, 213).
+                Kleinere Editionsvorhaben werden oft nur von Einzelpersonen gestemmt oder vielleicht im Kontext einer Lehrveranstaltung oder Qualifikationsarbeit umgesetzt; eine Vermittlung der Ergebnisse in Form eines Webauftritts oder die Archivierung in einem zertifizierten Repositorium ist in derartigen Fällen nur selten möglich; oft scheitert es am entsprechenden Know-How oder an finanzieller Unterstützung. Diese Arbeiten verschwinden eher früher als später ungenutzt in dunklen Schubladen. Um dieser Problematik Herr zu werden, müssen nachhaltige Lösungen her! Eine solche Lösung für derartige Fälle wäre sicher 
+                    minimal editing.
+                
+                
+                    Minimal Editions stellen reduzierte digitale Editionen im Gegenzug zu kostspieligen, aufwendigen Editionsgroßprojekten dar. Wie eine derartige Minimaledition zu definieren wäre, ist Gegenstand des aktuellen Forschungsdiskurses: Basiert sie auf dem effizientesten Workflow, um den Arbeitsaufwand der Datenverarbeitung zu reduzieren, der kleinstmöglichen technischen Infrastruktur (i.e 
+                    minimal computing, cf. Gil 2015), um die Hemmschwelle vor der Technik möglichst niedrig zu halten, der sparsamsten Modellierung der Objekte, um Bearbeitungszeit zu sparen und die weitere Verarbeitung zu vereinfachen oder zeichnet sie sich durch einen reduzierten Funktionsumfang bei der Onlinepublikation aus? 
+                
+                
+                    Minimal editing kann es möglich machen, digitale Editionen mit vorgefertigten Workflows, bereits etablierten, einfachen technischen Lösungen und leicht zu integrierenden Basis-Funktionalitäten im Bereich der Datenmodellierung wie auch der Datenpräsentation schnell, einfach und mit einem geringen Kostenaufwand umzusetzen. Das bringt allerdings die unterschiedlichsten Einschränkungen mit sich! Demgegenüber stehen aber die Erwartungen und Ideen der Editorinnen und Editoren und die Vorgaben der Förderorganisationen. Allerdings würde der Aufbau einer zeitgemäßen Infrastruktur, die Langzeitverfügbarkeit garantiert, mit Komponenten, die 
+                    ad hoc für unterschiedliche Editionsprojekte benutzbar sind, den Aufwand für die Umsetzung einer digitalen Edition reduzieren und somit vermutlich zu einer größeren Anzahl von digitalen Editionsprodukten führen. Pierazzo bezeichnet diese Editionen als “Prêt-à-Porter”-Editionen (Pierazzo 2019, 213). 
+                
+                Weitere Stichworte im Zusammenhang mit 
+                    minimal editing sind 
+                    minimal functionalities und 
+                    minimal computing. Federico Caria und Brigitte Mathiak untersuchten, welche minimalen Funktionalitäten der Webauftritt einer digitalen Edition unbedingt aufweisen sollte, damit diese von der Community auch zufriedenstellend genutzt werden kann (2018); Greta Franzini, Melissa Terras und Simon Mahony führten ebenfalls eine Umfrage zu Erwartungen und dem Gebrauch von digitalen Editionen durch (2019). Die dabei gesammelten Ergebnisse können helfen, die wichtigsten Komponenten einer 
+                    Minimal Edition zu definieren, wie z. B. eine Such- und Exportfunktion über bzw. in den Daten oder eine grundsätzlich benutzerfreundliche Navigationsstruktur (Caria/Mathiak 2018, 360), oder die Einbindung von Faksimiles, leicht erkennbare Angabe von Lizenzen, die Möglichkeit der Nachnutzbarkeit der Daten und eine umfassende Dokumentation (Franzini/Terras/Mahony 2018, 1).
+                
+                
+                    Minimal computing hingegen ist ein Ansatz, bei dem versucht wird, die technischen Ansprüche zu reduzieren und für die Arbeit nur jene Technologien zu verwenden, welche tatsächlich notwendig für die Umsetzung eines bestimmten Vorhabens sind. Erst 2022 erschien eine ganze Ausgabe des 
+                    Digital Humanities Quarterly, welche sich den unterschiedlichsten Aspekten des 
+                    minimal computing widmet (Risam/Gil 2022a). Um zu bestimmen, welche Technologien tatsächlich notwendig und ausreichend sind, schlagen Risam und Gil vor, folgende vier Fragen zu stellen (Risam/Gill 2022b): Was brauchen wir, was haben wir, was müssen wir priorisieren und was sind wir bereit aufzugeben?
+                
+                Alle diese Publikationen zeigen einen Trend in Richtung maßgeschneidertes Editionsmanagement auf. Es gibt bereits Lösungen, Tools und Plattformen, die unter dem Aspekt Minimal Editing zusammenzufassen sind – darunter fällt z.B. EVT (Edition Visualization Technique), ein Open-Source-Tool, welches es ermöglicht, XML-TEI Dokumente als digitale Editionen im Browser anzuzeigen. Dasselbe gilt für CETEIcean und TEI-Publisher, welche ebenfalls Lösungen anbieten, um XML- und TEI-Dokumente ohne Erfahrung in der Webprogrammierung im Browser zugänglich zu machen. Transcriptiones erlaubt es, Transkriptionen zu teilen und kollaborativ zu überarbeiten, wobei hier jedoch kein Fokus auf die Modellierung mit XML/TEI oder eine nachhaltige Archivierung gelegt wird. Den Tools, die eine Kodierung mit TEI unterstützen, ist gemeinsam, dass zwar niederschwellig eine Webansicht generiert werden kann, allerdings wird hier der Aspekt der Langzeitarchivierung, d.h. dass die Daten permanent zitierbar verfügbar bleiben, nicht berücksichtigt. 
+                Ein Zugang zur “Minimal Edition”, der sich am Paradigma eines effizient gestalteten Workflows orientiert und den Aspekt der Langzeitarchivierung miteinschließt, ist in Österreich im Rahmen des bundesgeförderten Projektes 
+                    DiTAH - Digitale Transformation der österreichischen Geisteswissenschaften umgesetzt worden.
+                
+            
+            
+                Hyper: Hyperdiplomatische Transkriptionsplattform
+                Im geplanten Vortrag soll eine Variante des 
+                    minimal editing anhand der hyperdiplomatischen Publikationsplattform vorgestellt werden: Die Hyperdiplomatische Transkriptionsplattform (Hyper, 
+                    
+                        http://gams.uni-graz.at/context:hyper
+                    ) wurde entwickelt, um das Archivieren und Publizieren von Editionsdaten, die auf dem standardisierten Datenmodell der hyperdiplomatischen Transkription (Böhm/Klug 2021) beruhen, möglichst ressourcenschonend und im Sinne von
+                     minimal editing zu gestalten – mit den Ressourcen, die im vorliegenden Fall möglichst sparsam verwendet werden sollen, sind vor allem die nötigen Arbeiten und der finanzielle Aufwand im Zusammenhang mit einer Publikation und Langzeitarchivierung der Editionsdaten gemeint.
+                
+                Eine hyperdiplomatische Transkription versucht, die historische Quelle möglichst detailreich bis hin zur Teilzeichenebene (z. B. Superskripte oder sogar Teilstriche eines Zeichens) bzw. unter Berücksichtigung der Quellentopographie (Verortung der Informationseinheiten in einem digitalen Abbild der Quelle) in ein modernes Zeichensystem zu übertragen. In Grazer Projekten (
+                    
+                        Mittelalterlabor
+                    , 
+                    
+                        Cooking recipes of the Middle Ages
+                    ) wird nach einer hyperdiplomatischen Transkriptionsmethode gearbeitet, die ursprünglich auf die Philosophie der “Grazer dynamischen Editionsmethode” (Hofmeister-Winter 2003) zurückgeht: Es wird dabei eine “Basistransliteration” (Hofmeister-Winter 2003, S. 101) erstellt, deren Ziel es ist, den Text der Handschrift möglichst getreu mit typographischen Mitteln abzubilden, wobei die Quellentopographie dabei keine bzw. nur bedingt eine Rolle spielt. In dieser Phase soll noch keine inhaltliche Interpretation stattfinden, sondern vorerst nur der paläografische Informationsgehalt der Handschrift, also die Schriftsymbole wiedergegeben werden. Es werden in einem Graphinventar nicht nur alphabetische Schriftsymbole, sondern alle graphischen Phänomene wie Abbreviaturen, Superskripte oder Verzierungen mit bestimmten von den Transkribierenden individuell festlegbaren Kodierungen festgehalten. Im Graphinventar werden die von der Schreiberin oder dem Schreiber verwendeten Zeichen beschrieben und mit einer proprietären Kodierung versehen, sodass es gleichzeitig als Transliterationsschlüssel dient, der im Rahmen der digitalen Workflows eine zentrale Stellung einnimmt. Die Transkription soll damit sowohl sprach- und literaturwissenschaftlichen als auch geschichtswissenschaftlichen Ansprüchen genügen bzw. sie in manchen Fällen übertreffen – das Ziel dieser Herangehensweise ist es aber prinzipiell, eine Transkription zu erstellen, die über den konkreten Anwendungsfall hinaus auch von anderen Forscherinnen und Forschern verwendet werden kann (Böhm/Klug 2020). 
+                
+                Die Hyperdiplomatische Transkriptionsplattform bietet daher ein vorgefertigtes Datenmodell für die hyperdiplomatische Transkription (Klug/Böhm 2021), vorgefertigte Routinen und Transformationen, die darauf aufsetzen, und unterschiedliche Beschreibungszugänge, um den Workflow zu verdeutlichen und einfach nachnutzbar zu machen. Die Plattform (Klug/Galka 2022) wurde mit Testusern entwickelt, die sich willig auf das Experiment eingelassen haben. Die dafür produzierten Daten stehen mittlerweile offen in einem funktionell umfangreichen Webauftritt zur Verfügung: 33 Texte zum Thema “Jagd in den deutschsprachigen Texten des Mittelalters und der Frühen Neuzeit” (
+                    
+                        http://jagd-im-mittelalter.de/
+                    ), transkribiert und modelliert von Timo Bülters und Simone Schultz-Balluff, und die hyperdiplomatische Transkription der Handschrift Wien, ÖNB, Cod. 3085, fol. 1r-39v von Astrid Böhm (2022).
+                
+            
+            
+                Workflow
+                Die hyperdiplomatische Transkription erfolgt mittels Transkribus, einer Transkriptionssoftware, die eine automatische Textsegmentierung und Text-Bild-Verknüpfung erlaubt und darüber hinaus eine äußerst benutzerinnenfreundliche Arbeitsoberfläche bietet. In Transkribus wird mittels proprietärer Codierung transkribiert, wobei die proprietäre Kodierung, die im Transkriptionsprozess verwendet wird, im TEI-XML in der Zeichenbeschreibung (<charDecl>) festgehalten wird. Mit Daten aus Projekten, die diese Transkriptionsmethode anwenden (
+                    
+                        Mittelalterlabor
+                    , 
+                    
+                        Cooking recipes of the Middle Ages
+                    ), wurde in Transkribus außerdem ein HTR-Modell für spätmittelalterliche Bastarda trainiert (German Bastarda, hyperdiplomatic), das kurz vor der Publikation steht. Auch Textauszeichnungen (Initialen, Überschriften usw.) und die Annotationen wie z.B. Revisionen der Schreiberin oder des Schreibers oder Anmerkungen/Notizen der Editorinnen und Editoren erfolgen in Transkribus. Generell wird aber versucht, die Annotationen in Transkribus auf ein notwendiges Minimum zu beschränken. Die Software ermöglicht einen TEI/XML-Export der Transkription – die exportierten Daten werden mittels X-Technologien bzw. mit auf der Plattform bereitgestellten XSLT-Stylesheets weiterverarbeitet und ins finale Datenmodell transformiert. Die Kollationierung der Transkription mit der Quelle erfolgt außerhalb von Transkribus und setzt auf den selben Transformationen auf. Das publikationsfähige TEI-Dokument enthält einen umfangreichen <teiHeader> mit <editorialDecl>, <msDesc> und <charDecl> und den Editionstext, der die Struktur des Faksimiles abbildet. Die XSLT-Stylesheets, Schema-Dateien zur Validierung, Templates für Handschriftenbeschreibung (<msDesc>) und Editionsrichtlinien (<editorialDecl>) werden auf GitHub zum Download bereitgestellt (
+                    
+                        https://github.com/ditah-at/hyper
+                    ).
+                
+                Die Archivierung und Publikation erfolgt mittels des Geisteswissenschaftlichen Asset Management Systems (
+                    GAMS). GAMS ist ein Asset Management System zur Verwaltung, Publikation und Langzeitarchivierung digitaler Ressourcen aus allen geisteswissenschaftlichen Fächern, welches auf der Open-Source-Lösung Fedora (
+                    Flexible Extensible Digital Object Repository Architecture) basiert und am Zentrum für Informationsmodellierung an der Universität Graz ständig weiterentwickelt wird. Mit Hilfe des Systems können unterschiedliche Ressourcen verwaltet, mit Metadaten angereichert und persistent zitierbar publiziert werden (Stigler/Steiner 2018). Das Asset-Management-System entspricht den Empfehlungen des OAIS-Referenzmodells (
+                    Open Archival Information System), welche eine verlässliche Langzeitarchivierung von digitalen Daten garantieren sollen. Die Auffindbarkeit der Daten wird durch die Vergabe von persistenten Identifikatoren und der Anreicherung mit umfassenden Metadaten ermöglicht. GAMS ist seit 2019 mit dem Core Trust Seal als vertrauenswürdiges digitales Repositorium und seit Frühjahr 2020 außerdem als CLARIN Datencenter zertifiziert.
+                
+                Das finale TEI/XML-Dokument wird gemeinsam mit den Faksimiles in das Repositorium ingestiert und unter einem systeminternen Permalink langzeitarchiviert. Die Daten werden außerdem mit einem PID aus dem Handle.net-System versehen und stehen stabil referenzierbar zur Verfügung. Im Zuge des Ingest wird automatisch die HTML-Anzeige 
+                    on the fly mittels gängigen Webtechnologien basierend auf vorgefertigten XSLT-Transformationen generiert. Der Webauftritt der Hyperdiplomatischen Transkriptionsplattform umfasst eine vertikale wie auch horizontale Text-Bild-Synopse (wahlweise mit diplomatischer Transkription oder Lesetext), die Editionsrichtlinien, die Handschriften- und Zeichenbeschreibung, Metadaten und Lizenzinformationen sowie Zitiervorschläge.
+                
+                Die Hyperdiplomatische Transkriptionsplattform stellt zur Nachvollziehbarkeit und Nachnutzbarkeit des Workflows sämtliche XSLT-Stylesheets etc. zur Verfügung. Außerdem werden in einer umfangreichen Dokumentation (
+                    
+                        http://gams.uni-graz.at/o:hyper.documentation/sdef:TEI/get?mode=overview
+                    ), die sich der Transkription, dem Datenmodell, der Kollationierung und Validierung sowieder Archivierung und Publikation der Daten widmet, die einzelnen Schritte mit Verlinkungen zu weiteren Ressourcen, wie z.B. dem 
+                    KONDE-Weißbuch (Klug/Galka/Steiner 2021) mit Einträgen zur digitalen Edition, genau erläutert. Eine Kurzbeschreibung (
+                    
+                        http://gams.uni-graz.at/o:hyper.documentation/sdef:TEI/get?mode=shortdescription
+                    ) der einzelnen Schritte erspart das ständige zur Rate ziehen der ausführlichen Dokumentation und ein Aktivitätsdiagramm veranschaulicht die einzelnen Arbeitsschritte und bietet eine Verlinkung zu den jeweiligen Anleitungen (
+                    
+                        http://gams.uni-graz.at/archive/objects/context:hyper/methods/sdef:Context/get?mode=diagram
+                    ).
+                
+            
+            
+                Fazit
+                Die Plattform und das Editionskonzept richtet sich grundsätzlich an all jene Editorinnen und Editoren, die bereits Vorkenntnisse in Bezug auf digitale Editionen mitbringen, wie z.B. Wissen über XML/TEI, XSLT, oder den Umgang mit dem Oxygen-XML-Editor. Das Paradigma der “Minimal Edition” bezieht sich hier auf einen nachhaltig erarbeiteten und von weiteren Editionsprojekten nachnutzbaren Workflow. In der Regel evaluiert jedes Editionsprojekt in unterschiedlichen Stadien mögliche Tools und Workflows, mit denen im Team gearbeitet werden soll, sei es für die Transkription, Annotation oder für die Publikation. Im Projekt Hyper wurde jedoch ein standardisierter Workflow entwickelt, der auf wenigen, zur sofortigen Nutzung bereitstehenden Tools und Routinen aufbaut und in einer umfangreichen Dokumentation beschrieben wird, wodurch Editorinnen und Editoren,  welche diesen Text auch einem größeren Publikum im Zuge einer digitalen Edition möglichst einfach zugänglich machen wollen, auf diesen zugreifen können. Die “Einschränkung” ist, dass die hyperdiplomatische Transkribtionsmethode übernommen werden muss. Risam/Gill 2022b schlagen für ihre Variante des 
+                    minimal editing vor, nur die absolut notwendigen Technologien für die Umsetzung eines bestimmten Vorhabens zu verwenden. Da einer der Grundpfeiler von digitalen Edition aber die Modellierung der Daten in einem standardisierten Datenformat ist, wurde bewusst entschieden, dass bei der hyperdiplomatischen Modellierung mit TEI/XML keine Abstriche gemacht werden sollen. Da sowohl Edierende wie auch Benutzerinnen und Benutzer von digitalen Editionen gewisse Standards in der Datenpräsentation erwarten (Caria/Mathiak 2018), werden auch dafür komplexe Technologien verwendet, die allerdings an die verwendete Repositoriumslösung angeknüpft sind. Sowohl die Modellierung der Quelle als auch die Präsentation sind in einem projektspezifischen Datenmodell verwirklicht. 
+                    Hyper unterscheidet sich von anderen Tools und Lösungen auch dadurch, dass die Daten langzeitarchiviert werden und unter einem PID erreichbar sind. “Minimal Editing” bedeutet im Rahmen dieser Plattform also nicht nur, dass es ein fertiges Datenmodell und einen erprobten Workflow gibt, sondern auch, dass der Aufwand seitens der Repositoriumsbetreiber für die Archivierung und Präsentation der Daten sehr gering ist. Alle veröffentlichten Quellen stehen 
+                    open access zur Verfügung, außerdem werden sämtliche Dateien, die im Workflow benötigt werden, wie XSLT-Stylesheets oder Schema-Dateien offen auf GitHub bereitgestellt.
+                
+            
+            
+                Ausblick
+                Das Ziel der 
+                    Minimal Edition ist es nicht, möglichst viele Editionsprojekte möglichst schnell umzusetzen, sondern einen niederschwelligen Zugang anzubieten, damit ohne großen Aufwand “reduziertere” digitale Editionen geschaffen werden können, die trotzdem qualitativen Standards entsprechen. Die 
+                    Hyperdiplomatische Transkriptionsplattform ist zwar momentan hauptsächlich für all jene interessant, die hyperdiplomatisch transkribieren – allerdings ist es ein erster Schritt in eine Zukunft, in der auch andere Editionen, die dem 
+                    minimal-editing-Konzept folgen, ohne großen organisatorischen Aufwand publiziert werden können.
+                
+            
+        

@@ -1,0 +1,45 @@
+
+
+
+Sport ist ein wesentlicher Bestandteil unserer Kultur (Hitzler 1991: 485f), der Boxsport war bereits bei den olympischen Spielen der Antike in Form des antiken Faustkampfes vertreten (Rudolph 1965: 8ff). Im letzten Jahrhundert wurden Boxkämpfe teilweise stark politisiert und erlangten dadurch Bedeutung auch außerhalb der sportlichen Domäne selbst (Hughes 2018 und Bloom & Willard 2002). Als komplexe Ereignisse werden die Kämpfe zunächst durch die Performativität der einzelnen Handlungen ihrer Akteure konstituiert: (Meid-) Bewegungen im Ring und Faustschläge (Fischer-Lichte 2004). Die Regeln, die das Boxen ausmachen, bieten den Akteuren im konkreten Ereignis eines Boxkampfes einen Spielraum, um unterschiedliche Techniken auszuführen, die ihnen im kompetitiven Vergleich zum Sieg verhelfen sollen (Fiedler 1983: 63). Die Bandbreite der nach den Regeln des modernen Boxens möglichen Techniken ist bereits 1963 von Horst Fiedler (Fiedler 1963) in einem Schema erfasst und dabei gewissermaßen nicht-formal modelliert worden. Auch wenn Boxtechniken in konkreter Anwendung gegenüber den üblichen kulturellen Objekten martialisch anmuten, erscheint es aus oben genannten Gründen sinnvoll, sie dennoch als solche anzusehen und das Ziel ihrer Analyse auf der Grundlage ihrer Verdatung auszugeben. Dazu wurde ein Workflow erarbeitet, der es ermöglicht, die Boxtechniken als konkrete Umsetzungen der von Horst Fiedler ermittelten Schlag- und Bewegungsvarianten zu interpretieren und formal zu erfassen, um sie einer weiteren Auswertung zugänglich zu machen. Auf der Basis des Fiedler-Schemas wurde ein Modell erstellt, das bei der Transkription von Videoaufzeichnungen als Grundlage für mehrere Annotationsebenen und das kontrollierte Vokabular dient. Als Datengrundlage werden dabei Videos von Boxkämpfen auf der Plattform YouTube genutzt. Im Ergebnis entsteht eine Annotation der Aufnahmen von Boxtechniken, die durch das verwendete Modell im Kontext des entsprechenden Boxkampfes und der einzelnen Runden verknüpft sind. Dadurch erhält jede erfasste Aktion einen eigenen Unique Resource Identifier (URI), über den nicht nur ein sekundengenauer Zugriff auf die jeweilige Stelle im Video möglich wird, sondern auch eine Verknüpfung mit anderen Instanzen der jeweiligen Boxtechnik. Die Modellierung von Boxkämpfen bringt somit den Vergleich von Aufnahmen von Umsetzungen bestimmter Techniken zu Wege, beispielsweise von linken Haken in den 1970er Jahren mit denen in heutigen Kämpfen. Dies wird durch die Verwendung von CIDOC CRM (
+
+http://www.cidoc-crm.org/
+
+) als für das Modell zugrundeliegende Ontologie realisiert. CIDOC CRM ist eine etablierte Technologie zur Erfassung kultureller Objekte (Doerr 2003).
+                    Der Workflow besteht aus den folgenden Schritten: Die Transkription beziehungsweise Annotation der Videos erfolgt in ELAN (
+                
+
+https://tla.mpi.nl/tools/tla-tools/elan/
+
+), die erzeugten Daten liegen in einem XML-Format vor. Die Transkriptionsdaten werden in oXygen mittels XSLT vorverarbeitet und als Triples formuliert. Die Codierung selbst geschieht in RDF/XML (unter Verwendung von CIDOC CRM Version 6.2). Die erzeugten RDF-Triples werden am Ende des Workflows in ein RDF4J-Repository (
+
+https://rdf4j.eclipse.org/
+
+) überführt und können von dort aus mit SPARQL abgefragt werden. Die Befüllung des Triple Store geschieht über die zugehörige RDF4J API, die durch eine Java-Anwendung angesprochen wird.
+
+   
+    
+     Abbildung 1: Screenshot von Annotation in ELAN mit den
+    verschiedenen Annotationsebenen (Tiers).
+  
+
+
+
+
+
+Anschließend können auf Basis der verknüpften Daten Analysen durchgeführt und Visualisierungen erstellt werden, anhand derer an die der ausgeführten Technik entsprechenden Stelle in der Videoaufnahme gesprungen werden kann. Zur Veranschaulichung der Daten wurden zwei verschiedene Visualisierungsformen gewählt: In der ringförmigen Visualisierung werden die einzelnen Aktivitäten pro Runde auf einem Kreis dargestellt. Dabei werden die unterschiedlichen Aktivitätstypen durch entsprechende Symbole verdeutlicht. Die zweite Visualisierung ordnet die durch die Akteure durchgeführten Ereignisse auf einer Art Zeitstrahl an. Zudem wird die zugrundeliegende Videoaufnahme von YouTube direkt auf der Seite mit eingebunden.
+
+  
+   Abbildung 2: Screenshot von Visualisierung als horizontale Timeline mit eingebettetem Video.
+
+
+
+  
+   Abbildung 3: Screenshot von Visualisierung als Kreis mit Auswertungen der annotierten Entitäten.
+
+
+
+Am Beispiel des Boxsports wird gezeigt, wie durch Videoaufnahmen festgehaltene Ereignisse und deren Teilereignisse in einem Datenmodell erfasst werden können. Diese werden anschließend über Abfragen zugänglich gemacht, zudem wird über Visualisierungen die Exploration der Daten ermöglicht. Durch die Verwendung von CIDOC CRM werden die Daten semantisch modelliert. Dieser Ansatz sollte auf andere Bereiche performativer Kulturobjekte übertragbar sein, für die ähnliche Daten vorliegen. Dabei müsste lediglich das Modell beziehungsweise die Modelle an die entsprechende Domäne angepasst werden.
+                    Das Poster soll den Workflow diagrammatisch darstellen und Einblicke in die verschiedenen Stationen, vor allem in das verwendete Modell und die am Ende entstehenden Visualisierungen, liefern.
+                
+

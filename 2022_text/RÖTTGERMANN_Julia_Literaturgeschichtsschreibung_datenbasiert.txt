@@ -1,0 +1,117 @@
+
+            Welche Formalisierungs- und Modellierungsarbeit ist nötig, um Kulturen des kollektiven Gedächtnisses wie die Literaturgeschichtsschreibung als Daten abfragbar zur Verfügung zu stellen? Wir sehen aktuell einige Umbrüche in den Strategien der Gedächtnisinstitutionen, die sich zunehmend dem ‘Linked Open Data’-Paradigma verpflichtet sehen. Am Beispiel der Domäne französischer Literatur des 18. Jahrhundert verfolgt das Projekt “Mining and Modeling Text” einen ähnlich gearteten, jedoch im Bereich der Literaturgeschichtsschreibung neuen Ansatz einer datenbasierten, wikifizierten Arbeitsweise. Durch den Fokus auf eine spezifische literaturgeschichtliche Domäne entsteht ein besonders dichtes Netz von Aussagen, die über eine systematische Ontologie literaturhistorisch relevanter Aussagetypen miteinander verknüpft sind.
+            
+            Anhand von drei verschiedenen Informationsquellen (Primärliteratur, Sekundärliteratur und bibliographische Daten) werden literaturhistoriographische Aussagen extrahiert und in Form eines Wissensnetzwerks modelliert, das die heterogenen Daten integriert und über einen SPARQL-Endpunkt abfragbar macht. Das interdisziplinäre Projekt vereint informationswissenschaftliche, juristische, literaturwissenschaftliche und computerlinguistische Expertise. Den Prinzipien der Open Science verbunden, wurde eine Infrastruktur aufgebaut, die freie Software wie 
+                Wikibase nutzt und im Sinne des FAIRen Datenmanagements die laufenden Ergebnisse transparent auf GitHub zur Verfügung stellt. Doch wie gelingt es, das gewonnene Wissen aus heterogenen Datenquellen so zu modellieren, dass es einander ergänzend und vergleichbar in ein gemeinsames Wissensnetz einfließen kann?
+            
+            Dies soll zunächst konkret anhand der Extraktion thematischer Aussagen mittels Topic Modeling (1.) sowie der Extraktion von Themenaussagen aus bibliographischen Daten (2.) veranschaulicht werden. Die Relevanz eines kontrollierten Vokabulars im Sinne der Vergleichbarkeit thematischer Aussagewerte unterschiedlicher Informationsquellen (3.) in einem über SPARQL abfragbaren LOD-Wissensnetzwerk (4.) wird im Anschluss dargelegt. Das kontrollierte Vokabular resultiert dabei aus einem Grundstock zeitgeschichtlich relevanter Themen, erweitert um Themenkonzepte, die sich aus der Informationsextraktion der drei Datenquellen ergeben. 
+            
+                Informationsextraktion aus Primärtexten mithilfe von Topic Modeling
+                Als Datengrundlage zur Modellierung von literaturhistorisch relevanten Aussagen dienen uns drei Kategorien an Texten: Primärliteratur (Romane), Sekundärliteratur (Fachliteratur) und bibliographische Quellen. Die erste der drei Informationsquellen besteht aus einem Korpus aus französischen Romanen der zweiten Hälfte des 18. Jahrhunderts (Röttgermann 2021). Dieses umfasst derzeit 115 Texte und wird laufend durch Volltextdigitalisierung mit dem auf historische Drucke spezialisierten OCR-Tool 
+                    OCR4all (vgl. Reul et al. 2019) und durch Transformation frei verfügbarer EPUBS zu XML-TEI erweitert.
+                
+                Alle Input-Dateien wurden in TEI-konformes XML nach den Richtlinien der Text Encoding Initiative (vgl. Burnard 2014) nach dem Schema der 
+                    European Literary Text Collection (ELTeC) kodiert (Burnard/Odebrecht 2019). Mithilfe eines Python-Skripts wurden die Texte teilmodernisiert und normalisiert und als Plaintext extrahiert. In dieser Fassung dienen die Texte als Input-Daten für den Topic Modeling-Algorithmus.
+                
+                Mithilfe von Topic Modeling (vgl. Blei 2011) ist es möglich, “Topics” aus den Primärtexten zu extrahieren, die Aufschluss über Themen-Cluster innerhalb des Korpus geben können. Die Methode generiert auf der Grundlage der Kookkurrenz von Wörtern Gruppen semantisch verwandter Wörtern, die Topics. Hier wurden mit Mallet (vgl. McCallum 2002) zunächst 30 Topics generiert, welchen im Anschluss Label zugewiesen wurden. Diese wiederum wurden mit Konzepten aus einem Themenvokabular verknüpft. Auf diese Weise konnten Themen in den Romanen ermittelt werden, welche auf thematische Konzepte der Epoche der Aufklärung verweisen (vgl. Klee/Röttgermann 2020). 
+                
+                Die gewonnenen Topics verteilen sich folgendermaßen über das Korpus (s. Abb. 1):
+                
+                    
+                    Abb. 1: Dominante Topics im Romankorpus, Topic Modeling mit 92 Romanen und 30 Topics. Daten: DOI: 10.5281/zenodo.4493224.
+                
+                Neben einigen Topic Modeling Artefakten wie [temps paraître encore] haben sich Topics im Romankorpus herauskristallisiert, die auf literarische Gattungen des 18. Jahrhunderts wie Briefroman (Topic “correspondance”) oder Reiseroman (Topic “migration_voyage”) oder auf häufig thematisch verhandelte Konzepte wie Philosophie (Topic “philosophie”) oder Erziehung (Topic “éducation_enfance”) hinweisen.
+                Für das Werk Candide (1759) von Voltaire konnte beispielsweise ein Topic extrahiert werden, das mit dem Label “migration_voyage” versehen wurde (Abb. 2). 
+                
+                    
+                    Abb. 2: Wordle des Topics “migration_voyage” (vgl. Klee/Röttgermann 2020). Daten: https://doi.org/10.5281/zenodo.4493224.
+                
+                Aus diesem Einzelergebnis leiten wir folgendes angedeutetes Statement über das Werk Candide ab:
+                [Candide] ABOUT [label @en: travel | label @de: Reise | label@fr: voyage].
+                Ein Mapping der Entitäten auf Wikidata ergibt daraufhin dieses hier in menschenlesbarer Form angedeutete Statement:
+                Q215894 [label @fr: Candide] ABOUT Q61509 [label @en: travel | label @de: Reise | label@fr: voyage].
+                Für den Piloten wurden für das Romankorpus [Stand: 92 Romane] je Werk die 5 Topics mit der höchsten Wahrscheinlichkeit als Statements formuliert und so in einem ersten Schritt 460 thematische Aussagen dieser Art generiert. Wir haben zur Einspeisung in das Wissensnetzwerk einen Cutoff von 5 Topics gewählt, um so eine Vergleichbarkeit zur Anzahl der Themen in den bibliographischen Daten herzustellen. Die vollständige Anzahl der Topics pro Werk mit Gewichtungen ist jedoch auf GitHub dokumentiert (Klee/Röttgermann 2020).
+                
+            
+            
+                Extraktion von thematischen Aussagen aus bibliographischen Daten
+                Bei der zweiten Informationsquelle handelt es sich um bibliographische Nachweissysteme zur französischen Literatur 1751-1800 (s. Abb. 3). Im Fokus steht 
+                    die Bibliographie du genre romanesque français (Martin et al. 1977), die die Grundgesamtheit der literarischen Produktion der entsprechenden Dekaden sorgfältig dokumentiert und Schlagworte zu thematischen Inhalten der Romane enthält, die jedoch nicht indexiert sind.
+                
+                Die Bibliographie bietet in Kombination mit den Ergebnissen des Topic Modelings die Möglichkeit eines Mensch-Maschine-Vergleichs – wurden die enthaltenen thematischen Schlagworte doch in den 1970er Jahren durch Lektüre und Zusammentragen von Informationen aus anderen Nachschlagewerken erhoben. Die Bibliographie wurde in mehreren Arbeitsschritten aufwendig erschlossen. Die Extraktion der thematischen Informationen stellt im Wechselspiel mit deren semantischer Modellierung eine besondere Herausforderung dar, da sie einerseits in sehr heterogener Form und andererseits nicht klar abgegrenzt zu weiteren Informationskategorien in der Bibliographie vorliegen. Zur Identifikation der häufigsten thematischen Aussagen, welche als Statements in das Wissensnetzwerk eingespeist werden, wurde das Korpusanalysetool TXM (vgl. Heiden 2010) genutzt. Jede dieser Aussagen wird auf ein Konzept unseres kontrollierten Themenvokabulars gemappt. So können die Strings automatisch extrahiert und als Statements formuliert werden. Aus dem Eintrag zu 
+                    Les enfans de la nature von Pierre Blanchard in der Bibliographie (String aus 4./5. Spalte: <naufrage, robinsonade, intrigue sentimentale; thèmes pédagogiques et philosophiques>) können beispielsweise die folgenden thematischen Statements abgeleitet werden:
+                
+                [Les enfans de la nature] ABOUT [sentiment | Gefühl | sentiment]
+                [Les enfans de la nature] ABOUT [pedagogy | Pädagogik | pédagogie]
+                [Les enfans de la nature] ABOUT [philosophy | Philosophie | philosophie].
+                Technisch unterscheiden sich die RDF-Triple zu Themen je nach Datenquelle nicht, werden jedoch entsprechend ihrer Herkunft in Wikibase mit der Property 
+                    stated in (P14) referenziert. 
+                
+                
+                    
+                    Abb. 3: Themenkategorien des französischen Romans 1751-1800 (Martin et al. 1977: xlviii–xlix).
+                
+                In den bibliographischen Daten sind insgesamt knapp 2700 Items (Veröffentlichungen fiktionaler Prosa in französischer Sprache inklusive Übersetzungen) enthalten, von denen 349 das thematische Schlagwort ‘voyage’ enthalten.
+            
+            
+                Rolle des kontrollierten Vokabulars
+                Wie lassen sich die thematischen Muster in der Primärliteratur mit den Daten aus den bibliographischen Nachweissystemen vergleichen? Ein wichtiger Modellierungsschritt ist zunächst das Erstellen eines kontrollierten Vokabulars aus thematischen Konzepten der französischen Aufklärung, auf das die Ergebnisse des Topic Modeling und die Bibliographie-Schlagworte gemappt werden. 
+                Das Vokabular der Themenbegriffe besitzt eine hohe Relevanz für mehrere Teilprojekte: Es stellt zum einen die Labelbegriffe für die Topics aus dem Topic Model bereit, liefert daneben aber auch die Konzept-Items für die Objektposition solcher thematischer Statements, die aus der Sekundärliteratur und der Bibliographie extrahiert wurden.
+                An das Vokabular sind somit mehrere Anforderungen geknüpft: Die Begriffe müssen die Themenkonzepte der französischen Aufklärung abdecken, sollen ein gewisses Abstraktionslevel aufweisen, damit sie als kategorische Begriffe fungieren können und die Zusammenstellung der Begriffe sollte transparent und nachvollziehbar sein. Eine erste Grundlage bildet das Themeninventar des 
+                    Dictionnaire européen des Lumières (Delon et al. 2007). Die Artikelstichwörter bieten eine gute Abdeckung an gesellschaftlich, politisch, ideengeschichtlich oder kulturell relevanten Themen der Epoche und stellen somit einen geeigneten Grundstock an möglichen Labeln für die in den Romanen vorkommenden Themen. Dennoch enthält die Ressource Begriffe, die entweder zu spezifisch (z.B. ‘pyrrhonisme’) oder zu generisch (z.B. ‘fonction’’) sind, um durch sie literarische Themen zu beschreiben, weshalb diese für das Vokabular nicht berücksichtigt wurden. Ergänzt wurden die Begriffe um solche Themenkonzepte, die bei der manuellen Annotation der Sekundärliteratur zusätzlich aufgedeckt wurden, um fehlende Konzepte beim Labeling der Topics sowie um thematische Schlagworte aus der Bibliographie (vgl. Martin et al. 1977), wenn diese anderweitig nicht repräsentiert waren. Das Vokabular ist nun konsolidiert, kann aber auch in Zukunft bei Bedarf erweitert werden. 
+                
+                Um die multilinguale Vergleichbarkeit zwischen französischsprachigen Primärtexten und deutschsprachiger Sekundärliteratur zu gewährleisten, und im Sinne der Anschlussfähigkeit an und Interoperabilität mit anderen Datenbeständen, werden die Themenkonzepte auf einen Normdatensatz (Wikidata) gemappt, wodurch das kontrollierte Vokabular konsolidiert und multilingual erfasst ist (siehe Abb. 4).
+                
+                
+                    
+                    Abb. 4: Ausschnitt aus dem kontrollierten Vokabular zur Extraktion thematischer Konzepte. “DEL” bezeichnet dabei Ressourcen aus dem 
+                    Dictionnaire européen des Lumières (Delon et al. 2007), “BGRF” Ressourcen aus den thematischen Schlagworten der 
+                    Bibliographie du genre romanesque français, 1751-1800 (Martin et al. 1977).
+                
+            
+            
+                Unser Ziel: ein Wissensnetzwerk der Literaturgeschichtsschreibung
+                
+                    
+                    Abb. 5: Ausschnitt aus dem Netzwerk der dominanten Topics pro Werk in 
+                    Cytoscape (Datensatz: Klee/Röttgermann 2020). Siehe https://github.com/MiMoText/topicmodeling/blob/master/cytoscape/topics-und-werke_v1.svg für das vollständige Netzwerk.
+                
+                Ziel ist es, eine Vielzahl an Statements zu aggregieren und die Items auf vielfältige Weise miteinander in Beziehung zu setzen, sodass durch zunehmende Skalierung der Daten aus einzelnen Subjekt-Prädikat-Objekt Aussagen in RDF (Resource Description Framework) ein dichter “Knowledge Graph” (vgl. zum Begriff: Ehrlinger/Wöß 2016) entsteht (s. Abb. 5). 
+                Dieser Graph lässt sich sodann auch über einen SPARQL-Endpoint abfragen (s. Abb.6). Ausgehend von der Beobachtung, dass das Themenkonzept "Reise" in den Bibliographie-Daten bei immerhin 14,7 % der Einträge vermerkt ist, ließe sich beispielsweise fragen, in welchen Werken auch laut Topic Modeling das mit dem Themenkonzept "Reise" verbundene Topic als dominantes Topic vorkommt. Innerhalb des Korpus der 92 Volltexte ergeben sich 13 Treffer.
+                
+                
+                    
+                    Abb. 6: Projektinterner SPARQL-Endpoint.
+                
+                Durch Topic Modeling wurden dabei sowohl Werke identifiziert, die auch laut Bibliographie-Daten die Themenkategorie “Voyages” enthalten, als auch solche, in denen dieses Schlagwort nicht vorkam. 
+                Für das Werk 
+                    Jacques le fataliste (1778) von Diderot stimmen Bibliographie-Daten und Topic Modeling-Ergebnisse im Hinblick auf das Themenkonzept “voyage” überein.
+                
+                
+                    
+                    Abb. 7: Bibliographie-Eintrag zu 
+                    Pauliska ou la perversité moderne (1798) von Révéroni Saint-Cyr (inhaltliche Schlagworte kursiv).
+                
+                Für das Werk 
+                    Pauliska ou la perversité moderne (1798) von Révéroni Saint-Cyr wurde mittels Topic Modeling jenes Topic als relevant identifiziert, das mit den Themenkonzept-Labeln “voyage” und “migration” verknüpft ist (Topic Label “migration_voyage”). “Voyage” wird jedoch in den Bibliographie-Daten nicht explizit als Thema genannt (s. Abb. 7). Die Handlungszusammenfassung “les malheurs d’une réfugiée” (“die unglücklichen Begebenheiten einer Flüchtenden”) in den bibliographischen Schlagworten (extrahierbar durch das Mapping mit ‘fuite’ und ‘migration’ aus dem kontrollierten Themenvokabular) macht jedoch deutlich, dass das Topic “migration_voyage” hier ein plausibles Ergebnis darstellt, das durch den Abgleich mit den bibliographischen Daten präziser eingeordnet und im Wissensnetzwerk verknüpft werden kann. Die semantische Schnittmengen ‘menschliche Bewegung’ in allen drei Labels (‘voyage’, ‘fuite’, ‘migration’) zeigt die Gratwanderung, die im Herstellen vergleichbarer Themenkonzepte liegt. Das Labeling des Topics als ‘migration_voyage’ ermöglicht die Vergleichbarkeit der Werke, in denen ‘voyage’ ein Thema ist und stellt zugleich als Label lediglich eine Annäherung an das oben (vgl. Abb. 2) präziser repräsentierte Topic dar. 
+                
+                SPARQL-Abfragen zu den Ergebnissen des Topic Modelings und/oder der bibliographischen Schlagworten ermöglichen es, auch weniger bekannte Werke zu spezifischen Themen zu ermitteln. Zudem zeichnen sich Muster an Themenkomplexen im Zeitverlauf ab. Für das Thema “voyage” innerhalb der bibliographischen Daten zeigt sich eine (auch statistisch signifikante) ansteigende Entwicklung (vgl. Abb. 8).
+                
+                    
+                    Abb. 8: Prozentualer Anteil der Werke aus der 
+                    Bibliographie du genre romanesque français 1751-1800 (Martin et al. 1977), die das Schlagwort “voyages” enthalten.
+                
+                Eine Erklärung für den Anstieg der Themenkategorie “voyage” in den 1780er und 1790er Jahren könnte sein, dass viele Autor:innen die Handlung ihrer Werke aus politischen Gründen in andere Länder “verlegen” und zudem, dass der Themenkomplex der Reise im Kontext von Emigration im Zuge der politischen Ereignisse zunehmend in Romanen verhandelt wird. 
+                Beispiele hierfür wären 
+                    Le roi Guiot (1791) von Jean Vesque de Puttelange, dessen Protagonist in ferne Königreiche reist, um dort einen neugierigen Blick auf von der absolutistischen Monarchie abweichende politische Herrschaftssysteme zu werfen oder auch der erwähnte Roman 
+                    Pauliska ou la perversité moderne (1798), in dem die Protagonistin durch Polen irrt. Das Thema Flucht und Emigration verweist auf die politische Realität in Frankreich nach der Französischen Revolution (vgl. Van Crugten-André 2001) und ist Anlass zu Reflexionen über Gesellschaftsformen (vgl. Pageaux 1968: 205–14). 
+                
+                Insgesamt ist das Thema “Reise” derzeit laut Topic Modeling im Romankorpus in 14,13% der Werke als dominantes Topic vertreten, in den bibliographischen Daten in 14,74% der Werke. Ein makrostruktureller Blick zeigt demnach in diesem Beispiel eine vergleichbare Größenordnung der thematischen Aussage über das gesamte Korpus hinweg, auch wenn in der Bewertung der Einzelwerke nicht immer Kongruenz besteht. 
+            
+            
+                Fazit und Perspektiven
+                Das Projekt MiMoText modelliert die Geschichte des französischen Romans der zweiten Hälfte des 18. Jahrhunderts in Form von RDF-Tripeln in Wikibase als Knowledge Graph. Im Zuge eines Pilotprojekts wurden in einem ersten Schritt aus bibliographischen Daten und aus einem Romankorpus Relationen zwischen Werken und Themen extrahiert, die in Form von Tripeln in eine eigene Wikibase-Instanz eingelesen wurden. Zur Modellierung der Themen des französischen Romans der Aufklärung wurde ein kontrolliertes Vokabular erstellt, welches auf Wikidata gemappt wurde, um anschlussfähig an die Linked Open Data Cloud zu sein. Die Ergebnisse der Informationsextraktion aus den Romanen (mithilfe von Topic Modeling) und der Informationsextraktion aus bibliographischen Daten können nun per SPARQL-Endpoint abgefragt werden. 
+                Zu den nächsten Schritten gehört neben der Extraktion weiterer Statements über quantitative Romananalysen der Import von Themen-Statements aus dem dritten Typus von Informationsquellen (Fachliteratur) in unsere Wikibase-Instanz.
+                
+            
+        

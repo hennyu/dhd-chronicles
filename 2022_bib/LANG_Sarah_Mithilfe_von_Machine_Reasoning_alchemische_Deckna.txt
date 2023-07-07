@@ -1,0 +1,144 @@
+ Zur hier vorgestellten Methode ausführlicher siehe: Lang 2020, Lang 2021 und Lang 2022a, 2022b, 2022c. Hier wird bewusst von ‚kryptographischen Stilmitteln‘ gesprochen, da sie verschlüsselnd wirken, allerdings nicht mit den mono- oder polyalphabetischen Substitutionsverschlüsselungen vergleichbar sind, die man sich typischerweise unter dem Begriff „Kryptographie“ vorstellt. Substitutionschiffren gibt es auch in der Alchemie. Lang / Piorko 2021 stellt ein solches Beispiel vor, das mittlerweile entschlüsselt werden konnte, vgl. 
+                            https://theconversation.com/deciphering-the-philosophers-stone-how-we-cracked-a-400-year-old-alchemical-cipher-167900 [letzter Zugriff am 1. Dezember 2021].
+                         Allerdings wird betont, dass das Methodenarsenal der Experimental History of Science in seiner Anwendung aufwändig ist, weswegen es nicht auf alle Fälle alchemischer Sprache sinnvoll anwendbar ist: “Not every historical project needs or would even benefit from the inclusion of an experimental component, and not every textual process or experiment is worth the often considerable time it takes to rework it.” (Fors / Principe / Sibum 2016, 96) Leibenguth stellt fest: “Charakteristisch für die Maierforschung sind mit wenigen […] Ausnahmen eine Abhängigkeit und teils sinnentstellende Rezeption von Sekundärquellen sowie die weitgehende Unkenntnis der lateinischen Primärtexte (8).” Auch Wels pflichtet ihm in der Sache bei: “Maiers Schriften gehören zu jenen Werken, die viel betrachtet, aber wenig gelesen werden” (149). Vgl. Leibenguth 2002; Wels 2010. Seine Arcana (1614) wurden beispielsweise im Zuge des EEBO-Projektes in TEI-XML transkribiert oder aber Symbola (1617) und Examen (1617) an der Herzog-August-Bibliothek Wolfenbüttel im Zuge des Aufbaus des Alchemie-Portals, die ebenfalls als TEI-XML mit den zugehörigen digitalen Faksimiles online zur Verfügung gestellt werden. Vgl. Maier 2009, 1617b, 1617a; Feuerstein-Herz 2017. Die computerlinguistische Erforschung der automatisierten Annotation stellte dabei allerdings nicht das primäre Anliegen dar. Möglichkeiten der Automatisierung sollten evaluiert und genutzt werden, doch das Hauptziel der Arbeit bestand in der Wissensrepräsentation. Realia können mithilfe vom Zipf‘schen Gesetz in Bags-of-words lokalisiert werden, da sich darin Synsemantika am h-point des Graphen abspalten (vgl. Popescu / Macutek / Altmann 2009). Werden dann noch häufige Autosemantika als Stopwords von der Analyse ausgeschlossen, bleibt nur mehr eine überschaubare Anzahl an types zu kontrollieren. So ergab beispielsweise eine automatisierte Annotation eines Beispielkorpus aus Maiers Werk, dass von den 99 Einträgen des HAB-Thesaurus gerade einmal 19 überhaupt in Maier angefunden wurden, da die meisten Begriffe nur zum Sprechen über Texte geeignet sind und abstrakte Forschungsthemen bezeichnen, die natürlich im Klartext der Quellen nicht so bezeichnet stehen. Es werden daher einerseits viele Begriffe des HAB-Thesaurus in der Quelle nicht angefunden, andererseits bleiben viele erklärungsbedürftige Konzepte des Maier-Textes unerklärt, da sie wohl zu speziell gewesen wären, um sie im besagten Thesaurus abzubilden. Nicht alle Beispiele sind so trivial wie dieses, bei dem auch im close reading bereits auf den ersten Blick kein Zweifel besteht. Die entsprechenden mythologischen Figuren werden bei Maier allerdings tatsächlich häufig diskutiert, weswegen die Disambiguierung nicht immer so eindeutig ist.
+            
+                
+                    Bibliographie
+                    
+                        Duncan, A. M. (1981): “Styles of Language and Modes of Chemical Thought" in: 
+                        Ambix 28/2: 83–107.
+                    
+                    
+                        Eco, Umberto (2016): “Il Discorso Alchemico E Il Segreto Differito" in: 
+                        I Limiti Dell’interpretazione (Prima Edizione 1990), 97–116. La nave di Teseo.
+                    
+                    
+                        Feuerstein-Herz, Petra (2017): “Alchemie Portal der Herzog August Bibliothek Wolfenbüttel.” 
+                        Herzog August Bibliothek Wolfenbüttel. http://alchemie.hab.de.
+                    
+                    
+                        Fors, Hjalmar / Principe, Lawrence / Sibum, Otto (2016): “From the Library to the Laboratory and Back Again: Experiment as a Tool for Historians of Science" in: 
+                        Ambix 63/2: 85–97.
+                    
+                    
+                        Frietsch, Ute (2017): “Alchemie Thesaurus." Herzog August Bibliothek Wolfenbüttel. 2017. http://alchemie.hab.de/thesaurus.
+                    
+                    
+                        Frietsch, Ute (2021): “Obscurum Vocabulum: Begriffe der frühneuzeitlichen Alchemie und der Alchemie-Thesaurus der Herzog August Bibliothek" in: Feuerstein-Herz, Petra / Frietsch, Ute (eds.): 
+                        Alchemie – Genealogie und Terminologie, Bilder, Techniken und Artefakte. Forschungen aus der Herzog August Bibliothek. Harrassowitz, Wiesbaden.
+                    
+                    
+                        Lang, Sarah (2022a): „A Machine Reasoning Algorithm for the Digital Analysis of Alchemical Language and its 'Decknamen'“, in: 
+                        Ambix (Special Issue).
+                    
+                    
+                        Lang, Sarah (2022b): „Digital Scholarly Editions of alchemical texts as tools for interpretation“ in: Klug, Helmut / Bleier, Roman (eds.): 
+                        Digitale Edition in Österreich. Graz. 
+                    
+                    
+                        Lang, Sarah (2022c): "Vom ‚Wissen in Buchform‘ zum formalen Wissensmodell. Digitale Aufbereitung wissenschaftshistorischer Drucke am Beispiel der Alchemica Michael Maiers'", in Hegel, Philipp / Krewet, Michael (eds.): 
+                        Wissen und Buchgestalt. Wiesbaden, Harrassowitz.
+                    
+                    
+                        Lang, Sarah / Piorko, Megan (2021): „An alchemical cipher in a shared notebook of John and Arthur Dee (Sloane MS 1902)“ in: 
+                        Proceedings of the 4th International Conference on Historical Cryptology HistoCrypt 2021: 
+                        
+                            https://ecp.ep.liu.se/index.php/histocrypt/article/view/161
+                         [letzter Zugriff am 1. Dezember 2021].
+                    
+                    
+                        Lang, Sarah (2021): „Digitale Erschließungsmethoden für alchemische Texte am Beispiel der Symbola Aureae Mensae Michael Maiers“ in: Feuerstein-Herz, Petra / Frietsch, Ute (eds.): 
+                        Alchemie – Genealogie und Terminologie, Bilder, Techniken und Artefakte. Forschungen aus der Herzog August Bibliothek. Harrassowitz, Wiesbaden.
+                    
+                    
+                        Lang, Sarah (2020): „Digitale Annotation alchemischer Decknamen. Die Allegoriae werden uns nit mehr verborgen seyn“ in: Nantke, Julia / Schlupkothen, Frederik (eds.): 
+                        Annotations in Scholarly Editions and Research. Functions, Differentiation, Systematization 201-219. De Gruyter. 
+                        
+                            https://doi.org/10.1515/9783110689112-010
+                         [letzter Zugriff am 1. Dezember 2021].
+                    
+                    
+                        Lefèvre, Wolfgang (2018): “The Méthode de Nomenclature Chimique (1787): A Document of Transition" in: 
+                        Ambix 65:1: 9–29.
+                    
+                    
+                        Leibenguth, Erik (2002): 
+                        Hermetische Philosophie des Frühbarock. Die “Cantilenae Intellectuales” Michael Maiers. Edition mit Übersetzung, Kommentar und Bio-Bibliographie. Tübingen: Niemeyer.
+                    
+                    
+                        Lippmann, Edmund Oskar von (1919): 
+                        Entstehung und Ausbreitung der Alchemie. Mit einem Anhange: Zur älteren Geschichte der Metalle. Ein Beitrag zur Kulturgeschichte. Band 1. Berlin: Springer.
+                    
+                    
+                        Maier, Michael (1617a): “Examen Fucorum Pseudo-Chymicorum". http://diglib.hab.de/drucke/46-med-4s/start.htm.
+                    
+                    
+                        Maier, Michael (1617b): “Symbola Aureae Mensae”. http://diglib.hab.de/drucke/46-med-1s/start.htm.
+                    
+                    
+                        Maier, Michael (2009): “Arcana Arcanissima” (Digitale Edition der 1613-Ausgabe): Ann Arbor; Oxford (Uk): Text Creation Partnership, 2008-09 (Eebo-Tcp Phase 1). http://name.umdl.umich.edu/A06751.0001.001.
+                    
+                    
+                        Martinón-Torres, Marcos (2011): “Some Recent Developments in the Historiography of Alchemy" in: 
+                        Ambix 58/3: 215–37.
+                    
+                    
+                        McCarty, Willard (2004): “Modeling: A Study in Words and Meanings" in: Schreibmann, Susan / Siemens, Ray / Unsworth, John (eds.): 
+                        A Companion to Digital Humanities. Oxford: Wiley Blackwell, 254–72.
+                    
+                    
+                        Moretti, Franco (2005): 
+                        Graphs, Maps, Trees. Abstract Models for a Literary History. London.
+                    
+                    
+                        Newman, William (1996): “‘Decknamen or Pseudochemical Language’? Eirenaeus Philalethes and Carl Jung" in: 
+                        Revue d’histoire Des Sciences 49: 159–88.
+                    
+                    
+                        Newman, William / Principe, Lawrence (1998): “Alchemy Vs. Chemistry: The Etymological Origins of a Historiographic Mistake" in: 
+                        Early Science and Medicine 3/1: 32–65.
+                    
+                    
+                        Nummedal, Tara / Bilak, Donna (2020): “Furnace and Fugue. A Digital Edition of Michael Maier’s Atalanta Fugiens (1618) with Scholarly Commentary". 
+                        
+                            https://furnaceandfugue.org/
+                        .
+                    
+                    
+                        Popescu, Ioan-Iovitz / Mačutek, Ján / Altmann, Gabriel (2009): 
+                        Aspects of Word Frequencies. Lüdenscheid, RAM-Verlag.
+                    
+                    
+                        Priesner, Claus / Figala, Karin (1998): “Vorwort der Herausgeber” in: Priesner, Claus / Figala, Karin (eds.) 
+                        Alchemie. Lexikon Einer Hermetischen Wissenschaft. München: C.H. Beck, 7–11.
+                    
+                    
+                        Principe, Lawrence (1992): “Robert Boyle’s Alchemical Secrecy: Codes, Ciphers and Concealments” in: 
+                        Ambix 39/2: 63–75.
+                    
+                    
+                        Principe, Lawrence (2013): 
+                        The Secrets of Alchemy. Chicago.
+                    
+                    
+                        Principe, Lawrence / Newman, William (2001): “Some Problems with the Historiography of Alchemy” in: Newman, William / Grafton, Anthony (eds.): 
+                        Secrets of Nature: Astrology and Alchemy in Early Modern Europe. Cambridge/Massachusetts: MIT Press, 385–432.
+                    
+                    
+                        Ruland, Martin (1612): Lexicon Alchemiae. Frankfurt am Main.
+                    
+                    
+                        Schütt, Hans-Werner (1994): “Sprachschichten der Alchemie” in: 
+                        Berichte zur Wissenschaftsgeschichte 17: 89–99.
+                    
+                    
+                        Tilton, Hereward (2003): 
+                        The Quest for the Phoenix. Spiritual Alchemy and Rosicrucianism in the Work of Count Michael Maier (1569–1622). Berlin/NY: De Gruyter.
+                    
+                    
+                        Wels, Volkhard (2010): “Poetischer Hermetismus. Michael Maiers Atalanta Fugiens (1617/18)” in: Alt, Peter-André / Wels, Volkhard (eds.): 
+                        Konzepte des Hermetismus in Der Literatur der frühen Neuzeit. Berliner Mittelalter- und Frühneuzeitforschung, Band 8. Göttingen: V & R Unipress, 149–94.
+                    
+                
+            
+        

@@ -1,0 +1,220 @@
+
+            
+                
+                    1. Einleitung
+                
+                Autorschaftsattributionsverfahren sind längst etabliert (vgl. Burrows 2002, Jannidis et al. 2015). Auf DHd-Jahrestagungen wurden Techniken vorgestellt, die die Attributionsverfahren optimieren (Büttner et al. 2016, Dimpel 2017a, 2018a/b). Die Optimierung der Verfahren ist deshalb wichtig, weil ein literaturwissenschaftliches Interesse besteht, die Frage nach der Autorschaft auch bei schwierigen Bedingungen zu klären. Gute Bedingungen, bei denen in Evaluationstests über hohe Erkennungsquoten berichtet wurde, sind dann gegeben, wenn viele Texte aus der gleichen Gattung vorliegen, wenn die Texte eine ausreichende Länge aufweisen (mindestens 5.000 Wortformen), wenn die Texte chronologisch nicht zu weit auseinander liegen und wenn die Texte einen möglichst normierten Sprachstand hinsichtlich Orthographie und Standardsprache aufweisen (Schöch 2014, Eder 2013a und 2013b).
+                All diese Bedingungen sind nicht erfüllt, wenn man mittelhochdeutsche Kleinepik untersuchen möchte – gerade etwa mit Blick auf die Kleinepik des Strickers wäre eine stilometrische Klärung bei einigen Texten interessant. Mittelhochdeutsche Texte folgen keiner geregelten Orthographie, es liegen sowohl mehr oder weniger normalisierte als auch nicht-normalisierte digitale Texte vor, sie sind oft dialektal geprägt und viele Texte aus dem Bereich der Kleinepik übersteigen kaum eine Anzahl von 2.000 Wortformen. Anhand der ‚Halben Birne‘ (umstrittene Autorschaft Konrads von Würzburg; 2.469 Wortformen) wurde ein Verfahren vorgestellt, wie mit Burrows’ Delta die distinktiven Wörter ermittelt werden können, die Konrads Wortschatz von anderen Autoren unterscheiden (Dimpel 2018a). Damit konnte die Erkennungsqualität so optimiert werden, dass Delta auf die ‚Halbe Birne‘ angewendet werden konnte. Nun wird anhand eines weniger problematischen Korpus (Romane ca. 19. 
+                Jahrhundert) evaluiert, wie sich Erkennungsquote und False-Positives verändern, wenn man Delta nicht auf allen Most Frequent Words (MFWs) berechnet, sondern nur auf „guten“ MFWs.
+                
+            
+            
+                
+                    2. Gute-Wörter und die Level-2-Differenz
+                
+                Für Burrows’ Delta ermittelt man relative Worthäufigkeiten – hier für 
+                    zwei Texte von Wolfram (Willehalm, Parzival) sowie den 
+                    Tristan von Gottfried. Weiter werden Mittelwert, Standardabweichung und 
+                    z-Werte (Spalten Z1, Z2, Z3) sowie die absolute Differenz der 
+                    z-Werte (Spalten AbsDiff) berechnet. Der Mittelwert der absoluten 
+                    z-Wert-Differenzen ergibt das Abstandsmaß Delta – hier wäre Delta für Parzival–Willehalm der Mittelwert der drittletzten Spalte. 
+                
+                
+                    
+                
+                Die guten Wörter beruhen auf den Level-2-Differenzen: Die 
+                    z-Wert-Differenzen zwischen den Autortexten sollen kleiner sein als die 
+                    z-Wert-Differenzen zwischen Autortexten und Distraktortexten: Man zieht die Differenzen zwischen Autor- und Distraktortexten von den Differenzen zwischen den Autortexten untereinander ab. Im Beispiel bildet man die Differenz aus der 
+                    z-Wert-Differenz zwischen Wolframs ‚Willehalm‘ und Gottfrieds ‚Tristan‘ (für „der“: 2,0) und zwischen Wolframs ‘Willehalm’ und Wolframs ‘Parzival’ (für „der“ 1,07). Die Level-2-Differenz für „der“ beträgt 0,93. Bei einer positiven Level-2-Differenz kann ein Wort die Autortexte von den Distraktortexten unterscheiden; „ich“ mit negativer Level-2-Differenz ist hier ungeeignet. In dem Beispiel mit nur drei Texten ist dies auch anhand der Worthäufigkeitswerte und 
+                    z-Werte nachvollziehbar. Sonst sind jedoch weder erhöhte Worthäufigkeitswerte noch erhöhte 
+                    z-Werte allein hinreichend, um ein Wort als distinktiv zu identifizieren (Dimpel 2017b). 
+                
+                Formal ausgedrückt werden die Level-2-Differenzen anhand von zwei Teilkorpora ermittelt: Einem Teilkorpus 
+                    
+                        
+                            A
+                            =
+                            
+                                
+                                    
+                                        
+                                            a
+                                        
+                                        
+                                            1
+                                        
+                                    
+                                    ,
+                                    …
+                                    ,
+                                    
+                                        
+                                            a
+                                        
+                                        
+                                            n
+                                        
+                                    
+                                
+                            
+                        
+                     von Autortexten und einem Teilkorpus 
+                    
+                        
+                            D
+                            =
+                            
+                                
+                                    
+                                        
+                                            d
+                                        
+                                        
+                                            1
+                                        
+                                    
+                                    ,
+                                    …
+                                    ,
+                                    
+                                        
+                                            d
+                                        
+                                        
+                                            n
+                                        
+                                    
+                                
+                            
+                        
+                     von Distraktortexten anderer Autoren. Dabei ist jeder Text ein Vektor von 
+                    z-Werten. Es werden für jeden Autortext 
+                    
+                        
+                            
+                                
+                                    a
+                                
+                                
+                                    i
+                                
+                            
+                        
+                     die absoluten 
+                    z-Wert-Differenzen zu jedem Distraktortext 
+                    
+                        
+                            d
+                        
+                     und zu jedem anderen Autortext 
+                    
+                        
+                            
+                                
+                                    a
+                                
+                                
+                                    j
+                                
+                            
+                        
+                     ermittelt, daraus die Level-2-Differenzen berechnet und anschließend gemittelt. Für die Mittelwerte der Level-2-Differenzen gilt:
+                
+                
+                    
+                
+            
+            
+                
+                    3. Setting und Korpus
+                
+                Wir prüfen, ob mit „guten Wörtern“ Texte des Zielautors besser von denen anderer Autoren abgegrenzt werden können als mit dem üblichen Delta-Ansatz, der rein auf den 
+                    
+                        
+                            n
+                        
+                     häufigsten Wörtern basiert. Wir fassen die Autorschaftsattribution als ein Zwei-Klassen-Problem auf: Für jeden Text im Ratekorpus wollen wir wissen, ob er vom Zielautor oder von einem anderen Autor ist.
+                
+                Für die Berechnung der guten Wörter und zur Evaluation werden ein Ratekorpus und ein Vergleichskorpus verwendet. Im Vergleichskorpus befinden sich ein Autorvergleichstext (Text vom Zielautor), je nach Testreihe zwanzig oder mehr Distraktortexte von Autoren, die nicht im Ratekorpus vertreten sind, sowie in manchen Experimenten Texte von den übrigen im Ratekorpus vertretenen Autoren. Wenn der Delta-Abstand zwischen Ratetext und Autorvergleichstext der niedrigste ist, gilt dieser Text als dem Zielautor zugeordnet; ist der Abstand zu einem Distraktortext von einem anderen Autor am niedrigsten, gilt der Text als falsch 
+                erkannt.Für die Evaluation werden Precision, Recall, 
+                F1-Score und Accuracy berechnet und über alle Autoren hinweg gemittelt.
+                
+                Die guten Wörter werden jeweils auf den alphabetisch ersten drei Texten des Autors für jeden Autor in vier Varianten berechnet. Ausgangspunkt sind jeweils die häufigsten 1.200 Wörter:
+                
+                    Als gute Wörter werden Wörter gewählt, bei denen die Mittelwerte aller Level-2-Differenzen ≥ 0,4 sind.
+                    wie A, jedoch Mittelwert ≥ 0,2.
+                    Wie A, zusätzlich müssen 3 von 3 oder 5 von 6 Autortexten zu mindestens je einem Distraktortext eine Level-2-Differenz > 1,64 aufweisen.
+                    Wie C, jedoch muss die Level-2-Differenz nur > 1,2 statt 1,64 sein; zudem mit Mittelwerten ≥ 0,4. Die zwei schlechtesten Level-2-Differenzen werden ignoriert, da ein Wort einen Text womöglich gut von vielen Distraktortexten unterscheiden kann, bei einigen wenigen Distraktortexten jedoch womöglich sehr schlecht 
+                    funktioniert.
+                    
+                
+                Wir verwenden stets 400 gute Wörter, da auch kurze Texte mit 2.000 Token getestet werden sollen. Wenn eine Variante mehr als 400 gute Wörter liefert, verwenden wir die 400 Wörter mit den größten Level-2-Differenz-Mittelwerten; wenn sie weniger als 400 gute Wörter liefert, füllen wir mit MFWs auf.
+            
+            
+                
+                    4. Experimente
+                
+                Wir führen drei Testreihen durch:
+                
+                    Bootstrapping der Ratetexte. Im Vergleichskorpus werden die vollen Texte verwendet; um die Robustheit zu erhöhen, wird ein Bootstrapping-Verfahren auf die Ratetexte angewendet. Pro Ratetext werden 100 Stichproben gezogen, wobei für jede Stichprobe zufällig so viele Wörter mit Zurücklegen aus dem Ratetext gezogen werden, wie der Ratetext umfasst.
+                    Subsampling der Ratetexte. Im Vergleichskorpus werden die vollen Texte verwendet, aus den Ratetexten werden jedoch zufällige Stichproben von 2.000 Wörtern gezogen, um das Verhalten auf kurzen Ratetexten zu simulieren.
+                    Subsampling der Rate- und der Vergleichstexte. Sowohl aus den Rate- als auch aus den Vergleichstexten werden zufällige Stichproben von 2.000 Wörtern gezogen, um das Verhalten auf kurzen Textsorten zu simulieren.
+                
+                Dadurch werden wichtige Einsatzszenarien (lange Texte, kurze Texte mit langen Vergleichstexten und kurze Texte mit kurzen Vergleichstexten) abgedeckt. 
+                
+                    
+                        Testreihe 1: Bootstrapping der Ratetexte
+                    
+                    Hier evaluieren wir die Methoden bei vollständigen Romanen. Einmal enthält das Vergleichskorpus Texte von allen Autoren im Ratekorpus, im zweiten Schritt enthält das Vergleichskorpus zwar einen Text des Zielautors, jedoch keinen Text der anderen Autoren im Ratekorpus.
+                    Für das erste Experiment verwenden wir ein Vergleichskorpus, das je einen Text von allen 32 Autoren enthält. Für jeden Autor ermitteln wir die guten Wörter auf Basis des Vergleichskorpus und zwei weiteren Texten des Autors (also insgesamt drei Autortexten und 31 Distraktortexten). Die Ratekorpora für jeden Autor umfassen drei Texte des Autors und drei zufällige Texte von den übrigen Autoren. 
+                    Mittelwerte über alle 32 Autoren:
+                    
+                        
+                    
+                    Die klassischen Delta-Varianten (MFW400, MFW1200) haben in Bezug auf den Zielautor eine hohe Precision und einen niedrigeren Recall, während sich das Verhältnis für Texte anderer Autoren umdreht: Niedrige Erkennungsquote, dafür kaum False Positives (Texte, die fälschlicherweise dem Zielautor zugeschrieben werden).
+                    Die Gute-Wörter-Varianten führen zu deutlichen Recall-Verbesserungen beim Zielautor auf Kosten einer etwas geringeren Precision. Die Precision für Texte anderer Autoren steigt zu Lasten des Recalls. Mit den guten Wörtern werden also mehr Texte des Autors richtig erkannt (>97%), dafür gibt es minimal mehr False Positives (2,5%).
+                    Mehr häufigste Wörter funktionieren besser als weniger. Alle vier Gute-Wörter-Varianten funktionieren besser als die reinen Delta-Varianten (Verbesserungen von 6–8 Punkten bei Accuracy und F
+                        1).
+                    
+                    Für das zweite Experiment wird lediglich das Vergleichskorpus verändert. Es enthält jetzt jeweils einen Text des Zielautors und je einen Text von 24 zusätzlichen Autoren (die sich nicht mit den 32 getesteten Autoren überschneiden). Die wahren Autoren für drei der sechs Texte in den Ratekorpora befinden sich nicht mehr im Vergleichskorpus, was die Klassifikation der entsprechenden Texte erschwert.
+                    
+                        
+                    
+                    Tatsächlich bewegen sich alle Ergebnisse auf einem etwas niedrigeren Niveau als im ersten Experiment. Auch hier: Mittels guter Wörter steigt der Recall für Texte des Zielautors deutlich, während die Precision leicht sinkt. Für Texte anderer Autoren verhält es sich umgekehrt. Auch hier führen die guten Wörter zu besseren Accuracy- und F
+                        1-Werten (2–5 Punkte). 
+                    
+                
+                
+                    
+                        Testreihe 2: Subsampling der Ratetexte
+                    
+                    In dieser Testreihe wollen wir prüfen, wie gut die einzelnen Methoden für kurze Rate- und lange (vollständige) Vergleichstexte funktionieren. Dazu ziehen wir für jeden Ratetext 100 Stichproben à 2.000 Wörter; der übrige Versuchsaufbau ist identisch zu Testreihe 1.
+                    Test 2a) Alle Autoren aus den Ratekorpora sind im Vergleichskorpus vertreten:
+                    
+                        
+                    
+                    Die Ergebnisse sind auf den 2.000-Wort-Samples spürbar schlechter. Das Gesamtbild ist jedoch dasselbe: Die guten Wörter verbessern die Klassifikation und führen zu deutlich höheren Recall-Werten für den Zielautor bei etwas niedrigerer Precision.
+                    Test 2B) Die Nicht-Zielautoren sind nicht im Vergleichskorpus vertreten:
+                    
+                        
+                    
+                    Auch hier verbessern die guten Wörter die Erkennung der Zielautortexte (Erkennungsquote >96%). Größere Einbußen gibt es bei der Erkennung von Texten, die nicht vom Zielautor stammen, so dass die guten Wörter zwar die Erkennung von Texten des Zielautors enorm verbessern (Reduktion der Fehlerrate >80%), die Ergebnisse insgesamt aber leicht schlechter sind.
+                
+                
+                    
+                        Testreihe 3: Subsampling der Rate- und der Vergleichstexte
+                    
+                    Nunmehr werden die guten Wörter mit zwei Ratetexten und einem Autorvergleichstext berechnet; wenn jedoch mehr als sechs Texte pro Autor vorliegen, werden entsprechend mehr Ratetexte verwendet. Da diese drei (oder mehr) Texte nicht wie oben reihum als Rate- und Autorvergleichstext verwendet werden, ist die Qualität der Wortlisten etwas schlechter. Im Evaluationstest werden nicht nur im Ratekorpus kleine Bag-of-Words mit 2.000 Wortformen verwendet, sondern auch im Vergleichskorpus, wodurch die Erkennungsquoten deutlich schlechter werden. Die Parameter für die Author-Recall-Ermittlung sind: 250 Stichproben bei 400 MFWs, im Vergleichskorpus befinden sich neben dem Autorvergleichstext 24 Texte von anderen Autoren. Die False-Positives werden hier mit je zwei Texten von allen anderen 31 Autoren als Ratetexte in 32 Tests gegen das Vergleichskorpus ermittelt, in dem neben 24 Texten von anderen Autoren reihum alle 32 Autoren mit einem Autorvergleichstext vertreten waren (Parameter: Bag-of-Words mit 2.000 Wortformen, 400 MFWs, 100 Stichproben). 
+                    
+                        
+                    
+                    Auch hier übertrifft der Gewinn bei der Verbesserung der Erkennungsquote die Verschlechterung bei den False-Positives. Wenn sich der fragliche Autor im Vergleichskorpus befindet, ergibt sich sogar bei den False-Positives bei A) und B) eine leichte Verbesserung. Bei C) ist die Verschlechterung bei den False-Positives problematisch. 
+                
+            
+            
+                
+                    5. Fazit
+                
+                Die Gute-Wörter-Verfahren führen zu besseren Erkennungsquoten; in geringem Umfang treten mehr False-Positives auf, doch sind die positiven Effekte größer als die negativen. Die detaillierten Zahlen, für die hier kein Platz verfügbar ist, zeigen, dass die False-Positives je nach Autor erheblich schwanken. In einem Anwendungsfall kann vorab getestet werden, ob es bei dem fraglichen Autor zu erhöhten False-Positives kommt – um zu prüfen, ob das Verfahren bei diesem Autor gut anwendbar ist. Künftig wollen wir untersuchen, ob ein mittels Maschinellem Lernen erstelltes autorspezifisches Vokabular zu weiteren Verbesserungen führt. 
+            
+        

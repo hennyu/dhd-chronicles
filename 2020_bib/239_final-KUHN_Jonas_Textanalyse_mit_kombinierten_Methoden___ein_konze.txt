@@ -1,0 +1,228 @@
+
+  
+    
+       Zentral für unsere methodologische Argumentation ist der Anspruch, Computermodelle für die Ableitung von einzelnen Befunden aus der Datenlage so in kombinierte Arbeitspraktiken zu integrieren, dass folgende zwei Aspekte unabhängig voneinander reflektiert werden können: (a) Wie hoch liegt die komputationelle Vorhersagequalität des Modells bei der Anwendung auf den Untersuchungsgegenstand (Texte einer bestimmten Epoche, Gattung, Inhaltsdomäne etc.) bezogen auf eine definierte Analyseaufgabe (etwa die Extraktion aller textuellen Erwähnungen der Akteure in einem Text)? (b) Wie aussagekräftig sind Befunde aus einer gegebenen, definierten Analyseaufgabe bezogen auf eine übergeordnete geisteswissenschaftliche Forschungsfrage?  Eine modular aufgebaute Architektur von Analyseschritten kann entlang dieser beiden Aspekte sukzessive für die Bearbeitung eines geisteswissenschaftlichen Forschungsgegenstands angepasst werden.
+      
+	Fasst man die Idee der komputationell/geisteswissenschaftlichen Methodenkombination sehr weit, fallen natürlich alle Arbeiten aus dem Spannungsfeld der DH darunter: Bevor Standard-Werkzeuge (auch ohne eine Möglichkeit der Adaptation) etwa für explorative oder heuristische Zwecke eingesetzt werden, werden sich die Forschenden ein Bild zu deren Vorhersagequalität auf dem studienspezifischen Material machen. Und bevor in einem Machine-Learning-Projekt mit großem Zeitaufwand Computermodelle für eine Analyseaufgabe und ein bestimmtes Korpus optimiert werden, vergewissern sich die Beteiligten in der Regel, dass die ableitbaren Befunde einen relevanten Beitrag zu Fachfragen leisten. Insofern schlägt sich das Nebeneinander der beiden Aspekte mittelbar auf jede DH-Methodendiskussion nieder (vgl. etwa die Diskussion von computergestützten Analyseverfahren in unterschiedlichen DH-Fachkontexten in Reiche et al. 2014 oder die Diskussion der Rolle der Informatik in den DH bei Heyer/Niekler/Wiedemann 2014 oder Deck 2018). Die praktischen und theoretischen Implikationen für das weitere Vorgehen unterscheiden sich jedoch abhängig davon, ob eine parallel komputationell/geisteswissenschaftlich reflektierte Modularisierung der Analysekonzepte im Kern des arbeitspraktischen Vorgehensmodells für ein DH-Projekt steht oder ob beispielsweise zunächst unüberwachte Verfahren explorativ eingesetzt werden (vgl. das in Allison et al. 2011 dokumentierte Experiment). Betroffen sind also zentrale methodische Fragen, etwa zur Rolle der Visualisierung im Erkenntnisprozess (hierzu fanden und finden vielfältige Diskurse statt, vgl. z.B. Ihde 1998, Schaal/Kath/Dumm 2016, Romele et al. 2018); auch die Frage nach dem Verhältnis zwischen “building” (als Erstellen von Computerprogrammen) und “studying” in den DH (vgl. die 2011 von Stephen Ramsay ausgelöste Kontroverse, Ramsay/Rockwell 2012) erhält in einem eng verzahnten Vorgehensmodell einen differenzierten Charakter.
+      
+      
+	Gerade angesichts vielschichtiger möglicher Implikationen zum methodischen Selbstverständnis erscheint es uns für den vorliegenden Beitrag sinnvoll, die Kernideen des verzahnten Vorgehensmodells zunächst systematisch zu diskutieren. Auf eine Vertiefung spezifischer methodologischer Querbezüge müssen wir aus Platzgründen verzichten. 
+      
+    
+    
+      CRETA () wurde 2016 im Rahmen der BMBF-Förderung für Digital Humanities-Zentren etabliert.
+    
+    
+      Aus Platzgründen können wir die Umsetzung des konzeptionellen Rahmens in einzelnen Projekten im vorliegenden Vortragsexposé nicht diskutieren. 
+    
+    
+      Falls hinreichend viele Daten annotiert wurden, kann überwachtes Lernen auf Basis einer Aufteilung in Trainings- und Testdaten zur Anwendung kommen. Zumeist ist bei speziellen Kategorisierungsaufgaben jedoch die Menge der Referenzdaten so klein, dass sie lediglich als Testmenge dienen kann – etwa für die Adaptation von Modellen, die für vergleichbare Kategorien trainiert werden können, oder für unüberwachte Verfahren.
+    
+    
+      Die interne Modellstruktur wird im Rahmen eines solchen Vorgehens getrennt vom Modellierungsziel gesehen; sie kann zwar von systematischen Annahmen über die zu modellierende Aufgabe inspiriert sein, ausschlaggebend ist jedoch die Optimierung der fixierten Referenzannotationen. Häufig erzwingt die mangelnde Verfügbarkeit von unmittelbar verwendbaren Daten bzw. Annotationen eine Modellarchitektur, die von den kausalen Zusammenhängen der modellierten Domäne abweicht.
+    
+    
+      Einen Prototyping-Ansatz innerhalb der DH diskutieren El Khatib et al. 2019. Ein verzahntes zyklisches Vorgehensmodell ist auch in der Visualisierung/den 
+      Visual Analytics
+       verbreitet (vgl. etwa Sacha et al. 2014, El-Assady et al. 2019 und die Beiträge in Butt et al. 2020). Iterative Annotationszyklen zur Optimierung der Operationalisierung werden beschrieben bei Pustejovsky/Stubbs, 2012, Bögel et. al. 2015 Gius/Jacke 2017 und Pagel et al. 2018. Eine ausführliche Diskussion des Bezugs zu 
+      close/distant reading
+       in DH findet sich in Jänicke 2016, Kap. 2.
+    
+    
+      Wir schließen uns hier der Konzeptualisierung an, die Danneberg/Albrecht 2017 im Rahmen einer möglichst allgemeinen wissenschaftstheoretischen Charakterisierung der Inferenzschritte vornehmen, welche einer literaturwissenschaftlichen Textinterpretation zugrunde liegen. Eine Verallgemeinerung auf andere textanalytische Problemstellungen ist ohne Weiteres möglich.
+    
+  
+  
+
+Bibliographie
+
+Allison, Sarah / Heuser, Ryan / Jockers, Matthew / Moretti, Franco / Witmore, Michael
+ (2011): "Quantitative Formalism: An Experiment", in: 
+Pamphlets of the Stanford Literary Lab
+ 1.. http://litlab.stanford.edu/LiteraryLabPamphlet1.pdf [Letzter Zugriff: 05.01.2020]
+
+
+Bögel, Thomas / Gertz, Michael / Gius, Evelyn / Jacke, Janina / Meister, Jan Christoph / Petris, Marco / Strötgen, Jannik
+ (2015): "Collaborative Text Annotation Meets Machine Learning: heureCLÉA, a Digital Heuristic of Narrative", in: 
+DHCommons Journal
+ 1 10.5281/zenodo.3240591
+
+
+Butt, Miriam / Hautli-Janisz, Annette / Lyding, Verena
+ (2020): 
+LingVis: Visual Analytics for Linguistics
+. CSLI lecture notes. Stanford: CSLI Publications.
+
+
+Danneberg, Lutz / Albrecht, Andrea 
+(2017): "Beobachtungen zu den Voraussetzungen des hypothetisch-deduktiven und des hypothetisch-induktiven Argumentierens im Rahmen einer hermeneutischen Konzeption der Textinterpretation", in: 
+Journal of Literary Theory
+ 10(1): 1–37.
+
+
+Deck, Klaus-Georg
+ (2018): "Digital Humanities – Eine Herausforderung an die Informatik und an die Geisteswissenschaften", in: Huber, Martin / Krämer, Sybille (eds.): 
+Wie Digitalität die Geisteswissenschaften verändert: Neue Forschungsgegenstände und Methoden.
+ (= Sonderband der Zeitschrift für digitale Geisteswissenschaften, 3). PDF Format ohne Paginierung. 10.17175/sb003_002.
+
+
+El-Assady, Mennatallah / Jentner, Wolfgang / Sperrle, Fabian / Sevastjanova, Rita / Hautli-Janisz, Annette / Butt, Miriam / Keim, Daniel A.
+ (2019):
+ "
+lingvis.io - A Linguistic Visual Analytics Framework
+"
+, in: 
+Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics: System Demonstrations
+ 13-18.
+
+
+El Khatib, Randa / Wrisley, David J. / Elbassuoni, Shady / Jaber, Mohamad / El Zini, Julia
+ (2019): "Prototyping Across the Disciplines"
+,
+ in: 
+Digital Studies/le Champ Numérique
+, 8(1), 10 10.16995/dscn.282
+
+
+Gius, Evelyn / Jacke, Janina
+ (2017): „The Hermeneutic Profit of Annotation. On preventing and fostering disagreement in literary text analysis”, in: 
+International Journal of Humanities and Arts Computing
+ 11(2): 233–254.
+
+
+Ihde, Don 
+(1998): 
+Expanding Hermeneutics: Visualism in Science
+, Evanston, Ill.: Northwestern University Press.
+
+
+Jänicke, Stefan 
+(2016): 
+Close and Distant Reading Visualizations for the Comparative Analysis of Digital Humanities Data
+. Dissertation, Universität Leipzig. 
+http://www.informatik.uni-leipzig.de/~stjaenicke/dissertation.pdf
+ [Letzter Zugriff: 05.01.2020]
+
+
+Heyer, Gerhard / Niekler, Andreas / Wiedemann, Gregor
+ (2014): "Brauchen die Digital Humanities eine eigene Methodologie? Überlegungen zur systematischen Nutzung von Text Mining Verfahren in einem politikwissenschaftlichen Projekt", in: 
+1. Jahrestagung der Digital Humanities im deutschsprachigen Raum (DHd 2014)
+http://asv.informatik.uni-leipzig.de/publication/file/255/Heyer-Brauchen_die_Digital_Humanities_eine_eigene_Methodologie__berlegungen-1451050.pdf
+ [Letzter Zugriff: 05.01.2020]
+
+
+Hovy, Eduard / Lavid, Julia
+ (2010): "Towards a ‘science’ of corpus annotation: a new methodological challenge for corpus linguistics", in: International Journal of Translation
+, 
+22(1): 13–36.
+
+
+Kuhn, Jonas 
+(2019): "Computational text analysis within the humanities: How to combine working practices from the contributing fields?", in: 
+Language Resources & Evaluation
+ 53: 565–602 
+
+https://doi.org/10.1007/s10579-019-09459-3
+
+.
+
+
+Kuhn, Jonas / Reiter, Nils 
+(2015): "A plea for a method-driven agenda in the Digital Humanities“, in: 
+Proceedings of Digital Humanities 2015, Sydney, Australia, 
+(
+June 2015
+).
+
+
+Kuhn, Jonas / Pichler, Axel / Reiter, Nils
+ (eds.) (erscheint): 
+Reflektierte algorithmische Textanalyse: Interdisziplinäre(s) Arbeiten in der CRETA-Werkstatt. 
+Berlin: de Gruyter.
+
+
+Krautter, Benjamin / Pagel, Janis / Reiter, Nils / Willand, Marcus 
+(2018): "Titelhelden und Protagonisten – Interpretierbare Figurenklassifikation in deutschsprachigen Dramen", in: LitLab Pamphlets 7. 
+
+https://www.digitalhumanitiescooperation.de/wp-content/uploads/2018/12/p07_krautter_et_al.pdf
+
+ [Letzter Zugriff: 05.01.2020].
+
+
+Krautter, Benjamin / Pagel, Janis
+ (2019): "Klassifikation von Titelfiguren in deutschsprachigen Dramen und Evaluation am Beispiel von Lessings ‘Emilia Galotti’," in: 
+Konferenzabstracts DHd 2019 Digital Humanities: multimedial & multimodal, Frankfurt am Main, März 2019
+.
+
+
+Pagel, Janis / Reiter, Nils / Rösiger, Ina / Schulz, Sarah
+ (2018)
+: 
+"
+A Unified Annotation Workflow for Diverse Goals
+"
+, in:
+ Kübler, 
+Sandra / Zinsmeister, Heike (eds.)
+: 
+Proceedings of the Workshop on Annotation in Digital Humanities, co-located with ESSLLI 2018
+.
+
+
+Pustejovsky, James / Stubbs, Amber 
+(2012). 
+Natural language annotation for machine
+
+
+learning
+. Sebastopol: O'Reilly Media.
+
+
+Ramsay, Stephen / Rockwell, Geoffrey
+ (2012): "Developing Things: Notes toward an Epistemology of Building in the Digital Humanities", in: Gold, Matthew K. (ed.): 
+Debates in the digital humanities.
+ Minneapolis and London: University of Minnesota Press, 2012: 75–84 10.5749/minnesota/9780816677948.003.0010.
+
+
+Reiche, Ruth / Becker, Rainer / Bender, Michael / Munson, Matt / Schmunk, Stefan / Schöch, Christof
+ (2014): 
+Verfahren der Digital Humanities in den Geistes- und Kulturwissenschaften
+. 
+DARIAH-DE Working Papers. Göttingen: DARIAH-DE, 2014.
+
+
+Romele, Alberto / Severo, Marta / Furia, Paolo 
+(2018): "Digital Hermeneutics: From Interpreting with Machines to Interpretational Machines", in: 
+AI & Society: Knowledge, Culture and Communication
+, Springer, in press. 
+
+https://hal.archives-ouvertes.fr/hal-01824173
+
+ [Letzter Zugriff: 05.01.2020]
+
+
+Sacha, Dominik / Stoffel, Andreas / Stoffel, Florian / Kwon, Bum Chul / Ellis, Geoffrey / Keim
+, 
+Daniel A. 
+(2014): "Knowledge Generation Model for Visual Analytics",  in: 
+IEEE Transactions on Visualization and Computer Graphics
+ 20 (12) 1604–1613. 10.1109/TVCG.2014.2346481.
+
+
+Schaal, Gary S. / Kath, Roxana / Dumm, Sebastian
+ (2016): "New Visual Hermeneutics", in: 
+Cybernetics & Human Knowing
+ 23: 51–76.
+
+
+Stefanowitsch, Anatol
+ (2018): 
+Corpus Linguistics: A Guide to the Methodology 
+(Textbooks in Language Sciences 8). Open Review Version. Berlin: Language Science Press. 
+
+www.langsci-press.org
+
+. [Letzter Zugriff: 05.01.2020]
+
+
+
