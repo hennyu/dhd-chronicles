@@ -1,0 +1,94 @@
+GeoBib - Georeferenzierte Online-Bibliographie früher Holocaust- und
+Lagerliteratur
+Frank Binder, Annalena Schmidt, Bastian Entrup, Markus Roth, Henning Lobin
+
+Zielsetzung
+Ziel des Projekts ist es, die frühen Texte der deutsch- bzw. polnischsprachigen Holocaust- und
+Lagerliteratur von 1933 bis 1949 bibliographisch in einer Online-Datenbank zu erfassen. So können
+diese frühen Texte, die in weiten Teilen aus dem kulturellen und kollektiven Gedächtnis verdrängt
+wurden, für die öffentliche, wissenschaftliche und didaktische Wahrnehmung erschlossen und
+aufbereitet werden. Ergänzt werden die bibliographischen Einträge durch inhaltliche und
+biographische Annotationen, Informationen zur Werkgeschichte sowie durch Georeferenzierung
+(Informationen zu Orten und Plätzen anhand von Kartenmaterial).
+Das zu entwickelnde Web-Portal soll dabei – neben der bibliographischen Suche – auch über
+geographische Karten gezielt Texte zu einer bestimmten Region zugänglich machen. Dabei sollen
+Abfragemöglichkeiten nach räumlichen Kriterien und Attributen beliebig kombinierbar sein.
+
+Methoden
+Die frühen Texte der Holocaustliteratur werden– verbunden mit einer tiefreichenden inhaltlichen
+Erschließung – in einem Online-Bibliographie-Portal repräsentiert. Eine an internationalen
+Annotationsstandards (TEI) ausgerichtete systematische Erfassung der bis 1949 publizierten Texte,
+ggf. erschienener Rezensionen, der Sekundärliteratur sowie die Anreicherung durch biographische
+Informationen zu den Verfassern/-innen wird dabei kombiniert mit der Georeferenzierungvon
+Metadaten und Textinhalten (Orte, Lager, Gettos etc.). Sämtliche Daten werden in einer OnlineDatenbank erfasst, die den zukünftigen Nutzern den Zugriff auf die bibliographischen Daten und
+deren Auswertung durch innovative kartenbasierte Visualisierungen ermöglicht. Dies bildet eine
+wesentliche Grundlage für daran anschließende literatur- und geschichtswissenschaftliche
+Forschungsfragestellungen sowie für eine didaktische Nutzung dieser Zeugnisse in der schulischen
+und außerschulischen Bildungsarbeit.
+
+Genutzte Ressourcen
+Die aufwändige Beschaffung und inhaltliche Erschließung der frühen Holocausttexte wird als
+zentraler Teil der Projektarbeiten durch ein Team von Literaturwissenschaftler/innen und
+Historiker/innen unter intensiver Nutzung verschiedener einschlägiger Bibliotheken, Archive sowie
+den Kauf antiquarischer Bücher durchgeführt.
+Zur Erfassung bibliographischer, literaturwissenschaftlicher und historischer Daten wird ein auf TEIP5 basierendes XML-Schema erstellt und eine angepasste Autorenumgebung in Oxygen XML
+verwendet (s. Entrup et al. 2013b).
+Historisch-biographische Informationen zu Autor/innen sowie ortsbezogene Informationen werden
+zeitgleich zentral in einem projektinternen Redaktionswiki (Wikimedia) zusammengetragen. Somit
+können sie später automatisiert ausgelesen und in die Portaldatenbank übertragen werden. Über die
+Verlinkung von personen-, orts- und zeitbezogenen Informationen in den TEI-Dokumenten unter
+
+Nutzung der Wiki-Einträge werden die Zusammenhänge zwischen den erschlossenen HolocaustTexten technisch erfassbar. Informationen zu den Autoren/innen werden darüber hinaus mit der
+Gemeinsamen Normdatei (GND) der Deutschen Nationalbibliothek verknüpft.
+Zurückgegriffen werden kann aber auch auf die im Bibliographieportal des Herder-Instituts und
+anderen Abteilungen gesammelten Daten und die Forschungsbibliothek (Warmbrunn 2012), in der
+für die Jahre zwischen 1954 und 1998 alle landesweiten und regionalen Zeitungen Polens und
+weiterer Nachbarländer gesammelt wurden und wo über eine eigene Zeitungsausschnittssammlung
+auf zahlreiche biographische und ortsbezogene Informationen zurückgegriffen werden kann.
+Für die Georeferenzierung und Bereitstellung eines geographischen Suchzugriffes wird ein
+geographisches Informationssystem eingesetzt. Zur Aufbereitung von Karten wird für das
+entstehende Online-Portal ein Map-Server benötigt, der Karten und Abfragedienste sowie GISFunktionalitäten zur Verfügung stellt. In Bezug auf Kartenmaterial werden vorhandene
+Grundlagenkarten recherchiert aber bei Bedarf auch digitales Kartenmaterial erstellt.
+
+Entstehende Ressourcen
+Die frühen Texte der Holocaust- und Lagerliteratur werden in Form einer umfangreichen
+Bibliographie, nicht aber in einer digitalen Volltextbibliothek erschlossen.Urheberrechtsfragen
+spielen hier für die Projektarbeiten eine zentrale Rolle. Die Arbeitsstelle Holocaustliteratur tritt seit
+geraumer Zeit dagegen auf, Opfertexte als frei verfügbar anzusehen. Für den Gesamtbestand wäre
+eine befriedigende Rechteklärung aufgrund der jeweils notwendigen Einzelfallprüfungen nicht
+möglich gewesen. Jenseits der juristischen Dimension hätte eine Volltext-Digitalisierung ohne
+Rechteklärung aber auch einen immensen symbolischen Schaden zur Folge: Die Rechte der Opfer
+würden grob missachtet.Die Ermittlung und Erschließung der Texte in einer Bibliographie, die
+Rückholung in das kommunikative Gedächtnis ist dagegen auch den Rechten der Opfer stark
+verpflichtet und will helfen, dass deren frühe Zeugnisse (wieder) sichtbar werden.
+Die tiefreichende qualitative Erschließung der Quelldokumente in Form eigens erstellter
+Annotationsdokumente (inhaltliche Zusammenfassung, Autorbiographie, Werkgeschichte,
+Verschlagwortung u.a.) bilden die Datengrundlage für die weiteren informationsverarbeitenden
+Schritte sowie das entstehende Online-Portal.
+Das entstehende Webportal soll ausgewählte relevante Metadatenstandards unterstützen und
+einschlägige Schnittstellen zum Harvesting von Metadaten bedienen können. Ortsbezogene
+Informationen aus der Erschließung der Quelldokumente werden darüber hinaus mit
+Grundlagenkarten verknüpft und in ein geographisches Informationssystem eingepflegt.
+Parallel zum Projekt entstehen überdies Qualifikationsarbeiten in der Literatur- und Geschichtswissenschaft, in denen die frühen Textzeugnisse sowie ihre Entstehungsbedingungen auch auf
+Grundlage der im Projekt erhobenen Daten und gewonnenen Erkenntnisse untersucht werden.
+Ferner werden zwei Konferenzen mit jeweils einem literatur- und einem geschichtswissenschaftlichen Schwerpunkt durchgeführt, deren Ergebnisse publiziert werden. In Einzelfällen,
+die besonders aussagekräftig sind und bei denen sich die Frage des Urheberrechts zweifelsfrei klären
+lässt, sollen auch frühe Textzeugnisse reediert und somit als Volltext dem Diskurs zugänglich
+gemacht werden.
+
+Referenzen
+
+Entrup, Bastian, Maja Bärenfänger, Frank Binder and Henning Lobin(2013a): IntroducingGeoBib: An
+Annotatedand Geo-referenced Online Bibliographyof Early German andPolish Holocaust and Camp
+Literature (1933–1949). Digital Humanities 2013, University of Nebraska–Lincoln, 16-19 July 2013.
+http://dh2013.unl.edu/abstracts/ab-229.html
+Entrup, Bastian, Frank Binder and Henning Lobin(2013b):
+Extendingthepossibilitiesforcollaborativeworkwith TEI/XML throughtheusageof a wiki-system. In:
+Proceedingsofthe 1st Workshop on Collaborative Annotations in Shared Environments: metadata,
+vocabulariesandtechniques in the Digital Humanities, DH CASE ’13. September 10 2013, Florence,
+Italy. <doi:10.1145/2517978.2517988>.
+Warmbrunn, Jürgen (2012). "Das Vernetzen von Menschen, Daten und Systemen – Die
+Forschungsbibliothek des Herder-Instituts in Marburg." In: Bernhard Mittermaier (Hrsg.) Vernetztes
+Wissen – Daten, Menschen, Systeme. 6. Konferenz der Zentralbibliothek, Forschungszentrum Jülich
+5. - 7. November 2012 (Proceedingsband).ISBN 978-3-89336-821-1 http://hdl.handle.net/2128/4699
+

@@ -1,0 +1,161 @@
+Verbundprojekt ‘MayaArch3D’
+Ein webbasiertes 3D-GIS zur Analyse der Archäologie von Copan, Honduras
+Jennifer von Schwerin, DAI/KAAK
+Bisher gab es keine Infrastrukturen für die Aufbewahrung und Nutzung von 3D-Modelen, die in
+zunehmender Zahl von archäologischen Funden (z. B. Keramik, Skulpturen, Gebäuden oder ganzen
+Städtn) angefertgt werden. Wo solen solche digitalen Objekt aufbewahrt werden, damit Forscher
+sie im Intrnet sehen, analysieren und mit anderen Modelen vergleichen können? Wie können sie mit
+anderen archäologischen Datn verknüpft werden, damit man diese 3D-Modele in einer virtuelen
+Welt erforschen kann?
+
+Abb. 1: 3D Geobrowser des MayaArch3D Projektes (http://MayaArch3D.org)
+An dieser Schnitstle zwischen Archäologie und Computrwissenschaftn arbeitt das
+Verbundprojekt „MayaArch3D“, an dem das Deutsche Archäologische Insttut (DAI), welches die
+Aufgaben der Altrtumswissenschaftn bearbeitt, und der Lehrstuhl für Geoinformatk und das
+Intrdisziplinäre Zentum für Wissenschaftliches Rechnen der Universität Heidelberg, welches sich
+mit den Fragen der Informatk beschäftgt, betiligt sind. Ziel des Verbundprojekts MayaArch3D ist
+es, ein neues Forschungswerkzeug für die Archäologie zu entwickeln, welches es erlaubt, 3D-Modele
+und Funktonen von Geographischen Informatonssystemen (GIS) für die Dokumentaton und Analyse
+archäologischer Fundstätten auf einer Internet-Plattform zusammenzuführen. Zwei- und
+dreidimensionale Daten und Modele von unterschiedlichster Art und Aufösung werden in eine
+sogenannte Geodateninfrastruktur (GDI) mit webbasierten interaktven Analyse- und
+Visualisierungswerkzeugen eingebunden, so dass archäologische Analysen online in einem
+georeferenziertn Systm vorgenommen werden können. Abfagen von Zugangsmustrn und
+Sichtverbindungen, Siedlungsplänen, topographischen Merkmalen, Richtungen, Matrial- und
+Fundvertilungen, die bisher nur in 2D-, oder 2.5D-Ansichtn durchgeführt werden, solen in der 3DUmgebung möglich sein. Dabei werden weit versteut Informatonen und Objekt auf einer
+Intrnetplatform nach intrnatonalen Standards dokumentert, georeferenziert, virtuel
+zusammengeführt und analysiert.
+Als Untrsuchungsgebiet wurde die UNESCO Weltkulturerbestäte Copan in Honduras gewählt. Bei
+der in MayaArch3D entwickeltn Infastuktur handelt es sich jedoch um einen Prottp, der nach
+
+entsprechender Anpassung auch in anderen komplexen Ruinenstäten weltweit eingesetzt werden kann
+und eine Kombinaton aus Visualisierungs- und Analysewerkzeuge für die eHumanites bereitstlt.
+Copan ist einer der wichtgstn Fundort der klassischen Maya-Kultur. Er liegt nahe der Grenze der
+heutgen Staatn Guatmala und Honduras, innerhalb der südöstlichen Peripherie des Mayagebiets.
+Copan zeichnet sich gegenüber anderen Mayafndortn durch seine zahlreichen Tempel mit
+skulptertn Stinmonumentn und seiner besonders großen Anzahl an Hieroglypheninschriftn aus.
+Seit 1885 werden in Copan Ausgrabungen durchgeführt. Archäologen aus Honduras, den USA, aus
+England, Japan, Frankreich und Deutschland konntn die ununtrbrochene Geschicht eines
+Königreiches rekonstuieren, das zwischen 427 und 820 n. Chr. von sechzehn Herrschern regiert
+wurde.
+Die Analyse der räumlichen Stuktur von Copan kann wichtge Aufschlüsse über die Stukturierung
+des Orts, die sozioökonomischen Verhältnisse, die Veränderung des Stadtbildes im Laufe der Zeit
+und die Geschicht der Maya-Kultur im Algemeinen geben. Dafür werden Informatk-gestützt
+Werkzeuge benötgt, die im Rahmen des Projekts erstmals sowohl web-gestützt, als auch in 3D und
+auf Standards basierend erarbeitt werden solen. Durch die Nutzung virtueler Landschaftn und GISKartn, die mit durchsuchbaren Datnbanken verlinkt sind, können Wissenschaftler intraktve
+Analysen von Beziehungen und Veränderungen über Raum und Zeit anstlen.
+
+Projektätgkeitn 2012-2103
+Teilprojekt Archäologie
+Die zentale Aufgabe des Teilprojekts Archäologie ist es, die Informatonen zur Archäologie,
+Architektur und zu Funden aus Copan nach Datentyp, Informationsgehalt und insbesondere
+hinsichtlich ihrer spätren Verwendung für die GIS-Analyse zu sammeln, zu stukturieren und
+in einer Datenbank abrufbar zu machen. Das Teilprojekt Archäologie koordiniert die Datensammlung
+von Informatonen zum Copan des 8. und 9. Jahrhunderts in Archiven, Museen und im Feld, sowie die
+Datenaufbereitung und –strukturierung.
+Am Anfang des Projekts im Jahre 2012 entwickelt das Teilprojekt Archäologie das konzeptuele
+Design der Datnbank und bestmmt die Funktonen, die für das Tool (QueryArch3D) entworfen
+werden müssen, um ab 2014 die erstn Tests durchzuführen. iDAI.feld – das Datnbanksystm des
+DAI, wurde von den MayaArch3D Projektmitarbeitern in Zusammenarbeit mit der IT-Abteilung des
+Deutschen Archäologischen Instituts (DAI) Berlin unter der Leitung von R. Förtsch fürdie
+Verwaltung von Metadatn von 3D Modelen und den Einsatz in der Maya-Archäologie angepasst.
+
+Abb. 3: IDAi.field adaptiert für Maya-Archäologie
+
+Abb. 4: Neue iDAI.field Tabelle für 3D Modelle die von MayaArch3D angelegt wurde
+Neue Tabelen für 3D Modele, Fundstlen, Projekt, Sub-Projekt, Ikonographie, und Inschriftn
+wurden angelegt. Die Benutzeroberfäche wurde neu gestaltt und auf Englisch und Spanisch
+übersetzt. Diese Datnbank dient als Zwischenlösung für die Datnsammlung und Datneingabe, bis
+2014 ein leistungsfähigeres PostGris Datnbanksystm entwickelt wird.
+Während Laborarbeitn in Bonn, einer Feldkampagne im April 2013 und einem Forschungsbesuch im
+American Museum of Natural History in New York im Mai 2013 wurden Daten für das System
+gesammelt, digitalisiert, und für die Eingabe in die Datenbank strukturiert.
+
+Abb. 5: Altar der Stele 13 in Copan (KAAK, Laura Stelson)
+Abb. 6: Keramik aus einer Altgrabungen im Gebäude 10L-18 (KAAK, Mike Lyons)
+
+Abb. 7: Geobrowser mit 6000 archäologische Fundstellen
+Die bisher gesammeltn Datn umfassen Koordinatn von 6000 archäologischen Fundstlen, 224
+davon in Honduras. Für Copan wurden ein geografsches Informatonssystm (GIS) und eine 3Dcomputrsimuliert Stadtlandschaft, die 24 Quadratkilometr und 3000 Stukturen des Copantals
+erfasst, erarbeitt. Derzeit werden weitre Datn in die Datnbank eingetagen: Stuktur- und
+Gruppennamen, Typenbezeichnungen, Gebäudehöhen, Konstuktonsdatn und dazugehörige
+Herrscher, sowie ikonographische und epigraphische Informatonen zu über 3000 Skulpturstücken.
+3D-Modele von Skulptur und Architektur, die 2013 mit airborne und terrestrischem Laserscanning
+und Fotogrammmetrie und auch CAD angefertgt wurden, werden jetzt segmentert, mit ihren
+archäologischen Atributn und Meta-datn verlinkt und als Testbjekt für das 3DDokumentatonssystm verwendet.
+
+Abb. 8: Scannen der Ruinen des Tempels 18, Copan (KAAK Fabio Remondino, FBK Trento)
+
+Abb. 10: Vorläufige Modelle des Laserscans von Tempel 18 (KAAK: Fabio Remondino)
+
+Abb. 11: CAD Modelle von verschieden Gebäudetypen in Copan (Heather Richards-Rissetto)
+
+Abb. 12: Erste Versuche der Rekonstruktion des Tempels 18 in Copan (KAAK: Mike Lyons)
+Derzeit wird an einem computrgrafschen 3D-Model von Tempel 18 in Copan gearbeitt, welches
+wirklichkeits-basierende Modele von Bauschmuckelementn mit virtuelen Rekonstuktonen oder
+Simulatonen kombiniert. Zudem wurden 2013 LIDAR Datn von einer 24km² großen Fläche des
+Copan-Tales gesammelt und werden bis Ende des Jahres prozessiert.
+
+Abb. 13: Erste Ergebnisse der LiDAR Daten von Copan (KAAK)
+
+Abb. 14: Vergleich zwischen LiDAR Daten und Karten von Copan aus den 80er Jahren
+(Richards-Rissetto)
+2014 wird das Teilprojekt Archäologie in Copan und Museumssammlungen weitre 3D Datn
+aufnehmen, stukturieren und in die Datnbank eingeben. Die erstn Analysen im online Systm
+werden durchgeführt und geprüft.
+Teilprojekt Geoinformatk
+Von 2012 bis 2013 prüft das Teilprojekt Geoinformatk neue OpenSource Software-Optonen, die auf
+WebGL basieren, um eine neue Platform aufzubauen und entschied sich für Three.js – eine
+JavaScript-Bibliotek in Kombinaton mit WebGL. Diese Kombinaton dient als Framework für die
+Entwicklung der webbasiertn 3D Umgebung.
+Die Geoinformatker entwickeltn auch einen Geobrowser (intraktve Landkart, die verschiedene
+Ebenen von Datn visualisieren und abfagbar machen kann) auf Grundlage von Geomajas, einem
+Open-Source-GIS-Framework für das Web, welches der Anzeige und Bearbeitung der 2D- und 2,5DGeodatn dient, und intgriert dazu ein „3D Single Objekt Viewer“ um hochaufgelöst 3D Modele
+online zu visualisieren und zu analysieren.
+
+Abb. 15: Single-Object 3D Viewer
+Bis Ende 2013 wird eine geeignet Schnitstle für die Kommunikaton zwischen der iDAI.feld
+Datnbank und der Datnbank für die 3D Objekt (Postgresql/PostGIS) entwickelt, damit Atribut
+und Meta-Datn von den (oft digitalen) archäologischen Objektn im Geobrowser und 3D Viewer
+visualisiert werden können. Ab Januar 2014 können in diesen zwei Modulen schon zwei- und
+dreidimensionale archäologische Datn untrschiedlichstr Art und Aufösung gespeichert, dargestlt
+und abgefragt werden. Hierbei wurde ein Systm zur Verwaltung der untrschiedlichen Nutzergruppen
+entwickelt, so dass die Datn gleichzeitg von mehreren Forschergruppen mit verschiedenen Niveaus
+von Nutzerrechtn genutzt werden können.
+Im kommenden Jahr werden die Geoinformatker zudem die 3D-Umgebung für das Systm
+entwickeln, die raumbezogenen Abfagemöglichkeitn und GIS-Funktonen konstuieren, und eine
+Tranzparenzfnkton entwerfen, um 3D-Rekonstuktonen von den realitätsbasiertn Modelen
+abzuheben. Im- und Exportverfahren der untrschiedlichen 3D Datnformat werden auch untr
+Berücksichtgung intrnatonaler Standards entwickelt.
+
+Förderung: Bundesministerium für Bildung und Forschung, Gerda Henkel Stiftung
+Leitung des Projekts: M. Reindel
+Mitarbeiter und Mitarbeiterinnen:
+Teilprojekt Archäologie: Wissenschaftliche Mitarbeitrin: J.von Schwerin; studentsche Mitarbeitr:
+F. Fecher, M. Lyons, J. Meyer, L. Stlson,
+Teilprojekt Geoinformatk: M. Auer, N. Bilen, L. Loos, A. Zipf
+Kooperationspartner: Deutsches Archaeologisches Insttut, Kommission für Außereuropäische
+Archäologie, Geographisches Insttut, Lehrstuhl Geoinformatk, und das Intrdisziplinäre Zentum für
+Wissenschaftliches Rechnen (IWR) der Universität Heidelberg; I T A b t e i l u n g , Deutsches
+Archäologisches Insttut, Berlin; 3D Optcal Metology Group, Bruno Kessler Foundaton (FBK),
+Trient, Italien; Honduranisches Insttut für Archäologie und Denkmalpfege (IHAH), Middlebury
+Colege, Vermont, USA.
+
+Projektveröfentlichungen 2012-2013:
+von Schwerin, J. , H. Richards-Risseto, F. Remondino, and G. Agugiaro
+2013 Te MayaArch3D Project: A 3D WebGIS for Analyzing Ancient Maya Architecture and
+Landscapes at Copan, Honduras. Literary and Linguistic Computing 2013, doi:
+10.1093/lc/fqt059. Oxford Universit Press.
+Bilen,N., Loos, L., Auer, M., Zipf, A., Richards-Risseto, H., Reindel, M. & von Schwerin, J.
+2013
+
+Development of a 4D-webgis for archaeological research, Workshop on intgratng 4D, GIS
+and cultural heritage, 16th AGILE 2013, Leuven.
+
+Auer, M., Loos, L., Bilen, N., Zipf, A., von Schwerin, J., Reindel, M. & Richards-Riseto, H.
+2013
+
+MayaArch3D – A web based 3D geoinformaton systm t analyse te archaeology of Copán,
+Honduras.- Poster at BMBF Kick-Of Workshop of te eHumanites joint projects 8.-9. April
+2013 Leipzig
+

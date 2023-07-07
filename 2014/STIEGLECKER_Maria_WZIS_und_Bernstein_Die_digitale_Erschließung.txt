@@ -1,0 +1,92 @@
+Das Wasserzeichen-Informationssystem WZIS. Die digitale Erschließung, Visualisierung und
+Vernetzung von Wasserzeichen
+
+1) Kontext
+Die Wasserzeichenexpertise hat in vielen geisteswissenschaftlichen Disziplinen ihren festen
+Bestandteil, etwa in der Philologie, der Geschichtswissenschaft, der Kunstwissenschaft, der
+Musikwissenschaft oder der Buchwissenschaft. Speziell in der Handschriftenkunde etwa liefert die
+Bestimmung der Wasserzeichen oftmals wesentliche Beiträge zu Fragen der Datierung und Herkunft
+von Papierhandschriften.
+Die umständliche Konsultation von gedruckten und zum Teil sehr entlegenen Nachschlagewerken ist
+im digitalen Zeitalter auch im Bereich der Wasserzeichenforschung erleichtert worden durch eine
+ganze Reihe von Online-Datenbanken. Das hat gleichzeitig zu weiteren, internationalen
+Forschungsansätzen geführt, wie dem sogenannten Bernstein-Projekt, einem von 2006 bis 2009 von
+der EU geförderten Zusammenschluss von vier großen Wasserzeichensammlungen, mit dem Ziel, ein
+gemeinsames Portal für diese Sammlungen zu schaffen.
+Bis dahin handelte es sich nach wie vor hauptsächlich um abgeschlossene Datenbanken, die
+mengenmäßig nicht erweitert werden konnten. Deswegen wurde neben der Portallösung ein zweiter
+Ansatz verfolgt: der Aufbau eines Wasserzeichen-Informationssystems, mit dem bisher nicht
+erschlossene Wasserzeichensammlungen dezentral erfasst und präsentiert werden können. Die
+Ergebnisse aufwendiger und zeitintensiver Forschungsarbeit, die bisher nur lokal nutzbar waren,
+sollen so der scientific community als gesamtes präsentiert sowie untereinander vernetzt werden.
+In diesem gemeinsamen Projekt fanden sich die Württembergische Landesbibliothek, das
+Landesarchiv Baden-Württemberg, die Bayerische Staatsbibliothek und die Universitätsbibliothek
+Leipzig zusammen, in der zweiten Phase erweitert durch die Staatsbibliothek zu Berlin und die
+Deutsche Nationalbibliothek in Leipzig. Seit Anfang 2010 wird das Projekt von der Deutschen
+Forschungsgemeinschaft gefördert. Kurz vor dem Ende der Bewilligungsphase stehen ein
+Erfassungssystem und eine Online-Präsentation zur Verwaltung und Nutzung zur Verfügung, die sich
+beide in der Praxis bewährt haben und die beide bereits von der Forschung genutzt werden. Die
+Institutionen übergreifende Erschließung im Verbund ebnet dabei den Weg zu einer
+fächerübergreifenden Verständigung bei Fragen zur Erschließung, Dokumentation und Auswertung
+von Wasserzeichen. Denn Art und Beschaffenheit der Wasserzeichen sind durchaus heterogen:
+Wasserzeichen aus spätmittelalterlichen Kodizes weisen andere Motive aus als etwa Wasserzeichen
+in Papieren des 18. Jahrhunderts.
+Homogene Erschließung und ständige Erweiterung machen WZIS zu einer zentralen Datenbank für
+die Wasserzeichenforschung, mit derzeit rund 110.000 Wasserzeichen ist es das weltweit größte
+Online-Findmittel im Netz (www.wasserzeichen-online.de). Mehrere Anfragen verdeutlichen schon
+jetzt, dass die Datenbank auch nach Projektende weiter zur Erschließung neuer
+Wasserzeichensammlungen genutzt werden wird. Insbesondere die im Projekt realisierte
+Mehrsprachigkeit (etwa der hierarchischen Klassifikation) ermöglicht der internationalen
+Wasserzeichenforschung einen bequemen Recherchezugriff. Dadurch wird die Datenbank zum
+Aggregator für weitere Projekte werden (Berlin, Leipzig und Helsinki).
+
+2) Erschließung, Visualisierung und Vernetzung
+Hauptkomponente der ersten Projektphase war die Entwicklung eines Erfassungsmoduls zur
+dezentralen Dateneingabe und Verwaltung von Wasserzeichenbildern und ihrer zugehörigen
+Metadaten. Die zentrale MySQL-Datenbank ist dabei am Landesarchiv Baden-Württemberg in
+Stuttgart lokalisiert. Der Realisierung dieses Tools kam dabei eine intensive Zusammenarbeit mit der
+Österreichischen Akademie der Wissenschaften in Wien und mit der Russischen Akademie der
+Wissenschaften in Moskau (Victor Karnaukhov) zu Gute.
+Verschiedene Bildbearbeitungsfunktionen ermöglichen eine möglichst qualitätsvolle Darstellung der
+digitalisierten Wasserzeichenbilder, die aus sehr heterogenen Reproduktionen stammen
+(Durchzeichnungen, Abreibungen, Durchlichtbilder, Radiographien oder Thermographieaufnahmen).
+Stufenloses Rotieren, Spiegeln oder Invertieren des Bildes ist ebenso möglich wie eine
+Kontrastverbesserung.
+Die Einbindung der einzelnen Wasserzeichen in die Datenbank erfolgt nach vorgegebenen
+Richtlinien. An vorderster Stelle steht die Zuordnung des Wasserzeichenbildes zu einem Motiv über
+ein Baum-Menü, das - ausgehend von zwölf Motivgruppen - hierarchisch auf bis zu zehn Ebenen
+angeordnet ist. Diese hierarchisch strukturierte Klassifikation ist dynamisch angelegt und durch Icons
+auch visuell erschlossen. Ein Tool zur semiautomatischen Vermessung des Zeichens sorgt für eine
+möglichst genaue Verzeichnung der absoluten Höhe wie Breite des Wasserzeichens sowie des
+Abstandes zwischen den nächstgelegenen Stegdrähten. Mithilfe dieser Vorgaben kann nun nach
+bereits in die Datenbank integrierten identischen oder in Varietät vorliegenden Zeichen gesucht
+werden, die in Motiv und Abmessungen mit dem Neuzugang übereinstimmen. Mittels LayerTechnologie können Bilder transparent übereinandergelegt, miteinander verglichen und
+entsprechend miteinander verknüpft werden.
+Die Zuordnung der Papiere zu bestimmten Papiermühlen und Papiermachern gibt hinsichtlich
+Verbreitung, Handelswegen oder Lokalgeschichte wichtige Aufschlüsse für verschiedenste
+Fachdisziplinen. Im Erfassungsmodul können deshalb die Wasserzeichen über erweiterbare Listen mit
+Ortsangaben zu Papiermühlen und Namensnennungen von Papiermachern verknüpft werden.
+Die Darstellung und Präsentation der Wasserzeichen wird außerdem durch externe Verlinkung
+angereichert. Dadurch gelingt eine Vernetzung mit relevanten anderen Datenbanken, die
+analytischen Mehrwert zu den betreffenden Wasserzeichen bieten können. Von einem Papiermacher
+kann etwa auf die »Gemeinsame Normdatei« verlinkt werden, von Handschriften auf
+Handschriftendatenbanken wie »Manuscripta Mediaevalia«, »Handschriftencensus« oder
+»Manuscripta.at«, von Musikerhandschriften auf den RISM-OPAC.
+Um verschiedene Inhalte der Datenbank im Frontend in ihren geographischen Zusammenhängen
+sichtbar machen zu können, werden weitere kartographische Visualisierungsmöglichkeiten
+angeboten.
+Mit dem Übergang von gedruckt vorliegenden Wasserzeichen- Repertorien zur digitalen Präsentation
+haben sich so völlig neue Möglichkeiten für die Wasserzeichenforschung ergeben, nicht nur durch die
+einfachere Verfügbarkeit: die Vernetzung im kleinen durch die Verknüpfung einzelner Wasserzeichen
+
+führt zu einer Vernetzung im großen, da Bezüge der beinhaltenden Quellen ersichtlich werden. Diese
+wiederum in größere Zusammenhänge zu stellen ermöglicht die „Vernetzung im Netz“.
+
+Erwin Frauenknecht
+Landesarchiv Baden-Württemberg
+erwin.frauenknecht@la-bw.de
+
+Maria Stieglecker
+Österreichische Akademie der Wissenschaften
+Maria.Stieglecker@oeaw.ac.at
+

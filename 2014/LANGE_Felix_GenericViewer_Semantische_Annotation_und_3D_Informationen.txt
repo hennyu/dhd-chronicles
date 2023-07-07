@@ -1,0 +1,215 @@
+GenericViewer - Semantische Annotation und 3DInformationen in den Spatial Humanities
+Einreichung Dhd Passau 2014, Projekt IBR
+Einleitung
+Forschungen im Bereich der Spatial Humanities arbeiten bisher zumeist in
+großräumigen geographischen Dimensionen. Dies gilt in besonderer Weise für
+Vorhaben, die Geographische Informationssysteme (GIS) zur Analyse und Visualisierung
+von Daten zur Verbreitung von Phänomenen, Entwicklungen und Objekten aus
+unterschiedlichen Forschungsfeldern wie etwa der Archäologie, der
+Wirtschaftsgeschichte oder der Raumsoziologie nutzen. Die bearbeiteten Räume sind
+auf Flächen, nämlich auf geographische Karten, projiziert, die Datenanalyse
+vorwiegend quantitativ [s. z. B. v. Lünen, Travis 2013].
+Dem gegenüber stehen Disziplinen wie etwa die Kunstgeschichte und die
+Liturgiewissenschaft, deren Untersuchungsgegenstände sich in kleineren Räumen
+befinden oder selbst kleinere Räume sind, wie Kirchen, Paläste und Häuser, Plätze,
+Gärten und urbane Strukturen [Ananieva et al. 2013]. Hier ist es notwendig, den
+dreidimensionalen Raum zu betrachten. Die dritte Dimension spielt in solchen
+kleineren Räumen naturgemäß eine größere Rolle, die Projektion auf die Fläche führt
+dementsprechend zu einem größeren Informationsverlust. Allerdings gibt es in den
+Digital Humanities bisher nur wenige entsprechende Forschungsansätze [cf. Paliou,
+Knight 2010].
+Das Mainzer Projekt “Inschriften im Bezugssystem des Raumes IBR” erarbeitet Wege,
+3D-Informationen in den Mittelpunkt raumbezogener geisteswissenschaftlicher
+Forschung zu stellen. Eine im Projekt entwickelte Erfassungs- und
+Visualisierungssoftware bietet dabei die Möglichkeit, visuelle und textuelle
+Informationen zu dreidimensional vermessenen Objekten in ihrem historischen
+räumlichen Bezugssystem zu erfassen. Die Dichte dieser multimedialen Daten wird mit
+dem Werkzeug nach Kategorien und Zusammenhängen abfragbar und visuell erfahrbar.
+Forschungsaussagen gewinnen dadurch an empirischer Qualität.
+Software
+Panorama-Fotografie ist eine inzwischen weit verbreitete Technik, bei der man Bilder
+mit sehr großen Blickwinkeln (bis zu 360°) aus einigen Schnappschüssen
+zusammensetzt. Nicht nur kommerzielle Software wie Google Street View kann solche
+
+Panoramen visualisieren, auch populärwissenschaftliche Anwendungen1 vermitteln
+dem Benutzer ein realistisches Raumerlebnis.
+Um jedoch raumbezogene Forschung betreiben zu können, ist es zunächst notwendig,
+den Untersuchungsgegenstand zu vermessen, da einzelne Bilder keine automatisch
+ableitbaren 3D-Informationen beinhalten. Ein Weg ist die Vermessung mittels
+terrestrischem Laserscanning (TLS). Damit lassen sich in wenigen Minuten sog.
+Punktwolken mit hoher Qualität innerhalb eines Bereiches bis zu hundert Metern
+Entfernung vom Messstandpunkt generieren. Die meisten derzeitigen Programme zur
+Weiterverarbeitung solcher Punktwolken verlangen jedoch ein sehr großes technisches
+Hintergrundwissen.
+Das vom IBR-Team entwickelte Erfassungs- und Visualisierungswerkzeug
+„GenericViewer“ bietet typische Funktionen eines Panorama-Viewers, und ermöglicht
+darüber hinaus, im Panorama-Bild 3D-Objekte zu identifizieren und zu annotieren. Die
+Software steht damit auch Wissenschaftlern ohne Erfahrung mit komplexeren 3DAnwendungen zur Verfügung. Dies gilt umso mehr, als es sich um eine
+leichtgewichtige Web-Anwendung handelt, die als Systemvoraussetzung lediglich
+einen Browser mit aktiviertem Javascript und WebGL-Unterstützung erfordert.
+Datenmodell und Verknüpfung mit textuellen Informationen
+Die Identifizierung eines Objektes im GenericViewer beginnt mit der Markierung ihres
+Umrisses als „Geometrie“ in der Punktwolke. Geometrien erscheinen im Datenmodell
+zunächst jedoch nur als geordnete Listen von Koordinaten. Um sie für die
+geisteswissenschaftliche Analyse nutzbar zu machen, müssen sie inhaltlich
+gekennzeichnet werden. Im GenericViewer geschieht dies durch semantische
+Annotation mit textuellen und strukturierten Informationen. Die drei Hauptfunktionen
+von Annotationen sind in diesem System (1) Geometrien als Exemplare einer
+bestimmten Kategorie, zum Beispiel “Altar”, zu identifizieren, (2) über diesen
+klassifizierten Geometrien weiter gehende Aussagen in Form von strukturierten (also
+maschinenlesbaren) Daten zu treffen und (3) diese Daten mit zusätzlichen
+Informationsressourcen wie anderen Geometrien oder textuellen Quellen zu
+verknüpfen. Eine Grabinschrift beispielsweise sollte als solche gekennzeichnet und
+mit einem epigraphischen Fachartikel, der sie beschreibt, verbunden werden können.
+Annotationen sollten dabei verschiedene Ressourcen, anders als nur rein technisch
+durch einen Hyperlink, semantisch zueinander in Bezug setzen. So sollte etwa die
+Verknüpfung einer Geometrie mit einer auf sie Bezug nehmenden Textstelle in einem
+wissenschaftlichen Artikel ihrerseits klassifiziert werden können, etwa als Beitrag zur
+Datierung oder als quellenkritischer Kommentar. Dies ist zum Beispiel wichtig, um in
+	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+1	  Zum	  Beispiel	  eine	  Viewer-­‐Anwendung	  zum	  Speyerer	  Dom:	  http://www.kaiserdom-­‐
+virtuell.de	  
+
+einer Suchfunktion effizient alle für eine markierte Inschrift relevanten Textstellen
+für eine gegebene Fragestellung zu finden.
+Aus diesen Gründen ist der GenericViewer als semantische Annotationsumgebung
+konzipiert worden. Das Datenmodell besteht aus miteinander verknüpften Aussagen
+der Form Subjekt-Prädikat-Objekt, die als strukturierte Daten im RDF-Format
+repräsentiert werden. Die Begrifflichkeiten für diese Aussagen können sowohl selbst
+erstellten projektspezifischen als auch externen Taxonomien und Ontologien wie
+dbpedia2 oder dem Getty Arts and Architecture Thesaurus3 entnommen werden. Texte
+und Textstellen wiederum lassen sich mit einer angepassten Version des
+Textannotators Pundit [Grassi et al. 2012] semantisch untereinander oder mit
+Geometrien verknüpfen. Das entstehende Datenmodell ist eine Repräsentation des
+Untersuchungsgegenstandes und der sich darauf beziehenden Forschungsdiskurse.
+Aufgrund der Verwendung von RDF-Repräsentationen sind die Daten Teil des Semantic
+Web mit automatisiertem Zugriff. Das ermöglicht die Aggregation in größere
+Datenbestände und die Entwicklung darauf aufbauender neuer Anwendungen.
+Fallstudie
+Der geschilderte technisch-methodische Ansatz von IBR wird zur Zeit im Rahmen einer
+Fallstudie zur Liebfrauenkirche in Oberwesel erprobt. Dieser spätgotische Sakralbau
+ist durch einen in Teilen intakten historischen Innenraum mit einer erhaltenen
+liturgischen Ausstattung und durch eine gute Dokumentenlage gekennzeichnet.
+Insbesondere sind die vorhandenen historischen Inschriften im epigraphischen
+Fachkatalog „Die Deutschen Inschriften“ bzw. in dessen digitalem Pendant, „Deutsche
+Inschriften Online“ (DIO4), kritisch editiert. Von besonderer Bedeutung für die Studie
+ist das Vorhandensein eines in seinen mittelalterlichen Strukturen aussagekräftigen
+Raumgefüges. So ergeben sich zum Beispiel durch den erhaltenen Lettner, der den
+Innenraum in messbare Teilräume untergliedert, ideale Untersuchungsmöglichkeiten
+hinsichtlich Sichtbarkeits- und Zugänglichkeitsmustern nach dem Spatial-SyntaxAnsatz [Hillier 1999, Clark 2010].
+Zu den in der Fallstudie behandelten Ausstattungsstücken gehören Grabmonumente,
+die im Zusammenhang von Kapellen und Altarstiftungen dargestellt werden. Dabei
+wird eine Zuweisung bestimmter Bereiche der Kirche zu politischen und
+gesellschaftlichen Gruppen vorgenommen, außerdem werden Funktionsbereiche für
+Liturgie, Andacht und gesellschaftliche Handlungen markiert und mit relevanten Textund Bildquellen verbunden. Unter anderem wird die Sichtbarkeit bestimmter
+Inschriften und Altäre für verschiedene Standpunkte mit Hilfe des
+	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+2	  http://de.dbpedia.org/	  
+3	  http://www.getty.edu/research/tools/vocabularies/aat/index.html	  
+4	  www.inschriften.net	  
+
+Erfassungswerkzeugs untersucht, um so genauere Aussagen über die Bedeutung von
+Teilräumen, Taburäumen und über Sichtbarrieren wie den Lettner zu treffen.
+Beispielsweise gibt es in der Inschriftenforschung die These, dass die
+Gründungsinschrift von Liebfrauen nur vom Standpunkt vor dem Hauptaltar vollständig
+erkennbar war [cf. Nikitsch 1996]. Dies wäre von Bedeutung – so die These – da eine
+im Text vorhandene politische Anspielung sich an den die Kirche am Hauptaltar
+weihenden Bischof richtete. Der GenericViewer bietet hier die Möglichkeit, sich dem
+Untersuchungsgegenstand intuitiv zu nähern, die geschilderte Vermutung durch eine
+Sichtbarkeitsanalyse empirisch zu prüfen und das Ergebnis am dreidimensionalen
+Objekt in Form strukturierter Daten zu dokumentieren.
+Diskussion
+IBR stellt raumbezogene Forschungsfragen im Kontext epigraphischer Untersuchungen.
+Gleichwohl trägt die im Projekt entwickelte Software bewusst den Anspruch der
+Generizität im Namen. Denn es können mit dem GenericViewer Fach- und Messdaten
+beliebigen Inhalts dargestellt und miteinander verknüpft werden. Dies eröffnet
+vielfältige weitere Nutzungsmöglichkeiten auch über die geisteswissenschaftliche
+Forschung im engeren Sinne hinaus. Zu denken wäre etwa auch an
+denkmalpflegerische Anwendungen sowie an die Katalogisierung von Artefakten und
+die Verknüpfung mit Europeana.
+Zum Zeitpunkt der Niederschrift ist die Verknüpfung von Panoramafotos nur mit
+Punktwolken aus Laserscans möglich. Die Genauigkeit eines solchen Scans ist für
+geisteswissenschaftliche Fragestellungen häufig nicht erforderlich, daher sollten
+kostengünstigere Techniken wie Structure from Motion5 in der weiteren Entwicklung
+unterstützt werden. Gleiches gilt für einfache Analysen: Trotz standardisierter
+Schnittstellen sind zur Verwendung externer Software häufig kleine Anpassungen oder
+Formatierungen notwendig. Daher sollten Sichtbarkeitsanalysen und Abfragen auf dem
+Datenbestand stärker in den GenericViewer integriert werden, so dass der Einsatz
+spezieller Programme nur noch in komplexeren Szenarien nötig ist. Insbesondere
+Sichtbarkeit ist von einer Vielzahl komplexer Faktoren abhängig, die nicht alle durch
+den GenericViewer berücksichtigt werden können. Einige Sichtbarkeitsfragen, z. B.
+nach der Möglichkeit, menschliche Handlungen aus der Distanz wahrnehmen zu
+können, können sogar nur mit menschlicher Unterstützung beantwortet werden [Clark
+2012, S. 87 ff.].
+IBR legt Wert auf eine hohe Interoperabilität von Ressourcen, die durch
+Veröffentlichung von Quellcode (Open Source) und die Einhaltung von Standards
+erreicht wird. Zusammenarbeit, Erweiterung des Quellcodes, die Anbindung von
+externen Anwendungen, Analysewerkzeugen oder Ontologien werden gewünscht und
+unterstützt. Dessen ungeachtet hängt die Nützlichkeit und die Nachhaltigkeit der mit
+	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+5	  s.	  http://en.wikipedia.org/wiki/Structure_from_motion	  
+
+dem Annotationswerkzeug produzierten Daten entscheidend von der Wahl der
+Ontologien ab. Nutzer stehen hier stets vor einem Ausgleich zwischen Spezifität und
+Verallgemeinerbarkeit. Außerdem spielt die Form des zu Grunde liegenden digitalen
+Textdokumentes eine entscheidende Rolle. Der Textannotator Pundit ist wie ähnliche
+Tools [Khalili et al. 2012] auch darauf ausgelegt, Positionen in HTML-Seiten zu
+annotieren. Diese stellen jedoch eher die Präsentationsschicht eines Webdokumentes
+als den eigentlichen Text mit seinen Gliederungselementen dar. Aus diesem Grund
+bietet der GenericViewer Sonderfunktionen für TEI-XML-Dokumente. Eine Klärung der
+Frage nach dem geeigneten Format für austauschbare und nachhaltige Annotationen
+bleibt aber ein Desiderat der Digitalen Geisteswissenschaften insgesamt.
+Im Kontext der Konferenz ist schließlich auf die Frage nach dem analytischen
+Mehrwert des von IBR entwickelten digitalen Werkzeugs zu antworten: Semantische
+Annotation ist eine Kommunikationspraxis, keine Analysemethode. Auch durch die
+Verarbeitung und Visualisierung von 3D-Daten allein werden noch keine neuen
+Forschungsergebnisse erzielt. Zwar erlangen analytische Begriffe wie
+„Zentralität“ oder „Verbundenheit“ durch vom GenericViewer unterstützte Metriken,
+wie sie etwa die Visibility Graph Analysis [Turner et al. 2001] bereitstellt, ein
+breiteres empirisches Fundament. Diese Ergebnisse, sowie andere, nicht
+metrifizierbare raumbezogene Aussagen lassen sich jedoch erst durch eine geeignete
+visuelle Darstellung wirklich verständlich machen. Das zeigt aber auch, dass die
+Grenze zwischen Visualisierung und Analyse durch technische Systeme insbesondere in
+der nichtquantitativen geisteswissenschaftlichen Forschung fließend sein kann.
+Literatur
+• Ananieva, Anna; Bauer, Alexander; Leis, Daniel; Morlang-Schardon, Bettina;
+Steyer, Kristina (Hg.): Räume der Macht. Metamorphosen von Stadt und Garten
+im Europa der Frühen Neuzeit. Bielefeld: transcript Verlag, 2013
+• Clark, David L. Chatford (2007): Viewing the Liturgy: A Space Syntax Study of
+Changing Visibility and Accessibility in the Development of the Byzantine
+Church in Jordan. In: World Archeology, Vol. 39 No. 1 (Mar. 2007), S. 84-104.
+• Grassi, Marco; Morbidoni, Christian; Nucci, Michele; Fonda, Simone; Ledda,
+Giovanni (2012): “Pundit: Semantically Structured Annotations for Web
+Contents and Digital Libraries”. In: Mitschick, Annett; Loizides, Fernando;
+Predoiu, Livia; Nürnberger, Andreas; Ross, Seamus (Hg.): Semantic Digital
+Archives 2012. Proceedings of the Second International Workshop on Semantic
+Digital Archives (SDA 2012), Paphos, Cyprus, September 27, 2012, CEURWS.org/Vol-912.
+• Hillier, Bill: Space is the Machine: A Configurational Theory of Architecture,
+Cambridge: University Press, 1999.
+
+•
+
+•
+
+•
+
+•
+
+•
+
+Khalili, Ali ; Auer, Sören ; Hladky, Daniel (2012): The RDFa Content Editor –
+From WYSIWYG to WYSIWYM. In: Proceedings of COMPSAC 2012 – Trustworthy
+Software Systems for the Digital Society, July 16-20, 2012, Izmir, Turkey, 2012.
+Nikitsch, Eberhard Josef (1996): Ein Kirchenbau zwischen Bischof und
+Stadtgemeinde. Zur angeblich verlorenen Bauinschrift von 1308 in der
+Liebfrauenkirche zu Oberwesel am Rhein, in: JbWdtLg 22 (1996). S. 95–112.
+Paliou, E. und Knight, D.J. (2010): Mapping the Senses: Perceptual and Social
+Aspects of Late Antique Liturgy in San Vitale, Ravenna. In: Contreras, F.;
+Farjas , M. und Melero , F.J. (Hg.): Proceedings of the 38th Annual Conference
+on Computer Applications and Quantitative Methods in Archaeology, CAA2010.
+Turner; Doxa, M., O'Sullivan, D., and Penn, A. (2001): "From isovists to
+visibility graphs: a methodology for the analysis of architectural space".
+Environment and Planning B 28 (1). S. 103–121.
+v. Lünen, Alexander und Travis, Charles: History and GIS. Epistemologies,
+Considerations and Reflections. Heidelberg [u.a.]: Springer, 2013.
+

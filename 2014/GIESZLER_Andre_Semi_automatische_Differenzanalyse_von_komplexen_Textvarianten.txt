@@ -1,0 +1,384 @@
+Semi-automatische Differenzanalyse von
+komplexen Textvarianten
+André Gießler andre.giessler@informatik.uni-halle.de
+Marcus Pöckelmann marcus.poeckelmann@informatik.uni-halle.de
+Jörg Ritter joerg.ritter@informatik.uni-halle.de
+Einer der Schwerpunkte von Projekten der Editionsphilologie ist die Untersuchung alter Texte mit Mehrfachüberlieferungen sowie die Textgenese. Dabei
+stellt sich für die beteiligten Wissenschaftler die Aufgabe, die Verbindungen
+zwischen den einzelnen Textvarianten herauszuarbeiten und dabei Gemeinsamkeiten und Unterschiede zu erkennen. Oft sind große Textmengen der verschiedenen Varianten zu sichten, einander zuzuordnen und detailliert zu vergleichen,
+um anschließend als Edition präsentiert werden zu können. Bisher erfolgen die
+bei der Edition anfallenden, teils sehr gleichartigen und zeitaufwändigen Zwischenschritte in Handarbeit, belegen damit wertvolle Arbeitszeit und setzen
+einen Gesamtüberblick über das Textmaterial voraus. Die Informationstechnologie bietet heute Möglichkeiten, mit denen die Durchführung vieler dieser
+Schritte zumindest teilautomatisiert werden kann. Den Geisteswissenschaftlern
+können Werkzeuge zur Verfügung gestellt werden, die ihnen die Arbeit nicht nur
+wesentlich erleichtern, sondern auch die Fehleranfälligkeit reduzieren und neue
+Formen der Auswertung eröffnen.
+Das hier vorgestellte, vom BMBF geförderte Gemeinschaftsprojekt von Geisteswissenschaftlern und Informatikern mit dem Ziel, Werkzeuge und Methoden
+zum Textvergleich und zur Erstellung kritischer und genetischer Editionen zu
+entwickeln. Diese Methoden sollen generisch und damit auf viele Textformen anwendbar sein. Dazu werden zwei Repräsentanten verschiedenartiger Textformen
+mit ihren Überlieferungen zur Grundlage genommen, für deren Anforderungen
+und Eigenheiten jeweils zugeschnittene Verfahren entwickelt und evaluiert werden. Dabei werden die Prozesse von der Erkennung und Lemmatisierung der
+Wörter, das Auffinden sich entsprechender Textstellen, die Herausarbeitung der
+Unterschiede und Gemeinsamkeiten, bis hin zur Darstellung in einer genetischen
+Edition abgedeckt. Im späteren Verlauf des Projektes findet die Verallgemeinerung der gewonnenen Erkenntnisse für möglichst viele Textformen statt.
+Ein Teil des Projektes betrachtet einen handschriftlichen Lehrbuchtext aus
+der Zeit des Spätmittelalters, der in Frühneuhochdeutsch verfasst wurde. Unter
+der Leitung von Hans-Joachim Solms wird die Wundarznei“ des Heinrich von
+”
+Pfalzpaint aus dem 15. Jahrhundert in ihren zehn verfügbaren Überlieferungen
+untersucht. Ziel der Altgermanisten ist hier, die Varianten zu vergleichen und
+in einer kritischen Edition und einer Online-Edition mit Synopse und Variantenapparat darzustellen. Ausgangspunkt sind die Handschriften, die in einem
+ersten Arbeitsschritt von den Geisteswissenschaftlern diplomatisch transkribiert
+wurden. Da diese Texte in der Sprachstufe Frühneuhochdeutsch verfasst wur-
+
+1
+
+den, gibt es keine einheitliche Graphie, wodurch dieselben Wörter in verschiedenen Überlieferungen deutlich unterschiedlich geschrieben werden und mit jeder
+weiteren Überlieferung neue Schreibweisen entdeckt werden. Ein Beispiel ist
+das Wort Pfeil, welches in den Schreibweisen pfeil“, pffeil“, pfejl“, pffejl“,
+”
+”
+”
+”
+pfeyl“, pffeyl“ auftritt. Bevor ein Textvergleich stattfinden kann, ist somit
+”
+”
+eine philologische Aufbereitung nötig, bei der die Wörter erkannt und normalisiert werden. Die Normalisierung wird mit der Lemmatisierung jedes einzelnen Wortes erreicht. Für eine möglichst präzise Abbildung einer Handschrift
+auf eine andere werden die Wörter zusätzlich noch mit Part-Of-Speech-Tags
+und morphologischen Attributen wie Kasus, Numerus und Genus versehen. Für
+die Aufgabe der Lemmatisierung und Annotation existieren bereits verschiedene automatisierte Ansätze, die allerdings nicht auf Handschriften aus dem
+Frühneuhochdeutschen anwendbar sind, da sie nur eine sehr geringe Toleranz
+für abweichende Schreibweise (oder Schreibfehler) von Wörtern aufweisen. Die
+unstetige Graphie in den Handschriften der Wundarznei“ führt bei ihnen zu
+”
+geringen Trefferquoten in Bezug auf die Korrektheit der von ihnen vorgeschlagenen Annotationen.
+Im Projekt wurde das Werkzeug Lemmano entwickelt, das einen semiautomatischen Ansatz verfolgt. Es erlaubt die manuelle Annotierung jedes einzelnen
+Wortes, in dem es zu dem Wort ähnliche Wortformen ableitet, diese mit zugehörigen Annotationen in Lexika sucht und dem Benutzer so Vorschläge für
+das aktuelle Wort unterbreitet. Ähnlich heißt hier, dass sich die neue Wortform
+mittels von Altgermanisten erarbeiteten Ersetzungsregeln, die auf Äquivalenzen
+bestimmter Buchstabenfolgen basieren, aus dem gegebenen Wort ableiten lässt.
+Im Gegensatz zu automatischen Ansätzen liegt die Entscheidung für das passende Lemma und die passenden morphologischen Daten beim Anwender.
+Die Benutzeroberfläche ist intuitiv verständlich gestaltet und auf die Massenverarbeitung ausgerichtet. Lemmano hat sich bei der Annotation der Handschriften der Wundarznei“ durch Germanisten als sehr große Arbeitserleich”
+terung erwiesen. Da es ein webbasiertes Werkzeug ist, können mehrere Nutzer
+gleichzeitig annotieren und profitieren von den gelernten Eingaben der anderen
+Nutzer. Bild 1 zeigt den Dialog für eine Wortform.
+Nach der Lemmatisierung der Handschriften lassen diese sich nun mit weiteren digitalen Werkzeugen, die im Rahmen des Projektes realisiert werden,
+detailliert vergleichen. Der nächste Schritt auf dem Weg zu einer Edition mit
+synoptischer Darstellung ist die Alignierung der Varianten zueinander. Dabei
+werden sich entsprechende Textstellen identifiziert, gegenübergestellt und mit
+Auflistung der Unterschiede in einem Variantenapparat präsentiert.
+Das zweite Teilprojekt widmet sich einem neuphilologischen Text in Fremdsprache. Unter der Leitung von Thomas Bremer wird die im späten 18. Jahrhundert
+in Französisch verfasste Histoire philosophique et politique des établissements
+”
+et du commerce des Européens dans les deux indes“ von Abbé Guillaume Thomas François Raynal untersucht. Sie gilt auf Grund ihrer Thematik, die Auseinandersetzung mit der europäischen Kolonialpolitik dieser Zeit, als bedeutendes Werk der Aufklärung. Nach dem Verbot der Erstauflage von 1770 erschienen zwei weitere Auflagen sowie eine postume Textfassung. Im Rahmen
+des Projektes soll eine genetische Edition der Lateinamerika-Bände entstehen,
+die insbesondere durch ihre Interaktivität die Evolution dieses Werkes nachvollziehbar macht. Dabei liegt das Hauptaugenmerk auf einer abschnittsweisen
+2
+
+Abbildung 1: Annotationsdialog für eine Wortform in Lemmano
+
+Gegenüberstellung der vier Varianten als Fließtext mit einer übersichtlichen
+Form des Apparats.
+Ausgangspunkt hier sind digitale Faksimiles, die als Scan der Erstausgaben
+angefertigt wurden. Diese wurden mittels existierender Software zur Texterkennung in eine maschinenlesbare Form gebracht, anschließend von den Romanisten
+von fehlerhaft erkannten Stellen bereinigt sowie mit speziellen Markierungen
+versehen, die beispielsweise Überschriften oder Seitennummern kenntlich machen. Erleichtert wird die Suche nach Fehlern dabei durch ein softwaregestütztes
+Verfahren, das auffällige Kombinationen von Symbolen anzeigt. So liefert beispielsweise die Suche nach Kombinationen aus Buchstaben und Zahlen ohne
+trennendes Leerzeichen eine Reihe von fehlerhaft kodierten Jahreszahlen, wie
+15o6“ oder 158o“. Aus den so entstehenden Textdokumenten wird automa”
+”
+tisch eine TEI-konforme XML-Darstellung generiert, die als Grundlage für die
+folgenden Arbeitsschritte dient. Für einen der beiden algorithmischen Schwerpunkte aus Sicht der Informatik, die Alignierung der Absätze, werden derzeit
+verschiedene automatische Verfahren geprüft. Für den zweiten Schwerpunkt, die
+Bestimmung und Visualisierung der Unterschiede auf Absatzebene, wurde bereits ein erster Ansatz implementiert. Dieser vergleicht eine beliebige Anzahl
+von Textpassagen untereinander. Auf Basis der Levenshtein-Distanz werden die
+Differenzen zwischen den Varianten ermittelt und daraus eine synoptische Dar-
+
+3
+
+stellung in LaTeX erzeugt (Abbildung 2). Die Philologen können für die Visuali1770
+
+1774
+
+1780
+
+1820
+
+Les miniſtres1 de cette princeſſe2 prirent d’abord pour un viſionnaire3 un homme qui vouloit4 découvrir un monde. Ils le traiterent
+long-tems5 avec cette hauteur inſultante6 que
+les hommes communs, quand ils ſont en place,
+ont pour les hommes de7 génie. Colomb ne
+fut pas rebuté par les difficultés. Il avoit9
+comme tous ceux qui forment des projets extraordinaires,10 cet enthouſiaſme11 qui les roidit contre les jugemens de l’ignorance,12 les
+dédains de l’orgueil, les petiteſſes13 de l’avarice, les délais de la pareſſe.14 Son ame15
+ferme, élevée, courageuſe, ſa16 prudence et
+ſon adreſſe17 le firent enfin triompher de tous
+ces obſtacles.18 On lui accorda trois petits
+vaiſſeaux,19 et quatre-vingt-dix20 hommes. Il
+partit21 le 3 Août 1492,22 avec le titre d’Amiral24 et de Vice-Roi25 des iſles,26 des terres
+qu’il découvriroit.28
+
+Les miniſtres1 de cette princeſſe2 prirent d’abord pour un viſionnaire,3 un homme qui
+vouloit4 découvrir un monde. Ils le traiterent
+long-tems5 avec cette hauteur inſultante6 que
+les hommes en place affectent ſi ſouvent avec
+ceux qui n’ont que du7 génie. Colomb ne
+fut pas rebuté par les difficultés. Il avoit,9
+comme tous ceux qui forment des projets extraordinaires,10 cet enthouſiaſme11 qui les roidit contre les jugemens de l’ignorance,12 les
+dédains de l’orgueil, les petiteſſes13 de l’avarice, les délais de la pareſſe.14 Son ame15
+ferme, élevée, courageuſe, ſa16 prudence et
+ſon adreſſe,17 le firent enfin triompher de tous
+les obſtacles.18 On lui accorda trois petits
+vaiſſeaux19 et quatrevingt-dix20 hommes. Il
+partit21 le 3 Août 1492,22 avec le titre d’amiral24 et de vice-roi25 des iſles et26 des terres
+qu’il découvriroit.28
+
+Les miniſtres1 de cette princeſſe2 prirent d’abord pour un viſionnaire3 un homme qui vouloit4 découvrir un monde. Ils le traitèrent
+long-tems5 avec cette hauteur inſultante6 que
+les hommes en place affectent ſi ſouvent avec
+ceux qui n’ont que du7 génie. Colomb ne
+fut pas rebuté par les difficultés. Il avoit,9
+comme tous ceux qui forment des projets extraordinaires,10 cet enthouſiaſme11 qui les roidit contre les jugemens de l’ignorance,12 les
+dédains de l’orgueil, les petiteſſes13 de l’avarice, les délais de la pareſſe.14 Son ame15
+ferme, élevée, courageuſe, ſa16 prudence et
+ſon adreſſe,17 le firent enfin triompher de tous
+les obſtacles.18 On lui accorda trois petits
+navires19 et quatre-vingt-dix20 hommes. Sur
+cette foible eſcadre, dont l’armement ne coûtoit pas cent mille francs, il mit à la voile21
+le 3 Août 1492 ,22 avec le titre d’amiral24
+et de vice-roi25 des iſles et26 des terres qu’il
+découvriroit, et arriva aux Canaries où il s’étoit propoſé de relâcher.28
+
+Les ministres1 de cette princesse2 prirent d’abord pour un visionnaire3 un homme qui voulait 4 découvrir un monde. Ils le traitèrent
+long-temps 5 avec cette hauteur insultante6
+que les hommes en place affectent si souvent
+avec ceux qui n’ont que du7 génie. Colomb
+ne fut pas rebuté par les 8 difficultés. Il
+avait,9 comme tous ceux qui forment des projets extraordinaires ,10 cet enthousiasme11
+qui les roidit contre les jugemens de l’ignorance ,12 les dédains de l’orgueil, les petitesses
+13
+de l’avarice, les délais de la paresse.14 Son
+âme 15 ferme, élevée , courageuse, sa16 prudence et son adresse ,17 le firent enfin triompher de tous les obstacles.18 On lui accorda trois petits navires19 et quatre-vingt-dix20
+hommes. Sur cette faible escadre , dont l’armement ne coûtait pas cent mille francs , il
+mit à la voile21 le 3 août 1492 ,22 avec le 23
+titre d’amiral24 et de vice-roi25 des îles et26
+des terres 27 qu’il découvrirait, et arriva aux
+Canaries , où il s’était proposé de relâcher.28
+
+H70
+miniſtres
+H70
+princeſſe
+H70
+viſionnaire
+H70
+vouloit
+H70
+traiterent long-tems
+H70
+inſultante
+H70 communs, quand ils ſont en place, ont pour les hommes de
+miniſtres
+princeſſe
+viſionnaire,
+vouloit
+traiterent long-tems
+inſultante
+en place affectent ſi ſouvent avec ceux qui n’ont que du
+1 H74
+2 H74
+3 H74
+4 H74
+5 H74
+6 H74
+7 H74
+H80
+miniſtres
+H80
+princeſſe
+H80
+viſionnaire
+H80
+vouloit
+H80
+traitèrent long-tems
+H80 inſultante
+H80 en place affectent ſi ſouvent avec ceux qui n’ont que du
+H20
+ministres
+H20
+princesse
+H20
+visionnaire
+H20
+voulait
+H20
+traitèrent long-temps
+H20 insultante
+H20 en place affectent si souvent avec ceux qui n’ont que du
+H70
+H70
+avoit
+H70
+extraordinaires,
+H70
+enthouſiaſme
+H70 l’ignorance,
+H70
+petiteſſes
+H70 pareſſe.
+H70 ame
+H70 élevée, courageuſe, ſa
+avoit,
+extraordinaires,
+enthouſiaſme
+l’ignorance,
+petiteſſes
+pareſſe.
+ame
+élevée, courageuſe, ſa
+8 H74
+9 H74
+10 H74
+11 H74
+12 H74
+13 H74
+14 H74
+15 H74
+16 H74
+H80
+H80
+avoit,
+H80
+extraordinaires,
+H80 enthouſiaſme
+H80 l’ignorance,
+H80 petiteſſes
+H80 pareſſe.
+H80 ame
+H80 élevée, courageuſe, ſa
+H20
+H20
+avait,
+H20
+extraordinaires ,
+H20 enthousiasme
+H20 l’ignorance ,
+H20 petitesses
+H20 paresse.
+H20 âme
+H20 élevée , courageuse, sa
+H70 ſon adreſſe
+H70
+ces obſtacles.
+H70
+vaiſſeaux,
+H70
+quatre-vingt-dix
+H70
+Il partit
+ſon adreſſe,
+les obſtacles.
+vaiſſeaux
+quatrevingt-dix
+Il partit
+17 H74
+18 H74
+19 H74
+20 H74
+21 H74
+H80 ſon adreſſe,
+H80
+les obſtacles.
+H80
+navires
+H80
+quatre-vingt-dix
+H80
+Sur cette foible eſcadre, dont l’armement ne coûtoit pas cent mille francs, il mit à la voile
+H20
+son adresse ,
+H20
+les obstacles.
+H20
+navires
+H20
+quatre-vingt-dix
+H20
+Sur cette faible escadre , dont l’armement ne coûtait pas cent mille francs , il mit à la voile
+H70
+Août 1492,
+H70
+H70
+d’Amiral
+H70
+Vice-Roi
+H70
+iſles,
+H70
+H70
+découvriroit.
+H74
+Août
+1492,
+H74
+H74
+d’amiral
+H74
+vice-roi
+H74
+iſles
+et
+H74
+H74
+découvriroit.
+22
+23
+24
+25
+26
+27
+28
+H80
+Août 1492 ,
+H80
+H80
+d’amiral
+H80
+vice-roi
+H80 iſles et
+H80
+H80
+découvriroit, et arriva aux Canaries où il s’étoit propoſé de relâcher.
+H20
+août 1492 ,
+H20
+H20
+d’amiral
+H20
+vice-roi
+H20
+îles et
+H20
+H20 découvrirait, et arriva aux Canaries , où il s’était proposé de relâcher.
+
+Abbildung 2: Automatisch generierte Synopse mit Variantenapparat für einen
+Absatz des franz. Textes
+sierung der Textvarianten zwischen konfigurierbaren Darstellungsarten wählen.
+Die genannten Arbeitsschritte, von der Generierung der XML-Dateien bis hin
+zum Entwurf der elektronischen Edition, sollen perspektivisch in einer gemeinsamen, webbasierten Arbeitsumgebung eingebettet werden.
+Prototypische Werkzeuge, unter anderem Lemmano, werden in den nächsten
+Monaten zur Demonstration als Webanwendungen öffentlich verfügbar gemacht.
+
+Anmerkungen
+Diese Arbeit wurde durch das Bundesministerium für Bildung und Forschung
+(BMBF) [Projektkürzel: 01UG1247 / human-325-010 / SaDA] im Rahmen des
+Projekts Semi-automatische Differenzanalyse von komplexen Textvarianten“
+”
+unter Leitung von Prof. Dr. Thomas Bremer, Prof. Dr. Paul Molitor, Dr. Jörg
+Ritter und Prof. Dr. Hans-Joachim Solms gefördert. An dieser Stelle möchten
+wir auch unseren Projektmitarbeiterinnen Sylwia Kösser, Dr. Aletta Leipold
+und Susanne Schütz danken.
+
+4
+

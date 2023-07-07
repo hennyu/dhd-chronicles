@@ -1,0 +1,186 @@
+Projektbericht: Wie arbeiten Digital Humanists für die Geisteswissenschaften?
+Autoren: Marcel Schaeben, Bernhard Strecker, Gerrit Weber
+Projektbetreuung: Prof. Dr. Manfred Thaller
+Gegenstand: Studiengänge in den Digital Humanities sollen Absolventen hervorbringen, die
+technische Lösungen aus dem Feld der Digital Humanities auch für GeisteswissenschaftlerInnen
+erstellen, die selbst dazu nicht in der Lage sind. Diese Form der Zusammenarbeit gilt auch als
+Desiderat in der gegenwärtigen Diskussion um den Einsatz der Neuen Medien im Umgang mit
+dem kulturellen Erbe[1]; trotzdem ist sie in der Praxis keineswegs unproblematisch. Wie sie in
+Form eines gemeinsamen Projekts am Ende der Ausbildung zu einem MA in den Digital
+Humanities erfahren wird, wird im Folgenden in einem Bericht der dafür verantwortlichen
+Projektgruppe am Beispiel einer konkreten mobilen Anwendung vorgestellt.
+
+[1] http://www.creative-heritage.eu/
+
+Hintergrund
+Anlässlich des bevorstehenden 450. Shakespeare-Jubiläums
+plant das Institut für Medienkultur und Theater der Universität zu
+Köln zusammen mit dem Museum für Angewandte Kunst Köln
+(MAKK) eine gemeinsame Ausstellung. Das Institut für
+Medienkultur und Theater greift dabei auf die umfangreichen
+Bestände der ihm angegliederten Theaterwissenschaftlichen
+Sammlung auf Schloss Wahn zurück.
+Im Zuge dessen kam die Idee auf, in Kooperation mit dem
+Institut
+für
+Historisch-Kulturwissenschaftliche
+Informationsverarbeitung,
+an
+dem
+die
+Kölner
+Medieninformatiker ausgebildet werden, eine „Location-Based
+Gaming-App“ zu entwickeln. Die App wird Shakespeare und
+Kölsche Kultur in Symbiose vereinen. Die Spieler werden die
+Kölner Altstadt mithilfe von Mobile Devices und einer
+Kartenansicht erkunden (siehe Abb. 1). Auf der Karte werden
+verschiedene für die Spiele interessante kulturelle Orte wie
+Denkmäler, Sehenswürdigkeiten und typisch Kölsche Ecken
+ausgezeichnet. Sobald sich ein Spieler einem dieser Orte nähert
+(GPS), hat er die Möglichkeit kleine Spiele und narrative
+Versatzstücke zu starten. So erfährt er spielerisch etwas über
+Shakespeare und Köln.
+
+Abb. 1: Mock-Up des Hauptbildschirms
+
+Dabei sind diese Elemente in sogenannten Quests eingebettet (siehe Abb. 2.). Hier erlebt der Spieler
+kurze Geschichten, verwoben aus den benannten Elementen, die mit jeweils ortsspezifischen
+Hintergründen versehen sind. All diese Ressourcen stammen dabei aus der Zusammenarbeit mit der
+Theaterwissenschaftlichen
+Sammlung
+und
+wurden
+entsprechend
+der
+jeweiligen
+Anwendungsumgebungen aufbereitet. Mittels der eingebundenen Minigames wird neben dem
+Spielspaß auch die Immersion des Spielers gesteigert und eine lebhafte Einbindung in die Welten
+gefördert.
+
+Abb. 2: Quest-Mock-Up
+
+Ein vergleichbares, bereits realisiertes Projekt ist die Zeitfenster-App1 stuttgarter Studenten, die
+allerdings mittels Augmented Reality Orte erkennt um Informationssysteme bereitzustellen.
+Projektstruktur und Organisation
+Alle eingeschriebene Medieninformatik studieren im Hauptfach Medienkulturwissenschaften und
+verfügen somit über über ausgeprägte informationstechnologische wie geisteswissenschaftliche
+Kompetenzen. Angesprochen waren aber nicht nur Medieninformatiker, sondern auch Studierende, die
+andere Nebenfächer studieren (z. B. Anglistik, Medienmanagement, etc.). Die Verbundenheit durch die
+Medienkulturwissenschaft bietet eine gute Grundlage für die Zusammenarbeit, da alle Teilnehmer einen
+geisteswissenschaftlichen Kontext aufweisen.
+
+1
+
+Vgl. http://www.zeitfenster­app.de; sowie
+http://www.creative­heritage.eu/4812.html?&tx_ttnews%5Btt_news%5D=6626&cHash=3b533def8fc18698ce
+7b89d589568f54 (31.12.2013).
+
+Projektstruktur und Organisation wurden zu Beginn des Projektesnur grob festgelegt. Naheliegend war,
+dass sich die Medieninformatiker tendenziell eher den technischen Aspekten widmen, während die
+anderen Projektteilnehmer die Spielidee und -inhalte ausarbeiten. Die Rollen sind hierbei jedoch nicht
+besonders strikt angelegt, wodurch die entstehende Gruppendynamik optimal ausgenutzt wird. Durch
+diese Flexibilität wird eine effiziente Ressourcennutzung erreicht und Teilnehmer intervenieren - falls
+nötig - in anderen Entwicklungsprozessen. Werden Bereiche - vom permanent im Hintergrund
+ablaufenden Qualitätsmanagement - identifiziert, in denen es zu Problemen kommen könnte, werden
+diese personell verstärkt und neue Schnittstellen zu anderen spezialisierten Einheiten hergestellt.
+Im Laufe des Projektes hat sich anhand der Interessen und Fähigkeiten der Projektteilnehmer sowie den
+jeweils aktuellen Projektanforderungen eine Aufteilung in drei Arbeitsgruppen herausgebildet: eine
+Narrations-, eine Layout- und eine Informatikergruppe. Die “Narrativler” nutzen ihre Expertise in den
+Theater- und Literaturwissenchaften, um einen groben Handlungsstrang sowie die einzelnen narrativen
+Elemente im Spiel kreativ auszuarbeiten. Die Layoutgruppe befasst sich mit den Konzeptarbeiten zur
+graphischen Benutzeroberfläche der App und setzt diese um, so dass sich in Verbindung mit dem
+locker-humorvollen Stil des Narrativs ein konsistentes künstlerisches Gesamtbild ergibt. Die Informatiker
+sind in erster Linie für die technische Umsetzung des Spiels zuständig, jedoch durch ihre Beraterrolle auch
+aktiv an der Entwicklung des Spielkonzeptes beteiligt. An der Schnittstelle der drei Gruppen steht ein
+eigens dafür eingesetzter Kommunikationsmanager, der stehts vermitteltend und organisierend
+operiert.
+Zwecks effizienter Koordination und Abstimmung wurde ein Wiki-System installiert, an dem alle
+Kursteilnehmer rege partizipieren. Es unterstützt zum einen den telemedialen Austausch über
+Problematiken (Issues) und aktuelle Fortschritte (commits) sowie einen – auch für Nicht-Informatiker –
+geregelten, leicht verständlichen Informationsfluss. Sogenannte Feedbackschleifen sorgen für
+kontinuierlichen Input der anderen Untergruppen und unterstützen die Entwickler bei der zielgerichteten
+und anwendungsorientierten Umsetzung. Die Entwicklung eines eigenen CMS-Systms ermöglicht
+komplexe narrative Inhalte übersichtlich und an einem gemeinsamen Ort strukturiert zu verwalten. Über
+ein einfach zu bedienendes Interface ist es allen Teammitgliedern möglich, kollaborativ Inhalte
+einzupflegen.
+Projektablauf und aktuelle Entwicklung
+Zur Realisierung des Projektes wurde ein grob strukturierter, zweisemestriger Kurs mit Aus- und
+Einstiegsmöglichkeit zur Halbzeit eingerichtet. Im ersten Semester erfolgte die Planung und Entwicklung
+des Spielkonzepts, Location-Scouting, Bestandsanalyse, Überprüfung technischer Umsetzbarkeit sowie
+die Verhandlung narrativer Dynamiken. Auch wenn der Schwerpunkt in dieser Phase auf der narratien
+und konzeptuellen Ebene lag, waren die Informatiker von Beginn an vollwertige Kursteilnehmer.
+Im Verlauf wurden diverse Konzepte erarbeitet, die einem internen Wettbewerb standhalten mussten,
+an dessen Ende die Ausarbeitung des jetzigen Narrativs stand. Bereits zu diesem frühen Zeitpunkt gaben
+die Informatiker der Gruppe Hilfestellung in Bezug auf die technischen Möglichkeiten und erstellen erste
+visuelle Repräsentationen (Mock-Ups). So war gewährleistet, dass alle Gruppenmitglieder auch
+weiterhin gemeinsam an einem maximal greifbaren Gegenstand mitwirken. Infolge gemeinsamer
+
+Ortsbegehungen der Kölner Altstadt und der Recherche komplementärer Shakespearestücke nahm das
+Spiel sukzessive Gestalt an.
+Zu Beginn des zweiten Semesters wurden neu hinzugestoßene Teilnehmer integriert sowie die
+technische Realisierung fokussiert, wodurch die Teilhabe der Medieninformatiker gewichtiger, die
+Arbeit der parallelen Gruppen aber nicht obsolet wurde.
+Mit zunehmender Komplexität des Projektes zeigte sich, das die Anforderungen an die
+gruppenübergreifenden Kommunikationsprozesse stark ansteigen. Zur Abfederung etwaiger negativer
+Auswirkungen wurde daher der Posten des Kommunikationsmanagers geschaffen, der ausschließlich für
+die Sicherstellung der Verständigung zwischen Informatikern und Narration zuständig ist sowie
+wöchentliche Treffen organisiert und moderiert. Dies hat sich als außerordentlich sinnvolle
+organisatorische Maßnahme erwiesen, welche die projektinterne Kommunikation optimiert und alle
+Beteiligten erheblich entlastet hat. Außerdem wurde nun das Layout-Team gegründet, das für alle
+Designaspekte zuständig ist, zwischen Narrationsgruppe und Informatikern vermittelt und das
+einheitliche Konzept und den Look der App weiter voranbringt.
+Technische Umsetzung
+Zu Beginn des Projektes wurde entschieden, dass eine möglichst große Zahl an Mobile Devices
+unterstützt werden soll. Als zentrale Plattformen wurden Android ab Version 4.0 sowie iOS ab Version 6
+identifiziert, womit knapp 85% der verbreiteten Smartphones und Tablets abgedeckt werden (Stand
+Ende 2013) 2. Aufgrund der stark unterschiedlichen Programmierkonzepte und Schnittstellen beider
+Plattformen existieren separate Entwicklergruppen, die sich ausschließlich auf eine Plattform
+konzentrieren und deren native Möglichkeiten und Besonderheiten optimal nutzen können. Dennoch soll
+für alle Endbenutzer plattformübergreifend ein einheitliches Erscheinungsbild der späteren App
+gewährleistet sein. In regelmäßigen gemeinsamen Treffen beider Plattformgruppen, in denen bei
+Bedarf auch ein Mitglied der Layout-Gruppe anwesend ist, wird dies sichergestellt. Der
+Entwicklungsprozess ist an das agile Projektmanagement angeleht, so dass Meilensteine und Deadlines
+jeweils flexibel an den aktuellen Entwicklungsstand und die sich dadurch ergebenden Anforderungen
+angepasst werden. So war von Beginn an der zeitliche Rahmen klar abgesteckt und eine Prioritätenliste
+festgelegt worden, nach der bestimmte Key-Features unbedingt integriert werden müssen, optionale
+Elemente aber nicht von vorn herein ausgeschlossen werden - je nach Auslastung der Entwickler kann
+daran gearbeitet werden.3 Augenmerk liegt hier aber stehts auf der zeitigen Fertigstellung, wie der
+vorherigen ausgiebiegen Qualitätskontrolle. Dazu werden frühzeitig Feldtests angesetzt, die mit
+Alphaversionen der App stattfinden und an der zahlreiche Teilnehmer und ein Pool von Außenstehenden,
+mit multiperspektivischem Blick auf Technik und Narration, teilnehmen. So wird sichergestellt, dass das
+Spiel in Gänze auch für “Uneingeweihte” Sinn ergibt, eine zweckmäßige Usability der GUI gegeben ist
+und letztlich der Spielspaß garantiert wird.
+2
+
+Quellen:
+
+http://www.golem.de/news/android­verbreitung­jelly­bean­liegt­bei­45­1­prozent­zaehlparameter­geaendert­1309­
+101418.html
+http://www.areamobile.de/news/25931­apple­ios­7­ist­auf­74­prozent­der­ios­geraete­installiert
+http://www.netmarketshare.com/ (Mobile/Tablet Operating System Market Share, Realtime Web Analytic)
+3
+
+vgl. auch http://t3n.de/magazin/praxisbericht­scrum­kanban­scrumbuts­agiles­232822/
+
+Um diese Prozesse zu optimieren und zu vereinfachen, wurde ein eigenes CMS entwickelt, welches zur
+Verwaltung der Spielinhalte dient. Zudem fungiert es als gemeinsame Schnittstelle für die Narration, die
+Spielabläufe und Content einpflegt und dem Layout, welches Grafiken für die Oberfläche einbettet. Als
+weitere Funktion wurde der JSON-basierte Abgleich der App mit den Serverdaten implementiert,
+wodurch stehts aktualsierte Objekte geladen werden können, ohne den Clienten aktualisieren zu
+müssen. Positive Efekte sind zudem die einfachere Verwaltung des Contents, der stehts unabhängig
+bleibt, sowie eine stehts aktuelle Analyse technischer Schwierigkeiten.
+Ausblick und Zwischenfazit
+Geisteswissenschaftler und Informatiker sind in zwei unterschiedlichen Welten zu Hause. Die oben
+dargestellten Besonderheiten des Projekts – ein eigens eingesetzter Kommunikationsmanager, agiles
+Projektmanagement sowie das CMS als zentrale Arbeitsumgebung – münzen darauf, deren
+Zusammenarbeit so produktiv wie möglich zu gestalten und die Interdisziplinarität des Projektteams als
+Stärke und Chance zu nutzen. Dazu müssen Unterschiede in der Arbeitsweise sowie ganz
+unterschiedliche Grade an technischen Kenntnissen der Projektteilnehmer von Anfang an berücksichtigt
+werden. Diese Zusammenarbeit läuft selbstverständlich nicht immer reibungslos. Doch Ziel des Projektes
+ist es ja auch, neben der Fertigstellung des eigentlichen Spiels zu untersuchen, wie eine Kooperation
+zwischen Geisteswissenschaften und (Medien-)Informatikern, mit dem Ziel, neue Rezeptions- und
+Popularisierungsmöglichkeiten für kulturelle Inhalte zu erschließen, optimal ablaufen kann. Es gilt diesen
+Prozess zu untersuchen, daraus Lehren zu ziehen und diese als Impulse für zukünftige
+Kooperationsprojekte dieser Art zu nutzen. Gerade im Kooperationaspekt steht unsere inspierende
+Zusammenarbeit exemplarisch für die digitalen Geisteswissenschaften.
+

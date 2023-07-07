@@ -1,0 +1,87 @@
+Kostümsprache als Mustersprache:
+Vom analytischen Wert Formaler Sprachen und Muster
+in den Filmwissenschaften
+Johanna Barzen, Frank Leymann
+Institut für Architektur von Anwendungssystemen (IAAS)
+Universität Stuttgart
+[Barzen | Leymann]@iaas.uni-stuttgart.de
+
+Kleidungssprachen als Formale Sprachen
+In den Medienwissenschaften ist die Frage, wie Kostümsprache im Film greifbar und
+verstehbar gemacht werden kann, ein Problem: Eine präzise Definition des Begriffs erweist
+sich als schwierig. Hier kann das Konzept einer Formalen Sprache aus der Informatik genutzt
+werden, um eine solche präzise Definition zu geben.
+Dazu betrachten wir zunächst die Bestandteile von Kleidung (wie Hose, Hemd,...) eines
+Genres X (wie Western, Science Fiction,...) als ein Alphabet ∑X. Nicht jede mögliche
+Kombination solcher Kleidungsbestandteile (d.h. ein Wort über dem Alphabet) ist eine
+Kleidung, die in dem Genre auftritt. Somit muss die Menge aller möglichen Wörter ∑X*
+eingeschränkt werden, um die Kombinationen von Kleidungsbestandteilen, die in dem Genre
+auftreten, zu filtern. In unserem Ansatz geschieht dies über Produktionsregeln, die angeben,
+wie „sinnvolle“ Kleidung aus Kleidungsbestandteilen zusammengesetzt werden kann; ein
+Anzug etwa besteht aus einer Hose, einer Weste und einem Sakko, in Zeichen: „Anzug ⟶
+Hose Weste Sakko“. Das Alphabet und Namen von zusammengesetzter Kleidung (etwa
+„Anzug“) ist das Vokabular VX einer Grammatik, und die von dieser Grammatik erzeugte
+Sprache ist die Kleidungssprache des Genres:
+Definition: Eine Grammatik der Kleidung des Genres X ist ein Tupel GX=(VX,∑X,PX,SX) mit:
+•
+•
+•
+•
+
+∑X ist ein Alphabet,
+VX ist ein Vokabular (mit ∑X⊆VX),
+PX ist die Menge der Produktionsregeln über VX,
+SX ist das Startsymbol (mit SX∈VX∖∑X).  
+
+Eine Produktionsregel ist ein Paar von Wörtern über dem Vokabular VX für das gilt:
+(a,b)∈PX :⇔ a∈VX*∖∑X * und b∈VX*.
+Statt (a,b)∈PX wird auch geschrieben: a→b. Die Menge aller Wörter, die aus dem
+Startelement und der iterativen Anwendung von Produktionsregeln der Grammatik GX
+erzeugt werden können, nennen wir die Kleidungssprache L(X) des Genres X. ❒
+Die Bestandteile von Kleidung eines Genres und auch die Produktionsregeln für sinnvolle,
+d.h. in dem Genre auftretende Kleidung wird durch genaue Analyse eines repräsentativen
+Filmkorpus des Genres abgeleitet. Hierfür haben wir ein System entwickelt (s.u.), in welchem
+sowohl die Kleidungsbestandteile als auch deren auftretenden Kombinationen, also die
+Kleidung, erfasst werden können.
+
+Kostümsprachen als Mustersprachen
+Aber Kleidung ist noch kein Kostüm: ein Kostüm ist Kleidung mit filmisch intendierter
+Wirkung. Die Festlegung der Wirkung von Kleidung wird in unserem Ansatz abstrakt durch
+eine Wirkungsfunktion w:L(X)→{wahr, falsch} repräsentiert. Die Realisierung dieser
+Funktion in der Praxis geschieht zum Beispiel dadurch, dass ein Schwellwert für die
+Häufigkeit des Auftretens einer Kleidung im Filmkorpus festgelegt wird und Kleidung, die
+diesen Schwellwert überschreitet, als Kostüm ausgezeichnet wird; oder ein Experte beurteilt
+die Wirkung. Damit können wir nun formal definieren:
+Definition: Die Menge KX = {k∈L(X) | w(k)=wahr} heißt Kostümsprache des Genres X. ❒
+Ein Kostüm kann als „bewährte Lösung“ eines wiederkehrenden Wirkungsproblems
+aufgefasst werden, ist somit ein Muster im Sinne der (Software-) Architekturen. Verweisen
+Muster aufeinander, um die Lösung eines Problems durch Verfeinerung oder Komposition zu
+beschreiben, spricht man in der Informatik von einer Mustersprache. Auch Kostüme
+verweisen mit verschiedenen Bedeutungen aufeinander, etwa um ihr gemeinsames Erscheinen
+zu beschreiben oder um auf die Kombinierbarkeit von Kostümen hinzuweisen. Damit ist eine
+Kostümsprache als eine Mustersprache darstellbar, und Methoden und Techniken der
+Informatik zum Umgang mit Mustern lassen sich nun auf Kostüme übertragen.
+Informationssystem für Kleidungssprachen und Kostümsprachen
+Unser System zur Erfassung von Kleidung basiert auf von uns erstellten umfangreichen
+Taxonomien von Kleidungsbestandteilen und deren Eigenschaften. Diese Taxonomien sind
+notwendig, um die Detailinformationen über Kleidung in Filmen, die durch mehrere
+Beobachter eingepflegt werden, vergleichbar zu machen: So gibt eine Menge von
+Taxonomien etwa vor, welche Art Kleidungsbestandteile möglich sind, eine weitere
+Taxonomie welche Farbnuancen erlaubt sind, wieder eine andere Taxonomie welche
+Materialeigenschaften beobachtbar sind, usw.; diese Taxonomien sind (kontrolliert)
+erweiterbar, um sich den Gegebenheiten eines Filmkorpus anzupassen. Im wesentlichen
+werden Kleidungsbestandteile und deren Eigenschaften erfasst, sowie beobachtete
+Kombinationen (d.h. Produktionsregeln) von Kleidungsbestandteile in Kleidung des Genres.
+Am Ende der Erfassung des Filmkorpus ist dessen Grammatik erstellt.
+Nachdem der Filmkorpus eines Genres erfasst wurde, wird das System die Analyse der
+erfassten Kleidung unterstützen, um die Kostüme zu identifizieren: im Wesentlichen werden
+hier Varianten der Wirkungsfunktion unterstützt. So können Häufigkeitsanalysen auf
+Kostüme hinweisen, Experten können Kleidung begutachten und deren Wirkung bestätigen
+usw. Am Ende der Analyse ist die Kostümsprache des Genres erstellt.
+Ausblick
+Ein Beitrat aus Experten wird uns bei der Bewertung unserer Forschungsergebnisse
+unterstützen und weitere Arbeiten steuern. So hilft etwa eine etablierte Kostümbildnerin bei
+den relevanten Taxonomien und Anforderungen an die Mächtigkeit der Anfragen an unser
+System. Ein bekannter Autor von Mustersprachen achtet auf die mögliche Nutzung unseres
+Systems für weitere Muster-Domänen.
+
