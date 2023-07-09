@@ -8,4 +8,22 @@
             Für diese Problematik wurde von uns ein Prototyp entwickelt, mit dem auch konzeptionelle Tabellen automatisch erfasst werden können. Genutzt werden hierfür die Koordinaten der einzelnen Zeilen, wie sie auch für die automatische Texterkennung erfasst werden müssen. Die Koordinaten müssen hierbei in XML im PAGE-Schema vorliegen. Erzeugt werden können diese Daten zum Beispiel durch eine Layoutanalyse mit dem Tool P2PaLA. Bei den Tabellenzeilen wird davon ausgegangen, dass sie mindestens zweispaltig sind und dass die Spalten einen messbaren Abstand zueinander haben. Daher wird zur Erkennung der einzelnen Zeilen ein speziell trainiertes P2PaLA Modell genutzt, das die zwei Spalten einer Tabellenzeile als zwei einzelne Zeilen erkennt. Das Tool vergleicht hierfür sämtliche benachbarten Textzeilen miteinander. Zuerst werden die Positionen der Textzeilen auf der y-Achse miteinander verglichen. Unterschreitet die Distanz der Textzeilen einen bestimmten Wert, wird davon ausgegangen, dass die Textzeilen auf der gleichen Zeile stehen. Als nächstes werden nun die Positionen der Textzeilen auf der x-Achse miteinander verglichen. Wird hier eine festgelegte Differenz überschritten, ist dies ein Zeichen dafür, dass es sich bei den Textzeilen um zwei Spalten einer Tabelle handelt. Wiederholt sich dieses Phänomen, ist dies ein starker Hinweis darauf, dass es sich bei den Textzeilen um Zeilen einer Tabelle handelt. 
             
             Dieses Vorgehen stellt eine robuste Methode dar, um rein konzeptionelle Tabellen eines Rechnungsbuches zu erkennen. Durch das Anpassen der Regeln ist dieses Vorgehen nicht nur auf Rechnungsbücher aus einer Quelle beschränkt, sondern kann leicht an die Gegebenheiten anderer Rechnungsbücher angepasst werden.
-        
+         Unter anderem beschreibt Paul Kirn in seiner Einführung in die Geschichtswissenschaften Quellen zur Wirtschaftsgeschichte als typisch mittelalterliche Quellenart (Kirn 2019: 33). Das Projekt Itinera Nova ist über den Link 
+                        
+                            https://www.itineranova.be
+                         zu erreichen. Dort können auch die bereits digitalisierten Objekte eingesehen werden.
+                    
+                         Vgl. dazu v.a. auch die Überlegungen von Georg Vogeler (2015) zu digitalen Rechnungsbüchern.
+                     Siehe 
+                        
+                            https://readcoop.eu/transkribus
+                        
+                    
+                         PAGE steht für “Page Analysis and Ground-Truth Elements” (Pletschacher/Antonacopoulos 2010).
+                    
+                         P2PaLA steht für “Page to PAGE Layout Analysis”, siehe
+                        
+                            https://github.com/lquirosd/P2PaLA
+                        
+                        . Eine Dokumentation findet sich bei Quiròs (2018).
+                    

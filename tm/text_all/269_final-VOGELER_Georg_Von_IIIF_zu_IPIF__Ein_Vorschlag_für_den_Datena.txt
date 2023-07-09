@@ -38,3 +38,13 @@
             John Bradley und Michele Pasin haben 2015 eine OWL basierte Ontologie vorgestellt, in der eine „temporal entity documented“ (TED) als Ereignis (E4 und E5 im CIDOC-CRM) oder als eine zeitliche Einheit oder klare zeitliche Grenzen (E3: condition, state) modelliert sind. Das entspricht dem Stand der Diskussion über prosopographische Datenmodelle (Lind 1994, Andresen 2008, Tuominen / Hyvönen / Leskinen 2018).
             Nicht zuletzt der Erfolg von IIIF belegt, dass eine solche API aber auch Referenzimplementationen benötigt. Dabei ist entsprechend der oben beschriebenen Benutzungsszenarien sowohl an Ressourcen zu denken, die Daten bereitstellen, als auch an Anwendungen, die diese Daten konsumieren. Die Nachnutzung des „Archiveditors“, eines zunächst projektinternen Werkzeugs der BBAW, in anderen Projekten zeigt, dass dabei nicht nur an Datenextraktion und –anzeige sondern auch an Datengenerierung zu denken ist. Im Rahmen der Arbeit an der Personendatenbank der Österreichischen Akademie der Wissenschaften ist deutlich geworden, dass gerade automatische Informationsextraktion von „Personenrelationen“ (Schlögl et al. forthcoming, Schlögl et al. 2018) von einer solchen API profitieren kann. Die automatisch generierten Aussagen können als eigenständige Factoide in die Personendatenbanken eingehen. Die Metadaten des Factoids und die Referenz auf die verwendete Quelle stellen sicher, dass sie als automatisch generierte Daten identifizierbar bleiben. Der Vortrag wird Beispiele für Datenangebote aus dem Umfeld mittelalterlicher Urkunden (Register der Urkundenempfänger von Papsturkunden nach den Regesten von August Potthast, Daten aus monasterium.net) und Steuererhebungen (England) vorstellen, und Prototypen für Anwendungen benennen, welche die mit der API bereitgestellten Daten konsumieren können.
         
+				 http://lawd.info/ontology/
+				 https://github.com/ontop/ontop
+				 http://romanrepublic.ac.uk/rdf, Dokumentation von John Bradley: http://romanrepublic.ac.uk/rdf/doc
+				 https://www.openapis.org/ 
+				 http://www.coreapi.org
+				 z.B. das Python-Framework Flask in Verbindung mit https://github.com/zalando/connexion, vgl. weitere Tools: https://swagger.io/tools/open-source/open-source-integrations/
+				 https://github.com/GVogeler/prosopogrAPhI
+				 http://dataforhistory.org
+				 https://www.researchspace.org/
+			

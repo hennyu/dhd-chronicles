@@ -12,3 +12,18 @@
             
             Mit der IncipitSearch wird den best practices moderner DH folgend, das Potenzial einer Nische genutzt, indem zahlreiche große und kleine, bisher weitestgehend als Inseln dastehende Datenrepositorien der Musik mittels kompakt-gekapselter Software, einer Datenschnittstelle und eines simplen Transkriptionsstandards von Noten-Incipts zusammengeführt werden. Bei der Implementierung weiterer Repositorien setzen wir „community driven“ bewusst auf einen bottom-up-Ansatz, um die Akzeptanz des Dienstes zu stärken und auf Bedürfnisse aus der Community angemessen reagieren zu können. Das Kernpotenzial der Anwendung liegt aber auch in seinen Anforderungen an die Community: Mehr Mut zur Datentransparenz und mehr Mut zur Vernetzung.
         
+             Seit Dezember 2017 ist eine BETA-Version der Plattform online unter 
+                        https://incipitsearch.adwmainz.net verfügbar.
+                    
+             RISM, zweifellos das etablierteste musikwissenschaftliche Datenrepositorium, bietet bereits die Möglichkeit die dort verzeichneten Manuskripte nach Incipits zu durchsuchen (http://www.rism.info/en/home/newsdetails/select/rism_online_catalog/article/2/music-incipit-searches.html). Die Datenbestände wurden bereits in anderen Projekten nachgenutzt (Van Nuss / Giezeman / Wiering 2017).
+             Zur Softwarekomponente siehe 
+                        https://github.com/annaneo/incipitSearch
+                         sowie 
+                        https://github.com/digicademy/incipitSearch
+                         für die Webplattform. Für die Anzeige der Incipits kommt die vom RISM-Schweiz entwickelte Programmbibliothek Verovio zum Einsatz: 
+                        https://github.com/rism-ch/verovio
+                        . Um eine komfortable Noteneingabe zu ermöglichen wurde eigens ein JavaScript-PianoKeyboard entwickelt: 
+                        https://github.com/annaneo/pianoKeyboard
+                        . 
+                    
+         

@@ -1,8 +1,4 @@
- Als Beispiel sei hier die Initiative der GND genannt, die eigenen Daten in Wikidata oder zumindest in einer Wikibase-Instanz (die Software hinter Wikidata) zu integrieren: https://blog.wikimedia.de/2020/03/04/wikibase-und-gnd/, letzter Zugriff: 30.11.2021. Zum Begriff “Linked Open Data” vgl. (Berners-Lee et al. 2006: 1–130). Wir nutzen die Quellen 
-                            Wikisource, Ebooks libres et gratuits, GoogleBooks, Rousseau Online und 
-                            Frantext. Diese Metadatentabelle dokumentiert die Korpuszusammensetzung und wird parallel zum Korpusaufbau laufend aktualisiert: http://doi.org/10.5281/zenodo.5040855 /. https://github.com/MiMoText/roman18/blob/master/XML-TEI/xml-tei_metadata.tsv, letzter Zugriff: 30.11.2021.
-                         https://github.com/MiMoText/roman18/blob/master/Python-Scripts/tei2txt_run.py, letzter Zugriff: 30.11.2021. In der Regel werden die Topics durch ein Element des Themenvokabulars repräsentiert, in wenigen Fällen erscheint die Repräsentation durch zwei Themenkonzept-Label treffender. Die Datengrundlage dieses Topic Modeling Durchgangs ist unter folgendem Release zu finden: (Klee/Röttgermann 2020). Zu möglicherweise fehlenden Werken vgl. Dawson 1978. Dawson benennt auch das Desiderat eines Themenindexes. An das Scannen sowie OCR schlossen sich das Generieren von Trainingsdaten sowie die Auszeichnung aller Einträge über ein Machine Learning-Verfahren (CRF) in XML an. Diese bildeten die Datengrundlage für die anschließende Modellierung der Einträge in RDF (vgl. Lüschow 2020), bei der jedoch die einzelnen Keywords noch nicht semantisch modelliert worden sind. Weitere Kategorien umfassen die Erzählform, den Ort der Handlung, die Figuren des Romans, die Tonalität/den Stil des Werks. Ausgewählt wurden zum einen Strings mit mindestens acht Vorkommen in der Bibliographie und darüber hinaus solche mit einer besonderen Relevanz in den anderen Informationsquellen und für die literaturgeschichtliche Domäne insgesamt wie zum Beispiel der String ‘robinsonade’. Zur Dokumentation der Liste vgl. Klee/Hinzmann 2021.  Als dominante Topics bezeichnen wir jeweils diejenigen Topics, die in einem Werk unter den 5 Topics mit den höchsten Wahrscheinlichkeiten sind (siehe oben).  Hierfür werden mit INCEpTION Aussagen in literaturgeschichtlichen Fachtexten annotiert, die in das Wissensnetzwerk eingespeist werden und zugleich als Trainingsdaten für die automatische Extraktion von Themenaussagen dienen.
-            
+
                 
                     Bibliographie
                     
@@ -67,4 +63,3 @@
                     
                 
             
-        

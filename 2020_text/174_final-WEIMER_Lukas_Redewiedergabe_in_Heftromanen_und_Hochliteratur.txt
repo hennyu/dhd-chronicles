@@ -93,3 +93,11 @@ Da die schlechteren Erkennungsraten des Direkte-Wiedergabe-Erkenners für Texte 
 Ausblick
 Mit den vorhandenen Werkzeugen ist es denkbar, die Studien auf noch mehr Textmaterial auszuweiten und dabei auch weitere Genres von Heftromanen zu untersuchen. Zudem lässt sich die Methodik leicht auf Fragestellungen zu den Anteilen von Redewiedergabe in anderen Textgruppen übertragen, z.B. zwischen fiktionalem und nicht-fiktionalem Material oder im diachronen Vergleich. Wir arbeiten zudem im Redewiedergabe-Projekt weiter daran, unsere automatischen Erkenner zu verbessern, insbesondere auch den für freie-indirekte Wiedergabe (zum aktuellen Stand vgl. Brunner et al. 2019c). Die im Redewiedergabe-Projekt entwickelten Erkenner werden nach Abschluss des Projekts im Frühjahr 2020 der Forschungsgemeinschaft zur Verfügung gestellt werden, ebenso wie große Teile des verwendeten manuell annotierten Trainingsmaterials.
 
+
+    
+      Wir verwenden eine BiLSTM-CRF-Architektur mit contextual string embeddings in Kombination mit FastText word embeddings (adaptiert von Akbik/Blythe/Vollgraf 2018). Eine detaillierte Beschreibung übersteigt den Rahmen dieses Beitrags, aber sie entspricht im Wesentlichen der Architektur in Brunner et al. 2019c.
+    
+    
+      Von den 50 Jerry-Cotton-Krimis konnten nur für 4 Autoreninformationen gefunden werden, von denen eine zudem unsicher ist. Gesichert kann man damit sagen, dass mindestens 2 unterschiedliche Autoren in der Gruppe Krimi vorliegen, vermutlich sind es jedoch deutlich mehr.
+    
+  

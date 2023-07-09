@@ -77,4 +77,4 @@
                 
                 We have shown that domain adaptation of both, a rule-based system and a Deep Learning based system, yields substantial improvements to coreference resolution on a target domain (in our case fairy tales). The evaluation also opens possibilities for further combination of the results of the rule-based system and the Deep Learning based system, which we leave for further work.
             
-        
+         We use only 46 tales because the other documents have not been annotated yet. The data used can be found at https://gitlab.informatik.uni-wuerzburg.de/kallimachos/coref-adaptation Most other NN architectures require even more memory and time to train. We also spent some effort experimenting with a more memory-efficient architecture (Kirstain et al., 2021) but could not get any substantial results. Since we do not have any GPUs with sufficient memory capacity (more than 24 GB) c2f D was trained on CPUs, which took about one week. Training on the fairy tales was done on an RTX3090 in a few hours. https://github.com/t-systems-on-site-services-gmbh/german-elmo-model

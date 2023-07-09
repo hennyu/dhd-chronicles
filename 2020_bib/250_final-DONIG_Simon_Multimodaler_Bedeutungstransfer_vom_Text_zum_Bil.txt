@@ -1,43 +1,4 @@
 
-  
-    
-      Das DSM wurde mit
-    einer Vektorgröße von 50, einer Wortfenstergröße von 10 und einer
-    minimalen Wortzahl von fünf erstellt. Als Word2Vec-Modell kam
-    Skipgram (Mikolov, Chen, Corrado, Dean 2013) mit Negative Sampling
-    zum Einsatz.
-    
-      Das Korpus wurde
-    aus den Sammlungen des Metropolitan Museum, New York, des Victoria
-    & Albert Museum, London, der Wallace Collection, London sowie
-    mehreren zeitgenössischen Musterbüchern zusammengestellt.
-    
-    
-      Das Netzwerk
-    besteht aus drei Convolutional-Blöcken mit jeweils zwei
-    Convolutional-Layers mit 32/64/64 Filter der Größe 3x3. Nach jedem
-    Block folgt ein Maximum-Pooling-Layer der Größe 2x2 sowie ein
-    Dropout-Layer mit einer Dropoutwahrscheinlichkeit von 0.25. Ein
-    Fully-Connected-Block, bestehend aus zwei Fully-Connected-Layers
-    mit jeweils 256 Knoten, steht im Anschluss sowie nochmals ein
-    Dropout Layer mit 0.5 Dropoutwahrscheinlichkeit. Jeder
-    Convolutional- und Fully-Connected-Layer bis dahin wurde zufällig
-    initialisiert und benutzt ReLU als Aktivierungsfunktion. Der
-    letzte Layer ist ein Fully-Connected-Layer mit 50 Ausgabeknoten
-    und benutzt eine lineare Aktivierungsfunktion. Es ist in den
-    beiden von uns genutzten Frameworks Keras (https://keras.io) und
-    TensorFlow (https://tensorflow.org) implementiert. Beim Training
-    wird der durchschnittliche absolute Fehler durch die
-    Optimierungsfunktion RMSprop minimiert.
-    
-      Das verwendete CNN
-    unterscheidet sich von dem im Vektor-Experiment verwendeten Netz
-    lediglich durch den letzte Layer, der ein Fully-Connected-Layer
-    mit 28 Ausgabeknoten ist, korrespondierend mit den 28 flachen
-    Labeln, und die Nutzung von softmax als
-    Aktivierungsfunktion.
-  
-  
 
 Bibliographie
 
@@ -74,5 +35,4 @@ Abb. 5:
 Bell, J. Munro (arr.)
  (1910): The furniture designs of Thomas Sheraton. London: Gibbings and Co., Ltd.
                     
-
 

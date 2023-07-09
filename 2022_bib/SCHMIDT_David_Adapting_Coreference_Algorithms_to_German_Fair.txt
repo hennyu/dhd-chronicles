@@ -1,5 +1,4 @@
- We use only 46 tales because the other documents have not been annotated yet. The data used can be found at https://gitlab.informatik.uni-wuerzburg.de/kallimachos/coref-adaptation Most other NN architectures require even more memory and time to train. We also spent some effort experimenting with a more memory-efficient architecture (Kirstain et al., 2021) but could not get any substantial results. Since we do not have any GPUs with sufficient memory capacity (more than 24 GB) c2f D was trained on CPUs, which took about one week. Training on the fairy tales was done on an RTX3090 in a few hours. https://github.com/t-systems-on-site-services-gmbh/german-elmo-model
-            
+
                 
                     Bibliography
                     
@@ -140,4 +139,3 @@
                     
                 
             
-        

@@ -43,3 +43,47 @@ Innerhalb des OCR-D-Projektes beschäftigen sich zwei Projekte mit der automatis
 Ausblick
 Ab der ersten Jahreshälfte 2020 werden die entwickelten Software-Komponenten im OCR-D-Workflow verankert sein. Damit tritt diese Software immer mehr aus dem Projektstadium heraus und wird in den produktiven Einsatz überführt. Um kontinuierlich gute Erkennungsergebnisse mit dem aus fast vier Jahrhunderten stammenden Material zu erhalten, sind Optimierungen notwendig. Dabei wird stets darauf abgezielt, Forschungsdaten aus den digitalen Beständen der Bibliotheken zu erzeugen und nicht unstrukturierte Textdaten. So wird die Volltexttransformation in einem umfassenden Maße Grundlagen für datenzentrierte Digital Humanities schaffen.
 
+
+    
+      Im Kontext von OCR bezeichnet 
+      Ground Truth manuell korrigierte, fehlerfreie Transkriptionen. Diese werden zum einen für das Training von OCR-Engines, zum anderen für die Evaluation der OCR-Ergebnisse benötigt.
+    
+    
+      Der Gedanke folgt der neunten Empfehlung (“Establish an ‘OCR Service Bureau’”) aus dem Report von Smith und Cordell (2018).
+    
+    
+      Vgl. bspw. die folgenden Projekte, die sich auf unterschiedlich große (Teil-)Bestände beziehen: Helmstedter Drucke Online:
+      http://www.hab.de/de/home/wissenschaft/forschungsprofil-und-projekte/helmstedter-drucke-online.html;
+      Über 14.000 preußische Drucke des 17. Jahrhunderts online verfügbar:
+      https://blog.sbb.berlin/ueber-14-000-preussische-drucke-des-17-jahrhunderts-online-verfuegbar/;
+      Projekt Digi20
+      https://digi20.digitale-sammlungen.de/de/fs1/about/static.html
+    
+    
+      Nachdem im Jahr 2010 der Aufbau von Infrastrukturen für Forschungsdaten von der DFG ausgeschrieben worden war, wurde drei Jahre später das Förderprogramm „Informationsinfrastrukturen für Forschungsdaten“ eingerichtet. Vgl. DFG 2019: 7.
+    
+    
+      Zur aktuellen Situation des Datenmanagements und der Rolle, die Bibliotheken in diesem Bereich einnehmen (könnten), vgl. Neuroth et al 2019.
+    
+    
+      Die Notwendigkeit einheitlicher Richtlinien wird besonders an Projekten wie “Venice Time Machine” deutlich, dessen bereits vorhandenen 8 TB an Daten aufgrund fehlender einheitlicher Richtlinien und Vorgehensweisen bei der Erfassung der Metadaten für die Forschung vermutlich wertlos sind. Vgl. Castelvecchi 2019: 607.
+    
+    
+      Kempf geht davon aus, dass mit OCR-Software nie völlig fehlerfreie Volltexte generiert werden können. Vgl. Kempf 2015: 274.
+    
+    
+      Während die OCR-Ergebnisse im Rahmen des GoogleBooks-Projekts zunächst insgesamt unbefriedigend, für gebrochene Schriften vollkommen unbrauchbar waren, konnten ab dem Jahr 2008 einzelne Frakturtexte in ausreichender Qualität prozessiert werden. In den letzten Jahren konnte die Erkennungsrate noch deutlich gesteigert werden. Vgl. Wikisource: Google Book Search.
+    
+    
+      Bspw. gibt Google die Fehlerquote im Google Books pauschal mit 1,37 % an (vgl. Kempf 2015: 272). Diese für die wissenschaftliche Nutzung hohe Fehlerrate unterscheidet sich, bedingt durch die Vielfalt an Typen und Layouts sowie den großen Publikationszeitraum der digitalisierten Bücher, von Text zu Text deutlich.
+    
+    
+      https://github.com/tesseract-ocr/tesstrain
+    
+    
+      https://github.com/OCR-D/okralact
+    
+    
+      https://github.com/qurator-spk/dinglehopper
+    
+  

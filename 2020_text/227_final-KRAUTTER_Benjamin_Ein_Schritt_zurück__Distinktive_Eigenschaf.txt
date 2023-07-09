@@ -191,3 +191,28 @@ Genauigkeit (F1
 Topic Modeling und Netzwerkanalysen auch stilometrische Maße in die Klassifikation zu integrieren. So könnte auch der Stil der Stücke – in einem quantitativen und damit weiten Sinn – Teil der Voraussage werden.
 
 
+
+    
+      Da literarische Epochen und Strömungen eine fließende Entwicklung nehmen, ergeben sich durch diese Setzung zwangsläufig Überschneidungen. So fallen beispielsweise Lessings 
+      Emilia Galotti (1772) und Schillers 
+      Die Räuber (1781), zwei schon strukturell sehr verschieden gebaute Stücke unterschiedlicher Strömungen, in die gleiche Klasse.
+    
+    
+      Für eine Übersicht über die verschiedenen Metriken vgl. Newman (2010): 168–204.
+    
+    
+      Die Implementierung erfolgt über die Pakete randomForest und  Caret für R:
+      
+      und .
+      Caret bietet vielfältige Optionen für das 
+      Preprocessing und 
+      Sampling der Daten. Ich nutze die Methoden 
+      center und 
+      scale zur Kalibrierung und 
+      SMOTE-sampling, um die zahlenmäßige Ungleichverteilung der Dramen in den verschiedenen Zeiträumen auszugleichen (eine genauere Beschreibung eines ähnlichen Versuchsaufbaus findet sich in Krautter / Pagel / Reiter / Willand 2018: 19–29).
+    
+    
+      Die Leistungsfähigkeit einer Majority Baseline wäre aufgrund des 
+      multiclass Klassifikation sehr eingeschränkt (Precision: 0.291).
+    
+  

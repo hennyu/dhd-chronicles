@@ -69,3 +69,36 @@ Abbildung 3: Bei Bedarf können die Wissensbereiche detailliert ausspezifiziert 
 
 
 
+
+    
+       Zentral für unsere methodologische Argumentation ist der Anspruch, Computermodelle für die Ableitung von einzelnen Befunden aus der Datenlage so in kombinierte Arbeitspraktiken zu integrieren, dass folgende zwei Aspekte unabhängig voneinander reflektiert werden können: (a) Wie hoch liegt die komputationelle Vorhersagequalität des Modells bei der Anwendung auf den Untersuchungsgegenstand (Texte einer bestimmten Epoche, Gattung, Inhaltsdomäne etc.) bezogen auf eine definierte Analyseaufgabe (etwa die Extraktion aller textuellen Erwähnungen der Akteure in einem Text)? (b) Wie aussagekräftig sind Befunde aus einer gegebenen, definierten Analyseaufgabe bezogen auf eine übergeordnete geisteswissenschaftliche Forschungsfrage?  Eine modular aufgebaute Architektur von Analyseschritten kann entlang dieser beiden Aspekte sukzessive für die Bearbeitung eines geisteswissenschaftlichen Forschungsgegenstands angepasst werden.
+      
+	Fasst man die Idee der komputationell/geisteswissenschaftlichen Methodenkombination sehr weit, fallen natürlich alle Arbeiten aus dem Spannungsfeld der DH darunter: Bevor Standard-Werkzeuge (auch ohne eine Möglichkeit der Adaptation) etwa für explorative oder heuristische Zwecke eingesetzt werden, werden sich die Forschenden ein Bild zu deren Vorhersagequalität auf dem studienspezifischen Material machen. Und bevor in einem Machine-Learning-Projekt mit großem Zeitaufwand Computermodelle für eine Analyseaufgabe und ein bestimmtes Korpus optimiert werden, vergewissern sich die Beteiligten in der Regel, dass die ableitbaren Befunde einen relevanten Beitrag zu Fachfragen leisten. Insofern schlägt sich das Nebeneinander der beiden Aspekte mittelbar auf jede DH-Methodendiskussion nieder (vgl. etwa die Diskussion von computergestützten Analyseverfahren in unterschiedlichen DH-Fachkontexten in Reiche et al. 2014 oder die Diskussion der Rolle der Informatik in den DH bei Heyer/Niekler/Wiedemann 2014 oder Deck 2018). Die praktischen und theoretischen Implikationen für das weitere Vorgehen unterscheiden sich jedoch abhängig davon, ob eine parallel komputationell/geisteswissenschaftlich reflektierte Modularisierung der Analysekonzepte im Kern des arbeitspraktischen Vorgehensmodells für ein DH-Projekt steht oder ob beispielsweise zunächst unüberwachte Verfahren explorativ eingesetzt werden (vgl. das in Allison et al. 2011 dokumentierte Experiment). Betroffen sind also zentrale methodische Fragen, etwa zur Rolle der Visualisierung im Erkenntnisprozess (hierzu fanden und finden vielfältige Diskurse statt, vgl. z.B. Ihde 1998, Schaal/Kath/Dumm 2016, Romele et al. 2018); auch die Frage nach dem Verhältnis zwischen “building” (als Erstellen von Computerprogrammen) und “studying” in den DH (vgl. die 2011 von Stephen Ramsay ausgelöste Kontroverse, Ramsay/Rockwell 2012) erhält in einem eng verzahnten Vorgehensmodell einen differenzierten Charakter.
+      
+      
+	Gerade angesichts vielschichtiger möglicher Implikationen zum methodischen Selbstverständnis erscheint es uns für den vorliegenden Beitrag sinnvoll, die Kernideen des verzahnten Vorgehensmodells zunächst systematisch zu diskutieren. Auf eine Vertiefung spezifischer methodologischer Querbezüge müssen wir aus Platzgründen verzichten. 
+      
+    
+    
+      CRETA () wurde 2016 im Rahmen der BMBF-Förderung für Digital Humanities-Zentren etabliert.
+    
+    
+      Aus Platzgründen können wir die Umsetzung des konzeptionellen Rahmens in einzelnen Projekten im vorliegenden Vortragsexposé nicht diskutieren. 
+    
+    
+      Falls hinreichend viele Daten annotiert wurden, kann überwachtes Lernen auf Basis einer Aufteilung in Trainings- und Testdaten zur Anwendung kommen. Zumeist ist bei speziellen Kategorisierungsaufgaben jedoch die Menge der Referenzdaten so klein, dass sie lediglich als Testmenge dienen kann – etwa für die Adaptation von Modellen, die für vergleichbare Kategorien trainiert werden können, oder für unüberwachte Verfahren.
+    
+    
+      Die interne Modellstruktur wird im Rahmen eines solchen Vorgehens getrennt vom Modellierungsziel gesehen; sie kann zwar von systematischen Annahmen über die zu modellierende Aufgabe inspiriert sein, ausschlaggebend ist jedoch die Optimierung der fixierten Referenzannotationen. Häufig erzwingt die mangelnde Verfügbarkeit von unmittelbar verwendbaren Daten bzw. Annotationen eine Modellarchitektur, die von den kausalen Zusammenhängen der modellierten Domäne abweicht.
+    
+    
+      Einen Prototyping-Ansatz innerhalb der DH diskutieren El Khatib et al. 2019. Ein verzahntes zyklisches Vorgehensmodell ist auch in der Visualisierung/den 
+      Visual Analytics
+       verbreitet (vgl. etwa Sacha et al. 2014, El-Assady et al. 2019 und die Beiträge in Butt et al. 2020). Iterative Annotationszyklen zur Optimierung der Operationalisierung werden beschrieben bei Pustejovsky/Stubbs, 2012, Bögel et. al. 2015 Gius/Jacke 2017 und Pagel et al. 2018. Eine ausführliche Diskussion des Bezugs zu 
+      close/distant reading
+       in DH findet sich in Jänicke 2016, Kap. 2.
+    
+    
+      Wir schließen uns hier der Konzeptualisierung an, die Danneberg/Albrecht 2017 im Rahmen einer möglichst allgemeinen wissenschaftstheoretischen Charakterisierung der Inferenzschritte vornehmen, welche einer literaturwissenschaftlichen Textinterpretation zugrunde liegen. Eine Verallgemeinerung auf andere textanalytische Problemstellungen ist ohne Weiteres möglich.
+    
+  

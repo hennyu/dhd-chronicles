@@ -269,3 +269,36 @@
                 Die gleichzeitige Beobachtung von Gattung und Emotion zeigt nicht nur, dass Gattungen wesentlichen Einfluss auf die Verteilung von Emotionen haben, sondern auch, dass der Übergang von Realismus zu früher Moderne innerhalb von Gattungen eigenen Dynamiken folgt. Im Fall religiöser Lyrik und Geschichtslyrik verlaufen diese Dynamiken sogar in Widerspruch zum Gesamttrend. Im Anschluss ergeben sich drei weitere Perspektiven: Wie sehen die Emotionsprofile der nicht-thematischen Gattungen aus? Welche anderen differenzierenden Faktoren neben der Gattung können wir identifizieren, z.B. Autorschaft, Publikationsort, Intertextualität usw.? Ein wichtiger Aspekt könnte die Zeit sein, bezogen auf kleinere Einheiten als Epochen: Wie entwickeln sich die Lyrik und die einzelnen Gattungen unter der Perspektive der Emotionsgestaltung in der Zeit, etwa von Jahrzehnt zu Jahrzehnt?
             
         
+
+                         Korpus:  
+                            Winko u. a. 2022; Korpusbeschreibung: 
+                            Winko u. a. 2022a.
+                        
+                    
+
+                         Annotationsrichtlinien Lyrische Gattungen: 
+                            Kröncke u. a. (2022b)
+                        
+                    
+
+                         Annotationsrichtlinien Emotionsmarker und Emotionen: 
+                            Kröncke u. a. (2022)
+                        
+                    
+
+                         Code und Daten: https://github.com/LeKonArD/Gattungen_und_Emotionen_dhd2023
+                    
+
+                         Batchsize (5,10,15,20), Learning Rate (1e-5, 5e-5, 1e-4) und Epochen (10,20,50)
+                    
+
+                         10 Epochen über das gesamte Korpus, Batchsize 64, Learning Rate 1e-5
+                    
+
+                             Dieses Vorgehen ist mit dem Fokus unseres Aufsatzes auf Gattungen begründet. Die gewählte Normalisierung führt dazu, dass Unterschiede zwischen Textgruppen visuell identifiziert werden können. Da die absoluten Häufigkeiten der Emotionen im Korpus stark schwanken (Liebe kommt 7-fach häufiger als Wut vor), ist es nicht möglich, diese in einer Graphik abzubilden, ohne die Unterschiede der Gattungen zu marginalisieren. Ähnliches gilt für die Art der Normalisierung: Wir haben uns für den Median über alle Gedichte entschieden, da dies die ‘neutralste’ Variante ist. Normalisierung mit den Gedichten, die keiner Gattung zugeschlagen werden, erscheint wahllos, da wir über diese Gruppe nichts wissen. Eine Normalisierung durch balanciertes Sampling der Gattungen impliziert die Annahme, dass jede Gattung gleich häufig ist und die Verteilungsunterschiede durch einen 
+                                Selection Bias entstanden sind. Dies ist aber in Anbetracht der Größe des Korpus unwahrscheinlich.
+                            
+                        
+
+                             Ein t-test auf den euklidischen Distanzen der Emotionsprofile religiöser Lyrik in Moderne und Realismus resultiert in einem signifikanten Unterschied (p < 0.05).
+                        

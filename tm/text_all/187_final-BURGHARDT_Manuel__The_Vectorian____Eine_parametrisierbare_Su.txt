@@ -135,3 +135,22 @@ Im aktuellen Stadium dient der
                     . 
                 
 
+
+    
+      Für eine Systematisierung von text reuse Methoden anhand der Kategorien inhaltliche, strukturelle und stilistische Ähnlichkeit vgl. Bär et al. 2012.
+    
+    
+     “The Vectorian” ist als Prototyp auf Anfrage verfügbar.
+    
+    
+      Beispiel: Eine Ähnlichkeit auf einem Adjektiv (Tag JJ) wird mit dem Faktor 0.7 gewichtet, während ein Verb (Tag VB) mit 1.2 gewichtet wird.
+    
+    
+      Die Abwertung über andere Längen erfolgt ausgehend vom gegebenen Basiswert exponentiell in der Länge des  mismatches, was uns intuitiv und aufgrund der Beobachtungen in (Beeferman, 1997) sinnvoll erscheint. Der genaue Kurvenverlauf für gängige Längen wird im UI als Plot dargestellt.
+    
+    
+      Die Dokumentbasis des 
+      Vectorian kann flexibel erweitert werden solange die Texte in einem grundlegend bereinigten 
+      plain text-Format vorliegen.
+    
+  

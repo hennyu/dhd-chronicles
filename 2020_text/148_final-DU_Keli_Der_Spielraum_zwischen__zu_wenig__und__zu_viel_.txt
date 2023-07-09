@@ -138,3 +138,28 @@ Fazit
 Die vorliegenden Untersuchungen haben den Spielraum im Sinne von Topic-Anzahl bei Topic Modeling aus zwei Perspektiven eingegrenzt, nämlich Dokument-Klassifikation und Topic-Kohärenz. Angesichts der Untersuchung ist es festzustellen, dass man vermeiden sollte, ein Topic-Modell mit zu wenig Topics zu trainieren, wenn man eine bessere Topic Modeling basierte Dokument-Klassifikation sichern möchte. Ein Topic-Modell mit hoher Topic-Anzahl zu trainieren kann auch mehr kohärente Topics erzielen. Aber gleichzeitig muss man mit noch mehr nicht kohärenten Topics kämpfen. Deshalb ist es notwendig, die Topic-Kohärenz nach Topic Modeling zu berechnen, um die kohärenten und die nicht kohärenten Topics zu unterscheiden. Am Ende muss noch betont werden, dass das Ergebnis abhängig von Untersuchungskorpus sein könnte. Deshalb ist es geplant, die gleiche Untersuchung auf anderen Korpora (z. B. statt Zeitungsartikeln eine Sammlung von literarischen Texten für die Untersuchung zu nehmen) in der Zukunft durchzuführen.
 
 
+
+    
+Topic Modeling ist eine Reihe von Algorithmen. Da das Latent Dirichlet allocation (LDA)-Modell am meisten verbreitetes Topic-Modell ist, bezieht „Topic Modeling“ und „Topic-Modell“ in dieser Arbeit sich nur auf LDA. 
+    
+    
+http://www.daviddlewis.com/resources/testcollections/trecap/
+    
+    
+Hier beziehen die internen Evaluationsmethoden sich nicht nur auf die Perplexität, sondern auch auf die Methoden, die in (Deveaud, SanJuan, & Bellot, 2014); (Arun, Suresh, Veni Madhavan, & Narasimha Murthy, 2010); (Cao, Xia, Li, Zhang, & Tang, 2009) und (Griffiths & Steyvers, 2004) vorgeschlagen wurden
+    
+    
+Das Korpus ist eine private Textsammlung, die leider nicht veröffentlicht werden kann. Mit MALLET wurde das Korpus importiert und in eine MALLET-Datei umwandelt, die hier verfügbar ist:
+                            https://www.dropbox.com/s/jpfhmtneu8q352z/Zeit_10_Klasse_lemma.mallet?dl=0
+    
+    
+http://aksw.org/Projects/Palmetto.html
+    
+    
+      https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html
+    
+    
+      „birgit“, „trabant“ und „sobiech“ sind drei Namen, die mit dem Thema Frauenfußball verbunden sind. Birgit Prinz und Anne Trabant sind zwei ehemalige deutsche Fußballspielerinnen. Gabriele Sobiech ist die Autorin vom Buch „
+      Spielen Frauen ein anderes Spiel?:- Geschichte, Organisation, Repräsentationen und kulturelle Praxen im Frauenfußball“
+    
+  

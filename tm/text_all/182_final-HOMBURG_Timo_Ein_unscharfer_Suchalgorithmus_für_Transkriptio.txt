@@ -98,3 +98,22 @@
                 Unsere Version der gewichteten Levenshtein Distanz erwies sich als ein vielversprechender Ansatz für die Verbesserung von Suchergebnissen in digitalen Gazetteeren. Zusätzlich konnten wir durch die Anwendung des Algorithmus auf das sumerische Keilschriftwörterbuch die Übertragbarkeit des Algorithmus auf andere Sprachen demonstrieren. Obwohl die vorgeschlagene Adaption des Levenshtein Algorithmus für sumerische Keilschrift erfolgreich war, könnten in anderen Fällen möglicherweise neue Probleme auftreten. Da der Algorithmus bisher nur Kombinationen aus zwei Buchstaben berücksichtigt, würde er nicht für Transliterationen funktionieren, die auch Kombinationen aus mehr als zwei Buchstaben enthalten, beispielsweise für die Transliteration des kyrillischen Alphabets, die Kombination wie ``shtsh'' für den kyrillischen Buchstaben Щ enthält. Für Fälle wie diesen müsste der Ansatz weiterentwickelt werden. Darüber hinaus wäre zu überlegen, inwieweit die Performanz des Algorithmus weiter verbessert werden könnte. Durch die Verwendung eines Burkhard-Keller-Baumes konnte die Performanz immerhin so weit gesteigert werden, dass die Suchzeit auf einem Testkorpus mit über 35.000 Einträgen auf unter eine halbe Sekunde im Durchschnitt reduziert wurde. Für die Verwendung mit größeren Wörterbüchern könnte jedoch eine weitere Verbesserung der Performanz wünschenswert sein. Als Möglichkeit hierfür wäre etwa die Verwendung eines Levenshtein-Automaten nach Schulz / Mihov (2002) zu prüfen, der als besonders effiziente Umsetzung des Levenshtein-Algorithmus gilt.
             
         
+                
+                    
+                
+                
+                    
+                
+                
+                    
+                
+                
+                    
+                
+                
+                    
+                
+                
+                    
+                
+            

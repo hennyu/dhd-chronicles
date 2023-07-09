@@ -157,4 +157,6 @@
                     word embeddings, um akzeptable Ergebnisse für die Hauptkategorien zu erreichen und Emotionen in größeren Mengen unseres Korpus vorhersagen zu können.
                 
             
-        
+         Das Projekt wird von der Deutschen Forschungsgemeinschaft (DFG) im Rahmen des Schwerpunktprogramms Computational Literary Studies (SPP 2207/1) gefördert 
+                            https://dfg-spp-cls.github.io/projects_en/2020/01/24/TP-Emotions_in_Drama/ (Sachbeihilfen DE 2188/3-1 und WO 835/4-1, Projektnummer: 424207618).
+                         Zur Definition des Emotionsbegriffs und zur Emotionsauswahl vgl. Dennerlein et al. 2022 https://textgrid.de https://simpletransformers.ai/ https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC https://fasttext.cc/docs/en/crawl-vectors.html Lern-Rate: 0.1, Batch-Größe: 32 https://huggingface.co/ Lern-Rate: 0.00004; Batch-Größe: 32, maximale Sequenzenlänge: 128; Adam als Optimizer Aus Architektur-Gründen wird das Modell literary-german-bert nur für Polarität/Dreifach-Polarität evaluiert Siehe https://simpletransformers.ai/docs/lm-specifics/

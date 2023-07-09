@@ -118,3 +118,35 @@
                 Die Erkenntnis, dass der Zero-Shot-Ansatz bei einfachen Klassifzierungsaufgaben im Falle einer sehr spezifischen und komplexen Domäne bereits eine hohe Datenqualität liefert, stiftet Zuversicht, da in diesem Fall bereits geringe Mengen von Annotationsdaten ausreichen, um die Datenqualität zu evaluieren und gegebenenfalls durch entsprechendes Nachtrainieren zu erhöhen. Nun stellt sich die weitergehende Frage, inwieweit dieser Ansatz auch für komplexere Aufgaben wie Aspect-Based-Sentiment geeignet ist. Erste Analysen sowie die Arbeit von Shu et al. (2022) stimmen hier optimistisch. Dies wäre insofern eine relevante Erkenntnis, als die meisten praxisbezogenen Aufgaben eher komplexerer Natur sind. Komplexere Aufgaben lassen sich im Bereich des maschinellen Lernens häufig durch eine größere Menge an annotierten Trainingsdaten lösen. Ein Vorteil des Zero-Shot Ansatzes läge hier darin, dass das Verfahren auf den Zieldaten zunächst direkt evaluiert werden kann und nur im Bedarfsfall weitere Daten für das Nachtrainieren manuell erstellt werden müssen. Insgesamt scheint dieser neuartige Ansatz aus dem Bereich des Transfer Learning also sehr vielversprechend, auch für sehr heterogene Textkorpora, wie sie in den Digital Humanities häufig vorliegen.
             
         
+
+                         Siehe Raimondo (2019) für einen Literaturüberblick.
+                    
+
+                         Siehe Projekt-Homepage 
+                            https://media-sentiment.uni-leipzig.de. Während dieses Zeitraums entwickelte sich die Berliner Börse zu einem international bedeutsamen Handelsplatz (Pohl 2002; Buchner 2019).
+                        
+                    
+
+                         Zur Geschichte der BBZ, siehe die Beiträge in Bertkau (1930).
+                    
+
+                         Siehe 
+                            https://zefys.staatsbibliothek-berlin.de/list/.
+                        
+                    
+
+                         Trotz dieser Datenlücken haben wir aufgrund ihrer finanzhistorischen Bedeutung an der BBZ als Untersuchungsobjekt festgehalten, zumal nicht ohne Weiteres zu nachvollziehbar ist, ob die 
+                            Vossische Zeitung nicht ähnliche, zeitlich versetzte Lücken aufweist.
+                        
+                    
+
+                         Daher sehen wir von einer detaillierten Evaluation des Lexikonansatzes gegenüber dem des Maschinellen Lernens an dieser Stelle ab. Zudem soll im weiteren Projektverlauf (siehe Ausblick) eine Aspekt-basierte Sentiment Analyse umgesetzt werden, die sich aus unserer Sicht wesentlich leichter in einen neuronalen Ansatz integrieren lässt als dies bei lexikonbasierten Ansätzen der Fall ist.
+                    
+
+                        
+                            https://huggingface.co/svalabs/gbert-large-zeroshot-nli.
+                        
+                    
+
+                         An dieser Stelle liegt ein systematischer Vergleich dieser Reihen mit historischen Finanzmarktdaten nahe. Da ein solcher Vergleich eine Vielzahl methodischer Fragen aufwirft, vertagen wir diesen Schritt aus Platzgründen auf eine künftige Publikation. Natürlich gilt es bei der vorläufigen Interpretation das Risiko eines Confirmation Bias im Hinterkopf zu halten.
+                    

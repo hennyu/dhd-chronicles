@@ -78,7 +78,7 @@ def make_wordle_from_mallet(word_weights_file,
     for topic in range(0,num_topics):
         ## Gets the text for one topic.
         text = get_wordlewords(words, word_weights_file, topic)
-        wordcloud = WordCloud(width=1600, height=1200, background_color="white", margin=4, collocations=False).generate(text) #font_path=font_path, 
+        wordcloud = WordCloud(width=1600, height=1200, background_color="white", margin=4, collocations=False, stopwords=None).generate(text) #font_path=font_path, 
         default_colors = wordcloud.to_array()
         rank = get_topicRank(topic, TopicRanksFile)
         figure_title = "topic "+ str(topic) + " ("+str(rank)+"/"+str(num_topics)+")"       

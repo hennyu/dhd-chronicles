@@ -91,4 +91,40 @@
                 Unabhängig von seinem fachwissenschaftlichen Output soll der vorgestellte Ansatz aber vor allem dem interdisziplinären Diskurs zur engeren Vernetzung und Verzahnung von „D“ und „H“ dienen und neue Forschungsfragen ermöglichen, die gerade durch die veränderten Informationsbedingungen und Publikationsmöglichkeiten provoziert werden. Denn obwohl die Digital Humanities mittlerweile ein hohes Maß an Professionalisierung erreicht haben, dokumentieren jüngere Bestandsaufnahmen noch immer eine unzureichende Kommunikationsstruktur zwischen Informationstechnologie und Geisteswissenschaften (vgl. Sahle 2017b). Die damit verbundenen, fachkulturellen und wissenschaftspolitischen Problemstellungen sind dabei ebenso in den Blick zu nehmen wie die spezifischen Potenziale langzeitgeförderter (Hybrid-)Editionen: Solange das „Digitale“ auf ein anempfohlenes Hilfsmittel oder die „Edition“ auf ein notwendiges Trägermedium reduziert wird, dürften sich weiterführende Fragestellungen in Grenzen halten. Wo aber Digital Humanities auf der Schnittstelle zwischen Geistes- und Informationswissenschaft gestärkt werden und etwas Eigenes hervorbringen sollen, da sind auf der Ebene der forschenden sowie der fördernden Einrichtungen integrative Denkweisen zu unterstützen. 
                 Das in den letzten Jahren zu einem kulturwissenschaftlichen Leitbegriff avancierte Gedächtnisparadigma (vgl. Radonic / Uhl 2016) dürfte sich nur dann als tragfähig erweisen, wenn es dieses Integrationsmoment abzubilden und somit gewissermaßen die „Hemisphären“ des digitalen Gedächtnisses zu synchronisieren imstande ist. Kulturen zeichnen sich schließlich – neben ihren Techniken der Überlieferung, der Speicherung und des Erinnerns (vgl. das CfP der Konferenz) – auch durch ihre handlungsleitenden Sinnstrukturen aus (vgl. Assmann 2005). In diesem Zusammenhang kann die Theologie, wie gezeigt wurde, einen Beitrag leisten: Es wäre zu prüfen, ob nicht mit der Analyse TEI-kodierter Bibelreferenzen im Rahmen digitaler Editionen ein bisher vernachlässigtes, theologiehistoriographisches Bewährungsfeld der Digital Humanities vorliegt, das künftig mehr Aufmerksamkeit bekommen sollte.
             
-        
+         Die digitale Publikation erfolgt auf einem Onlineportal (
+                            
+                                https://bdn-edition.de
+                            ) sowie im Langzeitarchiv 
+                            TextGrid Repository (
+                            
+                                https://textgridrep.org
+                             [letzter Zugriff 25. November 2021]) unter der freien Lizenz CC BY-SA 3.0, während die aus dem gleichen Datenbestand generierte Printausgabe (vgl. Nösselt 2019; Griesbach 2019; Bahrdt/Semler 2020) vom Tübinger Wissenschaftsverlag 
+                            Mohr Siebeck begleitet wird.
+                         Vgl. TEI P5: Guidelines for Electronic Text Encoding and Interchange by the TEI Consortium. Originally edited by C. M. Sperberg-McQueen and L. Burnard [...] Version 4.3.0. Last updated on 31st August 2021 (
+                            
+                                https://guidelines.tei-c.de
+                             [letzter Zugriff 25. November 2021], „3.12.2.5 Scopes and Ranges in Bibliographic Citations“) sowie die im Projektportal (s. Anm. 1) dokumentierte Schemaanpassung.
+                         Vgl. 
+                            
+                                https://github.com/Bibliothek-der-Neologie/bdnBible
+                             sowie zur o.g. Print-Serialisierung: 
+                            
+                                https://gitlab.gwdg.de/bibliothek-der-neologie/print
+                             [letzter Zugriff 25. November 2021].
+                         Die externe XML-Repräsentation der Bibel dient als Referenz für die Analyse der in den Editionsdaten vorkommenden Bibelverweise. Sie ist angelehnt an die 
+                                Zefania XML Bible Markup Language (
+                                
+                                    https://sourceforge.net/projects/zefania-sharp
+                                 [letzter Zugriff 25. November 2021]), wird allerdings projektspezifisch angepasst. – Bei den Sinneinheiten handelt es sich weniger um nutzerabhängige Interpretationserzeugnisse als vielmehr um naheliegende Sinnabschnitte, die aus den Handlungsverläufen und Gliederungen der biblischen Texte recht eindeutig hervorgehen und auf diese Weise traditionell geworden sind. Dass das Modul selbstverständlich auch andere Sinneinheiten ermöglicht, die dann zu anderen Zwischenergebnissen führen, wird im Vortrag diskutiert. – Während die externe Bibel-XML vor allem in dem unter 2.1 erläuterten Modul („Sinneinheiten") Verwendung findet, dient das zu Beginn des Abschnitts genannte Zwischenformat der Vereinheitlichung und Vereinfachung des unübersichtlichen Editionsdatenbestands für die weitere Auswertung und liegt als Vorstufe allen drei Modulen (2.1 bis 2.3) zugrunde.
+                             Die in den Abschnitten 2.1 und 2.2 vorgestellten Module zielen insofern auf den Übergang von quantitativen Statistiken in kritisch-hermeneutische Textuntersuchungen, als damit in unübersichtlichen Editionsdaten zentrale biblische Sinneinheiten oder Abschnitte mit auffälliger Bibelstellendichte identifiziert werden können, die eine weitere inhaltliche Kontextualisierung und Analyse anregen. Dabei steht weniger ein Kategoriensystem-orientiertes Vorgehen im Mittelpunkt, wie es Verfahren der qualitativen Inhaltsanalyse oder Mixed Methods (vgl. Kuckartz 2014) nahelegen, als vielmehr eine datenbasierte Schaffung von Textzugängen, die durch traditionelle Verfahren so nicht erreicht würden. Für mögliche Weiterentwicklungen mit Blick auf qualitative Forschungsmethoden ist der Ansatz aber durchaus offen. Vgl. das Kapitel „12 Critical Apparatus“ der TEI Guidelines (s. Anm. 2). Gemäß der projektspezifischen Schemaanpassung erfolgt die Unterscheidung der kritischen Apparate im 
+                                tei:rdg über 
+                                @wit mit Werten "
+                                #a", "
+                                #b", "
+                                #c" usw. (Textzeugen) sowie 
+                                @type mit Werten "
+                                v" (variant), "
+                                pp" (paraphrase), "
+                                pt" (parenthesis) und "
+                                om" (omission). Mit dieser Klassifikation lassen sich die textkritischen Phänomene der neologischen Schlüsseltexte im Rahmen der Hybridausgabe präzise beschreiben, aber auch die entsprechenden Interdependenzen zwischen den zahlreichen Bibelverweisen und der Textgenese automatisiert abfragen.
+                            

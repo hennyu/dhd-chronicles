@@ -151,3 +151,29 @@
                       
                     
                   
+                      Projekte wie
+                        bspw. SPQR oder
+                        das Textual Encoding
+                        Framework sind veraltet oder technisch nicht generalisiert. Einen
+                        interessanten Ansatz bietet die XSPARQL Language Specification des DERI, die 2009 in Form einer
+                        W3C Member Submission niedergelegt wurde. Hier fehlen jedoch praktische
+                        Implementierungen. Die Benutzung von RDFa innerhalb von XML-Daten stellt
+                        eine weitere Möglichkeit dar, doch verfolgen die wenigsten
+                        geisteswissenschaftlichen Fachdatenrepositorien eine so ausgerichtete
+                        semantische Markup-Strategie. Auch das bereits 2007 in Form einer W3C
+                        Recommendation grundgelegte GRDDL-Framework (Gleaning Resource Descriptions from Dialects of
+                        Languages) ist bis heute eine theoretische Spezifikation geblieben. Der OxGarage Transformations-Webservice der Text Encoding
+                        Initiative bietet zwar eine Routine für die Konvertierung
+                        von TEI kodierten Daten nach RDF an, legt sich für die Transformation aber
+                        auf das CIDOC-CRM als Ontologie fest. Mit OxGarage
+                        können out-of-the-box also keine anderen Ontologien
+                        für eine semantische Modellierung benutzt werden. Zudem ist der Webservice
+                        nicht darauf ausgelegt, auch weitere, externe Datenrepositorien in eine
+                        Transformation mit einzubeziehen oder andere RDF-Serialisierungen jenseits
+                        von RDF/XML zurückzugeben.
+                      
+                       Beispielsweise an den
+                        RDF zu SVG Transformations-Webservice oder an die RDF
+                        Visualisierungsbibliothek d3sparql.
+                      
+                    
