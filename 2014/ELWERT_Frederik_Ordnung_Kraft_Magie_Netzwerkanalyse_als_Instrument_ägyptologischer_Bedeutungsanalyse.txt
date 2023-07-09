@@ -1,0 +1,74 @@
+Ordnung – Kraft – Magie. Netzwerkanalyse als Instrument
+ägyptologischer Bedeutungsanalyse
+Frederik Elwert und Beate Hofmann, Ruhr-Universität Bochum
+Der Vortrag verfolgt zwei Ziele: Zum Einen soll anhand einer konkreten ägyptologischen Forschungsfrage der analytische Mehrwert der Netzwerkanalyse für geisteswissenschaftliches Arbeiten verdeutlicht werden. Damit soll ein Beitrag zur breiteren Diskussion um das Verhältnis
+von Geisteswissenschaften und Informatik in den Digital Humanities geleistet werden. Zum
+Anderen soll die im Rahmen des BMBF-geförderten Projekts „Semantisch-soziale Netzwerkanalyse als Instrument zur Erforschung von Religionskontakten“ (SeNeReKo) entwickelte Methodik zur Extraktion von Netzwerken aus Texten vorgestellt werden. Dies soll Diskussionen
+auch über den gewählten Gegenstandsbereich hinaus ermöglichen und Anknüpfungspunkte
+für projektübergreifenden Austausch bieten.
+Die Basis für diese Untersuchung bildet die Datenbank des Thesaurus Linguae Aegyptiae
+(TLA) der Berlin-Brandenburgischen Akademie der Wissenschaften mit einer Sammlung von
+Textkorpora ganz unterschiedlicher Gattungen (z.B. Totenliteratur, Literarische Texte, Königsinschriften, magische Papyri) und Epochen (drittes bis erstes vorchristliches Jahrtausend). 1
+Im Vortrag soll der analytische Mehrwert der im Rahmen des interdisziplinären Projekts entwickelten und angewandten Methoden für die historische Religionsforschung an einem konkreten Forschungsproblem illustriert werden. Den Ausgangspunkt bildet das altägyptische
+Konzept von Ordnung, Maat, sowie das der regulierenden Kraft Heka, die im Falle einer Störung der Ordnung eine Rückbindung an das Ordnungssystem garantiert. Der altägyptische Begriff Heka wird allgemein als Zauber, Kraft, Magie übersetzt, was jedoch weder innerhalb der
+Ägyptologie noch innerhalb der Religionswissenschaft unumstritten ist. Heka stellt gleichermaßen die Bezeichnung für eine Gottheit dar. Ähnlich konstruiert ist der Begriff der Maat: Er
+umschreibt das Bedeutungsspektrum Wahrheit, Gerechtigkeit, (Welt-)ordnung, richtiges Handeln
+und bleibt meist unübersetzt. Symbolisiert und personifiziert wird das ordnende Prinzip durch
+eine gleichnamige Göttin.
+Von besonderem Interesse ist hier die Frage nach der Relation der Konzepte Heka und Maat,
+der gleichnamigen Gottheiten sowie der Konzepte und Gottheiten untereinander. Beide Konzepte haben ihren Wirkungsbereich sowohl im Diesseits als auch im Jenseits, lassen sich jedoch nicht klar definieren. In diesem Vortrag wird daher ein Verfahren der Bedeutungsanalyse
+verfolgt, nach dem die Bedeutung der beiden Begriffe durch ihren Kontext erschlossen wird.
+Ziel der vorgestellten Untersuchung ist es, mit Hilfe netzwerkanalytischer Methoden eine neue
+Perspektive auf die Fragestellung nach dem Verhältnis von Heka und Maat zu eröffnen und
+die These zu überprüfen, inwieweit Heka als „Regelwerk“ interpretiert werden kann, das „chaotische Bereiche“ in die bestehende Ordnung zurückführt. 2 Zudem gilt es, an die kritische Diskussion anzuschließen, die in der Religionswissenschaft über die Rezeption des Begriffs Magie
+und seine problematische Verwendung sogar als Gattungsbegriff durch Ägyptologen aktuell
+geführt wird.3 Gerade eine gattungsübergreifende Auswertung des gesamten Korpus des TLA,
+1
+2
+
+3
+
+http://aaew.bbaw.de/tla/
+Damit wird an eine Untersuchung von Thomas Schneider angeküpft, der Heka als diejenige Energie versteht, die
+aufwendet werden muss, um einen ungeordneten Zustand in einen geordneten zu überführen: Thomas Schneider,
+„Die Waffe der Analogie: Altägyptische Magie als System“, in Das Analogiedenken: Vorstösse in ein neues Gebiet
+der Rationalitätstheorie, hg. von Karen Gloy und Manuel Bachmann (Freiburg: Alber, 2000), 37–85.
+Bernd-Christian Otto, „Zauberhaftes Ägypten – Ägyptischer Zauber? Überlegungen zur Verwendung des
+
+wie sie im folgenden beschrieben wird, verspricht im Hinblick auf diese Fragestellungen neue
+Erkenntnisse.
+Im Vorfeld der netzwerkanalytischen Untersuchung müssen die interessierenden Informationen netzwerkförmig repräsentiert werden. Die Entwicklung bedarfsbezogener Verfahren zur
+Extraktion sozialer und semantischer Netzwerke aus Texten bildet das methodische Zentrum
+des Projekts. Auf der Grundlage (computer-)linguistischer Annotationen werden relevante Informationen aus den Quellentexten und ihre relationale Struktur als Graph dargestellt und der
+Netzwerkanalyse zugänglich gemacht. Im vorliegenden Beitrag wird ein kookkurrenzbasiertes
+Verfahren angewandt, um den Kontext der interessierenden Lemmata (Heka und Maat) zu erschließen und in eine Netzwerkrepräsentation zu überführen. Lemmata, die im gewählten
+Kontext-Fenster (z.B. drei Sätze) des Suchlemmas auftauchen, werden miteinander verbunden.4 Die so entstehenden Netzwerke geben Aufschluss über das begriffliche Umfeld der gewählten Lemmata. Die Erfassung der Kookkurrenzen als Netzwerk ermöglicht, neben der visuellen Analyse auch Methoden der formalen Netzwerkanalyse auf die so gewonnenen Daten anzuwenden. So können etwa Begriffe mit hoher Zentralität oder Cluster eng miteinander verknüpfter Begriffe identifiziert werden, um schließlich die Eigenschaften von Heka und Maat
+sowie deren Relationen sichtbar werden zu lassen.
+Für die Erzeugung der Netzwerk-Repräsentation wird eine im Rahmen des Projekts entwickelte Software verwendet. Ziel bei der Entwicklung war es, ihre Verwendbarkeit in anderen Projekten sicherzustellen. Daher wurde auf etablierten Community-Standards aufgebaut. Für die
+Speicherung der Korpora wird TEI-XML5 verwendet, linguistische Annotationen werden ISOcat-konform6 gespeichert, und die Datenverarbeitungswerkzeuge verwenden TCF-XML 7 für
+den Datenaustausch. Das Berliner TLA-Korpus wurde dementsprechend zunächst von einem
+projektspezifischen XML-Schema in die Standard-Schemata konvertiert. Die für die Netzwerk-Erzeugung verwendete Software wird unter einer Open-Source-Lizenz zur Verfügung gestellt.
+Das vom BMBF geförderte Forschungsprojekt „Semantisch-soziale Netzwerkanalyse als Instrument zur Erforschung von Religionskontakten“ (SeNeReKo) ist ein Verbundprojekt der
+Ruhr-Universität Bochum und des Kompetenzzentrums für elektronische Erschließungs- und
+Publikationsverfahren in den Geisteswissenschaften der Universität Trier. Methodische Herangehensweisen einzelner Fachdisziplinen (Ägyptologie, Indologie, Sozialwissenschaften, Informatik) werden hier bei der Bearbeitung religionswissenschaftlicher Fragestellungen genutzt.
+Am Centrum für Religionswissenschaftliche Studien (CERES) der Ruhr-Universität Bochum
+steht die Erforschung von Religionskontakten, deren Bedingungen, Modi und Folgen im Mittelpunkt, um schließlich zu einer Theorie des Religionskontakts und -transfers zu gelangen.
+Das ägyptologische Teilprojekt „Dauer und Wandel ägyptischer Religion im Kontakt mit dem
+Fremden“ thematisiert den Umgang mit fremdreligiösen Vorstellungen und fragt nach erkennbaren Mustern und Konzepten, die religiöse Austauschprozesse innerhalb und außerhalb
+Ägyptens charakterisieren. Um Kontaktphänomene erfassen zu können, werden die in den
+Texten zum Ausdruck gebrachten Relationen zwischen Akteuren, zwischen Inhalten sowie
+zwischen Akteuren und Inhalten extrahiert und als Netzwerke analysiert und visualisiert.
+
+4
+5
+6
+7
+
+Magiebegriffs in der Ägyptologie“, in Ägypten – Kindheit – Tod. Gedenkschrift für Edmund Hermsen, hg. von
+Florian Jeserich (Wien: Böhlau, 2012), 39–70.
+Vgl. Dmitry Paranyushkin, Identifying the Pathways for Meaning Circulation using Text Network Analysis (Nodus
+Labs, 2011), http://noduslabs.com/research/pathways-meaning-circulation-text-network-analysis/.
+http://www.tei-c.org/
+http://www.isocat.org/
+http://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/The_TCF_Format
+

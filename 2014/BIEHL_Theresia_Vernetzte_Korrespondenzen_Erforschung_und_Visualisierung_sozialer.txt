@@ -1,0 +1,83 @@
+Vernetzte Korrespondenzen: Erforschung und Visualisierung sozialer, zeitlicher,
+räumlicher und thematischer Netze in Briefkorpora
+Abstract zur Präsentation eines Posters im Themenbereich „Geisteswissenschaften und Informatik“
+„In meiner hiesigen Vereinsamung lebe ich mehr als je mit den Briefen und Sendungen aus
+der Ferne + ich bin mit meinem Eigentlichen weniger hier als anderswo“ 1, schreibt Ida Herz, die
+„Archivarin des Zauberers“2, aus dem Londoner Exil am 20. Januar 1937 an Thomas Mann und
+offenbart in diesem einen Satz, wie sehr sie Exil erfährt als Vereinzelung und Verlust, als Verlust des
+identitätsstiftenden Kontexts, der vertrauten gesellschaftlichen Gegenwart. Zugleich verdeutlicht sie,
+welche besondere Bedeutung Briefe in dieser Situation, in der die etablierten sozialen, kulturellen und
+künstlerischen Netzwerke und Kommunikationsstrukturen von Auflösung bedroht sind, erhalten. In
+den Jahren der nationalsozialistischen Herrschaft, in denen allein aus dem deutschsprachigen Raum
+ungefähr eine halbe Million Menschen in die verschiedensten Exilländer flohen, erfüllt der Brief mehr
+denn je und unter existentiellen Vorzeichen seine per se netzwerkbildenden Funktionen. Dies wird
+schon allein durch die unüberschaubare Zahl der im Exil entstandenen Briefe untermauert. Dennoch
+wurden Netzwerke und speziell Korrespondenznetzwerke des Exils von der Exilforschung bislang nur
+in Ansätzen angegangen.3 Wesentliche Gründe dafür scheinen die quantitative Fülle des Materials und
+die qualitative, thematische und gedankliche Heterogenität der Briefe zu sein, die einer Erschließung
+und Erforschung mit traditionellen literaturwissenschaftlichen Methoden entgegenstehen. These des
+im Rahmen der Postersession zu präsentierenden Vorhabens ist, dass die Informatik die Literaturwissenschaft und Editionsphilologie bei der Bewältigung dieser Aufgabe unterstützen kann – und dies
+vor allem in zwei Bereichen.
+Zum einen entwickeln die Informatiker4 in enger Abstimmung mit den am Projekt beteiligten
+Geisteswissenschaftlern spezielle Werkzeuge, die die Edition und Erschließung des Korpus
+ausgewählter Briefe deutschsprachiger exilierter Kulturschaffender aus der Zeit von 1932 ‒1950
+erleichtern sollen. So wird der geisteswissenschaftliche Erschließungs- und Annotationsprozess
+(Auszeichnung von Personen, Orten, Werke etc. in XML/TEI, Kommentierung, Vernetzung über
+Normdaten wie GND und Geodaten) unterstützt durch Werkzeuge, die, unter Verwendung von
+bestehenden Diensten zur Erkennung von Eigennamen 5, Lexika und kontextsensitiven Regeln etwa
+Personen, Orte oder Datierungen automatisch erkennen und den Geisteswissenschaftlern
+entsprechende Vorschläge zur Identifizierung unterbreiten. Diese Vorschläge werden durch
+interaktive, lernende, webbasierte Werkzeuge bereitgestellt, die neben der Identifizierung auch
+1
+
+Friedhelm Kröll: Die Archivarin des Zauberers. Ida Herz und Thomas Mann. Cadolzburg 2001, S. 146.
+S. den gleichnamigen Titel von Krölls Studie (wie Anm. 1).
+3
+Vgl. etwa Burcu Dogramaci/Karin Wimmer (Ed.): Netzwerke des Exils. Künstlerische Verflechtungen,
+Austausch und Patronage nach 1933. Berlin 2011.
+4
+Aus Gründen der Lesbarkeit wird das generische Maskulinum verwendet. Hiermit sind ausdrücklich Frauen und
+Männer gemeint.
+5
+Z.B. Stanford Named Entity Recognizer, http://nlp.stanford.edu/.
+2
+
+1
+
+Hintergrundinformationen über Personen oder historische Ereignisse liefern, denn historische Briefe
+können eine weite Spannbreite von Themen abdecken, die oft nicht ohne geeignetes
+Hintergrundwissen eingeordnet werden können. Weiterhin wird ein für das Thema ‚Exil‘ spezifischer
+Thesaurus erarbeitet. Durch die Verknüpfung von Textpassagen mit den Einträgen dieses Exil thesaurus entsteht ein mächtiges inhaltliches Erschließungsinstrument. Eine spätere Suche über diesen
+Thesaurus etwa nach ‚Exil‘, ‚Einsamkeit‘, ‚Verlust‘ oder ‚Briefkommunikation‘ liefert damit nicht nur
+die rein syntaktischen Treffer einer bloßen Volltextsuche, sondern auch Briefstellen wie die eingangs
+zitierte, welche durch die Anreicherung mit Themen erschlossen wurden.
+Zum anderen entwickelt die Informatik auf der Grundlage dieser computergestützten qualitativen
+philologischen Texterschließung sowie der quantitativen Auswertung der Metadaten digitale
+Visualisierungstechniken, die in die Bereitstellung eines netzbasierten, generischen Forschungsportals
+für semantisch vernetzte Briefkorpora münden, das dem Nutzer vielseitig modifizierbare
+Suchwerkzeuge an die Hand gibt und es ihm ermöglicht, Korrespondenznetze nicht nur in ihrer
+sozialen, sondern auch in der zeitlichen, räumlichen und insbesondere thematischen Dimension zu
+erfassen und mit den unterschiedlichsten Fragestellungen an die Texte heranzutreten. Neben den
+naheliegenden, eher personenbezogenen Fragestellungen, wer etwa überdurchschnittlich viele
+Korrespondenzpartner hatte und sich durch besonders rege briefliche Aktivität auszeichnete, während
+andere Briefschreiber eher separiert am Rand eines Netzes standen, sollen die vier Dimensionen auch
+miteinander kombinierbar sein und Fragen danach zulassen, wer sich mit wem wann über welches
+Thema ausgetauscht hat, wie sich Themen über die Zeit hinweg entwickelt haben oder ob bestimmten
+Themen zu bestimmten Zeiten und/oder an bestimmten Orten eine besondere Bedeutung bzw.
+Aktualität zukam. Die kaskadierende Suche ermöglicht verschiedene, vom Nutzer konfigurierbare
+Sichten auf die Korrespondenznetze – sowohl personen- wie auch themen- und ortsbezogene Sichten,
+die jeweils in Bezug auf einen gewünschten Zeitraum eingeschränkt werden können –, beginnend bei
+eher abstrakten Darstellungen, wie man sie aus den Bereichen Data Mining und Visual Analytics
+kennt, über diskrete graphbasierte Darstellungen bis hin zu interaktiven Zeitleisten, Karten und
+weiteren Darstellungen statistischer Daten (z. B. Graphen, Tabellen, Listen), die stets zu konkreten
+Briefpassagen mit einstellbarer Kontextgröße bzw. den Briefen selbst führen werden. Erwartet wird,
+dass die auch spielerisch modulierbare Visualisierung dabei zu Fragen anregt, die sich erst durch den
+neuen, unverstellten Blick auf die Daten ergeben.
+Das vom BMBF im Rahmen der Ausschreibung „eHumanities“ geförderte Verbundvorhaben wird
+durchgeführt vom Trier Center for Digital Humanities an der Universität Trier (Leitung: Dr. Thomas
+Burch, Dr. Vera Hildenbrandt, Prof. Dr. Claudine Moulin), dem Deutschen Literaturarchiv Marbach
+(Leitung: Dr. Roland S. Kamzelak) und dem Institut für Informatik der Martin-Luther-Universität
+Halle-Wittenberg (Leitung: Prof. Dr. Paul Molitor, Dr. Jörg Ritter).
+
+2
+

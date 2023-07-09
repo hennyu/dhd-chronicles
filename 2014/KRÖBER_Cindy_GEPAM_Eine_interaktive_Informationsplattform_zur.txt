@@ -1,0 +1,358 @@
+GEPAM – EINE INTERAKTIVE INFORMATIONSPLATTFORM ZUR
+„LANDSCHAFT DES GEDENKENS“
+C. Kröber1, S. Münster1, N. Prechtel2, C. Schubert2, S. Schietzold3
+1
+Medienzentrum, Technische Universität Dresden
+2
+Institut für Kartographie, Technische Universität Dresden
+3
+Fakultät Informatik, Technische Universität Dresden
+
+Die Städte Dresden und Terezín sind durch die Judenverfolgung im zweiten Weltkrieg unmittelbar
+miteinander verbunden. Gedenkstätten an beiden Orten erinnern an die Opfer der Shoah und
+stellen eine Vielzahl von Informationen und Dokumenten zur Verfügung, um auch jüngere
+Generationen über die vergangenen Geschehnisse aufzuklären. Ein interaktives 3D-Stadtmodell
+soll als „Landschaft des Gedenkens“ fungieren und einen neuen Zugang zu diesen Informationen
+ermöglichen.
+In Zusammenarbeit mit der Gedenkstätte Terezín, der Westböhmischen Universität Pilsen sowie
+dem Medienzentrum und dem Mitteleuropazentrum der TU Dresden wird im Rahmen eines Ziel3Programms zur Förderung der grenzübergreifenden Zusammenarbeit zwischen dem Freistaat
+Sachsen und der Tschechischen Republik bis zum 30. Juni 2014 eine multimediale Präsentation zu
+diesem Thema erstellt.
+Für die Darstellung und Bereitstellung von Informationen zu historischen Stadtlandschaften
+werden daher verschiedene Präsentationsformate, Informationsarchitekturen und Zugänge
+betrachtet.
+1
+
+EINLEITUNG
+
+Rekonstruktionen bringen einen erheblichen Mehrwert,
+beispielsweise für die Denkmal- und Kulturpflege [7].
+
+Unter dem Projektnamen GEPAM (GEdenken +
+PAMatovat (tschechisch: gedenken)) entsteht in einer
+internationalen Zusammenarbeit aus technisch und
+geschichtlich fokussierten Partnern eine Informationsplattform zum Thema Shoah in Terezín und Dresden.
+
+Die neuesten Anwendungen sind darauf ausgerichtet,
+3D-Modelle in Kombination mit Informationstexten
+sowie Audio und Video als multimediale Plattformen
+zu nutzen.
+
+Eine inhaltliche Richtung geben unter anderem Bücher
+und Dokumente vor, welche Schicksale jüdischer
+Familien aus Terezín und Dresden während der Zeit
+des Nationalsozialismus aufzeigen. Häufig werden
+Stationen ihrer Verfolgung anhand von Aufenthaltsorten, wie der letzten eigenen Wohnung, Judenhäusern,
+Arbeitslagern und Deportationsstationen, festgemacht.
+Weitere Orte jüdischer Religion und Kultur oder auch
+des alltäglichen Lebens der jüdischen Gemeinschaft
+sind unmittelbar mit der Shoah verbunden. Diese
+Verknüpfung von Orten und Informationen eignet sich
+besonders gut als Zugang zu einem „erweiterten“
+Geoinformationssystem. Innerhalb dieses Systems sind
+die Städte Terezín und Dresden als virtuelle 3DModelle eingebunden und ermöglichen den Zugriff auf
+verschiedene Informationen.
+
+2.2
+
+Informationseinbindung
+
+Viele Informationen innerhalb eines Stadtmodells
+können dem Betrachter unmittelbar zugänglich
+gemacht werden, wie z.B.
+
+
+ein (physisches) Geländemodell,
+
+
+
+Objektposition,
+
+
+
+Objektaussehen und
+
+
+
+Karteninformationen, wie Straßennamen.
+
+Ein interaktives Eingreifen des Nutzers ist meist
+erforderlich für den Zugriff auf
+
+2
+
+INFORMATIONSPLATTFORMEN
+
+
+
+zeitliche Veränderungen des Stadtbildes sowie
+
+2.1
+
+3D-Stadtlandschaften
+
+
+
+Zusatzinformationen.
+
+Bis 2000 wurden 3D-Modelle ausschließlich als
+Visualisierungsersatz für physische Modelle genutzt
+[6]. Heute finden sie zunehmend Verwendung als
+Unterstützungswerkzeug bei Präsentationen für die
+Öffentlichkeit [4] sowie in Lehre [2] und Forschung
+[3]. Dabei hat sich gezeigt, dass das Potential von 3DTechnologien die einfache Visualisierung bekannter
+existierender
+Objekte
+übersteigt.
+Insbesondere
+
+Die Visualisierung einer Stadtlandschaft als 3D-Modell
+setzt eine Vorauswertung und nutzerfreundliche
+Aufbereitung verschiedenster Daten voraus.
+Geoinformationssysteme ermöglichen eine lagegenaue
+Übertragung von (historischem) Kartenmaterial auf die
+3D-Modelle [8]. Somit lässt sich nicht nur die exakte
+-1-
+
+Position von 3D-Objekten ermitteln. Auch namentlich
+gekennzeichnete
+Verkehrswege
+dienen
+als
+Orientierungshilfe.
+
+werden. Die Plattformen können den Nutzern über
+Webseiten und Applikationen für mobile Endgeräte
+zugänglich gemacht werden.
+
+Eine Modellierung oder Rekonstruktion von
+Gebäudefassaden basiert entweder auf Vermessungsbzw. Laserscandaten existierender Objekte oder auf
+Quellenmaterial, wie Plänen, Photographien und
+Beschreibungen [5]. Eine farbliche Gestaltung der
+Gebäude kann hierbei als Unterscheidungskriterium für
+historische Zuverlässigkeit der Rekonstruktion
+verwendet werden.
+
+3.1
+
+Google Earth
+
+Google Earth ist eine Software zur Visualisierung von
+verschiedenen Geoinhalten innerhalb eines virtuellen
+Globus. Es existiert ein Plug-In für den Browser, das es
+ermöglicht 3D-Daten mit Raumbezug auf einer eigenen
+Webseite einzubinden. Von Haus aus stehen
+aufbereitete Daten, wie ein digitales Geländemodell,
+georeferenzierte Luftbilder, Straßennamen und einige
+3D-Modelle zur Verfügung. Für die Nutzung als
+Informationsplattform haben sich zwei Funktionen als
+sehr nützlich erwiesen. Zum einen ist es möglich über
+Pop-up-Fenster Informationen bereitzustellen, zum
+anderen kann man mittels Zeitschieber den
+Betrachtungszeitpunkt variieren.
+Die Möglichkeit zum Einbinden eigener Daten, wie
+Karten, 3D-Modelle, Pop-up-Informationen etc., ist
+durch das KML-Format gegeben. KML (Keyhole
+Markup Language) ist als eine Auszeichnungssprache
+für Geodaten vom Open Geospatial Consortium
+anerkannt und basiert auf dem XML-Schema.
+
+Besonderes Augenmerk bei diesem Projekt liegt auf
+einer zeitlichen Einordnung der Geschehnisse und ihrer
+Auswirkungen auf die jüdische Gemeinde sowie die
+Stadtlandschaften. Der darzustellende Zeitraum
+beginnt
+mit
+der
+Machtergreifung
+der
+Nationalsozialisten
+und
+zeigt
+Stationen
+der
+Judenverfolgung während des 2. Weltkrieges ebenso
+wie gegenwärtige Mahn- und Gedenkstätten für die
+Shoah. Mithilfe eines Zeitschiebers kann die
+Veränderung im Stadtbild visualisiert werden.
+Die 3D-Stadtlandschaft dient vordergründig als
+Zugang zu einer Vielzahl an Informationen, z.B. über
+Schicksale und Ereignisse. Die Zusatzinformationen
+können gezielt durch Anklicken von Objekten und
+Verlinkungen abgerufen werden.
+
+3.2
+
+OpenWebGlobe
+
+OpenWebGlobe ist eine neue Open Source Software
+des FHNW in Basel, die es erlaubt, Geodaten
+aufzubereiten, um sie auf einem virtuellen Globus ohne
+Plug-In im Browser darzustellen. Anders als bei
+Google Earth können hier alle Daten selbstständig
+aufbereitet und als JSON-Dateien eingebunden werden.
+JSON (JavaScript Object Notation) ist ein kompaktes
+Datenformat auf JavaScript-Basis. Die Aufbereitung
+aller einzubindenden Daten ist aktuell recht komplex
+und zeitaufwändig. Es besteht ebenfalls die
+Möglichkeit Informations-Pop-ups aufzurufen [9].
+3.3
+
+Mobile Applikationen
+
+Zunehmend erfreuen sich Smartphones und Tablets
+großer Beliebtheit. Wie sich zeigt, sind sie besonders
+für die Darstellung von 3D-Grafiken in Kombination
+mit multimedialen interaktiven Anwendungen, wie sie
+in erweiterten Realitäten, genannt „Augmented
+Reality“, vorkommen, geeignet. So verwandelt sich
+eine Stadt vor Ort in ein Freilichtmuseum und der
+Nutzer kann in situ historische Gebäude virtuell
+auferstehen lassen und weitere Informationen abrufen.
+Mithilfe der im Gerät eingebauten Sensorik kann die
+Position und Orientierung des Gerätes ermittelt
+werden. Dadurch ist es möglich, das Kamerabild mit
+dem rekonstruiertem 3D-Modell an der tatsächlichen
+Stelle zu überlagern.
+
+Abbildung 1: 3D-Stadtmodell von Dresden mit
+Zeitschieber und Pop-up-Fenster
+3
+INTERAKTIVE
+PRÄSENTATIONSUMGEBUNGEN
+Bisherige Zusammenstellungen der Schicksale von
+Einzelpersonen, welche bei GEPAM im Vordergrund
+stehen, beschränken sich fast ausschließlich auf
+Bücher, wie dem „Buch der Erinnerung. Juden in
+Dresden: deportiert, ermordet, verschollen.“ [1]. Neue
+Wege zur Informationsvermittlung sollen auch neue
+Zielgruppen erschließen, da ein Wechsel zu digitalen
+Medien ein viel größeres Publikum anspricht. Mithilfe
+eines Redaktionssystems für die Informationsplattform
+lassen sich digitale Daten sehr gut pflegen. Neue
+Erkenntnisse und Veränderungen können schnell,
+unkompliziert und ohne zusätzliche Kosten eingepflegt
+
+3.4
+
+GEPAM – “Landschaft des Gedenkens”
+
+Das Google Earth Plug-In für den Browser wurde für
+die Umsetzung der GEPAM-Informationsplattform
+gewählt. Gründe dafür waren die erprobte Technologie,
+die Bereitstellung von Daten, wie einem
+Geländemodell, und Luftbildern, die Möglichkeit der
+-2-
+
+Nutzung des Zeitschiebers und der Pop-up-Fenster
+sowie die gute Einbindung eigener Daten über KMLDateien. Dank der Plug-In-Nutzung kann eine
+vollständige intuitiv bedienbare Nutzeroberfläche
+erstellt werden (Abbildung 2). Wichtige Aspekte dieser
+Oberfläche sind
+ die Hilfe,
+
+
+der History-Track (Besuchte Orte),
+
+
+
+Touren und
+
+
+
+der Index.
+
+[3] Favro, D., 2006. In the eyes of the beholder:
+Virtual Reality Recreations and Academia. In: L.
+Haselberger, J. Humphrey and D. Abernathy,
+editors, Imaging ancient Rome: documentation,
+visualization, imagination: Proceedings of the
+Third Williams Symposium on Classical
+Architecture, Journal of Roman Archaeology,
+Portsmouth, pp. 321-334.
+[4] Greengrass, M. und L. M. Hughes, 2008. The
+Virtual Representation of the Past. Ashgate,
+Aldershot.
+[5] Münster, S., 2013. Workflows and the Role of
+Images for the virtual 3D Reconstruction of no
+longer extant historic Objects. ISPRS Ann.
+Photogramm. Remote Sens. Spatial Inf. Sci., II5/W1, 197-202.
+[6] Novitski, B. J., 1998. Rendering Real and
+Imagined Buildings: the Art of Computer
+Modeling from the Palace of Kublai Khan to Le
+Corbusier’s villas. Rockport Pub., Gloucester.
+[7] Prechtel, N., Münster, S., Kröber, C., Schubert,
+C., Schietzold, S., 2013. Presenting Cultural
+Heritage Landscapes – From GIS 3D Models to
+interactive Presentation Frames. ISPRS Ann.
+Photogramm. Remote Sens. Spatial Inf. Sci., II5/W1, 253-258.
+[8] Schmidt, M., 2011. Landschaft und Archäologie
+im virtuellen 3D-Modell. Beispiel „Ethno-Nature
+Park
+Uch-Enmek“
+(Altai,
+Russland).
+Diplomarbeit, TU Dresden.
+[9] Schubert, C., 2013. Vom 3D-Landschaftsmodell
+zu
+einer
+integrativen
+Web-basierten
+Informationsapplikation für ein archäologisches
+Schutzgebiet (Uch Enmek, Republik Altai),
+Diplomarbeit. TU Dresden.
+
+Die Hilfe liefert wichtige Informationen zur Bedienung
+der Plattform. Der History-Track ermöglicht es an
+bereits besuchte Orte zurückzukehren. Mithilfe von
+Touren wird der Nutzer gezielt und themenbezogen
+durch das Stadtmodell geleitet. Der Index erlaubt eine
+Filterung und Suche nach bestimmten Informationen.
+Es ist auch angedacht eine Lösung der GEPAMAnwendung für mobile Endgeräte zu schaffen.
+
+Abbildung 2:
+Anwendung
+4
+
+Nutzeroberfläche
+
+der
+
+GEPAM-
+
+FAZIT
+
+Das erstellte System für die GEPAM-Plattform
+zeichnet sich durch die Einbeziehung unterschiedlicher
+Präsentationsmöglichkeiten und den
+intuitiven
+Informationszugang mittels einer 3D-Karte aus. Die
+entwickelten Funktionalitäten der Plattform sowie das
+Redaktionssystem können problemlos auf andere
+Thematiken
+übertragen
+werden.
+Verschiedene
+Optionen zur Bereitstellung und Einbindung
+unterschiedlicher
+historischer
+Quellen
+und
+Forschungsergebnisse bieten Anknüpfungspunkte zu
+weiteren Projekten.
+5
+
+REFERENZEN
+
+[1] Arbeitskreis Gedenkbuch d. Gesellschaft f.
+Christlich-Jüdische Zusammenarbeit Dresden
+e.V.: Buch der Erinnerung. Juden in Dresden:
+deportiert, ermordet, verschollen, W.e.b.,
+Dresden, 2006, ISBN 978-3939888147.
+[2] El Darwich, R., 2005. Modelle. In: H.-J. Pandel
+und U. A. J. Becher (eds.), Handbuch Medien im
+Geschichtsunterricht,
+Wochenschau-Verlag,
+Schwalbach, pp. 580-591.
+-3-
+

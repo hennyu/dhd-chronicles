@@ -1,0 +1,185 @@
+Wittgensteins Nachlass: „Semantische Annotation von Adjektiven im Big Typescript.“
+Angela Krey
+Centrum für Informations- und Sprachverarbeitung (CIS)
+Ludwig-Maximilians-Universität München
+angela.krey@campus.lmu.de
+
+1. Einführung
+
+dadurch semantisch annotierte Adjektive gefun-
+
+Im vorliegenden Abstract soll die Posterpräsentati-
+
+den, beziehungsweise entdeckt werden.
+
+on für semantische Annotation von Adjektiven im
+Big Typescript von Ludwig Wittgenstein vorge-
+
+2. Klassifikation
+
+stellt werden. Die Annotation wurde im Rahmen
+
+Als Hauptkriterium für die Klassifikation dient
+
+des „Wittgenstein in Co-Text“ Projektes am Cen-
+
+nicht nur die Häufigkeit der Adjektive und deren
+
+trum für Informations- und Sprachverarbeitung
+
+Abdeckung, auch die Ansichten Wittgensteins
+
+(CIS) als Bachelorarbeit realisiert. Die Arbeit be-
+
+zum Thema Klassifikation und Bedeutung sollen
+
+schäftigt sich mit der Erstellung und Einführung
+
+beachtet werden. Hierbei stellt sich schnell heraus,
+
+semantischer Adjektivklassen in einem für das Big
+
+dass ein allgemeines Klassifikationsmodell für das
+
+Typescript (Ts-213) erstellte Lexikon. Bezeichnet
+
+Ts-213 nicht möglich ist und sogar eine autoren-
+
+wird es als wiTTLex und ist im deutschen
+
+spezifische Klasse, die Stilistika, erstellt werden
+
+DELAF-Format gehalten. Es soll alphabetisch sor-
+
+muss. Außerdem spielen Farbadjektive eine große
+
+tiert alle Wörter umfassen, die im gesamten Nach-
+
+Rolle. Farbadjektive sind nicht nur die häufigsten
+
+lass von Ludwig Wittgenstein vorkommen. Das
+
+Adjektive, Wittgenstein widmet Farben und Far-
+
+Format ist speziell für die Arbeit mit lokalen
+
+benmischung im Kapitel Phänomenologie des
+
+Grammatiken und unserer Suchmaschine „wiTT-
+
+Ts-213 ein eigenes Unterkapitel. Aus diesem
+
+Find“ (siehe http://wittfind.cis.uni-muenchen.de)
+
+Grund wurde entschlossen, für Farbadjektive noch
+
+gewählt. Formen eines Wortparadigmas, gramma-
+
+eine Unterklassifikation durchzuführen. Im Laufe
+
+tische und syntaktische Informationen sind in ei-
+
+der Klassifikation stellt sich immer wieder heraus,
+
+ner bestimmten Kodierung enthalten. Dieses Lexi-
+
+dass manche Wörter nicht eindeutig differenziert
+
+kon ist an unsere Suchmaschine „wiTTFind“ ge-
+
+werden können und in mehreren Klassen vertreten
+
+bunden und ermöglicht, dass mit der Suchmaschi-
+
+sind. Zum Beispiel das Wort „lauter“ kann als Nu-
+
+ne nicht wie üblich nur nach Wörtern, sondern
+
+meralia oder als die Steigerungsform von laut, die
+
+mithilfe der Klassifikation nach semantischen
+
+zur Klasse Komparativa gehört, auftreten. Das
+
+Wortklassen gesucht werden kann. An allen er-
+
+Wort „gut“ kann einer Eigenschaft einer Person
+
+fassten Stellen der durchsuchten Werke können
+
+entsprechen oder einer Evaluation.
+
+Abbildung 1: Semantische Klassifikation der Adjektive
+
+3. Benutzerinterface
+
+ten beschränken, und auch den Kontext miteinbe-
+
+Um in unserer Suchmaschine „wiTTFind“ (siehe
+
+ziehen können. Mehrere Häkchen können gesetzt
+
+http://wittfind.cis.uni-muenchen.de/semantik.php)
+
+und somit mehrere semantischen Klassen kombi-
+
+die neuen Suchoptionen benutzerfreundlicher zu
+
+niert werden. Der Kontext der Suche kann zusätz-
+
+gestalten, wurde für diesen Zweck eine „semanti-
+
+lich durch Satzzeichen eingeschränkt werden,
+
+sche Suche“ mit spezieller Eingabemaske für die
+
+hierbei sind vor allem in Anführungszeichen ge-
+
+neuen semantischen Klassen erstellt. Das Haupt-
+
+setzte Wörter wie 'rot' oder „rot“ gemeint. Außer-
+
+kriterium soll die manuelle Auswahl der semanti-
+
+dem müssen die Kategorien durch Beispiele ver-
+
+schen Kategorien sein. Die Eingabezeile der Such-
+
+anschaulicht werden. Diese Beispiele werden in
+
+maschine wurde zu einem Eingabefeld umfunktio-
+
+Tooltips für jede Klasse gespeichert, die angezeigt
+
+niert. Je nachdem, welche semantische Klasse mit
+
+werden, sobald per Mouseover der Tooltip akti-
+
+einem Häkchen gekennzeichnet wird, erscheint
+
+viert wird. Für einen noch besseren Überblick
+
+diese in der Suchzeile. Des Weiteren sollen auch
+
+können bereits erstellte Frequenzlisten durch
+
+mehrere Kategorien miteinander kombiniert wer-
+
+Anklicken der Beispiele dargestellt werden.
+
+den können, die Suche sich auf bestimmte Wortar-
+
+Abbildung 2: Beispielanfrage im Benutzerinterface
+
+4. Evaluation
+
+beit zeigt, dass die Adjektive jeder Klasse mit ähn-
+
+Die statistische Auswertung der semantischen
+
+lichen Nomen kombiniert werden können und so-
+
+Klassen und ihren Konkordanzen am Ende der Ar-
+
+mit ein ähnliches Verhalten aufzeigen.
+

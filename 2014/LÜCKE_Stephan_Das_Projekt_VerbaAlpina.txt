@@ -1,0 +1,82 @@
+DHd 2014, 25.-28. März 2014, Passau
+Abstract zur POSTERPRÄSENTATION (online):
+Das Projekt „VerbaAlpina“
+Thomas Krefeld, Institut für Romanische Philologie, LMU München
+Stephan Lücke, IT-Gruppe Geisteswissenschaften, LMU München
+
+Der Alpenraum stellt eine hinsichtlich natürlicher Gegebenheiten und Lebensbedingungen homogene
+Zone im Zentrum Europas dar. Von Nizza am Mittelmeer bis Wien an der Donau finden sich die
+gleichen Geländeformationen wie Täler, Gipfel, Pässe, Kare etc. sowie eine weitgehend einheitliche
+gebirgsspezifische Flora und Fauna. Neben diese naturräumliche Homogenität - und durch diese
+bedingt - tritt eine kulturräumliche: Die Menschen waren hier traditionell mit ähnlichen
+Rahmenbedingungen und nicht selten Herausforderungen konfrontiert, denen sie vielfach in
+ähnlicher, nicht notwendig aber identischer Weise begegnet sind. Als Beispiel sei hier nur
+Almwirtschaft erwähnt, die im ganzen Alpenraum in vergleichbarer Weise betrieben wurde und wird.
+Bei aller Homogenität im beschriebenen Sinn zeichnet sich der Alpenraum gleichzeitig durch eine
+vielfältige Fragmentierung aus. In ihrer Gesamtheit selbst Grenze zwischen Mittel- und Südeuropa
+sind die Alpen in ihrem Inneren durch eine Vielzahl von Grenzen unterschiedlicher Art förmlich
+zersplittert. Dies beginnt bei den einzelnen Talschaften, die aufgrund nur schwer zu überwindender
+Gebirgszüge wenigstens in früheren Jahrhunderten weitgehend von einander isoliert waren und
+endet bei den Grenzen der modernen Nationalstaaten, die diesen homogenen Naturraum
+durchschneiden.
+Neben diesen und einer Vielzahl weiterer Grenzen unterschiedlicher Art durchziehen Sprachgrenzen
+den Alpenraum. Hier treffen Sprachfamilien - das Romanische, das Germanische und das Slavische -,
+Einzelsprachen (Deutsch, Italienisch, Französisch, Slovenisch) und Dialekte (z.B. Walserdeutsch,
+Tirolerisch, Gadertalisch, Lombardisch etc.) aufeinander.
+Das Projekt VerbaAlpina, das seit gut einem Jahr in einer Kooperation zwischen dem Institut für
+Romanische Philologie und der IT-Gruppe Geisteswissenschaften der LMU vorangetrieben wird,
+widmet sich speziell diesem Aspekt alpiner Diversität und konfrontiert ihn mit der ontologischen
+Homogenität, die aus den natürlichen Gegebenheiten resultiert.
+Dabei ist VerbaAlpina in doppelter Hinsicht innovativ: Zum einen durchbricht es aus
+fachwissenschaftlicher Perspektive die sprachwissenschaftlich häufig isolierte Betrachtungsweise, die
+sich traditionell aus der überwiegend an den Nationalgrenzen orientierten Sprachdokumentation in
+Form von Sprachatlanten und Wörterbüchern ergab. Zum anderen setzt es methodisch konsequent
+auf den Einsatz von DH-Konzepten, was, soweit wir sehen, zumindest für den Bereich der
+Sprachwissenschaft in der von uns gewählten Form bislang einzigartig ist.
+VerbaAlpina ist konzeptionell und technisch bereits sehr weit entwickelt und deutlich über den
+Status eines bloßen Vorhabens hinaus. Auf dem Projektportal unter http://www.verbaalpina.gwi.uni-muenchen.de sind bereits erste Ergebnisse in Form von interaktiven Onlinekarten
+einsehbar:
+
+Technologisch basiert VerbaAlpina auf dem bekannten Client-Server-Prinzip und setzt überwiegend
+auf Webtechnologien; die Entwicklung proprietärer Module wie etwa zu installierende
+Softwareclients wird konsequent vermieden. Sämtliche Daten werden zentral in einer relationalen
+Datenbank (MySQL) gehalten und gepflegt. Eine PHP-Schnittstelle sorgt für die Präsentation der
+Daten im Internet. Zentrales Präsentationsmedium der Analysedaten sind die bereits erwähnten
+Onlinekarten. Deren Erzeugung und interaktive Funktionalität erfolgt aktuell unter Verwendung von
+Google Maps und durch den Einsatz von Javascript, wobei zu betonen ist, dass das Projekt nicht von
+Googles Kartendienst abhängig ist. Als Alternative ist die Verwendung von Openstreetmap-Karten
+möglich.
+Inhaltlich ist das Projekt in drei große, voneinander getrennte thematische Bereiche gegliedert, die in
+zeitlich aufeinander folgenden Phasen abgearbeitet werden:
+
+
+
+
+Phase 1: Traditionelle Lebenswelt: Almwesen, volkstümliche Medizin, traditionelle Küche
+Phase 2: Natur: Landschaftsformation, Wetter, Fauna, Flora
+Phase 3: Moderne Lebenswelt: Ökologie, Tourismus
+
+Das Basiskonzept besteht dabei aus der Gegenüberstellung von Konzepten (= Begriffen) und
+Bezeichnungen sowie der georeferenzierten Verteilung dieser Daten im Raum. Die Datenbasis
+stammt zunächst aus den einschlägigen Sprachatlanten, die für einen Großteil des Alpenraumes
+verfügbar sind, sowie aus ortsspezifischen Wörterbüchern. Die Datenerfassung muss überwiegend
+manuell erfolgen, da zum einen die Eigenheiten der speziellen Kartendarstellungen den Einsatz von
+
+OCR verbieten und zum anderen notwendige Kategorisierungen (z.B. Unterscheidung zwischen
+lexikalischem Lemma und abstrahiertem Worttyp) nur von Spezialisten vorgenommen werden
+können. In einem zweiten Schritt sollen eventuelle Datenlücken und -inkonsistenzen dann durch
+gezielte Nacherhebungen ausgeglichen werden. Zu diesem Zweck ist auch an den Einsatz von sog.
+Social Software gedacht. Zusätzlich zum Sprachmaterial werden in der Datenbank auch
+außersprachliche Daten zu Geschichte, Ethnographie und Infrastruktur gespeichert, da sich diese
+Größen einerseits und sprachliche Phänomene andererseits wechselseitig bedingen. Abgerundet
+wird die Datensammlung durch eine, teils georeferenzierte, Fotodokumentation zur Illustration der
+im Korpus gesammelten Begrifflichkeiten.
+Die Kartenoberfläche gestattet dem Nutzer die interaktive Auswahl und freie Kombination von
+Konzepten, Bezeichnungen und außersprachlichen Daten im Sinne heuristischer
+Informationsgewinnung.
+Für VerbaAlpina wurde von den Autoren ein Antrag auf Förderung bei der DFG eingereicht,
+konzipiert als Langzeitprojekt für eine Laufzeit von drei mal drei Jahren. Der Antrag befindet sich
+aktuell in der Begutachtungsphase. Mit einer Entscheidung wird für Anfang 2014 gerechnet.
+Unabhängig vom Erfolg dieses Antrags ist beabsichtigt, das Projekt im Rahmen der gegebenen
+Möglichkeiten weiter zu verfolgen.
+
