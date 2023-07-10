@@ -1,0 +1,173 @@
+Poster-Abstract
+Erfahrungen aus dem Bibliotheca legum-Projekt. Zum Aufbau einer Handschriftendatenbank
+(http://www.leges.uni-koeln.de)
+
+Daniela Schulz und Dominik Trump, M.A. (Universität zu Köln)
+
+Seit 2012 entsteht am Lehrstuhl für die Geschichte des Mittelalters (Prof. Dr. Karl Ubl) in
+Köln eine Datenbank, welche die handschriftliche Überlieferung des weltlichen Rechts im
+Früh- und Hochmittelalter in den Blick nimmt. Unter weltlichem Recht werden dabei sowohl
+das römische Recht als auch die germanischen Volksrechte, die sog. leges barbarorum,
+verstanden. Durch die genaue Erfassung aller relevanten Textzeugen, ihrer Produktion und
+Verbreitung ist es möglich, Rückschlüsse auf das damalige Rechtswissen zu ziehen.
+Das Projekt versteht sich zum einen als Ergänzung zur Bibliotheca capitularium von
+Hubert Mordek1, der grundlegend alle Handschriften mit fränkischen Herrschererlassen, den
+sog. Kapitularien, gesammelt hat.2 Diese bilden eine weitere zentrale Quelle der
+frühmittelalterlichen Rechtsgeschichte. Zum anderen bietet die Bibliotheca legum einen
+umfassenden Überblick über die Überlieferung und damit Rezeption des römischen Rechts im
+frühen Mittelalter – ein Gebiet, welches bisher in der Forschung nur relativ wenig Beachtung
+gefunden hat.
+Die Bibliotheca legum bietet momentan zu 296 Handschriften Informationen zu
+Datierung, Entstehungsort, Provenienz, äußerer Beschreibung, Inhalt, Literatur und vor allem
+zu im Internet frei zugänglichen Ressourcen wie Digitalisaten (z.B. aus Europeana regia,
+Gallica oder der Bayerischen Staatsbibliothek München) und Katalogeinträgen (z.B.
+Manuscripta Mediaevalia). Das Projekt ist somit konzeptionell als Portal angelegt, welches
+nicht nur selbst umfassende Informationen bietet, sondern auch vorhandene Ressourcen
+nachnutzt und miteinander verknüpfen möchte.
+Für das Projekt wurden sowohl die einschlägigen Editionen der Rechtstexte als auch
+ältere und insbesondere neuere und neueste Forschungsliteratur systematisch ausgewertet. Die
+gesammelten Informationen, die zunächst nur für eine lehrstuhlinterne Nutzung vorgesehen
+waren, wurden dabei anfänglich in einer Word-Tabelle gesammelt. Um die Ergebnisse in
+Form einer Webpräsenz einem breiteren Publikum zugänglich machen zu können, überführte
+1
+
+Hubert Mordek, Bibliotheca capitularium regum Francorum manuscripta. Überlieferung und
+Traditionszusammenhang der fränkischen Herrschererlasse (MGH Hilfsmittel 15), München 1995.
+2
+Aufgrund der freundlichen Genehmigung der Monumenta Germaniae Historica (MGH) in München, kann
+seine Studie bzw. Auszüge aus dieser (auf den einzelnen Handschriftenseiten) zum Download angeboten
+werden.
+
+1
+
+man diese Datensammlung nach XML und generierte daraus Handschriftenbeschreibungen
+nach TEI P5, welche den aktuellen Forschungsstand abbilden und zum Download verfügbar
+sind.
+Zur Verwaltung der Webpräsenz wurde mit Wordpress ein kostenfreies Content
+Management System gewählt, welches zwar als Blogsoftware weite Verbreitung im World
+Wide Web gefunden hat, bisher aber nicht für XML-basierte Digital Humanities-Projekte
+herangezogen wurde. Gerade wegen der breiten Community, die an diesem CMS partizipiert
+und damit dem Vorhandensein zahlreicher Plugins zur Erweiterung der Funktionalitäten, hat
+sich Wordpress für das Projekt, welches weder über Drittmittel noch über einen technischen
+Partner verfügt, insgesamt als sehr geeignet erwiesen. Aufgrund der positiven Erfahrungen
+folgt die momentan entstehende Webpräsenz der Arbeitsstelle „Edition der fränkischen
+Herrschererlasse“ (ein Projekt der Nordrhein-Westfälischen Akademie der Wissenschaften
+und der Künste unter der Leitung von Prof. Dr. Karl Ubl; URL: http://capitularia.unikoeln.de/) dem Vorbild der Bibliotheca legum und setzt ebenfalls auf Wordpress auf.
+
+Die Bibliotheca legum bietet die folgenden Features:
+
+
+Mehrsprachigkeit (Menüführung und Inhalt in deutscher und englischer Sprache)
+
+
+
+verschiedene Browsingzugänge
+
+(z.B. nach Signaturen, enthaltenen Rechtstexten,
+
+Entstehungszeit und -ort) zu den fast 300 Handschriftenbeschreibungen
+
+
+Volltextsuche und facettierte Suche
+
+
+
+Inter- und Hyperlinking (externe Ressourcen)
+
+
+
+Einleitungstexte
+
+
+
+Übersicht über die in mittelalterlichen Bibliothekskatalogen bezeugten Rechtscodices
+
+
+
+umfangreiche Projektbibliographie sowie Register zu Orten, Personen und haltenden
+Institutionen unter Verwendung von Normdaten wie VIAF und TGN
+
+
+
+ein Projektblog (deutsch/englisch), der über aktuelle Entwicklung informiert
+
+
+
+umfangreiche
+
+Materialsammlung
+
+und
+
+Visualisierungen
+
+(Karten,
+
+Stemmata,
+
+Transkriptionen)
+
+
+Downloads (z.B. die Bibliotheca capitularium, Handschriftenbeschreibungen)
+
+Innerhalb recht kurzer Zeit – die Datenbank ist erst seit September 2012 online – konnte sie
+sich in der historischen und rechtshistorischen Forschung als Arbeitsinstrument etablieren.
+Neben dem regelmäßigen Einsatz in Lehrveranstaltungen an der Universität zu Köln, fand sie
+z.B.
+
+auch
+
+im
+
+MOOC
+
+„Karl
+
+der
+
+Große
+2
+
+–
+
+Pater
+
+Europae?“
+
+(URL:
+
+https://iversity.org/de/courses/karl-der-grosse-pater-europae) von apl. Prof. Dr. Rainer Leng
+(Universität
+
+Würzburg)
+
+Erwähnung,
+
+wo
+
+sie
+
+als
+
+Arbeitsinstrument
+
+für
+
+die
+
+Geschichtswissenschaft präsentiert wird.
+Das Poster soll das Projekt nun erstmals auch der deutschsprachigen DH-Community
+vorstellen. Dabei soll zum einen der aktuelle Stand des Projekts sowie dessen Nutzen für die
+Wissenschaft, zum anderen dessen – sicher nicht gewöhnliche – Genese dargestellt werden.
+Die Präsentation kann für all jene von Interesse sein, die digitale Projekte unter ähnlichen
+Umständen bzw. Voraussetzungen (Fehlen technischer und finanzieller Mittel) realisieren
+wollen.
+
+Leitung des Projekts: Prof. Dr. Karl Ubl, Lehrstuhl für die Geschichte des Mittelalters,
+Schwerpunkt Früh- und Hochmittelalter, Historisches Institut der Universität zu Köln
+
+Mitarbeiter: Daniela Schulz (Technische Umsetzung), Dominik Trump, M.A. (Inhaltliche
+Bearbeitung)
+
+3
+

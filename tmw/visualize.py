@@ -78,7 +78,7 @@ def make_wordle_from_mallet(word_weights_file,
     for topic in range(0,num_topics):
         ## Gets the text for one topic.
         text = get_wordlewords(words, word_weights_file, topic)
-        wordcloud = WordCloud(width=1600, height=1200, background_color="white", margin=4, collocations=False, stopwords=None).generate(text) #font_path=font_path, 
+        wordcloud = WordCloud(width=1600, height=1200, background_color="white", margin=4, collocations=False, stopwords=[""], regexp=r"\S+").generate(text) #font_path=font_path, 
         default_colors = wordcloud.to_array()
         rank = get_topicRank(topic, TopicRanksFile)
         figure_title = "topic "+ str(topic) + " ("+str(rank)+"/"+str(num_topics)+")"       
@@ -536,23 +536,109 @@ def plot_topics_in_docs_treemap(topics_to_plot, doc_topic_file, first_words_file
     print("Done.")
 
 
+#################################
+# plot_topicsOverTime           #
+#################################
 
+def get_overTime_firstWords(firstWordsFile):
+    """Function to load list of top topic words into dataframe."""
+    #print("  Getting firstWords.")
+    with open(firstWordsFile, "r", encoding="utf-8") as infile: 
+        firstWords = pd.read_csv(infile, header=None)
+        firstWords.drop(0, axis=1, inplace=True)
+        firstWords.rename(columns={1:"topicwords"}, inplace=True)
+        firstWords.index = firstWords.index.astype(np.int64)        
+        #print(firstWords)
+        return(firstWords)
 
+def get_overTime_dataToPlot(average, firstWordsFile, entriesShown, topics): 
+    """Function to build a dataframe with all data necessary for plotting."""
+    #print("  Getting data to plot.")
+    with open(average, "r", encoding="utf-8") as infile:
+        allScores = pd.read_csv(infile, sep=",")
+        allScores = allScores.T   
+        #print(allScores.head())
+        ## Select the data for selected topics
+        someScores = allScores.loc[topics,:]
+        someScores.index = someScores.index.astype(np.int64)
+        someScores.columns = allScores.loc["year",:].astype(np.int64)
+                
+        ## Add information about the firstWords of topics
+        firstWords = get_overTime_firstWords(firstWordsFile)
+        dataToPlot = pd.concat([someScores, firstWords], axis=1, join="inner")
+        dataToPlot = dataToPlot.set_index("topicwords")
+        dataToPlot = dataToPlot.T
+        #print(dataToPlot)
+        return dataToPlot
 
-#def main(word_weights_file, num_topics, words, TopicRanksFile, outfolder, font_path, dpi):
-#    make_wordle_from_mallet(word_weights_file, num_topics, words, TopicRanksFile, outfolder, font_path, dpi)
-#    crop_images(inpath, outfolder, left, upper, right, lower)
-#    plot_topTopics(averageDatasets, firstWordsFile, numberOfTopics, targetCategories, topTopicsShown, fontscale, height, dpi, outfolder)
-#   plot_topItems(averageDatasets, outfolder, firstWordsFile, numberOfTopics, targetCategories, topItemsShown, fontscale, height, dpi)
-#    plot_distinctiveness_heatmap(averageDatasets, firstWordsFile, outfolder, targetCategories, numberOfTopics, topTopicsShown, fontscale, dpi)    
-#    plot_topicsOverTime(averageDatasets, firstWordsFile, outfolder, numberOfTopics, fontscale, dpi, height, mode, topics)
+def create_overTime_lineplot(dataToPlot, outfolder, fontscale, topics, dpi, height):
+    """This function does the actual plotting and saving to disk."""
+    print("Creating lineplot for selected topics.")
+    ## Plot the selected data
     
-#if __name__ == "__main__":
-#    import sys
-#    make_wordle_from_mallet(int(sys.argv[1]))
-#    crop_images(int(sys.argv[1]))
-#    plot_topTopics(int(sys.argv[1]))
-#    plot_topItems(int(sys.argv[1]))
-#    plot_distinctiveness_heatmap(int(sys.argv[1]))
-#    plot_topicsOverTime(int(sys.argv[1]))
+    dataToPlot.plot(kind="line", lw=3, marker="o", figsize=(8,5))
+    
+    #plt.title("Entwicklung der Topic Scores", fontsize=14)
+    plt.ylabel("Topic scores", fontsize=12) # absolut
+    plt.xlabel("Jahre", fontsize=12)
+    plt.setp(plt.xticks()[1], rotation=0, fontsize = 14)  
+    plt.legend(bbox_to_anchor=(1.0, 1.0))
+    
+    height = 0.05
+    if height != 0:
+        plt.ylim((0.000,height))
+
+    ## Saving the plot to disk.
+    if not os.path.exists(outfolder):
+        os.makedirs(outfolder)
+    ## Format the topic information for display
+    topicsLabel = "-".join(str(topic) for topic in topics)
+    figure_filename = join(outfolder, "lineplot-"+topicsLabel+".png")
+    plt.savefig(figure_filename, dpi=dpi)
+    plt.close()
+
+def create_overTime_areaplot(dataToPlot, outfolder, fontscale, topics, dpi):
+    """This function does the actual plotting and saving to disk."""
+    print("Creating areaplot for selected topics.")
+    ## Turn absolute data into percentages.
+    dataToPlot = dataToPlot.apply(lambda c: c / c.sum() * 100, axis=1)
+    ## Plot the selected data
+    dataToPlot.plot(kind="area")
+    plt.title("Entwicklung der Topic Scores", fontsize=20)
+    plt.ylabel("Topic scores (anteilig zueinander)", fontsize=16)
+    plt.xlabel("Jahrzehnte", fontsize=16)
+    plt.ylim((0,100))
+    plt.setp(plt.xticks()[1], rotation=0, fontsize = 14)   
+
+    ## Saving the plot to disk.
+    if not os.path.exists(outfolder):
+        os.makedirs(outfolder)
+    ## Format the topic information for display
+    topicsLabel = "-".join(str(topic) for topic in topics)
+    figure_filename = outfolder+"areaplot-"+topicsLabel+".png"
+    plt.savefig(figure_filename, dpi=dpi)
+    plt.close()
+
+def plot_topicsOverTime(averageDatasets, firstWordsFile, outfolder, 
+                        numberOfTopics, fontscale, dpi, height,  
+                        mode, topics):
+    """Function to plot development of topics over time using lineplots or areaplots."""
+    print("Launched plot_topicsOverTime.")
+    if mode == "line": 
+        for average in glob.glob(averageDatasets):
+           if "year" in average:
+                entriesShown = numberOfTopics
+                dataToPlot = get_overTime_dataToPlot(average, firstWordsFile, 
+                                                     entriesShown, topics)
+                create_overTime_lineplot(dataToPlot, outfolder, fontscale, 
+                                         topics, dpi, height)
+    elif mode == "area":
+        for average in glob.glob(averageDatasets):
+            if "decade" in average:
+                entriesShown = numberOfTopics
+                dataToPlot = get_overTime_dataToPlot(average, firstWordsFile, 
+                                                     entriesShown, topics)
+                create_overTime_areaplot(dataToPlot, outfolder, fontscale, 
+                                         topics, dpi)
+    print("Done.")
 

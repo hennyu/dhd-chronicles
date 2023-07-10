@@ -1,0 +1,214 @@
+Repräsentationen von Migration
+in musikwissenschaftlichen Datenbanken
+Abstract zum Vortrag auf der DHd 2015 in Graz
+von Torsten Roeder (Würzburg)
+1. Musik und Migration in den Digital Humanities
+Die Untersuchung von Migration und Mobilität hat sich in den letzten Jahren als ergiebiger
+Forschungsbereich in den Geisteswissenschaften etabliert. Dabei trat zutage, dass gerade Musiker
+aufgrund ihrer hochspezialisierten, teils akademisierten und zudem repräsentativen Tätigkeiten
+vielfach eine hohe Mobilität an den Tag legten und dass diese Migrationsbewegungen spätestens
+seit der frühen Neuzeit maßgeblich die Herausbildung einer gesamteuropäischen Musikkultur
+stimulierten.1
+Längst erschließen auch die Digital Humanities dieses Forschungsfeld. Schon vor einigen Jahren
+erschienen die ersten musikwissenschaftlichen Personendatenbanken. Diese waren zunächst nicht
+mehr als digitale Abbilder klassischer Musiklexika, wie z. B. das Österreichische Musiklexikon
+(ÖML)2 und Eitner digital3. Spätere Projekte setzten auf eine semantische Strukturierung und
+Vernetzung der Daten mithilfe von Verschlagwortung und Normdateien, wie z. B. das Bayerische
+Musiker-Lexikon
+
+Online
+
+(BMLO)4.
+
+Eine
+
+beachtliche
+
+Anzahl
+
+von
+
+digital
+
+orientierten
+
+Musikforschungsprojekten setzte den Schwerpunkt schließlich explizit auf das Thema der
+Musikermigration. Zu diesen zählen bislang
+
+Musica Migrans5, MUSICI6 und dessen
+
+Nachfolgeprojekt Music Migrations in the Early Modern Age (MusMig)7, sowie das
+
+1
+2
+3
+4
+5
+6
+7
+
+Vgl. Ehrmann-Herfort 2013.
+Österreichisches Musik-Lexikon. Online-Ausgabe, Wien: Österreichische Akademie der Wissenschaften, 2002–
+2013, <http://www.musiklexikon.ac.at/> (31.10.2014) = Oesterreichisches Musiklexikon, Wien: Verlag der
+Österreichischen Akademie der Wissenschaften, 2002–2006.
+Eitner digital, Universität Zürich, <http://www.musik.uzh.ch/research/eitner-digital.html> (31.10.2014) = Robert
+Eitners Quellen-Lexikon, Leipzig: Breitkopf & Härtel, 1900–1904.
+Bayerisches Musiker-Lexikon Online, hrsg. von Josef Focht, München: Ludwig-Maximilians-Universität, 2004–
+2014, <http://bmlo.de/> (31.10.2014).
+Musica Migrans, Universität Leipzig, <http://www.musicamigrans.de/> (31.10.2014).
+MUSICI. Musicisti europei a Venezia, Roma e Napoli (1650–1750): musica, identità delle nazioni e scambi
+culturali, <http://www.musici.eu/> (31.10.2014).
+Music Migrations in the Early Modern Age. The Meeting of the European East, West and South,
+<http://musmig.eu/> (31.10.2014).
+
+zeitgeschichtliche Lexikon verfolgter Musiker und Musikerinnen der NS-Zeit (LexM)8. Diese sollen
+im folgenden näher betrachtet werden.
+Während musikwissenschaftlich-biographische Lexika zwangsläufig auf einzelne
+Personen fokussieren, bieten Datenbanken
+prinzipiell die Möglichkeit, Fragestellungen
+entlang alternativer Sichtachsen zu verfolgen. Der Blickwinkel des Forschungsfeldes muss in Datenbanken zudem nicht
+auf berühmte oder einflussreiche Persönlichkeiten beschränkt bleiben, sondern kann
+auch die „hinteren Reihen“ der Musikschaffenden mit all ihren unterschiedlichen
+Schwerpunkten mit einbeziehen. Dies kann
+beispielsweise der Erforschung bestimmter
+Berufsgruppen dienlich sein. So ergibt eine kleine Recherche im BMLO (siehe Abbildung), dass ein
+guter Teil bayerischer Lautenbauer ihr Handwerk in Italien ausübte: Von den insgesamt 173
+erfassten bayerischen Lautenmachern wirkten 72 in Italien. Dieses Ergebnis kann durch weitere
+Nachforschungen außerhalb der Datenbank geprüft und zu einer allgemeingültigen Aussage
+entwickelt werden.9
+Thesenimpulse durch Datenbanken müssen sich jedoch nicht auf rein quantitative Aussagen
+beschränken, sondern können auch strukturelle Sachverhalte abbilden und sichtbar machen, wie es
+sich z. B. die MusMig-Datenbank zum Ziel gesetzt hat: Dort soll unter anderem gezeigt werden,
+inwieweit die Verlegung von Herrschersitzen Einfluss auf die Lebenswege von Musikern ausübte,
+indem diese mit- oder auch abwanderten. 10 Datenbanken dienen folglich nicht nur dazu, Migrationsmasse zu orten, sondern können möglicherweise zukünftig auch dazu herangezogen werden, Daten
+anhand bestimmter Kontexte und Strukturen aufzuzeigen und auslegbar zu machen. Die Musikmigrationsforschung eignet sich zur Erprobung der Möglichkeiten als anschauliches Beispiel.
+
+2. Grundlinien der Datenmodellierung
+Das Grundbedürfnis der Migrationsforschung lässt sich in folgenden grundlegenden Fragen
+zusammenfassen: Wann und warum gingen wer wohin um was zu tun? Als Hauptparameter der
+8 Lexikon verfolgter Musiker und Musikerinnen der NS-Zeit, <http://www.lexm.uni-hamburg.de/> (31.10.2014).
+9 Siehe z. B. Schulz 2010.
+10 Vgl. Over/Roeder 2015.
+
+Migration dienen somit die fünf Entitäten Individuum, Ort, Zeit, Motiv und Tätigkeit. Die
+jeweiligen Schnittpunkte zwischen diesen Entitäten liefern weiteren Fragen Ansatzpunkte für
+weitere Fragen: Wie verhielten sich beispielsweise die Kollegen eines jungen Leipziger Sängers,
+der nach Venedig emigrierte? Auf welches Umfeld stieß der Sänger im Ausland? Wie integrierte er
+sich in das dortige kulturelle Leben? Was brachte er dort ein, was nahm er von dort mit zu seiner
+nächsten Station? Diese Parameter zu modellieren stellt für die Entwicklung von Datenbanken eine
+Herausforderung dar, einerseits aufgrund der komplexen Fragen, auf die anhand der Daten eine
+Antwort gefunden werden soll, andererseits aber auch aufgrund der vielschichtigen Informationen,
+die in eine handhabbare Struktur gebracht werden müssen und die zudem ein spezielles Fachvokabular benötigen.
+An die aktuell existierenden Datenbanken stellen sich demzufolge mehrere Fragen: Welche
+Möglichkeiten stellen die jeweiligen Datenbanken für Recherchen von sich aus bereit und welches
+Potenzial bieten sie für die Entwicklung von weiterführenden Fragestellungen? Welchen Einfluss
+haben die Datenstrukturen auf die möglichen Abfragen und Erkenntnisse? Zu erwarten ist, dass jede
+Datenbank-Oberfläche nur einen geringen Teil der tatsächlich geforderten Anwendungsmöglichkeiten antizipieren kann. Somit schließen sich weitere Fragen an: Stellen die Datenbanken ihre
+Ressourcen in einem semantisierten Format offen und wissenschaftlich nutzbar zur Verfügung?
+Kann dann aus den verschiedenen Datenbanken eine Datenmenge generiert werden, die trotz der
+Heterogenität der Daten in puncto Herkunft, Auswahl und semantischer Erschließung einen Mehrwert liefert? Ist es z. B. möglich, anhand einer Gegenüberstellung der verschiedenen Modellierungsansätze eine allgemeinere, synthetisierte Datenstruktur für Musiker-Migrationen zu
+entwerfen? Welche Erkenntnisse, die über die ursprünglichen Angebote der Datenbanken hinausgehen, wären dann zu erwarten? Und welche visuellen Methoden müssen angewendet werden, um
+diese lesbar zu machen?
+
+3. Datenbanken im Vergleich
+Biographische Datenmodelle sind zahlreich vorhanden: Ob man TEI11, BioDes12, EAC-CPF13 oder
+ein eigenes Modell verwendet, obliegt der Entscheidung des jeweiligen Projektes, die stets auf der
+Grundlage von Vorbedingungen und Zielsetzungen gefällt wird. Wie aber sind Migrationen in den
+konkreten Datenbanken repräsentiert? Drei unterschiedliche Prinzipien seien hier kurz am Beispiel
+des weit bereisten Kirchenmusikers Georg Motz (1653–1733) vorgestellt.
+11 Text Encoding Initiative (TEI): 13.3 Biographical and Prosopographical Data, <http://www.tei-c.org/release/doc/teip5-doc/de/html/ND.html#NDPERS> (31.10.2014).
+12 Biografisch Portaal van Nederland: BioDes, <http://www.biografischportaal.nl/about/biodes> (31.10.2014).
+13 Staatsbibliothek zu Berlin: Encoded Archival Context for Corporate Bodies, Persons, and Families (EAC-CPF),
+<http://eac.staatsbibliothek-berlin.de/> (31.10.2014).
+
+(1) Ein rein textuell ausgerichteter
+Ansatz, wie z. B. im ÖML, erlaubt
+eine Auswertung der Informationen
+im ganz klassischen Sinne. Migrationen können hier über das Lesen des
+Volltextes erschlossen werden. Die Informationen sind unterhalb der Textebene jedoch nicht weiter
+ausdifferenziert, so dass der systematischen, digital gestützten Auswertung wenig geholfen ist
+(siehe Abbildung).14
+(2) Ein derzeit recht verbreiteter
+Ansatz ist es, alle biographischen
+Informationen zu einer Person in
+unabhängige Aussagen zu zerlegen
+(siehe Abbildung). Diese können
+dann wieder systematisch gruppiert
+werden, behalten dabei aber ihren
+Status als Einzelaussage. Derartige
+Ansätze wurden z. B. von Topic Maps
+Lab15 und dem Personendaten-Repositorium16 entwickelt, welche die Basis der Datenbanken
+Musica Migrans und MUSICI bilden. Dieses Modell verlässt den zwingenden Fokus auf die Person.
+Der Vorteil dieses Verfahrens besteht darin, dass hier spezifische Tätigkeiten an einem Ort zu einer
+bestimmten Zeit in einer einzelnen Aussage festgehalten werden können. Aus der Abfolge mehrerer
+Aussagen lässt sich folglich eine Migrationsbewegung erschließen. Parallel dazu kann z. B.
+verglichen werden, ob in anderen Biographien Migrationsbewegungen mit ähnlichen Zeit- und
+Ortsparametern vorliegen.
+(3) Ein dritter Ansatz besteht darin, Personen eine beliebige Menge an Schlagwörtern zuzuordnen,
+die jeweils einer bestimmten Kategorie angehören (Namen, Lebensdaten, Wirkungsorte, Tätigkeiten
+etc.). Hier „zersplittert“ die Person in entitätische Facetten ihrer Biographie (siehe Abbildung). Dies
+14 Man könnte hier zunächst eine semantische Auszeichnung von Ortsnamen versuchen und dann anhand dieser
+Namen – die im Text jedoch auch ganz anders gemeint sein könnten – Vermutungen über die Mobilität der
+jeweiligen Person aufstellen. Webservices für diese Zwecke existieren z. B. im Webservice-Angebot des
+Personendaten-Repositoriums, siehe <http://pdr.bbaw.de/> (31.10.2014).
+15 „In einer Topic Map ist ein Topic […] der Repräsentant eines Aussagegegenstandes […] der realen Welt im Modell.
+An diesem Repräsentanten werden alle Informationen, die in dem Modell über den zugehörigen Aussagegegenstand
+repräsentiert werden sollen, geheftet.“ – Topic Maps Lab, Universität Leipzig, <http://www.topicmapslab.de/>
+(31.10.2014).
+16 „Eine Person wird […] als die Menge aller Aussagen definiert, die zu ihr getroffen werden. […] Die kleinste
+Dateneinheit im Personendaten-Repositorium ist daher eine einzelne Aussage zu einer Person – im Datenmodell
+‚Aspekt‘ genannt.“ – Personendaten-Repositorium, Berlin-Brandenburgische Akademie der Wissenschaften,
+<http://pdr.bbaw.de/> (31.10.2014). Vgl. auch Walkowski 2009.
+
+reduziert den Sinnzusammenhang in
+der Biographie auf ein Minimum, wodurch gleichzeitig eine – informationstechnisch gesprochen – effiziente, da stark abstrahierte Datenform entsteht. Diese Herangehensweise verfolgt das BMLO. Migrationen können in diesem Ansatz weder qualitativ noch in ihrer Abfolge festgehalten werden, da der
+Zusammenhang zwischen Ort, Tätigkeit und Zeit aufgehoben ist. Jedoch ergeben sich bereits durch
+die Verschlagwortung geographische und professionelle Profile der jeweiligen Musiker. Mit diesem
+Verfahren können z. B. Herkunft und Mobilität von verschiedenen Berufsgruppen leicht
+gegenübergestellt oder Listen von an einem Ort wirkenden Personen zusammengestellt werden.
+In dem besten Falle für den Nutzer gelingt es einer Ressource, die Vorteile mehrerer Ansätze
+miteinander zu verbinden. Dies ist der Fall im LexM, das sowohl eine strukturierte Daten als auch
+Volltextbiographien von ausgewählten Personen anbietet.17 Dies gibt dem Forscher die Möglichkeit,
+sowohl systematisch als auch hermeneutisch zu arbeiten.
+
+4. Zusammenführung
+Dem Großteil der hier kurz vorgestellten Datenbanken ist gemein, dass die Such- und Ansichtsmodi
+ausschließlich auf Personen zentriert sind. Das oftmals vorhandene große Potenzial für andere
+Sichtachsen auf die Daten – vorstellbar sind statistische Übersichten nach Berufsgruppen und/oder
+Aufenthaltsorten, geographische Darstellungen, Zeitleisten mit Parallelvergleich von Musikeraufenthalten an verschiedenen Orten und vieles mehr – wird als Alternative nicht ausgeschöpft.
+Allein MUSICI unternimmt in dieser Richtung einen Versuch, indem ein Suchergebnis sowohl als
+Liste als auch als Balken- oder Kreisdiagramm, Karte oder Zeitleiste visualisiert werden kann. 18
+Insofern zwingen die Datenbanken den Nutzer fast ausschließlich immer noch in die herkömmliche
+biographische Perspektive.
+Der Versuch, aus den vorgestellten Datenbanken Information zu extrahieren und in ein einheitliches
+Format zu bringen, wird durch die Tatsache extrem erschwert, dass fast durchgehend die
+Unterstützung von allgemein anerkannten Austauschformaten, etwa RDF, und Ontologien wie
+CIDOC-CRM, nicht gegeben ist. Zur Zusammenführung der Informationen sollten dennoch solche
+allgemeine Formate und Referenzsysteme genutzt werden. Aufgrund der Heterogenität der Daten
+17 Auch die Deutsche Biographie verfolgt ein solches zweigleisiges Verfahren, wobei hier methodisch von
+bestehenden Volltexten ausgegangen wird, die im Nachgang semantisch strukturiert werden. Siehe: Deutsche
+Biographie (ADB/NDB), Bayerische Staatsbibliothek, <http://www.deutsche-biographie.de/> (31.10.2014).
+18 Vgl. Berti/Roeder 2014.
+
+wird dabei ein minimalistischer Ansatz verfolgt: Die Informationen werden zu „Events“ mit den
+fünf oben genannten Basiseigenschaften (Individuum, Ort, Zeit, Motiv und Tätigkeit)
+zusammengefasst, welche dann mithilfe eines Geo- oder Netzwerkbrowsers visualisiert und
+analysiert werden können, um Erkenntnispotenziale für die Migrationsforschung auszuloten.
+
+Literatur
+<Berti/Roeder 2014> Michela Berti; Torsten Roeder: The “Musici” Database. An Interdisciplinary
+Cooperation, in: Musicisti europei a Venezia, Roma e Napoli (1650–1750). Europäische
+Musiker in Venedig, Rom und Neapel. Les musiciens européens à Venise, à Rome et à
+Naples (= Analecta musicologica 51). Hg. von Anne-Madeleine Goulet und Gesa zur
+Nieden, 2 Bde., Kassel u. a. 2014, im Erscheinen.
+<Ehrmann-Herfort 2013> Migration und Identität. Wanderbewegungen und Kulturkontakte in der
+Musikgeschichte (= Analecta musicologica 49). Hg. von Sabine Ehrmann-Herfort.
+Kassel u. a. 2013.
+<Over/Roeder 2015> Berthold Over; Torsten Roeder: MUSICI and MusMig. Continuities and
+Discontinuities, in: Zeitschrift für Digital Humanities 1, in Vorbereitung.
+<Schulz 2010> Knut Schulz: Brot und Lautenspiel. Bayerische Handwerker in Italien vom 15. bis
+zum Beginn des 17. Jahrhunderts, in: Von Bayern nach Italien. Transalpiner Transfer in
+der Frühen Neuzeit, hrsg. von Alois Schmidt, München: Beck, 2010. S. 97–113.
+<Walkowski 2009> Niels-Oliver Walkowski: Zur Problematik der Strukturierung und Abbildung
+von Personendaten in digitalen Systemen. <urn:nbn:de:kobv:b4-opus-9221>
+

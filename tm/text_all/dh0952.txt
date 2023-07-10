@@ -1,0 +1,138 @@
+Radecke, de la Iglesia und Göbel: Theodor Fontanes Notizbücher
+
+Theodor Fontanes Notizbücher.
+Konzept und Beispiele der genetisch-kritischen und kommentierten Hybrid-Edition
+Notizbuch-Editionen erfordern komplexe philologische Methoden der Transkription, der
+Textkonstitution und der Kommentierung, die sich an der Materialität und Medialität sowie an
+den Funktionen und Inhalten von Notizbüchern orientieren müssen. Der Materialität – dem
+Format, dem Nach- und Nebeneinander beschrifteter und unbeschrifteter Blätter, den
+Blattfragmenten und aufgeklebten Blättern sowie den Schreiberhänden, dem Schreibwerkzeug
+und -duktus – kommt dabei eine besondere Bedeutung zu, da die Analyse der materialen
+Beschaffenheit eine wichtige Grundlage für funktionale und inhaltliche Aussagen über
+Notizbücher bildet. Damit die Informationen über die Materialität des Überlieferungsträgers
+in einer Edition nicht verloren gehen, ist die angemessene Wiedergabe materialer
+Kennzeichen entscheidend für das editorische Konzept.
+Konventionelle Verfahren, die sich lediglich auf die inhaltliche Wiedergabe der Notate konzentrieren und diese wohlgeordnet in einer Buchedition veröffentlichen, bieten nicht nur sehr
+begrenzte Möglichkeiten, die vielfältigen medialen, funktionalen und materialen Eigenschaften von Notizbüchern aufzubereiten. Sie verhindern zudem, dass alle substantiellen
+Merkmale, die sowohl die Notizbücher in ihrer einmaligen physischen Gestalt charakterisieren als auch ihre Einträge maßgeblich beeinflussen, von den Lesern und Benutzern
+rezipiert und für Forschungszwecke ausgewertet werden können. Zwar wurden innerhalb der
+neugermanistischen Editionswissenschaft die Transkriptionsprinzipien und -verfahren seit D.
+E. Sattlers Frankfurter Hölderlin-Ausgabe immer weiter ausdifferenziert und graphisch
+umgesetzt, aber erst die digitalen Methoden, die seit nunmehr zwei Jahrzehnten die
+Editionsphilologie bereichern, ermöglichen eine annähernd zeichen- und positionsgetreue
+Auszeichnung, Codierung und Darstellung sowie die Bereitstellung der Transkriptionsdaten
+zur rechnergestützten Analyse und Weiterverarbeitung.
+Am Beispiel der genetisch-kritischen und kommentierten Hybrid-Edition von Theodor
+Fontanes Notizbüchern soll die Notwendigkeit und der Mehrwert digitaler Editionen
+demonstriert werden. In der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz sind
+insgesamt 67 Kleinoktavbändchen überliefert, in denen Fontane zwischen 1860 und Ende der
+1880er
+
+Jahre
+
+poetische
+
+Entwürfe,
+
+journalistische
+
+Aufzeichnungen,
+
+Exzerpte,
+
+Tagebuchniederschriften und Briefkonzepte niedergeschrieben hat, aber auch seine
+Alltagsnotizen wie Kochrezepte, Vokabellisten, Zugabfahrtspläne und To-do-Listen festhielt.
+Hinzu kommen zahlreiche Skizzen von Sehenswürdigkeiten, Grabmonumenten und
+
+1
+
+Radecke, de la Iglesia und Göbel: Theodor Fontanes Notizbücher
+
+Schlachtplänen, die er während seiner Exkursionen durch die Mark Brandenburg und der
+Reisen nach Dänemark, Böhmen, Frankreich und innerhalb Deutschlands angefertigt hat.
+Fontanes Notizbücher sind bisher von der Literatur- und Kulturwissenschaft nicht rezipiert
+worden, obwohl sie gerade durch ihre heterogenen Notate werkgenetische und biographische
+Informationen enthalten und mehr als andere Handschriftenkonvolute Einblicke in Fontanes
+schriftstellerische Arbeitsweise ermöglichen. Die Ursachen für die ausgebliebene Rezeption
+der Notizbücher Fontanes sind vielschichtig; die Hauptverantwortung trägt die vorherrschende Editionspraxis. So wurden bisher nur kleinere Teilveröffentlichungen in gedruckten
+Medien vorgelegt, in denen die Auswahl der Niederschriften allein nach inhaltlichen Kriterien
+festgelegt wurde. Die Materialität und die Medialität der Notizbücher Fontanes sind dabei
+weitgehend unberücksichtigt geblieben, was zu literaturwissenschaftlichen Fehleinschätzungen geführt hat.
+Der Vortrag wird die im Notizbuch-Projekt angewendeten digitalen Methoden und den
+interdisziplinären Workflow von Editions- und Informationswissenschaft vorstellen sowie
+Einblicke in die Arbeit mit der Virtuellen Forschungsumgebung TextGrid geben, innerhalb
+der nicht nur die Codierung erfolgt, sondern vielmehr auch Visualisierungen generiert
+werden, die ein hohes Maß an Auszeichnungsgenauigkeit und -tiefe ermöglichen: das digitale
+Pendant zur Komplexität der realen Notizbücher.
+Als Auszeichnungssprache wird hierbei XML nach den aktuellen Regeln der Text Encoding
+Initiative (TEI) verwendet. TEI in der aktuellen Version P5 hat sich zu dem De-facto-Standard
+für die Codierung digitaler Editionen entwickelt. Dabei ist das Regelwerk geradezu berüchtigt
+für seine Komplexität. Wie das Beispiel der Notizbuch-Edition zeigt, sind weitergehende TEIStandardisierungen (z. B. TEI Lite, DTA-Basisformat) oder TEI-Anpassungen aus ähnlichen
+Editionsprojekten nicht in jedem Fall nachnutzbar, da nicht nur Unterschiede im Quellenmaterial, sondern vor allem unterschiedliche Zielsetzungen bei der Erschließung desselben projektspezifische Richtlinien zur TEI-Anwendung erforderlich machen. Der TEI-Code der Fontane-Notizbücher basiert im Wesentlichen auf der durch das TEI-Modul „transcr - Representation of Primary Sources“ vorgegebenen Grundstruktur, die besonders für (ultra-)diplomatische
+Transkriptionen und genetische Editionen geeignet ist, und kombiniert diese mit Elementen
+aus anderen Modulen wie zum Beispiel „namesdates – Names, Dates, People, and Places“ zur
+inhaltlichen Erschließung von referenzierten Entitäten. Das Ergebnis ist ein Codierungsschema, das TEI-konform bleibt und zugleich den vielfältigen editionsphilologischen Anforderungen entspricht.
+
+2
+
+Radecke, de la Iglesia und Göbel: Theodor Fontanes Notizbücher
+
+Zudem werden im Rahmen eines an die TextGrid-Infrastruktur angeschlossenen
+Projektportals neben der Edition als (ultra-)diplomatische Transkription, dem Edierten Text
+und der Präsentation der Faksimiles sowie verschiedene Kommentare auch Datenaggregationen und erweiterte Suchfunktionen angeboten, die unter Einbeziehung von Linked
+Open Data die Darstellungsmöglichkeiten der Edition erweitern werden. Dabei handelt es sich
+um eine eXist-Datenbank, die ein im Kontext des SADE-Projektes entwickeltes Modul zur
+Übertragung und Darstellung von Daten aus dem TextGrid-Repository nutzt.
+Zu den Visualisierungsmöglichkeiten gehört auch die Nutzung des DARIAH Geo-Browsers,
+welcher basierend auf den durch den philologischen Kommentar verifizierten Ortsentitäten
+und zugehörigen, im Umfeld genannten Kalenderdaten in den Notizbüchern eine Raum-ZeitRelation präsentiert. Hinzu kommt die Generierung von Kookkurrenz-Netzwerken mit Hilfe
+der D3.js Visualisierungsumgebung. Hierzu wird das TEI-Element <rs> ausgewertet und es
+werden Zusammenhänge auf der Grundlage eines Notizbuches, einer Seite oder eines
+Absatzes dargestellt.
+Die genannten technischen Innovationen gehören nicht primär zur Edition im klassischen
+Sinne. Vielmehr sind sie Grundlage der sicheren und ortsunabhängigen kollaborativen
+editionswissenschaftlichen Arbeit und der Forschungsdatenerarbeitung im Allgemeinen sowie
+ein Mittel zur detailgetreuen Darstellung. Sie erweitern und bereichern in diesem
+Projektkontext die praktische Editionsarbeit, ohne die editionswissenschaftlichen Prinzipien,
+Methoden und Arbeitsweisen zu beschränken oder neu zu definieren. Sie bilden vielmehr die
+entscheidende Voraussetzung dafür, dass Fontanes Notizbücher, die bisher als unedierbar
+galten, nach dem überlieferungsadäquaten editionsphilologischen Prinzip der Materialität
+veröffentlicht und für die weiterführende wissenschaftliche Arbeit zur Verfügung gestellt
+werden können.
+Die interdisziplinär erarbeitete Edition entsteht an der Theodor Fontane-Arbeitsstelle der
+Universität Göttingen in enger Zusammenarbeit mit der Niedersächsischen Staats- und
+Universitätsbibliothek Göttingen (SUB) und wird von der Deutschen Forschungsgemeinschaft
+seit Juni 2011 gefördert.
+Dr. Gabriele Radecke, Theodor Fontane-Arbeitsstelle Göttingen,
+Martin de la Iglesia (SUB Göttingen) und Mathias Göbel (SUB Göttingen)
+
+3
+
+Radecke, de la Iglesia und Göbel: Theodor Fontanes Notizbücher
+
+Abbildung: Angepasster und erweiterter TextGrid-Workflow; Grafik erstellt vom TextGrid-Team,
+ergänzt und bearbeitet für das Fontane-Notizbuch-Projekt von Gabriele Radecke, Martin de la Iglesia
+und Mathias Göbel
+Literaturhinweise:
+– Gabriele Radecke: Theodor Fontanes Notizbücher. Überlegungen zu einer überlieferungsadäquaten Edition. In: Materialität in der Editionswissenschaft. Hrsg. von Martin Schubert.
+Berlin 2010 (Beihefte zu editio, Bd. 32), S. 95–106.
+– Gabriele Radecke: Notizbuch-Editionen. Zum philologischen Konzept der Genetischkritischen und kommentierten Hybrid-Ausgabe von Theodor Fontanes Notizbüchern. In: editio 27 (2013). [Im Druck; erscheint im Januar 2014.]
+– Gabriele Radecke, Mathias Göbel und Sibylle Söring: Theodor Fontanes Notizbücher. Genetisch-kritische und kommentierte Hybrid-Edition erstellt mit der Virtuellen Forschungsumgebung TextGrid. In: Evolution der Informationsinfrastruktur: Forschung & Entwicklung als
+Kooperation von Bibliothek und Fachwissenschaft. Hrsg. von Heike Neuroth u. a. Göttingen.
+[Im Druck; erscheint im Dezember 2013.]
+Vortrag:
+– Genetisch-kritische und kommentierte Hybrid-Edition von Theodor Fontanes Notizbüchern.
+Hrsg. von Gabriele Radecke. Gehalten von den Projektmitarbeitern Martin de la Iglesia (SUB
+Göttingen) und Judith Michaelis (Fontane-Arbeitsstelle Universität Göttingen) auf dem TextGrid-Summit am 15. Mai 2012. In:
+http://www.textgrid.de/fileadmin/praesentationen/tg-summit-2012/praesentation-fontane.pdf
+Alle weiteren Vorträge und Exposés sind auf der Projektwebsite http://www.unigoettingen.de/de/303691.html zusammengestellt.
+Kontakt:
+Gabriele.Radecke@phil.uni-goettingen.de
+martin.de-la-Iglesia@sub.uni-goettingen.de
+
+und
+
+goebel@sub.uni-goettingen.de
+
+4
+

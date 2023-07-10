@@ -1,0 +1,354 @@
+Meinungen in Twitterdiskursen
+Potenziale der automatisierten Inhaltsanalyse aus der Computerlinguistik für Fragestellungen der
+Kommunikationswissenschaft
+
+Problemstellung
+Die manuelle Inhaltsanalyse, die in der Kommunikationswissenschaft umfassend eingesetzt wird, ist
+grundsätzlich geeignet, tiefer gehende Kenntnisse über Inhalte und Beziehungen von Textfragmenten
+in Social Media zu liefern. Sie ist jedoch zeit- und kostenaufwändig und kann deshalb nur auf kleine
+Stichproben angewandt werden. Um dieser Einschränkung zu begegnen, wird in der vorliegenden Studie in Zusammenarbeit mit der Computerlinguistik untersucht, inwiefern Meinungsäußerungen auf
+Twitter durch automatisierte Inhaltsanalysen erhoben werden können. Erweist sich die automatisierte
+Inhaltsanalyse als valide Methode zur Erfassung von Meinungsäußerungen, wären damit forschungspragmatische Vorteile wie Zeit- und Kostenersparnis verbunden. In der Kommunikationswissenschaft
+könnten öffentliche Diskurse bzw. Teildiskurse, d.h. Meinungsäußerungen zu politischen Streitfragen
+auf Twitter und anderen Internetplattformen breiter und kontinuierlich erhoben werden. Um dies zu
+erreichen, muss zunächst die automatisierte Inhaltsanalyse durch Daten der manuellen Inhaltsanalyse
+von Meinungsäußerungen auf Twitter validiert werden.
+Theoretische Relevanz der Problemstellung
+Die Analyse von Meinungsäußerungen ist u.a. aus der Perspektive einer integrierten Netzwerköffentlichkeit von Interesse (Benkler 2006). Dabei wird angenommen, dass im Internet verschiedene Öffentlichkeitsebenen (Gerhards/Neidhardt 1990: 19-26; Habermas 1992: 452) in der vertikalen Dimension
+stärker miteinander vernetzt und durchlässiger sind, als dies in den traditionellen Massenmedien der
+Fall ist. Dies soll auch nicht-organisierten Bürgern und zivilgesellschaftlichen Akteuren ermöglichen,
+sich folgenreich über Social Media wie z.B. Twitter an öffentlichen Diskursen zu beteiligen. Meinungsbildungsprozesse sollen eher „von unten nach oben“ verlaufen. Bürger sollen eher die Chance
+haben, den Diskursverlauf (durch größere Resonanz und weiter reichende Diffusion ihrer Beiträge)
+und letztlich auch politische Entscheidungen zu beeinflussen. In der horizontalen Dimension des öffentlichen Raums wird das Spektrum der artikulierten Meinungen betrachtet. Durch die vereinfachte
+Partizipation im Internet soll sich, so die gängige Annahme, die Meinungsvielfalt im Vergleich zu den
+traditionellen Massenmedien erweitern. Es wird aber auch befürchtet, dass es zu einer Fragmentierung
+der Öffentlichkeit im Internet kommt (Marr 2002; Sunstein 2007; Habermas 2008: 162). Nach dieser
+These wird der Meinungsstreit nicht mehr ausgetragen, weil sich die Internetnutzer in homogene Interessen- und Meinungsgruppen aufspalten. Solche Annahmen können leichter überprüft werden, wenn
+sich die automatisierte Inhaltsanalyse als valides Instrument für die Erfassung von Meinungen und
+Akteurstypen erweist.
+Forschungsfragen
+
+Extended Abstract für die Tagung der Digital Humanities im deutschsprachigen Raum
+
+1
+
+Wir legen unserer Untersuchung zwei Forschungsfragen zugrunde:
+1. Inwieweit ist die manuelle Inhaltsanalyse von Twitterdiskursen aus der Kommunikationswissenschaft durch geeignete Verfahren der Computerlinguistik automatisierbar? (FF1)
+2. Wie lässt sich die automatisierte Inhaltsanalyse der Computerlinguistik in der Kommunikationswissenschaft anwenden? (FF2)
+Untersuchungsanlage
+Auswahl des Untersuchungsmaterials
+Es wird eine manuelle Inhaltsanalyse von Meinungen mit einer automatisierten Inhaltsanalyse kombiniert, wobei die Kombination auf die einseitige Validierung der automatisierten Inhaltsanalyse abzielt
+(Loosen/Scholl 2012). Dies wird am Beispiel von Tweets untersucht, die Teil von Diskussionen auf
+Twitter sind. Diese Diskussionen wurden beispielhaft aus einem Twitterdiskurs zur Energiewende extrahiert. Dieser Diskurs wurde vorab mit mehr als 180 energiewende-relevanten Keywords definiert
+und über die Twitter-API getrackt. Ein Tweet ist dann Bestandteil einer Diskussion, wenn er an mindestens einen anderen Akteur adressiert ist und anschließend mindestens eine Antwort auf diesen
+adressierten Tweet folgt. Solche Diskussionen wurden mit der in-reply-to-Funktion aus allen
+getrackten Tweets zwischen 20. November und 01. Dezember 2013 extrahiert. Insgesamt wurden
+3101 Diskussionen (bestehend aus 11.587 Tweets) in diesem Zeitraum für den Energiewende-Diskurs
+extrahiert und rückwärts vervollständigt.
+Erhebungskategorien für manuelle und automatisierte Inhaltsanalyse
+Das Untersuchungsmaterial wurde zunächst manuell auf zwei Ebenen annotiert: (1) auf Ebene kompletter Diskussionen (z.B. Relevanz einer Diskussion für das Thema „Energiewende“) und (2) auf
+Ebene einzelner Tweets. Auf der zweiten Ebene wurden folgende Aspekte zunächst manuell erhoben:
+1. formale Kategorien: Stellung eines Tweets in der Diskussion, Relevanz des Tweets für die Energiewende
+2. geäußerte Meinungen: Vorhandensein einer/mehrerer Meinung pro Tweet, Objekt bzw. Gegenstand der Meinung, positive oder negative Polarität der Meinung, Intensität der Meinung
+3. Kontext geäußerter Meinungen: Autorentyp für Tweeturheber und für adressierten bzw. erwähnten Autor im Tweet (z.B. private Einzelakteure, nicht-profitorientierte Interessengruppen, profitorientierte Interessengruppen, politische Akteure und Journalisten)
+Insgesamt wurden 2.655 Tweets in 729 Diskussionen manuell annotiert. Darin wurden 1.243 polare
+Meinungen identifiziert (positiv: n = 330; negativ: n = 896).
+Validierungsmaße für den Vergleich der manuellen und der automatisierten Inhaltsanalyse
+Für die Validierung jeder erhobenen Kategorie wurde entweder das traditionelle F1-Maß oder zwei
+weniger restriktive Varianten dieser Metrik verwendet – nämlich das binäre und das proportionale F1Maß (vgl. Johansson/Moschitti 2010). Der Unterschied zwischen diesen drei Varianten besteht haupt-
+
+Extended Abstract für die Tagung der Digital Humanities im deutschsprachigen Raum
+
+2
+
+sächlich darin, wie korrekt Übereinstimmung zwischen manueller Annotation und automatisierter
+Klassifizierung berechnet werden soll. Zudem wurden mehrere automatisierte Klassifikationsalgorithmen (Naive Bayes, SVM, LibLinear, AdaBoost und Logistic Regression) auf einem Set Trainingsdaten trainiert und deren Leistungsfähigkeit getestet.
+Befunde und Diskussion
+Der Vergleich zwischen manueller und automatisierter Inhaltsanalyse hat gezeigt, dass sowohl für die
+automatisierte Klassifikation von Meinungen als auch für die von Akteurstypen die besten Ergebnisse
+mit Hilfe des maschinellen Klassifikationsverfahrens LibLinear (Fan et al., 2008) erzielt wurden. Das
+F1-Maß für die Erkennung von Meinungen betrug 66 Prozent, das für die Erkennung der Akteurstypen
+des Autors und ggf. des adressierten Benutzers lag bei 41 bzw. 59 Prozent. Wurden neben rein linguistischen auch kommunikationswissenschaftliche Aspekte in den Vergleich einbezogen (z.B. Anzahl der
+Sprecher in der Diskurssion, Akteurstyp des Tweeturhebers oder des Adressaten, wurden sogar 69
+Prozent Übereinstimmung zwischen manueller und automatisierter Inhaltsanalyse erreicht (FF1).
+Die genannten Befunde der automatisierten Inhaltsanalyse in der Computerlinguistik bergen enormes
+Potential für die Erforschung von öffentlichen Meinungen in Social Media wie z.B. auf Twitter im
+Rahmen der Kommunikationswissenschaft. So lassen sich dynamische Meinungsbildungsprozesse
+großer Textmengen zeit- und kostengünstig in Social Media untersuchen. Dadurch erfahren wir zum
+Beispiel, inwiefern sich nicht-organisierte Bürger und nicht-profitorientierte Interessengruppen an öffentlichen Diskursen beteiligen, ob Meinungsbildungsprozesse „von unten nach oben“ verlaufen und
+inwieweit diese Akteurstypen die Chance haben, den Diskursverlauf und letztlich auch politische Entscheidungen zu beeinflussen. Momentan können wir dies nur für kleine Stichproben zeigen (FF2). So
+illustriert zum Beispiel Tabelle 1 im Anhang, dass 19% aller Akteure als einfache Bürger einen Tweet
+absetzen, während 25% als einfache Bürger erwähnt oder adressiert werden. Darüber hinaus sieht man
+zum Beispiel, dass einfache Bürger untereinander weniger negativ bzw. kritisch miteinander diskutieren als Bürger mit Politikern oder Journalisten (Tabelle 2, Anhang). Dies spricht für eine kritische
+Rolle der Bürger im öffentlichen Diskurs. Um die prozentuale Übereinstimmung zwischen manueller
+und automatisierter Inhaltsanalyse weiter zu erhöhen, hat die Zusammenarbeit zwischen Kommunikationswissenschaft und Computerlinguistik auch zukünftig großes Potential.
+
+Literatur
+Fan, R.. E., Chang K. W., Hsieh Ch. J., Wang X. R., Lin Ch. J. (2008): LIBLINEAR: A Library for Large Linear Classification. In: Journal of Machine Learning Research 9, S. 1871-1874.
+Gerhards, J., Neidhardt, F. (1990): Strukturen und Funktionen moderner Öffentlichkeit. Fragestellungen und Ansätze. Berlin: Wissenschaftszentrum Berlin für Sozialforschung (= FS III 90-101).
+Habermas, J. (1992): Faktizität und Geltung. Beiträge zur Diskurstheorie des Rechts und des demokratischen
+Rechtsstaats. Frankfurt a. M.: Suhrkamp.
+Habermas, J. (2008): Hat die Demokratie noch eine epistemische Dimension? Empirische Forschung und normative Theorie. In: Habermas, Jürgen: Ach, Europa. Frankfurt a. M.: Suhrkamp, S. 138-191.
+Johansson, R., Moschitti, A. (2010): Reranking Models in Fine-grained Opinion Analysis. In: 23rd International
+Conference on Computational Linguistics, Proceedings of the Conference, COLING 2010, S. 519-527.
+
+Extended Abstract für die Tagung der Digital Humanities im deutschsprachigen Raum
+
+3
+
+Landis, J. R., Koch, G. G. (1977): The measurement of observer agreement for categorical data. In: Biometrics.
+33, S. 159-174.
+Loosen, W., Scholl, A. (2012): Theorie und Praxis von Mehrmethodendesigns in der Kommunikationswissenschaft. In: Loosen, W., Scholl, A. (Hrsg.): Methodenkombinationen in der Kommunikationswissenschaft.
+Methodologische Herausforderungen und empirische Praxis. Köln: Herbert von Halem, S. 9-25.
+Marr, M. (2002): Das Ende der Gemeinsamkeiten? Folgen der Internetnutzung für den medialen Thematisierungsprozess. In: Medien und Kommunikationswissenschaft 50(4), S. 510-532.
+Sunstein, C. R. (2007): Republic.com 2.0. Princeton, NJ: Princeton University Press.
+
+Anhang
+Tabelle 1: Verteilung der Akteurstypen zwischen Tweet-Autor und Tweet-Adressat/-Erwähnung
+Tweet-Adressat oder Tweet-Erwähnung
+Private
+Non-Profit
+Profitorient.
+Politische
+Journalisten
+Personen
+Organisationen Organisationen
+Akteure
+Private
+270
+50
+27
+140
+81
+Personen
+10,8%
+2,0%
+1,1%
+5,6%
+3,2%
+Non-Profit
+31
+97
+41
+101
+52
+Organisationen
+1,2%
+3,9%
+1,6%
+4,0%
+2,1%
+Profitorient.
+18
+45
+25
+34
+23
+Organisationen
+0,7%
+1,8%
+1,0%
+1,4%
+0,9%
+Politische
+74
+64
+20
+208
+45
+Akteure
+2,9%
+2,5%
+0,8%
+8,3%
+1,8%
+Journalisten
+22
+23
+16
+38
+19
+0,9%
+0,9%
+0,6%
+1,5%
+0,8%
+Sonstige
+61
+26
+5
+89
+20
+Akteure
+2,4%
+1,0%
+0,2%
+3,5%
+0,8%
+Gesamt
+476
+305
+134
+610
+240
+19%
+12,2%
+5,3%
+24,3%
+9,6%
+Basis: n = 2510 Meinungen (in 2.655 Tweets)
+Tweet-Autor
+
+Sonstige
+Akteure
+53
+2,1%
+162
+6,5%
+38
+1,5%
+248
+9,9%
+167
+6,7%
+77
+3,1%
+745
+29,7%
+
+Gesamt
+621
+24,7%
+484
+19,3%
+183
+7,3%
+659
+26,3%
+285
+11,4%
+278
+11,1%
+
+Tabelle 2: Meinungspolarität zwischen Tweet-Autor und Tweet-Adressat/-Erwähnung (Mittelwerte)
+Tweet-Autor
+Private
+Personen
+Non-Profit
+Organisationen
+Profitorient.
+Organisationen
+Politische
+Akteure
+Journalisten
+Sonstige
+Akteure
+Gesamt
+
+Private
+Personen
+–0,1
+
+Tweet-Adressat oder Tweet-Erwähnung
+Non-Profit
+Profitorient.
+Politische
+Journalisten
+Organisationen Organisationen
+Akteure
+–0,1
+0,0
+–0,3
+–0,4
+
+Sonstige
+Akteure
+–0,2
+
+Gesamt
+–0,2
+
+–0,3
+
+–0,2
+
+–0,1
+
+–0,3
+
+–0,4
+
+–0,3
+
+–0,3
+
+–0,1
+
+0,0
+
+–0,2
+
+–0,1
+
++0,2
+
+–0,1
+
+0,0
+
+–0,1
+
+–0,2
+
+–0,2
+
+–0,2
+
+–0,1
+
+–0,2
+
+–0,2
+
+–0,1
+
+–0,3
+
+–0,3
+
+–0,1
+
++0,1
+
+–0,2
+
+–0,2
+
+–0,1
+
+–0,3
+
+–0,4
+
+–0,3
+
+–0,2
+
+–0,3
+
+–0,3
+
+–0,1
+
+–0,2
+
+–0,2
+
+–0,2
+
+–0,2
+
+–0,2
+
+Basis: n = 2510 Meinungen (in 2.655 Tweets)
+

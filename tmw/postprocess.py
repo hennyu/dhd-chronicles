@@ -212,7 +212,7 @@ def calculate_complexAverageTopicScores(mastermatrixfile, targets, outfolder):
     if not os.path.exists(outfolder):
         os.makedirs(outfolder)
     with open(mastermatrixfile, "r", encoding="utf-8") as infile:
-        mastermatrix = pd.DataFrame.from_csv(infile, header=0, sep=",")
+        mastermatrix = pd.read_csv(infile, header=0, sep=",")
     ## Calculate average topic scores for each target category 
     grouped = mastermatrix.groupby(targets, axis=0)
     avg_topicscores = grouped.agg(np.mean)

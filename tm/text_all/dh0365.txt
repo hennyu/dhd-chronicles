@@ -1,0 +1,174 @@
+Extended	  Abstract,	  Poster	  at	  DHd	  2015	  (Graz,	  Austria,	  February	  23-­‐27,	  2015)	  
+
+Musterforschung	  in	  den	  Geisteswissenschaften:	  
+Werkzeugumgebung	  zur	  Musterextraktion	  	  
+aus	  Filmkostümen	  	  
+	  
+	  
+
+Johanna	  Barzen1,	  Michael	  Falkenthal1,	  Frank	  Hentschel2,	  Frank	  Leymann1	  
+Institut für Architektur von
+Anwendungssystemen
+Universität Stuttgart
+Nachname@iaas.uni-stuttgart.de1
+	  
+
+Musikwissenschaftliches Institut
+Universität zu Köln
+Frank.Hentschel@uni-koeln.de2
+	  
+
+	  
+1.	  Einleitung:	  Kostümsprache	  als	  Mustersprache	  	  
+	  
+In	  der	  Literatur	  zum	  Filmkostüm	  findet	  sich	  immer	  wieder	  der	  Begriff	  der	  „Kostümsprache“	  
+als	   metaphorische	   Umschreibung	   der	   filmisch	   vestimentären	   Kommunikation.	   Wie	   diese	  
+aber	  funktioniert,	  welche	  Mittel	  das	  Kostüm	  nutzt,	  um	  Informationen	  über	  die	  Charaktere,	  
+deren	   Gruppenzugehörigkeit,	   Stimmungen	   oder	   Transformationen,	   sowie	   die	   Zeit-­‐	   und	  
+Ortsgegebenheiten	   eines	   Films	   zu	   geben,	   ist	   nur	   rudimentär	   untersucht.	   Um	   sich	   den	  
+Funktionsweisen	   und	   etablierten	   Konventionen	   einer	   Kostümsprache	   im	   Film	   zu	   nähern,	   hat	  
+sich	  das	  Musterkonzept	  als	  fruchtbar	  erwiesen	  	  [SBL12].	  	  	  
+	  
+Das	   Konzept	   des	   Musters,	   ursprünglich	   aus	   der	   Architektur	   stammend	   [AIS85],	   hat	   sich	   im	  
+Besonderen	   in	   der	   Informatik	   etabliert	   und	   findet	   hier	   vielseitige	   Anwendung	   (Cloud-­‐
+Computing	  Patterns,	  Enterprise	  Integration	  Patterns	  etc.).	  Definiert	  wird	  ein	  Muster	  als	  ein	  
+einem	  vorgegebenen	  Format	  folgendes	  Problem-­‐Lösungspaar,	  welches	  eine	  erprobte	  Lösung	  
+zu	   einem	   wiederkehrenden	   Problem	   abstrakt	   erfasst	   und	   dieses	   Wissen	   so	   effizient	   für	  
+andere	   nutzbar	   macht.	   Diese	   Muster	   werden	   mit	   anderen	   Mustern	   gleichen	   Formates	  
+untereinander	   in	   Beziehung	   gesetzt,	   so	   dass	   eine	   Mustersprache	   entsteht.	   Im	   Falle	   der	  
+Filmkostüme	   ist	   ein	   Kostümmuster	   eine	   abstrakte	   Beschreibung	   einer	   bewährten	   Lösung	  
+eines	   wiederkehrenden	   Designproblems	   einen	   adäquaten	   und	   schnell	   verständlichen	  
+textilen	   Ausdruck	   für	   beispielsweise	   eine	   bestimmte	   Rolle	   oder	   einen	   Charakterzug	   zu	  
+finden.	  	  
+	  
+Um	   diese	   Kostümmuster	   als	   abstrakte	   Lösungsprinzipien	   (als	   Essenz	   vestimentärer	  
+Kommunikation)	  zu	  entwickeln,	  müssen	  erstens	  die	  ganzen	  konkreten	  Lösungen,	  in	  diesem	  
+Fall	   die	   konkreten	   Kostüme	   in	   Filmen,	   detailliert	   erfasst	   werden	   [FBB14].	   Hierzu	   haben	   wir	  
+MUSE	   (MUster	   	   Suche	   und	   Erkennen)	   entwickelt.	   MUSE	   ist	   ein	  Kostümrepository,	   welches	   in	  
+Sektion	   2	   näher	   erläutert	   wird.	   Zweitens	   müssen	   die	   erfassten	   Daten	   aufbereitet	   und	  
+
+ausgewertet	   werden,	   um	   daraus	   Muster	   abstrahieren	   zu	   können.	   Wie	   eine	   solche	   Analyse	  
+mittels	  OLAP	  Cubes	  aussehen	  kann	  wird	  in	  Sektion	  3	  vorgestellt.	  	  
+	  
+2.	  MUSE:	  Kostümrepository	  zur	  Kostümerfassung	  	  
+	  
+MUSE	   ist	   ein,	   auf	   die	   Erfassung	   von	   Kostümen	   spezialisiertes	   Kostümrepository,	   das	   es	  
+ermöglicht,	   Film-­‐	   und	   Rolleninformationen,	   vor	   allem	   aber	   detailgetreue	  
+Kostümbeschreibungen	   einzupflegen.	   Um	   eine	   strukturierte	   Erfassung	   und	   weiterführende	  
+Analyse	   dieser	   Daten	   zu	   ermöglichen,	   basiert	   MUSE	   auf	   einer	   umfassenden	  
+Bekleidungsontologie,	  in	  welche	  die	  konkreten	  Kostüme	  während	  des	  Einpflegens	  direkt	  als	  
+Instanzen	  dieser	  abgelegt	  werden	  [Ba13].	  	  
+	  
+Die	   folgenden	   Screenshots	   sollen	   einen	   Eindruck	   vermitteln,	   wie	   MUSE	   die	   Erfassung	   von	  
+Kostümen	   unterstützt.	   Zur	   Zeit	   wird	   hier	   ein	   Filmkorpus	   von	   60	   Filmen	   unterschiedlicher	  
+Genres	   eingepflegt,	   wobei	   ein	   Film	   ca.	   200	   Kostüme	   aufweist,	   welche	   sich	   wiederum	   aus	  
+mehreren	  Basiselementen	  (Hose,	  Bluse,	  etc.)	  und	  deren	  Teilelementen	  (Ärmel,	  Kragen,	  etc.)	  
+zusammensetzen.	  	  
+	  	  
+
+Screenshot	  1:	  Eingabemaske	  zur	  detaillierten	  Erfassung	  von	  Rolleninformationen	  
+
+	  
+
+	  
+
+Screenshot	  2:	  Übersicht	  der	  Kostümkomposition	  aus	  Basis-­‐	  und	  Teilelementen	  	  
+und	  deren	  Beziehungen	  zueinander	  (Operatoren)	  
+	  
+
+	  
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+Screenshot	  3:	  Eingabemaske	  zur	  Basiselementerfassung	  (mit	  aufgeklappter	  
+Taxonomie-­‐Eingabehilfe	  bei	  Design)	  	  
+
+	  
+
+3.	  Analyse:	  Auswertung	  der	  Kostümdaten	  
+	  
+Um	  die	  mit	  MUSE	  erfassten	  Daten	  nutzerfreundlich	  in	  ihrem	  vollen	  Potential	  analysieren	  zu	  
+können,	   haben	   wir	   die	   Werkzeugumgebung	   so	   gestaltet,	   dass	   die	   ablaufenden	  
+informationstechnischen	   Auswertungsmethoden	   so	   viel	   Komplexität	   wie	   möglich	   für	   die	  
+Endanwender	   verbergen.	   Hierzu	   werden	   die	   Daten	   mittels	   eines	   OLAP	   Cubes	   so	   aufbereitet,	  
+dass	   mit	   Excel	   darauf	   zugegriffen	   werden	   kann	   und	   hier	   Auswertungsszenarien	   definiert	  
+werden	  können,	  welche	  die	  Analyse	  der	  Daten	  aus	  unterschiedlichen	  Blickwinkeln	  in	  all	  ihren	  
+Dimensionen	   und	   Verknüpfungen	   ermöglicht.	   Mittels	   Excel	   Pivot-­‐Tabellen	   und	   als	   Pivot-­‐
+Charts	   visualisiert,	   kann	   man	   sich	   nun	   Beispielfragestellungen	   wie	   „Welche	   Farbe	   ist	   am	  
+häufigsten	  
+mit	  
+welcher	  
+Charaktereigenschaft	  
+kombiniert?“,	  
+„Ist	  
+dieses	  
+kostümbildnerabhängig?“,	  „Werden	  hochgekrempelte	  Ärmel	  eher	  bei	  passiven	  oder	  aktiven	  
+Charakteren	   eingesetzt?“	   nähern.	   Durch	   das	   Auftreten	   von	   Spitzen	   in	   der	  
+Häufigkeitsverteilung	  können	  dann	  erste	  Hinweise	  auf	  mögliche	  Muster	  gefunden	  werden.	  
+	  
+Screenshot	  4	  und	  5	  verdeutlichen,	  wie	  man	  sich	  beispielsweise	  dem	  Einsatz	  von	  Farben	  im	  
+Verhältnis	   zu	   Charaktereigenschaften	   nähern	   kann.	   Gezeigt	   wird	   die	   Häufigkeitsverteilung	  
+der	   Farben	   der	   Kleider	   der	   beiden	   weiblichen	   Hauptrollen	   Katherina	   und	   Bianca	   aus	   „10	  
+Dinge	  die	  ich	  an	  dir	  hasse“	  (Regie:	  Junger,	  1999).	  	  
+	  
+	  
+
+Screenshot	  4:	  Pivot-­‐Tabelle	  	  
+	  
+	  
+
+	  
+
+Der	   unterschiedliche	   Einsatz	   der	   Rot-­‐	   bzw.	   Blautöne	   bei	   den	   beiden	   charakterlich	   sehr	  
+divergierenden	   Schwestern,	   lässt	   bereits	   erste	   Rückschlüsse	   auf	   Konventionen	   in	   deren	  
+Einsatz	  zu.	  Dies	  ist	  allerdings	  nur	  als	  erster	  Hinweis	  zu	  verstehen,	  der	  mit	  weiteren	  Filmen,	  
+Rollen,	   Charaktereigenschaften,	   etc.	   zu	   überprüfen	   ist.	   Genau	   dabei	   unterstütz	   der	   OLAP	  
+Cube.	  
+	  
+
+Screenshot	  5:	  Pivot-­‐Chart	  zu	  der	  Tabelle	  aus	  Screenshot	  5	  
+
+	  
+
+	  
+4.	  Ausblick	  
+	  
+Zwar	   ist	   MUSE,	   als	   spezialisiertes	   Tool	   zur	   Kostümerfassung	   domänenabhängig,	   die	  
+dahinterstehende	   Methode	   und	   das	   Konzept	   des	   Musters	   zur	   Wissenserfassung	  
+und	   -­‐repräsentation	   sind	   aber	   auch	   für	   die	   Anwendung	   in	   anderen	   Bereichen	   der	  
+Geisteswissenschaften	   ein	   vielversprechender	   Ansatz	   und	   gehen	   weit	   über	   die	  
+Kostümforschung	  hinaus	  [BL14].	  
+Angedacht	   ist	   der	   Einsatz	   zur	   Extraktion	   von	   musikalischen	   Mustern,	   um	   Charakteristika	   und	  
+Topoi	   musikalischer	   Artefakte,	   die	   sich	   mit	   den	   herkömmlichen	   musikwissenschaftlichen	  
+Konzepten	   wie	   „Thema“,	   „Motiv“	   oder	   „Stil“	   nicht	   erfassen	   lassen,	   herauszuarbeiten	   und	  
+eventuell	  im	  Hinblick	  auf	  ihre	  semantische	  oder	  expressive	  Funktion	  deuten	  zu	  können.	  
+	  
+5.	  Referenzen	  
+	  
+[AIS85]	   Alexander,	  C.;	  Ishikawa,	  S.;	  Silverstein,	  M.;	  Jacobson,	  M.;	  Fiksdahl-­‐King,	  I.;	  Angel,	  S.:	  A	  
+Pattern	  Language:	  Towns,	  Buildings,	  Constructions.	  Oxford	  University	  Press,	  1977.	  
+[Ba13]	   Barzen,	  J.:	  Taxonomien	  kostümrelevanter	  Parameter:	  Annäherung	  an	  eine	  Ontologisierung	  
+der	  Domäne	  des	  Filmkostüms,	  Universität	  Stuttgart,	  Technischer	  Bericht	  Nr.	  2013/04,	  
+2013.	  	  
+[BL14]	   Barzen,	  Johanna;	  Leymann,	  Frank:	  Kostümsprache	  als	  Mustersprache:	  Vom	  analytischen	  
+Wert	  Formaler	  Sprachen	  und	  Muster	  in	  den	  Filmwissenschaften,	  In:	  DHd	  2014.	  
+[FBB14]	   Falkenthal,	  M.;	  Barzen,	  J.;	  Breitenbücher,	  B.;	  Fehling,	  C.;	  Leymann,	  F.:	  From	  Pattern	  
+Languages	  to	  Solution	  Implementations.	  In:	  Proceedings	  of	  the	  6th	  International	  
+Conference	  on	  Pervasive	  Patterns	  and	  Applications,	  Venice,	  2014.	  
+[SBL12]	   Schumm,	  D.;	  Barzen,	  J.	  ;	  Leymann,	  F.;	  Ellrich,	  L.:	  A	  Pattern	  Language	  for	  Costumes	  in	  Films.	  
+In:	  Proceedings	  of	  the	  17th	  European	  Conference	  on	  Pattern	  Languages	  of	  Programs	  
+(EuroPLoP),	  Irsee,	  2012.	  ACM	  Press,	  New	  York,	  2012.	  
+

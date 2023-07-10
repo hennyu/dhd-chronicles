@@ -1,0 +1,84 @@
+ediarum – Eine digitale Arbeitsumgebung für
+Editionsvorhaben
+Stefan Dumont (dumont@bbaw.de), Martin Fechner (fechner@bbaw.de)
+An der Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW) sind zahlreiche
+geisteswissenschaftliche Forschungsvorhaben unterschiedlichster Fachrichtungen angesiedelt.
+Die TELOTA-Arbeitsgruppe (»The Electronic Life of the Academy«) unterstützt diese
+Vorhaben in allen digitalen Belangen und entwickelt Softwarelösungen für die tägliche
+Forschungsarbeit der Wissenschaftler/-innen.
+Die Erfahrung hat gezeigt, dass die Bereitschaft, TEI-Kodierung in Editionsvorhaben zu
+verwenden, von der Benutzerfreundlichkeit der Eingabeoberfläche abhängt. Aus der
+Perspektive der Wissenschaftler/-innen erscheint es als ein Rückschritt, direkt im XML-Code
+zu arbeiten, wenn man vorher in Programmen wie MS Word gearbeitet hat. Eine neue
+Softwarelösung muss daher mindestens den gleichen Komfort bieten wie das zuvor benutzte
+Programm. Idealerweise würde sie sogar den gesamten Lebenszyklus einer Edition abdecken:
+von der ersten Phase der Transkription bis hin zur Publikation in Web und Druck.
+TELOTA hat mit »ediarum« eine solche digitale Arbeitsumgebung entwickelt. Diese Lösung
+besteht aus mehreren Softwarekomponenten, die es den Wissenschaftler(inne)n erlauben,
+Transkriptionen von Manuskripten in TEI-XML anzufertigen, zu bearbeiten und zu
+veröffentlichen.
+Als zentrale Softwarekomponente der neuen Arbeitsumgebung wird »oXygen XML Author«
+eingesetzt. Die Bearbeiter arbeiten in oXygen XML Author nicht in einer Codeansicht,
+sondern in der benutzerfreundlichen »Autorenansicht«, die über Cascading Stylesheets (CSS)
+gestaltet wird. Außerdem kann der Endanwender über eine eigene Werkzeugleiste per
+Knopfdruck Auszeichnungen vornehmen. So können z.B. in Manuskripten Streichungen
+markiert oder Sachanmerkungen eingegeben werden. Auch können Textstellen ausgezeichnet
+und gleichzeitig über eine komfortable Auswahlliste mit dem jeweiligen Eintrag eines
+zentralen Registers (Personen-, Ortsregister etc.) verknüpft werden. Der gesamte Text kann
+dadurch einfach und schnell mit TEI-konformen XML ausgezeichnet werden.
+Die digitale Arbeitsumgebung nutzt die native XML-Datenbank »exist-db« als zentrales
+Repositorium für die XML-Dokumente. Die Datenbank ist auf einem Server installiert und
+online zugänglich. Dadurch können alle Projektmitarbeiter auf ein und denselben
+Datenbestand zugreifen und zusammenarbeiten.
+Neben der eigentlichen Arbeitsumgebung in oXygen XML Author, wird für die
+Forschungsvorhaben auch jeweils eine Website auf Basis von eXist, XQuery und XSLT
+erstellt. In ihr kann von den Wissenschaftler(inne)n der aktuelle Datenbestand leicht
+durchblättert bzw. durchsucht werden. Die Website kann - je nach Bedarf - nur den
+Bearbeitern oder der gesamten Öffentlichkeit gemacht werden.
+Als weitere Ausgabemöglichkeit wird mit Hilfe von ConTeXt eine Druckausgabe
+implementiert, die automatisch aus den aktuellen TEI-XML-Dokumenten ein PDF erstellt.
+Die Gestaltung und Formatierung kann - nach entsprechender Konfiguration - dabei
+gedruckten Bänden der jeweiligen Edition entsprechen. Jedem TEI-Element wird über eine
+Konfigurationsdatei eine entsprechende Formatierungsanweisung für den Druck übergeben.
+So können z.B. Text- und Sachapparat als Fußnoten dargestellt werden, die mit Hilfe von
+
+Zeilennummerierung und Lemmata auf den Fließtext verweisen. Die Druckausgabe erstellt
+bei Bedarf auch das passende Register zu den jeweiligen Transkriptionen und löst
+Querverweise zwischen Texten auf.
+Die Arbeitsumgebung wird seit 2012 von Wissenschaftler(inne)n verschiedener
+Forschungsvorhaben bei ihrer täglichen Arbeit benutzt. Nach ihrer Meinung befragt, waren
+sich die Nutzer darin einig, dass durch die neue Arbeitsumgebung die Editionsarbeit
+erleichtert und viel Zeit gespart wird. Auch die Möglichkeit, die Ergebnisse der Arbeit direkt
+in einer Webpräsentation oder Druckausgabe zu kontrollieren, wurde positiv gesehen. Sehr
+erleichtert äußerten sich die Mitarbeiter/-innen darüber, dass ihnen keine Arbeit im XMLCode selbst zugemutet wird, sondern alle Texte in einer grafischen und einfach zu
+bedienenden Programmoberfläche mit XML ausgezeichnet werden können.
+Nach der erfolgreichen Pilotumsetzung im Akademievorhaben »Friedrich Schleiermacher in
+Berlin 1808-1834. Briefe, Vorlesungen, Tageskalender« wurde »ediarum« in zwei weiteren
+Akademienvorhaben eingesetzt: »Commentaria in Aristotelem Graeca et Byzantina« und
+»Regesta Imperii - Friedrich III.« (letzteres in Kooperation mit der AdW Mainz) Für jedes
+Projekt wurden die TEI-XML-Schemata sowie die Funktionen an die verschiedenen
+Manuskripttypen und Forschungsanforderungen angepasst. Derzeit wird »ediarum« für die
+Historisch-kritische Edition der Schriften Jeremias Gotthelf zur Verfügung gestellt (in
+Kooperation mit der Universität Bern). Weitere Implementierungen befinden sich derzeit in
+Planung..
+Weitere Informationen
+• Projektwebsite: http://www.bbaw.de/telota/software/ediarum
+Literatur
+• Dumont, Stefan; Fechner, Martin: Digitale Arbeitsumgebung für das Editionsvorhaben
+»Schleiermacher in Berlin 1808—1834« In: digiversity — Webmagazin für
+Informationstechnologie in den Geisteswissenschaften. URL:
+<http://digiversity.net/2012/digitale-arbeitsumgebung-fur-das-editionsvorhabenschleiermacher-in-berlin-1808-1834/>
+• Burnard, Lou; Bauman, Syd (Hg.): TEI P5: Guidelines for Electronic Text Encoding and
+Interchange. Charlottesville, Virginia, USA 2014. URL: <http://www.teic.org/release/doc/tei-p5-doc/en/Guidelines.pdf>
+• User Manual oXygen XML Author 14. URL: <http://www.oxygenxml.com/doc/ugeditor/>
+• eXist Main Documentation. URL: <http://www.exist-db.org/exist/documentation.xml>
+• ConTeXt Dokumentation. URL: <http://wiki.contextgarden.net/Main_Page>
+
+Screenshots
+
+Eigene Werkzeugleiste für die Schleiermacher-Edition in oXygen XML Author
+
+Transkription eines Briefes in oXygen XML Author
+
+Transkription eines Tageskalenders in oXygen XML Author
+

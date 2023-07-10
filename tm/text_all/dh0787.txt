@@ -1,0 +1,168 @@
+Vernetzte Datenstrukturen als Grundlage philosophischer Erkenntnisse
+Technische Umsetzung und eine exemplarische Anwendung anhand des elektronischen
+Apparats der WIENER AUSGABE
+Michael Nedo, Daniel Bruder, Pascal Zambito, Max Hadersbeck, Josef Rothhaupt
+The Wittgenstein Project Clare Hall und der Ludwig Wittgenstein Trust, University of
+Cambridge
+Centrum für Informations- und Sprachverarbeitung, in Zusammenarbeit mit dem
+Lehrstuhl II der Fakultät für Philosophie, Wissenschaftstheorie und Religionswissenschaft,
+LMU München
+
+1. Einleitung
+Ludwig Wittgenstein, einer der bedeutensten Denker und Philosophen unserer Zeit, eignet sich
+aufgrund seiner Themen und seiner komplexen Arbeitsweise besonders gut, um die Vorteile eines
+elektronischen Apparats auf Grundlage vernetzter Datenstrukturen zu demonstrieren. Da bisher
+publizierte Editionen ohne solche Werkzeuge auskommen mussten, lassen sich durch geschickte
+Nutzung der digitalen Möglichkeiten neuartige philosophische Erkenntnisse gewinnen und alte
+Irrtümer ausräumen.
+Auf unserem Poster wollen wir die zugrunde liegenden Datenstrukturen des Apparats erklären
+und in einer exemplarischen Anwendung zeigen, wie sich konkreter Nutzen aus seiner Anwendung
+ziehen lässt
+
+2. Struktur von Wittgensteins Werk
+Wittgensteins Werk zeichnet sich durch eine Vielzahl an internen und externen Verknüpfungen
+aus. Das Stemma in Abb. 1 zeigt u.a. die Entstehung der bei Suhrkamp publizierten
+Philosophischen Bemerkungen (PB), an der deutlich wird, dass die Genese des Textes sowohl
+editionsphilologisch als auch philosophisch relevant ist.
+Die Entstehungsgeschichte der PB liefert Aufschluss darüber, wie Bemerkungen aus den
+Manuskripten Eingang in die maschinenschriftliche Synopse TS208 gefunden haben. Die Synopse
+wurde von Wittgenstein zerschnitten, in der Zettelsammlung (TS209) neu angeordnet und
+schließlich unter Hinzuziehung weitere Materials aus anderen Manuskripten von seinen Erben als
+Buch veröffentlicht.
+
+Abbildung 1: Stemma zur Genese der Philosophischen Bemerkungen
+Da die meisten Interpreten von diesem Werk als fertiges Buch ausgingen, finden sich bei ihnen
+Missverständnisse, die durch eine angemessene Darstellung der intra- und intertextuellen
+Verknüpfungen vermeidbar sind. Der Apparat, an dem wir arbeiten, ist ein digitales Werkzeug, das
+mittels verschiedener Such- und Sortierungsfunktionen diese Interdependenzen dem Nutzer
+verständlich macht und ihm einen ebenso einfach zu handhabenden wie zuverlässigen Zugang zum
+Werk erlaubt.
+
+3 Datenstruktur des Apparats
+Die Nutzung des elektronischen Apparats beginnt in der Regel mit einer Wortsuche, welche über
+eine lemmatisierte Wortkonkordanz realisiert wird. Den weiteren Funktionen - Zugriff auf eine
+elektronische Realkonkordanz und interaktive Nutzung durch den User - liegt eine Matrix
+dynamisch vernetzter Objekte zugrunde.
+
+3.1 Wortkonkordanz
+Mithilfe des Computers lassen sich Suchfunktionen effizienter und benutzerfreundlicher realisieren
+als in den gedruckten Apparaten zur WIENER AUSGABE. Zur Wortsuche wird ein Vollformenlexikon
+genutzt, welches es ermöglicht, aus jeder flektierten Form eines Wortes eine lemmatisierte Form
+
+abzuleiten und daraus wiederum sämtliche möglichen Formen des Wortparadigmas zu generieren
+und in die Suche miteinzuschließen. Indem das Suchergebnis also nicht nur wortidentische Treffer,
+sondern alle linguistisch verwandten Formen enthält, erlaubt es die Wortkonkordanz, das gesamte
+Korpus auf ein spezifisches Thema oder einen bestimmten Begriff hin „quer“ zu lesen.
+
+Abbildung 2: Eingabemaske für die Wortsuche
+
+3.2 Realkonkordanz
+Die Funktionsstruktur der Realkonkordanz basiert auf einer mit dem Werk dynamisch vernetzten
+Matrix. Auf der ersten Ebene werden die Objekte, die das Werk repräsentieren, aufgeführt:
+Wittgensteins Manuskripte, Typoskripte und Mitschriften sowie Diktate und deren jeweilige
+Veröffentlichungen. Die internen Strukturen der Objekte entsprechen der Nomenklatur der WIENER
+AUSGABE (vgl. Abb. 3, A); bei den posthumen Veröffentlichungen werden stattdessen die Strukturen
+der Herausgeber aufgeführt.
+Entsprechend dieser Grundstruktur werden auf separaten Ebenen weitere Objekte erfasst, wie
+z.B. biographische Dokumente, Korrespondenzen, Bilder oder auch Sekundärliteratur und
+Übersetzungen (B).
+
+Zusätzlich
+
+werden
+
+über
+
+eine
+
+interaktive
+
+Arbeitsplattform unter den Namen der jeweiligen
+Nutzer inhaltsbezogene Kommentare mit den Texten
+verknüpft
+
+sowie
+
+Fehler
+
+und
+
+vorgeschlagene
+
+Korrekturen in den Editionen (D).
+Die Vernetzung der einzelnen Elemente der Objekte
+erfolgt auf darunter liegenden Ebenen der Matrix.
+Dabei werden drei Typen von Verknüpfungen
+unterschieden: ein-eindeutige, quasi festverdrahtete;
+provisorische, noch endgültig zu bestimmende; und
+offene, die noch recherchiert werden müssen (C).
+Die
+
+Matrix
+
+ist
+
+über
+
+Such-
+
+und
+
+Sortierungswerkzeuge mit den Textdateien und deren
+Darstellungsformen auf dem Computerbildschirm
+verknüpft, die wiederum über die Nomenklatur der
+WIENER AUSGABE auf die gedruckte Edition verweisen.
+
+4. Anwendung
+
+Abbildung 3: Datenstrukturen der Matrix
+Im Rahmen einer Masterarbeit an der LMU werden diese Datenstrukturen genutzt, um
+
+philosophische Erkenntnisse zu gewinnen. Konkret geht es um das Themenfeld der
+Phänomenologie bei Wittgenstein in den Jahren 1929-30, in denen der Begriff signifikante
+Bedeutungsveränderungen erfuhr. Mittels der Wortkonkordanz lassen sich zunächst alle
+Vorkommen des Begriffs im entsprechend zeitlich eingegrenzten Korpus finden (vgl. Abb. 2). Die
+einmal gefundene Textstelle lässt sich dann
+1. im Rahmen des betreffenden Objektes um den Kontext erweitern, sodass benachbarte
+Stellen etwa in TS209 angezeigt werden
+2. um frühere oder spätere Versionen der gleichen Bemerkung erweitern. Bemerkungen aus
+den TS209 lassen sich z.B. rückwärts bis zu den Manuskriptbänden oder vorwärts bis zur
+Publikation in den PB nachverfolgen. (s. Abb. 1)
+3. um
+
+Hintergrundinformationen
+
+erweitern,
+
+die
+
+Sekundärliteratur und weitere Daten enthalten können.
+
+zu
+
+jeder
+
+Textstelle
+
+Faksimiles,
+
+Abbildung 4: Die Bemerkung TS209,125.2.1/2.2 in der Darstellung des Apparats
+
+Abbildung 5: Faksimile derselben Bemerkung: man sieht, dass das Wort "phänomenologische" erst
+nachträglich eingefügt wurde und könnte nun frühere Textstufen untersuchen, um die
+Begriffsentwicklung zu erforschen.
+
+Auf Grundlage dieses Wissens lassen sich gängige Missverständnisse in der Sekundärliteratur
+ausräumen, der die Genese der PB nicht in diesem Ausmaß zugänglich war. Schließlich lassen sich
+die neu gewonnenen Erkenntnisse verknüpft mit dem Namen des Verfassers als Kommentar zurück
+in die Matrix einspeisen.
+
+5. Anhang- Technische Details
+
+Abbildung 6: Abschnitt eines Abstract Syntax Tree (AST) für Bem. TS209,
+125.2.1
+
+Abbildung 7: Herstellung und Funktionsweise von AST
+
+Abbildung 8: Herstellung und Funktionsweise von AST
+

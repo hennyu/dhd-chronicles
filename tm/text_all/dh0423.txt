@@ -1,0 +1,84 @@
+Annotationen für die aütomatisierte
+Verarbeitüng von Marchen
+Thierry Declerck, Universität des Saarlandes
+(word count: 741)
+In diesem Poster- und Demobeitrag fassen wir ältere und aktuelle Arbeiten zur Entwicklung eines
+Annotationsschemas für Märchen zusammen, das auch die Einbettung von Märchentexten in
+automatisierten Verarbeitungszenarien erlaubt. Eine Entwicklung unserer Arbeit in diesem Bereich
+führte zur automatischen Erkennung von Charakteren in Märchen, deren Rolle in Dialogen und deren
+Emotionen, die als Grundlage eines TextToSpeech Szenarios dient, das Märchentexte „vorliest“.
+Dieses Ergebnis basiert auf einer Zusammenarbeit mit Studenten der Computerlinguistik an der
+Universität des Saarlandes, die in den letzten Jahren in Form von Bachelor- oder Masterarbeiten,
+oder auch in Form eines Softwareprojekts erfolgten.
+Angefangen hat es mit der Masterarbeit von Antonia Scheidel zur Annotation von Märchen mit
+Proppschen1 Funktionen. Antonia Scheidel entwickelte ein neues Annotationsschemas, nach dem
+Märchen nach Texteigenschaften, temporalen Strukturen, Charakteren, Dialogen, und Proppschen
+Funktionen abfragen kann (s. [1]). Ein Annotationsschema ist insofern wichtig, als dadurch
+automatisierte Systeme ein Ziel haben, in das sie ihre Ergebnisse abbilden können. Wenn dazu auch
+Märchen mit dem Annotationsschema manuell annotiert werden, können die Ergebnisse der
+automatischen Verarbeitungen mit den menschlichen Annotationen verglichen werden.
+Darauf aufbauend hat Nikolina Koleva an einem automatisierten System gearbeitet, das in
+Märchentext (sie hat mit 2 Beispielen gearbeitet; „The Magic Swan Geese“, eine englische Version
+eines russischen Märchens, und „Väterchen Frost“, eine deutsche Version eines russischen
+Märchens). Sie hat ein Programm geschrieben, dass der Text nach linguistischen Kriterien analysiert,
+mit dem Ziel, die darin vorkommenden Charaktere zu erkennen, und in eine Datenbank zu speichern.
+Diese Datenbank ist von der Sorte „Ontologie“: darin können logische Operationen durchgeführt
+werden. Als Hintergrund fungiert eine formale Beschreibung dessen, was in den genannten Märchen
+vorkommen kann, inklusive eine Ontologie über Familienverhältnissen. So kann das System
+erkennen, dass im Text „die Tochter“ die gleiche Person wie die „Schwester“ ist, wenn der Kontext
+dies suggeriert. Erkannte Charaktere im Märchen werden somit mit allgemeineren Kategorien
+
+1
+
+Auszug aus Wikipedia: „Propp gilt als Begründer der morphologischen oder strukturalistischen
+Folkloristik. Zwischen 1914 und 1918 studierte er russische und deutsche Philologie. Danach unterrichtete
+er die deutsche Sprache an verschiedenen Hochschulen in Leningrad. Von 1938 bis 1969 war er Professor
+für Germanistik, russische Literatur und Folklore an der Staatlichen Universität Leningrad.
+1928 erschien sein bahnbrechendes Werk Morphologie des Märchens. Das Buch wurde 1958 in den USA in
+englischer Sprache veröffentlicht, was Propp weltweite Anerkennung verschaffte. 1946 erschien das Buch
+Die historischen Wurzeln des Zaubermärchens.”
+(http://www.wikiwand.com/de/Wladimir_Jakowlewitsch_Propp. Zugriff am 2014.11.10)
+
+semantisch annotiert. Und wir wissen dann in welchen Kontexten (oder Situationen) die Tochter
+(zum Beispiel) involviert ist (s. hierzu [2]).
+Schließlich eine Gruppe von Studenten (Christian Eisenreich, Jana Ott, Tonio Süßdorf und Christian
+Wilms) im Rahmen eines Softwareprojekts an Erweiterungen der oben genannten Arbeiten
+gearbeitet. Sie haben zum einem das Annotationsschema erweitert, mit detaillierteren
+Dialogbeschreibungen, und mit der Kodierung von Emotionen. Die Ontologie wurde auch erweitert,
+und sie inkludiert jetzt auch eine Beschreibung von Dialogen (Fragen, Antworten, Monologe, etc.),
+inklusive der Kodierungen der Teilnehmern und der Dialogwechseln. Auch 6 Basisemotionen (Angst,
+Trauer, Freude, etc) sind in der Ontologie kodiert.
+Eine Haupterweiterung der vergangenen Arbeiten besteht darin, dass auch synthetische Stimmen
+eine Rolle spielen. Ist einmal ein Charakter erkannt worden, zum Beispiel die Prinzessin (im Märchen
+„Froschkönig“), werden zusätzliche Merkmale kodiert (zum Bsp. Alter, usw.). Dann wird automatisch
+eine vorher definierte synthetische Stimme zum Charakter addiert. Wenn dann der Text von dem
+System analysiert wird, kann die Geschichte von den Stimmen „erzählt“ werden. Wenn kein
+Charakter in einer Dialogsituation vorkommt, dann wird angenommen, dass der Erzähler/die
+Erzählerin „daran“ ist. Eine Demo kann hier gehört werden:
+https://bytebucket.org/ceisen/apftml2repo/raw/763c5eb533f09997e757ec61652310c74223838
+4/example%20output/audio_output.mp3
+Im Anhang sind 2 Screenshots, die (für den ersten Teil der Audiodatei) zeigen wie das System den
+Text bearbeitet und kodiert, so dass die Sprachausgabe (s. Link oben) erzeugt werden kann. Unser
+Poster/Demo zeigt die Korrelation zwischen die Annotationen, die zum größten Teil automatisch
+generiert worden sind, und den verschiedenen Stufen der Verarbeitung bis hin zur Sprachausgabe.
+
+Referenzen
+[1] Thierry Declerck, Antonia Scheidel, Piroska Lendvai. Proppian Content Descriptors in an
+Integrated Annotation Schema for Fairy Tales. Language Technology for Cultural Heritage.
+Selected Papers from the LaTeCH Workshop Series,Theory and Applications of Natural Language
+Processing, Pages 155-169, Springer, Heidelberg, 2011
+[2] Nikolina Koleva, Thierry Declerck, Hans-Ulrich Krieger. An Ontology-Based Iterative Text
+Processing Strategy for Detecting and Recognizing Characters in Folktales in: Jan Christoph
+Meister (ed.): Digital Humanities 2012 Conference Abstracts, Pages 467-470, Hamburg.
+[3] Christian Eisenreich, Jana Ott, Tonio Süßdorf, Christian Willms, Thierry Declerck. From Tale to
+Speech: Ontology-based Emotion and Dialogue Annotation of Fairy Tales with a TTS Output
+Proceedings of ISWC 2014, Riva del Garda, Italy, Springer.
+
+Anhang
+
+Abbildung 1: Wie der Text analysiert wird, Charaktere erkannt werden, sowie Dialogstrukturen und Emotionen. Die Basis
+für die Generierung der Sprachausgabe
+
+Abbildung 2 Wie der Text analysiert wird, Charaktere erkannt werden, sowie Dialogstrukturen und Emotionen. Die Basis
+für die Generierung der Sprachausgabe (Fortsetzung von Abbildung 1)
+

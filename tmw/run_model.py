@@ -29,11 +29,11 @@ StoplistProject = join(wdir, "stopwords.txt")
 
 
 ### Modeling parameters (call_mallet_model)
-NumTopics = [50]
+NumTopics = [40]
 NumIterations = [5000]
 OptimizeIntervals = [500]
 NumRepetitions = 1
-NumTopWords = 30
+NumTopWords = 50
 NumThreads = 4
 ModelFolder = join(wdir, "mallet")
 

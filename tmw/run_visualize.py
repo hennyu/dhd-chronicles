@@ -1,4 +1,4 @@
-4#!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Filename: my_tmw.py
 # Author: #cf
@@ -12,7 +12,7 @@ from os.path import join
 wdir = "/home/ulrike/Git/dhd-chronicles/tm"
 
 ### Set parameters as used in the topic model
-NumTopics = 50
+NumTopics = 40
 NumIterations = 5000
 OptimizeIntervals = 500
 param_settings = str(NumTopics) + "tp-" + str(NumIterations) + "it-" + str(OptimizeIntervals) + "in"
@@ -23,15 +23,15 @@ word_weights_file = join(wdir, "mallet", "word-weights_" + param_settings + ".cs
 words = 40
 outfolder = join(wdir, "visuals", param_settings, "wordles")
 font_path = join(wdir, "AlegreyaSans-Regular.otf")
-dpi = 150
+dpi = 300
 num_topics = NumTopics
 TopicRanksFile = join(wdir, "aggregates", param_settings, "topicRanks.csv")
-visualize.make_wordle_from_mallet(word_weights_file, num_topics, words, TopicRanksFile, outfolder, dpi) # ggf. font_path
+#visualize.make_wordle_from_mallet(word_weights_file, num_topics, words, TopicRanksFile, outfolder, dpi) # ggf. font_path
 
 ### crop_images
 ### Crops the wordle image files, use if needed.
-inpath = join(wdir, "8_visuals", param_settings, "wordles", "*.png")
-outfolder = join(wdir, "8_visuals", param_settings, "wordles")
+inpath = join(wdir, "visuals", param_settings, "wordles", "*.png")
+outfolder = join(wdir, "visuals", param_settings, "wordles")
 left = 500 # image start at the left
 upper = 50 # image start at the top
 right = 3400 # image end on the right
@@ -43,12 +43,12 @@ lower = 2350 # image end at the bottom
 averageDatasets = join(wdir, "aggregates", param_settings, "avg*.csv") 
 firstWordsFile = join(wdir, "aggregates", param_settings, "firstWords.csv")
 numberOfTopics = NumTopics # must be actual number of topics modeled.
-targetCategories = ["idno","author-name","author-gender","reference-year","time-slot"]
+targetCategories = ["year", "type"]
 # one or several: "author-name", "author-gender", "decade", "subgenre", "title"
 topTopicsShown = 30 
 fontscale = 1.0
 height = 0 # 0=automatic and variable
-dpi = 75
+dpi = 300
 outfolder = join(wdir, "visuals", param_settings, "topTopics")
 mode = "normalized" # normalized, absolute
 #visualize.plot_topTopics(averageDatasets, firstWordsFile, numberOfTopics, targetCategories, mode, topTopicsShown, fontscale, height, dpi, outfolder)
@@ -59,12 +59,12 @@ averageDatasets = join(wdir, "aggregates", param_settings, "avg*.csv")
 outfolder = join(wdir, "visuals", param_settings, "topItems")
 firstWordsFile = join(wdir, "aggregates", param_settings, "firstWords.csv")
 numberOfTopics = NumTopics # must be actual number of topics modeled. 
-targetCategories = ["idno","author-name","author-gender","reference-year","time-slot"]
+targetCategories = ["year", "type"]
 # choose one or several from: author-name, decade, subgenre, gender, idno, title, segmentID
 topItemsShown = 20 
 fontscale = 0.8
 height = 0 # 0=automatic and flexible
-dpi = 75
+dpi = 300
 #visualize.plot_topItems(averageDatasets, outfolder, firstWordsFile, numberOfTopics, targetCategories, topItemsShown, fontscale, height, dpi)
 
 ### plot_distinctiveness_heatmap
@@ -72,25 +72,27 @@ dpi = 75
 averageDatasets = join(wdir, "aggregates", param_settings, "avg*.csv") 
 firstWordsFile = join(wdir, "aggregates", param_settings, "firstWords.csv")
 outfolder = join(wdir, "visuals", param_settings, "distinctiveness")
-targetCategories = ["idno","author-name","author-gender","reference-year","time-slot"]
+targetCategories = ["idno","year", "type"]
 # one or several: "author-name", "decade", "subgenre", "gender", "idno", "title"
 numberOfTopics = NumTopics # must be actual number of topics modeled.
 topTopicsShown = 20 
 mode = "zscores" # meannorm|mediannorm|zscores|absolute
 sorting = "std"
 fontscale = 1.0
-dpi = 75
+dpi = 300
 #visualize.plot_distinctiveness_heatmap(averageDatasets, firstWordsFile, outfolder, targetCategories, numberOfTopics, topTopicsShown, mode, sorting, fontscale, dpi)
 
 ### plot_topicsOverTime
 ### Creates lineplots or areaplots for topic development over time.
-#averageDatasets = wdir+"/7_aggregates/avgtopicscores_by-decade.csv" 
-#firstWordsFile = wdir+"/7_aggregates/firstWords.csv"
-#outfolder = wdir+"/8_visuals/overTime/"
-#numberOfTopics = 250 # must be actual number of topics modeled.
-#fontscale = 1.0
-#dpi = 300
-#height = 0 # for lineplot; 0=automatic
-#mode = "line" # area|line for areaplot or lineplot
-#topics = ["48","67","199"] # list of one or several topics
-#tmw.plot_topicsOverTime(averageDatasets, firstWordsFile, outfolder, numberOfTopics, fontscale, dpi, height, mode, topics)
+averageDatasets = join(wdir, "aggregates", param_settings, "avgtopicscores_by-year.csv") 
+firstWordsFile = join(wdir, "aggregates", param_settings, "firstWords.csv")
+outfolder = join(wdir, "visuals", param_settings, "overTime")
+numberOfTopics = NumTopics # must be actual number of topics modeled.
+fontscale = 1.0
+dpi = 300
+height = 0 # for lineplot; 0=automatic
+mode = "line" # area|line for areaplot or lineplot
+topics = ["0", "2", "7", "10", "20", "26", "27", "35"] # list of one or several topics
+# ["6", "8", "9", "12", "16", "19", "29", "39"] # Methoden
+# ["0", "2", "7", "10", "20", "26", "27", "35"] # Gegenstände
+visualize.plot_topicsOverTime(averageDatasets, firstWordsFile, outfolder, numberOfTopics, fontscale, dpi, height, mode, topics)

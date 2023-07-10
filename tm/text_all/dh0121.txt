@@ -1,0 +1,279 @@
+Christian Thomas
+Humboldt-Universität zu Berlin, Institut für Kulturwissenschaft
+Projekt Hidden Kosmos, www.culture.hu-berlin.de/hidden-kosmos
+Exposé zu einem Vortrag, angenommen für die DHd-Tagung 2015 „Von Daten zu Erkenntnissen:
+Digitale Geisteswissenschaften als Mittler zwischen Information und Interpretation“,
+http://dhd2015.uni-graz.at/
+– eingereicht am 10.11.2014, korrigierte Version vom 20.12.2014 –
+
+Hidden Kosmos – Humboldts ‚Kosmos-Vorträge‘
+als Probe der Digital Humanities
+
+Abstract
+Im Projekt Hidden Kosmos – Reconstructing Alexander von Humboldt's »Kosmos-Lectures«
+(www.culture.hu-berlin.de/hidden-kosmos) der Humboldt-Universität zu Berlin (HU) werden seit Juni
+2014 Quellen zu den sogenannten Kosmos-Vorträgen digitalisiert. Darin stellte Alexander von
+Humboldt 1827/28 in zwei teilweise parallel verlaufenden Vortragsreihen an der Berliner Universität
+und der benachbarten Singakademie das naturwissenschaftliche Wissen seiner Zeit dar.
+Das Projekt Hidden Kosmos wird sämtliche bislang bekannte Hörernachschriften aus Bibliotheken,
+Archiven und Privatsammlungen in Deutschland, Polen und der Türkei virtuell zusammenführen.
+Insgesamt elf Nachschriften wurden bisher ermittelt, davon beziehen sich acht auf den 61-stündigen
+Universitäts-Zyklus, drei auf den nur 16 Vorträge umfassenden Singakademie-Zyklus. TEI-kodierte
+Transkriptionen der ca. 3500 Manuskriptseiten werden als standardkonform aufbereitetes, tief
+annotiertes und vielseitig vernetztes Volltextkorpus unter einer offenen Lizenz zur Verfügung
+gestellt. Damit wird auf einer umfassenden Quellenbasis die noch ausstehende, intensive
+Erforschung der Humboldtschen Vortragszyklen überhaupt erst ermöglicht.
+Der Vortrag veranschaulicht anhand erster Ergebnisse des Forschungsprojekts dessen konzeptionelle
+Grundlagen. Um dem breiter angelegten Themenkreis der DHd-Tagung gerecht zu werden, wird
+dabei weitgehend von Humboldt-spezifischen Inhalten abstrahiert und der Fokus auf die
+Aufbereitung der Daten sowie auf die dabei zum Einsatz kommenden Methoden und Verfahren der
+‚Digital Humanities‘ (DH) gerichtet.
+
+1
+
+Korpusaufbau: Drei Wege der Volltexterstellung
+Das zu bearbeitende Korpus umfasst insg. ca. 3500 Seiten aus elf handschriftlichen Nachschriften. Die
+Online-Publikation Hidden Kosmos soll jedes Dokument dieser vielstimmigen Überlieferung im
+Volltext wiedergeben, anstatt aus den voneinander abweichenden Nachschriften einen ‚idealen‘ Text
+zu konstruieren. Dabei werden drei unterschiedliche Wege der Volltexterstellung verfolgt.
+1) Kollation: Zwei der Nachschriften, je eine aus der Universität und der Singakademie, sind bereits
+als Druckausgaben erschienen (Anonym 1934, Hamel/Tiemann 1993; vgl. Literaturverzeichnis im
+Anhang). Der per OCR gewonnene und manuell korrigierte Volltext dieser Ausgaben wird mit der
+jeweiligen Vorlage verglichen. Die teilweise gravierenden, im Druck nicht vermerkten Abweichungen
+vom Manuskript – ‚Normalisierungen‘, ‚stillschweigende Korrekturen‘ sowie Transkriptionsfehler –
+werden in editorischen Kommentaren vermerkt.
+
+Abb. 1: ‚Stillschweigende Korrekturen‘ gegenüber der handschriftlichen Vorlage in Anonym 1934.
+
+Abb. 2: Transkriptionsfehler in Hamel/Tiemann 1993: „Dunstmassen“ st. „Durchmesser“.
+
+Die Kollation der beiden Druckausgaben sowie einer späteren Abschrift eines Manuskripts mit ihren
+jeweiligen handschriftlichen Vorlagen ist abgeschlossen; die Texte werden zum Zeitpunkt der
+Konferenz über das Deutsche Textarchiv (DTA) der Berlin-Brandenburgischen Akademie der
+Wissenschaften (BBAW) und die HU verfügbar sein (s. Abschnitt Parallele Publikation). Jede der
+entstehenden Transkriptionen dokumentiert allein die Handschrift, die sie wiedergibt, d. h.
+Abweichungen der Manuskripte voneinander werden nicht innerhalb der Transkription vermerkt,
+sondern nach Fertigstellung der beiden Volltexte automatisch ermittelt und visualisiert. Im Vortrag
+werden die Vorzüge dieses DH-Verfahrens gegenüber dem ‚klassischen‘ Variantenapparat
+dargestellt.
+2) Texterfassung durch Dienstleister: Fünf der bislang nicht erfassten Nachschriften aus der
+Universität (insg. ~2600 Seiten) weisen ein größtenteils regelmäßiges Schriftbild und vergleichsweise
+wenige Ergänzungs- und Überarbeitungsspuren auf.
+2
+
+Abb. 3: Leichte Transkription: SBB-PK, Ms. Germ. qu. 1711, Bl. 2r
+
+Abb. 4: Mittelschwere Transkription: Biblioteka Jagiellońska Kraków, Handschrift 6623 II, S. 144
+
+Wenngleich es – anders als bei der Erfassung von Drucktexten – im Bereich handschriftlicher
+Überlieferung noch keine etablierte Praxis ist, lag es aus unserer Sicht nahe, diese Manuskripte durch
+einen Dienstleister erfassen zu lassen. Das wissenschaftliche/studentische Personal des HiddenKosmos-Projekts konzentriert sich auf die Qualitätssicherung, die tiefere Annotation,
+Kommentierung, intra- und intertextuelle Verknüpfung, (normdatengestützte) Referenzierung und
+Publikation der Volltexte. So kann trotz geringer Personalausstattung in nur zweijähriger Laufzeit die
+verhältnismäßig große Zahl von ca. 3500 Manuskriptseiten bewältigt werden.
+Mit textloop wurde ein bei der Erstellung elektronischer Volltexte, insbesondere XML-annotierter
+Volltexte gemäß den Richtlinien der Text Encoding Inititiative (TEI) erfahrener Partner gefunden.
+textloop übernimmt die Texterfassung (Zeichengenauigkeit mind. 98%) samt Basisannotation, die
+entsprechende Einweisung und Anleitung der Texterfasser. Weiterhin ist textloop für die Erstellung
+und fortlaufende Anpassung des RNG-Schemas und der ODD-Dokumentation1 nach den Bedürfnissen
+des Projekts verantwortlich.2 Im Vortrag sollen unsere Erfahrungen mit dem externen Dienstleister
+dargestellt werden, auch, um Handschriften-Digitalisierungsvorhaben mit ähnlichen Beständen über
+die Möglichkeiten einer solchen Zusammenarbeit zu informieren.
+3) Texterfassung durch Projektteam: Schließlich werden Nachschriften, die aufgrund des Schriftbilds
+und zahlreicher Überarbeitungsspuren für die Erfassung durch einen Dienstleister nicht geeignet
+sind, durch wissenschaftliches/studentisches Personal im Projekt transkribiert.
+
+Abb. 5: Schwere Transkription: SBB-PK, Slg. Darmstaedter, F 2c 1853_Riess, Peter Theophil , S. 67
+1
+
+2
+
+RNG = Relax NG, Regular Language for XML; vgl. http://relaxng.org/. ODD = One Document Does it All; vgl.
+http://www.tei-c.org/Guidelines/Customization/odds.xml. Vgl. auch TEI P5 Guidelines, Ch. 23: "Using the
+TEI", http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html, zum Einsatz von RNG und ODD.
+Die Erfassung einer bisher unveröffentlichten, 800-seitigen Nachschrift aus der Universität wurde im
+November 2014 abgeschlossen; bis zum Zeitpunkt der Konferenz werden dieser und weitere von textloop
+erfasste Bände publiziert sein.
+
+3
+
+Annotation in TEI P5
+Die Volltexterstellung erfolgt von Beginn an in TEI-XML, so dass bereits während der
+Transkriptionsarbeit die Basisannotation der Dokumente vorgenommen werden kann. Die Kodierung
+der Dokumente geschieht vollständig TEI-konform unter Verwendung des projekteigenen Schemas,
+eines TEI-Subsets ohne projektspezifische Erweiterungen. Das Hidden-Kosmos-Tagset folgt
+weitgehend dem Basisformat des Deutschen Textarchivs (DTABf), das eine minimale Anzahl an Tags
+für die konsistente Kodierung eines heterogenen Korpus definiert, um die größtmögliche
+Einheitlichkeit und Interoperabilität der darin enthaltenen Dokumente sicherzustellen (vgl. Haaf et al.
+forthcoming). Das DTABf-Tagset wurde für das Hidden-Kosmos-Projekt lediglich um
+Annotationsmöglichkeiten für Handschriften3 erweitert.
+
+Abb. 6: TEI-/DTABf-konforme Manuskript-Annotation; SBB-PK, Ms. Germ. qu. 2345, S. [11]
+
+Orientierungspunkte für diese Erweiterung des Tagsets in Richtung Manuskript-Annotation boten die
+Encoding Guidelines der Nachwuchsgruppe Berliner Intellektuelle 1800–1830 der HU und das
+elaborierte „Genetic encoding“ des Shelley-Godwin Archive. Das in dieser Weise erstellte HiddenKosmos-Tagset und das dazugehörige RNG-Schema stellt die einheitliche, TEI-konforme Kodierung
+sämtlicher Dokumente durch mehrere Bearbeiter auf Seiten des Dienstleisters und der Projektgruppe
+sicher.
+
+Parallele Publikation
+Das derart aufbereitete Korpus wird auf der projekteigenen Hidden-Kosmos-Webseite4 präsentiert.
+Die vielfältigen inhaltlichen Verbindungen der Kosmos-Vorträge zu anderen, bereits existierenden
+Online-Ressourcen machen eine Publikation der Daten auch auf anderen Plattformen
+wünschenswert – ein Desiderat, das sich auf etliche andere digitale Bestände übertragen ließe. Im
+Projekt Hidden Kosmos kann dies dank der interoperablen Kodierung der Dokumente in TEI-XML und
+der von Beginn an engen Kooperation mit verschiedenen Vorhaben realisiert werden.
+
+3
+
+4
+
+Notwendig waren vor allem Erweiterungen um msDesc/<header>-Elemente sowie im <text>-Bereich um
+Elemente für Überschreibungen, Hinzufügungen über/unter/neben der Zeile, Schreiberwechsel etc.
+Die Webseite befindet sich im Aufbau; zum geplanten Funktionsumfang siehe Abschnitt DH-Verfahren.
+
+4
+
+Die Re-Integration der für Hidden Kosmos vorgenommenen Erweiterungen in das DTABf-Tagset
+erlaubt die unmittelbare ‚Parallelpublikation‘ der Nachschriften im DTA. Dort sind bereits mehrere
+Werke Humboldts, so der Kosmos (1845–62) und eine wachsende Zahl seiner unselbstständigen
+Schriften,5 sowie zahlreiche Werke seiner Zeitgenossen verfügbar.
+Die linguistische Erschließung der Texte im DTA (inkl. automatischer Normierung historischer
+Schreibweisen) und die darauf basierende Suchmaschine ermöglichen eine optimale Nutzung der
+Nachschriften im Kontext der DTA-Korpora. Die Suchfunktion des DTA wird über eine Schnittstelle
+auch auf der Hidden-Kosmos-Webseite eingebunden, womit dort die Entwicklung einer eigenen
+(zwangsläufig basaleren) Volltextsuche nicht notwendig ist. Ein weiterer Vorzug der Publikation der
+Texte im DTA ist die Möglichkeit, die Dokumente mit Hilfe der webbasierten QualitätssicherungsPlattform DTAQ iterativ und möglichst kollaborativ zu optimieren: Transkriptions- und
+Auszeichnungsfehler können mit DTAQs Online-Editor direkt in der XML-Quelle behoben werden;
+ebenso können Normdaten-Referenzen für Personen- und Ortsnamen sowie weitere Verlinkungen
+und Kommentierungen vorgenommen bzw. ergänzt werden.
+Als weitere Publikationsplattform dient das Projekt Briefe und Texte aus dem intellektuellen Berlin um
+1800. Die Nachschriften der Kosmos-Vorträge werden dort den Vorlesungen F. A. Wolfs, Karl Solgers
+u. a. zur Seite gestellt. Der Datenaustausch wird durch die Orientierung beider Projekte am DTABf
+erleichtert.
+Die jeweils aktuelle Version der XML-Basis im DTA dient als Referenzobjekt für alle weiteren
+Veröffentlichungsplattformen, deren Datenstand möglichst automatisiert mit der DTA-Version
+synchronisiert werden soll. Auf diese Weise lässt sich das Problem divergierender Versionen bei der
+‚Spiegelung‘ von Daten auf verschiedenen Plattformen umgehen. Über das DTA bzw. das CLARIN-DRepository der BBAW ist die Integration des Textkorpus in die web- und zentrenbasierte
+Forschungsinfrastruktur CLARIN-D gewährleistet, womit eine weitere Dissemination sowie die
+langfristige Archivierung und Bereitstellung der Daten sichergestellt wird.
+
+DH-Verfahren
+Neben den bereits beschriebenen DH-Verfahren und -Methoden6 bieten sich vor allem die in den DH
+inzwischen etablierten automatischen Kollationsverfahren für die Analyse des Korpus an. Diese
+dienen dazu, Ähnlichkeiten und Differenzen zwischen Textzeugen zu ermitteln und zu visualisieren.
+Traditionellerweise, d. h. vor allem in Print-Editionen, werden Varianten zweier oder mehrerer
+Textzeugen in Kommentaren beschrieben und/oder in einem (notwendigerweise hochkomplexen)
+textkritischen Apparat ausgewiesen.7 Die automatische Kollation durch Programme wie CollateX und
+juXta macht die manuelle Auszeichnung von Varianten weitgehend überflüssig, ohne auf deren
+Mehrwert verzichten zu müssen.
+
+5
+6
+7
+
+Werke A. v. Humboldts im Deutschen Textarchiv siehe www.deutschestextarchiv.de/api/pnd/118554700.
+Siehe dazu z.B. Reiche et al. 2014.
+Deren Nutzung in der geisteswissenschaftlichen Forschungen ist wiederholt diskutiert worden; kürzlich wies
+Rüdiger Nutt-Kofoth auf der Tagung der AG germanistische Edition (vgl. Vanscheidt 2014) anhand von ca.
+540 einschlägigen Fachartikeln nach, dass nur 40% die (historisch-)kritischen Editionen heranzogen, davon
+wiederum nur 10% die Erläuterungen der Ausgaben und lediglich 5% die Textvarianten zitierten. Demnach
+wird der am aufwendigsten herzustellende Editionsbestandteil am wenigsten genutzt.
+
+5
+
+Abb. 7: CollateX Alignment Table: SBB-PK, Ms. Germ. qu. 2124 vs. Abschrift Hufeland, Privatbesitz C. Şengör.
+
+Tabellarische Darstellungen wie die hier abgebildete, Variantengraphen, Parallelisierungen von
+Textzeugen (siehe Abb. 8 und 9 im Anhang) und ‚Critical Apparatus‘ bieten explorative Zugänge zu
+den unterschiedlichen Fassungen der Kosmos-Vorträge. Stets auf der aktuellen Version des
+Dokuments basierend, werden je nach Kollationsparameter Unterschiede auf der Ebene einzelner
+Zeichen, Worte und/oder ganzer Absätze sichtbar.
+Die TEI-Annotation der Dokumente eröffnet noch weitere computergestützte Auswertungsmöglichkeiten: Die per <div type="session" n="[Zaehler]"> einheitlich annotierte
+Gliederung nach Vorlesungsstunden erleichtert dem Nutzer den Einstieg in parallele Lektüren der
+Nachschriften. Durch die Referenzierung von Personen und Orten kann direkt aus dem TEI ein
+normdatenbasiertes Gesamtregister aller Nachschriften generiert werden, was den systematischen
+Zugang zu den Quellen erleichtert. Eine Gesamtbibliographie der in den Vorträgen mit <bibl>-Tags
+versehenen Literaturangaben wird ein weiterer Zugangsweg zu den Kosmos-Vorträgen sein.
+
+Ausblick
+Über die beschriebene Nutzung als eigenständiges Forschungskorpus hinaus sollen die Nachschriften
+in einem Folgeprojekt als ‚Werkzeug‘ zur Erschließung der eigenhändigen Vortragsmanuskripte aus
+Humboldts Nachlass in der SBB-PK dienen. Die ursprünglichen Manuskripte wurden von Humboldt im
+Anschluss an die Vorträge während seiner Arbeit am Kosmos und anderen Publikationen stark
+überarbeitet und reorganisiert (vgl. Erdmann/Thomas 2014). Daher kann die im Hidden-KosmosProjekt angestrebte ‚Rekonstruktion‘ der Kosmos-Vorträge nicht aus Humboldts Manuskripten allein,
+sondern nur durch eine computergestützte Auswertung der umfangreichen Gesamtbasis aus
+Sekundärquellen (= Hörernachschriften) und Primärquellen (= Humboldts Vortragsnotizen) gelingen.
+
+6
+
+Abbildungen
+
+Abb. 8: CollateX Variant Graph
+(SBB-PK, Ms. Germ. qu. 2124 vs. Abschrift Hufeland, Privatbesitz C. Şengör)
+
+Abb. 9: Juxta Side-by-Side view
+(SBB-PK, Ms. Germ. qu. 2124 vs. Abschrift Hufeland, Privatbesitz C. Şengör)
+
+Bibliographie
+Literatur
+Anonym (1934): Alexander von Humboldts Vorlesungen über physikalische Geographie nebst Prolegomenen
+über die Stellung der Gestirne. Berlin im Winter von 1827 bis 1828. Erstmalige (unveränderte)
+Veröffentlichung einer im Besitze des Verlages befindlichen Kollegnachschrift. Berlin: Miron Goldstein.
+Dove, Alfred (1872): „Alexander von Humboldt auf der Höhe seiner Jahre. (Berlin 1827–59.)“, in: Bruhns, Karl
+(Hg.) (1872): Alexander von Humboldt: Eine wissenschaftliche Biographie. Leipzig: Brockhaus, 3 Bde, hier
+Bd. II., S. 93–484.
+Erdmann, Dominik und Christian Thomas (2010): Aussicht vom Zettelgebirge – Zur Datenverarbeitung in
+Alexander von Humboldts Manuskripten der Kosmos-Vorlesungen. In: Trajekte 20 (2010), S. 30–36.
+Erdmann, Dominik und Christian Thomas (2014) »… zu den wunderlichsten Schlangen der Gelehrsamkeit
+zusammengegliedert«. Neue Materialien zu den ›Kosmos-Vorträgen‹ Alexander von Humboldts, nebst
+Vorüberlegungen zu deren digitaler Edition. In: HiN – Humboldt im Netz. Internationale Zeitschrift für
+Humboldt-Studien (Potsdam – Berlin) XV, 28, S. 34-45. Online verfügbar unter http://hinonline.de/hin28/erdmann-thomas.htm [zuletzt abgerufen 27.10.2014].
+Haaf, Susanne, Alexander Geyken and Frank Wiegand (2014/15): The DTA ›Base Format‹: A TEI Subset for the
+Compilation of a Large Reference Corpus of Printed Text from Multiple Sources. To appear in: Journal of
+the Text Encoding Initiative (jTEI), Issue 8 [forthcoming].
+Hamel, Jürgen und Klaus-Harro Tiemann (Hg.) (1993): Alexander von Humboldt: Über das Universum. Die
+Kosmosvorträge 1827/28 in der Berliner Singakademie. Hrsg. von Jürgen Hamel u. Klaus-Harro Tiemann
+in Zusammenarbeit mit Martin Pape. Frankfurt a. M.: Insel.
+Harnack, Adolf (1900): Geschichte der Königlich Preussischen Akademie der Wissenschaften zu Berlin, Bd. I.2:
+Vom Tode Friedrichs des Großen bis zur Gegenwart. Berlin: Reichsdruckerei.
+Humboldt, Alexander von (1845–62): Kosmos. Entwurf einer physischen Weltbeschreibung. 5 Bände. Stuttgart
+(u.a.): Cotta. [Der Kosmos und weitere Schriften Alexander von Humboldts sind im Deutschen Textarchiv
+der BBAW verfügbar, siehe die Übersicht unter www.deutschestextarchiv.de/api/pnd/118554700
+(zuletzt abgerufen 27.10.2014).]
+Nutt-Kofoth, Rüdiger (2014, bislang nicht publizierter Vortrag): „Wie werden Editionen für die
+literaturwissenschaftliche Interpretation genutzt? Versuch einer Annäherung aufgrund einer
+Auswertung neugermanistischer Periodika“ auf der 15. internationalen Tagung der Arbeitsgemeinschaft
+für germanistische Edition „Vom Nutzen der Editionen“, 19.–22.2.2014, Universität Aachen.
+Pierazzo, Elena (2011): „A Rationale of Digital and Documentary Editions.“ In: Literary and Linguistic Computing
+(LLC) 26(4), S. 463–77. doi:10.1093/llc/fqr033, http://llc.oxfordjournals.org/content/26/4/463 [zuletzt
+abgerufen 27.10.2014].
+Pierazzo, Elena (2014): „Digital Documentary Editions and the Others.“ In: Scholarly Editing: The Annual of the
+Association for Documentary Editing, 35 (2014),
+http://www.scholarlyediting.org/2014/essays/essay.pierazzo.html [zuletzt abgerufen 27.10.2014].
+Reiche, Ruth, Rainer Becker, Michael Bender, Matthew Munson, Stefan Schmunk und Christof Schöch:
+"Verfahren der Digital Humanities in den Geistes- und Kulturwissenschaften." (= DARIAH-DE Working
+Papers Nr. 4). Göttingen, 2014. URN: urn:nbn:de:gbv:7-dariah-2014-2-6,
+http://webdoc.sub.gwdg.de/pub/mon/dariah-de/dwp-2014-4.pdf.
+
+Vanscheidt, Philipp (2014): Bericht zur Tagung „Vom Nutzen der Editionen“, in: Scriptorium. Digitale
+Rekonstruktionen mittelalterlicher Bibliotheken, http://scriptorium.hypotheses.org/364.
+
+Webressourcen [zuletzt abgerufen 28.10.2014]
+Anne Baillot (ed.): "Briefe und Texte aus dem intellektuellen Berlin um 1800". Berlin: Humboldt-Universität zu
+Berlin, http://tei.ibi.hu-berlin.de/berliner-intellektuelle/;
+Edition-specific TEI encoding guidelines, http://tei.ibi.hu-berlin.de/berliner-intellektuelle/encodingguidelines.pdf.
+CollateX, http://collatex.net/;
+collateX Console, http://collatex.net/demo/.
+Deutsches Textarchiv, http://www.deutschestextarchiv.de/;
+DTABf: DTA-Basisformat, http://www.deutschestextarchiv.de/doku/basisformat;
+DTAE: DTA-Erweiterungen, http://www.deutschestextarchiv.de/dtae;
+DTAQ: Deutsches Textarchiv – Qualitätssicherung, http://www.deutschestextarchiv.de/dtaq/about.
+Hidden Kosmos — Reconstructing Alexander von Humboldt's »Kosmos-Lectures«, http://www.culture.huberlin.de/hidden-kosmos.
+Juxta Collation Software for Scholars, http://www.juxtasoftware.org/.
+Shelley-Godwin Archive, http://shelleygodwinarchive.org/;
+Encoding the S-GA, http://shelleygodwinarchive.org/about#encodingthesga.
+Text Encoding Inititiative (TEI), http://www.tei-c.org/;
+TEI: P5 Guidelines, http://www.tei-c.org/Guidelines/P5/.
+textloop Martina Gödel, http://textloop.de/.
+

@@ -1,0 +1,874 @@
+DHd 2014
+Digital Humanities - methodischer Brückenschlag oder "feindliche
+Übernahme"?
+Chancen und Risiken der Begegnung zwischen Geisteswissenschaften und
+Informatik
+
+Vorschlag für eine Sektion:
+Vernetzung von historisch-biographischen Lexika
+und Fachportalen im Linked (Open) Data Framework
+- Praxis, Modelle und Optionen
+
+1. M. Lanzinner (Bonn): Einführung und Moderation
+2. M. Jorio (Bern): Das Historische Lexikon der Schweiz: vom nationalen zum
+europäischen Fachportal
+3. M. Schattkowsky (ISGV Dresden): Die Vernetzung der „Sächsischen
+Biografie“ – Praxis und Ausblick
+4. Th. Declerck (DFKI), R. Feigl, Ch. Gruber, E. Wandl-Vogt (Wien): Das
+WHO´s WHO der Habsburgermonarchie im Linked Data Framework
+5. B. Ebneth, M. Reinert (München): Die Deutsche Biographie - von der
+Normdatenvernetzung zum Sparql-Endpoint
+
+Einführung und Moderation
+Prof. Dr. Maximilian Lanzinner
+(Lehrstuhl für Geschichte der Frühen Neuzeit, Rheinische Friedrich-Wilhelms-Universität Bonn,
+Historische Kommission bei der Bayerischen Akademie der Wissenschaften)
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+1
+
+Das Historische Lexikon der Schweiz:
+vom nationalen zum europäischen Fachportal
+Dr. Marco Jorio
+(Chefredaktor des Historischen Lexikons der Schweiz)
+
+In den letzten Jahren hat sich das Historische Lexikon der Schweiz (HLS) in
+deutscher, französischer und italienischer Sprache als Referenzinformationsmittel zur Geschichte der Schweiz etabliert. Die insgesamt rund 111’000
+Artikeln (37'000 je Sprachausgabe) von 2600 Autoren behandeln ca. 26’000
+Biographien, 2500 Familien, 5500 Orte und 3000 Themata. Mit dem 13. Band
+wird im Oktober 2014 die reich illustrierte Buchpublikation abgeschlossen. Seit
+1998 sind die fertig bearbeiteten Artikel in der elektronischen Ausgabe des HLS,
+im sog. e-HLS (www.hls.ch), dem weltweit ersten mehrsprachigen Lexikon im
+Netz, open access abrufbar. Mit dem Aus- und Aufbau des e-HLS entwickelte
+sich dieses zum nationalen Portal und steht im Zentrum eines umfassenden
+Informationsnetzes.
+Auf der Basis des HLS wird seit 2010 im Auftrag der Schweizer Regierung das
+Neue Historische Lexikon der Schweiz vorbereitet. Dieses wird nur noch digital
+publiziert und zusätzlich auch multimediale Informationen, u.a auch von
+externen Partnern, anbieten. Wie das „alte“ wird es aber mehrsprachig,
+wissenschaftlich und dem open-access-Prinzip verpflichtet sein. Zur Zeit werden
+intern und mit externen Partnern (u.a. Eidgenössische Technische Hochschule,
+Nationalbibliothek, Schweizerische Akademie der Geistes- und Sozialwissenschaften) Fragen wie Austauschformate, Schnittstellen, Normdaten,
+Georeferenzierungen, Semantic Web etc. abgeklärt.
+
+HLS und DH in der Schweiz
+Das HLS ist seit den 1990er Jahren ein Pionier im Bereich der DH (bevor es
+diesen Namen überhaupt gab!). Im November 2013 hat die Schweizerische
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+6
+
+Akademie der Geistes- und Sozialwissenschaften (SAGW) in einer Tagung
+„Digital Humanities: Neue Herausforderungen für den Forschungsplatz
+Schweiz“ eine grundsätzliche Standortbestimmung vorgenommen. Themen
+waren dabei u. a. DH-Forschungsinfrastrukturen, Data mining in den DH,
+Webservices, Auswahl geeigneter Software, Data Curation, computerbasierte
+Forschung
+
+in
+
+geisteswissenschaftlichen
+
+Disziplinen,
+
+internationale
+
+Kooperationen. Dabei soll dem Neuen HLS künftig eine zentrale Rolle im
+Rahmen der Schweizer Geschichte und der Geschichtswissenschaft eingeräumt
+werden.
+Bereits jetzt gibt es einen engen Austausch des HLS mit anderen Schweizer DHProjekten bzw. digitalen Internetressourcen, die z.T. in grossem Umfang auf das
+HLS verlinken. Das 2013 abgeschlossene Buchprojekt Historische Lexikon des
+Fürstentums Liechtenstein entstand auf der Basis des HLS und wird jetzt mit
+Unterstützung des HLS digitalisiert. Im Auftrag der SAGW entwickelten die
+Diplomatischen Dokumente der Schweiz (DoDiS) mit dem HLS den Prototyp
+des
+
+Webservice
+
+Metagrid
+
+für
+
+geisteswissenschaftlichen
+
+Ressourcen,
+
+Familiennamenbuch
+
+das
+
+und
+
+die
+der
+
+Online-Vernetzung
+jetzt
+
+Ortsnamenlexikon
+
+ausgebaut
+(Glossarium
+
+wird.
+
+von
+Das
+
+Helvetiae
+
+Historicum) werden bereits seit Jahren als Webservices des HLS betrieben. Die
+Zusammenarbeit mit andern Anbietern wie dem Schweizerischen Institut für
+Kunstgeschichte (SIKART), den Schweizerischen Rechtsquellen und der
+Bibliographie der Schweizergeschichte in der Nationalbibliothek ist eingeleitet
+oder in Diskussion.
+
+Internationale Kooperation
+Das HLS steht im Austausch mit zahlreichen biographischen (Online-)Lexika in
+Europa. Aufgrund einer Kooperationsvereinbarung mit der Bayerischen
+Staatsbibliothek (BSB), der Österreichischen Akademie der Wissenschaften
+(ÖAW) und der Historischen Kommission bei der Bayerischen Akademie der
+Wissenschaften (BAdW) betreibt das HLS seit Juli 2009 das mehrsprachige
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+7
+
+Biographie-Portal (www.biographie-portal.eu) mit. Um die weitere Vernetzung
+zu befördern, hat das HLS
+
+2011 begonnen, seine Einträge mit den bereits
+
+bestehenden Normdaten der Gemeinsamen Normdatei (GND) und des Virtual
+International Authority File (VIAF) zu versehen und beteiligt sich seit Ende
+2013 auch direkt an der GND-Redaktion.
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+8
+
+Die Vernetzung der „Sächsischen Biografie“
+– Praxis und Ausblick
+Prof. Dr. Martina Schattkowsky
+(Institut für Sächsische Geschichte und Volkskunde, Dresden)
+
+Das Institut für Sächsische Geschichte und Volkskunde (ISGV) stellte bereits im
+Jahr 2005 das Online-Personenlexikon Sächsische Biografie, die bedeutende
+sächsische Persönlichkeiten vom 10. Jahrhundert bis zur Gegenwart erfasst, ins
+Internet. Über dieses Portal sind derzeit über 10.500 Personeneinträge und ca.
+1.250 Personenartikel recherchierbar.
+Im Beitrag des ISGV sollen die derzeitigen Vernetzungsstrategien sowie einige
+Vorhaben umrissen werden, sowohl intern (mit anderen Online-Projekten des
+ISGV, insbesondere des „Digitalen Historischen Ortsverzeichnisses von
+Sachsen“) als auch extern.
+Aktueller Stand
+Die Sächsische Biografie beteiligt sich seit geraumer Zeit – zum Beispiel im
+Rahmen der AG Regionalportale – an der Diskussion über die bessere
+Vernetzung
+
+bzw.
+
+Zusammenarbeit
+
+mit
+
+anderen
+
+Online-Personenlexika.
+
+Ergebnisse konnten zum Beispiel durch die im Mai 2012 erfolgte
+Implementierung der Sächsischen Biografie in das europäische „BiographiePortal“ (http://www.biographie-portal.eu) erzielt werden.
+Austauschformate
+Zum Austausch mit anderen Online-Projekten verwendet die Sächsische
+Biografie zwei Formate: Zum einen werden – mittels XML-Dateien –
+Kerndatensätze zu Personen, die in der Sächsischen Biografie verzeichnet sind,
+an das europäische Biographie-Portal geschickt, die Artikel sind über die dortige
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+9
+
+Suchmaske abrufbar. Zum anderen wird durch eine BEACON-Datei die
+Verlinkung zu anderen Projekten mittels Gemeinsamer Normdatei sichergestellt.
+Zudem ist die Implementierung von Perma-Links geplant, um die langfristige
+Abrufbarkeit der Artikel zu gewährleisten.
+Normdaten
+Eine Verlinkung zu anderen Onlineprojekten wie Bibliotheken oder Biografien
+erfolgt mithilfe der Gemeinsamen Normdatei (GND). Diese Links werden
+mithilfe des BEACON-Formats, das von freiwilligen Mitarbeitern der Wikipedia
+gewartet und weiterentwickelt wird, direkt in den Personenartikeln angezeigt,
+die Generierung erfolgt über eine Echtzeit-Abfrage (SeeAlso-Service).
+Problematisch ist dabei der bisweilen zögerliche Umgang einzelner Institutionen
+mit der Heraus- bzw. Freigabe von GND-IDs.
+Datenanalyse bzw. Georeferenzierung
+Eine umfangreiche Georeferenzierung der in den Personenartikeln genannten
+Orte ist derzeit noch in Planung und sollte zukünftig in Zusammenarbeit mit
+anderen Portalen einheitlich gelöst werden, um eine Vernetzung dieser Daten
+analog zur Verlinkung von Personen mittels GND zu ermöglichen. Alle 6.000 in
+Sachsen in den Grenzen von 1990 gelegenen Orte verzeichnet das ebenfalls am
+ISGV beheimatete „Historische Ortsverzeichnis von Sachsen“. Hierfür existiert
+bereits eine institutsinterne Verlinkung (ist aber im Netz noch nicht aktiv).
+Personale Relationen
+Verlinkungen zwischen Personen, die in Artikeln in der Sächsischen Biografie
+vorkommen, werden derzeit händisch eingepflegt. Durch eine entsprechende
+Markierung in den Artikeln ist es zurzeit möglich, Verweise auf andere in der
+Sächsischen Biografie verzeichnete Personen zu generieren und Kerndaten
+(Namensformen, Lebensdaten, Status des Artikels) der jeweiligen Personen
+darzustellen. Familienbeziehungen, Stammbäume o. ä. sind derzeit aber noch
+nicht darstellbar.
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+10
+
+Visualisierung
+Eine Geo-Visualisierung ist derzeit noch in Planung. Es ist jedoch – eher mittelund langfristig – bereits daran gedacht worden, komplexe, das heißt mehrere
+Kategorien umfassende Abfragen in Kartenansichten darzustellen. Hierfür wäre
+eine interne Verlinkung zum Historischen Ortsverzeichnis von Sachsen denkbar.
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+11
+
+Das WHO´s WHO der Habsburgermonarchie im Linked Data Framework
+Überlegungen zum Mehrwert einer integrierten Publikation des
+Kronprinzenwerks mit dem Österreichischen Biographischen Lexikon
+(ÖBL)
+Thierry Declerck (1), Roland Feigl (2), Christine Gruber (2),
+Eveline Wandl-Vogt (3)
+
+1) Deutsches Forschungszentrum für Künstliche Intelligenz (DfKI GmbH)
+2) Institut für Neuzeit- und Zeitgeschichtsforschung (INZ) @ ÖAW
+3) Austrian Center for Digital Humanities (ACDH) @ ÖAW
+
+Die 1883 vom österreichisch-ungarischen Kronprinzen Rudolf angeregte
+„österreichisch-ungarische Monarchie in Wort und Bild“, allgemein als
+„Kronprinzenwerk“ (KPW) bezeichnet, ist eine umfassende landeskundliche
+Enzyklopädie in deutscher ([1]) und ungarischer Sprache ([2]). Es gab zwei
+Redaktionen und dementsprechend eine divergierende sprachliche Realisierung.
+Für den Beitrag wird im Folgenden auf die deutschsprachige Ausgabe fokussiert.
+Das KPW versammelte zu Ende des 19. Jahrhunderts die namhaftesten
+Wissenschaftler, Schriftsteller und Zeichner der Zeit. Es wurde von 432
+Mitarbeitern, darunter auch Kronprinz Rudolf selbst, verfasst; die über 4.500
+Illustrationen stammen von 264 Künstlern.
+In
+
+diesem
+
+Beitrag
+
+wird
+
+der
+
+Mehrwert
+
+durch
+
+Vernetzung
+
+und
+
+(programmgestützte) Informationerfassung aus unterschiedlichen Quellen,
+Medien und Domänen am Beispiel der Verlinkung von KPW und dem
+Österreichischen Biographischen Lexikon (ÖBL, [3,4]) über Linked (Open)
+Data (LOD, [5]) diskutiert.
+Aus dem Text des KPW werden Personennamen und damit verbundene
+Informationen
+
+automatisch
+
+extrahiert
+
+und
+
+-
+
+beispielhaft
+
+für
+
+weitere
+
+Vernetzungen mit historisch-biographischen Lexika und Fachportalen sowie
+weitere
+
+unstrukturierte
+
+textuelle
+
+Ressourcen
+
+-
+
+mit
+
+den
+
+vorhandenen
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+12
+
+strukturierten Daten vom ÖBL verbunden. Dadurch wird am Beispiel der
+Mitarbeiter des KPW und der thematisierten Personen der Stellenwert des
+Werkes für die späte Habsburgermonarchie und darüber hinaus (Anfänge der
+Ethnographie in Österreich) exemplifiziert.
+Die Personendaten aus KPW und ÖBL werden in einem RDF / SKOS – Modell
+repräsentiert, damit sie verlinkt und integriert werden können. Zu diesem Zweck
+mussten wir erst die Datenbestände des ÖBL in RDF / SKOS portieren, wobei
+auch das bei der Gemeinsamen Normdatei (GND, [6]) verwendete RDF/XML
+Modell berücksichtigt wurde. SKOS wird verwendet, um die Verbindung zu
+Biographiedaten in der Linked Data Cloud differenzierter und flexibler
+darzustellen,
+broaderMatch,
+
+z.B.
+
+verwenden
+
+narrowerMatch,
+
+wir
+
+die
+
+SKOS
+
+exactMatch,
+
+„mapping
+
+properties“
+
+relatedMatch,
+
+closeMatch,
+
+zusätzlich zu owl:sameAs, um Verbindungen zwischen den verschiedenen
+Datensätzen zu repräsentieren.
+Unsere Arbeit zielt darauf, die integrierten Daten aus KPW und ÖBL mit
+entsprechenden bestehenden RDF-Datensätzen internationaler Netzwerke, z. B.
+jenem der Deutschen Biographie ([7]), zu verlinken und vergleichen.
+Im Zentrum der Betrachtung steht die Diskussion des Mehrwerts durch
+standardisierte und optimierte Schnittstellen: Am Beispiel konkreter Personen
+(Karl v. Siegl, der mit zahlreichen Zeichnungen zu dem KPW beigetragen hat,
+aber der auch von einem anderen Autor beschrieben wird, und der Familie
+Šubic) diskutieren wir unterschiedliche Repräsentationen der vorliegenden
+Daten in ausgewählten Modellen (GND [6], DFKI-BiographieOntologie [8],
+foaf [9], VIAF [10]) und schlagen eine Lösung für eine gemeinsame
+datenübergreifende Verlinkung und Analyse biographierelevanter Daten vor.
+Dies setzt eine genaue Analyse der jeweils ausgewählten Repräsentationsdichte
+voraus. So zum Beispiel verwendet für die Repräsentation des Todesdatums die
+GND
+„<rdaGr2:dateOfDeath>(JJJJ|JJJJ-MM-TT)</rdaGr2:dateOfDeath>“.
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+13
+
+Im ÖBL werden die Angaben für Geburts- und Todesdatum nur als textueller
+Inhalt eines XML Elements „Kurzdefinition“ angegeben:
+„<Kurzdefinition>Šubic Jurij (Georg), Maler, Zeichner und Illustrator.
+Geb. Pölland, Krain (Poljane nad Škofjo Loko, SLO), 13. 4. 1855; gest.
+Leipzig, Sachsen (D), 8. 9. 1890; röm.-kath.</Kurzdefinition>“
+Die DFKI Biography Ontology verwendet dagegen in einer konsistenten Art und
+Weise nur die xsd Datentypen und setzt „xsd:gYear“ ein, wenn nur das Jahr
+eines Ereignis bekannt ist, aber nicht Monat und/oder Tag. Ansonsten wird der
+Datentyp „xsd:date“ verwendet.
+Unsere Empfehlung ist es hier, alle datumsrelevanten Informationen auf eine
+standardisierte Repräsentation abzubilden, so dass wir in der Lage sind, die
+Inhalte der verschiedenen Quellen zu vergleichen und zu integrieren. Diese
+Bemerkung gilt nicht nur für Datumsausdrücke, sondern für alle Informationen,
+die in eine strukturelle Repräsentation überführt werden können, so dass die
+Datensätze nicht nur über die GND IDs verlinkt werden können, sondern auch
+umfassend integriert werden können. Wir erwarten von diesem Schritt auch eine
+genauere Identifizierung von gleichen Personen über Datensätze hinweg.
+Über diese Repräsentationsanalysen hinaus, die primär zu Fragen der
+Publikation der Daten in der Linked Data Cloud gehören,
+
+zielen die
+
+vorgestellten Arbeiten und Ergebnisse auch darauf ab, aus dem KPW ein
+bilinguales, paralleles Online-Corpus von Personennamen zu extrahieren und
+das
+
+modifizierte und
+
+erweiterte ÖBL als
+
+Forschungsinfrastruktur im
+
+CLARIN.AT-Netzwerk einzubetten.
+
+Referenzen:
+[1] Die österreichisch-ungarische Monarchie in Wort und Bild, begonnen auf
+Anregung und unter Mitwirkung von Rudolf von Habsburg, fortgesetzt unter
+dem Protektorat von Erzherzogin Stephanie. Siehe digitalisierte Edition bei
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+14
+
+http://austria-forum.org/af/Web_Books/Kronprinzenwerk (zuletzt eingesehen
+am: 11.12.2013).
+[2] Az Osztrák-Magyar Monarchia írásban és képben.
+http://www.tankonyvtar.hu/hu/tartalom/tkt/osztrak-magyar/adatok.html (zuletzt
+eingesehen am: 11.12.2013).
+[3] Österreichisches biographisches Lexikon: 1815-1950. Wien / Graz. 1957-.
+[4] Österreichisches biographisches Lexikon: 1815-1950 Online-Edition. 2003-.
+http://www.biographien.ac.at/oebl?frames=yes (zuletzt eingesehen am:
+11.12.2013).
+[5] Linked (Open) Data: http://linkeddata.org/ (zuletzt eingesehen am:
+11.12.2013).
+[6] Gemeinsame Normdatei:
+http://www.dnb.de/DE/Standardisierung/GND/gnd_node.html (zuletzt
+eingesehen am: 11.12.2013).
+[7] Neue Deutsche Biographie: http://www.deutsche-biographie.de (zuletzt
+eingesehen am: 11.12.2013).
+[8] DFKI Biography Ontology: http://www.dfki.de/lt/onto/biography.owl
+(zuletzt eingesehen am: 11.12.2013).
+[9] Friend Of A Friend Modell: http://www.foaf-project.org/ (zuletzt eingesehen
+am: 11.12.2013).
+[10] Virtual International Authority File: http://viaf.org/ (zuletzt eingesehen am:
+11.12.2013).
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+15
+
+Die Deutsche Biographie - von der Normdatenvernetzung
+zum Sparql-Endpoint
+
+Dr. Bernhard Ebneth, Matthias Reinert
+(Historische Kommission bei der Bayerischen Akademie der Wissenschaften)
+
+Der Vortrag umreißt kurz die Bemühungen der Redaktion der Neuen Deutschen
+Biographie in Zusammenarbeit mit der Bayerischen Staatsbibliothek (BSB), das
+von ihr bearbeitete biographische Lexikon von der Printfassung her
+fortzuentwickeln, es um eine Internetpräsentation zu ergänzen mit der
+Zielrichtung, es auf eine rein digitale Publikation umzustellen.
+Meilensteine der Entwicklung, die durch die Kooperation mit der BSB und mit
+Förderung durch die DFG erreicht wurden, sind
+•
+
+Kumulierung und Online-Bereitsellung der Register zur NDB und dem
+Vorgängerlexikon ADB (seit 2001)
+
+•
+
+Image-Scans der gedruckten Bände der ADB und NDB (seit 2001 bzw.
+2008)
+
+•
+
+Volltext-Erfassung und XML-Kodierung der gedruckten Bände (bis
+2009)
+
+•
+
+Abgleich der Personennamen gegen die GND (damals PND) und
+Ergänzung derselben (seit 2008)
+
+•
+
+Digitalisierung der Arbeitskartei der Redaktion und GND-Abgleich
+(2010/11)
+
+•
+
+Integration zentraler personenbezogener Bestände (seit 2011)
+
+•
+
+Aufbau einer RDF-Schnittstelle (seit 2011)
+
+•
+
+computerlinguistische Aufbereitung der Artikeltexte und Genealogien
+
+Die Gemeinsame Normdatei (bis 2012 für Personen: PND) der Bibliotheken und
+-verbünde, koordiniert von der Deutschen Nationalbibliothek, erweist sich als
+erfolgreiches Erschließungsinstrument für Personen und setzte sich ab 2010 auch
+in anderen Online-Angeboten und in den Verbünden durch. Mittlerweile kann
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+16
+
+die
+
+GND-Erschließung
+
+auch
+
+für
+
+Orts-
+
+und
+
+Sacherschließung
+
+mit
+
+bibliothekarischem Anschluss genutzt werden und die GND schlägt über
+eindeutige Identifier eine Brücke in das Semantic Web.
+Die retrospektiven Aufbereitungsarbeiten schlagen auf die redaktionelle Arbeit
+nieder: mittlerweile werden bei den täglichen Auswertung und Neuerfassung in
+der Redaktion bereits die GND-Einträge zu den Namen/Personen geprüft, die
+GND-Nummer und ggf. Namensvarianten übernommen.
+Mit eigenen IDs insbesondere aber der Hilfe der GND-IDs, die sukzessive teils
+in Eigenleistung der BSB und der NDB auch in neu erscheinenden Bänden für
+die Personen des Registers nachgetragen wird, ist die Kumulierung der Einträge
+aus verschiedenen eigenen Ressourcen für www.deutsche-biographie.de
+möglich. Zudem lassen sich die personenbezogenen Ressourcen unserer
+Kooperationspartner (Bundesarchiv, Deutsches Literaturarchiv Marbach, Foto
+Marburg,
+
+Germanisches
+
+Nationalmuseum,
+
+Deutsches
+
+Rundfunkarchiv,
+
+Deutsches Museum bis jetzt) leicht integrieren.
+Darüber hinaus kann die GND auch grundlegend zur computerlinguistischen
+Analyse beitragen. Aus ihr lassen sich Wörterbücher für Institutionen, Orte
+(Gebietskörperschaften) und Namen (Vor- wie Nachnamen) leicht generieren
+und verarbeiten. Hat man - wie bei uns mit Hilfe lokaler Grammatiken - Named
+Entities im Text gefunden (NER), kann die GND auch bei einem weiteren
+Schritt - der Disambiguierung (NED) unterstützend herangezogen werden.
+Die beiden Schritte NER und NED führen zu schematisierten Aussagen über die
+Inhalte der Biographien: Wer war Schüler oder Lehrer der Biographierten?
+Welche IDs und Verknüpfungen zu anderen Personen im Korpus ergeben sich?
+Welches sind die Geburts-, Sterbe- und Wirkungsorte? Wie lassen sie sich auf
+Karten darstellen? (Um das letzte zu erreichen werden die Orte zudem gegen
+Openstreetmap und Geonames abgeglichen; die GND hat hier zur Zeit noch
+keine Geokoordinaten und relativ wenige Einträge.)
+Mit Hilfe schematisierter Aussagen, die in einem Triple-Store vorgehalten
+werden, lassen sich nun neue, bspw. netzwerkanalytische Fragestellungen an das
+Biographien-Korpus richten. Resulate können auch in Visualisierungen
+dargestellt werden, z. B. in Ego-Netzwerken.
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+17
+
+Literatur
+− GND: (http://www.dnb.de/DE/Standardisierung/GND/gnd_node.html)
+− BEACON Link dump format, Draft 2012
+(http://gbv.github.io/beaconspec/beacon.html)
+− Guenthner, Franz; Maier, Petra (Hgg.): Das CISLEX Wörterbuchsystem.
+München 1994. (http://www.cis.uni-muenchen.de/download/cisberichte/94-076.pdf).
+− Geierhos, Michaela: BiographIE - Klassifikation und Extraktion
+karrierespezifischer Informationen. München 2010.
+− Brümmer, Martin: Realisierung eines RDF-Interfaces für die Neue
+Deutsche Biographie, http://skil.informatik.unileipzig.de/blog/historie/skil2011/zusammenfassungen-derbeitrage/#vortrag4
+− Ebneth, Bernhard: Aktueller Stand der Genealogien in der Neuen
+Deutschen Biographie – Arbeit mit der Online-Version, 2012,
+(http://www.ndb.badw-muenchen.de/Genealogentag-NDB-2012.pdf)
+− Ebneth, Bernhard: Das europäische Biographie-Portal mit Allgemeiner
+Deutscher Biographie und Neuer Deutscher Biographie Online, in:
+Catalogus Professorum Lipsiensis. Konzeption, technische Umsetzung
+und Anwendungen für Professorenkataloge im Semantic Web, hg. v. Ulf
+Morgenstern u. Thomas Riechert, Leipzig 2010, S. 159-168.
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:38:00 / 3085 Wörter / 22405 Zeichen
+
+18
+
+DHd 2014
+Digital Humanities - methodischer Brückenschlag oder "feindliche
+Übernahme"?
+Chancen und Risiken der Begegnung zwischen Geisteswissenschaften und
+Informatik
+
+Vorschlag für eine Sektion:
+Vernetzung von historisch-biographischen Lexika
+und Fachportalen im Linked (Open) Data Framework
+- Praxis, Modelle und Optionen
+
+1. M. Lanzinner (Bonn): Einführung und Moderation
+2. M. Jorio (Bern): Das Historische Lexikon der Schweiz: vom nationalen zum
+europäischen Fachportal
+3. M. Schattkowsky (ISGV Dresden): Die Vernetzung der „Sächsischen
+Biografie“ – Praxis und Ausblick
+4. Th. Declerck (DFKI), R. Feigl, Ch. Gruber, E. Wandl-Vogt (Wien): Das
+WHO´s WHO der Habsburgermonarchie im Linked Data Framework
+5. B. Ebneth, M. Reinert (München): Die Deutsche Biographie - von der
+Normdatenvernetzung zum Sparql-Endpoint
+
+Einführung und Moderation
+Prof. Dr. Maximilian Lanzinner
+(Lehrstuhl für Geschichte der Frühen Neuzeit, Rheinische Friedrich-Wilhelms-Universität Bonn,
+Historische Kommission bei der Bayerischen Akademie der Wissenschaften)
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:37:00 / 3085 Wörter / 22405 Zeichen
+
+1
+
+Vernetzung von historisch-biographischen Lexika
+und Fachportalen im Linked (Open) Data Framework
+- Praxis, Modelle und Optionen
+
+Die intelligente Vernetzung zwischen autonomen Internetressourcen erhöht nicht
+nur Sichtbarkeit und Reichweite der einzelnen beteiligten Projekte, sondern
+generiert durch neue Webservices und die Aggregation von Daten auch einen
+Mehrwert für neue Erkenntnisse und Fragestellungen. Als aktiver Beitrag zur
+Forschungsunterstützung
+
+werden
+
+in
+
+den
+
+Geschichtswissenschaften
+
+auf
+
+regionaler, nationaler und europäischer Ebene derzeit neue Informationssysteme
+und Infrastrukturen geplant und entwickelt. Für heterogene und multimediale
+personenbezogene Ressourcen wie Fach- und Regionalportale, Lexika, Bibliound Mediagraphien, Editionen, Regesten sowie Quellen-, Bild-, Ton- und
+Filmnachweise sowie verschiedenartige Digitalisate soll in dieser Sektion
+vorgestellt und diskutiert werden, wie eine entsprechende Vernetzung und
+Integration zwischen diesen Ressourcen möglichst systematisch, effizient und
+stabil geleistet werden kann. Dabei soll für die beteiligten Partner die Autonomie
+und Kontrolle über ihren jeweiligen Content in vollem Umfang gewahrt bleiben
+und für den User klar erkennbar sein, zu welchen Teilen und aus welchen
+Quellen der Portalinhalt zusammengestellt ist. Aktuelle Beispiele wären
+Metagrid.ch, die Deutsche Biographie oder das Biografisch Portaal van
+Nederland.
+Für Fragen und Probleme der Vernetzung wie die Integration und kollaborative
+Forschung an personenbezogenen Daten sollen am Beispiel von historischbiographischen Lexika bzw. Fachportalen die folgenden Aspekte untersucht und
+diskutiert werden:
+Datenformate: Welche Rolle kommt Linked (Open) Data im Prozess der
+Erstellung, Rezeption und Publikation zu? Welche Rückwirkungen auf
+Dokumentenformate und Metadaten ergeben sich daraus?
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:37:00 / 3085 Wörter / 22405 Zeichen
+
+2
+
+Austauschformate: Welche Austauschformate sind zu empfehlen? Wie kann eine
+langfristige
+
+Kompatibilität
+
+von
+
+archivischen,
+
+bibliothekarischen
+
+und
+
+forschungsnahen Standards bei unterschiedlichen Zugängen und Interpretationen
+gewährleistet werden?
+Normdaten: Wie können persistente Authority Files / Normdaten (wie GND,
+VIAF) für die langfristige Vernetzung und Datenintegration effizient eingesetzt
+werden? Welche Anwendungserfahrungen und Probleme ergeben sich?
+Datenanalyse: Was können Georeferenzierung und computerlinguistische
+Analyseverfahren leisten?
+Personale
+
+Relationen:
+
+Wie
+
+können
+
+Beziehungen
+
+zwischen
+
+Personen
+
+untereinander sowie zu Wirkungsorten, Körperschaften (Institutionen, Organisationen) und Werken eindeutig ermittelt und allgemein verwendbar kodiert
+und ausgetauscht werden?
+Visualisierung: Wie können Beziehungen allgemein verständlich visualisiert
+werden? Welche Aussagekraft haben Visualisierungen heterogener Daten? Wie
+lassen sich sinnvolle Fragestellungen möglichst breit durch Datenlieferanten
+bedienen?
+Forschungskommunikation: Wie weit sind Social Media-Komponenten für die
+Vermittlung und Reintegration von neuen
+
+Forschungsergebnissen und
+
+Fragestellungen hilfreich? Welche Tools, APIs und Services sind im
+biographisch-lexikalischen Bereich empfehlenswert? Wie können Utility und
+Usability bei begrenzten finanziellen und personellen Mitteln langfristig
+verbessert werden.
+Rechte und Attribution: Wie lassen sich Daten über institutionelle Grenzen und
+domänenübergreifend austauschen, gemeinsam nutzen und gemäß den Regeln
+guter
+
+wissenschaftlicher
+
+Arbeit
+
+angemessen
+
+zitieren?
+
+Wie
+
+werden
+
+Datenaufbereiter, -kodierer und -analysten in den geisteswissenschaftlichen
+Forschungsstrukturen honoriert?
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:37:00 / 3085 Wörter / 22405 Zeichen
+
+3
+
+Für
+
+die
+
+Gründung
+
+und
+
+Fortführung
+
+geschichtswissenschaftlicher
+
+und
+
+lexikalischer Projekte ist das geänderte mediale Umfeld von Beginn an
+mitzudenken und sowohl für die Etablierung als auch für die dauerhafte Pflege
+eine
+
+personell
+
+und
+
+finanziell
+
+angemessen
+
+ausgestattete
+
+IT-Kompetenz
+
+einzuplanen. In den neuen (internationalen) Forschungs-, Publikations- und
+Kommunikationsstrukturen
+
+sollte
+
+eine
+
+langfristige
+
+Bereitstellung
+
+und
+
+Dokumentation der Forschungsdaten und -ergebnisse garantiert sein. Für den
+internationalen und interdisziplinären Austausch entstehen derzeit geeignete
+Foren
+
+(z.
+
+B.
+
+Zentren
+
+für
+
+digitale
+
+Geisteswissenschaften,
+
+Blogs,
+
+Wissenschaftsportale).
+Die digitalen Geschichtswissenschaften im deutschsprachigen Raum können und
+sollten Erfahrungen und Perspektiven in anderen Ländern in Informatik,
+Editions- und Naturwissenschaften sowie aus benachbarten Disziplinen wie
+Philologien,
+
+Musikwissenschaften,
+
+Altertumswissenschaften,
+
+Historischen
+
+Grundwissenschaften, Theologie und Kunstgeschichte sowie in Archiv- und
+Bibliothekswesen
+
+sowie
+
+Dokumentologie
+
+und
+
+Museologie
+
+produktiv
+
+berücksichtigen.
+
+Referenzen:
+Biographie-Portal < http://www.biographie-portal.eu>
+(eingesehen: 18.12.2013)
+Biografisch Portaal van Nederland < http://www.biografischportaal.nl/>
+(eingesehen: 17.12.2013)
+Metagrid.ch < http://www.metagrid.ch/> (eingesehen: 17.12.2013)
+Historisches Lexikon der Schweiz <http://www.hls-dhs-dss.ch> (eingesehen:
+18.12.2013)
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:37:00 / 3085 Wörter / 22405 Zeichen
+
+4
+
+Österreichisches Biographisches Lexikon 1815-1950 Online-Edition /
+Österreichisches Biographisches Lexikon ab 1815 (2. überarbeitete Auflage –
+online) <http://www.biographien.ac.at>
+(eingesehen: 18.12.2013)
+Deutsche Biographie <http://deutsche-biographie.de>
+(eingesehen: 18.12.2013)
+Sächsische Biografie <http://saebi.isgv.de>
+(eingesehen: 18.12.2013)
+
+DHd 2014 - Sektion Historisch-biographische Lexika - 2013-12-27.doc /
+Vernetzung von historisch-biographischen Lexika und Fachportalen / Lanzinner, Jorio, Schattkowsky, Declerck, Gruber,
+Feigl, Wandl-Vogt, Ebneth, Reinert / 27.12.2013 14:37:00 / 3085 Wörter / 22405 Zeichen
+
+5
+

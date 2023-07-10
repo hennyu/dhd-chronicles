@@ -1,0 +1,53 @@
+The Glossarium Graeco-Arabicum
+(Proposal for the Jahrestagung der Digital Humanities im deutschsprachigen Raum)
+Applicants:
+1) Yury Arzhanov
+Contact: Ruhr-Universität-Bochum, Fakultät für Philologie, Sem. für Orientalistik,
+Universitätsstr. 150, GB 2/34, Bochum, 44780 Deutschland; e-mail: yrarzhanov@gmail.com.
+Scientific interests: Ancient translations of the Greek philosophical and scientific works into
+Syriac and Arabic.
+2) Torsten Roeder
+Contact: Berlin-Brandenburgische Akademie der Wissenschaften, TELOTA, Jägerstraße 22/23,
+10117 Berlin; e-mail: roeder@bbaw.de.
+Scientific interests: Digital Humanities, Musicology, Italian Language and Literature.
+
+The Project
+From the eighth to the tenth century A. D., Greek scientific and philosophical works were
+translated to large extent into Arabic. This activity resulted in the incorporation and
+reorganization of the classical heritage in the new civilization which, using Arabic, spread with
+Islam.1 The object of project Glossarium Graeco-Arabicum is to make readily available to
+scholars the direct information which the Graeco-Arabic translations contain for several areas
+of research. The Glossarium Graeco-Arabicum is hosted by the Ruhr-Universität Bochum,
+starting with DFG funds in 1994, and was continued within the ERC project “Greek into Arabic ­
+Philosophical Concepts and Linguistic Bridges” since 2010.2
+Digital Resources
+The database Glossarium Græco-Arabicum makes available the files of a lexical project,
+intended to open up the lexicon of the mediæval Arabic translations from the Greek. 3 It
+contains images of ca. 80,000 filecards which have not yet been published in the analytical
+reference dictionary A Greek and Arabic Lexicon,4 and comprises Arabic roots from the letter
+jîm to the end of the Arabic alphabet. The database provides search facilities for Greek words,
+Arabic words and roots, as well as the authors and titles of the source texts. It is thus a possible
+basis for generating entries in Greek-Arabic dictionaries. To extend the effectiveness of the
+database, it is intended to link the data with the Perseus Digital Library and other online
+resources as well.
+Technical Aspects
+The coexistence of several alphabetic systems within one web application brings to light a
+number of phenomena and issues, as competing encoding systems, concurring writing
+1
+
+http://www.ruhr-uni-bochum.de/rubin/rubin-fruehjahr-2012/pdf/beitrag2.pdf (2013-08-27)
+http://www.greekintoarabic.eu/ (2013-08-27)
+3
+http://www.ruhr-uni-bochum.de/imperia/md/content/orient/glossarium-graeco-arabicum.pdf (2013-08-27)
+4
+A Greek and Arabic Lexicon, Leiden: Brill, 1992ff.
+2
+
+directions, and characters of very different and individual types. Difficulties usually do not occur
+in single alphabet environments, but when more than one writing systems are used parallely in
+the same context, some seemingly trivial problems arise again. This concerns the
+representation of research contents in the database (backend), the resulting website and its
+input methods (researcher backend), and public access and search methods as well (researcher
+frontend). While Unicode seems to be the universal solution, there are still some issues that
+require complicated workarounds, or result in disadvantages for the user otherwise.
+

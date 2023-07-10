@@ -12,7 +12,7 @@ from os.path import join
 wdir = "/home/ulrike/Git/dhd-chronicles/tm"
 
 ### Set parameters as used in the topic model
-NumTopics = 50
+NumTopics = 40
 NumIterations = 5000
 OptimizeIntervals = 500
 param_settings = str(NumTopics) + "tp-" + str(NumIterations) + "it-" + str(OptimizeIntervals) + "in"
@@ -28,15 +28,15 @@ number_of_topics = NumTopics
 useBins = False
 binDataFile = join(wdir, "3_bins", "segs-and-bins.csv")
 version  = "208+" # which MALLET version is in use?
-#postprocess.create_mastermatrix(corpuspath, outfolder, mastermatrixfile, metadatafile, topics_in_texts, number_of_topics, useBins, binDataFile, version)
+postprocess.create_mastermatrix(corpuspath, outfolder, mastermatrixfile, metadatafile, topics_in_texts, number_of_topics, useBins, binDataFile, version)
 
 ### calculate_averageTopicScores
 ### Based on the mastermatrix, calculates various average topic score datasets.
 mastermatrixfile = join(wdir, "aggregates", param_settings, "mastermatrix.csv")
 outfolder = join(wdir, "aggregates", param_settings)
 # targets: one or several:author|decade|subgenre|author-gender|idno|segmentID|narration|narrative-perspective (according to available metadata)
-targets = ["idno", "year"]
-#postprocess.calculate_averageTopicScores(mastermatrixfile, targets, outfolder)
+targets = ["idno", "year", "type"]
+postprocess.calculate_averageTopicScores(mastermatrixfile, targets, outfolder)
 
 ### build_gephitable
 target = "subgenre"
@@ -59,7 +59,7 @@ filename = "topicRanks.csv"
 postprocess.save_topicRanks(topicWordFile, outfolder, filename)
 
 ### Average topic scores for two criteria (binID + subgenre)
-mastermatrixfile = join(wdir, "8_aggregates", param_settings, "mastermatrix.csv")
-targets = ["binID", "subgenre"]
-outfolder = join(wdir, "8_aggregates", param_settings)
-#postprocess.calculate_complexAverageTopicScores(mastermatrixfile, targets, outfolder)
+mastermatrixfile = join(wdir, "aggregates", param_settings, "mastermatrix.csv")
+targets = ["year", "type"]
+outfolder = join(wdir, "aggregates", param_settings)
+postprocess.calculate_complexAverageTopicScores(mastermatrixfile, targets, outfolder)
