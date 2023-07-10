@@ -1,6 +1,8 @@
-# dhd-chronicles
-DHd Chronicles
+# DHd-chronicles
 
+Blessing, A., Cremer, F., Helling, P., Henny-Krahmer, U., Jung, K., & Reiter, N. (2023). DHd Chronicles.
+
+Auswertungen von Konferenzeinreichungen zu den DHd-Konferenzen 2014 bis 2023.
 
 ## Generation of plain text files
 
