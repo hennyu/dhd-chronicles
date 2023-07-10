@@ -1,4 +1,4 @@
-# DHd-chronicles
+# DHd Chronicles
 
 Blessing, A., Cremer, F., Helling, P., Henny-Krahmer, U., Jung, K., & Reiter, N. (2023). DHd Chronicles.
 
